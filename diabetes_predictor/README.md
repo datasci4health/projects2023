@@ -23,6 +23,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Bases de Dados
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
+> Link da base oficial: https://svs.aids.gov.br/download/Vigitel/ 
+> Link do google drive com subsets: https://drive.google.com/drive/folders/1NMwv2sC3bnlQBedWxnHki7KG_jT0peuU?usp=sharing
 
 # Metodologia
 > Esta seção será evoluída ao longo do projeto. Nesta primeira entrega informe técnicas que pretende-se explorar
