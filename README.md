@@ -11,11 +11,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os grupos devem ter no máximo 5 integrantes e devem contar com pelo menos um aluno da área da saúde e um aluno de área afim à Computação (Ex.: Computação, Elétrica...)
 > |Nome  | RA | Especialização|
 > |--|--|--|
-> | Nome1  | 123456  | Saúde|
-> | Nome2  | 123456  | Computação - Líder Github - Conta <incluir login conta github>|
-> | Nome3  | 123456  | XXX|
-> | Nome4  | 123456  | XXX|
-> | Nome5  | 123456  | XXX|
+> | Alexsandro Ferreira de Barros Júnior  | 233768  | Computação - Líder Github - [Conta] <https://github.com/alexbjr> |
+> | Giovanna Gennari Jungklaus  | 198010  | Computação|
+> | José Ernesto Stelzer Monar  | 139553  | Computação|
+> | Maria Clara Castro Higino de Sousa  | 243237  | Computação|
+> | Miriam Reyes Ortiz  | 265762  | Saúde |
 
 
 # Descrição Resumida do Projeto
