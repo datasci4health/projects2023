@@ -23,7 +23,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 >
 > Nesse contexto, este projeto tem como objetivo analisar uma grande base de dados sobre casos de hanseníase com o objetivo de estimar o tempo de cura dos pacientes. Para isso, serão utilizadas técnicas de machine learning para identificar as variáveis mais relevantes para o resultado, bem como a relação entre elas e o tempo de cura.
 >
-> Espera-se que os resultados deste projeto possam ajudar na otimização do tratamento da hanseníase, permitindo a alocação de recursos adequados para cada paciente e melhorando o planejamento financeiro dos sistemas de saúde. Além disso, a análise desses dados pode fornecer insights importantes sobre a doença e ajudar na prevenção e controle da hanseníase em nível nacional e internacional.
+> Espera-se que os resultados deste projeto possam ajudar na otimização do tratamento da hanseníase, permitindo a alocação de recursos adequados para cada paciente e melhorando o planejamento financeiro dos sistemas de saúde. Além disso, a análise desses dados pode fornecer percepções importantes sobre a doença e ajudar na prevenção e controle da hanseníase em nível nacional.
 > 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
