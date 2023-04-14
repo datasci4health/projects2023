@@ -53,10 +53,13 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativoss| 
 
 # Cronograma
-> |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4|
-> |--|--|--|--|--|
-> | Etapa1  | X | X | X | X |
-> | Etapa2  | X | X | X | X |
-> | Etapa3  | X | X | X | X |
-> | Etapa4  | X | X | X | X |
-> | Etapa5  | X | X | X | X |
+> |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4| Semana 5| Semana 6| Semana 7| Semana 8| Semana 9| Semana 10|
+> |--|--|--|--|--|--|--|--|--|--|--|
+> | Definição do escopo do projeto e planejamento da metodologia  | X |  |  |  |  |  |  |  |  |  |
+> | Pré-processamento dos dados  |  | X |  |  |  |  |  |  |  |  |
+> | Análise exploratória|  |  | X | X |  |  |  |  |  |  |
+> | Entrega 2  |  |  |  | X |  |  |  |  |  |  |
+> | Modelagem preditiva e avaliação dos modelos  |  |  |  |  | X | X | X |  |  |  |
+> | Avaliação do modelo  |  |  |  |  |  |  |  | X |  |  |
+> | Elaboração do relatório  |  |  |  |  |  |  |  |  | X |  |
+> | Entrega final e apresentação  |  |  |  |  |  |  |  |  |  | X |
