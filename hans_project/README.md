@@ -43,16 +43,14 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas:
-> 
-> Pandas: para manipulação e análise de dados;
-> 
-> Numpy: para cálculos matemáticos e estatísticos;
-> 
-> Scikit-learn: para modelagem preditiva e aprendizado de máquina;
-> 
-> Matplotlib e Seaborn: para visualização de dados;
-> 
-> Jupyter Notebook: para desenvolvimento e apresentação de notebooks interativos;
+>
+> |Ferramenta/Biblioteca | Descrição|
+> |--|--|
+> |[Pandas](https://pandas.pydata.org/) |Biblioteca para manipulação e análise de dados| 
+> |[Numpy](https://numpy.org/) |Biblioteca para cálculos matemáticos e estatísticos| 
+> |[Scikit-learn](https://scikit-learn.org/stable/) |Biblioteca para modelagem preditiva e aprendizado de máquina| 
+> |[Matplotlib](https://matplotlib.org/) e [Seaborn](https://seaborn.pydata.org/) |Bibliotecas para visualização de dados| 
+> |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativoss| 
 
 # Cronograma
 > |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4|
