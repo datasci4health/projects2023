@@ -1,5 +1,7 @@
 # Projeto `Análise de dados da hanseníase: uma abordagem preditiva para a saúde pública`
 
+# Project `Data analysis of leprosy: a predictive approach for public health`
+
 # Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2023, na Unicamp, pelos membros:
