@@ -40,8 +40,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Iremos usar os dados informados pelas unidades de saúde para o ministério da saúde do Brasil disponível em [link](http://indicadoreshanseniase.aids.gov.br/) 
 
 # Metodologia
-> Esta seção será evoluída ao longo do projeto. Nesta primeira entrega informe técnicas que pretende-se explorar
-> tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
+> Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
 
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
