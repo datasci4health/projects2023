@@ -7,10 +7,10 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 |Nome  | RA | Especialização|
 |--|--|--|
-| Nome1  | 123456  | Saúde|
-| Nome2  | 123456  | Computação - Líder Github - Conta <incluir login conta github>|
+| Beatriz Silva Nunes  | 167428  | Saúde - [Conta GitHub](https://github.com/beatrizsnunes)|
+| Arthur Rezende Salles   | 166003  | Computação - Líder Github - Conta <incluir login conta github>|
 | Anderson Nogueira Cotrim  | 163993  | Computação - [Conta GitHub](https://github.com/AndersonCotrim)|
-| Nome4  | 123456  | XXX|
+| Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
 
 # Descrição Resumida do Projeto
