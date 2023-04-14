@@ -16,16 +16,16 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
 
-> O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar na probabilidade do desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros que vieram de diferentes cursos.
+> O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar no desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros que vieram de diferentes cursos. O resultado do projeto poderá ser utilizado como medida auxiliadora de políticas públicas ao entender quais populações tem o maior risco de desenvolver diabetes. 
 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
->
+> https://youtu.be/Ti_Q1Hb_aM4
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
 
->  Investigar se uma pessoa tem ou não diabetes baseado em fatores sociais, econômicos e de saúde em grandes capitais do Brasil
+>  Investigar se uma pessoa tem ou não diabetes baseado em fatores sociais, econômicos e de saúde em grandes capitais do Brasil.
 # Bases de Dados
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
 
@@ -51,7 +51,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
-> Python, Google Collab,Biblioteas de manipulação de dados(Pandas,numpy), Bibliotecas de machine learning (Scikit-learn, Tensorflow, Pytorch - a depender da dificuldade do problema) , Bibliotecas de visualização de dados (Matplotlib, seaborn, plotly) e o que mais for necessário para resolver o problema.
+> Python, Google Collab,Bibliotecas de manipulação de dados(Pandas,numpy), Bibliotecas de machine learning (Scikit-learn, Tensorflow, Pytorch - a depender da dificuldade do problema) , Bibliotecas de visualização de dados (Matplotlib, seaborn, plotly) e o que mais for necessário para resolver o problema.
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
