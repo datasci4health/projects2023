@@ -1,6 +1,3 @@
-# 2023.1 Ciência e Visualização de Dados em Saúde
-Repositório de Projetos da Disciplina de Ciência e Visualização de Dados em Saúde - 1° Semestre de 2023
-
 # Projeto `Análise de dados da hanseníase: uma abordagem preditiva para a saúde pública`
 
 # Apresentação
@@ -38,7 +35,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Bases de Dados
 > |Fonte | Descrição|
 > |--|--|
-> |[Indicadores e Dados Básicos de Hanseníase nos Municípios Brasileiros](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
+> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
 
 # Metodologia
 > Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
