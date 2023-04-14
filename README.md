@@ -19,7 +19,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> A hanseníase é uma doença infecciosa crônica que afeta principalmente a pele e os nervos periféricos. Apesar dos avanços no tratamento, a hanseníase ainda é um problema de saúde pública em muitos países, incluindo o Brasil. O tratamento da hanseníase é longo e requer o uso de múltiplos medicamentos, o que pode levar a custos elevados para os sistemas de saúde. Além disso, a duração do tratamento pode variar de acordo com cada paciente, o que torna o planejamento financeiro ainda mais desafiador.
+>
+> Nesse contexto, este projeto tem como objetivo analisar uma grande base de dados sobre casos de hanseníase com o objetivo de estimar o tempo de cura dos pacientes. Para isso, serão utilizadas técnicas de machine learning para identificar as variáveis mais relevantes para o resultado, bem como a relação entre elas e o tempo de cura.
+>
+> Espera-se que os resultados deste projeto possam ajudar na otimização do tratamento da hanseníase, permitindo a alocação de recursos adequados para cada paciente e melhorando o planejamento financeiro dos sistemas de saúde. Além disso, a análise desses dados pode fornecer insights importantes sobre a doença e ajudar na prevenção e controle da hanseníase em nível nacional e internacional.
 > 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
