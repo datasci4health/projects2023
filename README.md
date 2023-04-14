@@ -32,6 +32,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 >
 > Como as percepções obtidas a partir da análise de dados podem ser utilizadas para melhorar o planejamento financeiro dos sistemas de saúde em relação ao tratamento da hanseníase?
 >
+> Existe uma correlação entre o índice geográfico e o índice de desenvolvimento social das regiões afetadas pela hanseníase e a incidência e gravidade da doença?
+>
 > Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
 
 # Bases de Dados
@@ -45,4 +47,10 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
 # Cronograma
-> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.# Projeto `<Título em Português>`
+> |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4|
+> |--|--|--|
+> | Etapa1  | X | X | X | X |
+> | Etapa2  | X | X | X | X |
+> | Etapa3  | X | X | X | X |
+> | Etapa4  | X | X | X | X |
+> | Etapa5  | X | X | X | X |
