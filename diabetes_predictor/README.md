@@ -16,7 +16,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
 
-> O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar no desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros que vieram de diferentes cursos. O resultado do projeto poderá ser utilizado como medida auxiliadora de políticas públicas ao entender quais populações tem o maior risco de desenvolver diabetes. 
+> O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar no desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto. O resultado do projeto poderá ser utilizado como medida auxiliadora de políticas públicas ao fornecer subsídios para entender quais populações têm o maior risco de desenvolver diabetes. 
 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
@@ -43,7 +43,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Esta seção será evoluída ao longo do projeto. Nesta primeira entrega informe técnicas que pretende-se explorar
 > tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
 
-> A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes de o desenvolver, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com a performance considerada aceitável.Iniciaremos criando um modelo para todas as capitais e caso necessário quebraremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
+> A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento dos dados. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmetaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
 ![Fases da metodologia](img/crispdm.png)
 > Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
@@ -51,7 +51,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
-> Python, Google Collab,Bibliotecas de manipulação de dados(Pandas,numpy), Bibliotecas de machine learning (Scikit-learn, Tensorflow, Pytorch - a depender da dificuldade do problema) , Bibliotecas de visualização de dados (Matplotlib, seaborn, plotly) e o que mais for necessário para resolver o problema.
+> Python, Google Colab, bibliotecas de manipulação de dados(Pandas, NumPy), bibliotecas de machine learning (Scikit-learn, TensorFlow, PyTorch - a depender da dificuldade do problema), bibliotecas de visualização de dados (Matplotlib, Seaborn, Plotly) e o que mais for necessário para resolver o problema.
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
