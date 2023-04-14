@@ -39,7 +39,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |[Sistema de Informação de Agravos de Notificação (SINAN)](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
 
 # Metodologia
-> Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
+> Será realizada uma análise exploratória de dados para identificar e selecionar características que mostrem correlação com os desfechos da doença. A partir desses dados, será utilizado um modelo de aprendizado de máquina que realize previsões quanto ao tempo de cura dos pacientes analisados. Para concluir o estudo, análises estatísticas serão realizadas para testar as hipóteses formuladas. 
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas:
