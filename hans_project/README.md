@@ -53,8 +53,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativoss| 
 
 # Cronograma
-> |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4| Semana 5| Semana 6| Semana 7| Semana 8| Semana 9| Semana 10|
-> |--|--|--|--|--|--|--|--|--|--|--|
+> |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
+> |--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 > | Definição do escopo do projeto e planejamento da metodologia  | X |  |  |  |  |  |  |  |  |  |
 > | Pré-processamento dos dados  |  | X |  |  |  |  |  |  |  |  |
 > | Análise exploratória|  |  | X | X |  |  |  |  |  |  |
