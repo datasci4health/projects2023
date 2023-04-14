@@ -45,6 +45,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes de o desenvolver, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com a performance considerada aceitável.Iniciaremos criando um modelo para todas as capitais e caso necessário quebraremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
+![Fases da metodologia](img/crispdm.png)
+> Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
+
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
