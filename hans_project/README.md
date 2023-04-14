@@ -41,10 +41,15 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas:
+> 
 > Pandas: para manipulação e análise de dados;
+> 
 > Numpy: para cálculos matemáticos e estatísticos;
+> 
 > Scikit-learn: para modelagem preditiva e aprendizado de máquina;
+> 
 > Matplotlib e Seaborn: para visualização de dados;
+> 
 > Jupyter Notebook: para desenvolvimento e apresentação de notebooks interativos;
 
 # Cronograma
