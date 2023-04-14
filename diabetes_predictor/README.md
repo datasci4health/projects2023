@@ -25,7 +25,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
 
->  Investigar a probabilidade de uma pessoa ter diabetes baseado em fatores sociais economicos e de saúde em grandes capitais do Brasil
+>  Investigar se uma pessoa tem ou não diabetes baseado em fatores sociais, econômicos e de saúde em grandes capitais do Brasil
 # Bases de Dados
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
 
@@ -35,7 +35,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Link do google drive com subsets da base e dicionários de dados com pré seleção de features: https://drive.google.com/drive/folders/1NMwv2sC3bnlQBedWxnHki7KG_jT0peuU?usp=sharing
 
-> Segunda opção de base: base de diabetes internacional já com processamentos e dados de saúde da pessoa: https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9
+> Segunda opção de base: base de diabetes internacional já com processamentos e dados de saúde das pessoas: https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9
 
 
 
@@ -43,7 +43,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Esta seção será evoluída ao longo do projeto. Nesta primeira entrega informe técnicas que pretende-se explorar
 > tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
 
-> A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de regressão de aprendizado supervisionado que retorna a probabilidade de uma pessoa possuir diabetes. Antes de o desenvolver, será realizado um entendimento do negócio, análise exploratória de dados, entendimento do negócio, escolha de features e pré processamento. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com a performance considerada aceitável.Iniciaremos criando um modelo para algum estado específico a se definir e depois tentaremos extrapolar para todas as capitais. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
+> A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes de o desenvolver, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com a performance considerada aceitável.Iniciaremos criando um modelo para todas as capitais e caso necessário quebraremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
@@ -56,7 +56,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > |Data  | Entrega Esperada |
 > |--|--|
-> | 14 de maio | Resultado parcial: análise descritiva, modelo baseline. 4 primeiras etapas do CRISP-DM   |
+> | 14 de maio | Resultado parcial: análise descritiva estratificada por grupos, modelo baseline. 4 primeiras etapas do CRISP-DM   |
 > | 22 de junho | Modelo refinado e finalizado. Últimas etapas de metodologia  |
-> | 22 e 27 de junho  | Apresentação  |
+> | 22 ou 27 de junho  | Apresentação  |
 
