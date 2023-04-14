@@ -2,9 +2,8 @@
 
 # Apresentação
 
-O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2021, na Unicamp.
+O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2023, na Unicamp, pelos membros:
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os grupos devem ter no máximo 5 integrantes e devem contar com pelo menos um aluno da área da saúde e um aluno de área afim à Computação (Ex.: Computação, Elétrica...)
 > |Nome  | RA | Especialização|
 > |--|--|--|
 > | Alexsandro Ferreira de Barros Júnior  | 233768  | Computação - Líder Github - [Conta GitHub](https://github.com/alexbjr) |
@@ -35,7 +34,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Bases de Dados
 > |Fonte | Descrição|
 > |--|--|
-> |[Indicadores e Dados Básicos de Hanseníase nos Municípios Brasileiros](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
+> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
 
 # Metodologia
 > Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
