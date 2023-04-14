@@ -42,7 +42,17 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
 
 # Ferramentas
-> Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
+> O projeto será realizado em Python e serão utilizadas a seguintes ferramentas:
+> 
+> Pandas: para manipulação e análise de dados;
+> 
+> Numpy: para cálculos matemáticos e estatísticos;
+> 
+> Scikit-learn: para modelagem preditiva e aprendizado de máquina;
+> 
+> Matplotlib e Seaborn: para visualização de dados;
+> 
+> Jupyter Notebook: para desenvolvimento e apresentação de notebooks interativos;
 
 # Cronograma
 > |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4|
