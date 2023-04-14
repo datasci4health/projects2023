@@ -28,7 +28,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Quais variáveis clínicas e epidemiológicas estão associadas ao tempo de cura dos pacientes com hanseníase?
+>
+> Como as percepções obtidas a partir da análise de dados podem ser utilizadas para melhorar o planejamento financeiro dos sistemas de saúde em relação ao tratamento da hanseníase?
+>
+> Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
 
 # Bases de Dados
 > Iremos usar os dados informados pelas unidades de saúde para o ministério da saúde do Brasil disponível em link[http://indicadoreshanseniase.aids.gov.br/] 
