@@ -36,7 +36,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
 
 # Bases de Dados
-> Iremos usar os dados informados pelas unidades de saúde para o ministério da saúde do Brasil disponível em [link](http://indicadoreshanseniase.aids.gov.br/) 
+> |Fonte | Descrição |
+> |(Indicadores e Dados Básicos de Hanseníase nos Municípios Brasileiros)[http://indicadoreshanseniase.aids.gov.br] |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente. 
 
 # Metodologia
 > Iremos usar análise estatística para identificar e selecionar características que mostrem correlação com os desfechos da doença. E a partir desses dados buscar um modelo de aprendizado de máquina que ajude a fazer previsões quanto ao tempo de cura.
