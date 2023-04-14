@@ -47,7 +47,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Cronograma
 > |Etapas | Semana 1 | Semana 2| Semana 3| Semana 4|
-> |--|--|--|
+> |--|--|--|--|--|
 > | Etapa1  | X | X | X | X |
 > | Etapa2  | X | X | X | X |
 > | Etapa3  | X | X | X | X |
