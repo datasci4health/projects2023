@@ -22,7 +22,11 @@ Como a suplementação de ferro afeta os hemocomponentes de doadores de sangue?
 
 # Bases de Dados
 
-Pub med, Embase, Uptodate, library Cochrane e Scopus.
+- [Pub med](https://pubmed.ncbi.nlm.nih.gov/)
+- [Embase](https://www.embase.com/)
+- [Uptodate](https://www.uptodate.com/)
+- [library Cochrane](https://www.cochranelibrary.com/)
+- [Scopus](https://www.scopus.com/home.uri)
 
 # Metodologia
 
@@ -32,11 +36,11 @@ Pub med, Embase, Uptodate, library Cochrane e Scopus.
 
 # Ferramentas
 
-- Python
-- jupyter
-- pandas
-- scipy
-- numpy
+- [Python](https://www.python.org/)
+- [jupyter](https://jupyter.org/)
+- [pandas](https://pandas.pydata.org/)
+- [scipy](https://scipy.org/)
+- [numpy](https://numpy.org/)
 
 # Cronograma
 
