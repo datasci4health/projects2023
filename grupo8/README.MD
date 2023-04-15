@@ -5,10 +5,10 @@
 
 |Nome  | RA | Especialização|
 |--|--|--|
-| Thársis Salathiel | 226066 | Computação - Líder Github - Conta salathiel10|
-| João Augusto Rosa Feltran  | 174083 | Computação |
 | Glinka Lino Duarte Estadulho  | 271104  | Física|
+| João Augusto Rosa Feltran  | 174083 | Computação |
 | Michel Frank Ferrazo  | 224972  | Farmacologia |
+| Thársis Salathiel | 226066 | Computação - Líder Github - Conta salathiel10|
 
 # Descrição Resumida do Projeto
 
