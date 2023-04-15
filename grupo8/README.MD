@@ -1,7 +1,9 @@
 
-# Impacto da suplementação de ferro na doação de sangue 
+# Projeto `Impacto da suplementação de ferro na doação de sangue`
 
 # Apresentação
+
+O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação Ciência e Visualização de Dados em Saúde, oferecida no primeiro semestre de 2023, na Unicamp.
 
 |Nome  | RA | Especialização|
 |--|--|--|
