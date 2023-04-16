@@ -17,6 +17,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 A doação de sangue é uma prática importante para salvar vidas, no entanto, pode levar a uma diminuição dos níveis de ferro no doador, o que pode ter um impacto negativo na qualidade dos hemocomponentes. A suplementação de ferro é uma forma de aumentar os níveis de ferro no sangue, no entanto, há uma necessidade de investigar o seu impacto na qualidade dos hemocomponentes em doadores de sangue saudáveis.
 
 Link para video:
+https://drive.google.com/file/d/1ZVwDOocFzThgN53GMuOPy3mcSKYTh6Pq/view?usp=sharing
+
 
 # Perguntas de Pesquisa
 
