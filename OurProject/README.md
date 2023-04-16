@@ -21,15 +21,19 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Perguntas de Pesquisa
 > Qual a principal causa de mortalidade no Brasil no período de 1990 a 2019?
+> 
 > Qual é o modelo de série temporal mais adequado e estatisticamente significante para analisar os dados de mortalidade no Brasil, entre os anos de 1990 a 2019?
 
 # Bases de Dados
 > A base de dados que será utilizada foi retirada do projeto “Our World in Data”, uma plataforma open-source colaborativa mantida pela Universidade de Oxford e pela organização sem fins lucrativos Global Change Data Lab (GCDL). Disponível em: https://ourworldindata.org/causes-of-death.
+> 
 > Os dados disponíveis são: causa da morte; número total de mortes para ambos os sexos e todas a idades; ano; e país.
 
 # Metodologia
 > Para atingir o objetivo do projeto, serão utilizadas duas técnicas estatísticas (i) Análise exploratória de dados e (ii) análise de séries temporais.
+> 
 > A análise exploratória dos dados é utilizada para melhor compreensão e visualização dos dados, buscando padrões e permitindo assim a aplicação de técnicas estatísticas. Suas apresentações são por meio de gráficos, tabelas, medidas de tendência central etc.
+> 
 > A série temporal é uma coleção de observações feitas sequencialmente ao longo do tempo. A característica mais importante deste tipo de dados é que as observações vizinhas são dependentes e o interesse é em analisar e modelar esta dependência. O principal objetivo da análise de séries temporais é entender e prever o comportamento futuro do fenômeno observado, identificando tendências, sazonalidades, ciclos e padrões irregulares que possam afetar seu desempenho.
 
 # Ferramentas
