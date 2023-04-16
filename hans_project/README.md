@@ -22,7 +22,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 >
 > Espera-se que os resultados deste projeto possam ajudar na otimização do tratamento da hanseníase, permitindo a alocação de recursos adequados para cada paciente e melhorando o planejamento financeiro dos sistemas de saúde. Além disso, a análise desses dados pode fornecer percepções importantes sobre a doença e ajudar na prevenção e controle da hanseníase em nível nacional.
 > 
-> Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
+> [Vídeo de apresentação](https://drive.google.com/file/d/1LdYcPP0i0cjiHvt-HNTh64a2jiKPNRNR/view?usp=sharing)
 
 # Perguntas de Pesquisa
 > Quais variáveis clínicas e epidemiológicas estão associadas ao tempo de cura dos pacientes com hanseníase?
