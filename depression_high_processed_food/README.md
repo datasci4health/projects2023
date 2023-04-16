@@ -1,5 +1,6 @@
-# Projeto `Depressão e ultraprocessados no Brasil, uma abordagem guiada por dados`
-# Project `Depression and ultra-processed foods in Brazil: a data-driven approach`
+
+# Projeto `Associação de depressão com fatores de risco`
+# Project `Association of depression with risk factors`
 
 # Apresentação
 
@@ -14,23 +15,32 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
-> 
 
-Este projeto visa estudar os fatores de risco relacionados aos hábitos de vida, alimentação e saúde mental que contribuem para a prevalência de doenças não crônicas no Brasil. A ideia é analisar dados de diferentes fontes, como pesquisas nacionais de saúde e dados de hospitais, para identificar os principais fatores de risco e padrões de doenças em diferentes regiões do país.
+As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
 
-Doenças relacionadas aos hábitos de vida, alimentação e saúde mental são um grande problema de saúde pública no Brasil e em todo o mundo. Estas doenças incluem, por exemplo, doenças cardiovasculares, diabetes, obesidade, depressão e ansiedade. Essas doenças podem ter causas multifatoriais, incluindo estilo de vida, dieta, fatores ambientais e genéticos.
+A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
 
-Compreender os fatores de risco relacionados a essas doenças é fundamental para desenvolver estratégias eficazes de prevenção e tratamento. Por exemplo, estudos mostram que a adoção de um estilo de vida saudável, incluindo uma dieta balanceada, atividade física regular e a prática de técnicas de relaxamento e gestão do estresse, pode reduzir o risco de desenvolver doenças crônicas.
+Compreender as características da população com depressão e os fatores de risco associados à doença no Brasil é essencial para o desenvolvimento de políticas públicas e diretrizes considerando as particularidades da população brasileira.
 
-Em resumo, este projeto visa identificar os principais fatores de risco relacionados aos hábitos de vida, alimentação e saúde mental que contribuem para a prevalência de doenças não crônicas no Brasil, com base na análise de dados de diferentes fontes. Espera-se que os resultados obtidos possam informar políticas de saúde pública e melhorar a qualidade de vida da população.
+A utilização de inquéritos de saúde nacional se torna extremamente pertinente para a compreensão da prevalência da doença e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira e têm o propósito de orientar diretrizes e políticas públicas de Saúde no país [5].
+
+Com isso, o objetivo do estudo é buscar fatores de risco para a depressão e possíveis cenários que diminuiriam a chance de desenvolvimento de depressão utilizando a Pesquisa Nacional de Saúde.
+
+[Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
+
+1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
+
+2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
+
+3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
+
+4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
+
+5. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
 
 
-[Link para vídeo de apresentação da proposta do projeto](https://dummy.com.br)
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
-
 
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
 
@@ -41,7 +51,6 @@ Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundad
  - Será que as pessoas que possuem depressão também possuem outras doenças crônicas que estão associadas com alto consumo de ultraprocessados como obesidade?
 
 # Bases de Dados
-> Elencar bases de dados candidatas a serem utilizadas no projeto.
 
 Base de Dados  | Descrição | Anos
 ----- | ----- |  -----
@@ -51,8 +60,6 @@ Base de Dados  | Descrição | Anos
 
 
 # Metodologia
-> Esta seção será evoluída ao longo do projeto. Nesta primeira entrega informe técnicas que pretende-se explorar
-> tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
 
 Este trabalho de forma geral procura avaliar e descobrir os fatores de risco para a depressão no Brasil. Para este fim, abordaremos uma metodologia baseada quatro estratégias principais:
 
@@ -76,7 +83,6 @@ Este trabalho de forma geral procura avaliar e descobrir os fatores de risco par
 
 
 # Ferramentas
-> Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
 Ferramenta | Descrição
 ----- | -----
@@ -91,7 +97,6 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 
 # Cronograma
-> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
 
 Semanas | Tarefas
 ----- | -----
