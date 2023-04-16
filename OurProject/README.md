@@ -9,7 +9,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |Nome  | RA | Especialização|
 > |--|--|--|
 > | Dorival Junior  | 215076  | Computação|
-> | Camila Quadros  | 261300  | Computação - Líder Github - Conta [*milqsimmer*](https://github.com/milqsimmer/projects2023)|
+> | Camila Quadros  | 261300  | Computação - Líder Github - Conta <[*milqsimmer*](https://github.com/milqsimmer/projects2023)>|
 > | Thayane Oliveira  | 216114  | Agrícola|
 > | Yuri Richard  | 247016  | Saúde|
 
