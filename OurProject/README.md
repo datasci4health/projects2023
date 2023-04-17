@@ -15,9 +15,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-> A partir das principais causas de morte no Brasil no período de 1990 a 2019, o projeto visa caracterizar e estabelecer um modelo de previsão por meio de análise exploratória de dados e séries temporais.
+> A mortalidade por doenças é um problema de saúde pública de grande relevância no Brasil e no mundo. E sua análise torna-se uma ferramenta essencial para entendermos as principais causas de morte, além de servir como base para propostas de intervenção efetivas para redução dessa taxa. A partir das principais causas de morte no Brasil no período de 1990 a 2019, o projeto visa caracterizar e estabelecer um modelo de previsão por meio de análise exploratória de dados e séries temporais.
 > 
-> Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
+> [*Link para vídeo de apresentação da proposta do projeto.*](https://drive.google.com/file/d/1TuVvB7_tuUpy89DZRqpBYQg3cny7RNCt/view?usp=share_link)
 
 # Perguntas de Pesquisa
 > Qual a principal causa de mortalidade no Brasil no período de 1990 a 2019?
