@@ -6,9 +6,9 @@
 | :---         |     :---:      |          ---: |
 | Giovani Luiz dos Reis    |259156   | Análise e Desenvolvimento de Sistemas  |
 | Julia de Melo Franco Fernandes |  248945   | Eng computação  |
-| Lauana Andrade Messias|  248945   | Mestranda em Neurociências    |
+| Lauana Andrade Messias|  183936   | Mestranda em Neurociências    |
 | Maria Victoria    | 256905    | Mestranda Ciência da computação    |
-| Suellen   | 256905    | Saúde  |
+| Suellen   | ---    | Saúde  |
 # Descrição Resumida do Projeto
 Existem várias interações complexas entre células do sistema imune e genes que podem contribuir para a patogênese da doença de Alzheimer. Embora ainda haja muito a ser descoberto, a análise de dados pode fornecer algumas informações importantes sobre essas interações.
 Uma área de pesquisa promissora é a análise de expressão gênica em células do sistema imunológico, como macrófagos e células T, em pacientes com doença de Alzheimer. Isso pode ajudar a identificar genes que são ativados ou desativados nessas células em resposta à doença e como isso afeta a função imunológica.
