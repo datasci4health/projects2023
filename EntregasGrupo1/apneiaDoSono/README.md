@@ -26,9 +26,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Perguntas de Pesquisa
 > Este projeto pretende responder às seguintes questões relacionadas a ___:
 
-> **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
-> **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
-> **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
+> - **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
+> - **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
+> - **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
 
 # Bases de Dados
 
