@@ -21,10 +21,19 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Descrição Resumida do Projeto
 
-> Neste estudo retrospectivo, investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono. As questões de pesquisa a serem abordadas serão.
+> Neste estudo retrospectivo, investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono.
+>
+>Seguiremos por algumas etapas para execução de um projeto relacionado com pacientes portadores de ronco e apneia obstrutiva do sono.
+>
+>Incluiremos dados retrospectivos de exames de polissonografia tipo IV de pacientes antes e depois de receberem o tratamento com dispositivo de avanço mandibular. 
+>
+>Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
+>
+>O gerenciamento de nossas ações será feito utilizando a ferramenta de gestão de atividades Trello para agilizarmos as entregas e cumprirmos os prazos. 
+
 
 # Perguntas de Pesquisa
-> Este projeto pretende responder às seguintes questões relacionadas a ___:
+> As questões de pesquisa a serem abordadas serão:
 
 > - **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
 > - **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
@@ -36,19 +45,34 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Metodologia
 
-Com a orientação de um especialista da área de saúde, seguiremos algumas etapas para a execução deste projeto, incluindo a criação de um dicionário de dados das informações presentes no conjunto de dados gerado.
+Como etapas iniciais, buscando garantir a privacidade dos pacientes envolvidos e uma qualidade inicial dos dados, faremos a anonimização dos dados, removendo informações individuais dos pacientes.
 
-Como etapas iniciais, buscando garantir a privacidade dos pacientes envolvidos e a qualidade inicial dos dados, faremos a anonimização dos dados, removendo informações individuais dos pacientes.
+Utilizando técnicas de estatística descritiva, realizaremos:
 
-Usando técnicas de estatística descritiva, realizaremos as seguintes tarefas:
+- realizar a limpeza e organização dos dados
+- tratar dados nulos ou faltantes
+- identificar possíveis anomalias de coleta e decidir como tratá-las (correção, remoção, etc)
 
-- Limpar e organizar os dados.
-- Tratar dados nulos ou faltantes.
-- Identificar possíveis anomalias de coleta e decidir como tratá-las (corrigindo, removendo, etc.).
-
-Realizaremos análises para identificar o impacto (se houver) na qualidade de vida dos pacientes a partir da utilização do aparelho intraoral de avanço mandibular, utilizando como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes antes e depois do uso do aparelho.
+Realizaremos análises para identificar o impacto (caso haja) na qualidade de vida dos pacientes a partir da utilização do aparelho intraoral de avanço mandibular, utilizando como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes antes e depois do uso do aparelho.
 
 # Ferramentas
 
+Para o desenvolvimento deste projeto, iremos utilizar um conjunto de ferramentas que nos habilite realizar as análises estatísticas, comparações e estimativas que planejamos na seção Metodologia. Isso inclui, mas não se limita, a:
+desenvolvimento com a linguagem de programação Python
+experimentações utilizando dataframes com o framework Pandas
+Ferramentas matemáticas e estatísticas como statsmodels e Scipy
+Utilização de jupyter notebooks como plataforma de organização dos experimentos e preparação para a confecção de relatórios
+
+No decorrer da análise, pode se fazer necessário adotar novas ferramentas ou técnicas para refinar/ratificar respostas às perguntas - Caso isso aconteça, esta sessão será continuamente atualizada.
+
 # Cronograma
+
+|Data|Atividade|Milestone|
+|---|---|---|
+|28/Abr/2023|Preparação dos dados|dataset pronto para experimentação|
+|30/Abr/2023|Validação da organização do dataset pela cirurgiã-dentista integrante da equipe|de acordo que o dataset está pronto para a evolução do projeto|
+|05/Mai/2023|Análise exploratória dos dados|Entendimento da organização e distribuição dos dados|
+|12/Mai/2023|Primeira versão das respostas para os questionamentos do projeto|Respostas preliminares, baseadas em dados, junto com sua análise|
+|15/Mai/2023|Segunda entrega do projeto|Segunda entrega do projeto|
+
 
