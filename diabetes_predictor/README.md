@@ -7,7 +7,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 |Nome  | RA | Especialização|
 |--|--|--|
-| Ana Carolina Benite Alves  | 165741  | Saúde|
+| Ana Carolina Benite Alves  | 165741  | Saúde Coletiva - Nutrição|
 | João Victor Palhares Barbosa  | 173664  | Computação - Líder Github - Conta jvpalhares |
 | Caique Santos Lima  | 217040  | Eng. Elétrica e Computação |
 | Gustavo Pessoa Caixeta Pinto de Luz  | 271582  | Computação |
@@ -46,8 +46,8 @@ A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de cla
 Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
 
 # Ferramentas
-
-Python, Google Colab, bibliotecas de manipulação de dados(Pandas, NumPy), bibliotecas de machine learning (Scikit-learn, TensorFlow, PyTorch - a depender da dificuldade do problema), bibliotecas de visualização de dados (Matplotlib, Seaborn, Plotly) e o que mais for necessário para resolver o problema.
+Ferramenta teorica: Pubmed, Google Escolar e documentos/protocolos governamentais.
+Ferramente de dados: Python, Google Colab, bibliotecas de manipulação de dados(Pandas, NumPy), bibliotecas de machine learning (Scikit-learn, TensorFlow, PyTorch - a depender da dificuldade do problema), bibliotecas de visualização de dados (Matplotlib, Seaborn, Plotly) e o que mais for necessário para resolver o problema.
 
 # Cronograma
 
