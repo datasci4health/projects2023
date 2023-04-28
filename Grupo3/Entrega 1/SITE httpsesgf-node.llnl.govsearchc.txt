@@ -1,0 +1,42 @@
+SITE: https://esgf-node.llnl.gov/search/cmip6/
+
+1- passo source id 
+BCC-ESM1
+CMCC-CM2- SR5
+CMCC-ESM2
+HADGEM3-G631-MM
+INM-CM4-8
+IPSL-CM6A-LR-INCA
+MRI-ESM2-0
+2-experience id 
+HISTORICAL 
+SSP126-245-585
+3- VARIANTE LABEL 
+R1I1P1F1
+4- GRID LABEL 
+GN
+5- TABLE ID 
+DAY 
+6- FREQUETELY 
+DAY 
+ 7 - NARUREZA
+ATMOS 
+8- VARIABLE 
+PR
+TASMAX 
+TASMIN
+TAS
+SRIPT WGET 
+nehum dados 
+anual 
+https://power.larc.nasa.gov/data-access-viewer/
+SITE: NASA 
+1-reginal data 
+use comunitty: agro 
+teporal: daly 
+grade: sudeste 
+periodo de tempo 
+formato: netcdf 
+
+250 km 
+
