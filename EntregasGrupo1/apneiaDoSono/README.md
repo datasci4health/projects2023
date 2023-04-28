@@ -1,7 +1,3 @@
-==============================
-
-# Modelo para Apresentação do Projeto
-
 # Projeto `Avaliação dos efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono: um estudo retrospectivo`
 
 # Project `Evaluation of the effects of the mandibular advancement intraoral device in the treatment of patients with sleep apnea: a retrospective study.`
