@@ -9,10 +9,10 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > ## **Membros do grupo.**
 > |**Nome**  | **RA** | **Especialização**|
 > |--|--|--|
-> | Lidia Regina de Carvalho Freitas Barban  | 20362  | Saúde|
-> | **Wladimir Arturo Garces Carrillo**  | **204059**  | **Ciência da Computação - Líder Github - @WladIMirG**|
-> | Luciano de Melo Martins  | 223825  | Ciência da Computação|
-> | Denise Fernandes Barbosa  | 161452  | Ciências da Cirurgia|
+> | Lidia Regina de Carvalho Freitas Barban  | 20362  | Tecnóloga em processamento de dados e engenheira de dados para saúde|
+> | **Wladimir Arturo Garces Carrillo**  | **204059**  | **Candidado a Mestre em Ciência da Computação e Enginheiro em Mecatronica - Líder Github - @WladIMirG**|
+> | Luciano de Melo Martins  | 223825  |  Bacharel em Ciências da Computação e Engenheiro de Software|
+> | Denise Fernandes Barbosa  | 161452  | Ciências da Cirurgia e Odontologista do Sono|
 
 
 # Descrição Resumida do Projeto
