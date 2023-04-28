@@ -12,7 +12,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | Lidia Regina de Carvalho Freitas Barban  | 20362  | Tecnóloga em processamento de dados e engenheira de dados para saúde|
 > | **Wladimir Arturo Garces Carrillo**  | **204059**  | **Candidado a Mestre em Ciência da Computação e Enginheiro em Mecatronica - Líder Github - @WladIMirG**|
 > | Luciano de Melo Martins  | 223825  |  Bacharel em Ciências da Computação e Engenheiro de Software|
-> | Denise Fernandes Barbosa  | 161452  | Ciências da Cirurgia e Odontologista do Sono|
+> | Denise Fernandes Barbosa  | 161452  | Ciências da Cirurgia e Odontologia do Sono|
 
 
 # Descrição Resumida do Projeto
