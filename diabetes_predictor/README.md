@@ -14,6 +14,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
+> CRIAR UMA INTRODUÇÃO MAIS ELABORADA 
 
 O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar no desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto. O resultado do projeto poderá ser utilizado como medida auxiliadora de políticas públicas ao fornecer subsídios para entender quais populações têm o maior risco de desenvolver diabetes. 
 
