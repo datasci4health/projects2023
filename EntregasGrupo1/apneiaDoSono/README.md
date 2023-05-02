@@ -6,6 +6,7 @@
 
 O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2023, na Unicamp.
 
+
 > ## **Membros do grupo.**
 > |**Nome**  | **RA** | **Especialização**|
 > |--|--|--|
@@ -17,27 +18,29 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Descrição Resumida do Projeto
 
-> Neste estudo retrospectivo, investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono.
->
->Seguiremos por algumas etapas para execução de um projeto relacionado com pacientes portadores de ronco e apneia obstrutiva do sono.
->
->Incluiremos dados retrospectivos de exames de polissonografia tipo IV de pacientes antes e depois de receberem o tratamento com dispositivo de avanço mandibular. 
->
->Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
->
->O gerenciamento de nossas ações será feito utilizando a ferramenta de gestão de atividades Trello para agilizarmos as entregas e cumprirmos os prazos. 
+Neste estudo retrospectivo, investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono.
 
+Seguiremos por algumas etapas para execução de um projeto relacionado com pacientes portadores de ronco e apneia obstrutiva do sono.
+
+Incluiremos dados retrospectivos de exames de polissonografia tipo IV de pacientes antes e depois de receberem o tratamento com dispositivo de avanço mandibular. 
+
+Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
+
+O gerenciamento de nossas ações será feito utilizando a ferramenta de gestão de atividades Trello para agilizarmos as entregas e cumprirmos os prazos. 
+
+> # Nota:
+> **Para mais informação consulte:** [video de apresentação do grugo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
 
 # Perguntas de Pesquisa
-> As questões de pesquisa a serem abordadas serão:
+As questões de pesquisa a serem abordadas serão:
 
-> - **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
-> - **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
-> - **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
+- **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
+- **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
+- **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
 
 # Bases de Dados
 
-> Neste projeto, pretendemos utilizar um conjunto de dados de pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes serão monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação.
+Neste projeto, pretendemos utilizar um conjunto de dados de pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes serão monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação.
 
 # Metodologia
 
@@ -70,5 +73,4 @@ No decorrer da análise, pode se fazer necessário adotar novas ferramentas ou t
 |05/Mai/2023|Análise exploratória dos dados|Entendimento da organização e distribuição dos dados|
 |12/Mai/2023|Primeira versão das respostas para os questionamentos do projeto|Respostas preliminares, baseadas em dados, junto com sua análise|
 |15/Mai/2023|Segunda entrega do projeto|Segunda entrega do projeto|
-
 
