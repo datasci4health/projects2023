@@ -14,9 +14,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-> CRIAR UMA INTRODUÇÃO MAIS ELABORADA 
+As doenças crônicas são as principais cuasas de morte no Brasil e no mundo, sendo a diabetes uma doença cronica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabeste tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são os determinantes sociais de saúde (SDOH), como habitos alimentares, atividade fisica, renda e outras questões de saúde, o que torna importante o debate dessa doença em ambito populacional. Dessa forma nosso projeto se prope a desenvolver uma ferramenta que auxilie governantes e resposnsaveis tecnicos a identificarem os fatores de risco em sua população para o desenvolvimento de diabetes e assim facilitar o desenvovlimento de estrategias para lidar com essa questão em sua região. 
 
-O projeto busca entender como os hábitos de uma pessoa ligados ao contexto social e econômico em que ela está inserida podem afetar no desenvolvimento de diabetes, a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto. O resultado do projeto poderá ser utilizado como medida auxiliadora de políticas públicas ao fornecer subsídios para entender quais populações têm o maior risco de desenvolver diabetes. 
+Faremos isso a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto
 
 Link para vídeo de apresentação da proposta do projeto:
 
