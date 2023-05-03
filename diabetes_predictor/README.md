@@ -23,8 +23,12 @@ Link para vídeo de apresentação da proposta do projeto:
 https://youtu.be/Ti_Q1Hb_aM4
 
 # Perguntas de Pesquisa
+**Objetivo geral**
+Modelar determinantes sociais de saúde (SDOH) em populações de capitais brasileiras para o desenvolvimento de diabetes.
 
-Investigar se uma pessoa tem ou não diabetes baseado em fatores sociais, econômicos e de saúde em grandes capitais do Brasil.
+**Objetivos especificos*
+1. Determinar principais variaveis socioeconomicas e de saúde associadas ao desfecho diabetes.
+2. Analisar possiveis diferenças de habitos dos anos pré e durante pandemia
 
 # Bases de Dados
 
