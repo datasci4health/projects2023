@@ -14,9 +14,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Descrição Resumida do Projeto
-As doenças crônicas são as principais cuasas de morte no Brasil e no mundo, sendo a diabetes uma doença cronica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabeste tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são os determinantes sociais de saúde (SDOH), como habitos alimentares, atividade fisica, renda e outras questões de saúde, o que torna importante o debate dessa doença em ambito populacional. Dessa forma nosso projeto se prope a desenvolver um modelo de aprendizagem de maquina que auxilie governantes e resposáveis técnicos a identificarem os fatores de risco em sua população para o desenvolvimento de diabetes e assim facilitar o desenvovlimento de estratégias para lidar com essa questão em sua região. 
+As doenças crônicas são as principais causas de morte no Brasil e no mundo, sendo a diabetes uma doença cronica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabetes tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são os determinantes sociais de saúde (SDOH), como hábitos alimentares, atividade física, renda e outras questões de saúde, o que torna importante o debate dessa doença em âmbito populacional. Dessa forma nosso projeto se propõe a desenvolver um modelo de aprendizagem de máquina que auxilie governantes e resposáveis técnicos a identificarem os fatores de risco em sua população para o desenvolvimento de diabetes e assim facilitar o desenvovlimento de estratégias para lidar com essa questão em sua região. 
 
-Faremos isso a partir do uso de aprendizado de máquina. O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto
+O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto.
 
 Link para vídeo de apresentação da proposta do projeto:
 
@@ -47,7 +47,7 @@ Para fortalecer o debate sobre o tema escolhido pelo grupo (diabetes) elaboramos
 
 Após definir a base de dados que vamos usar, classificamos as variaveis todas as variaveis do [dicionario](https://docs.google.com/spreadsheets/d/1aNySJ5izNeSEnhFt3PwWIv_5IPRt3P12/edit?usp=sharing&ouid=106016703712140707137&rtpof=true&sd=true) geral (contém as variaveis de todos os anos) em 3 categorias, (1) muito relevante; (2) pouco relevante e (3) irrelevante para o desfecho do nosso estudo. A classficação das variaveis foi feita com base em informações já consolidadas sobre os principais temas relacionados a diabetes, com o objetivo de reduzir o número de variáveis a serem analisadas porteriormente. 
 
-Para nosso estudo vamos usar somente os **anos de 2019, 2020 e 2021**, fizemos uma análise de correlação com todas as variáveis calssificadas como (1) muito relevante existentes nos anos selecionados. Com base nas variáveis presentes no período selecionado, criamos uma [serie de perguntas](https://docs.google.com/document/d/1_7RMeBFHca32wVxBhwUvWz-3Or6s_1LFaEVwYnwiljg/edit?usp=share_link) para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/graficos descritivas. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação a diabetes. 
+Para nosso estudo vamos selecionar os anos que melhor explicam os hábitos da população atualmente, a partir de uma análise de correlação com todas as variáveis calssificadas como (1) muito relevante existentes nos anos selecionados. Com base nas variáveis presentes no período selecionado, criamos uma [serie de perguntas](https://docs.google.com/document/d/1_7RMeBFHca32wVxBhwUvWz-3Or6s_1LFaEVwYnwiljg/edit?usp=share_link) para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/graficos descritivas. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação a diabetes. 
 
 A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento dos dados. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmetaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
@@ -72,7 +72,7 @@ Ferramente de dados: Python, Google Colab, bibliotecas de manipulação de dados
 
 |Data  | Entrega Esperada |
 |--|--|
-| 14 de maio | Resultado parcial: análise descritiva estratificada por grupos, modelo baseline. 4 primeiras etapas do CRISP-DM   |
-| 22 de junho | Modelo refinado e finalizado. Últimas etapas de metodologia  |
+| 14 de maio | Resultado parcial: análise descritiva estratificada por grupos, seleção de dados. 3 primeiras etapas do CRISP-DM   |
+| 22 de junho | Modelo refinado e finalizado. Últimas etapas da metodologia  |
 | 22 ou 27 de junho  | Apresentação  |
 
