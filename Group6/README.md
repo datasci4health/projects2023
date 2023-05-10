@@ -10,9 +10,9 @@ This project originated in the context of the activities of the postgraduate dis
 | Name | RA | Specialization |
 | -------- | -------- | -------- |
 | Natalia Gil Canto  | 232881  | Electrical and Computing Engineering  |
-| Sadeeq Olalekan Bello  | 198346  | Computing - Leader Github - Lekzyboi  |
+| Sadeeq Olalekan Bello  | 198346  | Computing - Leader Github - Lekzyboi |
 | Temitope Kola Adebowale | 256247 | Computing  |
-| Suelen Aparecida Ribeiro de Souza  | 252483 | FCM  |
+| Suelen Aparecida Ribeiro de Souza  | 252483 | FCM |
 
 
 # Summary Description of the Project
