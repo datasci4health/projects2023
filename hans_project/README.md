@@ -36,7 +36,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Bases de Dados
 > |Fonte | Descrição|
 > |--|--|
-> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
+> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://portalsinan.saude.gov.br/hanseniase) |
+> |[Indicadores Epidemiológicos](http://indicadoreshanseniase.aids.gov.br/) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
 
 # Metodologia
 > Será realizada uma análise exploratória de dados para identificar e selecionar características que mostrem correlação com os desfechos da doença. A partir desses dados, será utilizado um modelo de aprendizado de máquina que realize previsões quanto ao tempo de cura dos pacientes analisados. Para concluir o estudo, análises estatísticas serão realizadas para testar as hipóteses formuladas. 
