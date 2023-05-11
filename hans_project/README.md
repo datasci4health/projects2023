@@ -36,7 +36,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Bases de Dados
 > |Fonte | Descrição|
 > |--|--|
-> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://portalsinan.saude.gov.br/hanseniase) |Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos por o Sistema de Vigilância Epidemiológica nível municipal, estadual e nacional.|
+> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://portalsinan.saude.gov.br/hanseniase) |Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica nível municipal, estadual e nacional.|
 > |[Indicadores Epidemiológicos](http://indicadoreshanseniase.aids.gov.br/) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização dos indicadores e dados básicos de Hanseníase ocorridos no Brasil analizados por região, estado e município.| 
 
 # Metodologia
