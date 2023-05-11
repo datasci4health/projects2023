@@ -2,8 +2,6 @@ import pandas as pd
 import geopandas as gpd
 from pense_dict import PenseDict
 
-PENSE_DICT = PenseDict()
-
 BRAZIL_MAP_GPD = gpd.read_file('../assets/brazil-states.geojson')
 BRAZIL_MAP_GPD['codigo_ibg'] = BRAZIL_MAP_GPD['codigo_ibg'].astype(int)
 

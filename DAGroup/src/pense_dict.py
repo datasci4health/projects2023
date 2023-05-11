@@ -33,3 +33,6 @@ class PenseDict:
     def get_pv_dict(self, cod):
         dictionary = self.get_df_cod(cod)[['pv', 'pv_desc']].set_index('pv')['pv_desc'].to_dict()
         return {int(k): v for k, v in dictionary.items()}
+
+
+PENSE_DICT = PenseDict()

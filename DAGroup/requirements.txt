@@ -6,3 +6,4 @@ jupyter
 matplotlib
 xlrd
 seaborn
+openpyxl
