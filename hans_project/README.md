@@ -12,7 +12,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | Giovanna Gennari Jungklaus  | 198010  | Computação - [Conta GitHub](https://github.com/gigennari)|
 > | José Ernesto Stelzer Monar  | 139553  | Computação - [Conta GitHub](https://github.com/stelzer-monar-ifood)|
 > | Maria Clara Castro Higino de Sousa  | 243237  | Computação - [Conta GitHub](https://github.com/mc-castro)|
-> | Miriam Reyes Ortiz  | 265762  | Saúde  |
+> | Miriam Reyes Ortiz  | 265762  | Saúde - [Conta GitHub] (https://github.com/MiriamOrtiz)|
 
 
 # Descrição Resumida do Projeto
