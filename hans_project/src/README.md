@@ -10,9 +10,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |--|--|--|
 > | Alexsandro Ferreira de Barros Júnior  | 233768  | Computação - Líder Github - [Conta GitHub](https://github.com/alexbjr) |
 > | Giovanna Gennari Jungklaus  | 198010  | Computação - [Conta GitHub](https://github.com/gigennari)|
-> | José Ernesto Stelzer Monar  | 139553  | Computação - [Conta GitHub](https://github.com/stelzer-monar-ifood)|
+> | José Ernesto Stelzer Monar  | 139553  | Computação - [Conta GitHub](https://github.com/stelzer-monar)|
 > | Maria Clara Castro Higino de Sousa  | 243237  | Computação - [Conta GitHub](https://github.com/mc-castro)|
-> | Miriam Reyes Ortiz  | 265762  | Saúde  |
+> | Miriam Reyes Ortiz  | 265762  | Saúde - [Conta GitHub](https://github.com/MiriamOrtiz)|
 
 
 # Descrição Resumida do Projeto
@@ -36,10 +36,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Bases de Dados
 > |Fonte | Descrição|
 > |--|--|
-> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://indicadoreshanseniase.aids.gov.br) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização de todos os casos de hanseníase ocorridos no Brasil assim como diversas informações associadas a cada caso por paciente.| 
+> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://portalsinan.saude.gov.br/hanseniase) |Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica nível municipal, estadual e nacional.|
+> |[Indicadores Epidemiológicos](http://indicadoreshanseniase.aids.gov.br/) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização dos indicadores e dados básicos de Hanseníase ocorridos no Brasil analizados por região, estado e município.| 
 
 # Metodologia
-> Será realizada uma análise exploratória de dados para identificar e selecionar características que mostrem correlação com os desfechos da doença. A partir desses dados, será utilizado um modelo de aprendizado de máquina que realize previsões quanto ao tempo de cura dos pacientes analisados. Para concluir o estudo, análises estatísticas serão realizadas para testar as hipóteses formuladas. 
+> Será realizada uma análise exploratória de dados para identificar e selecionar características que mostrem correlação com os desfechos da doença. A partir desses dados, será utilizado um modelo de aprendizado de máquina que realize previsões quanto ao tempo de cura dos pacientes analisados. Para concluir o estudo, análises estatísticas serão realizadas para testar as hipóteses formuladas.
 
 ## Bases de Dados e Evolução
 > Elencar bases de dados estudadas e/ou utilizadas no projeto, organizando em duas partes. Primeiro aquelas que foram estudadas, mas não serão usadas e em seguida as bases adotadas.
@@ -78,7 +79,6 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 > Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
 > Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
 
-
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas e bibliotecas:
 >
@@ -92,7 +92,7 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 > |[Geopandas](https://geopandas.org/en/stable/) |Biblioteca de visualização para plotar dados geoespaciais em mapas| 
 > |[Folium](https://pypi.org/project/folium/) |Biblioteca para visualização de dados geográficos interativos| 
 > |[Imageio](https://pypi.org/project/imageio/) |Biblioteca Python para ler e escrever uma ampla gama de formatos de imagem, vídeo e áudio|
-> |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativos|
+> |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativos| 
 
 # Cronograma
 > |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
