@@ -1,0 +1,29 @@
+index,origin,desc,pv
+uf,V0001,Unidade da Federação,"{11: 'Rondônia', 12: 'Acre', 13: 'Amazonas', 14: 'Roraima', 15: 'Pará', 16: 'Amapá', 17: 'Tocantins', 21: 'Maranhão', 22: 'Piauí', 23: 'Ceará', 24: 'Rio Grande do Norte', 25: 'Paraíba', 26: 'Pernambuco', 27: 'Alagoas', 28: 'Sergipe', 29: 'Bahia', 31: 'Minas Gerais', 32: 'Espírito Santo', 33: 'Rio de Janeiro', 35: 'São Paulo', 41: 'Paraná', 42: 'Santa Catarina', 43: 'Rio Grande do Sul', 50: 'Mato Grosso do Sul', 51: 'Mato Grosso', 52: 'Goiás', 53: 'Distrito Federal'}"
+moradores,V0022,Total de moradores,{}
+tipo_zona,V0026,Tipo de situação censitária,"{1: 'Urbano', 2: 'Rural'}"
+renda_pc,VDF004,"Faixa de rendimento domiciliar per capita (exclusive o rendimento das pessoas cuja condição na unidade domiciliar era pensionista, empregado doméstico ou parente do empregado doméstico)","{1: 'Até ¼ salário mínimo', 2: 'Mais de ¼ até ½ salário mínimo', 3: 'Mais de ½ até 1 salário mínimo', 4: 'Mais de 1 até 2 salários mínimos', 5: 'Mais de 2 até 3 salários mínimos', 6: 'Mais de 3 até 5 salários mínimos', 7: 'Mais de 5 salários mínimos'}"
+casa_tipo,A001,Tipo do domicílio,"{1: 'Casa', 2: 'Apartamento', 3: 'Habitação em casa de cômodos, cortiço ou cabeça de porco', 9: 'Ignorado'}"
+casa_animal,A02201,"Em seu domicílio, há algum animal de estimação","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+cad_sus,B001,O seu domicílio está cadastrado na unidade de saúde da família,"{1: 'Sim', 2: 'Não', 3: 'Não sabe', 9: 'Ignorado'}"
+sexo,C006,Sexo,"{1: 'Homem', 2: 'Mulher'}"
+idade,C008,Idade do morador na data de referência,{}
+cor,C009,Cor ou raça,"{1: 'Branca', 2: 'Preta', 3: 'Amarela', 4: 'Parda', 5: 'Indígena', 9: 'Ignorado'}"
+vive_conjugue,C01001,Cônjuge ou companheiro(a) mora em nesse domicílio.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+sabe_ler,D001,Sabe ler e escrever,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+escolaridade,D00901,Qual foi o curso mais elevado que ___frequentou,"{1: 'Creche', 2: 'Pré-escola', 3: 'Classe de alfabetização – CA', 4: 'Alfabetização de jovens e adultos', 5: 'Antigo primário (elementar)', 6: 'Antigo ginasial (médio 1º ciclo)', 7: 'Regular do ensino fundamental ou do 1º grau', 8: 'Educação de jovens e adultos (EJA) ou supletivo do ensino fundamental', 9: 'Antigo científico, clássico etc. (médio 2º ciclo)', 10: 'Regular do ensino médio ou do 2º grau', 11: 'Educação de jovens e adultos (EJA) ou supletivo do ensino médio', 12: 'Superior – graduação', 13: 'Especialização de nível superior (duração mínima de 360 horas)', 14: 'Mestrado', 15: 'Doutorado', 99: 'Ignorado'}"
+peso,P00104,"Peso - Final (em kg)
+(3 inteiros e 1 casa decimal)",{}
+altura,P00404,"Altura - Final (em cm)
+(3 inteiros)",{999: 'Ignorado'}
+freq_feijao_sem,P006,Em quantos dias da semana o(a) Sr(a) costuma comer feijão?,"{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+freq_verde_sem,P00901,"Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha?","{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+freq_carne_vermelha_sem,P01101,"Em quantos dias da semana o(a) Sr(a) costuma comer carne vermelha (boi, porco, cabrito, bode, ovelha etc.)?","{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+freq_frango_sem,P013,Em quantos dias da semana o(a) Sr(a) costuma comer frango/galinha?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+freq_peixe_sem,P015,Em quantos dias da semana o(a) Sr(a) costuma comer peixe?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+freq_fruta_sem,P018,Em quantos dias da semana o(a) Sr(a) costuma comer frutas?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+freq_fruta_dia,P019,"Em geral, quantas vezes por dia o(a) Sr(a) come frutas?","{1: 'Uma vez por dia', 2: 'Duas vezes por dia', 3: 'Três vezes ou mais por dia.', 9: 'Ignorado'}"
+freq_leite_sem,P023,"Em quantos dias da semana o(a) Sr(a) costuma tomar leite? (de origem animal: vaca, cabra, búfala etc.)","{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+teve_depre,Q092,Algum médico ou profissional de saúde mental (como psiquiatra ou psicólogo) já lhe deu o diagnóstico de depressão?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+phq9_total,*,Valor de risco para depressão segundo questionario PHQ9,{}
+depression_severity,*,Classificação risco de depressão,"{1: 'Nenhum ou mínimo', 2: 'Leve', 3: 'Moderada', 4: 'Moderadamente Grave', 5: 'Grave'}"

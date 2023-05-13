@@ -24,15 +24,13 @@ def break_string(string, max_len):
     return '\n'.join(lines)
 
 
-def plot_pie(df, cod, ddict, ax=None, max_len=None):
-    question = ddict.get_question(cod)
+def plot_pie(df, cod, title, desc_dict=None, ax=None, max_len=None):
     df = df[cod].value_counts()
-
     ax = df.plot(kind='pie', autopct='%1.1f%%', labels=None, legend=True, ax=ax)
-    desc_dict = ddict.get_pv_dict(cod)
-    ax.legend([desc_dict[v] for v in df.index.values])
+    if desc_dict is not None:
+        ax.legend([desc_dict[v] for v in df.index.values])
     ax.set_ylabel('Porcentagem')
-    ax.set_title(break_string(question, max_len))
+    ax.set_title(break_string(title, max_len))
 
 
 def plot_geopandas(df, uf_key, title=None):
