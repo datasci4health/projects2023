@@ -41,6 +41,44 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Metodologia
 > Será realizada uma análise exploratória de dados para identificar e selecionar características que mostrem correlação com os desfechos da doença. A partir desses dados, será utilizado um modelo de aprendizado de máquina que realize previsões quanto ao tempo de cura dos pacientes analisados. Para concluir o estudo, análises estatísticas serão realizadas para testar as hipóteses formuladas. 
 
+## Bases de Dados e Evolução
+> Elencar bases de dados estudadas e/ou utilizadas no projeto, organizando em duas partes. Primeiro aquelas que foram estudadas, mas não serão usadas e em seguida as bases adotadas.
+
+### Bases Estudadas mas Não Adotadas
+
+> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+
+> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> * O que descobriu sobre esse banco?
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> * Por que este banco não foi adotado?
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+### Bases Estudadas e Adotadas
+
+> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+
+> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> * Qual o esquema/dicionário desse banco (o formato é livre)?
+> * O que descobriu sobre esse banco?
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+### Integração entre Bases e Análise Exploratória
+
+> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+> Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
+> Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
+
+
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas e bibliotecas:
 >
@@ -50,7 +88,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |[Numpy](https://numpy.org/) |Biblioteca para cálculos matemáticos e estatísticos| 
 > |[Scikit-learn](https://scikit-learn.org/stable/) |Biblioteca para modelagem preditiva e aprendizado de máquina| 
 > |[Matplotlib](https://matplotlib.org/) e [Seaborn](https://seaborn.pydata.org/) |Bibliotecas para visualização de dados| 
-> |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativoss| 
+> |[Pandas Profiling](https://pypi.org/project/pandas-profiling/) |Biblioteca para geração de relatório descritivo de um conjunto de dados| 
+> |[Geopandas](https://geopandas.org/en/stable/) |Biblioteca de visualização para plotar dados geoespaciais em mapas| 
+> |[Folium](https://pypi.org/project/folium/) |Biblioteca para visualização de dados geográficos interativos| 
+> |[Imageio](https://pypi.org/project/imageio/) |Biblioteca Python para ler e escrever uma ampla gama de formatos de imagem, vídeo e áudio|
+> |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativos|
 
 # Cronograma
 > |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
