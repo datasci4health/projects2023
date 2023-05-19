@@ -71,6 +71,7 @@ SELECTED_COLUMNS = {
     'D001': 'sabe_ler',
     'D007': 'outro_curso_superior',
     'D00901': 'escolaridade',
+    'escolaridade_agregada': 'escolaridade_agregada',
 
     # Módulo E - Características de trabalho das pessoas de 14 anos ou mais de idade
     'E01201': 'cargo_cod',
@@ -419,6 +420,16 @@ UPDATE_DICT = {
     'renda_trabalho':{
         'origin': 'E01602|E01604|E01802|E01804',
         'desc': "Valor total de rendimentos por mes"
+    },
+    'escolaridade_agregada': {
+        'origin': 'D00901',
+        'desc': "Nível de escolaridade",
+        'pv': {
+            1: 'Sem instrução e fundamental incompleto',
+            2: 'Fundamental completo e médio incompleto',
+            3: 'Médio completo e superior incompleto',
+            4: 'Superior completo'
+        }
     },
     'horas_semanais_trabalho': {
         'origin': 'E017|E019',
