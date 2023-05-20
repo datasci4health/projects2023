@@ -70,6 +70,26 @@ Este trabalho de forma geral procura avaliar e descobrir os fatores de risco par
 - Realização de uma análise estatística, utilizando técnicas de estatística descritiva e visualização, como gráficos de dispersão, caixa, e barras, a fim de extrair conhecimento dos dados.
 - Aplicação de técnicas de aprendizado de máquina (regressão), que nos permita uma análise aprofundada e a quantificação da relevância de cada característica para variável de interesse (depressão). 
 
+## Análise Exploratória
+
+As análises feitas utilizaram como base os dados provenientes da PNS (2019). Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se na análise apenas perguntas que estivessem relacionadas diretamente aos habitos alimentares, diagnósticos recentes de doenças crônicas, às características do domicílio, e das pessoas entrevistadas.
+
+Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, Fundamental completo e médio incompleto, Médio completo e superior incompleto, Superior completo.
+
+Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: Nenhum ou mínimo, Leve, Moderada, Moderadamente Grave, Grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
+
+### Características descritivas da população
+
+![Sexo e cor/raça da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png?raw=true)
+![Idade e peso da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png?raw=true)
+![Nível escolar e renda per capita da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png?raw=true)
+
+
+### Correlações de interesse
+
+![Correlacoes de interesse com depressao](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png?raw=true)
+
+Aplicando-se o teste de independência de $x^2$ para análise da população masculina e feminina utilizando como parâmetro o nível de PHQ9, é possível determinar que são distribuições diferentes. Isto indica maior associação de depressão ao sexo feminino.
 
 # Estudo bibliográfico
 
