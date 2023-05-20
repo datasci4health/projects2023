@@ -59,21 +59,7 @@ Considerando as características da doença e a variação das variáveis fornec
 > Para identificar padrões espaciais de ocorrência e abandono, determinou-se a proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes como um indicador para avaliar a qualidade da atenção e do acompanhamento dos casos novos diagnosticados até a completude do tratamento. Para o cálculo do indicador foram usados os casos novos de hanseníase diagnosticados nos anos das coortes que abandonaram o tratamento até 31/12 do ano de avaliação, dividido pelo total de casos novos diagnosticados nos anos das coortes, multiplicado por 100. O qualidade de atenção pode catalogar se como Bom <10%, Regular de 10 a 24.9% e Precário >= 25%. Para esse indicador foi usado o município de residência atual dos casos notificados, sendo excluídos aqueles casos com tipo de saída “erro de diagnóstico” no banco de dados. Segundo o parâmetro obtido foram criados mapas temáticos por ano.
 
 ## Bases de Dados e Evolução
-> Elencar bases de dados estudadas e/ou utilizadas no projeto, organizando em duas partes. Primeiro aquelas que foram estudadas, mas não serão usadas e em seguida as bases adotadas.
-
-### Bases Estudadas mas Não Adotadas
-
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
-
-Base de Dados | Endereço na Web | Resumo descritivo
------ | ----- | -----
-Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
-
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
-> * O que descobriu sobre esse banco?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
-> * Por que este banco não foi adotado?
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+> Bases de dados estudadas e/ou utilizadas no projeto.
 
 ### Bases Estudadas e Adotadas
 
