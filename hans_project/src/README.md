@@ -124,7 +124,7 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 
 # Dicionário / Roteiro
 > 
-> MODOS DE ENTRADA
+> * MODOS DE ENTRADA
 > 
 > Caso novo: corresponde ao caso de hanseníase que nunca recebeu qualquer tratamento específico.
 > 
@@ -135,7 +135,7 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 > Recidiva: pacientes que receberam alta por cura depois de serem tratados adequadamente com o esquema multidrogas e saíram do registro ativo do SINAN e que após o período de cura (geralmente superior a cinco anos)voltaram a apresentar novos sinais e sintomas clínicos da doença. Esses casos são notificados no modo de entrada ao sistema como “recidiva”.
 > 
 > 
-> DADOS CLÍNICOS / EPIDEMIOLÓGICOS
+> * DADOS CLÍNICOS / EPIDEMIOLÓGICOS
 > 
 > Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
 > 
@@ -158,7 +158,7 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
 >
 >
-> MODOS DE SAÍDA
+> * MODOS DE SAÍDA
 >
 > Alta por cura: implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), junto com avaliação médica (neurológica, grau de incapacidade e orientação para os cuidados) o que leva a saída do paciente do registro ativo no SINAN.
 > 
@@ -167,7 +167,7 @@ Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, d
 > Outros encerramentos possíveis são transferência para o mesmo município, para outro município, estado ou país, óbito por hanseníase ou por outra causa como erro diagnóstico.
 > 
 > 
-> INDICADORES
+> * INDICADORES
 > 
 > Os indicadores de saúde permitem a comparação entre diferentes áreas ou momentos e fornecem subsídios ao planejamento das ações de saúde. Existem dois grupos de indicadores para o monitoramento da hanseníase: 
 >
