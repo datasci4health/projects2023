@@ -60,6 +60,11 @@ class PnsDict:
     def __init__(self):
         self.df = pd.read_csv('../data/processed/PNS_2019/dictionary.csv')
 
+        def _convert_str_dict(d):
+            return ast.literal_eval(d)
+
+        self.df['pv'] = self.df['pv'].apply(_convert_str_dict)
+
     def get_df_cod(self, cod):
         return self.df[self.df['index'] == cod]
 
@@ -70,7 +75,7 @@ class PnsDict:
             return ''
 
     def get_pv_dict(self, cod):
-        return ast.literal_eval(self.get_df_cod(cod)['pv'].values[0])
+        return self.get_df_cod(cod)['pv'].values[0]
 
 
 PNS_DICT_RAW = PnsDictRaw()

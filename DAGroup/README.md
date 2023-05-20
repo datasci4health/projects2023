@@ -108,7 +108,42 @@ Para realizar uma análise sobre a prevalência de depressão na população da 
 
 ![Correlacoes de interesse com depressao](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png?raw=true)
 
-Aplicando-se o teste de independência de $x^2$ para análise da população masculina e feminina utilizando como parâmetro o nível de PHQ9, é possível determinar que são distribuições diferentes. Isto indica maior associação de depressão ao sexo feminino.
+### Testes de asscociaçao
+
+| Variáveis confrontadas                                 |        χ2 |   p-value |
+|:-------------------------------------------------------|----------:|----------:|
+| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
+| Raça-cor e renda per capita                            |   7517.54 |         0 |
+| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
+| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
+| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
+| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
+
+
+
+| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20)      |      χ2 |    p_value |
+|:------------------------------------------------------------------------------|--------:|-----------:|
+| Sexo                                                                          |  650.12 |          0 |
+| Cor                                                                           |   27.46 |    0.00005 |
+| Categoria idade                                                               |   23.64 |          0 |
+| Escolaridade                                                                  |    9.63 |    0.02198 |
+| Percepção da própria saúde                                                    | 3007.41 |          0 |
+| Percepção da saúde segundo a OMS                                              | 4762.96 |          0 |
+| Possui animal de estimação?                                                   |    2.64 |   0.10445* |
+| Renda per capita                                                              |  263.28 |          0 |
+| Frequência bebida alcoólica                                                   |    2.61 |   0.27098* |
+| Fuma tabaco                                                                   |  101.61 |          0 |
+| Atividade física nos últimos 3 meses                                          |  105.78 |          0 |
+| Teve diagnostico artrite ou reumatismo                                        |  183.69 |          0 |
+| Teve diagnostico AVC                                                          |   50.22 |          0 |
+| Teve diagnostico doenças cardiovasculares                                     |  150.73 |          0 |
+| Teve diagnostico hipercolesterolemia                                          |  130.91 |          0 |
+| Teve diagnostico diabete                                                      |   13.57 |    0.00023 |
+| Teve diagnostico pressão alta                                                 |   35.73 |          0 |
+| Teve diagnostico câncer                                                       |    5.25 |    0.02193 |
+
+
+Aplicando-se o teste de independência de χ2 para análise da população masculina e feminina utilizando como parâmetro o nível de PHQ9, é possível determinar que são distribuições diferentes. Isto indica maior associação de depressão ao sexo feminino.
 
 # Estudo bibliográfico
 
