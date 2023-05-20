@@ -1,5 +1,5 @@
 
-# Projeto `Impacto da suplementação de ferro na doação de sangue`
+# Projeto `Avaliação da Correlação entre os Parâmetros Renais CK e CPK e a Administração Intravenosa de Insulina em Pacientes com Obesidade`
 
 # Apresentação
 
@@ -14,7 +14,15 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Descrição Resumida do Projeto
 
-A doação de sangue é uma prática importante para salvar vidas, no entanto, pode levar a uma diminuição dos níveis de ferro no doador, o que pode ter um impacto negativo na qualidade dos hemocomponentes. A suplementação de ferro é uma forma de aumentar os níveis de ferro no sangue, no entanto, há uma necessidade de investigar o seu impacto na qualidade dos hemocomponentes em doadores de sangue saudáveis.
+A obesidade é uma condição de saúde crescente em todo o mundo, afetando milhões de pessoas e apresentando diversos riscos à saúde, incluindo o desenvolvimento de diabetes tipo 2. A administração adequada de insulina é fundamental para o controle glicêmico em pacientes obesos com diabetes. No entanto, a dosagem correta de insulina e o método de administração ainda são desafios significativos na prática clínica.
+
+Nesse contexto, uma área de pesquisa promissora é a investigação da relação entre os parâmetros renais CK (creatina quinase) e CPK (creatina fosfoquinase) e a escolha da administração intravenosa de insulina em pacientes com obesidade. Estudos anteriores sugerem que níveis elevados desses marcadores renais podem estar associados a complicações metabólicas e renais em pacientes obesos com diabetes.
+
+O objetivo deste projeto é analisar se há uma correlação entre os exames laboratoriais de CK e CPK e a decisão de administrar insulina intravenosa em pacientes obesos. Além disso, buscamos determinar o tamanho da oportunidade de aumento na administração intravenosa de insulina em pacientes obesos, com base nos resultados obtidos.
+
+Para alcançar esses objetivos, será conduzido um estudo retrospectivo envolvendo uma amostra representativa de pacientes obesos com diabetes, cujos dados laboratoriais de CK, CPK e a forma de administração de insulina estão disponíveis nos registros médicos. As informações serão analisadas estatisticamente, utilizando métodos apropriados, para identificar possíveis correlações entre os parâmetros renais e a administração intravenosa de insulina.
+
+Espera-se que os resultados desse estudo possam fornecer insights valiosos para os profissionais de saúde envolvidos no tratamento de pacientes obesos com diabetes. Além disso, a análise da oportunidade de aumento na administração intravenosa de insulina poderá ajudar a melhorar as estratégias terapêuticas e promover uma abordagem mais individualizada no tratamento desses pacientes, com potenciais benefícios na gestão do diabetes e na prevenção de complicações metabólicas e renais.
 
 Link para video:
 https://drive.google.com/file/d/1ZVwDOocFzThgN53GMuOPy3mcSKYTh6Pq/view?usp=sharing
@@ -22,21 +30,52 @@ https://drive.google.com/file/d/1ZVwDOocFzThgN53GMuOPy3mcSKYTh6Pq/view?usp=shari
 
 # Perguntas de Pesquisa
 
-Como a suplementação de ferro afeta os hemocomponentes de doadores de sangue?
+1. Existe uma correlação entre os exames laboratoriais de CK e CPK (parâmetros renais) e a escolha de administração de insulina intravenosa em pacientes com obesidade? 
 
-# Bases de Dados
-
-- [Pub med](https://pubmed.ncbi.nlm.nih.gov/)
-- [Embase](https://www.embase.com/)
-- [Uptodate](https://www.uptodate.com/)
-- [library Cochrane](https://www.cochranelibrary.com/)
-- [Scopus](https://www.scopus.com/home.uri)
+2. Qual é o tamanho da oportunidade de aumento na administração intravenosa de insulina em pacientes obesos?
 
 # Metodologia
 
-1. Analisar uma coletânea de artigos
-2. Observar parâmetros relativos aos hemocomponentes
-3. Usar analise estatísticas descritivas para gerar conclusões a respeito da suplementação de ferro
+1. Processar dados do MIMIC-IV
+2. Observar parâmetros relativos ao CK e CPK e a administração intravenosa de insulina
+3. Usar analise estatísticas descritivas para gerar conclusões
+
+# Bases de Dados e Evolução
+
+### Bases Estudadas mas Não Adotadas
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Pub med (e outras bases de artigos) | https://pubmed.ncbi.nlm.nih.gov/ | Base de artigos sobre literatura biomedica.
+
+> //TODO:
+> O que descobriu sobre esse banco?
+> Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> Por que este banco não foi adotado?
+> Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+### Bases Estudadas e Adotadas
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+MIMIC-IV<sup>1</sup> | https://physionet.org/content/mimiciv/2.2/ | O banco de dados Medical Information Mart for Intensive Care (MIMIC) fornece dados de cuidados intensivos para mais de 40.000 pacientes internados em unidades de terapia intensiva no Beth Israel Deaconess Medical Center (BIDMC).
+
+<sup>1</sup>Johnson, Alistair, et al. "MIMIC-IV" (version 2.2). PhysioNet (2023), https://doi.org/10.13026/6mm1-ek67.
+
+
+> TODO:
+> Qual o esquema/dicionário desse banco (o formato é livre)?
+> O que descobriu sobre esse banco?
+> Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+
+### Integração entre Bases e Análise Exploratória
+
+> TODO:
+> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+> Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
+> Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
 
 # Ferramentas
 
@@ -48,7 +87,6 @@ Como a suplementação de ferro afeta os hemocomponentes de doadores de sangue?
 
 # Cronograma
 
-1. Analisar uma coletânea de artigos: 3 semanas
-2. Gerar base de dados relativa aos hemocomponentes: 2 semanas
+1. Processar dados do MIMIC-IV: 3 semanas
 3. Usar técnicas de análise estatística: 4 semanas
-4. Escrever o texto relativo aos resultados obtidos na 3 etapa: 2 semanas
+4. Escrever o texto relativo aos resultados obtidos na 3 etapa: 3 semanas
