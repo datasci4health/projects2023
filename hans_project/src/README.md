@@ -64,9 +64,25 @@ Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan
 
 > Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
+> Sim, link para o dicionário de dados.
 > * O que descobriu sobre esse banco?
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil é um projeto que reúne informações socioeconômicas e demográficas sobre o Brasil. Ele oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
+
+> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> * Qual o esquema/dicionário desse banco (o formato é livre)?
+> Sim, é um site de consulta em que você seleciona quais indicadores (educação, desenvolvimento humano, renda, etc) e quais territorialidade deseja acessar. Nessse caso, foi selecionado apenas o IDH por estado ao longo dos anos.
+> * O que descobriu sobre esse banco?
+> Ele oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+> Foi feita uma análise de correlação do IDH com a quantidade de casos novos nos estados em cada ano, indicando uma correlação negativa, mas muito baixa (0.28)
 
 ### Integração entre Bases e Análise Exploratória
 
