@@ -67,9 +67,11 @@ Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan
 > * O que descobriu sobre esse banco?
 > 
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> 
 > Foram feitos filtros na base para remoção de duplicadas, para selecionar apenas casos do Brasil, apenas novos casos registrados no sistema (exclui reincidente) e apenas os casos com desfecho: cura, óbito ou abandono. Em seguida, foi realizada a mudança do tipo de algumas colunas que estavam caracterizadas como numéricas, mas representavam uma categoria. Depois, foram removidas todas as features com baixa variação de dados e alta cardinalidade. Outras colunas foram removidas sob o critério de não serem relevantes para o problema estudado. Por fim, foi feito um corte temporal para analisar apenas os casos de 2009 a 2019.
 > 
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+> 
 > Para Análise Exploratória dessa base foram analisados a quantidade de casos registrados em cada estado ao longo dos anos com o objetivo de entender se existia alguma região em que a doença predominou e se essa proporção foi reduzindo ou aumentando com o passar de uma década. Além disso, foi analisada a gravidade desses casos registrados, para entender onde há a presença de casos mais graves. Em seguida foram analisadas duas variaáveis (tempo de cura e tipo de saída do tratamento), para cada uma foi calculada a correlação com outras variáveis a fim de entender como se comportavam com outras variáveis. Por fim, foi iniciado testes de ML para analisar a acurácia do modelo em prever se o paciente abandonará o tratamento ou seguirá até o fim.
 
 
@@ -90,6 +92,7 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
 > 
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+> 
 > Foi feita uma análise de correlação do IDH com a quantidade de casos novos nos estados em cada ano, indicando uma correlação negativa, mas muito baixa (0.28)
 
 ### Integração entre Bases e Análise Exploratória
