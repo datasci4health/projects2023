@@ -1,6 +1,6 @@
 
 # Projeto `Associação de fatores de estilo de vida com depressão`
-# Project `Association of lifestyle factors with depression`
+### Project `Association of lifestyle factors with depression`
 
 # Apresentação
 
@@ -52,13 +52,9 @@ Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundad
  - Será que o consumo de ultraprocessados está associado ao desenvolvimento da depressão?
  - Será que as pessoas que possuem depressão também possuem outras doenças crônicas que estão associadas com alto consumo de ultraprocessados como obesidade?
 
-# Bases de Dados
 
-Base de Dados  | Descrição | Anos
------ | ----- |  -----
-[Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
-[Sistema de Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel)](https://svs.aids.gov.br/download/Vigitel/) | O Vigitel é parte integrante do sistema de Vigilância de Fatores de Risco para doenças crônicas não transmissíveis (DCNT) do Ministério da Saúde, juntamente com outros inquéritos, como os domiciliares e os direcionados à população escolar. Conhecer a situação de saúde da população é o primeiro passo para planejar ações e programas que possam reduzir a ocorrência e a gravidade dessas doenças, melhorando assim a saúde da população. A pesquisa Vigitel é realizada anualmente pela Secretaria de Vigilância em Saúde (SVS) do Ministério da Saúde e as entrevistas telefônicas são conduzidas com amostras da população adulta (18 anos ou mais) residente em domicílios com linha de telefone fixo. A partir de 2022, as entrevistas também passaram a ser realizadas em telefones celulares. | 2006-2021
-[Pesquisa Nacional de Saúde do Escolar (PeNSE)](https://www.ibge.gov.br/en/statistics/social/population/16837-national-survey-of-school-health-editions.html?=&t=downloads) | O Instituto Brasileiro de Geografia e Estatística - IBGE - realiza a Pesquisa Nacional de Saúde do Escolar (PeNSE), em diversas cidades do Brasil, em parceria com o Ministério da Saúde e com o apoio do Ministério da Educação. Os objetivos da pesquisa são: conhecer e medir fatores de risco e de proteção relacionados à saúde dos adolescentes; apoiar o monitoramento da saúde dos estudantes brasileiros; oferecer orientação às iniciativas de saúde voltadas para esse grupo populacional, fornecendo informações confiáveis sobre o assunto. | 2019 (último)
+> TODO: Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
+
 
 
 # Metodologia
@@ -69,6 +65,29 @@ Este trabalho de forma geral procura avaliar e descobrir os fatores de risco par
 - Análise exploratória, incluindo seleção e pré-processamento dos dados. Mostrar o que os dados de forma macro contam diretamente. Exemplos: como é a distribuição da depressão pelas regiões do Brasil? Há correlação com IDH regional? Como essa doença se evoluiu ao longo dos anos no Brasil e em cada Estado? 
 - Realização de uma análise estatística, utilizando técnicas de estatística descritiva e visualização, como gráficos de dispersão, caixa, e barras, a fim de extrair conhecimento dos dados.
 - Aplicação de técnicas de aprendizado de máquina (regressão), que nos permita uma análise aprofundada e a quantificação da relevância de cada característica para variável de interesse (depressão). 
+
+
+## Bases de Dados e Evolução
+
+### Bases Estudadas mas Não Adotadas
+
+Base de Dados  | Descrição | Anos
+----- | ----- |  -----
+[Pesquisa Nacional de Saúde do Escolar (PeNSE)](https://www.ibge.gov.br/en/statistics/social/population/16837-national-survey-of-school-health-editions.html?=&t=downloads) | O Instituto Brasileiro de Geografia e Estatística - IBGE - realiza a Pesquisa Nacional de Saúde do Escolar (PeNSE), em diversas cidades do Brasil, em parceria com o Ministério da Saúde e com o apoio do Ministério da Educação. Os objetivos da pesquisa são: conhecer e medir fatores de risco e de proteção relacionados à saúde dos adolescentes; apoiar o monitoramento da saúde dos estudantes brasileiros; oferecer orientação às iniciativas de saúde voltadas para esse grupo populacional, fornecendo informações confiáveis sobre o assunto. | 2019 (último)
+
+Esta base de dados possui um total de 159245 alunos, com 306 características cada. Os dados estão estruturados e contam com dicionário. Inicialmente, tentamos utilizá-la para especificar mais o escopo da proposta de análise da depressão em adolescentes. Exploramos essa base por meio dos arquivos Jupyter Notebook, pense_preprocessing.ipynb e pense_hello_world.ipynb. No entanto, apesar do grande número de características, percebemos que essa base aborda pouco sobre doenças crônicas e apresenta algumas limitações relacionadas à saúde mental. Infelizmente, não encontramos nenhum indicador de depressão como o [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9) que possa ser utilizado como na PNS (Pesquisa Nacional de Saúde).
+
+Base de Dados  | Descrição | Anos
+----- | ----- |  -----
+[Sistema de Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel)](https://svs.aids.gov.br/download/Vigitel/) | O Vigitel é parte integrante do sistema de Vigilância de Fatores de Risco para doenças crônicas não transmissíveis (DCNT) do Ministério da Saúde, juntamente com outros inquéritos, como os domiciliares e os direcionados à população escolar. Conhecer a situação de saúde da população é o primeiro passo para planejar ações e programas que possam reduzir a ocorrência e a gravidade dessas doenças, melhorando assim a saúde da população. A pesquisa Vigitel é realizada anualmente pela Secretaria de Vigilância em Saúde (SVS) do Ministério da Saúde e as entrevistas telefônicas são conduzidas com amostras da população adulta (18 anos ou mais) residente em domicílios com linha de telefone fixo. A partir de 2022, as entrevistas também passaram a ser realizadas em telefones celulares. | 2006-2021
+
+Não tivemos a oportunidade de explorar a fundo essa base de dados, mas, à primeira vista, ela parece apresentar um número mais limitado de características (~300) em comparação com o PNS (~4000) que aborda de forma mais abrangente os fatores de estilo de vida que propomos analisar. Além disso, essa base de dados possui informações verificáveis se o diagnóstico de depressão já foi feito, mas não oferece parâmetros para avaliar o estado atual da saúde mental do entrevistado no momento da coleta dos dados.
+
+### Bases Estudadas e Adotadas
+
+Base de Dados  | Descrição | Anos
+----- | ----- |  -----
+[Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
 
 ## Análise Exploratória
 
@@ -120,15 +139,15 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 # Cronograma
 
-Semanas | Tarefas
------ | -----
-Semana 01 (16/04 - 22/04) | Definir escopo do projeto e revisão bibliográfica
-Semana 02 (23/04 - 29/04) | Compreensão do dados
-Semana 03 (30/04 - 06/05) | Processamento dos dados 
-Semana 04 (07/05 - 13/05) | Análise exploratória e Entrega 2
-Semana 05 (14/05 - 20/05) | Modelagem da solução
-Semana 06 (21/05 - 27/05) | Modelagem da solução
-Semana 07 (28/05 - 03/06) | Modelagem da solução
-Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados
-Semana 09 (11/06 - 17/06) | Relatório
-Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final
+Semanas | Tarefas | Conclusão
+----- | ----- | -----
+Semana 01 (16/04 - 22/04) | Definir escopo do projeto e revisão bibliográfica | :heavy_check_mark:
+Semana 02 (23/04 - 29/04) | Compreensão do dados | :heavy_check_mark:
+Semana 03 (30/04 - 06/05) | Processamento dos dados | :heavy_check_mark:
+Semana 04 (07/05 - 13/05) | Processamento dos dados | :heavy_check_mark:
+Semana 05 (14/05 - 20/05) | Análise exploratória e Entrega 2 | :heavy_check_mark:
+Semana 06 (21/05 - 27/05) | Modelagem da solução |
+Semana 07 (28/05 - 03/06) | Modelagem da solução |
+Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados |
+Semana 09 (11/06 - 17/06) | Relatório |
+Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final A|
