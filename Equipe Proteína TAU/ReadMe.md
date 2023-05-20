@@ -33,11 +33,7 @@ exercícios físicos regularmente?
 # Banco de dados
 - Michael J. Fox Foundation for Parkinson's Research
 O site michaeljfox.org é o site oficial da Fundação Michael J. Fox, uma organização sem fins lucrativos dedicada a encontrar uma cura para a doença de Parkinson e a melhorar a vida das pessoas afetadas por ela. O site oferece informações e recursos valiosos sobre a doença de Parkinson, opções de tratamento, pesquisas em andamento e suporte emocional. Além disso, a fundação financia pesquisas em todo o mundo e oferece uma comunidade online chamada "Fox Insight", onde pessoas com Parkinson podem se conectar e compartilhar suas experiências para ajudar a avançar a pesquisa
-1.	Coleta de dados: para realizar uma análise integrativa de dados, você precisará coletar dados genômicos e imunológicos relevantes para a doença de Parkinson. Isso pode incluir dados de expressão gênica, perfil de citocinas, expressão de marcadores de células imunológicas, entre outros.
-2.	Pré-processamento de dados: antes de começar a análise, os dados precisam ser pré-processados para remover ruídos, normalizar os dados e lidar com valores ausentes. Isso pode ser feito usando ferramentas como o R e Python.
-3.	Análise integrativa de dados: em seguida, você pode usar técnicas de análise integrativa de dados para identificar genes e vias que estão correlacionados com o sistema imunológico na doença de Parkinson. Isso pode incluir técnicas como análise de enriquecimento de genes, análise de rede, análise de coexpressão e análise de clustering.
-4.	Construção de fluxogramas e clusters: para visualizar os resultados da análise integrativa, você pode usar ferramentas como Orange, R e Python para construir fluxogramas interligados e clusters. Esses fluxogramas e clusters podem ajudar a identificar grupos de genes e vias que estão correlacionados com o sistema imunológico na doença de Parkinson.
-5.	Análise funcional de genes: finalmente, você pode realizar uma análise funcional dos genes identificados para entender melhor seu papel na doença de Parkinson. Isso pode incluir análise de ontologia, análise de redes de interação de proteínas e análise de enriquecimento de vias.
+Para a seleção cuidadosa de artigos relacionados à doença de Parkinson, depressão e atividade física no total 10, será utilizado um banco de dados renomado e acessível, como o MichaelJ.Fox. Os dados obtidos serão cruzados por meio de um fluxograma preciso e organizados em clusters, permitindo extrair insights relevantes e aprofundar o conhecimento sobre essa doença complexa. A visualização e análise dessas informações serão facilitadas pela construção de fluxogramas interligados a clusters, utilizando ferramentas de dados como o Orange. Esse processo permitirá a identificação de padrões e tendências importantes, fornecendo subsídios para a criação de novas abordagens terapêuticas e para a melhoria da qualidade de vida dos pacientes com Parkinson. Com essa metodologia rigorosa, espera-se que os resultados sejam confiáveis e úteis para a comunidade médica e científica no desenvolvimento de tratamentos mais eficazes para a doença de Parkinson.
 # Ferramentas 
 Ferramenta de dados de linguagem R, Python e Orange para design dos gráficos 
 # Cronograma
@@ -46,5 +42,4 @@ Ferramenta de dados de linguagem R, Python e Orange para design dos gráficos
 | Coleta de dados  | 2 semanas  |
 | Pré-processamento de dados | 2 semanas |
 | Análise integrativa de dados | 3 semanas |
-| Construção de fluxogramas e clusters| 2 semanas |
 |Análise funcional de genes | 2 semanas |
