@@ -40,13 +40,6 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > 
 > Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
 
-
-# Bases de Dados
-> |Fonte | Descrição|
-> |--|--|
-> |[Sistema de Informação de Agravos de Notificação (SINAN)](http://portalsinan.saude.gov.br/hanseniase) |Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica a nível municipal, estadual e nacional.|
-> |[Indicadores Epidemiológicos](http://indicadoreshanseniase.aids.gov.br/) |Base mantida pelo Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - DCCI, do Ministério da Saúde. É uma centralização dos indicadores e dados básicos de Hanseníase ocorridos no Brasil analizados por região, estado e município.| 
-
 # Metodologia
 > Seleção e tratamento dos dados
 > Os dados foram obtidos do Sistema de Informação de Agravos de Notificação (SINAN) no período de 2009 a 2019. Os dados foram pré-processados considerando apenas os casos novos notificados a cada ano. Um caso novo é a pessoa que nunca recebeu qualquer tratamento específico para a doença. Verificou-se que os casos novos eram residentes do Brasil no momento da notificação e não houve duplicatas. 
@@ -67,7 +60,7 @@ Considerando as características da doença e a variação das variáveis fornec
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan.saude.gov.br/hanseniase | Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica a nível municipal, estadual e nacional.
 
 > Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
