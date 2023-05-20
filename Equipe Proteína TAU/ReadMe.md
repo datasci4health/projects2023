@@ -1,4 +1,4 @@
-#Relação entre Parkinson e depressão: um estudo científico e visualização de dados.
+# Relação entre Parkinson e depressão: um estudo científico e visualização de dados.
 # Relationship between Parkinson's and depression: a scientific study and data visualization.
 # Apresentação 
 | Nome | RA| Especialização |
