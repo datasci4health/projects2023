@@ -60,7 +60,6 @@ Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan.saude.gov.br/hanseniase | Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica a nível municipal, estadual e nacional.
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
 > Sim, [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) para o dicionário de dados.
@@ -78,7 +77,6 @@ Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil é um projeto que reúne informações socioeconômicas e demográficas sobre o Brasil. Ele oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
 > Sim, é um site de consulta em que você seleciona quais indicadores (educação, desenvolvimento humano, renda, etc) e quais territorialidade deseja acessar. Nessse caso, foi selecionado apenas o IDH por estado ao longo dos anos.
