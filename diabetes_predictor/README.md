@@ -104,13 +104,13 @@ A visualização foi gerada com o pacote msno que permite observar padrões de d
 
 <figure>
 <figcaption align = "center"><b>Gráfico 3. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
-<img src="assets/correlacao_0.3.png" style="width:100%">
+<img src="assets/correlacao_0.3.png"  width="600" height="600">
 </figure>
 
 <figure>
 <figcaption align = "center"><b>Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 utilizada no modelo de aprendizagem.
 A tabela mostra a porcentagem de variáveis incluindo dados de 2015 a 2021 da base do Vigitel.</b></figcaption>
-<img src="assets/tabela_dataset_v2.jpg" alt="Trulli" align:center width="70%" >
+<img src="assets/tabela_dataset_v2.jpg" alt="Trulli" align:center width="75%" >
 </figure>
 
 
