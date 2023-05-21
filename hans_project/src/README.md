@@ -118,6 +118,10 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > ![Figura 2. Número de casos novos e de abandono do tratamento estratificado por sexo e ano no período de 2009 a 2019 no Brasil. F:feminino, M:masculino](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png).
 > 
 > 
+> Geograficamente, todas as unidades federativas relataram novos casos de hanseníase no período de 2009 a 2019. Os estados com o maior número de casos novos foram o Maranhão (n=36.401), o Pará (n=30.764) e o Mato Grosso (n=30.068). Por outro lado, Roraima (n=1034) e Rio Grande do Sul (1184) apresentaram a menor número de casos (Figura 3).
+> 
+> ![Figura 3. Número de casos novos por unidade federativa por ano no Brasil, no período de 2009 a 2019](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos.gif).
+> 
 
 
 # Ferramentas
