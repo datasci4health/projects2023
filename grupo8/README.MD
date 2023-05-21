@@ -7,6 +7,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 |Nome  | RA | Especialização|
 |--|--|--|
+| Fernando Fortes Granado | 171517 | Computação |
 | Glinka Lino Duarte Estadulho  | 271104  | Física|
 | João Augusto Rosa Feltran  | 174083 | Computação |
 | Michel Frank Ferrazo  | 224972  | Farmacologia |
