@@ -179,7 +179,7 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 ## Análise da correlação entre o IDH dos estados 
 > Sendo o IDH uma medida de referência em saúde, educação  e renda, foi feita sua correlação com a contagem de casos nos anos de 2009 a 2019 em cada estado e o valor do IDH do respectivo estado. Resultando numa correlação de -0.279, o que não indica uma relação muito forte para essa influência.
 > 
-> ![Figura 4. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab.gif).
+> ![Figura 5. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_caso_idh.gif).
 > 
 
 ## Análise estatísitca de tempo de cura e correlação entre variáveis da base de dados sobre hanseníase 
