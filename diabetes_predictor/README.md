@@ -54,6 +54,58 @@ Após definirmos a base de dados que vamos usar, classificamos todas as variáve
 Em seguida identificamos quais anos continham todas as variáveis de interesse para o nosso desfecho, para que pudéssemos usar o maior número de indivíduos para nossa modelagem e desse maior confiança/credibilidade no resultado encontrado. Após esse corte, definimos os anos subsequentes do período de 2015 a 2021.  Além disso, o Vigitel é feito somente com pessoas acima de 18 anos, portanto nossa amostra inclui somente pessoas acima dessa idade.
 A partir de uma análise de correlação com todas as variáveis classificadas como muito relevantes (1), existentes nos anos selecionados. Criamos uma série de perguntas para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/gráficos descritivos. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação à diabetes. Todas as perguntas formuladas podem ser encontradas em “Tomada de decisão” Tomada de decisão 
 
+ANÁLISE DESCRITIVA
+Gráfico de correlação
+Antes de fazer as os gráficos e tabelas descritivas, fizemos um gráfico de correlação com todas as variáveis que possivelmente seriam utilizadas.
+Gráfico 1. Correlação entre as variáveis selecionadas
+
+
+
+Gráfico 2. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).
+
+
+
+Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 utilizada no modelo de aprendizagem.
+
+
+
+A amostra selecionada têm um total de 235430 (n° total de pessoas na amostra) adultos, sendo que 60,9 % são mulheres, com média de idade de 50 anos (DP = 17,7 ; min. 18 e máx. 106 anos) e com prevalência de cor branca e parda, 47,58% e 41,48% respectivamente.
+A média do IMC é de  26,2 kg/m² (DP=  4.23; min. 17,4 e máx. 41,4), sendo que 42,23% da população se encontra acima do peso considerado adequado.
+
+Gráfico 3. Histograma da distribuição do IMC para os anos de 2015 a 2021.
+
+
+Gráfico 4. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. 
+
+
+Gráfico 5.  Prevalência de diabetes por cor na amostra para os anos.
+
+No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relativamente próximas, porém com o passar dos anos a população indígena, preta e amarela tiveram um aumento considerável na porcentagem de diabéticos.
+
+Gráfico 6. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
+
+É possível observar que quanto maior a escolaridade da pessoa, menor a probabilidade de a pessoa ter diabetes em relação a outro grupo de menor escolaridade. 
+
+Gráfico 7. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
+
+Gráfico 8. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. 
+
+Os indivíduos que relataram consumir bebida alcoólica todos os dias foram o grupo que apresentou maior porcentagem de pessoas com diabetes.
+
+Variáveis excluídas do modelo.
+Algumas variáveis que inicialmente foram classificadas como boas para serem usadas como preditoras de diabetes, já era previamente estabelecidas pela literatura na área da saúde, como os hábitos em relação ao consumo de verduras, legumes e bebida de refrigerante.
+
+Gráfico 9. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
+
+Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
+
+Gráfico 7: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC
+
+Nesta análise descritiva, buscamos explorar a possível relação entre diabetes, pressão alta e o índice de Massa Corporal (IMC) por meio de uma visualização UMAP (Uniform Manifold Approximation and Projection). O UMAP é uma técnica de redução dimensional que permite representar dados complexo em um espaço de menor dimensão, facilitando a visualização e a identificação de padrões. Ao aplicar o UMAP aos dados, geramos a representação de um espaço reduzido, e procuramos identificar agrupamentos ou padrões que pudessem indicar uma relação entre as variáveis estudadas. No entanto, ao analisar a imagem resultante, não encontramos os agrupamentos claros ou distinções evidentes entre as pessoas com as variáveis já mencionadas anteriormente. Os pontos estão dispersos pelo espaço de forma aparentemente não relacionada diretamente, mas que não indicam uma ausência de relação. A falta de relação identificável na visualização UMAP não descarta completamente a existência de uma relação entre diabetes, pressão alta e IMC. Pode ser que a relação entre as variáveis seja complexa e não linear, ou que outros fatores não considerados no conjunto de dados estejam influenciando a relação entre as variáveis.
+Portanto, concluímos que, com base na análise descritiva da visualização UMAP, não é possível estabelecer uma relação direta entre pessoas que possuem diabetes, pressão alta e diferentes valores de IMC. Para uma compreensão mais abrangente e conclusões mais robustas, é necessário considerar outras técnicas de análise, como testes estatísticos mais sofisticados ou modelagem preditiva, e também levar em conta outras variáveis relevantes que possam influenciar a relação entre essas características de saúde.
+
+
+
 
 # Bases de Dados
 
