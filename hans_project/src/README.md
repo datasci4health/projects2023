@@ -164,12 +164,13 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > 
 > Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
 > 
-> Classificação operacional baseado no número de lesões cutâneas (WHO).
+> Classificação operacional baseado no número de lesões cutâneas (WHO):
 > 
 > Paucibacilar (PB)
 > 
 > Multibacilar (MB)
-> 
+>
+>
 > Formas clínicas: Classificação segundo Madri 1953.
 > 
 > Hanseníase indeterminada (HI) tipo PB
@@ -179,11 +180,14 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > Hanseníase dimorfa (HD) tipo MB
 > 
 > Hanseníase virchowiana (HV) tipo MB
-
-
+> 
+> 
+>
 > Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
 > 
+> 
 > Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
+> 
 > 
 > Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
 Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
