@@ -46,9 +46,10 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 Considerando as características da doença e a variação das variáveis fornecidas no banco de dados, foi realizada uma análise exploratória para identificar e selecionar features que mostram relação com a cura e o abandono do tratamento (ver report). 
 > A alta por cura implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), juntamente com a avaliação médica, o que resulta na saída do paciente do registro ativo no SINAN. Os casos de abandono do tratamento são aqueles em que os pacientes não conseguem completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se forem paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas de retorno e acompanhamento do tratamento.
 >
-> * Análise descriptivos
+> * Análise descritiva
 > 
-> A partir desse subconjunto de dados, foi realizada um análise descriptiva dos casos novos, dos casos de cura e dos casos de abandono de tratamento, estratificada por sexo, faixa etária, classificação operacional e outras variáveis clínicas dos pacientes. Além disso, determinou-se a correlação das variáveis com os desfechos da doença.
+> A partir desse subconjunto de dados, foi realizada um análise descritiva dos casos novos, dos casos de cura e dos casos de abandono de tratamento, estratificada por sexo, faixa etária, classificação operacional e outras variáveis clínicas dos pacientes. Além disso, determinou-se a correlação das variáveis com os desfechos da doença.
+
 >
 > * Análise espacial
 > 
@@ -103,22 +104,36 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 
 ### Integração entre Bases e Análise Exploratória
 
+## Análise de casos por estado
 > As bases foram unidas por sigla do estado (UF) e por ano (NU_ANO), dessa forma, foi obtido uma tabela com quatro colunas (UF, NU_ANO, IDH, N_CASOS) e a partir disso foi possível analisar a correlação entre o IDH e a quantidade de casos em cada estado.
 > 
 > O maior número de casos novos diagnosticados esteve concentrado em pacientes com idades entre 40 e 69 anos, sendo maior na faixa etária de 40 a 49 anos. Por outro lado, a maior  proporção de pacientes que abandonaram o tratamento ocorreu entre os 20 e 49 anos de idade, destacando-se aqueles com idades entre 20 a 29 anos (Figura 1).
 >  
 > ![Figura 1. Número de casos novos diagnosticados e abandonos do tratamento por faixa etária a cada 10 anos no período de 2009 a 2019 no Brasil](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_idade.png).
 > 
-> 
+## Análise do abandono por ano e sexo 
+
 > Em todo o periódo analisado, o sexo masculino apresenta o maior número de casos novos diagnosticados e de abandono do tratamento em comparação com o sexo feminino. Observa-se uma tendência decrescente nos casos novos ao longo dos anos, com uma queda em 2016 e 2017. No entanto, os casos de abandono do tratamento em ambos os sexos mantiveram uma tendência similar. Durante o ano de 2019, a proporção de pacientes que abandonaram o tratamento foi maior para ambos os sexos. Por outro lado, os anos 2010 e 2011 apresentaram proporções menores de abandono (Figura 2).
 > 
 > ![Figura 2. Número de casos novos e de abandono do tratamento estratificado por sexo e ano no período de 2009 a 2019 no Brasil. F:feminino, M:masculino](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png).
-> 
-> 
+
+
+## Análise de números de casos
 > Geograficamente, todas as unidades federativas relataram novos casos de hanseníase no período de 2009 a 2019. Os estados com o maior número de casos novos foram o Maranhão (MA, n=36.401), o Pará (PA, n=30.764) e o Mato Grosso (MT, n=30.068). Por outro lado, Roraima (RR, n=1.034) e Rio Grande do Sul (RS, n=1.184) apresentaram a menor número de casos (Figura 3).
 > 
 > ![Figura 3. Número de casos novos por unidade federativa por ano no Brasil, no período de 2009 a 2019](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos.gif).
 > 
+
+## Análise estatísitca de tempo de cura e correlação entre variáveis da base de dados sobre hanseníase 
+Com o intuito de pensar na pergunta sobre o planejamento financeira de hospitais para o tratamento de hanseníase, fizemos uma distribuição normal do tempo de cura a partir da nova coluna "DURACAO_TRAT" criada a partir da data de saída e data de diagnóstico. A análise indicou uma média de 360.23 dias com um desvio padrão de 192.40 dias. Isso condiz com a análise médica que diz que o tratamento dura de 6 a 18 meses. 
+
+Já a respeito da correlação do tempo de cura com as demais variáveis, as maiores correlações, apesar de baixas, foram 
+
+| Parâmetros                                                                   | Correlação |
+|------------------------------------------------------------------------------|------------|
+| Duração Tratamento (DURACAO_TRAT) X Classificação Operacional (CLASSOPERA)   | 0.4614     |
+| Duração Tratamento (DURACAO_TRAT) X Forma Clínica da Doença (FORMACLINI)     | 0.3662     |
+| Duração do Tratamento (DURACAO_TRAT) X Número de Lesões (NU_LESOES)          | 0.2109     |
 
 
 # Ferramentas
