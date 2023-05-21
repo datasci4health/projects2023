@@ -48,13 +48,12 @@ Como por exemplo, para enfatizar que mesmo o Vigitel sendo um inquérito telefô
 https://www.scielo.br/j/rbepid/a/6Qkd5jj79g8mcPcDSrnPXqj/abstract/?lang=pt
 https://www.scielosp.org/pdf/csp/v26n12/16.pdf
 
-Detalhamento por fases:
-1. Business Understanding: Entendimento de qual contexto o projeto pode ser utilizado, como aplicar o modelo, quais bases existem tratando o problema, quem são as partes interessadas. Feito a partir de buscas bibliográficas de dados e artigos relacionados e discussões em grupo.
 2. Data Understanding: Ganhar mais familiaridade com os dados, entender problemas existentes, análise de quais variáveis estão presentes em todos os anos, o que pode ser usado de forma genérica a estar disponível em outras bases, análise descritiva sobre a prevalência de diabetes por IMC, sexo, escolaridade, hábitos, condição socioeconômica. Feito a partir de gráficos, tabelas, clusterização, análise de evolução de variáveis pelo tempo e discussões em grupo.
-3. Data Preparation: Criação do dataset a ser usado pelo modelo, escolha do ano(s) utilizados no treino,seleção de variáveis, limpeza de dados faltantes, outliers, inconsistências. Feito a partir de funções de pré-processamento e discussões em grupo.
-4. Modeling: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, random forest, ou redes neurais e partir da dificuldade do problema. Será feito um modelo baseline que será melhorado até apresentar um resultado satisfatório.
-5. Evaluation: O modelo será avaliado e será questionado qual será a métrica aceitável para esse problema baseado em trabalhos relacionados.
-6. Deployment: Quando o modelo apresentar o resultado desejado, será finalizado e rodado para o conjunto de teste da base. Se possível, também será avaliado em outras bases, mostrando sua capacidade de generalização.
+
+Após definirmos a base de dados que vamos usar, classificamos todas as variáveis do dicionário geral (contém as variáveis de todos os anos), já fornecido junto com as bases, em 3 categorias, (1) muito relevante; (2) pouco relevante e (3) irrelevante para o desfecho do nosso estudo. A classificação das variáveis foi feita com base em informações já consolidadas sobre os principais temas relacionados à diabetes, com o objetivo de reduzir o número de variáveis a serem usadas durante a análise descritiva.
+Em seguida identificamos quais anos continham todas as variáveis de interesse para o nosso desfecho, para que pudéssemos usar o maior número de indivíduos para nossa modelagem e desse maior confiança/credibilidade no resultado encontrado. Após esse corte, definimos os anos subsequentes do período de 2015 a 2021.  Além disso, o Vigitel é feito somente com pessoas acima de 18 anos, portanto nossa amostra inclui somente pessoas acima dessa idade.
+A partir de uma análise de correlação com todas as variáveis classificadas como muito relevantes (1), existentes nos anos selecionados. Criamos uma série de perguntas para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/gráficos descritivos. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação à diabetes. Todas as perguntas formuladas podem ser encontradas em “Tomada de decisão” Tomada de decisão 
+
 
 # Bases de Dados
 
