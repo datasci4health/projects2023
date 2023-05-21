@@ -21,8 +21,6 @@ Breast cancer is a significant health issue affecting millions of women worldwid
 The importance of this project lies in the critical role of histopathology analysis in cancer detection. The current manual process is time-consuming and labor-intensive, and there is a significant potential for human error. We believe that by developing a classification model that accurately reproduces the manual task of histopathology analysis, we are making a meaningful contribution to the fight against breast cancer. 
 Also, the results of the model classification of the histopathology images will be analyzed by a biomedical scientist with experience in histology. This analysis will validate the model’s performance and identify any areas for improvement. Therefore, by combining the expertise of the biomedical scientist with the power of a supervised learning technique, we aim to develop an accurate and reliable breast cancer diagnosis tool.
 
-Link to video  [Link](https://youtu.be/T3a6fJ4nMLk)
-
 
 # Research Questions
 * Research question: Can supervised learning be used to identify specific features or patterns in histopathology images that are indicative of breast cancer? 
