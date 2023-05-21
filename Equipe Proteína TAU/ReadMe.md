@@ -26,13 +26,10 @@ Demonstrar através da visualização de dados a correlação entre fazer exerc�
 - [vídeo](https://youtu.be/67sz-QkUunE)
 # Perguntas de Pesquisa
 1. Qual é a melhor forma de exercício físico para ajudar a melhorar os sintomas de
-Parkinson e reduzir a depressão?
+Parkinson e reduzir a depressão (Atividades de baixa, média e alta intensidade)?
 2. Existem riscos adicionais associados a exercícios físicos em pacientes com
 Parkinson e depressão?
 3. Qual é a duração mínima e frequência ideal para sessões de exercícios físicos para obter benefícios na melhora dos sintomas de Parkinson e redução da depressão ?
-4. Como os pacientes com Parkinson e depressão podem ser motivados a realizar
-exercícios físicos regularmente?
-5. Existem exercícios físicos específicos que podem ajudar a melhorar a mobilidade e reduzir a depressão em pacientes com Parkinson?
 
 # Banco de dados
 ## Bases Estudadas mas Não Adotadas
