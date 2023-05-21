@@ -40,6 +40,12 @@ Parkinson e depressão?
 | CTD_MESHD000544_exposure_20230520230729 | https://ctdbase.org/detail.go?type=disease&acc=MESH%3AD000544&view=expConsol | O dataset mostra dados de países, receptores da doença, tipos de estressor, sua relação com alguns eventos de exposição |
 
 
+Como as bases encontradas eram muito pequenas ou não possuíam dados o suficiente para a análise de  Alzheimer/Demência, foi decidido a troca de tema para encontrar uma base mais estruturada com informação. 
+
+Para as bases não adotadas foi necessário o filtro para a doença de Alzheimer, juntamente com o tratamento para valores nulos ou não respondidos.
+
+A análise pode ser encontrada em data/external/bases não adotadas .
+
 ## Bases Estudadas e Adotadas
 | Base de Dados | Endereço na Web | Resumo descritivo |
 | :---         |     :---:      |          ---: |
@@ -48,6 +54,12 @@ Parkinson e depressão?
 - Michael J. Fox Foundation for Parkinson's Research
 
 O site michaeljfox.org é o site oficial da Fundação Michael J. Fox, uma organização sem fins lucrativos dedicada a encontrar uma cura para a doença de Parkinson e a melhorar a vida das pessoas afetadas por ela. O site oferece informações e recursos valiosos sobre a doença de Parkinson, opções de tratamento, pesquisas em andamento e suporte emocional. Além disso, a fundação financia pesquisas em todo o mundo e oferece uma comunidade online chamada "Fox Insight", onde pessoas com Parkinson podem se conectar e compartilhar suas experiências para ajudar a avançar a pesquisa.
+
+O banco de dados é em formato '.csv' e qualquer um com cadastro no site pode acessar a base. É um banco extremamente completo que compreende questões biológicas, médicas e pessoais, sendo necessário uma filtragem inicial para selecionar características e fatos específicos para a pesquisa. Foi selecionado variáveis sobre exercício físico e questões sobre saúde mental para responder as perguntas de pesquisa.
+
+Inicialmente foi feita uma limpeza de valores incorretos sobre a idade dos participantes, retirando os valores, além de uma decisão inicial de utilizar somente um conjunto de dados de cada participando, excluindo dados de participantes que responderam mais de uma vez os questionários. Foi feito também uma categorização das idades, transformando-as em grupos de acordo com os quartis da base.
+
+A análise pode ser vista em data/external/bases adotadas e em COLOCAR AQUI ANALISE DO GIOVANI COM OS COMENTARIOS.
 # Metodologia  
 Para a seleção cuidadosa de artigos relacionados à doença de Parkinson, depressão e atividade física no total 10, será utilizado um banco de dados renomado e acessível, como o MichaelJ.Fox. Os dados obtidos serão cruzados por meio de um fluxograma preciso e organizados em clusters, permitindo extrair insights relevantes e aprofundar o conhecimento sobre essa doença complexa. A visualização e análise dessas informações serão facilitadas pela construção de fluxogramas interligados a clusters, utilizando ferramentas de dados como o Orange. Esse processo permitirá a identificação de padrões e tendências importantes, fornecendo subsídios para a criação de novas abordagens terapêuticas e para a melhoria da qualidade de vida dos pacientes com Parkinson. Com essa metodologia rigorosa, espera-se que os resultados sejam confiáveis e úteis para a comunidade médica e científica no desenvolvimento de tratamentos mais eficazes para a doença de Parkinson.
 # Ferramentas 
