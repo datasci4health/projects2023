@@ -89,13 +89,16 @@ Base de Dados  | Descrição | Anos
 ----- | ----- |  -----
 [Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
 
-## Análise Exploratória
+O dicionário disponibilizado pela PNS pode ser encontrado[aqui](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos individuos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas à doenças crônicas e aos hábios do domicílio. 
 
-As análises feitas utilizaram como base os dados provenientes da PNS (2019). Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se na análise apenas perguntas que estivessem relacionadas diretamente aos habitos alimentares, diagnósticos recentes de doenças crônicas, às características do domicílio, e das pessoas entrevistadas.
+Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se na análise apenas perguntas que estivessem relacionadas diretamente aos habitos alimentares, diagnósticos recentes de doenças crônicas, às características do domicílio, e das pessoas entrevistadas.
 
 Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
 Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave, Grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
+
+
+## Análise Exploratória
 
 ### Características descritivas da população
 
