@@ -141,7 +141,7 @@ base de diabetes internacional já com processamentos e dados de saúde das pess
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título da Base |  https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9 | Diabetes Dataset | Os dados desta base se referem a indivíduos iraquianos, pois os dados foram adquiridos do laboratório do Medical City Hospital (Centro Especializado de Endocrinologia e Hospital Universitário Diabetes-Al-Kindy). Os dados consistem em informações médicas e análises laboratoriais dos indivíduos, sendo elas: nº do paciente, Nível de açúcar no sangue, Idade, Sexo, Taxa de creatinina (Cr), Índice de massa corporal (IMC), Uréia, Colesterol (Chol), Perfil lipídico em jejum, incluindo total, LDL, VLDL, Triglicerídeos (TG) e Colesterol HDL, HBA1C, Classe (a classe de diabetes do paciente pode ser Diabética, Não Diabética ou Pré-Diabética).
+Diabetes Dataset | [link](https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9) | Os dados desta base se referem a indivíduos iraquianos, pois os dados foram adquiridos do laboratório do Medical City Hospital (Centro Especializado de Endocrinologia e Hospital Universitário Diabetes-Al-Kindy). Os dados consistem em informações médicas e análises laboratoriais dos indivíduos, sendo elas: nº do paciente, Nível de açúcar no sangue, Idade, Sexo, Taxa de creatinina (Cr), Índice de massa corporal (IMC), Uréia, Colesterol (Chol), Perfil lipídico em jejum, incluindo total, LDL, VLDL, Triglicerídeos (TG) e Colesterol HDL, HBA1C, Classe (a classe de diabetes do paciente pode ser Diabética, Não Diabética ou Pré-Diabética).
 
 ### Bases Estudadas e Adotadas
 
