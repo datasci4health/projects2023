@@ -49,7 +49,7 @@ During the exploratory data analysis, it was discovered that the classes are imb
 
 | Database | Web Address| Descriptive Summary |
 | -------- | -------- | -------- |
-| Human Against Machine (HAM10000) | [Link](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)  |  Invasive Ductal Carcinoma (IDC) tissue regions in slide images (WSI) of breast cancer |
+| Breast Histopathology Images | [Link](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)  |  Invasive Ductal Carcinoma (IDC) tissue regions in slide images (WSI) of breast cancer |
 
 * The original dataset consists of 162 whole-mount slide images of Breast Cancer (BCa) specimens scanned at 40x. From that, 277,524 patches of size 50 x 50 were extracted (198,738 IDC negative and 78,786 IDC positive). 
 * Each patch’s file name is of the format: u_xX_yY_classC.png: e.g., 10253_idx5_x1351_y1101_class0.png. 
