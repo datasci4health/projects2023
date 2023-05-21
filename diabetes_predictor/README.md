@@ -36,7 +36,7 @@ A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de cla
 
 ![Fases da metodologia](assets/Fluxo_dados.drawio.png)
 
-Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
+Adaptado de [data geeks](https://www.datageeks.com.br/pre-processamento-de-dados/) a partir de 
 
 Detalhamento por fases:
 1. Business Understanding: Entendimento de qual contexto o projeto pode ser utilizado, como aplicar o modelo, quais bases existem tratando o problema, quem são as partes interessadas. Feito a partir de buscas bibliográficas de dados e artigos relacionados e discussões em grupo.
@@ -57,7 +57,7 @@ Detalhamento por fases:
 
 Link do google drive com subsets da base e dicionários de dados com pré seleção de features: https://drive.google.com/drive/folders/1NMwv2sC3bnlQBedWxnHki7KG_jT0peuU?usp=sharing
 
-### Bases Estudadas mas Não Adotadas
+## Bases Estudadas mas Não Adotadas
 
 
 Base de Dados | Endereço na Web | Resumo descritivo
@@ -67,7 +67,7 @@ Diabetes Dataset | [link](https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/
 A base não foi usada pois era uma base internacional e que já estava organizada e pronta para a análise, o que o grupo cogitou que não seria tão interessante para aprendizado. 
 base de diabetes internacional já com processamentos e dados de saúde das pessoas: 
 
-### Bases Estudadas e Adotadas
+## Bases Estudadas e Adotadas
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
@@ -84,18 +84,26 @@ Após definirmos a base de dados que vamos usar, classificamos todas as variáve
 Em seguida identificamos quais anos continham todas as variáveis de interesse para o nosso desfecho, para que pudéssemos usar o maior número de indivíduos para nossa modelagem e desse maior confiança/credibilidade no resultado encontrado. Após esse corte, definimos os anos subsequentes do período de 2015 a 2021.  Além disso, o Vigitel é feito somente com pessoas acima de 18 anos, portanto nossa amostra inclui somente pessoas acima dessa idade.
 A partir de uma análise de correlação com todas as variáveis classificadas como muito relevantes (1), existentes nos anos selecionados. Criamos uma série de perguntas para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/gráficos descritivos. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação à diabetes. Todas as perguntas formuladas podem ser encontradas em “Tomada de decisão” neste [link do google drive]( https://docs.google.com/document/d/1_7RMeBFHca32wVxBhwUvWz-3Or6s_1LFaEVwYnwiljg/edit?usp=sharing).
 
-## Análise Descritiva
+### Análise Descritiva
 
-Antes de fazer as os gráficos e tabelas descritivas, foi feita uma matriz de correlação com todas as variáveis que possivelmente seriam utilizadas. As análises foram realizas com as visualizações, descrição do dataset e gráficos para um entendimento completo dos dados. Foram selecionadas as mais relevantes para este documento.
+Antes de fazer as os gráficos e tabelas descritivas, foi observada a quantidade de dados faltantes e feita uma matriz de correlação com todas as variáveis que possivelmente seriam utilizadas. As análises foram realizas com as visualizações, descrição do dataset e gráficos para um entendimento completo dos dados. Foram selecionadas as mais relevantes para este documento.
 
 <figure>
-<figcaption align = "center"><b>Gráfico 1. Correlação entre as variáveis selecionadas</b></figcaption>
+<figcaption align = "center"><b>Gráfico 1: Quantidade de dados ausentes por coluna.
+</b></figcaption>
+<img src="assets/nas.png" style="width:100%">
+</figure>
+
+A visualização foi gerada com o pacote msno que permite observar padrões de dados ausentes e guiar as análises. O minigráfico à direita resume a forma geral da integridade dos dados.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 2. Correlação entre as variáveis selecionadas</b></figcaption>
 <img src="assets/correlacao_var_selecionadas.png" style="width:100%">
 </figure>
 
 
 <figure>
-<figcaption align = "center"><b>Gráfico 2. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
+<figcaption align = "center"><b>Gráfico 3. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
 <img src="assets/correlacao_0.3.png" style="width:100%">
 </figure>
 
@@ -110,13 +118,13 @@ A amostra selecionada têm um total de 235430 (n° total de pessoas na amostra) 
 A média do IMC é de  26,2 kg/m² (DP=  4.23; min. 17,4 e máx. 41,4), sendo que 42,23% da população se encontra acima do peso considerado adequado.
 
 <figure>
-<figcaption align = "center"><b>Gráfico 3. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
-<img src="assets/histograma_imc.png" style="width:85%">
+<figcaption align = "center"><b>Gráfico 4. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
+<img src="assets/histograma_imc2.png" style="width:85%">
 </figure>
 
 
 <figure>
-<figcaption align = "center"><b>Gráfico 4. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
+<figcaption align = "center"><b>Gráfico 5. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
 <img src="assets/diab_anos.png" style="width:85%">
 </figure>
 
@@ -125,7 +133,7 @@ Pode se notar que a probabilidade de um indivíduo possuir diabetes aumentou de 
 <figure>
 </figure>
 <figure>
-<figcaption align = "center"><b>Gráfico 5. Prevalência de diabetes segundo a faixa etaria para os anos 2015 a 2021.</b></figcaption>
+<figcaption align = "center"><b>Gráfico 6. Prevalência de diabetes segundo a faixa etaria para os anos 2015 a 2021.</b></figcaption>
 <img src="assets/diab_fet2.png" style="width:85%">
 </figure>
 
@@ -133,14 +141,14 @@ As faixas etárias maiores apresentaram maiores taxas de diabéticos, com uma di
 
 
 <figure>
-<figcaption align = "center"><b>Gráfico 6. Prevalência de diabetes por cor na amostra para os anos.</b></figcaption>
+<figcaption align = "center"><b>Gráfico 7. Prevalência de diabetes por cor na amostra para os anos.</b></figcaption>
 <img src="assets/cor.png" style="width:85%">
 </figure>
 
 No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relativamente próximas, porém com o passar dos anos a população indígena, preta e amarela tiveram um aumento considerável na porcentagem de diabéticos.
 
 <figure>
-<figcaption align = "center"><b>Gráfico 7. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
+<figcaption align = "center"><b>Gráfico 8. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
 </b></figcaption>
 <img src="assets/diab_grauesc.png" style="width:85%">
 </figure>
@@ -148,14 +156,14 @@ No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relati
 É possível observar que quanto maior a escolaridade da pessoa, menor a probabilidade de a pessoa ter diabetes em relação a outro grupo de menor escolaridade. 
 
 <figure>
-<figcaption align = "center"><b>Gráfico 8. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
+<figcaption align = "center"><b>Gráfico 9. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
 A pressão alta é um fator ligado a diabetes consistentemente ao longo dos anos, como mostra o gráfico.
 </b></figcaption>
 <img src="assets/diab_pressaoalta.png" style="width:85%">
 </figure>
 
 <figure>
-<figcaption align = "center"><b>Gráfico 9. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
+<figcaption align = "center"><b>Gráfico 10. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
 </b></figcaption>
 <img src="assets/diab_freqalcool2.png" style="width:100%">
 </figure>
@@ -167,14 +175,14 @@ Os indivíduos que relataram consumir bebida alcoólica todos os dias foram o gr
 Algumas variáveis que inicialmente foram classificadas como boas para serem usadas como preditoras de diabetes, já era previamente estabelecidas pela literatura na área da saúde, como os hábitos em relação ao consumo de verduras, legumes e bebida de refrigerante.
 
 <figure>
-<figcaption align = "center"><b>Gráfico 10. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
+<figcaption align = "center"><b>Gráfico 11. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
 </b></figcaption>
 <img src="assets/diab_freqrefri.png" style="width:85%">
 </figure>
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
 <figure>
-<figcaption align = "center"><b>Gráfico 11: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
+<figcaption align = "center"><b>Gráfico 12: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
 </b></figcaption>
 <img src="assets/umap_tentativa.png" style="width:100%">
 </figure>
@@ -182,7 +190,7 @@ Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diab
 Nesta análise descritiva, buscamos explorar a possível relação entre diabetes, pressão alta e o índice de Massa Corporal (IMC) por meio de uma visualização UMAP (Uniform Manifold Approximation and Projection). O UMAP é uma técnica de redução dimensional que permite representar dados complexo em um espaço de menor dimensão, facilitando a visualização e a identificação de padrões. Ao aplicar o UMAP aos dados, geramos a representação de um espaço reduzido, e procuramos identificar agrupamentos ou padrões que pudessem indicar uma relação entre as variáveis estudadas. No entanto, ao analisar a imagem resultante, não encontramos os agrupamentos claros ou distinções evidentes entre as pessoas com as variáveis já mencionadas anteriormente. Os pontos estão dispersos pelo espaço de forma aparentemente não relacionada diretamente, mas que não indicam uma ausência de relação. A falta de relação identificável na visualização UMAP não descarta completamente a existência de uma relação entre diabetes, pressão alta e IMC. Pode ser que a relação entre as variáveis seja complexa e não linear, ou que outros fatores não considerados no conjunto de dados estejam influenciando a relação entre as variáveis.
 Portanto, concluímos que, com base na análise descritiva da visualização UMAP, não é possível estabelecer uma relação direta entre pessoas que possuem diabetes, pressão alta e diferentes valores de IMC. Para uma compreensão mais abrangente e conclusões mais robustas, é necessário considerar outras técnicas de análise, como testes estatísticos mais sofisticados ou modelagem preditiva, e também levar em conta outras variáveis relevantes que possam influenciar a relação entre essas características de saúde.
 
-#### Seleção de variáveis
+### Seleção de variáveis
 Após toda essas análises, definimos que as variáveis que serão usadas no modelo são:
 - faixa etária
 - escolaridade
@@ -193,14 +201,14 @@ Após toda essas análises, definimos que as variáveis que serão usadas no mod
 - atividade física
 
 
-# Transformações e tratamentos realizados:
+### Transformações e tratamentos realizados:
 O objetivo do modelo é identificar Diabetes tipo 2, portanto retiramos da amostra todas as pessoas que tinham idade de diagnóstico de diabetes antes dos 18 anos, pois assim excluiremos a maior parte das pessoas com possível diagnóstico de Diabetes tipo 1. https://bvsms.saude.gov.br/bvs/publicacoes/miolo2002.pdf;
 Dentre as variávei escolhidas excluímos todos que a pessoa não quis responder e que não sabia responder (segundo código do dicionário);
 Para as variáveis peso, altura e IMC, definimos a faixa de percentil de p1 a p99, excluindo os outliers que ultrapassaram esse valor. Definimos este valor de percentil porque com nossa variável desfecho de interesse está muito relacionado com o IMC elevado, decidimos trabalhar com uma margem maior, o que nos proporcionou aproximadamente 11 mil amostras a mais. 
 Juntamos a variável consumo de álcool (sim ou não) e frequência de consumo de álcool (respondido somente por quem respondeu que consome álcool) em uma única variável, sendo o valor 0 para quem não consome álcool e de 1 a 6 a frequência semanal que consome álcool. As análises realizadas já contam com os dados após as transformações e tratamentos, se tratando de etapas sequenciais porém que se complementam.
 
 
-### Integração entre Bases e Análise Exploratória
+## Integração entre Bases e Análise Exploratória
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
