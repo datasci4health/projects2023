@@ -180,15 +180,15 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > ![Figura 4. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png).
 
 ## Análise estatísitca de tempo de cura e correlação entre variáveis da base de dados sobre hanseníase 
-Com o intuito de pensar na pergunta sobre o planejamento financeira de hospitais para o tratamento de hanseníase, fizemos uma distribuição normal do tempo de cura a partir da nova coluna "DURACAO_TRAT" criada a partir da data de saída e data de diagnóstico. A análise indicou uma média de 360.23 dias com um desvio padrão de 192.40 dias. Isso condiz com a análise médica que diz que o tratamento dura de 6 a 18 meses. 
+>Com o intuito de pensar na pergunta sobre o planejamento financeira de hospitais para o tratamento de hanseníase, fizemos uma distribuição normal do tempo de cura a partir da nova coluna "DURACAO_TRAT" criada a partir da data de saída e data de diagnóstico. A análise indicou uma média de 360.23 dias com um desvio padrão de 192.40 dias. Isso condiz com a análise médica que diz que o tratamento dura de 6 a 18 meses. 
 
-Já a respeito da correlação do tempo de cura com as demais variáveis, as maiores correlações, apesar de baixas, foram 
+>Já a respeito da correlação do tempo de cura com as demais variáveis, as maiores correlações, apesar de baixas, foram 
 
-| Parâmetros                                                                   | Correlação |
-|------------------------------------------------------------------------------|------------|
-| Duração Tratamento (DURACAO_TRAT) X Classificação Operacional (CLASSOPERA)   | 0.4614     |
-| Duração Tratamento (DURACAO_TRAT) X Forma Clínica da Doença (FORMACLINI)     | 0.3662     |
-| Duração do Tratamento (DURACAO_TRAT) X Número de Lesões (NU_LESOES)          | 0.2109     |
+>| Parâmetros                                                                   | Correlação |
+>|------------------------------------------------------------------------------|------------|
+>| Duração Tratamento (DURACAO_TRAT) X Classificação Operacional (CLASSOPERA)   | 0.4614     |
+>| Duração Tratamento (DURACAO_TRAT) X Forma Clínica da Doença (FORMACLINI)     | 0.3662     |
+>| Duração do Tratamento (DURACAO_TRAT) X Número de Lesões (NU_LESOES)          | 0.2109     |
 
 ## Análises preliminares de predição
 
