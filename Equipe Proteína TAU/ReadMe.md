@@ -31,6 +31,19 @@ exercícios físicos regularmente?
 5. Existem exercícios físicos específicos que podem ajudar a melhorar a mobilidade e reduzir a depressão em pacientes com Parkinson?
 
 # Banco de dados
+## Bases Estudadas mas Não Adotadas
+| Base de Dados | Endereço na Web | Resumo descritivo |
+| :---         |     :---:      |          ---: |
+| Brain Diseases - BrainBase - CNCB-NGDC | https://ngdc.cncb.ac.cn/brainbase/diseases | Dados sobre o tema de Alzheimer, que descreve a doença, tipo e símbolo do gene e a fonte |
+| CTD_MESHD003704_exposure_20230520230416 | https://ctdbase.org/detail.go?type=disease&acc=MESH%3AD003704&view=expStudies | Dados sobre o tema de Alzheimer/Demência, mostrando resumo, países, agentes de estresse para algumas doenças cerebrais|
+| CTD_MESHD000544_exposure_20230520230729 | https://ctdbase.org/detail.go?type=disease&acc=MESH%3AD000544&view=expConsol | O dataset mostra dados de países, receptores da doença, tipos de estressor, sua relação com alguns eventos de exposição |
+
+
+## Bases Estudadas e Adotadas
+| Base de Dados | Endereço na Web | Resumo descritivo |
+| :---         |     :---:      |          ---: |
+| Michael J. Fox Foundation for Parkinson's Research | https://foxden.michaeljfox.org/insight/explore/fox.jsp | Base de dados retirada de um site com dados sobre a doença de Parkinson, que descreve os dados desde questões de saúde, emocional e médicas, até condições próprias que o paciente descreve |
+
 - Michael J. Fox Foundation for Parkinson's Research
 O site michaeljfox.org é o site oficial da Fundação Michael J. Fox, uma organização sem fins lucrativos dedicada a encontrar uma cura para a doença de Parkinson e a melhorar a vida das pessoas afetadas por ela. O site oferece informações e recursos valiosos sobre a doença de Parkinson, opções de tratamento, pesquisas em andamento e suporte emocional. Além disso, a fundação financia pesquisas em todo o mundo e oferece uma comunidade online chamada "Fox Insight", onde pessoas com Parkinson podem se conectar e compartilhar suas experiências para ajudar a avançar a pesquisa.
 # Metodologia  
