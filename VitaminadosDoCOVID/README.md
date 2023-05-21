@@ -153,7 +153,7 @@ Após ter sido definida a questão de pesquisa, se faz necessário a definição
 Fonte: Autores(2023)
 
 ## Bases de Dados e Evolução
-Afim de responder a questão de pesquisa algumas bases foram pré-selecionadas e análisadas, e podem ser visualizadas na Tabela 2.
+A fim de responder a questão de pesquisa algumas bases foram pré-selecionadas e análisadas, e podem ser visualizadas na Tabela 2.
 
 ### Tabela 2- Bases de dados previamente selecionadas
 
@@ -181,7 +181,7 @@ Fonte: Autores(2023)
 
 ## Base Selecionada
 
-Afim de responder a questão de pesquisa previamente estipulada, uma base de dados foi selecionada para dar sequência ao projeto e pode ser vista na Tabela 4, que além do link de acesso também apresenta a justificativa para a devida inclusão.
+A fim de responder a questão de pesquisa previamente estipulada, uma base de dados foi selecionada para dar sequência ao projeto e pode ser vista na Tabela 4, que além do link de acesso também apresenta a justificativa para a devida inclusão.
 
 ### Tabela 4- Base Selecionada
 Base de Dados | Endereço na Web | Motivo da Seleção
@@ -201,7 +201,7 @@ A Figura 2 apresenta o fluxo de trabalho adotado durante o processo da análise 
 
 Fonte: Autores(2023)
 
-Antes de iniciar de fato a análise dos dados, algumas manipulações foram feitas. Linhas com o caracter * e com NaN foram removidas da base, afim de trabalhar apenas com  as informações totalmente preenchidas. A Tabela 6 apresenta as métricas antes e após as manipulações. 
+Antes de iniciar de fato a análise dos dados, algumas manipulações foram feitas. Linhas com o caracter * e com NaN foram removidas da base, a fim de trabalhar apenas com  as informações totalmente preenchidas. A Tabela 6 apresenta as métricas antes e após as manipulações. 
 
 ### Tabela 5- Resumo das Dimensões
 | | Linhas | Colunas| % Alterada|
@@ -274,7 +274,7 @@ número de mortes é considerável em comparação com o restante das categorias
 
 Fonte: Autores(2023)
 
-Métricas como média, desvio padrão, mediana e moda foram calculados dos indices de 25(OH) D pré-infecção, afim de se obter mais informações para as avaliações e para diferenciar os comportamentos entre amostras. As medidas obtidas podem ser vistas na Tabela 7, em que, além do cálculo geral, amostras foram divididas de acordo com o grau de gravidade durante a internação e as variáveis foram calculadas novamente.
+Métricas como média, desvio padrão, mediana e moda foram calculados dos indices de 25(OH) D pré-infecção, a fim de se obter mais informações para as avaliações e para diferenciar os comportamentos entre amostras. As medidas obtidas podem ser vistas na Tabela 7, em que, além do cálculo geral, amostras foram divididas de acordo com o grau de gravidade durante a internação e as variáveis foram calculadas novamente.
 
 ### Tabela 7- Medidas Estatísticas
 |Amostra | Média | Desvio Padrão| Moda | Mediana|
@@ -287,7 +287,7 @@ Métricas como média, desvio padrão, mediana e moda foram calculados dos indic
   
  Fonte: Autores(2023)
  
-Em seguida para análises de correlação, foram calculados os p-valores utilizando do teste de Wilcoxon (duas amostras independentes) afim de comparar os valores de 25(OH)D pré-infecção entre as categorias de gravidade da doença COVID-19. A Tabela 8 demonstra os valores obtidos na comparação entre as amostras de Leve e moderado, moderado e grave, e grave e crítico. Uma diferença significativa no nível de 25(OH)D foi encontrada entre as categorias de doença leve em comparação com moderada (p < 0.001) e moderada em comparação com grave (p < 0.002). Não foi observada diferença entre indivíduos graves e críticos em relação à 25(OH)D (p = 0.04). 
+Em seguida para análises de correlação, foram calculados os p-valores utilizando do teste de Wilcoxon (duas amostras independentes) a fim de comparar os valores de 25(OH)D pré-infecção entre as categorias de gravidade da doença COVID-19. A Tabela 8 demonstra os valores obtidos na comparação entre as amostras de Leve e moderado, moderado e grave, e grave e crítico. Uma diferença significativa no nível de 25(OH)D foi encontrada entre as categorias de doença leve em comparação com moderada (p < 0.001) e moderada em comparação com grave (p < 0.002). Não foi observada diferença entre indivíduos graves e críticos em relação à 25(OH)D (p = 0.04). 
 
 ### Tabela 8- P-valor Wilcoxon rank-sum test
 |Amostra | p-valor|
@@ -298,7 +298,7 @@ Em seguida para análises de correlação, foram calculados os p-valores utiliza
  
  Fonte: Autores(2023)
  
-Afim de verificar a posição dos dados, simetria e dispersão um Box Plot foi plotado e pode ser visto na Figura 3. Por meio dele, é possível visualizar a distribuição de dados com base em mínimo, primeiro quartil (Q1), mediana, terceiro quartil(Q3) e o máximo, com as métricas apresentadas é possível notar uma diminuição progressiva nos níveis de 25(OH)D à medida que a gravidade da doença aumenta. 
+A fim de verificar a posição dos dados, simetria e dispersão um Box Plot foi plotado e pode ser visto na Figura 3. Por meio dele, é possível visualizar a distribuição de dados com base em mínimo, primeiro quartil (Q1), mediana, terceiro quartil(Q3) e o máximo, com as métricas apresentadas é possível notar uma diminuição progressiva nos níveis de 25(OH)D à medida que a gravidade da doença aumenta. 
 
 ### Figura 3- Box Plot 25(OH)D pré-infecção X Gravidade da doença COVID-19
 
@@ -527,7 +527,7 @@ Fonte: Autores(2023)
 
 # Análises Futuras
 
-Afim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
+A fim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
 <!--ts-->
    * Predição do desfecho
    * Clusterização das Variáveis
