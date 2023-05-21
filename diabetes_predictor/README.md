@@ -89,18 +89,18 @@ A partir de uma análise de correlação com todas as variáveis classificadas c
 Antes de fazer as os gráficos e tabelas descritivas, foi feita uma matriz de correlação com todas as variáveis que possivelmente seriam utilizadas. As análises foram realizas com as visualizações, descrição do dataset e gráficos para um entendimento completo dos dados. Foram selecionadas as mais relevantes para este documento.
 
 <figure>
-<figcaption align = "center">Gráfico 1. Correlação entre as variáveis selecionadas</b></figcaption>
+<figcaption align = "center"><b>Gráfico 1. Correlação entre as variáveis selecionadas</b></figcaption>
 <img src="assets/correlacao_var_selecionadas.png" style="width:100%">
 </figure>
 
 
 <figure>
-<figcaption align = "center">Gráfico 2. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
+<figcaption align = "center"><b>Gráfico 2. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
 <img src="assets/correlacao_0.3.png" style="width:100%">
 </figure>
 
 <figure>
-<figcaption align = "center">Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 utilizada no modelo de aprendizagem.
+<figcaption align = "center"><b>Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 utilizada no modelo de aprendizagem.
 A tabela mostra a porcentagem de variáveis incluindo dados de 2015 a 2021 da base do Vigitel.</b></figcaption>
 <img src="assets/tabela_dataset_v2.jpg" alt="Trulli" align:center width="70%" >
 </figure>
@@ -110,13 +110,13 @@ A amostra selecionada têm um total de 235430 (n° total de pessoas na amostra) 
 A média do IMC é de  26,2 kg/m² (DP=  4.23; min. 17,4 e máx. 41,4), sendo que 42,23% da população se encontra acima do peso considerado adequado.
 
 <figure>
-<figcaption align = "center">Gráfico 3. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
+<figcaption align = "center"><b>Gráfico 3. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
 <img src="assets/histograma_imc.png" style="width:85%">
 </figure>
 
 
 <figure>
-<figcaption align = "center">Gráfico 4. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
+<figcaption align = "center"><b>Gráfico 4. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
 <img src="assets/diab_anos.png" style="width:85%">
 </figure>
 
@@ -125,7 +125,7 @@ Pode se notar que a probabilidade de um indivíduo possuir diabetes aumentou de 
 <figure>
 </figure>
 <figure>
-<figcaption align = "center">Gráfico 5. Prevalência de diabetes segundo a faixa etaria para os anos 2015 a 2021.</b></figcaption>
+<figcaption align = "center"><b>Gráfico 5. Prevalência de diabetes segundo a faixa etaria para os anos 2015 a 2021.</b></figcaption>
 <img src="assets/diab_fet2.png" style="width:85%">
 </figure>
 
@@ -133,14 +133,14 @@ As faixas etárias maiores apresentaram maiores taxas de diabéticos, com uma di
 
 
 <figure>
-<figcaption align = "center">Gráfico 6. Prevalência de diabetes por cor na amostra para os anos.</b></figcaption>
+<figcaption align = "center"><b>Gráfico 6. Prevalência de diabetes por cor na amostra para os anos.</b></figcaption>
 <img src="assets/cor.png" style="width:85%">
 </figure>
 
 No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relativamente próximas, porém com o passar dos anos a população indígena, preta e amarela tiveram um aumento considerável na porcentagem de diabéticos.
 
 <figure>
-<figcaption align = "center">Gráfico 7. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
+<figcaption align = "center"><b>Gráfico 7. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
 </b></figcaption>
 <img src="assets/diab_grauesc.png" style="width:85%">
 </figure>
@@ -148,14 +148,14 @@ No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relati
 É possível observar que quanto maior a escolaridade da pessoa, menor a probabilidade de a pessoa ter diabetes em relação a outro grupo de menor escolaridade. 
 
 <figure>
-<figcaption align = "center">Gráfico 8. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
+<figcaption align = "center"><b>Gráfico 8. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
 A pressão alta é um fator ligado a diabetes consistentemente ao longo dos anos, como mostra o gráfico.
 </b></figcaption>
 <img src="assets/diab_pressaoalta.png" style="width:85%">
 </figure>
 
 <figure>
-<figcaption align = "center">Gráfico 9. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
+<figcaption align = "center"><b>Gráfico 9. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
 </b></figcaption>
 <img src="assets/diab_freqalcool2.png" style="width:100%">
 </figure>
@@ -167,14 +167,14 @@ Os indivíduos que relataram consumir bebida alcoólica todos os dias foram o gr
 Algumas variáveis que inicialmente foram classificadas como boas para serem usadas como preditoras de diabetes, já era previamente estabelecidas pela literatura na área da saúde, como os hábitos em relação ao consumo de verduras, legumes e bebida de refrigerante.
 
 <figure>
-<figcaption align = "center">Gráfico 10. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
+<figcaption align = "center"><b>Gráfico 10. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
 </b></figcaption>
 <img src="assets/diab_freqrefri.png" style="width:85%">
 </figure>
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
 <figure>
-<figcaption align = "center">Gráfico 11: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
+<figcaption align = "center"><b>Gráfico 11: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
 </b></figcaption>
 <img src="assets/umap_tentativa.png" style="width:100%">
 </figure>
@@ -201,12 +201,16 @@ Juntamos a variável consumo de álcool (sim ou não) e frequência de consumo d
 
 
 ### Integração entre Bases e Análise Exploratória
-Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar uma coorte de doenças coronarianas (que também contém dados relacionados à diabetes) para validação do modelo treinado com a base Vigitel. Esta coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
+
+A base possui dados clínicos porém o grupo está interessado em fatores não clínicos também coletados, como a peso, altura, status de tabagismo,escolaridade, idade em que começou o estudo, cor e presença de diabetes e pressão alta. Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar esta coorte de doenças coronarianas para validação do modelo treinado com a base Vigitel. ELa coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
 
 
 # Ferramentas
 Ferramenta teórica: Pubmed, Google Scholar e documentos/protocolos governamentais.
-Ferramente de dados: Python, Stata, Google Colab, bibliotecas de manipulação de dados(Pandas, NumPy), bibliotecas de machine learning (Scikit-learn, TensorFlow, PyTorch - a depender da dificuldade do problema), bibliotecas de visualização de dados (Matplotlib, Seaborn, Plotly) e o que mais for necessário para resolver o problema. LateX para formatação de tabelas.
+Ferramente de dados: Python, Stata, Google Colab, bibliotecas de manipulação de dados(Pandas, NumPy), bibliotecas de machine learning (Scikit-learn, TensorFlow, PyTorch - a depender da dificuldade do problema), bibliotecas de visualização de dados (Matplotlib, Seaborn, Plotly) e o que mais for necessário para resolver o problema. LateX para formatação de tabelas e Drawio para criação de fluxogramas.
 
 # Cronograma
 
