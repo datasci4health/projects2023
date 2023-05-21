@@ -43,7 +43,6 @@ A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de cla
 
 Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
 
-
 Detalhamento por fases:
 1. Business Understanding: Entendimento de qual contexto o projeto pode ser utilizado, como aplicar o modelo, quais bases existem tratando o problema, quem são as partes interessadas. Feito a partir de buscas bibliográficas de dados e artigos relacionados e discussões em grupo.
 2. Data Understanding: Ganhar mais familiaridade com os dados, entender problemas existentes, análise de quais variáveis estão presentes em todos os anos, o que pode ser usado de forma genérica a estar disponível em outras bases, análise descritiva sobre a prevalência de diabetes por IMC, sexo, escolaridade, hábitos, condição socioeconômica. Feito a partir de gráficos, tabelas, clusterização, análise de evolução de variáveis pelo tempo e discussões em grupo.
@@ -54,31 +53,17 @@ Detalhamento por fases:
 
 # Bases de Dados
 
-
 Link do google drive com subsets da base e dicionários de dados com pré seleção de features: https://drive.google.com/drive/folders/1NMwv2sC3bnlQBedWxnHki7KG_jT0peuU?usp=sharing
 
-
 ### Bases Estudadas mas Não Adotadas
-
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
-
-Segunda opção de base: base de diabetes internacional já com processamentos e dados de saúde das pessoas: https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9
-
+A segunda base considerada como base para o projeto não foi usada pois era uma base internacional e que já estava organizada e pronta para a análise, o que o grupo cogitou que não seria tão interessante para aprendizado. 
+base de diabetes internacional já com processamentos e dados de saúde das pessoas: https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
-
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
-> * Qual o esquema/dicionário desse banco (o formato é livre)?
-> * O que descobriu sobre esse banco?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
-
+Título da Base |  https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9 | Breve resumo (duas ou três linhas) sobre a base.
 
 ### Bases Estudadas e Adotadas
-
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
