@@ -131,10 +131,8 @@ A seleção inicial de variáveis após a análise foi de:
 O link com todos os gráficos de análise está aqui (inserir link), foram selecionadas as mais relevantes para a justificativa.
 
 ### Integração entre Bases e Análise Exploratória
+Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar uma coorte de doenças coronarianas (que também contém dados relacionados à diabetes) para validação do modelo treinado com a base Vigitel. Esta coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
 
-> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
-> Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
-> Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
 
 # Ferramentas
 Ferramenta teórica: Pubmed, Google Scholar e documentos/protocolos governamentais.
