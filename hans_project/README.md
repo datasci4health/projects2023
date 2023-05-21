@@ -162,22 +162,25 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > ![Figura 1. Número de casos novos diagnosticados e abandonos do tratamento por faixa etária a cada 10 anos no período de 2009 a 2019 no Brasil](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_idade.png).
 > 
 ## Análise do abandono por ano e sexo 
-
 > Em todo o periódo analisado, o sexo masculino apresenta o maior número de casos novos diagnosticados e de abandono do tratamento em comparação com o sexo feminino. Observa-se uma tendência decrescente nos casos novos ao longo dos anos, com uma queda em 2016 e 2017. No entanto, os casos de abandono do tratamento em ambos os sexos mantiveram uma tendência similar. Durante o ano de 2019, a proporção de pacientes que abandonaram o tratamento foi maior para ambos os sexos. Por outro lado, os anos 2010 e 2011 apresentaram proporções menores de abandono (Figura 2).
 > 
 > ![Figura 2. Número de casos novos e de abandono do tratamento estratificado por sexo e ano no período de 2009 a 2019 no Brasil. F:feminino, M:masculino](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png).
-
-
-## Análise de números de casos
+>
+## Análise espacial de casos novos por unidade federativa e ano
 > Geograficamente, todas as unidades federativas relataram novos casos de hanseníase no período de 2009 a 2019. Os estados com o maior número de casos novos foram o Maranhão (MA, n=36.401), o Pará (PA, n=30.764) e o Mato Grosso (MT, n=30.068). Por outro lado, Roraima (RR, n=1.034) e Rio Grande do Sul (RS, n=1.184) apresentaram a menor número de casos (Figura 3).
 > 
 > ![Figura 3. Número de casos novos por unidade federativa por ano no Brasil, no período de 2009 a 2019](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos.gif).
+>
+## Análise espacial de casos de abandono do tratamento por unidade federativa e ano
+> Do total de casos novos diagnosticados no período de 2009 a 2019 (n=309.555), 6.023% abandonaram o esquema de tratamento (n=18.644). No entanto, a proporção de abandono variou entre as unidades federativas ao longo dos anos. Por exemplo, os estados do Amapá (AP), Pará (PA), Roraima (RR), Mato Grosso (MT), Mato Grosso do Sul (MS), Amazonas (AM) e Pernambuco (PE), apresentaram maiores proporções de abandono em algum momento do período analisado (Figura 4). A proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados por ano é uma forma de avaliar a qualidade dos serviços da doença em cada unidade federativa. As diferenças observadas podem indicar uma má qualidade dos serviços médicos prestados, bem como a persistência de fontes de infecção da doença nessas áreas. 
 > 
+> ![Figura 4. Proporção de casos que abandonaram o tratamento de hanseníase em relação ao número de casos novos estratificados por unidade federativa e ano no período de 2009 a 2019 no Brasil](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos.gif).
 
 ## Análise da correlação entre o IDH dos estados 
 > Sendo o IDH uma medida de referência em saúde, educação  e renda, foi feita sua correlação com a contagem de casos nos anos de 2009 a 2019 em cada estado e o valor do IDH do respectivo estado. Resultando numa correlação de -0.279, o que não indica uma relação muito forte para essa influência.
 > 
-> ![Figura 4. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_caso_idh.png).
+> ![Figura 4. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab.gif).
+> 
 
 ## Análise estatísitca de tempo de cura e correlação entre variáveis da base de dados sobre hanseníase 
 >Com o intuito de pensar na pergunta sobre o planejamento financeira de hospitais para o tratamento de hanseníase, fizemos uma distribuição normal do tempo de cura a partir da nova coluna "DURACAO_TRAT" criada a partir da data de saída e data de diagnóstico. A análise indicou uma média de 360.23 dias com um desvio padrão de 192.40 dias. Isso condiz com a análise médica que diz que o tratamento dura de 6 a 18 meses. 
