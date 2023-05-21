@@ -32,7 +32,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > 
 > Quais variáveis clínicas e epidemiológicas estão associadas ao tipo de saída do tratamento (cura ou abandono)?
 > 
-> Existe uma relação espacial entre o índice de desenvolvimento humano e a incidência (número de casos novos), os casos de abandono do tratamento e a gravidade da doença?
+> Existe uma relação espacial entre o índice de desenvolvimento humano com a incidência (número de casos novos) e os casos de abandono do tratamento da doença?
 > 
 > Como as percepções obtidas a partir da análise de dados podem ser utilizadas para melhorar o planejamento financeiro dos sistemas de saúde em relação ao tratamento da hanseníase?*
 > 
@@ -41,13 +41,14 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 # Metodologia
 > Seleção e tratamento dos dados
 > Os dados foram obtidos do Sistema de Informação de Agravos de Notificação (SINAN) no período de 2009 a 2019. Os dados foram pré-processados considerando apenas os casos novos notificados a cada ano. Um caso novo é a pessoa que nunca recebeu qualquer tratamento específico para a doença. Verificou-se que os casos novos eram residentes do Brasil no momento da notificação e não houve duplicatas. 
-Considerando as características da doença e a variação das variáveis fornecidas no banco de dados, foi realizada uma análise exploratória para identificar e selecionar features que mostram relação com a cura e o abandono do tratamento. 
+Considerando as características da doença e a variação das variáveis fornecidas no banco de dados, foi realizada uma análise exploratória para identificar e selecionar features que mostram relação com a cura e o abandono do tratamento (ver report). 
+> A alta por cura implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), juntamente com a avaliação médica, o que resulta na saída do paciente do registro ativo no SINAN. Os casos de abandono do tratamento são aqueles em que os pacientes não conseguem completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se forem paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas de retorno e acompanhamento do tratamento.
 >
 > Análise descriptivos
-> A partir desse subconjunto de dados, foi realizada um análise descriptiva dos casos novos, dos casos de cura e dos casos de abandono de tratamento, estratificada por sexo, faixa etária, classificação operacional e outras variáveis clínicas dos pacientes. Adicionalmente se determinou correlação das features com os desfechos da doença…
+> A partir desse subconjunto de dados, foi realizada um análise descriptiva dos casos novos, dos casos de cura e dos casos de abandono de tratamento, estratificada por sexo, faixa etária, classificação operacional e outras variáveis clínicas dos pacientes. Além disso, determinou-se a correlação das variáveis com os desfechos da doença.
 >
 > Análise espacial
-> Para identificar padrões espaciais de ocorrência e abandono, determinou-se a proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes como um indicador para avaliar a qualidade da atenção e do acompanhamento dos casos novos diagnosticados até a completude do tratamento. Para o cálculo do indicador foram usados os casos novos de hanseníase diagnosticados nos anos das coortes que abandonaram o tratamento até 31/12 do ano de avaliação, dividido pelo total de casos novos diagnosticados nos anos das coortes, multiplicado por 100. O qualidade de atenção pode catalogar se como Bom <10%, Regular de 10 a 24.9% e Precário >= 25%. Para esse indicador foi usado o município de residência atual dos casos notificados, sendo excluídos aqueles casos com tipo de saída “erro de diagnóstico” no banco de dados. Segundo o parâmetro obtido foram criados mapas temáticos por ano.
+> Para identificar padrões espaciais de ocorrência e abandono, determinou-se a proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes como um indicador para avaliar a qualidade da atenção e do acompanhamento dos casos novos diagnosticados até a conclusão do tratamento. Para o cálculo desse indicador, utilizaram-se os casos novos de hanseníase diagnosticados nos anos das coortes que abandonaram o tratamento até 31/12 do ano de avaliação, dividido pelo total de casos novos diagnosticados nos anos das coortes, multiplicado por 100. O qualidade de atenção pode ser classificada como Boa quando o indicador é inferior a 10%, Regular quando está entre 10% e 24,9% e Precária quando é igual ou superior a 25%. Para esse indicador foi utilizado o município e a unidade federativa de residência atual dos casos notificados, excluindo aqueles com a classificação de "erro de diagnóstico” no banco de dados. Com base nos parâmetros obtidos, foram criados mapas temáticos para cada ano.
 
 ## Bases de Dados e Evolução
 > Bases de dados estudadas e/ou utilizadas no projeto.
@@ -89,7 +90,7 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > 
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
 > 
-> Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
+> Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes anos, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
 > 
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
 > 
@@ -101,6 +102,17 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > 
 > Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
 > Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
+> 
+> O maior número de casos novos diagnosticados esteve concentrado em pacientes com idades entre 40 e 69 anos, sendo maior na faixa etária de 40 a 49 anos. Por outro lado, a maior  proporção de pacientes que abandonaram o tratamento ocorreu entre os 20 e 49 anos de idade, destacando-se aqueles com idades entre 20 a 29 anos.(Figura 1).
+>  
+> ![Figura 1. Número de casos novos diagnosticados e abandonos do tratamento por faixa etária a cada 10 anos no período de 2009 a 2019 no Brasil.] (https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_idade.png)
+> 
+> Em todo o periódo analisado, o sexo masculino apresenta o maior número de casos novos diagnosticados e de abandono do tratamento em comparação com o sexo feminino. Observa-se uma tendência decrescente nos casos novos ao longo dos anos, com uma queda em 2016 e 2017. No entanto, os casos de abandono do tratamento em ambos os sexos mantiveram uma tendência similar. Durante o ano de 2019, a proporção de pacientes que abandonaram o tratamento foi maior para ambos os sexos. Por outro lado, os anos 2010 e 2011 apresentaram proporções menores de abandono (Figura 2).
+> 
+> ![Figura 2. Número de casos novos e de abandono do tratamento estratificado por sexo e ano no período de 2009 a 2019 no Brasil. F:feminino, M:masculino.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png)
+> 
+> 
+
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas e bibliotecas:
