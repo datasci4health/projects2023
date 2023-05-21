@@ -63,46 +63,100 @@ Considerando as características da doença e a variação das variáveis fornec
 
 > Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
 
+### Base de dados de casos de hansenníase 
+
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan.saude.gov.br/hanseniase | Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica a nível municipal, estadual e nacional.
+ 
+ # Dicionário
 
-> * Qual o esquema/dicionário desse banco (o formato é livre)?
+ Aqui [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) é possível encontrar 0 dicionário de dados.
+ 
+> * MODOS DE ENTRADA
 > 
-> Sim, [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) para o dicionário de dados.
+> Caso novo: corresponde ao caso de hanseníase que nunca recebeu qualquer tratamento específico.
 > 
-> * O que descobriu sobre esse banco?
+> Outros reingressos: quando o paciente recebeu algum tipo de saída que não fosse cura, exemplo abandono, e retorna requerendo tratamento específico para hanseníase, a exceção de recidiva.
 > 
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> Outras entradas possíveis são transferência do mesmo município(outra unidade), transferência de outro município (mesma unidade da Federação – UF), transferência de outro estado, transferência de outro país.
 > 
+> Recidiva: pacientes que receberam alta por cura depois de serem tratados adequadamente com o esquema multidrogas e saíram do registro ativo do SINAN e que após o período de cura (geralmente superior a cinco anos)voltaram a apresentar novos sinais e sintomas clínicos da doença. Esses casos são notificados no modo de entrada ao sistema como “recidiva”.
+> 
+> 
+> * DADOS CLÍNICOS / EPIDEMIOLÓGICOS
+> 
+> Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
+> 
+> Classificação operacional baseado no número de lesões cutâneas (WHO):
+> 
+> Paucibacilar (PB)
+> 
+> Multibacilar (MB)
+>
+>
+> Formas clínicas: Classificação segundo Madri 1953.
+> 
+> Hanseníase indeterminada (HI) tipo PB
+> 
+> Hanseníase tuberculóide (HT) tipo PB
+> 
+> Hanseníase dimorfa (HD) tipo MB
+> 
+> Hanseníase virchowiana (HV) tipo MB
+> 
+> 
+>
+> Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
+> 
+> 
+> Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
+> 
+> 
+> Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
+Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
+>
+>
+> * MODOS DE SAÍDA
+>
+> Alta por cura: implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), junto com avaliação médica (neurológica, grau de incapacidade e orientação para os cuidados) o que leva a saída do paciente do registro ativo no SINAN.
+> 
+> Abandono do tratamento: é aquele onde o paciente não consegue completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se são paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas para o retorno e seguimento do tratamento.
+> 
+> Outros encerramentos possíveis são transferência para o mesmo município, para outro município, estado ou país, óbito por hanseníase ou por outra causa como erro diagnóstico.
+> 
+> 
+> * INDICADORES
+> 
+> Os indicadores de saúde permitem a comparação entre diferentes áreas ou momentos e fornecem subsídios ao planejamento das ações de saúde. Existem dois grupos de indicadores para o monitoramento da hanseníase: 
+>
+> i) indicadores de monitoramento do progresso da eliminação da hanseníase enquanto problema de saúde pública - medem a magnitude e transcendência do problema de saúde pública. A situação é verificada na população ou no meio ambiente em um determinado período de tempo.
+> ii) indicadores para avaliar a qualidade dos serviços da doença - medem o trabalho realizado (qualidade e/ou quantidade). Proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes.
+
+### Filtros e transformações 
+
 > Foram feitos filtros na base para remoção de duplicadas, para selecionar apenas casos do Brasil, apenas novos casos registrados no sistema (exclui reincidente) e apenas os casos com desfecho: cura, óbito ou abandono. Em seguida, foi realizada a mudança do tipo de algumas colunas que estavam caracterizadas como numéricas, mas representavam uma categoria. Depois, foram removidas todas as features com baixa variação de dados e alta cardinalidade. Outras colunas foram removidas sob o critério de não serem relevantes para o problema estudado. Por fim, foi feito um corte temporal para analisar apenas os casos de 2009 a 2019.
-> 
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
-> 
+
+
 > Para Análise Exploratória dessa base foram analisados a quantidade de casos registrados em cada estado ao longo dos anos com o objetivo de entender se existia alguma região em que a doença predominou e se essa proporção foi reduzindo ou aumentando com o passar de uma década. Além disso, foi analisada a gravidade desses casos registrados, para entender onde há a presença de casos mais graves. Em seguida foram analisadas duas variaáveis (tempo de cura e tipo de saída do tratamento), para cada uma foi calculada a correlação com outras variáveis a fim de entender como se comportavam com outras variáveis. Por fim, foi iniciado testes de ML para analisar a acurácia do modelo em prever se o paciente abandonará o tratamento ou seguirá até o fim.
 
+### Base de dados sobre dados geográficos 
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil é um projeto que reúne informações socioeconômicas e demográficas sobre o Brasil. Ele oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
 
-> * Qual o esquema/dicionário desse banco (o formato é livre)?
+Constitui em um site de consulta onde seleciona-se quais indicadores (educação, desenvolvimento humano, renda, etc) e quais territorialidade deseja acessar. Nessse caso, foi selecionado apenas o IDH por estado ao longo dos anos.
 > 
-> Sim, é um site de consulta em que você seleciona quais indicadores (educação, desenvolvimento humano, renda, etc) e quais territorialidade deseja acessar. Nessse caso, foi selecionado apenas o IDH por estado ao longo dos anos.
+> O banco oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
 > 
-> * O que descobriu sobre esse banco?
-> 
-> Ele oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
-> 
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+### Filtros e transformações 
 > 
 > Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes anos, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
-> 
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
-> 
+
 > Foi feita uma análise de correlação do IDH com a quantidade de casos novos nos estados em cada ano, indicando uma correlação negativa, mas muito baixa (0.28)
 
-### Integração entre Bases e Análise Exploratória
+# Integração entre Bases e Análise Exploratória
 
 ## Análise de casos por estado
 > As bases foram unidas por sigla do estado (UF) e por ano (NU_ANO), dessa forma, foi obtido uma tabela com quatro colunas (UF, NU_ANO, IDH, N_CASOS) e a partir disso foi possível analisar a correlação entre o IDH e a quantidade de casos em cada estado.
@@ -163,67 +217,7 @@ Já a respeito da correlação do tempo de cura com as demais variáveis, as mai
 > | Elaboração do relatório  |  |  |  |  |  |  |  |  | X |  |
 > | Entrega final e apresentação  |  |  |  |  |  |  |  |  |  | X |
 
-# Dicionário
-> 
-> * MODOS DE ENTRADA
-> 
-> Caso novo: corresponde ao caso de hanseníase que nunca recebeu qualquer tratamento específico.
-> 
-> Outros reingressos: quando o paciente recebeu algum tipo de saída que não fosse cura, exemplo abandono, e retorna requerendo tratamento específico para hanseníase, a exceção de recidiva.
-> 
-> Outras entradas possíveis são transferência do mesmo município(outra unidade), transferência de outro município (mesma unidade da Federação – UF), transferência de outro estado, transferência de outro país.
-> 
-> Recidiva: pacientes que receberam alta por cura depois de serem tratados adequadamente com o esquema multidrogas e saíram do registro ativo do SINAN e que após o período de cura (geralmente superior a cinco anos)voltaram a apresentar novos sinais e sintomas clínicos da doença. Esses casos são notificados no modo de entrada ao sistema como “recidiva”.
-> 
-> 
-> * DADOS CLÍNICOS / EPIDEMIOLÓGICOS
-> 
-> Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
-> 
-> Classificação operacional baseado no número de lesões cutâneas (WHO):
-> 
-> Paucibacilar (PB)
-> 
-> Multibacilar (MB)
->
->
-> Formas clínicas: Classificação segundo Madri 1953.
-> 
-> Hanseníase indeterminada (HI) tipo PB
-> 
-> Hanseníase tuberculóide (HT) tipo PB
-> 
-> Hanseníase dimorfa (HD) tipo MB
-> 
-> Hanseníase virchowiana (HV) tipo MB
-> 
-> 
->
-> Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
-> 
-> 
-> Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
-> 
-> 
-> Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
-Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
->
->
-> * MODOS DE SAÍDA
->
-> Alta por cura: implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), junto com avaliação médica (neurológica, grau de incapacidade e orientação para os cuidados) o que leva a saída do paciente do registro ativo no SINAN.
-> 
-> Abandono do tratamento: é aquele onde o paciente não consegue completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se são paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas para o retorno e seguimento do tratamento.
-> 
-> Outros encerramentos possíveis são transferência para o mesmo município, para outro município, estado ou país, óbito por hanseníase ou por outra causa como erro diagnóstico.
-> 
-> 
-> * INDICADORES
-> 
-> Os indicadores de saúde permitem a comparação entre diferentes áreas ou momentos e fornecem subsídios ao planejamento das ações de saúde. Existem dois grupos de indicadores para o monitoramento da hanseníase: 
->
-> i) indicadores de monitoramento do progresso da eliminação da hanseníase enquanto problema de saúde pública - medem a magnitude e transcendência do problema de saúde pública. A situação é verificada na população ou no meio ambiente em um determinado período de tempo.
-> ii) indicadores para avaliar a qualidade dos serviços da doença - medem o trabalho realizado (qualidade e/ou quantidade). Proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes.
+
 
 
 # Referências
