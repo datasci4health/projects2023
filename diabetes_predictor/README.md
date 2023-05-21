@@ -31,17 +31,22 @@ Modelar determinantes sociais de saúde (SDOH) em populações de capitais brasi
 2. Analisar possiveis diferenças de hábitos dos anos pré e durante pandemia para seleção de dados
 
 # Metodologia
-Para fortalecer o debate sobre o tema escolhido pelo grupo (diabetes) elaboramos uma breve [revisão da literatura](https://docs.google.com/spreadsheets/d/16Tx_cRwd-Si_22261u3sc9vwINxoUJbDIam9G-gOqMw/edit?usp=share_link) sobre a temática.
-
-Após definir a base de dados que vamos usar, classificamos as variaveis todas as variaveis do [dicionario](https://docs.google.com/spreadsheets/d/1aNySJ5izNeSEnhFt3PwWIv_5IPRt3P12/edit?usp=sharing&ouid=106016703712140707137&rtpof=true&sd=true) geral (contém as variaveis de todos os anos) em 3 categorias, (1) muito relevante; (2) pouco relevante e (3) irrelevante para o desfecho do nosso estudo. A classficação das variaveis foi feita com base em informações já consolidadas sobre os principais temas relacionados a diabetes, com o objetivo de reduzir o número de variáveis a serem analisadas porteriormente. 
-
-Para nosso estudo vamos selecionar os anos que melhor explicam os hábitos da população atualmente, a partir de uma análise de correlação com todas as variáveis calssificadas como (1) muito relevante existentes nos anos selecionados. Com base nas variáveis presentes no período selecionado, criamos uma [serie de perguntas](https://docs.google.com/document/d/1_7RMeBFHca32wVxBhwUvWz-3Or6s_1LFaEVwYnwiljg/edit?usp=share_link) para fazer a análise exploratória dos nossos dados e gerar as primeiras tabelas/graficos descritivas. As perguntas também foram criadas a partir de conhecimentos já consolidados na literatura em relação a diabetes. 
-
+Método aplicado a base escolhida
 A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento dos dados. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmetaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
 ![Fases da metodologia](assets/Fluxo_dados.drawio.png)
 
 Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
+
+Detalhamento por fases:
+1. Business Understanding: Entendimento de qual contexto o projeto pode ser utilizado, como aplicar o modelo, quais bases existem tratando o problema, quem são as partes interessadas. Feito a partir de buscas bibliográficas de dados e artigos relacionados e discussões em grupo.
+
+Base escolhida:
+Por fim, o grupo decidiu usar a base do Vigitel, que segundo o Ministério da Saúde  "trata-se de dados de um dos mais tradicionais questionários de saúde do Brasil [...]. Os resultados desse sistema subsidiam o monitoramento das metas propostas no Plano de Ações Estratégicas para o Enfrentamento das Doenças Crônicas Não Transmissíveis no Brasil 2011-2022 e do Plano de Ações Estratégicas para o Enfrentamento das Doenças Crônicas e Agravos não Transmissíveis no Brasil 2021-2030." Fonte: https://www.gov.br/saude/pt-br/assuntos/noticias/2022/setembro/com-entrevistas-por-telefone-saude-comeca-operacao-do-vigitel-2022
+Para fortalecer o debate sobre o tema escolhido pelo grupo (diabetes), elaboramos uma breve revisão da literatura sobre a temática.
+Como por exemplo, para enfatizar que mesmo o Vigitel sendo um inquérito telefônico, portanto autorrelatado, ele apresentou validade em relação a informações diretamente coletadas.
+https://www.scielo.br/j/rbepid/a/6Qkd5jj79g8mcPcDSrnPXqj/abstract/?lang=pt
+https://www.scielosp.org/pdf/csp/v26n12/16.pdf
 
 Detalhamento por fases:
 1. Business Understanding: Entendimento de qual contexto o projeto pode ser utilizado, como aplicar o modelo, quais bases existem tratando o problema, quem são as partes interessadas. Feito a partir de buscas bibliográficas de dados e artigos relacionados e discussões em grupo.
