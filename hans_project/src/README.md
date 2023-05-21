@@ -174,6 +174,11 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > ![Figura 3. Número de casos novos por unidade federativa por ano no Brasil, no período de 2009 a 2019](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos.gif).
 > 
 
+## Análise da correlação entre o IDH dos estados 
+> Sendo o IDH uma medida de referência em saúde, educação  e renda, foi feita sua correlação com a contagem de casos nos anos de 2009 a 2019 em cada estado e o valor do IDH do respectivo estado. Resultando numa correlação de -0.279, o que não indica uma relação muito forte para essa influência.
+> 
+> ![Figura 4. Número de casos novos em um estado versus o IDH do respectivo estado no período de 2009 a 2019 no Brasil.](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_sexo.png).
+
 ## Análise estatísitca de tempo de cura e correlação entre variáveis da base de dados sobre hanseníase 
 Com o intuito de pensar na pergunta sobre o planejamento financeira de hospitais para o tratamento de hanseníase, fizemos uma distribuição normal do tempo de cura a partir da nova coluna "DURACAO_TRAT" criada a partir da data de saída e data de diagnóstico. A análise indicou uma média de 360.23 dias com um desvio padrão de 192.40 dias. Isso condiz com a análise médica que diz que o tratamento dura de 6 a 18 meses. 
 
@@ -185,6 +190,17 @@ Já a respeito da correlação do tempo de cura com as demais variáveis, as mai
 | Duração Tratamento (DURACAO_TRAT) X Forma Clínica da Doença (FORMACLINI)     | 0.3662     |
 | Duração do Tratamento (DURACAO_TRAT) X Número de Lesões (NU_LESOES)          | 0.2109     |
 
+## Análises preliminares de predição
+
+> Foi feito um estudo preliminar com alguns algoritmos considerando as váriaveis disponíveis e tentado predizer o tipo de alta do paciente.
+> Foram feitos testes com os métodos random forest e logistic regression, os resultados obtidos foram:
+>
+>| Método               | Acurácia |
+>|----------------------|----------|
+>| Random Forest        | 0.96     |
+>| Logistic Regression  | 0.89     |
+>
+> Os resultados se demonstraram interessantes, mas ainda é necessário alguns ajustes e refinamento para um melhor balanceamento dos dados. 
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas e bibliotecas:
