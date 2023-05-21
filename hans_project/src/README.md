@@ -108,7 +108,7 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo.
 > Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
 > 
-> O maior número de casos novos diagnosticados esteve concentrado em pacientes com idades entre 40 e 69 anos, sendo maior na faixa etária de 40 a 49 anos. Por outro lado, a maior  proporção de pacientes que abandonaram o tratamento ocorreu entre os 20 e 49 anos de idade, destacando-se aqueles com idades entre 20 a 29 anos.(Figura 1).
+> O maior número de casos novos diagnosticados esteve concentrado em pacientes com idades entre 40 e 69 anos, sendo maior na faixa etária de 40 a 49 anos. Por outro lado, a maior  proporção de pacientes que abandonaram o tratamento ocorreu entre os 20 e 49 anos de idade, destacando-se aqueles com idades entre 20 a 29 anos (Figura 1).
 >  
 > ![Figura 1. Número de casos novos diagnosticados e abandonos do tratamento por faixa etária a cada 10 anos no período de 2009 a 2019 no Brasil](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_idade.png).
 > 
