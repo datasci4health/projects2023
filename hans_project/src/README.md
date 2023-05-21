@@ -59,17 +59,13 @@ Considerando as características da doença e a variação das variáveis fornec
 ## Bases de Dados e Evolução
 > Bases de dados estudadas e/ou utilizadas no projeto.
 
-### Bases Estudadas e Adotadas
-
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
-
 ### Base de dados de casos de hansenníase 
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan.saude.gov.br/hanseniase | Banco de dados nacional alimentado pela notificação e investigação de casos de doenças e agravos gerados pelo Sistema de Vigilância Epidemiológica a nível municipal, estadual e nacional.
  
- # Dicionário
+ #### Dicionário
 
  Aqui [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) é possível encontrar 0 dicionário de dados.
  
@@ -133,7 +129,7 @@ Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, d
 > i) indicadores de monitoramento do progresso da eliminação da hanseníase enquanto problema de saúde pública - medem a magnitude e transcendência do problema de saúde pública. A situação é verificada na população ou no meio ambiente em um determinado período de tempo.
 > ii) indicadores para avaliar a qualidade dos serviços da doença - medem o trabalho realizado (qualidade e/ou quantidade). Proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes.
 
-### Filtros e transformações 
+#### Filtros e transformações 
 
 > Foram feitos filtros na base para remoção de duplicadas, para selecionar apenas casos do Brasil, apenas novos casos registrados no sistema (exclui reincidente) e apenas os casos com desfecho: cura, óbito ou abandono. Em seguida, foi realizada a mudança do tipo de algumas colunas que estavam caracterizadas como numéricas, mas representavam uma categoria. Depois, foram removidas todas as features com baixa variação de dados e alta cardinalidade. Outras colunas foram removidas sob o critério de não serem relevantes para o problema estudado. Por fim, foi feito um corte temporal para analisar apenas os casos de 2009 a 2019.
 
@@ -150,7 +146,7 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > 
 > O banco oferece uma ampla gama de indicadores e dados estatísticos que abrangem diversos aspectos do país, permitindo análises e comparações em diferentes níveis geográficos.
 > 
-### Filtros e transformações 
+#### Filtros e transformações 
 > 
 > Não foi encontrado dados para o IDH de 2009 e 2011 e portanto, para estes anos, foram considerados os mesmos valores de 2010. Foi necessário remover o texto 'IDHM' das colunas, restando apenas o ano ao qual aqueles valores se referem. Foi removido os dados sobre o IDH do país, deixando apenas os dos estados. Além disso, foi substituído o nome dos estados por suas siglas. Por fim, foi adaptado o formato da tabela para conter apenas três colunas (UF, NU_ANO, IDH).
 
