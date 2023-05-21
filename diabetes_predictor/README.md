@@ -39,7 +39,7 @@ Para nosso estudo vamos selecionar os anos que melhor explicam os hábitos da po
 
 A metodologia prevista é o CRISP-DM, em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de features e pré processamento dos dados. Depois de chegar em um modelo baseline, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmetaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo a fase de deploy do CRISP-DM.
 
-![Fases da metodologia](img/Fluxo_dados.drawio.png)
+![Fases da metodologia](assets/Fluxo_dados.drawio.png)
 
 Fonte: https://www.datageeks.com.br/pre-processamento-de-dados/
 
@@ -92,29 +92,29 @@ Pode se notar que é uma base majoritariamente composta de mulheres, brancas, de
 
 #### Análises
 
-![](img/diab_geral.PNG)
+![](assets/diab_geral.PNG)
 
 Pode se notar que a probabilidade de um indivíduo possuir diabetes aumentou de 9 para 14% de 2015 a 2021. Mesmo assim, a variação não foi tão grande e isso pode tornar o modelo mais generalizável. Por enquanto a escolha foi de manter todos os anos após 2015.
 
 As faixas etárias maiores apresentaram maiores taxas de diabéticos, com uma diferença clara entre elas.
 
-![](img/diab_fet.PNG)
+![](assets/diab_fet.PNG)
 
 Em geral a incidência de diabetes é balanceada entre as cores, com um número levemente maior para as cores indígena e amarela.
-![](img/diab_cor.PNG)
+![](assets/diab_cor.PNG)
 
 Pessoas com maior escolaridade possuem menos diabetes.
-![](img/diab_escolaridade.PNG)
+![](assets/diab_escolaridade.PNG)
 
 A pressão alta é um fator ligado a diabetes consistentemente ao longo dos anos, como mostra o gráfico.
-![](img/diab_pressao.PNG)
+![](assets/diab_pressao.PNG)
 
 O consumo de álcool diário aumenta consideravelmente a chance de desenvolver diabetes, com uma diferença de até 6% entre o consumo de 5 a 6 dias para todos os dias.
-![](img/diab_freqalcool.PNG)
+![](assets/diab_freqalcool.PNG)
 
 Alguns fatores foram diferentes do esperado, como por exemplo a frequência do consumo de refrigerantes.
 
-![](img/diab_refri.PNG)
+![](assets/diab_refri.PNG)
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
 
