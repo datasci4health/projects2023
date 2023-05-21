@@ -93,27 +93,40 @@ Base de Dados  | Descrição | Anos
 
 As análises feitas utilizaram como base os dados provenientes da PNS (2019). Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se na análise apenas perguntas que estivessem relacionadas diretamente aos habitos alimentares, diagnósticos recentes de doenças crônicas, às características do domicílio, e das pessoas entrevistadas.
 
-Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, Fundamental completo e médio incompleto, Médio completo e superior incompleto, Superior completo.
+Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
-Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: Nenhum ou mínimo, Leve, Moderada, Moderadamente Grave, Grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
+Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave, Grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
 
 ### Características descritivas da população
 
-![Sexo e cor/raça da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png?raw=true)
-![Idade e peso da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png?raw=true)
-![Nível escolar e renda per capita da população](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png?raw=true)
+Os gráficos abaixo descrevem abaixo a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar uma base balanceada em genrero e predominatimente composta por pessoas da cor ou raça parda.
+
+![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+
+Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curva estão em um intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 à 59 anos - [onde este indicador foi desenvolvido e avalido](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)).
+
+![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+
+Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda percapita da população estudada:
+
+![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à ) num comportatemento exponecial similar ao uma exponecial negativa, conforme podemos 
+
+![PHQ9_dist](notebooks/generated_data/pns_data_description/00.png)
 
 
 ### Correlações de interesse
 
-![Correlacoes de interesse com depressao](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png?raw=true)
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
-### Testes de asscociaçao
+### Testes de associação
+
+
 
 | Variáveis confrontadas                                 |        χ2 |   p-value |
 |:-------------------------------------------------------|----------:|----------:|
 | Nível de escolaridade e renda per capita               |  23047.00 |         0 |
-| Raça-cor e renda per capita                            |   7517.54 |         0 |
 | Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
 | Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
 | Percepção de saúde e raça-cor                          |   1020.99 |         0 |
@@ -145,17 +158,6 @@ Para realizar uma análise sobre a prevalência de depressão na população da 
 
 Aplicando-se o teste de independência de χ2 para análise da população masculina e feminina utilizando como parâmetro o nível de PHQ9, é possível determinar que são distribuições diferentes. Isto indica maior associação de depressão ao sexo feminino.
 
-# Estudo bibliográfico
-
-[Godos J, Bonaccio M, Al-Qahtani WH, Marx W, Lane MM, Leggio GM, Grosso G. Ultra-Processed Food Consumption and Depressive Symptoms in a Mediterranean Cohort. Nutrients. 2023 Jan 18;15(3):504. doi: 10.3390/nu15030504. PMID: 36771211; PMCID: PMC9919031.](https://pubmed.ncbi.nlm.nih.gov/36771211/)
-
-[Tian YR, Deng CY, Xie HC, Long QJ, Yao Y, Deng Y, Zhao H, Li Y, Liu H, Xiao L. Ultra-processed food intake and risk of depression: a systematic review. Nutr Hosp. 2023 Feb 15;40(1):160-176. English. doi: 10.20960/nh.03723. PMID: 36537321.](https://pubmed.ncbi.nlm.nih.gov/36537321/)
-
-[Elizabeth L, Machado P, Zinöcker M, Baker P, Lawrence M. Ultra-Processed Foods and Health Outcomes: A Narrative Review. Nutrients. 2020 Jun 30;12(7):1955. doi: 10.3390/nu12071955. PMID: 32630022; PMCID: PMC7399967.](https://pubmed.ncbi.nlm.nih.gov/32630022/)
-
-[Lane MM, Gamage E, Travica N, Dissanayaka T, Ashtree DN, Gauci S, Lotfaliany M, O'Neil A, Jacka FN, Marx W. Ultra-Processed Food Consumption and Mental Health: A Systematic Review and Meta-Analysis of Observational Studies. Nutrients. 2022 Jun 21;14(13):2568. doi: 10.3390/nu14132568. PMID: 35807749; PMCID: PMC9268228.](https://pubmed.ncbi.nlm.nih.gov/35807749/)
-
-[Hecht EM, Rabil A, Martinez Steele E, Abrams GA, Ware D, Landy DC, Hennekens CH. Cross-sectional examination of ultra-processed food consumption and adverse mental health symptoms. Public Health Nutr. 2022 Nov;25(11):3225-3234. doi: 10.1017/S1368980022001586. Epub 2022 Jul 28. PMID: 35899785; PMCID: PMC9991859.](https://pubmed.ncbi.nlm.nih.gov/35899785/)
 
 
 # Ferramentas
@@ -186,3 +188,22 @@ Semana 07 (28/05 - 03/06) | Modelagem da solução |
 Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados |
 Semana 09 (11/06 - 17/06) | Relatório |
 Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final A|
+
+
+# Material bibliográfico
+
+[Barros MBA, Lima MG, Azevedo RCS, Medina LBP, Lopes CS, Menezes PR, Malta DC. Depression and health behaviors in Brazilian adults - PNS 2013. Rev Saude Publica. 2017 Jun 1;51(suppl 1):8s. doi: 10.1590/S1518-8787.2017051000084. PMID: 28591352; PMCID: PMC5676399.](https://pubmed.ncbi.nlm.nih.gov/28591352/)
+
+[Godos J, Bonaccio M, Al-Qahtani WH, Marx W, Lane MM, Leggio GM, Grosso G. Ultra-Processed Food Consumption and Depressive Symptoms in a Mediterranean Cohort. Nutrients. 2023 Jan 18;15(3):504. doi: 10.3390/nu15030504. PMID: 36771211; PMCID: PMC9919031.](https://pubmed.ncbi.nlm.nih.gov/36771211/)
+
+[Tian YR, Deng CY, Xie HC, Long QJ, Yao Y, Deng Y, Zhao H, Li Y, Liu H, Xiao L. Ultra-processed food intake and risk of depression: a systematic review. Nutr Hosp. 2023 Feb 15;40(1):160-176. English. doi: 10.20960/nh.03723. PMID: 36537321.](https://pubmed.ncbi.nlm.nih.gov/36537321/)
+
+[Melo, A. P. S., Bonadiman, C. S. C., Andrade, F. M. de ., Pinheiro, P. C., & Malta, D. C.. (2023). Depression Screening in a population-based study: Brazilian National Health Survey 2019. Ciência & Saúde Coletiva, 28(4), 1163–1174. https://doi.org/10.1590/1413-81232023284.14912022](https://www.scielo.br/j/csc/a/wWKFtv8ZVZZTwVDM94Q3gFt/)
+
+[Elizabeth L, Machado P, Zinöcker M, Baker P, Lawrence M. Ultra-Processed Foods and Health Outcomes: A Narrative Review. Nutrients. 2020 Jun 30;12(7):1955. doi: 10.3390/nu12071955. PMID: 32630022; PMCID: PMC7399967.](https://pubmed.ncbi.nlm.nih.gov/32630022/)
+
+[Antunes JT, Dumont-Pena Érica, Silva AG da, Moutinho C dos S, Vieira MLFP, Malta DC. A saúde mental dos adolescentes brasileiros: Pesquisa Nacional de Saúde do Escolar de 2019. REME Rev Min Enferm.](https://periodicos.ufmg.br/index.php/reme/article/view/38984)
+
+[Lane MM, Gamage E, Travica N, Dissanayaka T, Ashtree DN, Gauci S, Lotfaliany M, O'Neil A, Jacka FN, Marx W. Ultra-Processed Food Consumption and Mental Health: A Systematic Review and Meta-Analysis of Observational Studies. Nutrients. 2022 Jun 21;14(13):2568. doi: 10.3390/nu14132568. PMID: 35807749; PMCID: PMC9268228.](https://pubmed.ncbi.nlm.nih.gov/35807749/)
+
+[Hecht EM, Rabil A, Martinez Steele E, Abrams GA, Ware D, Landy DC, Hennekens CH. Cross-sectional examination of ultra-processed food consumption and adverse mental health symptoms. Public Health Nutr. 2022 Nov;25(11):3225-3234. doi: 10.1017/S1368980022001586. Epub 2022 Jul 28. PMID: 35899785; PMCID: PMC9991859.](https://pubmed.ncbi.nlm.nih.gov/35899785/)
