@@ -46,11 +46,19 @@ Neste projeto, pretendemos utilizar um conjunto de dados de pacientes tratados p
 
 Como etapas iniciais, buscando garantir a privacidade dos pacientes envolvidos e uma qualidade inicial dos dados, faremos a anonimização dos dados, removendo informações individuais dos pacientes.
 
+Uma visão geral das etapas da metodologia podem ser vistas no fluxo de processos abaixo:
+
+![image](./docs/fluxo_projeto.png)
+
 Utilizando técnicas de estatística descritiva, realizaremos:
 
 - realizar a limpeza e organização dos dados
 - tratar dados nulos ou faltantes
 - identificar possíveis anomalias de coleta e decidir como tratá-las (correção, remoção, etc)
+- realizar atividades de engenharia de *features* para incluir dados importantes como:
+    - índice de massa corpórea (IMC), a partir do cálculo imc = peso / (altura)²
+    - situação do paciente de acordo com o valor de IMC (abaixo do peso ideal, no peso ideal, sobrepeso, obesidade, etc)
+    - status de apnéia do paciente (se possui apnéia do sono e qual nível)
 
 Realizaremos análises para identificar o impacto (caso haja) na qualidade de vida dos pacientes a partir da utilização do aparelho intraoral de avanço mandibular, utilizando como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes antes e depois do uso do aparelho.
 
@@ -72,5 +80,6 @@ No decorrer da análise, pode se fazer necessário adotar novas ferramentas ou t
 |30/Abr/2023|Validação da organização do dataset pela cirurgiã-dentista integrante da equipe|de acordo que o dataset está pronto para a evolução do projeto|
 |05/Mai/2023|Análise exploratória dos dados|Entendimento da organização e distribuição dos dados|
 |12/Mai/2023|Primeira versão das respostas para os questionamentos do projeto|Respostas preliminares, baseadas em dados, junto com sua análise|
-|15/Mai/2023|Segunda entrega do projeto|Segunda entrega do projeto|
-
+|21/Mai/2023|Segunda entrega do projeto|Segunda entrega do projeto|
+|28/Mai/2023|Refinamento das respostas encontradas|Refinamento das respostas encontradas|
+|04/Jun/2023|Preparo da terceira entrega do projeto|Preparo da terceira entrega do projeto|
