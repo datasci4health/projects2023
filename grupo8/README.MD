@@ -68,6 +68,10 @@ Houve um pre-processamento inicial da base para separar apenas os dados de inter
 - `pacients_with_ck.csv`: informações dos pacientes (peso, altura, IMC e pressão arterial) que realizaram exames de CK (CPK)
 - `insulin_inputs_in_ck_pacients.csv`: todos os eventos de aplicação de insulina em pacientes que fizeram algum exame de CK (CPK).`
 
+O workflow abaixo é a representação visual do processamento realizado:
+
+![workflow](assets/diagrama.jpeg)
+
 Para realizar as primeiras análises, foi necessário aplicar alguns passos de limpeza de dados. Mais detalhes podem ser encontrados no notebook [limpeza_de_dados.ipynb](notebooks/limpeza_de_dados.ipynb). Após essa limpeza, são geradas 2 tabelas a parti das tabelas intermediarias geradas anteriormente:
 - `bmi_norm.csv`: tabela das informações dos pacientes após filtragem de valores de BMI (IMC), com remoção de valores de BMI (IMC) extremamente elevados
 - `ck_norm.csv`: tabela dos exames CK (CPK) após filtragem de valores de CK considerados outliers 
