@@ -40,17 +40,17 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Metodologia
 >
-> Seleção e tratamento dos dados
+> * Seleção e tratamento dos dados
 > 
 > Os dados foram obtidos do Sistema de Informação de Agravos de Notificação (SINAN) no período de 2009 a 2019. Os dados foram pré-processados considerando apenas os casos novos notificados a cada ano. Um caso novo é a pessoa que nunca recebeu qualquer tratamento específico para a doença. Verificou-se que os casos novos eram residentes do Brasil no momento da notificação e não houve duplicatas. 
 Considerando as características da doença e a variação das variáveis fornecidas no banco de dados, foi realizada uma análise exploratória para identificar e selecionar features que mostram relação com a cura e o abandono do tratamento (ver report). 
 > A alta por cura implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), juntamente com a avaliação médica, o que resulta na saída do paciente do registro ativo no SINAN. Os casos de abandono do tratamento são aqueles em que os pacientes não conseguem completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se forem paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas de retorno e acompanhamento do tratamento.
 >
-> Análise descriptivos
+> * Análise descriptivos
 > 
 > A partir desse subconjunto de dados, foi realizada um análise descriptiva dos casos novos, dos casos de cura e dos casos de abandono de tratamento, estratificada por sexo, faixa etária, classificação operacional e outras variáveis clínicas dos pacientes. Além disso, determinou-se a correlação das variáveis com os desfechos da doença.
 >
-> Análise espacial
+> * Análise espacial
 > 
 > Para identificar padrões espaciais de ocorrência e abandono, determinou-se a proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes como um indicador para avaliar a qualidade da atenção e do acompanhamento dos casos novos diagnosticados até a conclusão do tratamento. Para o cálculo desse indicador, utilizaram-se os casos novos de hanseníase diagnosticados nos anos das coortes que abandonaram o tratamento até 31/12 do ano de avaliação, dividido pelo total de casos novos diagnosticados nos anos das coortes, multiplicado por 100. O qualidade de atenção pode ser classificada como Boa quando o indicador é inferior a 10%, Regular quando está entre 10% e 24,9% e Precária quando é igual ou superior a 25%. Para esse indicador foi utilizado o município e a unidade federativa de residência atual dos casos notificados, excluindo aqueles com a classificação de "erro de diagnóstico” no banco de dados. Com base nos parâmetros obtidos, foram criados mapas temáticos para cada ano.
 > 
@@ -147,7 +147,7 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > | Elaboração do relatório  |  |  |  |  |  |  |  |  | X |  |
 > | Entrega final e apresentação  |  |  |  |  |  |  |  |  |  | X |
 
-# Dicionário / Roteiro
+# Dicionário
 > 
 > * MODOS DE ENTRADA
 > 
@@ -164,18 +164,17 @@ Atlas Brasil | http://www.atlasbrasil.org.br/consulta/planilha | O Atlas Brasil 
 > 
 > Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
 > 
-> Formas clínicas: Classificação segundo Madri 1953.
-> Hanseníase indeterminada (HI) -- PB
-> H. tuberculóide (HT) -- PB
-> H. dimorfa (HD) -- MB
-> H. virchowiana (HV) -- MB
-> 
-> Classificação operacional baseado no número de lesões cutâneas (OMS).
+> > Classificação operacional baseado no número de lesões cutâneas (WHO).
 > Paucibacilar (PB)
 > Multibacilar (MB)
 > 
-> Tratamento - esquemas terapêuticos
-> Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
+> Formas clínicas: Classificação segundo Madri 1953.
+> Hanseníase indeterminada (HI) tipo PB,
+> Hanseníase tuberculóide (HT) tipo PB,
+> Hanseníase dimorfa (HD) tipo MB,
+> Hanseníase virchowiana (HV) tipo MB.
+> 
+> Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
 > 
 > Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
 > 
