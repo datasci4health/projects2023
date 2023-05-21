@@ -104,6 +104,30 @@ Gráfico 7: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC
 Nesta análise descritiva, buscamos explorar a possível relação entre diabetes, pressão alta e o índice de Massa Corporal (IMC) por meio de uma visualização UMAP (Uniform Manifold Approximation and Projection). O UMAP é uma técnica de redução dimensional que permite representar dados complexo em um espaço de menor dimensão, facilitando a visualização e a identificação de padrões. Ao aplicar o UMAP aos dados, geramos a representação de um espaço reduzido, e procuramos identificar agrupamentos ou padrões que pudessem indicar uma relação entre as variáveis estudadas. No entanto, ao analisar a imagem resultante, não encontramos os agrupamentos claros ou distinções evidentes entre as pessoas com as variáveis já mencionadas anteriormente. Os pontos estão dispersos pelo espaço de forma aparentemente não relacionada diretamente, mas que não indicam uma ausência de relação. A falta de relação identificável na visualização UMAP não descarta completamente a existência de uma relação entre diabetes, pressão alta e IMC. Pode ser que a relação entre as variáveis seja complexa e não linear, ou que outros fatores não considerados no conjunto de dados estejam influenciando a relação entre as variáveis.
 Portanto, concluímos que, com base na análise descritiva da visualização UMAP, não é possível estabelecer uma relação direta entre pessoas que possuem diabetes, pressão alta e diferentes valores de IMC. Para uma compreensão mais abrangente e conclusões mais robustas, é necessário considerar outras técnicas de análise, como testes estatísticos mais sofisticados ou modelagem preditiva, e também levar em conta outras variáveis relevantes que possam influenciar a relação entre essas características de saúde.
 
+#### Seleção de variáveis
+Após toda essas análises, definimos que as variáveis que serão usadas no modelo são:
+- faixa etária
+- escolaridade
+- IMC
+- pressão alta
+- frequência de consumo de álcool
+- cor
+- atividade física
+
+O link com todos os gráficos de análise está aqui (inserir link), foram selecionadas as mais relevantes para a justificativa.
+
+3. Data Preparation: Criação do dataset a ser usado pelo modelo, escolha do ano(s) utilizados no treino,seleção de variáveis, limpeza de dados faltantes, outliers, inconsistências. Feito a partir de funções de pré-processamento e discussões em grupo.
+
+#Transformações e tratamentos realizados:
+O objetivo do modelo é identificar Diabetes tipo 2, portanto retiramos da amostra todas as pessoas que tinham idade de diagnóstico de diabetes antes dos 18 anos, pois assim excluiremos a maior parte das pessoas com possível diagnóstico de Diabetes tipo 1. https://bvsms.saude.gov.br/bvs/publicacoes/miolo2002.pdf;
+Dentre as variávei escolhidas excluímos todos que a pessoa não quis responder e que não sabia responder (segundo código do dicionário);
+Para as variáveis peso, altura e IMC, definimos a faixa de percentil de p1 a p99, excluindo os outliers que ultrapassaram esse valor. Definimos este valor de percentil porque com nossa variável desfecho de interesse está muito relacionado com o IMC elevado, decidimos trabalhar com uma margem maior, o que nos proporcionou aproximadamente 11 mil amostras a mais. 
+Juntamos a variável consumo de álcool (sim ou não) e frequência de consumo de álcool (respondido somente por quem respondeu que consome álcool) em uma única variável, sendo o valor 0 para quem não consome álcool e de 1 a 6 a frequência semanal que consome álcool;
+
+#As próximas etapas serão apresentadas na próxima entrega
+4. Modeling: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, random forest, ou redes neurais e partir da dificuldade do problema. Será feito um modelo baseline que será melhorado até apresentar um resultado satisfatório.
+5. Evaluation: O modelo será avaliado e será questionado qual será a métrica aceitável para esse problema baseado em trabalhos relacionados.
+6. Deployment: Quando o modelo apresentar o resultado desejado, será finalizado e rodado para o conjunto de teste da base. Se possível, também será avaliado em outras bases, mostrando sua capacidade de generalização.
 
 
 
