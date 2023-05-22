@@ -53,8 +53,8 @@ Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundad
  - Será que as pessoas que possuem depressão também possuem outras doenças crônicas que estão associadas com alto consumo de ultraprocessados como obesidade?
 
 
+Através dos experimentos exploratórios, análise de correlação, gráficos de distribuição confirmamos alguns hábito que possuem associação com depressão, por exemplo, fumar tabaco e atividade física
 > TODO: Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
-
 
 
 # Metodologia
@@ -91,9 +91,13 @@ Base de Dados  | Descrição | Anos
 
 O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos individuos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas à doenças crônicas e aos hábios do domicílio. 
 
-Esta base possui em torno de 293726 linhas e 1087 colunas. Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se no banco de dados para a análise do estudo perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de hábitos de vida como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista.
+Esta base possui em torno de 293726 linhas e 1087 colunas. Foi necessário filtrar de forma arbitrária as perguntas de interesse para responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se no banco de dados para a análise do estudo perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de hábitos de vida como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista.
 
 Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, durante a pipeline do regressão logisticas conforme as features foram selecionadas vamos definir a melhor estratégia para tratamento.
+
+Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
+
+![](assets/e2_specific_workflow.png)
 
 Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
 
@@ -104,9 +108,6 @@ Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma 
 Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
 Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
-
-
-## Análise Exploratória
 
 ### Características descritivas da população
 
@@ -126,6 +127,12 @@ Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportame
 
 ![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 em confrontando algumas variaveis de interesse.
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+
 Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
 
 ![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
@@ -143,11 +150,8 @@ Avaliando o PHQ9 (indicativo acimida de moderado) questionario que foi aplicado 
 
 ### Testes de associação
 
-
-
 Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste x² de Pearson para buscar associação.
-Primeiramente, buscamos associações entre as variáveis que possam nós auxiliar na discussão dos achados, por exemplo percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
-
+Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
 
 | Variáveis confrontadas                                 |        χ2 |   p-value |
 |:-------------------------------------------------------|----------:|----------:|
@@ -158,7 +162,6 @@ Primeiramente, buscamos associações entre as variáveis que possam nós auxili
 | Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
 
 Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
-
 
 | Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
 |:-------------------------------------------------------------------------|----------:|-----------:|
@@ -177,22 +180,14 @@ Em seguida, realizamos associações entre variáveis de caracterização dos in
 | Teve diagnostico AVC                                                     |     50.22 |          0 |
 | Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
 | Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
-| Teve diagnostico diabete                                                 |     13.57 |    0.00023 |
+| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
 | Teve diagnostico pressão alta                                            |     35.73 |          0 |
 | Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
 | Teve diagnostico depressão                                               |   4597.09 |          0 |
 
-
 Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
 A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
-
-
-Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 em relação a algumas variaveis de interesse.
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
 
 # Ferramentas
 
