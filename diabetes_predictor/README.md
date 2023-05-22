@@ -122,6 +122,7 @@ A média do IMC é de  26,2 kg/m² (DP=  4.23; min. 17,4 e máx. 41,4), sendo qu
 <img src="assets/histograma_imc2.png" style="width:85%">
 </figure>
 
+O histograma mostra uma distribuição unimodal se assemelhando a uma normal.
 
 <figure>
 <figcaption align = "center"><b>Gráfico 5. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
@@ -162,27 +163,36 @@ A pressão alta é um fator ligado a diabetes consistentemente ao longo dos anos
 <img src="assets/diab_pressaoalta.png" style="width:85%">
 </figure>
 
+A pressão alta mostrou uma grande relação com a prevalência de diabetes.
+
 <figure>
-<figcaption align = "center"><b>Gráfico 10. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
+<figcaption align = "center"><b>Gráfico 10. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool.
 </b></figcaption>
-<img src="assets/diab_freqalcool2.png" style="width:100%">
+<img src="assets/diab_freqalcool.png" style="width:100%">
 </figure>
 
 Os indivíduos que relataram consumir bebida alcoólica todos os dias foram o grupo que apresentou maior porcentagem de pessoas com diabetes. Assim, O consumo de álcool diário aumenta consideravelmente a chance de desenvolver diabetes, com uma diferença de até 6% entre o consumo de 5 a 6 dias para todos os dias.
 
+<figure>
+<figcaption align = "center"><b>Gráfico 11. Evolução da prevalência de diabetes em relação a prática de exercício físico.
+</b></figcaption>
+<img src="assets/diab_freqexercicio.png" style="width:100%">
+</figure>
+
+Nota-se que não praticar exercício cada vez mais leva a diabetes, se mostrando relevante em todos os anos.
 
 ### Variáveis excluídas do modelo.
 Algumas variáveis que inicialmente foram classificadas como boas para serem usadas como preditoras de diabetes, já era previamente estabelecidas pela literatura na área da saúde, como os hábitos em relação ao consumo de verduras, legumes e bebida de refrigerante.
 
 <figure>
-<figcaption align = "center"><b>Gráfico 11. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
+<figcaption align = "center"><b>Gráfico 12. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
 </b></figcaption>
 <img src="assets/diab_freqrefri.png" style="width:100%">
 </figure>
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
 <figure>
-<figcaption align = "center"><b>Gráfico 12: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
+<figcaption align = "center"><b>Gráfico 13: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
 </b></figcaption>
 <img src="assets/umap_tentativa.png" style="width:100%">
 </figure>
