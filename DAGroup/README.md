@@ -89,13 +89,21 @@ Base de Dados  | Descrição | Anos
 ----- | ----- |  -----
 [Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
 
-O dicionário disponibilizado pela PNS pode ser encontrado[aqui](https://github.com/Arthur-Salles/DAGroup/blob/e2/DAGroup/data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos individuos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas à doenças crônicas e aos hábios do domicílio. 
+O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos individuos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas à doenças crônicas e aos hábios do domicílio. 
+
+Esta base possui em torno de 293726 linhas e 1087 colunas. Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se no banco de dados para a análise do estudo perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de hábitos de vida como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista.
+
+Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, durante a pipeline do regressão logisticas conforme as features foram selecionadas vamos definir a melhor estratégia para tratamento.
+
+Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
+
+## Análise Exploratória
 
 Foi necessário filtrar de forma arbitrária as perguntas de interesse de forma a responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se na análise apenas perguntas que estivessem relacionadas diretamente aos habitos alimentares, diagnósticos recentes de doenças crônicas, às características do domicílio, e das pessoas entrevistadas.
 
 Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
-Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave, Grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
+Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
 
 
 ## Análise Exploratória
@@ -106,7 +114,7 @@ Os gráficos abaixo descrevem abaixo a proporção em relação a sexo, cor ou r
 
 ![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
 
-Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curva estão em um intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 à 59 anos - [onde este indicador foi desenvolvido e avalido](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)).
+Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curva estão num intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 à 59 anos - [onde este indicador foi desenvolvido e avalido](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)).
 
 ![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
 
@@ -114,17 +122,31 @@ Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e d
 
 ![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
 
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à ) num comportatemento exponecial similar ao uma exponecial negativa, conforme podemos 
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponecial negativa, conforme podemos observar na figura abaixo:
 
-![PHQ9_dist](notebooks/generated_data/pns_data_description/00.png)
+![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
+Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
 
-### Correlações de interesse
+![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
 
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+Curiosamente, notou-se uma alta correlção entre o IDH médio de cada estado com a porcentagem de depressão.
+
+![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+
+O grupo conclui que essa observação deve-se provavelmente ao fato de que haver um dignostico de depressão ou não deve-se muito à facilidade de acesso à saúde o que tende a ser mais fácil em locais com IDH elevado, por isso observo-se essa tendencia.
+
+Avaliando o PHQ9 (indicativo acimida de moderado) questionario que foi aplicado durante à entrevista temos obtivemos o gráfico de correlaçao abaixo, reforçando o argumento da observação acima.
+
+![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+
 
 ### Testes de associação
 
+
+
+Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste x² de Pearson para buscar associação.
+Primeiramente, buscamos associações entre as variáveis que possam nós auxiliar na discussão dos achados, por exemplo percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
 
 
 | Variáveis confrontadas                                 |        χ2 |   p-value |
@@ -135,33 +157,42 @@ Em relação à distribuição do valor PHQ9 (inteiro de 0 à ) num comportateme
 | Percepção de saúde e raça-cor                          |   1020.99 |         0 |
 | Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
 
+Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
 
 
-| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20)      |      χ2 |    p_value |
-|:------------------------------------------------------------------------------|--------:|-----------:|
-| Sexo                                                                          |  650.12 |          0 |
-| Cor                                                                           |   27.46 |    0.00005 |
-| Categoria idade                                                               |   23.64 |          0 |
-| Escolaridade                                                                  |    9.63 |    0.02198 |
-| Percepção da própria saúde                                                    | 3007.41 |          0 |
-| Percepção da saúde segundo a OMS                                              | 4762.96 |          0 |
-| Possui animal de estimação?                                                   |    2.64 |   0.10445* |
-| Renda per capita                                                              |  263.28 |          0 |
-| Frequência bebida alcoólica                                                   |    2.61 |   0.27098* |
-| Fuma tabaco                                                                   |  101.61 |          0 |
-| Atividade física nos últimos 3 meses                                          |  105.78 |          0 |
-| Teve diagnostico artrite ou reumatismo                                        |  183.69 |          0 |
-| Teve diagnostico AVC                                                          |   50.22 |          0 |
-| Teve diagnostico doenças cardiovasculares                                     |  150.73 |          0 |
-| Teve diagnostico hipercolesterolemia                                          |  130.91 |          0 |
-| Teve diagnostico diabete                                                      |   13.57 |    0.00023 |
-| Teve diagnostico pressão alta                                                 |   35.73 |          0 |
-| Teve diagnostico câncer                                                       |    5.25 |    0.02193 |
+| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
+|:-------------------------------------------------------------------------|----------:|-----------:|
+| Sexo                                                                     |    650.12 |          0 |
+| Cor                                                                      |     27.46 |    0.00005 |
+| Categoria idade                                                          |     23.64 |          0 |
+| Escolaridade                                                             |      9.63 |    0.02198 |
+| Percepção da própria saúde                                               |   3007.41 |          0 |
+| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
+| Possui animal de estimação?                                              |      2.64 |   0.10445* |
+| Renda per capita                                                         |    263.28 |          0 |
+| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
+| Fuma tabaco                                                              |    101.61 |          0 |
+| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
+| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
+| Teve diagnostico AVC                                                     |     50.22 |          0 |
+| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
+| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
+| Teve diagnostico diabete                                                 |     13.57 |    0.00023 |
+| Teve diagnostico pressão alta                                            |     35.73 |          0 |
+| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
+| Teve diagnostico depressão                                               |   4597.09 |          0 |
 
 
-Aplicando-se o teste de independência de χ2 para análise da população masculina e feminina utilizando como parâmetro o nível de PHQ9, é possível determinar que são distribuições diferentes. Isto indica maior associação de depressão ao sexo feminino.
+Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
+A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
 
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 em relação a algumas variaveis de interesse.
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
 
 # Ferramentas
 
