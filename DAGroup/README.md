@@ -93,17 +93,19 @@ Base de Dados  | Descrição | Anos
 ----- | ----- |  -----
 [Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
 
-O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos individuos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas à doenças crônicas e aos hábios do domicílio. 
+O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos indivíduos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas a doenças crônicas e aos hábitos do domicílio. 
 
 Foi necessário filtrar de forma arbitrária as perguntas de interesse para responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se no banco de dados para a análise do estudo perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de hábitos de vida como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista.
 
 Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
-Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, [apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice] (https://doi.org/10.1046/j.1525-1497.2001.016009606.x). Devido à isso, os dados foram reduzidos a este intervalo.
+Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, [apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice](https://doi.org/10.1046/j.1525-1497.2001.016009606.x). Devido à isso, os dados foram reduzidos a este intervalo.
 
-Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logistica conforme as features forem selecionadas.
+Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logística conforme as features forem selecionadas.
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
+
+![](assets/e2_workflow.png)
 
 ![](assets/e2_specific_workflow.png)
 
@@ -115,23 +117,23 @@ Nesta seção, apresentamos algumas características identificadas na base de da
 
 ### Características descritivas da população
 
-Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em genero e a predominancia parda na categoria cor ou raça.
+Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
 ![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
 
-Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
+Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
 ![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
 
-Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda percapita da população estudada:
+Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
 
 ![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
 
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponecial negativa, conforme podemos observar na figura abaixo:
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
 
 ![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
-Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 em confrontando algumas variaveis de interesse.
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
 
 ![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
@@ -141,13 +143,13 @@ Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticada
 
 ![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
 
-Curiosamente, notou-se uma alta correlção entre o IDH médio de cada estado com a porcentagem de depressão.
+Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
 ![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
-Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando o suspeita observada acima.
+Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
 
 ![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
