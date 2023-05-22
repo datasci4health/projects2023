@@ -177,7 +177,7 @@ Algumas variáveis que inicialmente foram classificadas como boas para serem usa
 <figure>
 <figcaption align = "center"><b>Gráfico 11. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
 </b></figcaption>
-<img src="assets/diab_freqrefri.png" style="width:85%">
+<img src="assets/diab_freqrefri.png" style="width:100%">
 </figure>
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
