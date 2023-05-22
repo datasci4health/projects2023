@@ -101,7 +101,7 @@ Para adequar a níveis escolares simplificados, foi necessário agregar a popula
 
 Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
 
-Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logisticas conforme as features forem selecionadas.
+Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logistica conforme as features forem selecionadas.
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
@@ -145,7 +145,7 @@ Curiosamente, notou-se uma alta correlção entre o IDH médio de cada estado co
 
 ![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
 
-O grupo conclui que essa observação deve-se provavelmente ao fato de que haver um dignostico de depressão ou não deve-se muito à facilidade de acesso à saúde o que tende a ser mais fácil em locais com IDH elevado, por isso observo-se essa tendencia.
+O grupo concluiu que essa observação deve-se provavelmente ao fato de que haver um dignostico de depressão ou não deve-se muito à facilidade de acesso à saúde o que tende a ser mais fácil em locais com IDH elevado, por isso observo-se essa tendencia.
 
 Avaliando o PHQ9 (indicativo acimida de moderado) questionario que foi aplicado durante à entrevista temos obtivemos o gráfico de correlaçao abaixo, reforçando o argumento da observação acima.
 
@@ -209,18 +209,18 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 # Cronograma
 
-Semanas | Tarefas | Conclusão
------ | ----- | -----
+Semanas | Tarefas                                           | Conclusão
+----- |---------------------------------------------------| -----
 Semana 01 (16/04 - 22/04) | Definir escopo do projeto e revisão bibliográfica | :heavy_check_mark:
-Semana 02 (23/04 - 29/04) | Compreensão do dados | :heavy_check_mark:
-Semana 03 (30/04 - 06/05) | Processamento dos dados | :heavy_check_mark:
-Semana 04 (07/05 - 13/05) | Processamento dos dados | :heavy_check_mark:
-Semana 05 (14/05 - 20/05) | Análise exploratória e Entrega 2 | :heavy_check_mark:
-Semana 06 (21/05 - 27/05) | Modelagem da solução |
-Semana 07 (28/05 - 03/06) | Modelagem da solução |
-Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados |
-Semana 09 (11/06 - 17/06) | Relatório |
-Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final A|
+Semana 02 (23/04 - 29/04) | Compreensão do dados                              | :heavy_check_mark:
+Semana 03 (30/04 - 06/05) | Processamento dos dados                           | :heavy_check_mark:
+Semana 04 (07/05 - 13/05) | Processamento dos dados                           | :heavy_check_mark:
+Semana 05 (14/05 - 20/05) | Análise exploratória e Entrega 2                  | :heavy_check_mark:
+Semana 06 (21/05 - 27/05) | Modelagem da solução                              |
+Semana 07 (28/05 - 03/06) | Modelagem da solução                              |
+Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados                |
+Semana 09 (11/06 - 17/06) | Relatório                                         |
+Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      |
 
 
 # Material bibliográfico
