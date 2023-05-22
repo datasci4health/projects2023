@@ -117,14 +117,14 @@ A média do IMC é de  26,2 kg/m² (DP=  4.23; min. 17,4 e máx. 41,4), sendo qu
 
 <figure>
 <figcaption align = "center">Gráfico 4. Prevalência de diabéticos tipo 2 para todas as capitais nos anos de 2015 a 2021. .</b></figcaption>
-<img src="assets/diab_anos.PNG" style="width:100%">
+<img src="assets/diab_anos.png" style="width:100%">
 </figure>
 
 Pode se notar que a probabilidade de um indivíduo possuir diabetes aumentou de 9 para 14% de 2015 a 2021. Mesmo assim, a variação não foi tão grande e isso pode tornar o modelo mais generalizável. Por enquanto a escolha foi de manter todos os anos após 2015.
 
 <figure>
 <figcaption align = "center">Gráfico 5. Prevalência de diabetes segundo a faixa etaria para os anos 2015 a 2021.</b></figcaption>
-<img src="assets/diab_fet.PNG" style="width:100%">
+<img src="assets/diab_fet.png" style="width:100%">
 </figure>
 
 As faixas etárias maiores apresentaram maiores taxas de diabéticos, com uma diferença clara entre elas.
@@ -132,7 +132,7 @@ As faixas etárias maiores apresentaram maiores taxas de diabéticos, com uma di
 
 <figure>
 <figcaption align = "center">Gráfico 6.  Prevalência de diabetes por cor na amostra para os anos.</b></figcaption>
-<img src="assets/cor.PNG" style="width:100%">
+<img src="assets/cor.png" style="width:100%">
 </figure>
 
 No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relativamente próximas, porém com o passar dos anos a população indígena, preta e amarela tiveram um aumento considerável na porcentagem de diabéticos.
@@ -140,7 +140,7 @@ No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relati
 <figure>
 <figcaption align = "center">Gráfico 7. Prevalência de diabetes por grau de escolaridade para os anos de 2015 a 2021. 
 </b></figcaption>
-<img src="assets/diab_grauesc.PNG" style="width:100%">
+<img src="assets/diab_grauesc.png" style="width:100%">
 </figure>
 
 É possível observar que quanto maior a escolaridade da pessoa, menor a probabilidade de a pessoa ter diabetes em relação a outro grupo de menor escolaridade. 
@@ -149,13 +149,13 @@ No primeiro ano de coleta, a porcentagem de diabetes entre os grupos eram relati
 <figcaption align = "center">Gráfico 8. Prevalência de diabetes em relação à pressão alta de 2015 a 2021.
 A pressão alta é um fator ligado a diabetes consistentemente ao longo dos anos, como mostra o gráfico.
 </b></figcaption>
-<img src="assets/diab_pressaoalta.PNG" style="width:100%">
+<img src="assets/diab_pressaoalta.png" style="width:100%">
 </figure>
 
 <figure>
 <figcaption align = "center">Gráfico 9. Prevalência de diabetes em relação a frequência de consumo de álcool, para aqueles que responderam que consomem álcool. .
 </b></figcaption>
-<img src="assets/diab_freqalcool.PNG" style="width:100%">
+<img src="assets/diab_freqalcool.png" style="width:100%">
 </figure>
 
 Os indivíduos que relataram consumir bebida alcoólica todos os dias foram o grupo que apresentou maior porcentagem de pessoas com diabetes. Assim, O consumo de álcool diário aumenta consideravelmente a chance de desenvolver diabetes, com uma diferença de até 6% entre o consumo de 5 a 6 dias para todos os dias.
@@ -167,14 +167,14 @@ Algumas variáveis que inicialmente foram classificadas como boas para serem usa
 <figure>
 <figcaption align = "center">Gráfico 10. Prevalência de diabetes segundo o consumo de refrigerante para os anos 2015 a 2021.
 </b></figcaption>
-<img src="assets/diab_freqrefri.PNG" style="width:100%">
+<img src="assets/diab_freqrefri.png" style="width:100%">
 </figure>
 
 Espera-se que quanto maior a frequência, maior a possibilidade do desfecho diabetes. No entanto, os dados revelaram uma chance maior para quem nunca consome. Isso pode se dar por conta de uma mudança de hábitos dos indivíduos que são diagnosticados com a doença. Por isso, as variáveis como essa não serão usadas pelo modelo, para não gerar um fator de confusão.
 <figure>
 <figcaption align = "center">Gráfico 11: Relação do UMAP entre pessoas com diabetes, pressão alta e IMC.
 </b></figcaption>
-<img src="assets/umap_tentativa.PNG" style="width:100%">
+<img src="assets/umap_tentativa.png" style="width:100%">
 </figure>
 
 Nesta análise descritiva, buscamos explorar a possível relação entre diabetes, pressão alta e o índice de Massa Corporal (IMC) por meio de uma visualização UMAP (Uniform Manifold Approximation and Projection). O UMAP é uma técnica de redução dimensional que permite representar dados complexo em um espaço de menor dimensão, facilitando a visualização e a identificação de padrões. Ao aplicar o UMAP aos dados, geramos a representação de um espaço reduzido, e procuramos identificar agrupamentos ou padrões que pudessem indicar uma relação entre as variáveis estudadas. No entanto, ao analisar a imagem resultante, não encontramos os agrupamentos claros ou distinções evidentes entre as pessoas com as variáveis já mencionadas anteriormente. Os pontos estão dispersos pelo espaço de forma aparentemente não relacionada diretamente, mas que não indicam uma ausência de relação. A falta de relação identificável na visualização UMAP não descarta completamente a existência de uma relação entre diabetes, pressão alta e IMC. Pode ser que a relação entre as variáveis seja complexa e não linear, ou que outros fatores não considerados no conjunto de dados estejam influenciando a relação entre as variáveis.
