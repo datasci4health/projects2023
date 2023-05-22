@@ -99,7 +99,7 @@ Foi necessário filtrar de forma arbitrária as perguntas de interesse para resp
 
 Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
 
-Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, apenas pessoas com idade entre 18 e 60 anos podem ser avaliadas neste índice. Devido à isso, os dados foram reduzidos a este intervalo.
+Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, [apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice] (https://doi.org/10.1046/j.1525-1497.2001.016009606.x). Devido à isso, os dados foram reduzidos a este intervalo.
 
 Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logistica conforme as features forem selecionadas.
 
@@ -115,11 +115,11 @@ Nesta seção, apresentamos algumas características identificadas na base de da
 
 ### Características descritivas da população
 
-Os gráficos abaixo descrevem abaixo a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar uma base balanceada em genrero e predominatimente composta por pessoas da cor ou raça parda.
+Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em genero e a predominancia parda na categoria cor ou raça.
 
 ![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
 
-Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curva estão num intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 à 59 anos - [onde este indicador foi desenvolvido e avalido](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)).
+Abaixo podemos observar curvas de distribuição dos individuos da base em reação a idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitavel indicando que aparentemente grande parte dos dados em relação a este atributo estão confiaveis. Abaixo temos a distribuição destas mesmas caracteristicas, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
 ![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
 
@@ -145,9 +145,9 @@ Curiosamente, notou-se uma alta correlção entre o IDH médio de cada estado co
 
 ![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
 
-O grupo concluiu que essa observação deve-se provavelmente ao fato de que haver um dignostico de depressão ou não deve-se muito à facilidade de acesso à saúde o que tende a ser mais fácil em locais com IDH elevado, por isso observo-se essa tendencia.
+O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
-Avaliando o PHQ9 (indicativo acimida de moderado) questionario que foi aplicado durante à entrevista temos obtivemos o gráfico de correlaçao abaixo, reforçando o argumento da observação acima.
+Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando o suspeita observada acima.
 
 ![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
