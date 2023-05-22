@@ -74,6 +74,9 @@ Para obter informações detalhadas dos pacientes que realizaram o exame de CK (
 
 Além das informações obtidas acima, também buscamos verificar se os pacientes que realizaram exames de CK (CPK) receberam doses de insulina. A tabela `inputevents.csv` possui informações sobre todos os eventos de entradas de fluido, incluindo a administração de insulina. Após uma análise da tabela `d_items.csv`, identificamos que a insulina era representada pelos seguintes itemid: 223257, 223258, 223259, 223260, 223261, 223262, 229299 e 229619, correspondendo às descrições de diferentes tipos de insulina. Com base nisso, geramos a tabela `insulin_inputs_in_ck_patients.csv`, que contém eventos de aplicação de insulina em pacientes que realizaram exames de CK (CPK), gerados a partir do cruzamento de id da tabela `patients_with_ck.csv` e da tabela intermediária `insulin_inputs`. Da mesma forma que a tabela `chartevents.csv`, a tabela "inputevents.csv" foi processada em pedaços (chunks) devido ao seu tamanho considerável (2,3GB).
 
+A abaixo é mostrado a relação do `itemid` com os respectivos exames e medicações nas diferentes tabelas do MIMIC IV.
+![workflow](assets/tabela_itens.jpeg)
+
 Mais informações sobre esse pre-processamento podem ser encontradas no notebook [process_raw_mimic.ipynb](notebooks/process_raw_mimic.ipynb). O workflow abaixo é a representação visual do processamento realizado:
 
 ![workflow](assets/diagrama.jpeg)
