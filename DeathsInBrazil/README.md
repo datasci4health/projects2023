@@ -86,7 +86,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > ![Figura 2](img/figura2.png)
 > 
 > Fonte: Construção dos autores a partir de dados do “Our world in data”.
-> 
+
+
 > Na Figura 3 é representado o número de óbitos por doenças cardiovasculares do Brasil de 1996 a 2021. Observa-se que na série temporal há um comportamento repetitivo em partes na série, ou seja, existe sazonalidade. Além de também apresentar uma tendência de crescimento ao longo dos anos. Essas flutuações sazonais podem estar relacionadas a fatores como mudanças no estilo de vida ou comportamentos relacionados à saúde que ocorrem repetidamente em um determinado período de tempo, como estações do ano ou períodos festivos.
 > 
 > Figura 3: Série Temporal do Número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021.
