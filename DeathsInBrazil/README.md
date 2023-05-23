@@ -95,14 +95,16 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > ![Figura 3](img/figura3.png)
 > 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
-> 
+
+
 > Na figura 4 é possivel perceber que até os 44 anos, há um correlação negativa que varia entre moderada e forte. Na faixa etária entre 45 e 54 anos a correlação torna-se positiva moderada. A partir dos 55 anos, a correlação é positiva e muito forte, evidenciando que o avanço da idade é um fator de risco importante para o óbito por doenças cardiovasculares. 
 >
 > Figura 4: Correlação das faixas etárias com o número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021.
 > 
 > ![Figura 4](img/figura4.png)
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
-> 
+
+
 > A figura 5 mostra os maiores número de óbitos por 100 mil habitantes entre os estados brasileiros. O estado de São Paulo lidera o ranking com 2055 óbitos, seguido pelo Rio de Janeiro com 937 óbitos a cada 100 mil habitantes.
 > 
 > Figura 5: Estados do Brasil com o maior número de óbitos por 100 mil habitantes devido à doenças cardiovasculares no período de 1996 a 2021.
