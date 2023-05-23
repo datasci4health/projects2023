@@ -1,0 +1,33 @@
+variable;value;value_description
+Mobility;0;I have no problems in walking about
+Mobility;1;I have slight problems in walking about
+Mobility;2;I have moderate problems in walking about
+Mobility;3;I have severe problems in walking about
+Mobility;4;I am unable to walk about
+Mobility;5;Prefer not to answer
+Care;0;I have no problems washing or dressing myself
+Care;1;I have slight problems washing or dressing myself
+Care;4;I am unable to wash or dress myself
+Care;2;I have moderate problems washing or dressing myself
+Care;3;I have severe problems washing or dressing myself
+Care;5;Prefer not to answer
+Active;0;I have no problems doing my usual activities
+Active;1;I have slight problems doing my usual activities
+Active;2;I have moderate problems doing my usual activities
+Active;4;I am unable to do my usual activities
+Active;3;I have severe problems doing my usual activities
+Active;5;Prefer not to answer
+Pain;1;I have slight pain or discomfort
+Pain;2;I have moderate pai or discomfort
+Pain;3;I have severe pain or discomfort
+Pain;0;I have no pain or discomfort
+Pain;4;I have extreme  pain or discomfort
+Pain;5;Prefer not to answer
+Anxious;1;I am slightly anxious or depressed
+Anxious;0;I am not anxious or depressed
+Anxious;2;I am moderately anxious or depressed
+Anxious;3;I am severely anxious or depressed
+Anxious;5;Prefer not to answer
+Anxious;4;I am extremely anxious or depressed
+HealthPNA;0;No
+HealthPNA;1;Yes
