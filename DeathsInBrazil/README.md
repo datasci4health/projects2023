@@ -102,6 +102,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Figura 4: Correlação das faixas etárias com o número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021.
 > 
 > ![Figura 4](img/figura4.png)
+> 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 
 
