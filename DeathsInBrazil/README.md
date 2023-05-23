@@ -82,25 +82,32 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > A figura 2 ilustra as principais causas de mortalidade por país no ano de 2019, evidenciando um predomínio no número de óbitos por doenças cardiovasculares, seguidas de neoplasias.
 > 
 > Figura 2: Mapa das maiores causas de óbitos por país no ano de 2019.
+> 
 > ![Figura 2](img/figura2.png)
+> 
 > Fonte: Construção dos autores a partir de dados do “Our world in data”.
 > 
 > Na Figura 3 é representado o número de óbitos por doenças cardiovasculares do Brasil de 1996 a 2021. Observa-se que na série temporal há um comportamento repetitivo em partes na série, ou seja, existe sazonalidade. Além de também apresentar uma tendência de crescimento ao longo dos anos. Essas flutuações sazonais podem estar relacionadas a fatores como mudanças no estilo de vida ou comportamentos relacionados à saúde que ocorrem repetidamente em um determinado período de tempo, como estações do ano ou períodos festivos.
 > 
 > Figura 3: Série Temporal do Número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021.
+> 
 > ![Figura 3](img/figura3.png)
+> 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 > 
 > Na figura 4 é possivel perceber que até os 44 anos, há um correlação negativa que varia entre moderada e forte. Na faixa etária entre 45 e 54 anos a correlação torna-se positiva moderada. A partir dos 55 anos, a correlação é positiva e muito forte, evidenciando que o avanço da idade é um fator de risco importante para o óbito por doenças cardiovasculares. 
 >
 > Figura 4: Correlação das faixas etárias com o número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021.
+> 
 > ![Figura 4](img/figura4.png)
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 > 
 > A figura 5 mostra os maiores número de óbitos por 100 mil habitantes entre os estados brasileiros. O estado de São Paulo lidera o ranking com 2055 óbitos, seguido pelo Rio de Janeiro com 937 óbitos a cada 100 mil habitantes.
 > 
 > Figura 5: Estados do Brasil com o maior número de óbitos por 100 mil habitantes devido à doenças cardiovasculares no período de 1996 a 2021.
+> 
 > ![Figura 5](img/figura5.png)
+> 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 
 # Ferramentas
