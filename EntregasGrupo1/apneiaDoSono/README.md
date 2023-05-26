@@ -38,11 +38,7 @@ As questões de pesquisa a serem abordadas serão:
 - **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
 - **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
 
-# Bases de Dados
-
-Neste projeto, pretendemos utilizar um conjunto de dados de pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes serão monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação.
-
-# Metodologia
+# **Metodologia**
 
 Como etapas iniciais, buscando garantir a privacidade dos pacientes envolvidos e uma qualidade inicial dos dados, faremos a anonimização dos dados, removendo informações individuais dos pacientes.
 
@@ -61,6 +57,209 @@ Utilizando técnicas de estatística descritiva, realizaremos:
     - status de apnéia do paciente (se possui apnéia do sono e qual nível)
 
 Realizaremos análises para identificar o impacto (caso haja) na qualidade de vida dos pacientes a partir da utilização do aparelho intraoral de avanço mandibular, utilizando como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes antes e depois do uso do aparelho.
+
+# Bases de Dados
+
+## **Descrição da base de dados**
+O conjunto de dados usados nste projeto corresponde a pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes foram monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação de oxigenio.
+
+Os dados tem informação de pacientes para treis examen por cada um deles, dados que são capturados em tres momentos distintos durante o tratamento.
+
+## **Anonimização**
+
+Inicialmente o conjunto de dados originais não estava anonimizada e ainda precisava passar por uma adequação dos pacientes que tinham fornecido o TCLE.
+
+Utilizando o SGBD Postgresql 14.02 identificamos os campos que possibilitavam a identificação do paciente. Inicialmente o campos são os que estão na Tabela 1:
+> 
+> <center>
+> 
+> ### **_Tablela 1: Lista de Variaveis na base de dados original_**
+> ||||||||||
+> |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+> |__nome do paciente__  |__idade__           |__sexo__         |__peso__            |__altura__       |__Classificação__   |__inicio__       |__termino__         |__ido__          |
+> |__fcminima__        |__fcmedia__      |__fcmaxima__        |__bpm1__         |__bpm2__            |__bpm3__         |__bpm4__            |__bpm5__         |__bpm6__            |
+> |__bpm7__         |__bpm8__            |__bpm9__         |__bpm10__           |__bpm11__        |__bpm12__           |__bpm13__        |__bpm14__           |__bpm15__|
+> 
+> </center>
+> 
+
+Além de isso, haviam pacientes que não tinham dado consentimento para utilizar os dados, por o que depois da retirada desses pacientes, foi gerado uma tabela so com os pacientes que precissavamos, gerando assim o ID de identificação do paciente para futuras nececidades de rastreamento do dado original do paciente.
+
+
+## Dicionário de Dados
+
+Depois do processo de anonimização de dados, apresentados o dicionario com as caracteristicas dos dados que vamos a utilizar, na Tabela 2:
+> 
+> ### **_Tabela 2: Dicionário de Dados_**
+> <center>
+> 
+> ***
+> |Nome|	Tipo| 	Tamanho|	Classificação|	Descrição|Nome|	Tipo| 	Tamanho|	Classificação|	Descrição|
+> |--|--|--|--|--|--|--|--|--|--|
+> |**_id_paciente_**|	Numérica|	3|	qualitativa nominal|	Identificação do paciente|**_idade_**|	Numérica|	3|	quantitativa discreta|	Idade do paciente no dia do exame|
+> |**_sexo_**|	Character|	1|	qualitativa nominal|	Sexo biológico do paciente (M - masculino, F - feminino)|**_peso_**|	Numérica|	3|	quantitativa continua|	Quantidade em kg|
+> |**_altura_**|	Decimal|	3|	quantitativa continua|	Medida em cm|**_sequencia_**|	Numérica|	1|	quantitativa discreta|	Sequencia dos exames realizados|
+> |**_data_inicio_**|	Data|	10|	qualitativa ordinal|	Data do inicio do exame|**_data_termino_**|	Data|	10|	qualitativa ordinal|	Data do termino do exame|
+> |**_ido_**|	Decimal|	3|	quantitativa continua|	Sigla IDO (Índice de Dessaturação da Oxi-hemoglobina) |**_fcminima_**|	Numérica|	3|	quantitativa continua|	Medida da frequência cardíaca mínima|
+> |**_fcmedia_**|	Numérica|	3|	quantitativa continua|	Medida da frequência cardíaca média|**_fcmaxima_**|	Numérica|	3|	quantitativa continua|	Medida da frequência cardíaca máxima|
+> |**_bpm1_**|	Numérica|	2|	quantitativa continua|	Primeira medida de  frequência cardíaca durante o exame|**_bpm2_**|	Numérica|	2|	quantitativa continua|	Segunda medida de  frequência cardíaca durante o exame|
+> |**_bpm3_**|	Numérica|	2|	quantitativa continua|	Terceira medida de  frequência cardíaca durante o exame|**_bpm4_**|	Numérica|	2|	quantitativa continua|	Quarta medida de  frequência cardíaca durante o exame|
+> |**_bpm5_**|	Numérica|	2|	quantitativa continua|	Quinta medida de  frequência cardíaca durante o exame|**_bpm6_**|	Numérica|	2|	quantitativa continua|	Sexta medida de  frequência cardíaca durante o exame|
+> |**_bpm7_**|	Numérica|	2|	quantitativa continua|	Sétima medida de  frequência cardíaca durante o exame|**_bpm8_**|	Numérica|	2|	quantitativa continua|	Oitava medida de  frequência cardíaca durante o exame|
+> |**_bpm9_**|	Numérica|	2|	quantitativa continua|	Nona medida de  frequência cardíaca durante o exame|**_bpm10_**|	Numérica|	2|	quantitativa continua|	Décima medida de  frequência cardíaca durante o exame|
+> |**_bpm11_**|	Numérica|	2|	quantitativa continua|	Décima primeira medida de  frequência cardíaca durante o exame|**_bpm12_**|	Numérica|	2|	quantitativa continua|	Décima segunda medida de  frequência cardíaca durante o exame|
+> |**_bpm13_**|	Numérica|	2|	quantitativa continua|	Décima terceira medida de  frequência cardíaca durante o exame|**_bpm14_**|	Numérica|	2|	quantitativa continua|	Décima quarta medida de  frequência cardíaca durante o exame|
+> |**_bpm15_**|	Numérica|	2|	quantitativa continua|	Décima quinta medida de  frequência cardíaca durante o exame|
+> ***
+> </center>
+> 
+
+## Limpieza dos dados
+
+Inicialmente comprovamos o formato dos dados. Entre os tipos de dados que encontramos estavam os tipo ```int64```, ```float64``` e ```object```, como se mostra a continuação:
+
+```py
+>> out:
+
+id_paciente        int64
+idade              int64
+sexo              object
+peso               int64
+altura             int64
+Classificação      int64
+inicio            object
+termino           object
+ido              float64
+fcminima           int64
+fcmedia            int64
+fcmaxima           int64
+bpm1              object
+bpm2              object
+bpm3              object
+bpm4              object
+bpm5              object
+bpm6              object
+bpm7              object
+bpm8              object
+bpm9              object
+bpm10             object
+bpm11             object
+bpm12             object
+bpm13             object
+bpm14             object
+bpm15             object
+dtype: object
+```
+
+Por que se procede a formatear os diferentes campos do jeito que fiquem os formatos certos:
+
+```py
+>> Out:
+
+id_paciente               int64
+idade                     int64
+sexo                     string
+peso                      int64
+altura                    int64
+Classificação             int64
+inicio           datetime64[ns]
+termino          datetime64[ns]
+ido                     float64
+fcminima                  int64
+fcmedia                   int64
+fcmaxima                  int64
+bpm1                    float64
+bpm2                    float64
+bpm3                    float64
+bpm4                    float64
+bpm5                    float64
+bpm6                    float64
+bpm7                    float64
+bpm8                    float64
+bpm9                    float64
+bpm10                   float64
+bpm11                   float64
+bpm12                   float64
+bpm13                   float64
+bpm14                   float64
+bpm15                   float64
+```
+
+## **Inclusão de features importantes (Clusters de idades, IMC, grau de obesidade e grau de apneia)**
+
+Ya com os dados limpos consideramos o fato de calcular algumas outras etiquetas. As descrições são fornecidas na Tabela 3.
+
+### **_Tabela 3: Dicionário Adicional dos Dados_**
+<center>
+
+***
+|Nome|	Tipo| 	Tamanho|	Classificação|	Descrição|Nome|	Tipo| 	Tamanho|	Classificação|	Descrição|
+|:--|:--:|:--:|:--:|--:|:--|:--:|:--:|:--:|:--:|
+|**_grupo_idade_**|	Character|	5|	qualitativa nominal|	Para criar clusters de idades em intervalos de 10 anos (20-29, 30-39, 40-49, 50-59, 60-69, 70-79 e >80)|**_imc_**|	Decimal|	3|	quantitativa discreta|	Aplicando o calculo de imc entre as colunas peso e altura ($ imc = {peso \over altura²} $)|
+|**_situacao_imc_**|	Character|	15|	qualitativa nominal|	Utilizando a classificaçao de imc da OMS (abaixo do peso, peso normal, acima do peso, obesidade i, obesidade ii)|**_status_apneia_**|	Character|	20|	qualitativa nominal|	Baseado no valor do ido, classificando o paciente em sem apneia, com apneia leve, com apneia moderada ou apneia acentuada)|
+***
+
+</center>
+
+## **Separação de datasets (baseline, primeiro exame e ultimo exame)**
+
+Para esta exploração inicial dividimos os dados em tres grupos, um por cada examen: ```baseline```, ```primeiro_exame``` e ```ultimo_exame```. cada um deles comtem os mesmos pacientes e as mesmas variaveis.
+
+A partir destes novos dados iniciamos fazendo o analisis.
+
+## **Visualização de dados**
+
+Inicialmente vamos 
+
+<!-- ![image](./reports/figures/histograma.png) -->
+
+<center>
+
+![image](./reports/figures/pacientes_sexo.png)
+</center>
+
+<center>
+
+![image](./reports/figures/pacientes_grupo_idade.png)
+</center>
+
+
+## **Integração entre Bases e Análise Exploratória**
+Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas. Inclua um sumário com estatísticas descritivas da(s) base(s) de estudo. Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
+
+
+<center>
+
+![image](./reports/figures/Situacao_imc.png)
+</center>
+
+<center>
+
+![image](./reports/figures/status_apneia.png)
+</center>
+
+<center>
+
+![image](./reports/figures/grupo_etario_apneia.png)
+</center>
+
+
+
+
+<center>
+
+![image](./reports/figures/corr_mat_baseline.png)
+</center>
+
+<center>
+
+![image](./reports/figures/corr_mat_primeiro_exame.png)
+</center>
+
+<center>
+
+![image](./reports/figures/corr_mat_ultimo_exame.png)
+</center>
 
 # Ferramentas
 
