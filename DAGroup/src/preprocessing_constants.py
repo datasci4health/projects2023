@@ -443,5 +443,19 @@ UPDATE_DICT = {
         'origin': 'phq9_total',
         'desc': "Classificação risco de depressão",
         'pv': {1: 'Nenhum ou mínimo', 2: 'Leve', 3: 'Moderada', 4: 'Moderadamente Grave', 5: 'Grave'}
+    },
+    'imc': {
+        'origin': 'peso|altura',
+        'desc': "Valor do IMC",
+    },
+    'class_ imc': {
+        'origin': 'imc',
+        'desc': "Classificação do IMC",
+        'pv': {1: 'Baixo peso', 2: 'Eutrofia', 3: 'Sobrepeso', 4: 'Obesidade'}
+    },
+    'tabagist': {
+        'origin': 'P050',
+        'desc': "Classificação de Tabagismo",
+        'pv': {0: 'Não tabagista', 1: 'Tabagista'}
     }
 }
