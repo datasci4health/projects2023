@@ -457,5 +457,14 @@ UPDATE_DICT = {
         'origin': 'P050',
         'desc': "Classificação de Tabagismo",
         'pv': {0: 'Não tabagista', 1: 'Tabagista'}
+    },
+    'per_upf': {
+        'origin': 'P00614|P00615|P00616|P00617|P00618|P00619|P00620|P00621|P00622|P00623',
+        'desc': "Porcentagem de ultraprocessados nas ultimas 24hrs"
+    },
+    'upf_severity': {
+        'origin': 'per_upf',
+        'desc': "Classificação de consumo de ultraprocessados",
+        'pv': {1: 'Baixo consumo', 2: 'Baixo-médio consumo', 3: 'Médio consumo', 4: 'Médio-alto consumo', 5: 'Alto consumo'}
     }
 }
