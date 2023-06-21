@@ -141,6 +141,7 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 ![](assets/e2_specific_workflow.png)
 
 Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
+
 6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude  Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
 
 7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
