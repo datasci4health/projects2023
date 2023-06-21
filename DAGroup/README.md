@@ -98,6 +98,7 @@ Foi necessáro filtrar de forma arbitrária as variáveis relevantes para respon
 Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relevantes para as perguntas de pesquisa.
 
 **Variável dependente ou desfecho:**
+
 A prevalência de depressão na população estudada foi avaliada através da aplicação do indicador PHQ9, que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Para as análises, as pessoas com pontuação igual ou superior a 10 pontos do indicador foram classificadas com depressão.
 
 Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Com isso, o estudo foi delimitado a este intervalo de idade e retiramos as mulheres grávidas do estudo,devido a especificidade metodológica (n=736), obtendo uma amostra de 64664 indivíduos.
@@ -107,15 +108,25 @@ Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercoleste
 Presença de obesidade: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
 
 **Variáveis relacionadas aos comportamentos de saúde:**
+
 Alimentação: aplicamos um score de consumo de produtos ultraprocessados de 0 a 10 pontos, o qual é baseado na resposta positiva de consumo no dia anterior dos seguintes alimentos[7]: 1- Refrigerante; 2- Suco de fruta em caixinha ou lata ou refresco em pó; 3- Bebida achocolatada ou iogurte com sabor; 4- Salgadinho de pacote ou biscoito/bolacha salgado; 5- Biscoito/bolacha doce ou recheado ou bolo de pacote; 6- Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada; 7- Salsicha, linguiça, mortadela ou presunto; 8- Pão de forma, de cachorro-quente ou de hambúrguer; 9- Margarina, maionese, ketchup ou outros molhos ultraprocessados; 10- Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrializado. Quanto maior a pontuação do score, maior o consumo de ultraprocessados, ou seja, menos saudável é a dieta. 
+
 Exercício físico[8]: prática de exercício físico nos últimos 3 meses (sim/não).
+
 Consumo de álcool[9]: consumo de bebidas alcoólica uma vez ou mais por mês (sim/não) 
+
 Tabagismo[8]: faz uso de algum tipo de tabaco (sim/não)
+
 Variáveis relacionadas ao perfil sociodemográfico:
+
 Escolaridade: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
+
 Sexo: feminino ou masculino
+
 Idade: 
+
 Renda:
+
 Localidade: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
 **Análises dos dados:**
