@@ -99,6 +99,7 @@ Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relev
 
 **Variável dependente ou desfecho:**
 A prevalência de depressão na população estudada foi avaliada através da aplicação do indicador PHQ9, que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Para as análises, as pessoas com pontuação igual ou superior a 10 pontos do indicador foram classificadas com depressão.
+
 Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Com isso, o estudo foi delimitado a este intervalo de idade e retiramos as mulheres grávidas do estudo,devido a especificidade metodológica (n=736), obtendo uma amostra de 64664 indivíduos.
 Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:
 Variáveis relacionadas às doenças crônicas não transmissíveis:
