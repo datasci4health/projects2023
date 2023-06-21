@@ -46,11 +46,12 @@ Com isso, o objetivo do estudo é buscar fatores de risco para a depressão e po
 
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
 
+****a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
+
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
- - A influência desses fatores varia ao longo do curso da vida?
- - Será que o consumo de ultraprocessados está associado ao desenvolvimento da depressão?
- - Será que as pessoas que possuem depressão também possuem outras doenças crônicas que estão associadas com alto consumo de ultraprocessados como obesidade?
+ - A influência desses fatores varia ao longo do curso da vida e de variaveis sociodemográficas?
+- Será que os comportamentos de saúde e/ou doenças crônicas não transmissíveis são determinantes para o diagnóstico de depressão? 
 
 Através dos experimentos exploratórios, análise de correlação e gráficos de distribuição, foram confirmados alguns fatores associados com a depressão (utilizando χ2 de Pearson), como fumar tabaco, atividade física, algumas doenças crônicas, variaveis que estão em consonância com a literatura existente. Essas descobertas já contribuem para responder a primeira questão de pesquisa.
 
@@ -89,19 +90,37 @@ Não tivemos a oportunidade de explorar a fundo essa base de dados, mas, à prim
 
 ### Bases Estudadas e Adotadas
 
-Base de Dados  | Descrição | Anos
------ | ----- |  -----
-[Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
+O presente estudo utilizou como fonte de dados a [Pesquisa Nacional de Saúde (PNS) de 2019] (https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads), a qual possui uma amostra da população brasileira residente em domicílios particulares de todo o território brasileiro. Essa pesquisa foi desenvolvida pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde e tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. Detalhes sobre o processo de amostragem dessa pesquisa foram publicados[6].
 
 O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos indivíduos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas a doenças crônicas e aos hábitos do domicílio. 
 
-Foi necessário filtrar de forma arbitrária as perguntas de interesse para responder às perguntas de pesquisas escolhidas anteriormente. Mais especificamente, manteve-se no banco de dados para a análise do estudo perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de hábitos de vida como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista.
+Foi necessáro filtrar de forma arbitrária as variáveis relevantes para responder às questões de pesquisa escolhidas anteriormente e as categorizamos de acordo com a literatura. Originou um banco de dados para a análise do estudo com perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de comportamentos de saúde como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como peso, altura e diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista. 
+Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relevantes para as perguntas de pesquisa.
 
-Para adequar a níveis escolares simplificados, foi necessário agregar a população em quatro níveis escolares: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
+**Variável dependente ou desfecho:**
+A prevalência de depressão na população estudada foi avaliada através da aplicação do indicador PHQ9, que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Para as análises, as pessoas com pontuação igual ou superior a 10 pontos do indicador foram classificadas com depressão.
+Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Com isso, o estudo foi delimitado a este intervalo de idade e retiramos as mulheres grávidas do estudo,devido a especificidade metodológica (n=736), obtendo uma amostra de 64664 indivíduos.
+Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:
+Variáveis relacionadas às doenças crônicas não transmissíveis:
+Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercolesterolemia, diabetes: sim ou não;
+Presença de obesidade: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
 
-Para realizar uma análise sobre a prevalência de depressão na população da pesquisa, aplicou-se o indicador [PHQ9](https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9), que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Por limitação da análise, [apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice](https://doi.org/10.1046/j.1525-1497.2001.016009606.x). Devido à isso, os dados foram reduzidos a este intervalo.
+**Variáveis relacionadas aos comportamentos de saúde:**
+Alimentação: aplicamos um score de consumo de produtos ultraprocessados de 0 a 10 pontos, o qual é baseado na resposta positiva de consumo no dia anterior dos seguintes alimentos[7]: 1- Refrigerante; 2- Suco de fruta em caixinha ou lata ou refresco em pó; 3- Bebida achocolatada ou iogurte com sabor; 4- Salgadinho de pacote ou biscoito/bolacha salgado; 5- Biscoito/bolacha doce ou recheado ou bolo de pacote; 6- Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada; 7- Salsicha, linguiça, mortadela ou presunto; 8- Pão de forma, de cachorro-quente ou de hambúrguer; 9- Margarina, maionese, ketchup ou outros molhos ultraprocessados; 10- Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrializado. Quanto maior a pontuação do score, maior o consumo de ultraprocessados, ou seja, menos saudável é a dieta. 
+Exercício físico[8]: prática de exercício físico nos últimos 3 meses (sim/não).
+Consumo de álcool[9]: consumo de bebidas alcoólica uma vez ou mais por mês (sim/não) 
+Tabagismo[8]: faz uso de algum tipo de tabaco (sim/não)
+Variáveis relacionadas ao perfil sociodemográfico:
+Escolaridade: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
+Sexo: feminino ou masculino
+Idade: 
+Renda:
+Localidade: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
-Ao final do processamento obtivemos 90846 linhas e 380 colunas de dados relevantes paras as perguntas de pesquisa. Em reação a dados faltantes, vamos definir a melhor estratégia para tratamento durante a pipeline de regressão logística conforme as features forem selecionadas.
+**Análises dos dados:**
+
+Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
+
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
@@ -110,6 +129,11 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 ![](assets/e2_specific_workflow.png)
 
 Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
+
+[6] https://www.scielo.br/j/ress/a/RdbtmCHjJGt8xDW6bV3Y6JB/?lang=pt 
+[7] https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en#
+[8] https://www.scielosp.org/article/rbepid/2021.v24suppl2/e210010/pt/ 
+[9] https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en# 
 
 ## Análise Exploratória
 
