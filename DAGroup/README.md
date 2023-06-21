@@ -24,8 +24,7 @@ Compreender as características da população com depressão e os fatores de ri
 
 A utilização de inquéritos de saúde nacional se torna extremamente pertinente para a compreensão da prevalência da doença e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira e têm o propósito de orientar diretrizes e políticas públicas de Saúde no país [5].
 
-Com isso, o objetivo do estudo é buscar fatores de risco para a depressão e possíveis cenários que diminuiriam a chance de desenvolvimento de depressão utilizando a Pesquisa Nacional de Saúde.
-
+Com isso, o objetivo do estudo é buscar comportamentos de saúde e doenças crônicas não transmissiveis mais determinantes para o diagnóstico da depressão possibilitando auxiliar na prevenção do desenvolvimento da depressão.
 ![](assets/dagitty-model.png)
 
 [Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
