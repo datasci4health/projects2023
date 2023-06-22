@@ -1,19 +1,17 @@
 import copy
+from collections import defaultdict
 
 import numpy as np
 import pandas as pd
-from IPython.core.display import display
 from matplotlib import pyplot as plt
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split, cross_validate
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, make_scorer, ConfusionMatrixDisplay
+from sklearn.model_selection import cross_validate
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, make_scorer, \
+    ConfusionMatrixDisplay, roc_curve, roc_auc_score
 import seaborn as sns
 
 
-def classification_metrics(model, X, y):
-
+def plot_cm(model, X, y):
     y_pred = model.predict(X)
-
     sns.set(style="ticks")
     fig, axes = plt.subplots(1, 2, figsize=(13, 3))
 
@@ -33,24 +31,50 @@ def classification_metrics(model, X, y):
         cmap=plt.cm.Blues,
         ax=axes[1]
     )
-
-    sns.set(style="whitegrid")
-
+    # sns.set(style="whitegrid")
     plt.show()
 
-    accuracy = accuracy_score(y, y_pred)
-    f1 = f1_score(y, y_pred)
-    precision = precision_score(y, y_pred)
-    recall = recall_score(y, y_pred)
 
-    scores = {
-        "accuracy": accuracy,
-        "f1_score": f1,
-        "precision": precision,
-        "recall": recall,
-    }
+def plot_roc_curve(model_dict, X, y):
+    for key, model in model_dict.items():
+        # Make predictions on the test set
+        y_pred_prob = model.predict_proba(X)[:, 1]  # Probability of the positive class
+        # Calculate the false positive rate, true positive rate, and thresholds
+        fpr, tpr, thresholds = roc_curve(y, y_pred_prob)
+        # Calculate the area under the ROC curve
+        auc = roc_auc_score(y, y_pred_prob)
+        # Plot the ROC curve
+        plt.plot(fpr, tpr, label=key + ': AUC = %0.3f' % auc)
+        plt.plot([0, 1], [0, 1], 'k--')  # Diagonal line representing random guessing
 
-    return scores
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic')
+    plt.legend(loc='lower right')
+    plt.show()
+
+
+def classification_metrics(model_dict, X_train, y_train, X_test, y_test):
+    data = []
+
+    for key, model in model_dict.items():
+        y_pred = model.predict(X_train)
+
+        accuracy = accuracy_score(y_train, y_pred)
+        f1 = f1_score(y_train, y_pred)
+        precision = precision_score(y_train, y_pred)
+        recall = recall_score(y_train, y_pred)
+
+        y_pred = model.predict(X_test)
+        accuracy_t = accuracy_score(y_test, y_pred)
+        f1_t = f1_score(y_test, y_pred)
+        precision_t = precision_score(y_test, y_pred)
+        recall_t = recall_score(y_test, y_pred)
+
+        data.append([key, accuracy, precision, recall, f1, accuracy_t, f1_t, precision_t, recall_t])
+
+    return pd.DataFrame(data, columns=['exp', 'accuracy_train', 'precision_train', 'recall_train', 'f1_train',
+                                       'accuracy_test', 'f1_test', 'precision_test', 'recall_test'])
 
 
 def run_model_dep_classification(model, X, y):
