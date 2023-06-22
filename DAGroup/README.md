@@ -94,19 +94,29 @@ O presente estudo utilizou como fonte de dados a [Pesquisa Nacional de Saúde de
 O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos indivíduos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas a doenças crônicas e aos hábitos do domicílio. 
 
 Foi necessáro filtrar de forma arbitrária as variáveis relevantes para responder às questões de pesquisa escolhidas anteriormente e as categorizamos de acordo com a literatura. Originou um banco de dados para a análise do estudo com perguntas para caracterização da amostra como sexo, cor ou raça, nível de escolaridade, renda média, características do domicílio, para verificação de comportamentos de saúde como consumo de álcool, tabaco, hábitos alimentares e atividade física, e para avaliar as doenças crônicas como peso, altura e diagnóstico de alguma doença crônica não transmissível (doenças cardíacas, artrite, diabetes, entre outras) por algum médico especialista. 
+
 Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relevantes para as perguntas de pesquisa.
 
-**Variável dependente ou desfecho:**
+**Análise dos dados**
+
+_Variável dependente ou desfecho:_
 
 A prevalência de depressão na população estudada foi avaliada através da aplicação do indicador PHQ9, que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Para as análises, as pessoas com pontuação igual ou superior a 10 pontos do indicador foram classificadas com depressão.
 
 Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Com isso, o estudo foi delimitado a este intervalo de idade e retiramos as mulheres grávidas do estudo,devido a especificidade metodológica (n=736), obtendo uma amostra de 64664 indivíduos.
-Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:
-Variáveis relacionadas às doenças crônicas não transmissíveis:
-Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercolesterolemia, diabetes: sim ou não;
-Presença de obesidade: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
 
-**Variáveis relacionadas aos comportamentos de saúde:**
+_Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:_
+
+Variáveis relacionadas às doenças crônicas não transmissíveis:
+
+Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercolesterolemia, diabetes: sim ou não;
+
+Presença de obesidade: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
+Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Com isso, o estudo foi delimitado a este intervalo de idade e retiramos as mulheres grávidas do estudo,devido a especificidade metodológica (n=736), obtendo uma amostra de 64664 indivíduos.
+
+_Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:_
+
+Variáveis relacionadas aos comportamentos de saúde:
 
 Alimentação: aplicamos um score de consumo de produtos ultraprocessados de 0 a 10 pontos, o qual é baseado na resposta positiva de consumo no dia anterior dos seguintes alimentos[7]: 1- Refrigerante; 2- Suco de fruta em caixinha ou lata ou refresco em pó; 3- Bebida achocolatada ou iogurte com sabor; 4- Salgadinho de pacote ou biscoito/bolacha salgado; 5- Biscoito/bolacha doce ou recheado ou bolo de pacote; 6- Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada; 7- Salsicha, linguiça, mortadela ou presunto; 8- Pão de forma, de cachorro-quente ou de hambúrguer; 9- Margarina, maionese, ketchup ou outros molhos ultraprocessados; 10- Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrializado. Quanto maior a pontuação do score, maior o consumo de ultraprocessados, ou seja, menos saudável é a dieta. 
 
@@ -128,7 +138,7 @@ Renda:
 
 Localidade: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
-**Análises dos dados:**
+_Análises estatísticas:_
 
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
 
