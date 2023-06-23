@@ -1,7 +1,7 @@
 
-# Projeto `Associação de fatores de estilo de vida com depressão`
+# Projeto `Associação de fatores de estilo de vida e doenças crônicas não transmissíveis com depressão no Brasil`
 
-### Project `Association of lifestyle factors with depression`
+### Project `Association of lifestyle factors and chronic non-communicable diseases with depression in Brazil`
 
 # Apresentação
 
