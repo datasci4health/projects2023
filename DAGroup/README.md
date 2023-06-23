@@ -37,7 +37,7 @@ A utilização de inquéritos de saúde nacionais se torna extremamente pertinen
 
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 
-*precisar adiconar o DAG QUE NÃO CONSEGUI
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/DAG.png)
 
 
 
