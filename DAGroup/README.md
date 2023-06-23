@@ -562,23 +562,28 @@ Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      
 
 # Referências Bibliográficas
 
-1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
+1. 	Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
 
-2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
+2. 	World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
 
-3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
+3. 	Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
+ 	
+4. 	Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
+ 	
+5. 	Barros MB de A, Medina L de PB, Lima MG, de Azevedo RCS, Sousa NF da S, Malta DC. Association between health behaviors and depression: findings from the 2019 Brazilian National Health Survey. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
+ 	
+6. 	Theme Filha MM, Souza Junior PRB de, Damacena GN, Szwarcwald CL. Prevalence of chronic non-communicable diseases and association with self-rated health: National Health Survey, 2013. Rev Bras Epidemiol [Internet]. 2015 Dec 1 [cited 2023 Jun 23];18 Suppl 2:83–96. Available from: https://pubmed.ncbi.nlm.nih.gov/27008605/
+ 	
+7. 	Lotfaliany M, Bowe SJ, Kowal P, Orellana L, Berk M, Mohebbi M. Depression and chronic diseases: Co-occurrence and communality of risk factors. J Affect Disord. 2018 Dec 1;241:461–8.
+ 	
+8. 	Sousa NF da S, Barros MB de A, Medina L de PB, Malta DC, Szwarcwald CL. Association of major depressive disorder with chronic diseases and multimorbidity in Brazilian adults, stratified by gender: 2019 National Health Survey. Rev Bras Epidemiol. 2021;24.
+ 	
+9. 	Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude  Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
+ 	
+10. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
+ 	
+11. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
 
-4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
-
-5. Lotfaliany, M. _et al._ (2018) ‘Depression and chronic diseases: Co-occurrence and communality of risk factors’, _Journal of Affective Disorders_, 241, pp. 461–468. doi:10.1016/j.jad.2018.08.011. Available from: https://www.sciencedirect.com/science/article/pii/S016503271830805X?via%3Dihub
-
-6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
-
-7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
-   
-8. 	Berti De Azevedo Barros M, De L, Medina PB, Lima G, Soares De Azevedo RC, Ferreira N, et al. Associação entre comportamentos de saúde e depressão: resultados da Pesquisa Nacional de Saúde de 2019. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
-   	
-9. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
  
 ### Estudo Bibliográfico
 
