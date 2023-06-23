@@ -67,13 +67,19 @@ Para abordar a segunda questão, pretende-se utilizar a análise de regressão l
 
 Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. No entanto, os fatores que influenciam essa diferença serão confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
 
-O objetivo geral do estudo é compreender os comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional.
-Os objetivos específicos são:
+Objetivo geral:
+Compreender os comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional.
+
+Objetivos específicos:
 1- Analisar quais comportamentos de saúde inadequados estão associados com o diagnóstico de depressão;
+
 2- Analisar quais doenças crônicas não transmissiveis estão associadas com o diagnóstico de depressão;
+
 3- Analisar quais varíaveis sociodemográficas estão associadas com o diagnóstico de depressão;
+
 4- Determinar a importância dos comportamentos de saúde inadequados e das doenças crônicas não transmissíveis e das variáveis sociodemográficas para o diagnóstico de depressão;
-5- Determinar quais variaveis são determinantes para o diagnóstico de depressão;
+
+5- Determinar quais variaveis são determinantes para o diagnóstico de depressão.
 
 # Metodologia
 
