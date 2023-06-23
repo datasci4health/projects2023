@@ -489,6 +489,25 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 | Classificação Renda        | \-0,418      | \-0,164         | \-0,257        | \-0,495    | \-0,179             |
 
 
+
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
+
+
+### Resultados testes
+
+| **exp**             | **accuracy_train** | **precision_train** | **recall_train** | **f1_train** | **auc_train** | **accuracy_test** | **precision_test** | **recall_test** | **f1_test** | **auc_test** |
+| ------------------- | ------------------ | ------------------- | ---------------- | ------------ | ------------- | ----------------- | ------------------ | --------------- | ----------- | ------------ |
+| Logistic Regression | 65,76%             | 19,26%              | 64,72%           | 29,68%       | 71,40%        | 65,33%            | 18,49%             | 66,27%          | 28,91%      | 71,57%       |
+| Decision Tree       | 62,67%             | 18,16%              | 66,82%           | 28,56%       | 70,11%        | 61,99%            | 16,91%             | 65,76%          | 26,90%      | 69,33%       |
+| Random Forest       | 60,28%             | 17,92%              | 71,46%           | 28,66%       | 71,21%        | 59,48%            | 16,90%             | 71,75%          | 27,36%      | 70,67%       |
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
+
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
+
+
 # Discussão
 > Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
 >
