@@ -54,9 +54,7 @@ A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde
 > Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
 > Objetivos principais e específicos
 
-Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
-
-> a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
+Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada dos determinantes associados à depressão no Brasil.
 
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
@@ -243,19 +241,14 @@ Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante �
 > Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
 > 
 
-_
+Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
 
+***COLOCAR DO X² ENTRE AS VARIAVEL DEEPENDENTE E AS VARIAVEIS INDEPENDENTES
 
-_Análises estatísticas:_
+***RELATAR AS DIFICULDADES SOBRE MUDANÇAS DE ESCOLHA DE VARIAVEIS, LEMBRAR ESTAVAMOS USANDO OS INDICADORES DA PNS, PORÉM MUDAMOS PARA OS INDICADORES USADOS NOS ARTIGOS DEVIDO OS VALORES DE MISSING, DESBALANCEIO E ETC;
 
+***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
-
-
-
-
-
-
-
 
 
 
@@ -281,32 +274,30 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 #### Testes de associação
 
-Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
-Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
+Primeiramente, realizamos associações entre as variáveis sociodemográficas dentre as pessoas colocadas com depressão segundo o PHQ9.   Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
 
-| Variáveis confrontadas                                 |        χ2 |   p-value |
-|:-------------------------------------------------------|----------:|----------:|
-| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
-| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
-| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
-| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
-| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
-
-Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
-
-| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
+| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
 |:-------------------------------------------------------------------------|----------:|-----------:|
 | Sexo                                                                     |    650.12 |          0 |
-| Cor                                                                      |     27.46 |    0.00005 |
 | Categoria idade                                                          |     23.64 |          0 |
 | Escolaridade                                                             |      9.63 |    0.02198 |
-| Percepção da própria saúde                                               |   3007.41 |          0 |
-| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
-| Possui animal de estimação?                                              |      2.64 |   0.10445* |
+| Localidade
 | Renda per capita                                                         |    263.28 |          0 |
+| Estado Civil                                                             |           |            |
+
+Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
+
+| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
+|:-------------------------------------------------------------------------|----------:|-----------:|
 | Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
-| Fuma tabaco                                                              |    101.61 |          0 |
+| Tabagismo                                                                |    101.61 |          0 |
 | Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
+| Consumo de ultraprocessado                                               |           |            |
+
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão. 
+
+| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
+|:-------------------------------------------------------------------------|----------:|-----------:|
 | Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
 | Teve diagnostico AVC                                                     |     50.22 |          0 |
 | Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
@@ -314,10 +305,11 @@ Em seguida, realizamos associações entre variáveis de caracterização dos in
 | Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
 | Teve diagnostico pressão alta                                            |     35.73 |          0 |
 | Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
+| Teve diagnostico de obesidade                                            |   4597.09 |          0 |
 | Teve diagnostico depressão                                               |   4597.09 |          0 |
 
-Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
+**Percepção da saúde segundo: nao sei onde colocar percepção de saúde, mas acho que seria legal colocar!
+
 A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
 
