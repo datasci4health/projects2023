@@ -54,7 +54,7 @@ A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde
 
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
 
-****a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
+> a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
 
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
@@ -74,6 +74,7 @@ Quanto às demais questões de pesquisa, espera-se aprimorar os resultados obtid
 
 > Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
 > Justificar teoricamente, sempre que possível, a metodologia adotada.
+
 Este trabalho de forma geral procura avaliar e descobrir os fatores de risco para a depressão no Brasil. Para este fim, abordaremos uma metodologia baseada quatro estratégias principais:
 
 - Realização de um estudo bibliográfico, que permitirá entender os padrões esperados para cada pergunta de pesquisa.
@@ -100,6 +101,10 @@ Não tivemos a oportunidade de explorar a fundo essa base de dados, mas, à prim
 
 ### Bases Estudadas e Adotadas
 
+Base de Dados  | Descrição | Anos
+----- | ----- |  -----
+[Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
+
 O presente estudo utilizou como fonte de dados a [Pesquisa Nacional de Saúde de 2019](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads), a qual possui uma amostra da população brasileira residente em domicílios particulares de todo o território brasileiro. Essa pesquisa foi desenvolvida pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde e tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. Detalhes sobre o processo de amostragem dessa pesquisa foram publicados[6].
 
 O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos indivíduos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas a doenças crônicas e aos hábitos do domicílio. 
@@ -125,6 +130,8 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_workflow.png)
 
+
+** Arrumar workflow **
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png)
 
 Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
@@ -167,46 +174,6 @@ Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante �
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
-#### Testes de associação
-
-Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
-Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
-
-| Variáveis confrontadas                                 |        χ2 |   p-value |
-|:-------------------------------------------------------|----------:|----------:|
-| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
-| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
-| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
-| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
-| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
-
-Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
-
-| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
-|:-------------------------------------------------------------------------|----------:|-----------:|
-| Sexo                                                                     |    650.12 |          0 |
-| Cor                                                                      |     27.46 |    0.00005 |
-| Categoria idade                                                          |     23.64 |          0 |
-| Escolaridade                                                             |      9.63 |    0.02198 |
-| Percepção da própria saúde                                               |   3007.41 |          0 |
-| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
-| Possui animal de estimação?                                              |      2.64 |   0.10445* |
-| Renda per capita                                                         |    263.28 |          0 |
-| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
-| Fuma tabaco                                                              |    101.61 |          0 |
-| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
-| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
-| Teve diagnostico AVC                                                     |     50.22 |          0 |
-| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
-| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
-| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
-| Teve diagnostico pressão alta                                            |     35.73 |          0 |
-| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
-| Teve diagnostico depressão                                               |   4597.09 |          0 |
-
-Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
-A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
 # Análises Realizadas
 
@@ -288,6 +255,54 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 
 # Resultados
+
+
+
+#### Testes de associação
+
+Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
+Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
+
+| Variáveis confrontadas                                 |        χ2 |   p-value |
+|:-------------------------------------------------------|----------:|----------:|
+| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
+| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
+| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
+| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
+| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
+
+Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
+
+| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
+|:-------------------------------------------------------------------------|----------:|-----------:|
+| Sexo                                                                     |    650.12 |          0 |
+| Cor                                                                      |     27.46 |    0.00005 |
+| Categoria idade                                                          |     23.64 |          0 |
+| Escolaridade                                                             |      9.63 |    0.02198 |
+| Percepção da própria saúde                                               |   3007.41 |          0 |
+| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
+| Possui animal de estimação?                                              |      2.64 |   0.10445* |
+| Renda per capita                                                         |    263.28 |          0 |
+| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
+| Fuma tabaco                                                              |    101.61 |          0 |
+| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
+| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
+| Teve diagnostico AVC                                                     |     50.22 |          0 |
+| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
+| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
+| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
+| Teve diagnostico pressão alta                                            |     35.73 |          0 |
+| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
+| Teve diagnostico depressão                                               |   4597.09 |          0 |
+
+Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
+A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
+
+
+#### Regressão
+
+
 > Descrição dos resultados mais importantes obtidos.
 >
 > Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
