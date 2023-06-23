@@ -1,6 +1,6 @@
-# Projeto `Associação de fatores de estilo de vida e doenças crônicas não transmissíveis com depressão no Brasil`
+# Projeto `Associação de fatores de comportamentos de saúde e doenças crônicas não transmissíveis com depressão no Brasil`
 
-### Project `Association of lifestyle factors and chronic non-communicable diseases with depression in Brazil`
+### Project `Association of health behavior factors and chronic noncommunicable diseases with depression in Brazil`
 
 # Apresentação
 
