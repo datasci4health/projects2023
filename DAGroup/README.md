@@ -1,6 +1,7 @@
 
-# Projeto `Associação de fatores de estilo de vida com depressão`
-### Project `Association of lifestyle factors with depression`
+# Projeto `Associação de fatores de estilo de vida e doenças crônicas não transmissíveis com depressão no Brasil`
+
+### Project `Association of lifestyle factors and chronic non-communicable diseases with depression in Brazil`
 
 # Apresentação
 
@@ -14,38 +15,46 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
 
-# Descrição Resumida do Projeto
+# Introdução e Referenciais Teóricos
 
-As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
+> Contextualização do projeto
+> Caracterização do problema
+> Motivação
+> Relevância
+> Trabalhos relacionados
+> Indicação (bastante resumida) da análise proposta
+> Indicação (bastante resumida) dos resultados alcançados
 
-A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
+As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].  
 
-Compreender as características da população com depressão e os fatores de risco associados à doença no Brasil é essencial para o desenvolvimento de políticas públicas e diretrizes considerando as particularidades da população brasileira.
+A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.  
 
-A utilização de inquéritos de saúde nacional se torna extremamente pertinente para a compreensão da prevalência da doença e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira e têm o propósito de orientar diretrizes e políticas públicas de Saúde no país [5].
+Estudos prévios vêm mostrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, apresentando diferenças de acordo com características sociodemográficas como sexo e renda. Além de fatores de risco estarem associados ao diagnóstico de depressão, existem estudos mostrando associação entre depressão e outras doenças crônicas não transmissíveis como diabetes e artrite, esse fato não está sendo atribuída somente ao fato da reação depressiva por conta da presença de uma doença, mas devido ao compartilhamento de fatores de risco e mecanismos fisiopatológicos em comum entre depressão e outras doenças crônicas não transmissíveis. Porém, não há muitos estudo buscando compreender essa relação em países de baixa e média renda.
 
-Com isso, o objetivo do estudo é buscar comportamentos de saúde e doenças crônicas não transmissiveis mais determinantes para o diagnóstico da depressão possibilitando auxiliar na prevenção do desenvolvimento da depressão.
-![](assets/dagitty-model.png)
+Compreender a relação das doenças crônicas não transmissíveis com a depressão, junto dos fatores de risco associados à doença considerando as particularidades sociodemográficas da população brasileira é promossivor para o desenvolvimento de políticas públicas que busquem combater o desenvolvimento da depressão no país.  
+
+A utilização de inquéritos de saúde nacionais se torna extremamente pertinente para a compreensão da prevalência das doenças e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira, com o propósito de orientar diretrizes e políticas públicas de Saúde no país [6].  
+
+A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/dagitty-model.png)
+
+#### Apresentação inicial do projeto
 
 [Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
 
-1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
-
-2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
-
-3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
-
-4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
-
-5. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
 
 
 
-# Perguntas de Pesquisa
+# Perguntas de Pesquisa e Objetivos
+
+> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
+> Objetivos principais e específicos
 
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
 
-****a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
+> a minha sugestão é não respondermos as questões aqui e sim nos resultados, aqui deixar apenas as questões;
 
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
@@ -62,6 +71,9 @@ Quanto às demais questões de pesquisa, espera-se aprimorar os resultados obtid
 
 
 # Metodologia
+
+> Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
+> Justificar teoricamente, sempre que possível, a metodologia adotada.
 
 Este trabalho de forma geral procura avaliar e descobrir os fatores de risco para a depressão no Brasil. Para este fim, abordaremos uma metodologia baseada quatro estratégias principais:
 
@@ -89,6 +101,10 @@ Não tivemos a oportunidade de explorar a fundo essa base de dados, mas, à prim
 
 ### Bases Estudadas e Adotadas
 
+Base de Dados  | Descrição | Anos
+----- | ----- |  -----
+[Pesquisa Nacional de Saúde (PNS)](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads) | Realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde, tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. |  2019 (último)
+
 O presente estudo utilizou como fonte de dados a [Pesquisa Nacional de Saúde de 2019](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html?=&t=downloads), a qual possui uma amostra da população brasileira residente em domicílios particulares de todo o território brasileiro. Essa pesquisa foi desenvolvida pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde e tem como objetivo coletar informações sobre o desempenho do sistema nacional de saúde em relação ao acesso e uso dos serviços disponíveis, bem como garantir a continuidade dos cuidados necessários. Além disso, a pesquisa visa avaliar as condições de saúde da população, monitorar doenças crônicas não transmissíveis e identificar os principais fatores de risco associados a elas. Detalhes sobre o processo de amostragem dessa pesquisa foram publicados[6].
 
 O dicionário disponibilizado pela PNS pode ser encontrado [aqui](data/raw/PNS_2019/dicionario.xlsx). O dicionário dispõe das perguntas feitas aos indivíduos e as possíveis respostas. Nota-se a grande variedade de perguntas relacionadas a doenças crônicas e aos hábitos do domicílio. 
@@ -97,7 +113,78 @@ Foi necessáro filtrar de forma arbitrária as variáveis relevantes para respon
 
 Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relevantes para as perguntas de pesquisa.
 
-**Análise dos dados**
+
+### Integração entre Bases e Análise Exploratória
+
+> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+>
+> Resultados de Análise Exploratória
+> * use estatística descritiva e gráficos;
+> * inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
+> * analise correlação e use gráficos de dispersão;
+> * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
+
+Nesta seção, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
+
+Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_workflow.png)
+
+
+** Arrumar workflow **
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png)
+
+Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
+
+#### Características descritivas da população
+
+Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
+
+![Sexo e cor/raça da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+
+Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
+
+![Idade e peso da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+
+Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
+
+![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
+
+![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
+
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
+
+![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+
+![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+
+Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
+
+Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+
+O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
+
+Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
+
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+
+
+# Análises Realizadas
+
+> Descrição detalhada das análises realizadas.
+>
+>Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
+>
+> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
+>
+> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+> 
 
 _Variável dependente ou desfecho:_
 
@@ -143,67 +230,35 @@ _Análises estatísticas:_
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
 
 
-Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
-
-![](assets/e2_workflow.png)
-
-![](assets/e2_specific_workflow.png)
-
-Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
-
-6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude  Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
-
-7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
-   
-8. 	Berti De Azevedo Barros M, De L, Medina PB, Lima G, Soares De Azevedo RC, Ferreira N, et al. Associação entre comportamentos de saúde e depressão: resultados da Pesquisa Nacional de Saúde de 2019. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
-   	
-9. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
 
 
-## Análise Exploratória
-
-Nesta seção, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
-
-### Características descritivas da população
-
-Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
-
-![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
-
-Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
-
-![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
-
-Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
-
-![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
-
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
-
-![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
-
-Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
-
-Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
-
-![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
-
-Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
-
-![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
-
-O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
-
-Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
-
-![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
 
-### Testes de associação
+
+
+
+
+
+# Ferramentas
+
+Ferramenta | Descrição
+----- | -----
+Python 3 | Linguagem de programação a ser utilizada para o desenvolvimento das soluções propostas.
+Jupyter Notebook | Código principal e solução reprodutível em arquivos de Jupyter Notebook, ajuda também na visualização de dados.
+Pandas | Ferramenta para manipulação e análise de dados tabulares.
+NumPy | Biblioteca utilizada para manipulação de vetores multidimensionais.
+Scipy | Biblioteca com algoritmos/cálculos estatísticos gerais.
+Matplotlib/Plotly/Seaborn | Bibliotecas para visualização dos dados.
+Scikit-learn | Biblioteca com grande variedade de algoritmos de aprendizagem de máquina.
+ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também conhecido como o evangelista da programação.
+
+
+
+# Resultados
+
+
+
+#### Testes de associação
 
 Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
 Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
@@ -244,19 +299,210 @@ Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
 A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
-# Ferramentas
 
-Ferramenta | Descrição
------ | -----
-Python 3 | Linguagem de programação a ser utilizada para o desenvolvimento das soluções propostas.
-Jupyter Notebook | Código principal e solução reprodutível em arquivos de Jupyter Notebook, ajuda também na visualização de dados.
-Pandas | Ferramenta para manipulação e análise de dados tabulares.
-NumPy | Biblioteca utilizada para manipulação de vetores multidimensionais.
-Scipy | Biblioteca com algoritmos/cálculos estatísticos gerais.
-Matplotlib/Plotly/Seaborn | Bibliotecas para visualização dos dados.
-Scikit-learn | Biblioteca com grande variedade de algoritmos de aprendizagem de máquina.
-ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também conhecido como o evangelista da programação.
+#### Regressão
 
+
+> Descrição dos resultados mais importantes obtidos.
+>
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
+
+|                                    | Acc. Treino | Acc. Teste | P. Treino | P. Teste | R. Treino | R. Teste | F1 Treino | F1 Teste       | AUC Treino | AUC Teste      |
+| ---------------------------------- | ----------- | ---------- | --------- | -------- | --------- | -------- | --------- | -------------- | ---------- | -------------- |
+| Apenas hábitos                     | 55,95%      | 55,68%     | 12,95%    | 12,94%   | 54,70%    | 55,10%   | 20,94%    | 20,96% ± 0,65% | 55,40%     | 55,42% ± 0,97% |
+| Apenas doenças crônicas            | 72,84%      | 71,83%     | 18,99%    | 18,62%   | 44,33%    | 45,37%   | 26,59%    | 26,36% ± 0,45% | 60,36%     | 60,26% ± 0,37% |
+| Apenas hábitos e doenças crônicas  | 69,49%      | 69,74%     | 18,43%    | 18,57%   | 51,04%    | 51,00%   | 27,08%    | 27,22% ± 0,33% | 61,42%     | 61,54% ± 0,37% |
+| Apenas variáveis sociodemográficos | 57,05%      | 56,56%     | 15,81%    | 15,70%   | 69,71%    | 70,06%   | 25,77%    | 25,65% ± 0,30% | 62,62%     | 62,50% ± 0,46% |
+| Todas as varáveis 		               | 65,80%      | 65,90%     | 19,29%    | 19,28%   | 64,82%    | 64,46%   | 29,74%    | 29,68% ± 1,09% | 65,37%     | 65,27% ± 1,36% |
+
+
+
+| Abordagens experimentadas    | F1 Treino  | F1 Teste               | AUC Treino | AUC Teste              |
+| ---------------------------- | ---------- | ---------------------- | ---------- | ---------------------- |
+| Removendo Linhas Nulas       | 29,74%     | 29,68% ± 1,09%         | 65,37%     | 65,27% ± 1,36%         |
+| Substituindo NA pela média   | 28,68%     | 28,75% ± 0,75%         | 65,40%     | 65,45% ± 0,97%         |
+| Substituindo NA pela mediana | 28,80%     | 28,85% ± 0,72%         | 65,53%     | 65,55% ± 0,93%         |
+| SMOTE                        | 28,84%     | 28,64% ± 0,78%         | 64,95%     | 64,74% ± 1,10%         |
+| Melhor resultado Grid Search | **29,68%** | **29,74%** ± **1,05%** | **65,31%** | **65,36%** ± **1,30%** |
+| Árvore de Decisão            | 28,56%     | 28,26% ± 0,77%         | 64,48%     | 63,81% ± 1,06%         |
+| Floresta Randomica           | 28,66%     | 28,39% ± 0,63%         | 65,17%     | 64,75% ± 0,81%         |
+
+
+
+
+| Testes de estratificação | F1 Treino | F1 Teste       | AUC Treino | AUC Teste              | 
+| ------------------------ | --------- | -------------- | ---------- | ---------------------- | 
+| Renda Baixa              | 32,55%    | 32,45% ± 0,85% | 65,31%     | 65,15% ± 1,00%         |
+| Renda Alta               | 24,36%    | 24,07% ± 0,71% | 63,69%     | 63,26% ± 1,01%         |
+| Sexo Mulher              | 33,69%    | 33,25% ± 0,83% | 61,58%     | 61,16% ± 0,76%         |
+| Sexo Homen               | 18,55%    | 18,25% ± 0,78% | 64,15%     | 63,67% ± 1,12%         |
+| Idade < 40               | 25,45%    | 25,38% ± 0,77% | 63,30%     | 63,20% ± 1,10%         |
+| Idade > 40               | 32,86%    | 32,77% ± 0,37% | 66,40%     | 66,29% ± 0,48%         |
+| Idade 20-29              | 25,35%    | 24,93% ± 0,73% | 63,11%     | 62,54% ± 1,26%         |
+| Idade 30-39              | 26,22%    | 26,19% ± 1,70% | 64,24%     | 64,34% ± 2,47%         |
+| Idade 40-49              | 31,94%    | 31,62% ± 1,25% | 66,13%     | 65,71% ± 1,45%         |
+| Idade 50-59              | 34,98%    | 34,57% ± 1,23% | 67,87%     | 67,40% ± 1,28%         |
+| Região Norte             | 27,09%    | 26,86% ± 1,86% | 65,43%     | 65,07% ± 2,37%         |
+| Região Nordeste          | 30,58%    | 30,27% ± 1,03% | 64,54%     | 64,26% ± 1,23%         |
+| Região Sudeste           | 31,61%    | 31,02% ± 0,64% | 66,39%     | 65,71% ± 0,82%         |
+| Região Sul               | 28,52%    | 28,00% ± 2,28% | 65,63%     | 64,89% ± 2,81%         |
+| Região Centro Oeste      | 30,47%    | 29,33% ± 2,57% | 66,34%     | 64,83% ± 3,20%         |
+
+
+
+
+
+| name                | log_apenas_habitos | log_apenas_dcnt | log_apenas_habitos_dcnt | log_apenas_sociodemo | Todas Váriaveis |
+| ------------------- | ------------------ | --------------- | ----------------------- | -------------------- | --------------- |
+| intercept           | 0,088              | \-0,360         | \-0,375                 | 0,501                | 0,295           |
+| upf                 | 0,033              |                 | 0,051                   |                      | 0,049           |
+| exerc_fisico        | \-0,311            |                 | \-0,269                 |                      | \-0,227         |
+| tabagismo           | 0,427              |                 | 0,497                   |                      | 0,565           |
+| cons_alcool         | \-0,257            |                 | \-0,169                 |                      | \-0,024         |
+| cancer              |                    | 0,599           | 0,611                   |                      | 0,485           |
+| hipertensao         |                    | 0,333           | 0,320                   |                      | 0,347           |
+| diabetes            |                    | 0,443           | 0,428                   |                      | 0,487           |
+| cardiovascular      |                    | 0,817           | 0,794                   |                      | 0,853           |
+| hipercolesterolemia |                    | 0,416           | 0,448                   |                      | 0,463           |
+| avc                 |                    | 0,827           | 0,748                   |                      | 0,679           |
+| artrite             |                    | 0,971           | 0,967                   |                      | 0,876           |
+| obesidade           |                    | 0,172           | 0,184                   |                      | 0,194           |
+| sexo                |                    |                 |                         | \-1,053              | \-0,954         |
+| estado_civil        |                    |                 |                         | \-0,394              | \-0,375         |
+| escolaridade        |                    |                 |                         | \-0,043              | 0,028           |
+| class_idade         |                    |                 |                         | 0,120                | \-0,058         |
+| class_renda         |                    |                 |                         | \-0,262              | \-0,274         |
+
+
+| Variáveis                  | Renda Baixa | Renda Alta | Diferença (abs) |
+| -------------------------- | ----------- | ---------- | --------------- |
+| **Intercepto**             | **\-0,054** | **0,540**  | **0,594**       |
+| Ultraprocessados           | 0,047       | 0,050      | 0,003           |
+| Exercício Físico           | \-0,150     | \-0,339    | 0,189           |
+| Tabagismo                  | 0,597       | 0,534      | 0,063           |
+| Consumo Álcool             | \-0,063     | 0,042      | 0,106           |
+| Câncer                     | 0,581       | 0,481      | 0,100           |
+| Hipertensão                | 0,321       | 0,385      | 0,065           |
+| Diabetes                   | 0,497       | 0,507      | 0,010           |
+| Cardiovascular             | 0,944       | 0,791      | 0,153           |
+| Hipercolesterolemia        | 0,463       | 0,468      | 0,005           |
+| **AVC**                    | **0,806**   | **0,592**  | **0,214**       |
+| Artrite                    | 0,864       | 0,927      | 0,063           |
+| Obesidade                  | 0,207       | 0,158      | 0,049           |
+| Sexo (1=Masculino)         | \-1,003     | \-0,912    | 0,091           |
+| Estado_Civil (1=Casado)    | \-0,410     | \-0,304    | 0,105           |
+| Classificação Escolaridade | 0,069       | 0,005      | 0,063           |
+| Classificação Idade        | 0,001       | \-0,154    | 0,155           |
+| Classificação Renda        |             |            | 0,000           |
+
+
+
+
+| Variáveis                   | Sexo Mulher | Sexo Homem  | Diferença (abs) |
+| --------------------------- | ----------- | ----------- | --------------- |
+| Intercepto                  | \-0,035     | \-0,098     | 0,063           |
+| Ultraprocessados            | 0,037       | 0,068       | 0,031           |
+| Exercício Físico            | \-0,223     | \-0,223     | 0,000           |
+| Tabagismo                   | 0,570       | 0,606       | 0,036           |
+| Consumo Álcool              | 0,083       | \-0,185     | 0,268           |
+| Câncer                      | 0,577       | 0,308       | 0,269           |
+| Hipertensão                 | 0,274       | 0,468       | 0,194           |
+| Diabetes                    | 0,457       | 0,598       | 0,141           |
+| Cardiovascular              | 0,806       | 0,964       | 0,157           |
+| Hipercolesterolemia         | 0,428       | 0,534       | 0,105           |
+| AVC                         | 0,630       | 0,854       | 0,224           |
+| **Artrite**                 | **0,828**   | **1,191**   | **0,363**       |
+| Obesidade                   | 0,164       | 0,265       | 0,101           |
+| Sexo (1=Masculino)          |             |             | 0,000           |
+| **Estado_Civil (1=Casado)** | **\-0,238** | **\-0,685** | **0,447**       |
+| Classificação Escolaridade  | \-0,004     | 0,098       | 0,102           |
+| Classificação Idade         | \-0,068     | \-0,012     | 0,056           |
+| Classificação Renda         | \-0,314     | \-0,280     | 0,034           |
+
+
+
+| Variáveis                  | Idade < 40 | Idade => 40 | Diferença (abs) |
+| -------------------------- | ---------- | ----------- | --------------- |
+| Intercepto                 | 0,179      | 0,130       | 0,049           |
+| Ultraprocessados           | 0,058      | 0,048       | 0,010           |
+| Exercício Físico           | \-0,074    | \-0,347     | 0,273           |
+| Tabagismo                  | 0,671      | 0,484       | 0,187           |
+| Consumo Álcool             | 0,114      | \-0,140     | 0,254           |
+| Câncer                     | 0,428      | 0,535       | 0,106           |
+| Hipertensão                | 0,578      | 0,239       | 0,339           |
+| Diabetes                   | 0,261      | 0,523       | 0,263           |
+| **Cardiovascular**         | **1,172**  | **0,774**   | **0,397**       |
+| Hipercolesterolemia        | 0,524      | 0,424       | 0,100           |
+| **AVC**                    | **1,123**  | **0,622**   | **0,502**       |
+| Artrite                    | 1,029      | 0,851       | 0,179           |
+| Obesidade                  | 0,250      | 0,141       | 0,108           |
+| Sexo (1=Masculino)         | \-1,115    | \-0,870     | 0,245           |
+| Estado_Civil (1=Casado)    | \-0,383    | \-0,375     | 0,009           |
+| Classificação Escolaridade | \-0,011    | 0,067       | 0,078           |
+| Classificação Idade        |            |             | 0,000           |
+| Classificação Renda        | \-0,140    | \-0,397     | 0,256           |
+
+
+
+| Variáveis                  | Idade 20-29 | Idade 30-39 | Idade 40-49 | Idade 50-59 |
+| -------------------------- | ----------- | ----------- | ----------- | ----------- |
+| Intercepto                 | 0,194       | 0,161       | 0,230       | 0,032       |
+| Ultraprocessados           | 0,058       | 0,055       | 0,056       | 0,024       |
+| Exercício Físico           | 0,038       | \-0,161     | \-0,223     | \-0,523     |
+| Tabagismo                  | 0,663       | 0,674       | 0,480       | 0,517       |
+| Consumo Álcool             | 0,136       | 0,097       | \-0,085     | \-0,238     |
+| Câncer                     | 0,462       | 0,426       | 0,549       | 0,556       |
+| Hipertensão                | 0,725       | 0,536       | 0,322       | 0,224       |
+| Diabetes                   | 0,521       | 0,213       | 0,706       | 0,472       |
+| Cardiovascular             | 1,577       | 0,989       | 0,684       | 0,845       |
+| Hipercolesterolemia        | 0,477       | 0,562       | 0,391       | 0,489       |
+| AVC                        | 1,021       | 1,146       | 0,652       | 0,609       |
+| Artrite                    | 0,818       | 1,115       | 0,906       | 0,884       |
+| Obesidade                  | 0,345       | 0,203       | 0,180       | 0,097       |
+| Sexo (1=Masculino)         | \-1,195     | \-1,051     | \-0,944     | \-0,784     |
+| Estado_Civil (1=Casado)    | \-0,301     | \-0,433     | \-0,555     | \-0,214     |
+| Classificação Escolaridade | \-0,084     | 0,044       | 0,080       | 0,040       |
+| Classificação Idade        |             |             |             |             |
+| Classificação Renda        | 0,023       | \-0,249     | \-0,379     | \-0,354     |
+
+
+
+| Variáveis                  | Região Norte | Região Nordeste | Região Sudeste | Região Sul | Região Centro Oeste |
+| -------------------------- | ------------ | --------------- | -------------- | ---------- | ------------------- |
+| Intercepto                 | \-0,080      | 0,277           | 0,232          | 0,422      | 0,999               |
+| Ultraprocessados           | 0,081        | 0,061           | 0,028          | 0,054      | 0,011               |
+| Exercício Físico           | \-0,030      | \-0,206         | \-0,301        | \-0,247    | \-0,434             |
+| Tabagismo                  | 0,434        | 0,599           | 0,573          | 0,576      | 0,643               |
+| Consumo Álcool             | 0,234        | \-0,137         | 0,006          | \-0,133    | \-0,023             |
+| Câncer                     | 0,620        | 0,524           | 0,501          | 0,809      | \-0,002             |
+| Hipertensão                | 0,368        | 0,399           | 0,213          | 0,442      | 0,324               |
+| Diabetes                   | 0,656        | 0,431           | 0,420          | 0,509      | 0,515               |
+| Cardiovascular             | 0,987        | 0,951           | 1,011          | 0,396      | 0,763               |
+| Hipercolesterolemia        | 0,377        | 0,475           | 0,515          | 0,499      | 0,388               |
+| AVC                        | 0,367        | 0,739           | 0,602          | 0,925      | 1,348               |
+| Artrite                    | 0,925        | 0,979           | 0,996          | 0,561      | 0,894               |
+| Obesidade                  | 0,354        | 0,046           | 0,418          | 0,129      | 0,031               |
+| Sexo (1=Masculino)         | \-1,066      | \-0,878         | \-0,926        | \-0,871    | \-1,234             |
+| Estado_Civil (1=Casado)    | \-0,407      | \-0,358         | \-0,430        | \-0,287    | \-0,363             |
+| Classificação Escolaridade | 0,101        | 0,013           | 0,023          | 0,068      | \-0,055             |
+| Classificação Idade        | \-0,027      | \-0,073         | \-0,018        | \-0,075    | \-0,156             |
+| Classificação Renda        | \-0,418      | \-0,164         | \-0,257        | \-0,495    | \-0,179             |
+
+
+# Discussão
+> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
+>
+> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
+
+# Conclusão
+> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
+>
+> Destacar os principais desafios enfrentados.
+>
+> Principais lições aprendidas.
+
+# Trabalhos Futuros
+> O que poderia ser melhorado se houvesse mais tempo?
 
 # Cronograma
 
@@ -267,14 +513,34 @@ Semana 02 (23/04 - 29/04) | Compreensão do dados                              |
 Semana 03 (30/04 - 06/05) | Processamento dos dados                           | :heavy_check_mark:
 Semana 04 (07/05 - 13/05) | Processamento dos dados                           | :heavy_check_mark:
 Semana 05 (14/05 - 20/05) | Análise exploratória e Entrega 2                  | :heavy_check_mark:
-Semana 06 (21/05 - 27/05) | Modelagem da solução                              |
-Semana 07 (28/05 - 03/06) | Modelagem da solução                              |
-Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados                |
-Semana 09 (11/06 - 17/06) | Relatório                                         |
-Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      |
+Semana 06 (21/05 - 27/05) | Modelagem da solução                              | :heavy_check_mark:
+Semana 07 (28/05 - 03/06) | Modelagem da solução                              | :heavy_check_mark:
+Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados                | :heavy_check_mark:
+Semana 09 (11/06 - 17/06) | Relatório                                         | :heavy_check_mark:
+Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      | :heavy_check_mark:
 
 
-# Material bibliográfico
+# Referências Bibliográficas
+
+1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
+
+2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
+
+3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
+
+4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
+
+5. Lotfaliany, M. _et al._ (2018) ‘Depression and chronic diseases: Co-occurrence and communality of risk factors’, _Journal of Affective Disorders_, 241, pp. 461–468. doi:10.1016/j.jad.2018.08.011. Available from: https://www.sciencedirect.com/science/article/pii/S016503271830805X?via%3Dihub
+
+6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
+
+7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
+   
+8. 	Berti De Azevedo Barros M, De L, Medina PB, Lima G, Soares De Azevedo RC, Ferreira N, et al. Associação entre comportamentos de saúde e depressão: resultados da Pesquisa Nacional de Saúde de 2019. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
+   	
+9. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
+ 
+### Estudo Bibliográfico
 
 [Barros MBA, Lima MG, Azevedo RCS, Medina LBP, Lopes CS, Menezes PR, Malta DC. Depression and health behaviors in Brazilian adults - PNS 2013. Rev Saude Publica. 2017 Jun 1;51(suppl 1):8s. doi: 10.1590/S1518-8787.2017051000084. PMID: 28591352; PMCID: PMC5676399.](https://pubmed.ncbi.nlm.nih.gov/28591352/)
 
