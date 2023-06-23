@@ -1,5 +1,6 @@
 
 # Projeto `Associação de fatores de estilo de vida com depressão`
+
 ### Project `Association of lifestyle factors with depression`
 
 # Apresentação
@@ -14,34 +15,41 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
 
-# Descrição Resumida do Projeto
+# Introdução e Referenciais Teóricos
 
-As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
+> Contextualização do projeto
+> Caracterização do problema
+> Motivação
+> Relevância
+> Trabalhos relacionados
+> Indicação (bastante resumida) da análise proposta
+> Indicação (bastante resumida) dos resultados alcançados
 
-A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
+As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].  
 
-Compreender as características da população com depressão e os fatores de risco associados à doença no Brasil é essencial para o desenvolvimento de políticas públicas e diretrizes considerando as particularidades da população brasileira.
+A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.  
 
-A utilização de inquéritos de saúde nacional se torna extremamente pertinente para a compreensão da prevalência da doença e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira e têm o propósito de orientar diretrizes e políticas públicas de Saúde no país [5].
+Estudos prévios vêm mostrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, apresentando diferenças de acordo com características sociodemográficas como sexo e renda. Além de fatores de risco estarem associados ao diagnóstico de depressão, existem estudos mostrando associação entre depressão e outras doenças crônicas não transmissíveis como diabetes e artrite, esse fato não está sendo atribuída somente ao fato da reação depressiva por conta da presença de uma doença, mas devido ao compartilhamento de fatores de risco e mecanismos fisiopatológicos em comum entre depressão e outras doenças crônicas não transmissíveis. Porém, não há muitos estudo buscando compreender essa relação em países de baixa e média renda. (corrigir as referencias: )  
 
-Com isso, o objetivo do estudo é buscar comportamentos de saúde e doenças crônicas não transmissiveis mais determinantes para o diagnóstico da depressão possibilitando auxiliar na prevenção do desenvolvimento da depressão.
+Compreender a relação das doenças crônicas não transmissíveis com a depressão, junto dos fatores de risco associados à doença considerando as particularidades sociodemográficas da população brasileira é promossivor para o desenvolvimento de políticas públicas que busquem combater o desenvolvimento da depressão no país.  
+
+A utilização de inquéritos de saúde nacionais se torna extremamente pertinente para a compreensão da prevalência das doenças e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira, com o propósito de orientar diretrizes e políticas públicas de Saúde no país [6].  
+
+A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 ![](assets/dagitty-model.png)
+
+#### Apresentação inicial do projeto
 
 [Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
 
-1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
-
-2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
-
-3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
-
-4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
-
-5. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
 
 
 
-# Perguntas de Pesquisa
+# Perguntas de Pesquisa e Objetivos
+
+> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
+> Objetivos principais e específicos
 
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada da prevalência e fatores de risco associados à depressão no Brasil.
 
@@ -63,6 +71,8 @@ Quanto às demais questões de pesquisa, espera-se aprimorar os resultados obtid
 
 # Metodologia
 
+> Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
+> Justificar teoricamente, sempre que possível, a metodologia adotada.
 Este trabalho de forma geral procura avaliar e descobrir os fatores de risco para a depressão no Brasil. Para este fim, abordaremos uma metodologia baseada quatro estratégias principais:
 
 - Realização de um estudo bibliográfico, que permitirá entender os padrões esperados para cada pergunta de pesquisa.
@@ -97,7 +107,116 @@ Foi necessáro filtrar de forma arbitrária as variáveis relevantes para respon
 
 Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relevantes para as perguntas de pesquisa.
 
-**Análise dos dados**
+
+### Integração entre Bases e Análise Exploratória
+
+> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+>
+> Resultados de Análise Exploratória
+> * use estatística descritiva e gráficos;
+> * inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
+> * analise correlação e use gráficos de dispersão;
+> * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
+
+Nesta seção, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
+
+Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
+
+![](assets/e2_workflow.png)
+
+![](assets/e2_specific_workflow.png)
+
+Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
+
+#### Características descritivas da população
+
+Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
+
+![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+
+Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
+
+![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+
+Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
+
+![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
+
+![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
+
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+
+![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+
+Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
+
+![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
+
+Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
+
+![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+
+O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
+
+Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
+
+![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+
+#### Testes de associação
+
+Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
+Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
+
+| Variáveis confrontadas                                 |        χ2 |   p-value |
+|:-------------------------------------------------------|----------:|----------:|
+| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
+| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
+| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
+| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
+| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
+
+Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
+
+| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
+|:-------------------------------------------------------------------------|----------:|-----------:|
+| Sexo                                                                     |    650.12 |          0 |
+| Cor                                                                      |     27.46 |    0.00005 |
+| Categoria idade                                                          |     23.64 |          0 |
+| Escolaridade                                                             |      9.63 |    0.02198 |
+| Percepção da própria saúde                                               |   3007.41 |          0 |
+| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
+| Possui animal de estimação?                                              |      2.64 |   0.10445* |
+| Renda per capita                                                         |    263.28 |          0 |
+| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
+| Fuma tabaco                                                              |    101.61 |          0 |
+| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
+| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
+| Teve diagnostico AVC                                                     |     50.22 |          0 |
+| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
+| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
+| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
+| Teve diagnostico pressão alta                                            |     35.73 |          0 |
+| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
+| Teve diagnostico depressão                                               |   4597.09 |          0 |
+
+Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
+A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
+
+# Análises Realizadas
+
+> Descrição detalhada das análises realizadas.
+>
+>Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
+>
+> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
+>
+> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+> 
 
 _Variável dependente ou desfecho:_
 
@@ -143,106 +262,14 @@ _Análises estatísticas:_
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
 
 
-Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
-
-![](assets/e2_workflow.png)
-
-![](assets/e2_specific_workflow.png)
-
-Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
-
-6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude  Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
-
-7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
-   
-8. 	Berti De Azevedo Barros M, De L, Medina PB, Lima G, Soares De Azevedo RC, Ferreira N, et al. Associação entre comportamentos de saúde e depressão: resultados da Pesquisa Nacional de Saúde de 2019. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
-   	
-9. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
 
 
-## Análise Exploratória
-
-Nesta seção, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
-
-### Características descritivas da população
-
-Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
-
-![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
-
-Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
-
-![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
-
-Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
-
-![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
-
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
-
-![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
-
-Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
-
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
-
-Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
-
-![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
-
-Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
-
-![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
-
-O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
-
-Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
-
-![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
 
-### Testes de associação
 
-Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
-Primeiramente, buscamos associações entre as variáveis que possam nos auxiliar na discussão dos achados, por exemplo, percepção de saúde e nível de escolaridade e percepção de saúde e raça-cor, e minimizar as variáveis de caracterização da amostra, como associação entre nível de escolaridade e renda per capita. 
 
-| Variáveis confrontadas                                 |        χ2 |   p-value |
-|:-------------------------------------------------------|----------:|----------:|
-| Nível de escolaridade e renda per capita               |  23047.00 |         0 |
-| Percepção de saúde e nível de escolaridade             |   6137.04 |         0 |
-| Percepção de saúde segundo OMS e nível de escolaridade |   4083.09 |         0 |
-| Percepção de saúde e raça-cor                          |   1020.99 |         0 |
-| Percepção de saúde segundo OMS e raça-cor              |    695.94 |         0 |
 
-Em seguida, realizamos associações entre variáveis de caracterização dos indivíduos com alto potencial de depressão baseado no score PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
 
-| Variáveis confrontadas com alto potencial de depressão (PHQ9 score > 20) |        χ2 |    p_value |
-|:-------------------------------------------------------------------------|----------:|-----------:|
-| Sexo                                                                     |    650.12 |          0 |
-| Cor                                                                      |     27.46 |    0.00005 |
-| Categoria idade                                                          |     23.64 |          0 |
-| Escolaridade                                                             |      9.63 |    0.02198 |
-| Percepção da própria saúde                                               |   3007.41 |          0 |
-| Percepção da saúde segundo a OMS                                         |   4762.96 |          0 |
-| Possui animal de estimação?                                              |      2.64 |   0.10445* |
-| Renda per capita                                                         |    263.28 |          0 |
-| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
-| Fuma tabaco                                                              |    101.61 |          0 |
-| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
-| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
-| Teve diagnostico AVC                                                     |     50.22 |          0 |
-| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
-| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
-| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
-| Teve diagnostico pressão alta                                            |     35.73 |          0 |
-| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
-| Teve diagnostico depressão                                               |   4597.09 |          0 |
-
-Em relação aos hábitos de vida, encontramos associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão.
-A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
 # Ferramentas
 
@@ -258,6 +285,27 @@ Scikit-learn | Biblioteca com grande variedade de algoritmos de aprendizagem de 
 ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também conhecido como o evangelista da programação.
 
 
+
+# Resultados
+> Descrição dos resultados mais importantes obtidos.
+>
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
+
+# Discussão
+> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
+>
+> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
+
+# Conclusão
+> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
+>
+> Destacar os principais desafios enfrentados.
+>
+> Principais lições aprendidas.
+
+# Trabalhos Futuros
+> O que poderia ser melhorado se houvesse mais tempo?
+
 # Cronograma
 
 Semanas | Tarefas                                           | Conclusão
@@ -267,14 +315,34 @@ Semana 02 (23/04 - 29/04) | Compreensão do dados                              |
 Semana 03 (30/04 - 06/05) | Processamento dos dados                           | :heavy_check_mark:
 Semana 04 (07/05 - 13/05) | Processamento dos dados                           | :heavy_check_mark:
 Semana 05 (14/05 - 20/05) | Análise exploratória e Entrega 2                  | :heavy_check_mark:
-Semana 06 (21/05 - 27/05) | Modelagem da solução                              |
-Semana 07 (28/05 - 03/06) | Modelagem da solução                              |
-Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados                |
-Semana 09 (11/06 - 17/06) | Relatório                                         |
-Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      |
+Semana 06 (21/05 - 27/05) | Modelagem da solução                              | :heavy_check_mark:
+Semana 07 (28/05 - 03/06) | Modelagem da solução                              | :heavy_check_mark:
+Semana 08 (04/06 - 10/06) | Análise e discussão dos resultados                | :heavy_check_mark:
+Semana 09 (11/06 - 17/06) | Relatório                                         | :heavy_check_mark:
+Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      | :heavy_check_mark:
 
 
-# Material bibliográfico
+# Referências Bibliográficas
+
+1. Hunter DJ, Reddy KS. Noncommunicable Diseases. N Engl J Med [Internet]. 2013 [cited 2023 Apr 14];369(14):1336–43. Available from: https://www.who.int/health-topics/noncommunicable-diseases#tab=tab_1
+
+2. World Health Organisation. Mental health in emergencies [Internet]. 2019 [cited 2023 Apr 14]. p. 1–70. Available from: https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies
+
+3. Soares B, Kanevsky G, Teng CT, Pérez-Esparza R, Bonetto GG, Lacerda ALT, et al. Prevalence and Impact of Treatment-Resistant Depression in Latin America: a Prospective, Observational Study. Psychiatr Q [Internet]. 2021 Dec 1 [cited 2023 Apr 14];92(4):1797–815. Available from: /pmc/articles/PMC8531108/
+
+4. Chisholm D, Sanderson K, Ayuso-Mateos JL, Saxena S. Reducing the global burden of depression: Population-level analysis of intervention cost-effectiveness in 14 world regions. Br J Psychiatry [Internet]. 2004 May [cited 2023 Apr 14];184(MAY):393–403. Available from: https://pubmed.ncbi.nlm.nih.gov/15123502/
+
+5. Lotfaliany, M. _et al._ (2018) ‘Depression and chronic diseases: Co-occurrence and communality of risk factors’, _Journal of Affective Disorders_, 241, pp. 461–468. doi:10.1016/j.jad.2018.08.011. Available from: https://www.sciencedirect.com/science/article/pii/S016503271830805X?via%3Dihub
+
+6. Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
+
+7. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
+   
+8. 	Berti De Azevedo Barros M, De L, Medina PB, Lima G, Soares De Azevedo RC, Ferreira N, et al. Associação entre comportamentos de saúde e depressão: resultados da Pesquisa Nacional de Saúde de 2019. Rev Bras Epidemiol [Internet]. 2021 Dec 10 [cited 2023 Jun 21];24:e210010. Available from: https://doi.org/10.1590/1980-549720210010.supl.2
+   	
+9. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
+ 
+### Estudo Bibliográfico
 
 [Barros MBA, Lima MG, Azevedo RCS, Medina LBP, Lopes CS, Menezes PR, Malta DC. Depression and health behaviors in Brazilian adults - PNS 2013. Rev Saude Publica. 2017 Jun 1;51(suppl 1):8s. doi: 10.1590/S1518-8787.2017051000084. PMID: 28591352; PMCID: PMC5676399.](https://pubmed.ncbi.nlm.nih.gov/28591352/)
 
