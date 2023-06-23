@@ -29,13 +29,14 @@ As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pú
 
 A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.  
 
-Estudos prévios vêm mostrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, apresentando diferenças de acordo com características sociodemográficas como sexo e renda. Além de fatores de risco estarem associados ao diagnóstico de depressão, existem estudos mostrando associação entre depressão e outras doenças crônicas não transmissíveis como diabetes e artrite, esse fato não está sendo atribuída somente ao fato da reação depressiva por conta da presença de uma doença, mas devido ao compartilhamento de fatores de risco e mecanismos fisiopatológicos em comum entre depressão e outras doenças crônicas não transmissíveis. Porém, não há muitos estudo buscando compreender essa relação em países de baixa e média renda. (corrigir as referencias: )  
+Estudos prévios vêm mostrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, apresentando diferenças de acordo com características sociodemográficas como sexo e renda. Além de fatores de risco estarem associados ao diagnóstico de depressão, existem estudos mostrando associação entre depressão e outras doenças crônicas não transmissíveis como diabetes e artrite, esse fato não está sendo atribuída somente ao fato da reação depressiva por conta da presença de uma doença, mas devido ao compartilhamento de fatores de risco e mecanismos fisiopatológicos em comum entre depressão e outras doenças crônicas não transmissíveis. Porém, não há muitos estudo buscando compreender essa relação em países de baixa e média renda.
 
 Compreender a relação das doenças crônicas não transmissíveis com a depressão, junto dos fatores de risco associados à doença considerando as particularidades sociodemográficas da população brasileira é promossivor para o desenvolvimento de políticas públicas que busquem combater o desenvolvimento da depressão no país.  
 
 A utilização de inquéritos de saúde nacionais se torna extremamente pertinente para a compreensão da prevalência das doenças e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira, com o propósito de orientar diretrizes e políticas públicas de Saúde no país [6].  
 
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
+
 ![](assets/dagitty-model.png)
 
 #### Apresentação inicial do projeto
