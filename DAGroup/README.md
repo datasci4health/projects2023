@@ -37,7 +37,7 @@ A utilização de inquéritos de saúde nacionais se torna extremamente pertinen
 
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 
-![](assets/dagitty-model.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/dagitty-model.png)
 
 #### Apresentação inicial do projeto
 
@@ -123,9 +123,9 @@ Nesta seção, apresentamos algumas características identificadas na base de da
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
-![](assets/e2_workflow.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_workflow.png)
 
-![](assets/e2_specific_workflow.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png)
 
 Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
 
@@ -133,39 +133,39 @@ Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalh
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
-![Sexo e cor/raça da população](notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+![Sexo e cor/raça da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
 
 Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
-![Idade e peso da população](notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+![Idade e peso da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
 
 Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
 
-![Nível escolar e renda per capita da população](notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
 
 Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
 
-![PHQ9_dist](notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
+![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
 Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
 
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
+![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
-![Correlacoes de interesse com depressao](notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
 
 Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
 
-![](notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
 
 Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
-![](notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
 Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
 
-![](notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
 
 #### Testes de associação
 
