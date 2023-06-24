@@ -139,55 +139,48 @@ Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relev
 
 Para conduzir as análises deste estudo, categorizamos as variáveis de interesse de acordo com os parâmetros utilizados na literatura, conforme apresentado a seguir:
 
-*Variável dependente:*
+#### Variável dependente:
 
 A prevalência de depressão na população estudada foi avaliada através da aplicação do indicador PHQ9, que indica a severidade da doença em cinco intervalos: nenhum ou mínimo, leve, moderada, moderadamente grave e grave. Para as análises, as pessoas com pontuação igual ou superior a 10 pontos do indicador foram classificadas com depressão.
 
 Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. Portanto, o estudo foi restrito a essa faixa etária e as mulheres grávidas foram excluídas da análise devido a questões metodológicas específicas (n = 736), resultando em uma amostra final de 64.664 indivíduos.	
 
-_Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:_
+#### Variáveis independentes:
 
-Variáveis relacionadas às doenças crônicas não transmissíveis:
+*Variáveis relacionadas às doenças crônicas não transmissíveis*:
 
-Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercolesterolemia, diabetes: sim ou não;
+ - **Presença de artrite, AVC, doenças cardiovasculares, hipertensão, hipercolesterolemia, diabetes**: sim ou não;
+ - **Presença de obesidade**: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
 
-Presença de obesidade: calculamos o IMC dos indivíduos (peso/altura²) e classificamos com obesidade, os indivíduos com IMC superior ou igual a 30 (sim/não).
+*Variáveis relacionadas aos comportamentos de saúde*:
 
-_Variáveis independentes de doenças crônicas não transmissíveis, comportamentos de saúde e sociodemográficas:_
+- **Alimentação**: aplicamos um score de consumo de produtos ultraprocessados de 0 a 10 pontos, o qual é baseado na resposta positiva de consumo no dia anterior dos seguintes alimentos [10]. Quanto maior a pontuação do score, maior o consumo de ultraprocessados, ou seja, menos saudável é a dieta. Os alimentos considerados na pontuação incluem:
+  - Refrigerante; 
+  - Suco de fruta em caixinha ou lata ou refresco em pó;
+  - Bebida achocolatada ou iogurte com sabor; 
+  - Salgadinho de pacote ou biscoito/bolacha salgado; 
+  - Biscoito/bolacha doce ou recheado ou bolo de pacote; 
+  - Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada; 
+  - Salsicha, linguiça, mortadela ou presunto; 
+  - Pão de forma, de cachorro-quente ou de hambúrguer;
+  - Margarina, maionese, ketchup ou outros molhos ultraprocessados; 
+  - Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrializado. 
+- **Exercício físico** [5]: prática de exercício físico nos últimos 3 meses (sim/não).
+- **Consumo de álcool** [11]: consumo de bebidas alcoólica uma vez ou mais por mês (sim/não) 
+- **Tabagismo** [5]: faz uso de algum tipo de tabaco (sim/não)
 
-Variáveis relacionadas aos comportamentos de saúde:
+*Variáveis relacionadas ao perfil sociodemográfico:*
 
-Alimentação: aplicamos um score de consumo de produtos ultraprocessados de 0 a 10 pontos, o qual é baseado na resposta positiva de consumo no dia anterior dos seguintes alimentos[10]: 
-1- Refrigerante; 
-2- Suco de fruta em caixinha ou lata ou refresco em pó;
-3- Bebida achocolatada ou iogurte com sabor; 
-4- Salgadinho de pacote ou biscoito/bolacha salgado; 
-5- Biscoito/bolacha doce ou recheado ou bolo de pacote; 
-6- Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada; 7- Salsicha, linguiça, mortadela ou presunto; 
-8- Pão de forma, de cachorro-quente ou de hambúrguer;
-9- Margarina, maionese, ketchup ou outros molhos ultraprocessados; 10- Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrializado. 
-Sendo que quanto maior a pontuação do score, maior o consumo de ultraprocessados, ou seja, menos saudável é a dieta. 
+- **Escolaridade**: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
+- **Sexo**: feminino ou masculino
+- **Estado Civil**: feminino ou masculino
+- **Idade** [10]: 
+- **Renda** [5]:
+- **Localidade**: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
-Exercício físico[5]: prática de exercício físico nos últimos 3 meses (sim/não).
+#### Análise Exploratória
 
-Consumo de álcool[11]: consumo de bebidas alcoólica uma vez ou mais por mês (sim/não) 
-
-Tabagismo[5]: faz uso de algum tipo de tabaco (sim/não)
-
-Variáveis relacionadas ao perfil sociodemográfico:
-
-Escolaridade: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
-
-Sexo: feminino ou masculino
-
-Idade [10]: 
-
-Renda [5]:
-
-Localidade: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
-
-
-Nesta seção, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
+A seguir, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
@@ -195,11 +188,8 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 
 ** Arrumar workflow **
+
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png)
-
-Nas proximas seções decrevemos uma análise exploratoria inicial e mais detalhes desta base.
-
-#### Características descritivas da população
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
