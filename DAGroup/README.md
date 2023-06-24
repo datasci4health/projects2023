@@ -77,21 +77,11 @@ _Objetivo geral:_
 
 _Objetivos específicos:_
 
- - Analisar quais comportamentos de saúde inadequados estão associados
-       com o diagnóstico de depressão;
-       
- - Analisar quais doenças crônicas não transmissiveis estão associadas
-       com o diagnóstico de depressão;
-       
- - Analisar quais varíaveis sociodemográficas estão associadas com o
-       diagnóstico de depressão;
-       
- - Determinar a importância dos comportamentos de saúde inadequados e
-       das doenças crônicas não transmissíveis e das variáveis
-       sociodemográficas para o diagnóstico de depressão;
-       
-  - Determinar quais variaveis são determinantes para o diagnóstico de
-       depressão.
+ - Analisar quais comportamentos de saúde inadequados estão associados com o diagnóstico de depressão;
+ - Analisar quais doenças crônicas não transmissiveis estão associadas com o diagnóstico de depressão;
+ - Analisar quais varíaveis sociodemográficas estão associadas com o diagnóstico de depressão;
+ - Determinar a importância dos comportamentos de saúde inadequados e das doenças crônicas não transmissíveis e das variáveis sociodemográficas para o diagnóstico de depressão;
+ - Determinar quais variaveis são determinantes para o diagnóstico de depressão.
 
 # Metodologia
 
