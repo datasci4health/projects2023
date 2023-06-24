@@ -13,6 +13,12 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Anderson Nogueira Cotrim  | 163993  | Computação - [Conta GitHub](https://github.com/AndersonCotrim)|
 | Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
+## Slides da Apresentação Final
+> Link para slides da apresentação final do projeto.
+
+## Apresentação inicial do projeto
+
+[Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
 
 # Introdução e Referenciais Teóricos
 
@@ -25,28 +31,24 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Indicação (bastante resumida) dos resultados alcançados
 
 
-As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global[1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis[1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis[2,3].
+As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
 
-A depressão afeta cerca de 5% da população adulta mundial[2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva[4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
+A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
 
-Estudos prévios têm demonstrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, com variações de acordo com características sociodemográficas, como sexo e renda[5,6]. Além disso, fatores de risco têm sido associados ao diagnóstico de depressão, assim como a presença de outras doenças crônicas não transmissíveis, como diabetes e artrite. Essa associação não se deve apenas à reação depressiva decorrente da presença de uma doença, mas também ao compartilhamento de fatores de risco e mecanismos fisiopatológicos comuns entre a depressão e outras doenças crônicas não transmissíveis[7,8]. No entanto, existem poucos estudos que investigam essa relação em países de baixa e média renda[7].
+Estudos prévios têm demonstrado associações entre depressão e comportamentos de saúde inadequados na população brasileira, com variações de acordo com características sociodemográficas, como sexo e renda [5, 6]. Além disso, fatores de risco têm sido associados ao diagnóstico de depressão, assim como a presença de outras doenças crônicas não transmissíveis, como diabetes e artrite. Essa associação não se deve apenas à reação depressiva decorrente da presença de uma doença, mas também ao compartilhamento de fatores de risco e mecanismos fisiopatológicos comuns entre a depressão e outras doenças crônicas não transmissíveis [7, 8]. No entanto, existem poucos estudos que investigam essa relação em países de baixa e média renda [7].
 
 Compreender a relação entre as doenças crônicas não transmissíveis e a depressão, considerando os fatores de risco associados à doença, bem como as particularidades sociodemográficas da população brasileira, é de extrema importância para o desenvolvimento de políticas públicas eficazes no combate ao avanço da depressão no país.
 
-A utilização de inquéritos de saúde nacionais se torna extremamente pertinente para a compreensão da prevalência das doenças e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira, com o propósito de orientar diretrizes e políticas públicas de Saúde no país[9].
+A utilização de inquéritos de saúde nacionais se torna extremamente pertinente para a compreensão da prevalência das doenças e dos fatores associados, visto que são produzidos com amostragens representativas da população brasileira, com o propósito de orientar diretrizes e políticas públicas de Saúde no país [9].
 
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/DAG.jpg)
 
 
+Neste trabalho, utilizamos técnicas de análise estatística, como o teste qui-quadrado, para avaliar a prevalência de fatores associados a depressão. Além disso, treinamos modelos de classificação binária para prever se uma pessoa é potencialmente afetada pela depressão (utilizando o questionário PHQ-9) a partir de variáveis de pesquisa, incluindo hábitos, doenças crônicas e características sociodemográficas.
 
-#### Apresentação inicial do projeto
-
-[Link para vídeo de apresentação da proposta do projeto](https://drive.google.com/file/d/1uQ0wQsbig9BBA0OvvMyG8jLpcLTL104L/view?usp=share_link)
-
-
-
+O modelo de regressão logística apresentou o melhor desempenho preditivo, com uma precisão de 18,49%, recall (revocação) de 66,27% e AUC (área sob a curva) de 71,57%. Embora a eficácia tenha sido baixa, esse modelo nos permite analisar a influência desses fatores na depressão.
 
 # Perguntas de Pesquisa e Objetivos
 
@@ -65,23 +67,31 @@ Através dos experimentos exploratórios, análise de correlação e gráficos d
 
 Para abordar a segunda questão, pretende-se utilizar a análise de regressão logística. Essa abordagem permitirá avaliar de forma mais precisa o grau de impacto de cada hábito, considerando tanto as influências positivas quanto as negativas, relacionadas à depressão.
 
-Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. No entanto, os fatores que influenciam essa diferença serão confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
+Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. No entanto, os fatores que influenciam essa diferença foram confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
 
 _Objetivo geral:_
 
-Compreender os comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional.
+ - Compreender os comportamentos de saúde inadequados e doenças crônicas
+   não transmissíveis mais determinantes para o diagnóstico da depressão
+   em um inquérito de saúde nacional.
 
 _Objetivos específicos:_
 
-1- Analisar quais comportamentos de saúde inadequados estão associados com o diagnóstico de depressão;
-
-2- Analisar quais doenças crônicas não transmissiveis estão associadas com o diagnóstico de depressão;
-
-3- Analisar quais varíaveis sociodemográficas estão associadas com o diagnóstico de depressão;
-
-4- Determinar a importância dos comportamentos de saúde inadequados e das doenças crônicas não transmissíveis e das variáveis sociodemográficas para o diagnóstico de depressão;
-
-5- Determinar quais variaveis são determinantes para o diagnóstico de depressão.
+ - Analisar quais comportamentos de saúde inadequados estão associados
+       com o diagnóstico de depressão;
+       
+ - Analisar quais doenças crônicas não transmissiveis estão associadas
+       com o diagnóstico de depressão;
+       
+ - Analisar quais varíaveis sociodemográficas estão associadas com o
+       diagnóstico de depressão;
+       
+ - Determinar a importância dos comportamentos de saúde inadequados e
+       das doenças crônicas não transmissíveis e das variáveis
+       sociodemográficas para o diagnóstico de depressão;
+       
+  - Determinar quais variaveis são determinantes para o diagnóstico de
+       depressão.
 
 # Metodologia
 
@@ -580,9 +590,9 @@ Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      
  	
 9. 	Stopa SR, Szwarcwald CL, Oliveira MM de, Gouvea E de CDP, Vieira MLFP, Freitas MPS de, et al. Pesquisa Nacional de Saúde 2019: histórico, métodos e perspectivas. Epidemiol e Serv saude  Rev do Sist Unico Saude do Bras [Internet]. 2020 [cited 2023 Apr 14];29(5):e2020315. Available from: http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742020000500035&lng=pt&nrm=iso&tlng=pt
  	
-10. 	dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
+10. dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
  	
-11. 	de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
+11. de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
 
  
 ### Estudo Bibliográfico
