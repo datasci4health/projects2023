@@ -274,6 +274,13 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 
 ***RELATAR AS DIFICULDADES SOBRE MUDANÇAS DE ESCOLHA DE VARIAVEIS, LEMBRAR ESTAVAMOS USANDO OS INDICADORES DA PNS, PORÉM MUDAMOS PARA OS INDICADORES USADOS NOS ARTIGOS DEVIDO OS VALORES DE MISSING, DESBALANCEIO E ETC;
 
+
+Inicialmente, buscou-se criar indicadores baseados em referenciais utilizados pela PNS e OMS. Entretanto, ao analisar os dados resultantes, notou-se uma grande quantidade de dados faltantes em variáveis consideradas importantes pela literatura, como consumo alcoólico e realização de atividade física. Por exemplo, para a OMS, uma pessoa só pode ser considerada ativa de acordo com a relação de tempo gasto em atividades consideradas vigorosas e leves ou moderadas. Ao configurar este indicador, notou-se a ausência de cerca de 58% dos dados. Já para o consumo alcoólico, baseando-se na frequência semanal do consumo de bebidas alcoólicas, encontrou-se cerca de 69% de dados faltantes.
+
+Neste contexto, alterou-se a classificação de indivíduos considerados ativos para aqueles que, nos últimos três meses, realizaram algum tipo de exercício físico[11]. Para o segmento populacional deste estudo, não houve dados faltantes nesta análise. Quanto ao consumo alcoólico, passou-se a utilizar a frequência mensal[5], sem dados faltantes.
+
+Além disso, em relação às doenças crônicas, notou-se uma baixa quantidade de dados faltantes, o que permitiu a remoção dos indivíduos que não responderam à análise.
+
 ***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
 
