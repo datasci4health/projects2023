@@ -243,32 +243,32 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 
 ***COLOCAR DO X² ENTRE AS VARIAVEL DEEPENDENTE E AS VARIAVEIS INDEPENDENTES - OK
 
-| **Variavel**        | **chi2** | **p_value** |
+| **Variaveis**       | **chi2** | **p_value** |
 | ------------------- | -------- | ----------- |
-| exerc_fisico        | 210,9    | 0,000       |
-| tabagismo           | 132,6    | 0,000       |
-| cons_alcool         | 71,7     | 0,000       |
-| cancer              | 137,9    | 0,000       |
-| hipertensao         | 639,0    | 0,000       |
-| diabetes            | 276,7    | 0,000       |
-| cardiovascular      | 621,5    | 0,000       |
-| hipercolesterolemia | 535,9    | 0,000       |
-| avc                 | 332,8    | 0,000       |
-| artrite             | 1017,2   | 0,000       |
-| obesidade           | 159,0    | 0,000       |
-| depression          | 64664,0  | 0,000       |
-| sexo                | 1510,7   | 0,000       |
-| estado_civil        | 275,0    | 0,000       |
-| class_renda         | 141,3    | 0,000       |
-| r_norte             | 41,1     | 0,000       |
-| r_nordeste          | 7,6      | 0,006       |
-| r_sudeste           | 15,0     | 0,000       |
-| r_sul               | 4,9      | 0,028       |
-| r_centro_oeste      | 1,7      | 0,191       |
-| escolaridade        | 36,9     | 0,000       |
-| upf                 | 24,9     | 0,006       |
-| class_idade         | 76,4     | 0,000       |
-| perc_saude          | 7782,9   | 0,000       |
+| exerc_fisico        | 210,9    | 0,00000     |
+| tabagismo           | 132,6    | 0,00000     |
+| cons_alcool         | 71,7     | 0,00000     |
+| cancer              | 137,9    | 0,00000     |
+| hipertensao         | 639,0    | 0,00000     |
+| diabetes            | 276,7    | 0,00000     |
+| cardiovascular      | 621,5    | 0,00000     |
+| hipercolesterolemia | 535,9    | 0,00000     |
+| avc                 | 332,8    | 0,00000     |
+| artrite             | 1017,2   | 0,00000     |
+| obesidade           | 159,0    | 0,00000     |
+| depression          | 64664,0  | 0,00000     |
+| sexo                | 1510,7   | 0,00000     |
+| estado_civil        | 275,0    | 0,00000     |
+| class_renda         | 141,3    | 0,00000     |
+| r_norte             | 41,1     | 0,00000     |
+| r_nordeste          | 7,6      | 0,00584     |
+| r_sudeste           | 15,0     | 0,00011     |
+| r_sul               | 4,9      | 0,02760     |
+| r_centro_oeste      | 1,7      | 0,19130     |
+| escolaridade        | 36,9     | 0,00000     |
+| upf                 | 24,9     | 0,00562     |
+| class_idade         | 76,4     | 0,00000     |
+| perc_saude          | 7782,9   | 0,00000     |
 
 
 
