@@ -25,8 +25,6 @@
 > Incluiremos dados retrospectivos de exames de polissonografia tipo IV de pacientes antes e depois de receberem o tratamento com dispositivo de avanço mandibular. 
 > 
 > Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
-> 
-> O gerenciamento de nossas ações será feito utilizando a ferramenta de gestão de atividades Trello para agilizarmos as entregas e cumprirmos os prazos. 
 
 > # Nota:
 > **Para mais informação consulte:** [video de apresentação do grugo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
