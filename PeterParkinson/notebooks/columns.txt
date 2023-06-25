@@ -16,4 +16,24 @@
 .  'MindAnxietyPDSympSlow', 'MindAnxietyPDSympDepress',  'MindAnxietyPDSympSleep', 'MindAnxietyPDSympWalk'
 . 'Anxiety' , 'Depress'
 	variable
-71	MindAnxietyPDSympExcess
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    'Care', 'Active', 'ModSportDay', 'StrenSportDay', 'StrengthDay', 'LightSportDay', 'HouseHeavy', 'HouseRepair', 'HouseLawn', 'HouseGarden', 'HouseCare',
+    
+    
+    
+'age', 'Mobility',  'Pain', 'Anxious', 'CGIPD',
+       'AnxietyDia', 'Depress', 'DepressionHx', 'DepressionHxTrt',
+       'DepressionHxLim', 'AnxietyHx', 'AnxietyHxTrt', 'AnxietyHxLim',
+       'LeisureHours', 'WalkDay', 'WalkHours',
+       'LightSportHours',  'ModSportHours', 
+       'StrenSportHours',  'StrengthHours', 'HouseLight',
+       'Work', 'WorkActive', 'MindStress', 'MindAnxietyPDSympTremor',
+       'MindAnxietyPDSympSleep', 'MindAnxietyPDSympOther', 'pa1a', 'pa7a'
