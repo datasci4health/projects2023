@@ -406,7 +406,9 @@ Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagis
 
 
 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. 
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. Verificamos uma maior prevalência de várias DCNT entre as pessoas diagnosticadas com depressão. Essas associações indicam que essas condições de saúde têm uma maior prevalência entre os indivíduos com diagnóstico de depressão, conforme descrito na literatura [8],[12].
+
+
 
 | **Variáveis de DCNT**        	|                      	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |------------------------------	|----------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -422,7 +424,7 @@ Por fim, analisamos as doenças crônicas não transmissíveis com depressão e 
 | **Hipercolesterolemia**      	| Teve diagnóstico     	| 12,78%             	| 11,65%            	| 21,89%            	| 535,933  	| 0,0000  	|
 |                              	| Não teve diagnóstico 	| 87,22%             	| 88,35%            	| 78,11%            	| ---      	| ---     	|
 | **Diabetes**                 	| Teve diagnóstico     	| 5,06%              	| 4,54%             	| 9,33%             	| 276,6615 	| 0,0000  	|
-|                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 0                 	| ---      	| ---     	|
+|                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 90,67%             	| ---      	| ---     	|
 | **Obesidade**                	| Sim                  	| 20,93%             	| 20,23%            	| 26,82%            	| 158,9776 	| 0,0001  	|
 |                              	| Não                  	| 79,07%             	| 79,77%            	| 73,18%            	| ---      	| ---     	|
 
@@ -685,38 +687,29 @@ Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão 
 
 
 # Conclusão
-> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
->
-> Destacar os principais desafios enfrentados.
->
-> Principais lições aprendidas.
->
 
-Neste trabalho, o objetivo foi identificar fatores relacionados à depressão, de acordo com a literatura existente. As questões de pesquisa abordaram diferentes aspectos:
 
- - Quais hábitos de vida estão associados à depressão? 
-R. Através da análise dos coeficientes da regressão logística, verificamos que o tabagismo e o alto consumo de alimentos ultraprocessados estão positivamente associados à depressão, enquanto o exercício físico apresenta um fator inverso, ou seja, uma associação negativa.
+Neste trabalho, o objetivo foi identificar os fatores relacionados à depressão com base na literatura existente. As questões de pesquisa abordaram diversos aspectos.
 
- - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
-R. Sim, utilizando a regressão logística, pudemos identificar a influência de certos hábitos. Por exemplo, observamos que o tabagismo parece ter um impacto maior do que o consumo de alimentos ultraprocessados.
+Investigamos quais hábitos de vida estão associados à depressão por meio da análise dos coeficientes da regressão logística. Constatamos que o tabagismo e o alto consumo de alimentos ultraprocessados possuem uma associação positiva com a depressão, enquanto o exercício físico apresenta uma associação inversa, ou seja, negativa. Isto indica prevalência de depressão em pessoas que não praticam exercício físico regularmente, conforme descrito pela literatura.
 
- - A influência desses fatores varia ao longo do curso da vida e de variáveis sociodemográficas?
-R. Sim, durante a análise dos coeficientes da regressão, foram observadas algumas diferenças. Por exemplo, a prática de exercícios físicos tem uma influência crescente à medida que a idade avança.
+Além disso, procuramos quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas. Utilizando a regressão logística, pudemos identificar a influência de certos hábitos. Por exemplo, observamos que o tabagismo parece ter um impacto maior do que o consumo de alimentos ultraprocessados.
 
- - Será que os comportamentos de saúde e/ou doenças crônicas não transmissíveis são determinantes para o diagnóstico de depressão? 
-R. Sim, constatou-se que grande parte do peso dos coeficientes recai sobre as doenças crônicas, perdendo apenas para a variável sociodemográfica sexo.
+Durante a análise dos coeficientes da regressão, notamos que a influência desses fatores varia ao longo do curso da vida e de variáveis sociodemográficas. Um exemplo é a influência crescente da prática de exercícios físicos à medida que a idade avança. Esta questão pode estar relacionada à deterioração da condição física do indivíduo ao passar dos anos, aumentando a dependência de terceiros e impactando a saúde mental.
 
-Durante o desenvolvimento do projeto, enfrentamos desafios significativos. Um deles foi lidar com a quantidade de dados faltantes e variáveis ausentes nos indicadores iniciais baseados na Pesquisa Nacional de Saúde (PNS). Especificamente, a falta de informações sobre o consumo de álcool e a prática de atividade física representou um obstáculo importante.
+Descobrimos que os comportamentos de saúde e/ou doenças crônicas não transmissíveis também desempenham um papel determinante no diagnóstico da depressão. Grande parte do peso dos coeficientes recai sobre as doenças crônicas, perdendo apenas para a variável sociodemográfica do sexo.
 
-Além disso, enfrentamos o desafio do desbalanceamento dos dados na classificação dos casos de depressão. A proporção entre indivíduos classificados como depressivos e não depressivos era desigual, com apenas 10,6% dos participantes sendo identificados como depressivos. Inicialmente, utilizamos o algoritmo SMOTE para gerar dados sintéticos na classe minoritária, mas posteriormente optamos por utilizar a ponderação da classe majoritária durante o treinamento dos modelos de classificação, obtendo resultados melhores.
+Durante o desenvolvimento do projeto, enfrentamos desafios significativos. Um deles foi lidar com a quantidade de dados faltantes e variáveis ausentes nos indicadores iniciais baseados na PNS. Especificamente, a falta de informações sobre o consumo de álcool e a prática de atividade física representou um obstáculo importante. 
 
-Esses desafios ressaltaram a importância de abordar estrategicamente os dados faltantes e encontrar soluções adequadas para lidar com desequilíbrios nas classes. Foi essencial buscar abordagens alternativas, como a modificação dos critérios de classificação e o ajuste das estratégias de modelagem, a fim de obter resultados mais precisos e confiáveis.
+Além disso, deparamos com o desafio do desbalanceamento dos dados na classificação dos casos de depressão. A proporção entre indivíduos classificados como depressivos e não depressivos era desigual, sendo que apenas 10,6% dos participantes foram identificados como depressivos. Inicialmente, utilizamos o algoritmo SMOTE para gerar dados sintéticos na classe minoritária, porém posteriormente optamos por ponderar a classe majoritária durante o treinamento dos modelos de classificação, o que resultou em melhores resultados.
+
+Esses desafios evidenciaram a importância de abordar estrategicamente os dados faltantes e encontrar soluções adequadas para lidar com os desequilíbrios nas classes. Foi essencial buscar abordagens alternativas, como a modificação dos critérios de classificação e o ajuste das estratégias de modelagem, a fim de obter resultados mais precisos e confiáveis.
 
 # Trabalhos Futuros
 
-No âmbito dos trabalhos futuros, sugere-se explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração exploratória dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
+No âmbito dos trabalhos futuros, sugerimos explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
 
-Adicionalmente, considera-se relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
+Adicionalmente, consideramos relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
 
 # Cronograma
 
