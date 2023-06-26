@@ -50,7 +50,6 @@ Detalhamento por fases:
 6. _Deployment_: Quando o modelo apresentar o resultado desejado, será finalizado e aplicado para o conjunto de teste da base de dados. Se possível, também será avaliado em outras bases, mostrando sua capacidade de generalização.
 
 
-
 # Bases de Dados
 
 Os subconjuntos da base de dados e dicionários de dados com pré-seleção de _features_ podem ser acessados clicando [aqui](https://drive.google.com/drive/folders/1NMwv2sC3bnlQBedWxnHki7KG_jT0peuU?usp=sharing)
@@ -226,6 +225,12 @@ Base de Dados | Endereço na Web | Resumo descritivo
 Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
 
 A base possui dados clínicos porém o grupo está interessado em fatores não clínicos também coletados, como a peso, altura, status de tabagismo, escolaridade, idade em que começou os estudos, cor, presença de diabetes e pressão alta. Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar esta coorte de doenças coronarianas para validação do modelo treinado com a base Vigitel. Esta coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
+
+# Conclusão
+  Podemos concluir que nosso modelo apresentou resultado competitivo em comparação a outros modelos já existentes e que conseguimos alcançar nosso objetivo de identificar grupos de risco para a diabetes tipo 2 a partir de variáveis de fácil acesso que podem ser auto relatadas. Pensando que o público alvo que irá utilizar nosso modelo são os gestores e responsáveis técnicos, é importante manter um certo nível de explicabilidade dos resultados apresentados para que seja possível identificar e estudar a importância de cada variável.  
+ 	Temos ciência que nossa proposta é complexa e que mais testes poderiam ser feitos para melhorar os valores de acurácia, sensibilidade e especificidade, além de que mais estudos poderiam ser realizados para completar e contrapor tais resultados. Mas consideramos que a importância do nosso estudo está relacionada com a criação de uma nova ferramenta de avaliação de diabetes tipo 2 a partir de dados brasileiros, pensados na heterogeneidade genética e de hábitos de uma população tão diversa como a nossa. 
+  Isso partindo de que o escore mais utilizado atualmente para diabetes tipo 2 é o FINDRISC, desenvolvido e validado na Islândia, uma população muito mais homogênea e com hábitos muito diferentes que a brasileira. Tal escore já passou por validação e adaptação transcultural, porém o estudo usou uma amostra de conveniência na cidade do estudo e com um número limitado de pessoas, nosso estudo teria a capacidade de predição próxima, porém com uma amostra nacional e com capacidade de ser representativo para toda a população, o que traz mais força e confiabilidade para os resultados.
+
 
 # Ferramentas
 Ferramenta teórica: Pubmed, Google Scholar e documentos/protocolos governamentais.
