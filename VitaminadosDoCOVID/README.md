@@ -291,7 +291,7 @@ A fim de replicar os resultados obtidos por [Dror et.al(2022)](https://doi.org/1
 
 ### Figura 3- Box plot dos Níveis Séricos Pré-infecção de Vitamina D.
 
-![Figura 3](severidade.jpeg)
+![Figura 3](./reports/figures/severidade.jpeg)
 
 Fonte: Autores(2023)
 
@@ -311,7 +311,7 @@ Por fim, as correlações entre o nível de 25(OH)D e a gravidade da doença COV
 
 ### Figura 5- Correlação entre o status de deficiência de vitamina D pré-infecção e a gravidade da doença COVID-19 - Divididos por Faixa Etária
 
-![Figura 5](graficos.png)
+![Figura 5](./reports/figures/graficos.png)
 
 Fonte: Autores(2023)
 
@@ -320,7 +320,7 @@ A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais 
 
 ### Figura 4- Correlação entre Variáveis
 
-![Figura 9](eda.png)
+![Figura 9](./reports/figures/eda.png)
 
 Fonte: Autores(2023)
 
