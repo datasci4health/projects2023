@@ -187,6 +187,10 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 | Análise integrativa de dados | 3 semanas |
 |Análise funcional de genes | 2 semanas |
 
+## Fluxograma das análises
+
+![Figura 1](./assets/fluxograma.png)
+
 # Organizaçaõ do git
 
 ```
