@@ -1,5 +1,8 @@
 import copy
 
+import numpy as np
+from IPython.core.display import display
+
 exp_dict = {
     'log_apenas_habitos': 'Apenas hábitos',
     'log_apenas_dcnt': 'Apenas doenças crônicas',
@@ -65,8 +68,8 @@ variables_names = {
 
 def gen_metrics_table(df_metrics_all, path):
     df = copy.deepcopy(df_metrics_all) * 100
-    df['F1 Teste'] = df['test_f1'].map('{:.2f}'.format) + ' ± ' + df['test_f1_std'].map('{:.2f}'.format)
-    df['AUC Teste'] = df['test_auc'].map('{:.2f}'.format) + ' ± ' + df['test_auc_std'].map('{:.2f}'.format)
+    df['F1 Teste'] = df['test_f1'].map('{:.2f}%'.format) + ' ± ' + df['test_f1_std'].map('{:.2f}%'.format)
+    df['AUC Teste'] = df['test_auc'].map('{:.2f}%'.format) + ' ± ' + df['test_auc_std'].map('{:.2f}%'.format)
 
     def _gen(df):
 
@@ -74,12 +77,14 @@ def gen_metrics_table(df_metrics_all, path):
 
         for c in df.columns:
             try:
-                df[c] = df[c].map('{:.2f}'.format)
+                df[c] = df[c].map('{:.2f}%'.format).astype(str)
             except:
                 pass
 
+        df = df.astype(str)
+
         with open(path, 'a') as file:
-            file.write(df.to_markdown() + "\n\n")
+            file.write(df.to_markdown(floatfmt=".2f") + "\n\n")
 
     with open(path, 'w') as file:
         file.write('')
@@ -119,8 +124,10 @@ def gen_coef_table(df_importances_all, path):
             except:
                 pass
 
+        df = df.astype(str)
+
         with open(path, 'a') as file:
-            file.write(df.to_markdown() + "\n\n")
+            file.write(df.to_markdown(floatfmt=".2f") + "\n\n")
 
     with open(path, 'w') as file:
         file.write('')
