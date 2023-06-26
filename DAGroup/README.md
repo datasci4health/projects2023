@@ -690,6 +690,27 @@ Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão 
 > Destacar os principais desafios enfrentados.
 >
 > Principais lições aprendidas.
+>
+
+Neste trabalho, o objetivo foi identificar fatores relacionados à depressão, de acordo com a literatura existente. As questões de pesquisa abordaram diferentes aspectos:
+
+ - Quais hábitos de vida estão associados à depressão? 
+R. Através da análise dos coeficientes da regressão logística, verificamos que o tabagismo e o alto consumo de alimentos ultraprocessados estão positivamente associados à depressão, enquanto o exercício físico apresenta um fator inverso, ou seja, uma associação negativa.
+
+ - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
+R. Sim, utilizando a regressão logística, pudemos identificar a influência de certos hábitos. Por exemplo, observamos que o tabagismo parece ter um impacto maior do que o consumo de alimentos ultraprocessados.
+
+ - A influência desses fatores varia ao longo do curso da vida e de variáveis sociodemográficas?
+R. Sim, durante a análise dos coeficientes da regressão, foram observadas algumas diferenças. Por exemplo, a prática de exercícios físicos tem uma influência crescente à medida que a idade avança.
+
+ - Será que os comportamentos de saúde e/ou doenças crônicas não transmissíveis são determinantes para o diagnóstico de depressão? 
+R. Sim, constatou-se que grande parte do peso dos coeficientes recai sobre as doenças crônicas, perdendo apenas para a variável sociodemográfica sexo.
+
+Durante o desenvolvimento do projeto, enfrentamos desafios significativos. Um deles foi lidar com a quantidade de dados faltantes e variáveis ausentes nos indicadores iniciais baseados na Pesquisa Nacional de Saúde (PNS). Especificamente, a falta de informações sobre o consumo de álcool e a prática de atividade física representou um obstáculo importante.
+
+Além disso, enfrentamos o desafio do desbalanceamento dos dados na classificação dos casos de depressão. A proporção entre indivíduos classificados como depressivos e não depressivos era desigual, com apenas 10,6% dos participantes sendo identificados como depressivos. Inicialmente, utilizamos o algoritmo SMOTE para gerar dados sintéticos na classe minoritária, mas posteriormente optamos por utilizar a ponderação da classe majoritária durante o treinamento dos modelos de classificação, obtendo resultados melhores.
+
+Esses desafios ressaltaram a importância de abordar estrategicamente os dados faltantes e encontrar soluções adequadas para lidar com desequilíbrios nas classes. Foi essencial buscar abordagens alternativas, como a modificação dos critérios de classificação e o ajuste das estratégias de modelagem, a fim de obter resultados mais precisos e confiáveis.
 
 # Trabalhos Futuros
 
