@@ -189,48 +189,50 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
-![Sexo e cor/raça da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png" alt="drawing" width="583"/>
 
 Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
-![Idade e peso da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png" alt="drawing" width="700"/>
+
+![Idade e peso da população]()
 
 Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população geral:
 
-![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png" alt="drawing" width="700"/>
 
 Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao de uma exponencial negativa, conforme podemos observar na figura abaixo:
 
-![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png" alt="drawing" width="700"/>
 
 Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse. Foi possível notar que há uma maior prevalência de pessoas do sexo feminino com depressão ao longo de todo o score de PHQ-9, o mesmo ocorre com pessoas com idade superior aos 40 anos. Evidenciando que independente do grau de gravidade da doença, a diferença entre as categorias se mantêm. 
 
-![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
-![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png" alt="drawing" width="700"/>
+
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png" alt="drawing" width="700"/>
 
 Abaixo temos gráficos de depressão com tratamento e atendimento no SUS.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png" alt="drawing" width="700"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png" alt="drawing" width="450"/>
 
 Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png" alt="drawing" width="600"/>
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
 Avaliando o PHQ9 >= 10 questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado brasileiro.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png)
-
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png" alt="drawing" width="450"/>
 
 # Análises Realizadas
 
@@ -400,7 +402,7 @@ Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagis
 | **Consumo de bebida alcoólica no último mês**       | Sim            | 44,88%             | 45,45%            | 40,07%            | 71,7    | 0,0000 |
 |                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
 | **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
-|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
+|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
 
 \* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
