@@ -65,9 +65,11 @@ Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundad
 
 Através dos experimentos exploratórios, análise de correlação e gráficos de distribuição, foram confirmados a associação entre a depressão (utilizando χ2 de Pearson) com os comportamentos de saúde inadequados e as doenças crônicas não transmissíveis elecandas no estudo, variaveis que estão em consonância com a literatura existente. Essas descobertas já contribuem para responder a primeira questão de pesquisa.
 
-Para abordar a segunda questão, pretende-se utilizar a análise de regressão logística. Essa abordagem permitirá avaliar de forma mais precisa o grau de impacto de cada hábito, considerando tanto as influências positivas quanto as negativas, relacionadas à depressão.
+Para abordar a segunda questão, utilizamos a análise de regressão logística. Essa abordagem permitium avaliar de forma mais precisa o grau de impacto de cada hábito, considerando tanto as influências positivas quanto as negativas, relacionadas à depressão.
 
 Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. No entanto, os fatores que influenciam essa diferença foram confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
+
+Para a quarta questão, realizamos uma comparação das eficácias dos modelos de regressão logística utilizando cada grupo de variáveis separadamente. Por meio desses experimentos, pudemos observar uma forte associação entre doenças crônicas e depressão, as quais demonstraram uma eficácia maior na classificação, em comparação às variáveis de hábitos, e praticamente igual em relação às variáveis sociodemográficas. 
 
 _Objetivo geral:_
 
