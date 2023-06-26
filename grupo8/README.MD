@@ -14,7 +14,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 ## Slides da Apresentação Final
 
-[Link]()
+https://www.canva.com/design/DAFm98DaG9s/bfKV2C3TpqTNUho-Gk3A3g/edit?utm_content=DAFm98DaG9s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
 # Introdução e Referenciais Teóricos
 
