@@ -260,7 +260,7 @@ Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à
 
 A maioria das variáveis no conjunto de dados possui valores binários. No entanto, as variáveis restantes foram normalizadas para uma escala de 0 a 1, a fim de possibilitar uma comparação justa dos coeficientes de regressão.
 
-Para investigar a importância dos determinantes e sua influência no diagnóstico de depressão, construímos vários modelos modificando as variáveis independentes. No primeiro modelo, selecionamos apenas as variáveis relacionadas a comportamentos de saúde. No segundo modelo, selecionamos apenas as variáveis relacionadas a doenças crônicas não transmissíveis. No terceiro modelo, incluímos tanto as variáveis de comportamentos de saúde quanto as de doenças crônicas não transmissíveis. Por fim, no quarto modelo, utilizamos apenas as variáveis sociodemográficas. Essa abordagem nos permitiu comparar e analisar separadamente a influência de cada grupo de fatores no diagnóstico de depressão.
+Para investigar a importância dos determinantes e sua influência no diagnóstico de depressão, construímos vários modelos modificando as variáveis independentes. No primeiro modelo, selecionamos apenas as variáveis relacionadas a comportamentos de saúde. No segundo modelo, selecionamos apenas as variáveis relacionadas a doenças crônicas não transmissíveis. No terceiro modelo, incluímos tanto as variáveis de comportamentos de saúde quanto as de doenças crônicas não transmissíveis. No quarto modelo, utilizamos apenas as variáveis sociodemográficas. Essa abordagem nos permitiu comparar e analisar separadamente a influência de cada grupo de fatores no diagnóstico de depressão.
 
 Por fim, criamos um último modelo que incluiu todas as variáveis e conduzimos análises estratificadas sociodemográficas para, por exemplo, investigar variações dos fatores ao longo da vida, com o objetivo de avaliar os coeficientes mais distintos.
 
@@ -347,7 +347,7 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 ### Testes de associação
 
-Primeiramente, realizamos associações entre as variáveis sociodemográficas dentre as pessoas colocadas com depressão segundo o PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p < 0,05) com alto potencial de depressão.
+Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9, obbtivemos que sexo, cor, idade, escolaridade, , renda per capita possui associação (p < 0,05) com alto potencial de depressão.
 
 | **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -356,10 +356,10 @@ Primeiramente, realizamos associações entre as variáveis sociodemográficas d
 |                                 	| Médio completo e superior incompleto    	| 15,08%             	| 17,29%            	| 16,75%            	| ---      	| ---     	|
 |                                 	| Fundamental completo e médio incompleto 	| 35,7%              	| 41,09%            	| 38,09%            	| ---      	| ---     	|
 |                                 	| Sem instrução e fundamental incompleto  	| 31,94%             	| 36,06%            	| 40%               	| ---      	| ---     	|
-| **Sexo**                        	| Masculino                               	| 48,29%             	| 49,08%           	| 73,91%           	| 1510,69  	| 0,0000  	|
-|                                 	| Feminino                                	| 51,71%             	| 50,92%           	| 26,10%           	| ---      	| ---     	|
-| **Estado civil**                	| Mora com parceiro                       	| 59,89%             	| 39,01%           	| 49,40%           	| 275,03   	| 0,0000  	|
-|                                 	| Não mora com parceiro                   	| 40,11%             	| 60,99%           	| 50,60%           	| ---      	| ---     	|
+| **Sexo**                        	| Masculino                               	| 48,29%             	| 49,08%            	| 73,91%            	| 1510,69  	| 0,0000  	|
+|                                 	| Feminino                                	| 51,71%             	| 50,92%            	| 26,10%            	| ---      	| ---     	|
+| **Estado civil**                	| Mora com parceiro                       	| 59,89%             	| 39,01%            	| 49,40%            	| 275,03   	| 0,0000  	|
+|                                 	| Não mora com parceiro                   	| 40,11%             	| 60,99%           	 | 50,60%            	| ---      	| ---     	|
 | **Renda per capita**            	| Recebe mais de 1 salário mínimo         	| 42,28%             	| 43,08%            	| 35,57%            	| 141,31   	| 0,0000  	|
 |                                 	| Recebe menos de 1 salário mínimo        	| 56,92%             	| 56,92%            	| 64,43             	| ---      	| ---     	|
 | **Localidade**                  	| Norte                                   	| 20,42%             	| 20,77%            	| 17,46%            	| 41,14    	| 0,0000  	|
