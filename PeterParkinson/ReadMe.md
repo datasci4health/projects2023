@@ -189,7 +189,7 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 
 ## Fluxograma das análises
 
-![Figura 1](./assets/fluxograma.png)
+![Figura 1](./assets/fluxograma-analise.png)
 
 # Organizaçaõ do git
 
