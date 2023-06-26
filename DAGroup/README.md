@@ -240,38 +240,13 @@ Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante �
 > Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
 > 
 
-Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
+Iniciamos as análises buscando a associação das variaveis de interesse com o diagnóstico de depressão por meio do teste χ2 de Pearson, devido ao fato das nossas variáveis serem qualitativas.
 
-| Variáveis                  |     X²   |   p       |
-|:---------------------------|---------:|----------:|
-| Exercício Físico           |   210.91 |   0       |
-| Tabagismo                  |   132.59 |   0       |
-| Consumo Álcool             |    71.71 |   0       |
-| Câncer                     |   137.94 |   0       |
-| Hipertensão                |   639.02 |   0       |
-| Diabetes                   |   276.66 |   0       |
-| Cardiovascular             |   621.45 |   0       |
-| Hipercolesterolemia        |   535.93 |   0       |
-| AVC                        |   332.79 |   0       |
-| Artrite                    |  1017.19 |   0       |
-| Obesidade                  |   158.98 |   0       |
-| Sexo                       |  1510.69 |   0       |
-| Estado Civil               |   275.03 |   0       |
-| Classificação Renda        |   141.32 |   0       |
-| Região Norte               |    41.14 |   0       |
-| Região Nordeste            |     7.60 |   0.00584 |
-| Região Sudeste             |    14.99 |   0.00011 |
-| Região Sul                 |     4.85 |   0.02760 |
-| Região Centro Oeste        |     1.71 |   0.19130 |
-| Classificação Escolaridade |    36.94 |   0       |
-| Ultraprocessados           |    24.86 |   0.00562 |
-| Classificação Idade        |    76.40 |   0       |
-| Percepção de Saúde         |  7782.86 |   0       |
+Nessa etapa houve a preocupação de averiguar os dados faltantes de cada variável de interesse, gerando necessidade de algumas alterações na seleção dessas variáveis, pois primeiramente haviamos desenvolvido indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como em indicadores de consumo de álcool e prática de exercício físico. Por exemplo, o indicador utilizado pela PNS, que foi elabora baseado em definições da OMS considera uma pessoa ativa com base na relação entre o tempo gasto e tipo de atividade física (leve, moderada e vigorosas), porém as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. Devido a esse problema, modificou-se o critério de classificação de exercício físico, baasendo-se em artigos que também avaliam a PNS, considerando ativos aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11] e para essa variável não foi encontrados dados faltantes. 
 
+No que diz respeito ao indicador de consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas como o elecando o site da PNS, constatou-se que cerca de 69% dos dados estavam faltando.
 
-Inicialmente, criamos indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, ao analisar os dados resultantes, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como consumo de álcool e prática de atividade física. Por exemplo, no caso da PNS, considera-se uma pessoa ativa com base na relação entre o tempo gasto em atividades vigorosas e em atividades leves ou moderadas. No entanto, as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. No que diz respeito ao consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas, constatou-se que cerca de 69% dos dados estavam faltando.
-
-Devido a esse problema, modificou-se o critério de classificação de exercício físico para os indivíduos considerados ativos, agora definidos como aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11]. Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
+ Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
 
 Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
 
