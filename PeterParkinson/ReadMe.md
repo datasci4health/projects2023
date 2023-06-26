@@ -189,6 +189,7 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 
 # Organizaçaõ do git
 
+```
 ├── README.md                     <- apresentação do projeto
 │
 ├── data
@@ -206,3 +207,4 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 │   └── README.md      <- instruções básicas de instalação/execução
 │
 └── assets             <- mídias usadas no projeto
+```
