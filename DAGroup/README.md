@@ -626,7 +626,7 @@ Abaixo podemos ver a Curva ROC entre estes 3 modelos.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
 
-A matriz de confusão para o melhor modelo (Regressão logistica no conjunto de teste).
+Abaixo matriz de confusão para o melhor modelo (regressão logística no conjunto de teste).
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
 
