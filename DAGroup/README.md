@@ -71,16 +71,16 @@ Para a quarta questão, realizamos uma comparação das eficácias dos modelos d
 
 _Objetivo geral:_
 
- - Compreender os comportamentos de saúde inadequados e doenças crônicas
+ - Compreender os comportamentos de saúde e doenças crônicas
    não transmissíveis mais determinantes para o diagnóstico da depressão
-   em um inquérito de saúde nacional.
+   em um inquérito de saúde nacional a fim de orientar ações de prevenção para à depressão no Brasil.
 
 _Objetivos específicos:_
 
  - Analisar quais comportamentos de saúde inadequados estão associados com o diagnóstico de depressão;
  - Analisar quais doenças crônicas não transmissiveis estão associadas com o diagnóstico de depressão;
  - Analisar quais varíaveis sociodemográficas estão associadas com o diagnóstico de depressão;
- - Determinar a importância dos comportamentos de saúde inadequados e das doenças crônicas não transmissíveis e das variáveis sociodemográficas para o diagnóstico de depressão;
+ - Determinar a importância dos comportamentos de saúde e das doenças crônicas não transmissíveis e das variáveis sociodemográficas para o diagnóstico de depressão;
  - Determinar quais variaveis são determinantes para o diagnóstico de depressão.
 
 # Metodologia
