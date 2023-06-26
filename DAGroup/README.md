@@ -215,6 +215,9 @@ Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticada
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
 
+******SE CONSEGUIRMOS COLOCAR OS GRAFICOS DE DEPRESSÃO COM TRATAMENTO E ATENDIMENTO NO SUS
+
+
 Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
