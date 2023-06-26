@@ -1,7 +1,7 @@
-| Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Removendo Linhas Nulas |
+| name                       |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Removendo Linhas Nulas |
 |:---------------------------|-----------------:|--------------------------:|------------------------------------:|-------------------------------------:|-------------------------:|
-| Intercepto                 |             0.09 |                     -0.36 |                               -0.38 |                                 0.50 |                     0.30 |
-| Ultraprocessados           |             0.03 |                           |                                0.05 |                                      |                     0.49 |
+| Intercepto                 |             0.09 |                     -0.36 |                               -0.37 |                                 0.50 |                     0.30 |
+| Ultraprocessados           |             0.33 |                           |                                0.51 |                                      |                     0.49 |
 | Exercício Físico           |            -0.31 |                           |                               -0.27 |                                      |                    -0.23 |
 | Tabagismo                  |             0.43 |                           |                                0.50 |                                      |                     0.57 |
 | Consumo Álcool             |            -0.26 |                           |                               -0.17 |                                      |                    -0.02 |
@@ -15,11 +15,11 @@
 | Obesidade                  |                  |                      0.17 |                                0.18 |                                      |                     0.19 |
 | Sexo                       |                  |                           |                                     |                                -1.05 |                    -0.96 |
 | Estado Civil               |                  |                           |                                     |                                -0.39 |                    -0.38 |
-| Classificação Escolaridade |                  |                           |                                     |                                -0.04 |                     0.11 |
-| Classificação Idade        |                  |                           |                                     |                                 0.12 |                    -0.24 |
+| Classificação Escolaridade |                  |                           |                                     |                                -0.17 |                     0.11 |
+| Classificação Idade        |                  |                           |                                     |                                 0.48 |                    -0.24 |
 | Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
 
-| Variáveis                  |   Renda Baixa |   Renda Alta |   Diferença |
+| name                       |   Renda Baixa |   Renda Alta |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
 | Intercepto                 |         -0.05 |         0.54 |        0.59 |
 | Ultraprocessados           |          0.47 |         0.49 |        0.03 |
@@ -38,8 +38,9 @@
 | Estado Civil               |         -0.41 |        -0.30 |        0.11 |
 | Classificação Escolaridade |          0.27 |         0.02 |       -0.25 |
 | Classificação Idade        |          0.00 |        -0.62 |       -0.62 |
+| Classificação Renda        |               |              |             |
 
-| Váriaveis                  |   Sexo Mulher |   Sexo Homem |   Diferença |
+| name                       |   Sexo Mulher |   Sexo Homem |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
 | Intercepto                 |         -0.04 |        -0.10 |       -0.06 |
 | Ultraprocessados           |          0.37 |         0.68 |        0.31 |
@@ -54,12 +55,13 @@
 | AVC                        |          0.63 |         0.85 |        0.22 |
 | Artrite                    |          0.83 |         1.19 |        0.36 |
 | Obesidade                  |          0.16 |         0.26 |        0.10 |
+| Sexo                       |               |              |             |
 | Estado Civil               |         -0.24 |        -0.69 |       -0.45 |
 | Classificação Escolaridade |         -0.01 |         0.39 |        0.41 |
 | Classificação Idade        |         -0.27 |        -0.05 |        0.22 |
 | Classificação Renda        |         -0.31 |        -0.28 |        0.03 |
 
-| Váriaveis                  |   Idade < 40 |   Idade >= 40 |   Diferença |
+| name                       |   Idade < 40 |   Idade >= 40 |   Diferença |
 |:---------------------------|-------------:|--------------:|------------:|
 | Intercepto                 |         0.18 |          0.13 |       -0.05 |
 | Ultraprocessados           |         0.58 |          0.48 |       -0.10 |
@@ -77,9 +79,10 @@
 | Sexo                       |        -1.11 |         -0.87 |        0.25 |
 | Estado Civil               |        -0.38 |         -0.37 |        0.01 |
 | Classificação Escolaridade |        -0.05 |          0.27 |        0.31 |
+| Classificação Idade        |              |               |             |
 | Classificação Renda        |        -0.14 |         -0.40 |       -0.26 |
 
-| Váriáveis                  |   Idade [20, 29] |   Idade [30, 39] |   Idade [40, 49] |   Idade [50, 59] |
+| name                       |   Idade [20, 29] |   Idade [30, 39] |   Idade [40, 49] |   Idade [50, 59] |
 |:---------------------------|-----------------:|-----------------:|-----------------:|-----------------:|
 | Intercepto                 |             0.19 |             0.16 |             0.23 |             0.03 |
 | Ultraprocessados           |             0.58 |             0.55 |             0.56 |             0.24 |
@@ -97,9 +100,10 @@
 | Sexo                       |            -1.19 |            -1.05 |            -0.94 |            -0.78 |
 | Estado Civil               |            -0.30 |            -0.43 |            -0.56 |            -0.21 |
 | Classificação Escolaridade |            -0.33 |             0.18 |             0.32 |             0.16 |
+| Classificação Idade        |                  |                  |                  |                  |
 | Classificação Renda        |             0.02 |            -0.25 |            -0.38 |            -0.35 |
 
-| Variáveis                  |   Região Norte |   Região Nordeste |   Região Sudeste |   Região Sul |   Região Centro Oeste |
+| name                       |   Região Norte |   Região Nordeste |   Região Sudeste |   Região Sul |   Região Centro Oeste |
 |:---------------------------|---------------:|------------------:|-----------------:|-------------:|----------------------:|
 | Intercepto                 |          -0.08 |              0.28 |             0.23 |         0.42 |                  1.00 |
 | Ultraprocessados           |           0.81 |              0.61 |             0.28 |         0.54 |                  0.11 |
