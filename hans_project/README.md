@@ -14,11 +14,13 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | Maria Clara Castro Higino de Sousa  | 243237  | Computação - [Conta GitHub](https://github.com/mc-castro)|
 > | Miriam Reyes Ortiz  | 265762  | Saúde - [Conta GitHub](https://github.com/MiriamOrtiz)|
 
+## Slides da Apresentação Final
+> [Link para slides da apresentação final do projeto.]()
 
-# Descrição Resumida do Projeto
-> A hanseníase é uma doença infecciosa crônica e transmissível que afeta principalmente a pele e o sistema nervoso periférico. Os agentes causantes da enfermidade são as bactérias Mycobacterium leprae e Mycobacterium lepromatosis. A doença pode afetar pessoas de qualquer sexo ou faixa etária, sua evolução é de forma lenta e progressiva, e se não for tratada na fase inicial, pode levar a incapacidades físicas. A infecção está inserida no grupo de doenças tropicais negligenciadas e continua sendo um problema de saúde pública em muitos países, incluindo o Brasil. Embora a tendência de novos casos tenha diminuído ao longo do tempo devido ao tratamento com terapia multidrogas, o Brasil ocupa atualmente o segundo lugar em termos de prevalência no mundo.
+# Introdução e Referenciais Teóricos
+> A hanseníase é uma doença infecciosa crônica e transmissível que afeta principalmente a pele e o sistema nervoso periférico. Os agentes causadores da enfermidade são as bactérias Mycobacterium leprae e Mycobacterium lepromatosis. A doença pode afetar pessoas de qualquer sexo ou faixa etária, sua evolução é lenta e progressiva, e se não for tratada na fase inicial, pode levar a incapacidades físicas. A infecção está inserida no grupo de doenças tropicais negligenciadas e continua sendo um problema de saúde pública em muitos países, incluindo o Brasil. Embora a tendência de novos casos tenha diminuído ao longo do tempo devido ao tratamento com terapia multidrogas, o Brasil ocupa atualmente o segundo lugar em termos de prevalência no mundo.
 > 
-> O esquema de tratamento (número de doses e tempo) é padronizado e depende da classificação operacional da doença baseada no número de lesões cutâneas. Os casos são classificados como paucibacilares (PB, até cinco lesões) ou multibacilares (MB, seis ou mais lesões de pele), com uma duração de tratamento de 6 a 12 meses, respectivamente. Se o tratamento é realizado de forma completa e correta a transmissão da doença é interrompida, impede que outras pessoas sejam infectadas e o paciente é curado. Apesar dos avanços no tratamento para a cura da doença, o abandono da terapia multidrogas ainda representa um dos obstáculos para o controle efetivo e a eliminação da hanseníase. Por exemplo, os casos de abandono podem resultar em curas incompletas, levando a uma maior progressão da doença, o que pode prolongar o tempo de tratamento e aumentar os custos para o sistema de saúde, além de manter fontes persistentes de infecção na área geográfica.
+> O esquema de tratamento (número de doses e tempo) é padronizado e depende da classificação operacional da doença baseada no número de lesões cutâneas. Os casos são classificados como paucibacilares (PB, até cinco lesões) ou multibacilares (MB, seis ou mais lesões de pele), com uma duração de tratamento de 6 a 12 meses, respectivamente. Se o tratamento é realizado de forma completa e correta, a transmissão da doença é interrompida, impedindo que outras pessoas sejam infectadas, e o paciente é curado. Apesar dos avanços no tratamento para a cura da doença, o abandono da terapia multidrogas ainda representa um dos obstáculos para o controle efetivo e a eliminação da hanseníase. Por exemplo, os casos de abandono podem resultar em curas incompletas, levando a uma maior progressão da doença, o que pode prolongar o tempo de tratamento e aumentar os custos para o sistema de saúde, além de manter fontes persistentes de infecção na área geográfica.
 > 
 > Evidências sugerem que existem fatores associados ao risco de abandono do tratamento da hanseníase. A interrupção do tratamento pode ser influenciada por características pessoais, socioeconômicas e fatores clínicos ou médicos. Nesse contexto, este projeto tem como objetivo analisar os casos novos de hanseníase no período de 2009 a 2019, a fim de determinar padrões ou relações entre as características dos pacientes e da doença com os casos de cura e abandono do tratamento. Além disso, pretende-se identificar diferentes padrões espaciais de ocorrência e abandono, levando em consideração o índice de desenvolvimento humano. Para isso, serão utilizadas técnicas de machine learning para identificar as variáveis mais relevantes e sua relação com os casos de cura e abandono do tratamento.
 > 
@@ -37,6 +39,24 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Como as percepções obtidas a partir da análise de dados podem ser utilizadas para melhorar o planejamento financeiro dos sistemas de saúde em relação ao tratamento da hanseníase?*
 > 
 > Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
+
+# Objetivos
+## Geral
+> Determinar padrões ou relações entre as características dos pacientes e da hanseníase com os casos de cura e abandono do tratamento.
+
+## Específicos
+> Coletar e organizar os dados relacionados aos casos de hanseníase no período de 2009 a 2019.
+> 
+> Realizar uma análise descritiva dos dados, identificando características demográficas e clínicas dos pacientes.
+> 
+> Identificar os fatores associados ao abandono do tratamento da hanseníase, considerando variáveis pessoais, socioeconômicas e clínicas.
+> 
+> Utilizar técnicas de machine learning para identificar as variáveis mais relevantes na predição dos casos de cura e abandono do tratamento.
+> 
+> Realizar análises espaciais para identificar padrões de ocorrência e abandono da hanseníase em diferentes regiões.
+> 
+> Avaliar a relação entre o índice de desenvolvimento humano e os casos de cura e abandono do tratamento da hanseníase.
+
 
 # Metodologia
 >
@@ -67,7 +87,7 @@ Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan
  
  #### Dicionário
 
- Aqui [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) é possível encontrar 0 dicionário de dados.
+ Aqui [link](https://github.com/alexbjr/hans_project/blob/main/hans_project/data/raw/dicionario_dados.xlsx) é possível encontrar o dicionário de dados.
  
 > * MODOS DE ENTRADA
 > 
@@ -86,31 +106,27 @@ Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan
 > 
 > Classificação operacional baseado no número de lesões cutâneas (WHO):
 > 
-> Paucibacilar (PB)
-> 
-> Multibacilar (MB)
->
+>>>> Paucibacilar (PB)
+
+>>>> Multibacilar (MB)
 >
 > Formas clínicas: Classificação segundo Madri 1953.
 > 
-> Hanseníase indeterminada (HI) tipo PB
-> 
-> Hanseníase tuberculóide (HT) tipo PB
-> 
-> Hanseníase dimorfa (HD) tipo MB
-> 
-> Hanseníase virchowiana (HV) tipo MB
-> 
-> 
+>>>> Hanseníase indeterminada (HI) tipo PB
+
+>>>> Hanseníase tuberculóide (HT) tipo PB
+
+>>>> Hanseníase dimorfa (HD) tipo MB
+
+>>>> Hanseníase virchowiana (HV) tipo MB
 >
 > Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
 > 
-> 
 > Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
 > 
-> 
 > Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
-Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
+>
+> Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
 >
 >
 > * MODOS DE SAÍDA
@@ -193,17 +209,52 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 >| Duração Tratamento (DURACAO_TRAT) X Forma Clínica da Doença (FORMACLINI)     | 0.3662     |
 >| Duração do Tratamento (DURACAO_TRAT) X Número de Lesões (NU_LESOES)          | 0.2109     |
 
-## Análises preliminares de predição
+## Análises de ML para predição do desfecho
 
-> Foi feito um estudo preliminar com alguns algoritmos considerando as váriaveis disponíveis e tentado predizer o tipo de alta do paciente.
-> Foram feitos testes com os métodos random forest e logistic regression, os resultados obtidos foram:
+> Foi feito um comparativo com alguns algoritmos considerando as váriaveis disponíveis para predizer o tipo de alta do paciente. Para isso, foram utilizados os modelos de regressão logística, random forest, xgboost e lightgbm.
 >
->| Método               | Acurácia |
->|----------------------|----------|
->| Random Forest        | 0.96     |
->| Logistic Regression  | 0.89     |
+> Visando obter a melhor perfomance de cada modelo, foi utilizada uma otimização de hiperparâmetros de modo a automatizar e simplificar o processo de ajuste de hiperparâmetros. Para tal, foi utilizado uma abordagem de busca em espaço com base em algoritmos de otimização sequencial para encontrar a combinação ideal de hiperparâmetros que maximize a métrica de desempenho f1-score.
 >
-> Os resultados se demonstraram interessantes, mas ainda é necessário alguns ajustes e refinamento para um melhor balanceamento dos dados. 
+> Foi escolhido o f1-score devido ao desequilíbrio significativo entre as classes (cura e abandono). Ele combina a precisão (precision) e o recall, fornecendo uma medida única que considera tanto os verdadeiros positivos quanto os falsos positivos e falsos negativos. Dessa forma, se torna uma ótima métrica de otimização para o problema abordado. 
+>
+> O treinamento dos modelos foi feito utilizando pipelines com o objetivo de manter a organização, reprodutibilidade, eficiência, escalabilidade e prevenção de vazamento de dados. A estrutura adotada foi:
+
+~~~python
+num_transformer = FeatureUnion(    
+    [
+        ('num_pipe', Pipeline(
+            [
+                ('norm', StandardScaler()),
+                ('nan_input', SimpleImputer())
+            ]
+        )),
+        ('nan_flag', MissingIndicator(error_on_new=False))
+    ]
+)
+
+feat_transformer = ColumnTransformer(
+    [
+        ('num_trans', num_transformer, num_feats),
+        ('cat_trans', OneHotEncoder(handle_unknown='ignore'), cat_feats)    
+    ],
+    remainder='passthrough', sparse_threshold=0
+)
+~~~
+~~~python
+xgb_pipe = Pipeline(
+[
+    ('feat_trans', feat_transformer),
+    ('over', SMOTE()),
+    ('xgb', xgb.XGBClassifier())
+]
+)
+~~~
+
+> É possível perceber um pipeline de transformação de features numéricas e categóricas. Para as numéricas, foi realizada a normalização das variáveis usando o StandardScaler() que padroniza os valores das variáveis para terem média zero e desvio padrão igual a um. Além disso, usando o SimpleImputer(), os valores ausentes foram substituídos pela média ou mediana dos valores existentes.
+>
+> Para as categóricas, foi utilizado o OneHotEncoder, que utiliza a ColumnTransformer para aplicar transformações específicas a colunas específicas do conjunto de dados.
+>
+> Além disso, no pipeline de definição do modelo, foi utilizado o Smote como uma técnica para lidar com o desbalaceamento da base.
 
 # Ferramentas
 > O projeto será realizado em Python e serão utilizadas a seguintes ferramentas e bibliotecas:
@@ -219,6 +270,52 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > |[Folium](https://pypi.org/project/folium/) |Biblioteca para visualização de dados geográficos interativos| 
 > |[Imageio](https://pypi.org/project/imageio/) |Biblioteca Python para ler e escrever uma ampla gama de formatos de imagem, vídeo e áudio|
 > |[Jupyter Notebook](https://jupyter.org/) |Ferramenta para desenvolvimento e apresentação de notebooks interativos| 
+> |[Hyperopt](http://hyperopt.github.io/hyperopt/) |Bibilioteca para otimização dos hiperparâmetros de modelos de ML| 
+
+
+# Resultados
+## Modelagem de ML
+>A tabela abaixo contém o resultado comparativo entre os modelos de regressão logística, random forest, xgboost e lightgbm para a predição do desfecho da doença: cura ou abandono.
+>
+>Tabela 1 - Resultados para classificação em cura (classe 1) e abandono (classe 0) utilizando modelos de aprendizado de máquina
+>| Modelo               | Acurácia | Precisão <br> da classe 0 | Precisão <br> da classe 1 | Revocação <br> da classe 0 | Revocação <br> da classe 1 | F1 score <br> da classe 0 | F1 score <br> da classe 1 |
+>|----------------------|----------|----------|----------|----------|----------|----------|----------|
+>| Logistic Regression  | 0.92     | 0.42     | 0.98     | 0.82     | 0.93     | 0.56     | 0.96     |
+>| Random Forest        | 0.95     | 0.63     | 0.97     | 0.54     | 0.98     | 0.58     | 0.97     |
+>| XGBoost              | 0.96     | 0.68     | 0.98     | 0.65     | 0.98     | 0.66     | 0.98     |
+>| LightGBM             | 0.96     | 0.71     | 0.98     | 0.62     | 0.98     | 0.66     | 0.98     |
+>
+>A combinação de hiperparâmetros que resultou nesses valores para o XGBoost estão na Tabela 2:
+>
+>Tabela 2 - Hiperparâmetros do modelo escolhido 
+>| Hiperparâmetro       | Valor               |
+>|----------------------|---------------------|
+>| colsample_bytree     | 0.9664002609854957  |
+>| gamma                | 5.30286290577693    |
+>| max_depth            | 7                   |
+>| min_child_weight     | 1.0                 |
+>| n_estimators         | 180                 |
+>| reg_alpha            | 80.0                |
+>| reg_lambda           | 0.4117635792177079  |
+
+# Discussão
+> Com base na análise dos resultados da Tabela 1, considerando todas as métricas avaliadas, podemos concluir que os modelos Random Forest, XGBoost e LightGBM apresentam desempenhos semelhantes e superiores à Logistic Regression. Esses modelos têm valores mais altos de precisão, revocação e F1 Score para a classe 0, o que indica que são capazes de lidar melhor com a identificação correta das instâncias negativas. 
+>
+> Além disso, eles têm resultados consistentemente mais altos para a classe 1 em todas as métricas. Isso se deve ao fato do banco de dados ser desbalanceado, possuindo uma representação majoritária da classe 1 (cura) em comparação com a classe 0 (abandono). Esse desequilíbrio pode levar o modelo a ter uma tendência a favorecer a classe majoritária, resultando em um viés na classificação. Foram adotadas algumas técnicas como *oversampling*, *undersampling* e *smote* para corrigir o desbalanceamento, que melhoraram o desempenho, mas não foram suficientes para remover totalmente o viés dos dados. 
+>
+> Portanto, com base nos resultados apresentados, o modelo escolhido foi o XGBoost que mostrou uma precisão de 0.68 para a classe 0, o que significa que 68% dos desfechos classificados como abandono foram corretamente identificados. A revocação de 0.65 indica que 65% dos pacientes que realmente abandonaram o tratamento foram corretamente identificados. O f1-score, que combina precisão e revocação, foi de 0.66, e a acurácia geral foi de 0.96. Apesar de terem sido obtidas métricas similares ao LightGBM, o XGBoost manteve uma maior constância entre revocação e precisão. 
+
+# Conclusão
+> Esse trabalho apresentou a aplicabilidade da Inteligência Artificial para auxiliar no planejamento financeiro da saúde pública, sendo capaz de classificar o tipo de desfecho do caso do paciente em cua ou abandono. Sendo capaz de fazer esse tipo de predição, é possível estimar um maior investimento destinado ao paciente que abandona o tratamento, pois eventualmente ele irá retornar em um nível mais avançado da doença.
+>
+> A metodologia apresentou a utilização de várias técnicas para a análise dos dados, buscando relação entre as variáveis e o tipo de desfecho. Utilizou também quatro modelos distintos para comparar desempenho e escolher o que tivesse melhor desempenho, utilizando para todos o método k-fold cross validation e otimização de hiperparâmetros.
+>
+> As análises realizadas mostraram que não é possível afirmar uma relação entre as variáveis clínicas e epidemiológicas  com o tempo de cura dos pacientes com hanseníase, uma vez que a duração do tratamento é padronizada de acordo com o grau da doença. Além disso, também não se pode concluir que há uma relação entre o índice de desenvolvimento humano com a incidência (número de casos novos) e os casos de abandono do tratamento da doença, pois embora tenha se obtido uma correlação negativa (indicando que quanto menor o IDH, maior a incidência da doença), esse valor foi de 0,28.
+>
+> O classificador XGBoost obteve os melhores resultados com acurácia de 96%, revocação da classe 0 (abandono) de 65%, revocação da classe 1 (cura) de 98%, precisão da classe 0 de 68%, precisão da classe 1 de 98%, f1 score da classe 0 de 66%, e f1 score da classe 1 de 98%. Tendo em vista que o ideal para classificar o problema, deve possuir um equilíbrio entre as quatro métricas avaliadas (acurácia, revocação, precisão e f1-score), pode-se considerar que o trabalho apresentou resultados promissores.
+
+# Trabalhos Futuros
+>Alguns aspectos que não foram concluídos ou inclusos nesse trabalho podem ser aprimorados no futuro. O primeiro é extender a análise para o corte temporal após a pandemia de covid-19 (a partir de 2020). Segundo, utilizar outras variáveis para análises, como formas clínicas e regiões geográficas. 
 
 # Cronograma
 > |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
@@ -232,10 +329,7 @@ Constitui em um site de consulta onde seleciona-se quais indicadores (educação
 > | Elaboração do relatório  |  |  |  |  |  |  |  |  | X |  |
 > | Entrega final e apresentação  |  |  |  |  |  |  |  |  |  | X |
 
-
-
-
-# Referências
+# Referências Bibliográficas
 > 1. de Andrade KVF, Nery SJ, Pescarini MJ, Ramond A, Teles Santos dS CA, Ichihara MY, et al. (2019). Geographic and socioeconomic factors associated with leprosy treatment default: An analysis from the 100 Million Brazilian Cohort. PLOS Neglected Tropical Diseases, 13(9): e0007714. https://doi.org/10.1371/journal. pntd.0007714.
 >
 > 2. Kerr-Pontes LR, Barreto M L, Evangelista CM, Rodrigues LC, Heukelbach, and Feldmeier H. (2006). Socioeconomic, environmental, and behavioural risk factors for leprosy in North-east Brazil: Results of a case–control study. International Journal of Epidemiology, 35(4): 994–1000. https://doi.org/10.1093/ije/dyl072.
