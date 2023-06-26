@@ -1,0 +1,383 @@
+index,origin,desc,pv
+uf,V0001,Unidade da Federação,"{11: 'Rondônia', 12: 'Acre', 13: 'Amazonas', 14: 'Roraima', 15: 'Pará', 16: 'Amapá', 17: 'Tocantins', 21: 'Maranhão', 22: 'Piauí', 23: 'Ceará', 24: 'Rio Grande do Norte', 25: 'Paraíba', 26: 'Pernambuco', 27: 'Alagoas', 28: 'Sergipe', 29: 'Bahia', 31: 'Minas Gerais', 32: 'Espírito Santo', 33: 'Rio de Janeiro', 35: 'São Paulo', 41: 'Paraná', 42: 'Santa Catarina', 43: 'Rio Grande do Sul', 50: 'Mato Grosso do Sul', 51: 'Mato Grosso', 52: 'Goiás', 53: 'Distrito Federal'}"
+moradores,V0022,Total de moradores,{}
+tipo_zona,V0026,Tipo de situação censitária,"{1: 'Urbano', 2: 'Rural'}"
+tipo_area,V0031,Tipo de área,"{1: 'Capital', 2: 'Resto da RM (Região Metropolitana, excluindo a capital)', 3: 'RIDE (excluindo a capital)', 4: 'Resto da UF (Unidade da Federação, excluindo a região metropolitana e RIDE)'}"
+V0025A,V0025A,Seleção do morador de 15 anos ou mais para responder o questionário individual,"{0: 'Não selecionado', 1: 'Selecionado', 9: 'Não aplicável'}"
+renda_pc,VDF004,"Faixa de rendimento domiciliar per capita (exclusive o rendimento das pessoas cuja condição na unidade domiciliar era pensionista, empregado doméstico ou parente do empregado doméstico)","{1: 'Até ¼ salário mínimo', 2: 'Mais de ¼ até ½ salário mínimo', 3: 'Mais de ½ até 1 salário mínimo', 4: 'Mais de 1 até 2 salários mínimos', 5: 'Mais de 2 até 3 salários mínimos', 6: 'Mais de 3 até 5 salários mínimos', 7: 'Mais de 5 salários mínimos'}"
+casa_tipo,A001,Tipo do domicílio,"{1: 'Casa', 2: 'Apartamento', 3: 'Habitação em casa de cômodos, cortiço ou cabeça de porco', 9: 'Ignorado'}"
+A002010,A002010,Qual é o material que predomina na construção das paredes externas deste domicílio?,"{1: 'Alvenaria com revestimento ou taipa revestida', 2: 'Alvenaria sem revestimento', 3: 'Taipa sem revestimento', 4: 'Madeira apropriada para construção (aparelhada)', 5: 'Madeira aproveitada', 6: 'Outro material', 9: 'Ignorado'}"
+A003010,A003010,Material predominante na cobertura (telhado) do domicílio,"{1: 'Telha sem laje de concreto', 2: 'Telha com laje de concreto', 3: 'Somente laje de concreto', 4: 'Madeira apropriada para construção (aparelhada)', 5: 'Zinco, alumínio ou chapa metálica', 6: 'Outro material', 9: 'Ignorado'}"
+A004010,A004010,Qual é o material que predomina no piso deste domicílio,"{1: 'Cerâmica, lajota ou pedra (inclusive outros pisos frios como porcelanato e granito)', 2: 'Madeira apropriada para construção (aparelhada) (tábua corrida, taco, parquet e laminado)', 3: 'Cimento', 4: 'Terra', 5: 'Outro material', 9: 'Ignorado'}"
+A01001,A01001,Quantos cômodos têm este domicílio,{99: 'Ignorado'}
+A011,A011,Quantos cômodos estão servindo permanentemente de dormitório para os moradores deste domicílio,{99: 'Ignorado'}
+A005010,A005010,Qual é a principal forma de abastecimento de água deste domicílio,"{1: 'Rede geral de distribuição', 2: 'Poço profundo ou artesiano', 3: 'Poço raso, freático ou cacimba', 4: 'Fonte ou nascente', 5: 'Água da chuva armazenada', 6: 'Outra', 9: 'Ignorado'}"
+A005012,A005012,Este domicílio está ligado à rede geral de distribuição de água?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A00601,A00601,A água utilizada neste domicílio chega,"{1: 'Canalizada em pelo menos um cômodo', 2: 'Canalizada no terreno ou propriedade', 3: 'Não canalizada', 9: 'Ignorado'}"
+A009010,A009010,A água utilizada para beber neste domicílio é,"{1: 'Filtrada', 2: 'Fervida', 3: 'Tratada com hipoclorito de sódio (cloro)', 4: 'Tratada de outra forma no domicílio', 5: 'Mineral industrializada', 6: 'Sem tratamento no domicílio', 9: 'Ignorado'}"
+A01401,A01401,"Quantos banheiros (com chuveiro ou banheira e vaso sanitário ou privada) de uso exclusivo dos moradores existem neste domicílio, inclusive os localizados no terreno ou propriedade","{0: 'Nenhum', 99: 'Ignorado'}"
+A01402,A01402,"Quantos banheiros (com chuveiro ou banheira e vaso sanitário ou privada) de uso comum a mais de um domicilio, existem neste terreno ou propriedade","{0: 'Nenhum', 99: 'Ignorado'}"
+A01403,A01403,"Utiliza sanitário ou buraco para dejeções, inclusive os localizados no terreno ou na propriedade (cercado por paredes de qualquer material","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A01501,A01501,Para onde vai o esgoto do banheiro? Ou Para onde vai o esgoto do sanitário ou do buraco para dejeções?,"{1: 'Rede geral de esgoto ou pluvial', 2: 'Fossa séptica ligada à rede', 3: 'Fossa séptica não ligada à rede', 4: 'Fossa rudimentar', 5: 'Vala', 6: 'Rio, lago, córrego ou mar', 7: 'Outra', 9: 'Ignorado'}"
+A016010,A016010,Qual o (principal) destino dado ao lixo,"{1: 'Coletado diretamente por serviço de limpeza (independente da frequência de dias de coleta)', 2: 'Coletado em caçamba de serviço de limpeza', 3: 'Queimado (na propriedade)', 4: 'Enterrado (na propriedade)', 5: 'Jogado em terreno baldio ou logradouro', 6: 'Outro', 9: 'Ignorado'}"
+A018011,A018011,Neste domicílio existe televisão em cores,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018012,A018012,Quantos?,{99: 'Ignorado'}
+A018013,A018013,Neste domicílio existe geladeira,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018014,A018014,Quantos?,{99: 'Ignorado'}
+A018015,A018015,Neste domicílio existe máquina de lavar roupa,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018016,A018016,Quantos?,{99: 'Ignorado'}
+A018017,A018017,Neste domicílio existe telefone fixo convencional,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018018,A018018,Quantos?,{99: 'Ignorado'}
+A018019,A018019,Neste domicílio existe telefone móvel celular,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018020,A018020,Quantos?,{99: 'Ignorado'}
+A018021,A018021,Neste domicílio existe forno micro-ondas,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018022,A018022,Quantos?,{99: 'Ignorado'}
+A018023,A018023,"Neste domicílio existe computador (considere inclusive os portáteis, tais como: laptop, notebook ou netbook)?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018024,A018024,Quantos?,{99: 'Ignorado'}
+A018025,A018025,Neste domicílio existe motocicleta,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018026,A018026,Quantos?,{99: 'Ignorado'}
+A018027,A018027,Neste domicílio existe automóvel,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A018028,A018028,Quantos?,{99: 'Ignorado'}
+A01901,A01901,"Algum morador tem acesso à Internet no domicílio por meio de computador, tablet, telefone móvel celular, televisão ou outro equipamento?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A02101,A02101,"No seu domicílio, há trabalhador (as) doméstico(as) que trabalham em seu domicílio três vezes ou mais por semana (empregada doméstica, babá, cuidador etc.)","{1: 'Sim', 2: 'Não'}"
+A02102,A02102,Quantos?,{99: 'Ignorado'}
+casa_animal,A02201,"Em seu domicílio, há algum animal de estimação","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+A02305,A02305,Quantos destes animais são gatos,{99: 'Ignorado'}
+A02306,A02306,Quantos destes animais são cachorros,{99: 'Ignorado'}
+A02307,A02307,Quantos destes animais são aves,{99: 'Ignorado'}
+A02308,A02308,Quantos destes animais são peixes,{99: 'Ignorado'}
+cad_sus,B001,O seu domicílio está cadastrado na unidade de saúde da família,"{1: 'Sim', 2: 'Não', 3: 'Não sabe', 9: 'Ignorado'}"
+mfc_freq,B003,"Nos últimos doze meses, com que frequência o seu domicílio recebeu uma visita de algum Agente Comunitário ou algum membro da Equipe de Saúde da Família?","{1: 'Mensalmente', 2: 'A cada 2 meses', 3: 'De 2 a 4 vezes', 4: 'Uma vez', 5: 'Nunca recebeu', 9: 'Ignorado'}"
+condicao_no_domicilio,C004,Condição no domicílio,"{1: 'Pessoa responsável pelo domicílio', 2: 'Cônjuge ou companheiro(a) de sexo diferente', 3: 'Cônjuge ou companheiro(a) do mesmo sexo', 4: 'Filho(a) do responsável e do cônjuge', 5: 'Filho(a) somente do responsável', 6: 'Filho(a) somente do cônjuge', 7: 'Genro ou nora', 8: 'Pai, mãe, padrasto ou madrasta', 9: 'Sogro(a)', 10: 'Neto(a)', 11: 'Bisneto(a)', 12: 'Irmão ou irmã', 13: 'Avô ou avó', 14: 'Outro parente', 15: 'Agregado(a) - Não parente que não compartilha despesas', 16: 'Convivente - Não parente que compartilha despesas', 17: 'Pensionista', 18: 'Empregado(a) doméstico(a)', 19: 'Parente do(a) empregado(a) doméstico(a)'}"
+sexo,C006,Sexo,"{1: 'Homem', 2: 'Mulher'}"
+idade,C008,Idade do morador na data de referência,{}
+cor,C009,Cor ou raça,"{1: 'Branca', 2: 'Preta', 3: 'Amarela', 4: 'Parda', 5: 'Indígena', 9: 'Ignorado'}"
+vive_conjugue,C01001,Cônjuge ou companheiro(a) mora em nesse domicílio.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+tipo_uniao_conjugue,C014,Qual é a natureza dessa união?,"{1: 'Casamento civil', 2: 'União estável (convivência)', 9: 'Ignorado'}"
+sabe_ler,D001,Sabe ler e escrever,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+outro_curso_superior,D007,___já concluiu algum outro curso superior de graduação,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+escolaridade,D00901,Qual foi o curso mais elevado que ___frequentou,"{1: 'Creche', 2: 'Pré-escola', 3: 'Classe de alfabetização – CA', 4: 'Alfabetização de jovens e adultos', 5: 'Antigo primário (elementar)', 6: 'Antigo ginasial (médio 1º ciclo)', 7: 'Regular do ensino fundamental ou do 1º grau', 8: 'Educação de jovens e adultos (EJA) ou supletivo do ensino fundamental', 9: 'Antigo científico, clássico etc. (médio 2º ciclo)', 10: 'Regular do ensino médio ou do 2º grau', 11: 'Educação de jovens e adultos (EJA) ou supletivo do ensino médio', 12: 'Superior – graduação', 13: 'Especialização de nível superior (duração mínima de 360 horas)', 14: 'Mestrado', 15: 'Doutorado', 99: 'Ignorado'}"
+escolaridade_agregada,D00901,Nível de escolaridade,"{1: 'Sem instrução e fundamental incompleto', 2: 'Fundamental completo e médio incompleto', 3: 'Médio completo e superior incompleto', 4: 'Superior completo'}"
+cargo_cod,E01201,Qual era a ocupação (cargo ou função) que ___ tinha nesse trabalho,{9999: 'Ignorado'}
+rendimento_trabalho,E01602,Qual era o rendimento bruto mensal ou retirada que ___ fazia normalmente nesse trabalho?(valor em dinheiro),{99999999: 'Ignorado'}
+tarefas_domesticas_tempo,E033,". Na semana de___a___ (semana de referência), ___ qual foi o total de horas que dedicou às atividades de cuidados de pessoas e/ou afazeres domésticos?",{999: 'Ignorado'}
+renda_trabalho,E01602|E01604|E01802|E01804,Valor total de rendimentos por mes,{}
+horas_semanais_trabalho,E017|E019,Valor total de horas por semana trabalhadas,{}
+tem_plano_odontologico,I00101,"tem algum plano odontológico particular, de empresa ou órgão público?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+tem_plano_medico,I00102,"tem algum plano de saúde médico particular, de empresa ou órgão público?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J002,J002,"Nas duas últimas semanas, ___ deixou de realizar quaisquer de suas atividades habituais (trabalhar, ir à escola, brincar, afazeres domésticos etc.) por motivo da própria saúde","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J003,J003,"Nas duas últimas semanas, quantos dias _____ deixou de realizar suas atividades habituais, por motivo da própria saúde",{99: 'Ignorado'}
+J00402,J00402,Qual foi o principal motivo de saúde que impediu ___ de realizar suas atividades habituais nas duas últimas semanas,"{1: 'Problemas nos ossos e articulações (Dor nas costas, problema no pescoço ou na nuca/ Dor nos braços ou nas mãos/ Artrite ou reumatismo)', 2: 'Dor de cabeça ou enxaqueca', 3: 'Problemas gineco-obstétricos (Problemas menstruais ou da gravidez e parto)', 4: 'Problema odontológico/Dor de dente', 5: 'Problemas respiratórios (Resfriado / gripe /sinusite/ asma / bronquite / pneumonia)', 6: 'Problemas gastrointestinais (Diarreia / vômito / náusea / gastrite / dor de barriga)', 7: 'Dengue, Chikungunya, Zika Vírus ou Febre amarela', 8: 'Problemas cardiovasculares (Pressão alta / doença do coração / AVC ou derrame)', 9: 'Diabetes', 10: 'Câncer (inclusive quimioterapia/radioterapia)', 11: 'Problemas neurológicos (Alzheimer/Esclerose/Doença de Parkinson/Demência', 12: 'Saúde mental (Depressão/ bipolaridade/esquizofrenia/transtorno de ansiedade/outro problema de saúde mental)', 13: 'Lesões ou fraturas provocada (s) por acidentes ou violência', 14: 'Outro problema de saúde', 99: 'Ignorado'}"
+J00404,J00404,Este motivo de saúde estava relacionado ao trabalho,"{1: 'Sim', 2: 'Não', 3: 'Não trabalhava/nunca trabalhou', 9: 'Ignorado'}"
+J005,J005,Nas duas últimas semanas___ esteve acamado (a),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J006,J006,"Nas duas últimas semanas, quantos dias _____ esteve acamado (a)",{99: 'Ignorado'}
+J007,J007,"Algum médico já deu o diagnóstico de alguma doença crônica, física ou mental, ou doença de longa duração (de mais de 6 meses de duração) a ___","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J00801,J00801,"Alguma dessas doenças limita de alguma forma suas atividades habituais (trabalhar, ir à escola, brincar, afazeres domésticos, etc.)","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J009,J009,"___ costuma procurar o mesmo lugar, mesmo médico ou mesmo serviço de saúde quando precisa de atendimento de saúde","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J01002,J01002,Quando está doente ou precisando de atendimento de saúde___ costuma procurar,"{1: 'Farmácia', 2: 'Unidade básica de saúde (posto ou centro de saúde ou unidade de saúde da família)', 3: 'Policlínica pública, PAM (Posto de Assistência Médica) ou Centro de Especialidades público', 4: 'UPA (Unidade de Pronto Atendimento), outro tipo de pronto atendimento público (24 horas), pronto-socorro ou emergência de hospital público.', 5: 'Ambulatório de hospital público.', 6: 'Consultório particular, clínica privada ou ambulatório de hospital privado', 7: 'Pronto atendimento ou emergência de hospital privado.', 8: 'Atendimento domiciliar', 9: 'Outro serviço', 99: 'Ignorado'}"
+J01101,J01101,Quando ____ consultou um médico pela última vez,"{1: 'Até 1 ano', 2: 'Mais de 1 ano a 2 anos', 3: 'Mais de 2 anos a 3 anos', 4: 'Mais de 3 anos', 5: 'Nunca foi ao médico', 9: 'Ignorado'}"
+J012,J012,Quantas vezes ___ consultou um médico nos últimos 12 meses,{999: 'Ignorado'}
+J01301,J01301,Quando ___ consultou um dentista pela última vez,"{1: 'Até 1 ano', 2: 'Mais de 1 ano a 2 anos', 3: 'Mais de 2 anos a 3 anos', 4: 'Mais de 3 anos', 5: 'Nunca foi ao dentista', 9: 'Ignorado'}"
+J014,J014,"Nas duas últimas semanas, ___ procurou algum lugar, serviço ou profissional de saúde para atendimento relacionado à própria saúde","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J01502,J01502,Qual foi o motivo principal pelo qual ___ procurou atendimento relacionado à própria saúde nas duas últimas semanas,"{1: 'Acidente, lesão ou fratura', 2: 'Doença (dor, febre, diarreia etc) ou continuação de tratamento de doença', 3: 'Problema odontológico, dor de dente ou consulta de rotina ao dentista', 4: 'Reabilitação (fisioterapia, fonoaudiologia, terapia ocupacional etc)', 5: 'Pré-natal', 6: 'Parto', 7: 'Exame complementar de diagnóstico (sangue, urina, imagem, etc)', 8: 'Vacinação', 9: 'Prevenção, check-up médico ou puericultura', 10: 'Solicitação de atestado de saúde', 11: 'Acompanhamento com psicólogo, nutricionista, ou outro profissional de saúde', 12: 'Outro', 99: 'Ignorado'}"
+J01602,J01602,Onde ___ procurou o primeiro atendimento de saúde por este motivo nas duas últimas semanas,"{1: 'Farmácia.', 2: 'Unidade básica de saúde (posto ou centro de saúde ou unidade de saúde da família).', 3: 'Policlínica pública, PAM (Posto de Assistência Médica) ou Centro de Especialidades público', 4: 'UPA (Unidade de Pronto Atendimento), outro tipo de pronto atendimento público (24 horas), pronto-socorro ou emergência de hospital público.', 5: 'Ambulatório de hospital público', 6: 'Consultório particular clínica privada ou ambulatório de hospital privado', 7: 'Pronto atendimento ou emergência de hospital privado.', 8: 'No domicílio', 9: 'Outro serviço', 99: 'Ignorado'}"
+J01701,J01701,"Nessa primeira vez que procurou atendimento de saúde por este motivo, nas duas últimas semanas","{1: 'Foi agendado para outro dia/outro local', 2: 'Não foi atendido', 3: 'Foi atendido', 9: 'Ignorado'}"
+J01802,J01802,Por que motivo ___ não foi atendido(a) na primeira vez que procurou atendimento de saúde nas duas últimas semanas,"{1: 'Não conseguiu vaga nem pegar senha', 2: 'Não tinha médico ou dentista atendendo', 3: 'Não havia serviço ou profissional de saúde especializado para atender', 4: 'Esperou muito e desistiu', 5: 'O serviço de saúde não estava funcionando', 6: 'Os equipamentos do serviço de saúde não estavam funcionando ou disponíveis para uso', 7: 'Não podia pagar pela consulta', 8: 'Outro', 9: 'Ignorado'}"
+J019,J019,"Nas duas últimas semanas, quantas vezes ___ voltou a procurar atendimento de saúde por este mesmo motivo",{99: 'Ignorado'}
+J02002,J02002,Onde ___ procurou o último atendimento de saúde por este motivo nas duas últimas semanas,"{1: 'Farmácia.', 2: 'Unidade básica de saúde (posto ou centro de saúde ou unidade de saúde da família).', 3: 'Policlínica pública, PAM (Posto de Assistência Médica) ou Centro de Especialidades público', 4: 'UPA (Unidade de Pronto Atendimento), outro tipo de pronto atendimento público (24 horas), pronto-socorro ou emergência de hospital público.', 5: 'Ambulatório de hospital público.', 6: 'Consultório particular, clínica privada ou ambulatório de hospital privado', 7: 'Pronto atendimento ou emergência de hospital privado.', 8: 'No domicílio', 9: 'Outro serviço', 99: 'Ignorado'}"
+J021,J021,"Nessa última vez que procurou atendimento de saúde por este motivo, nas duas últimas semanas, ___ foi atendido (a)","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J022010,J022010,Por que motivo ___ não foi atendido (a) nessa última vez que procurou atendimento de saúde nas duas últimas semanas,"{1: 'Não conseguiu vaga nem pegar senha', 2: 'Não tinha médico ou dentista atendendo', 3: 'Não havia serviço ou profissional de saúde especializado para atender', 4: 'Esperou muito e desistiu', 5: 'O serviço de saúde não estava funcionando', 6: 'Os equipamentos do serviço de saúde não estavam funcionando ou disponíveis para uso', 7: 'Não podia pagar pela consulta', 8: 'Outro', 9: 'Ignorado'}"
+J023,J023,Este serviço de saúde onde___ foi atendido era:,"{1: 'Público', 2: 'Privado', 3: 'Não sabe/Não lembra'}"
+J024,J024,Este atendimento de saúde de ___ foi coberto por algum plano de saúde,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J025,J025,___ pagou algum valor por este atendimento de saúde recebido nas duas últimas semanas,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J026,J026,O atendimento de ___ foi feito pelo SUS,"{1: 'Sim', 2: 'Não', 3: 'Não sabe/Não lembra'}"
+J02702,J02702,Qual foi o principal atendimento de saúde que ___ recebeu?,"{1: 'Consulta médica', 2: 'Consulta odontológica', 3: 'Consulta com outro profissional de saúde (fisioterapeuta, fonoaudiólogo, psicólogo, nutricionista, enfermeiro, etc.)', 4: 'Atendimento com agente comunitário de saúde', 5: 'Atendimento na farmácia', 6: 'Vacinação', 7: 'Medição/aferição de pressão arterial, Injeção, curativo', 8: 'Quimioterapia, radioterapia, hemodiálise ou hemoterapia', 9: 'Exame complementar de diagnóstico (sangue, urina, imagem, etc)', 10: 'Gesso ou imobilização', 11: 'Pequena cirurgia em ambulatório', 12: 'Internação hospitalar ou cirurgia', 13: 'Práticas integrativas e complementares como acupuntura, homeopatia, plantas medicinais e fitoterapia, meditação, yoga, tai chi chuan e liang gong.', 14: 'Práticas de promoção de saúde, tais como grupos de atividade física, orientação sobre alimentação saudável, uso abusivo de outras drogas, grupo de cessação de tabagismo.', 15: 'Outro atendimento', 99: 'Ignorado'}"
+J02901,J02901,"Neste atendimento de ___, foi receitado algum medicamento","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J03001,J03001,__conseguiu obter os medicamentos receitados? (Leia as opções de resposta),"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 9: 'Ignorado'}"
+J03102,J03102,Qual o principal motivo de ___ não ter conseguido obter todos os medicamentos receitados,"{1: 'Não conseguiu obter no serviço público de saúde', 2: 'Não conseguiu o(s) medicamento(s) no programa Aqui Tem Farmácia Popular', 3: 'Não tinha farmácia próxima ou teve dificuldade de transporte', 4: 'Não conseguiu encontrar todos os medicamentos na farmácia', 5: 'Não tinha dinheiro para comprar', 6: 'Não achou necessário', 7: 'Desistiu de procurar, pois melhorou', 8: 'Outro', 9: 'Ignorado'}"
+J032,J032,Algum dos medicamentos foi coberto por plano de saúde,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 9: 'Ignorado'}"
+J03301,J03301,Algum dos medicamentos foi obtido no programa Aqui Tem Farmácia Popular,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 9: 'Ignorado'}"
+J034,J034,Algum dos medicamentos foi obtido em serviço público de saúde,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 9: 'Ignorado'}"
+J035,J035,___ pagou algum valor pelos medicamentos,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J03602,J03602,"Nas duas últimas semanas, por que motivo ___ não procurou serviço de saúde","{1: 'Não houve necessidade', 2: 'Não tinha dinheiro', 3: 'O local de atendimento era distante ou teve dificuldade de transporte', 4: 'Horário incompatível', 5: 'O atendimento é muito demorado', 6: 'O estabelecimento não possuía especialista compatível com suas necessidades', 7: 'Achou que não tinha direito', 8: 'Não tinha quem o(a) acompanhasse', 9: 'Não gostava dos profissionais do estabelecimento', 10: 'Greve nos serviços de saúde', 11: 'Outro motivo', 99: 'Ignorado'}"
+J037,J037,"Nos últimos 12 meses, ___ ficou internado(a) em hospital por 24 horas ou mais","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J038,J038,"Nos últimos 12 meses, quantas vezes ___ esteve internado(a)",{99: 'Ignorado'}
+J039,J039,Qual foi o principal atendimento de saúde que ___recebeu quando esteve internado(a) (pela última vez) nos doze últimos meses,"{1: 'Parto normal', 2: 'Parto cesáreo', 3: 'Tratamento clínico', 4: 'Tratamento psiquiátrico', 5: 'Cirurgia', 6: 'Exames complementares de diagnóstico', 7: 'Outro', 9: 'Ignorado'}"
+J04001,J04001,Quanto tempo em meses o morador ficou internado,"{88: 'Morador ainda está internado', 99: 'Ignorado'}"
+J04002,J04002,Quanto tempo em dias o morador ficou internado,"{88: 'Morador ainda está internado', 99: 'Ignorado'}"
+J041,J041,O estabelecimento de saúde em que ___ esteve internado(a) pela última vez nos últimos 12 meses era,"{1: 'Público', 2: 'Privado', 3: 'Não sabe/Não lembra'}"
+J042,J042,A última internação de ___ nos últimos 12 meses foi coberta por algum plano de saúde,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J043,J043,"___ pagou algum valor por esta última internação? (Entrevistador: se o(a) entrevistado(a) responder que pagou, mas teve reembolso total, marque a opção 2)","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J044,J044,Esta última internação de ___ foi feita através do Sistema Único de Saúde (SUS),"{1: 'Sim', 2: 'Não', 3: 'Não sabe/Não lembra'}"
+J046,J046,"Nos últimos 12 meses, ___ teve atendimento de urgência ou emergência no domicílio","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J047,J047,Este atendimento foi coberto por algum plano de saúde,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J048,J048,"___pagou algum valor por este atendimento? (Entrevistador: se o(a) entrevistado(a) responder que pagou, mas teve reembolso total, marque a opção 2)","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J049,J049,Este atendimento foi feito através do Sistema Único de Saúde (SUS),"{1: 'Sim', 2: 'Não', 3: 'Não sabe/Não lembra'}"
+J051,J051,"Neste atendimento, ___ foi transportado por ambulância para um serviço de saúde","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J052,J052,O transporte foi feito por,"{1: 'SAMU', 2: 'Ambulância de serviço público de saúde', 3: 'Ambulância de serviço de saúde privado/plano de saúde', 4: 'Corpo de Bombeiros', 5: 'Outro', 9: 'Ignorado'}"
+J05301,J05301,"Nos últimos doze meses, ___ utilizou tratamento como acupuntura, homeopatia, plantas medicinais e fitoterapia, meditação, yoga, tai chi chuan, lian gong ou outra prática integrativa e complementar a saúde?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05402,J05402,Qual tratamento _________ fez uso Acupuntura,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05403,J05403,Qual tratamento _________ fez uso Homeopatia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05404,J05404,Qual tratamento _________ fez uso plantas medicinais e fitoterapia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05405,J05405,Qual tratamento _________ fez uso auriculoterapia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05406,J05406,Qual tratamento _________ fez uso meditação,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05407,J05407,Qual tratamento _________ fez uso Yoga,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05408,J05408,"Qual tratamento _________ fez uso Tai chi chuan, Lian gong, Qi gong","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J05409,J05409,Qual tratamento _________ fez uso Terapia comunitária integrativa,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J054010,J054010,Qual tratamento _________ fez uso Outro,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+J056,J056,___ pagou algum valor por este(s) tratamento(s),"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não', 9: 'Ignorado'}"
+J057,J057,Este(s) tratamento(s) foi (foram) feito(s) através do Sistema Único de Saúde (SUS):,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não', 4: 'Não sabe/Não lembra'}"
+M00401,M00401,"Quanto tempo em horas o(a) Sr(a) gasta(va), normalmente, por dia, no deslocamento para o(s) seu(s) trabalho(s), considerando ida e volta",{}
+M005010,M005010,"No(s) seu(s) trabalho(s), habitualmente, (s) o(a) Sr(a) trabalha(va) algum período de tempo entre as 8 horas da noite e às 5 horas da manhã","{1: 'Sim', 2: 'Não'}"
+"M00601,",M00601,"Com que frequência, habitualmente, o(a) Sr(a) trabalha(va) no horário entre 8 horas da noite e 5 horas da manhã em algum dos seus trabalhos","{1: 'Menos de 1 vez por mês', 2: '1 a 3 vezes por mês', 3: '1 vez por semana', 4: '2 a 3 vezes por semana', 5: '4 vezes por semana', 6: '5 vezes ou mais por semana'}"
+M007,M007,"Em algum dos seus trabalhos, o(a) Sr(a) trabalha(va) em regime de turnos ininterruptos, isto é, por 24 horas seguidas","{1: 'Sim', 2: 'Não'}"
+M008,M008,Com que frequência o(a) Sr(a) trabalha(va) por 24 horas seguidas,"{1: 'Menos de 1 vez por mês', 2: '1 a 3 vezes por mês', 3: '1 vez por semana', 4: '2 a 3 vezes por semana', 5: '4 vezes por semana', 6: '5 vezes ou mais por semana'}"
+M009,M009,O(a) Sr(a) normalmente trabalha(va) em ambientes,"{1: 'Fechados', 2: 'Abertos', 3: 'Ambos'}"
+M01001,M01001,"Nos últimos 30 dias, alguém fumou no mesmo ambiente fechado onde o(a) Sr(a) trabalhava (todos os trabalhos)","{1: 'Sim', 2: 'Não'}"
+M011011,M011011,"No(s) seu(s) trabalho(s), o(a) Sr(a) está(estava) exposto(a) a algum destes fatores que podem afetar a sua saúde. Manuseio de substâncias químicas (agrotóxicos, gasolina, diesel, formol, chumbo, mercúrio, cromo, quimioterápicos etc.)","{1: 'Sim', 2: 'Não'}"
+M011021,M011021,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Exposição a ruído (barulho intenso)","{1: 'Sim', 2: 'Não'}"
+M011031,M011031,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Exposição longa ao sol","{1: 'Sim', 2: 'Não'}"
+M011041,M011041,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Manuseio de material radioativo (transporte, recebimento, armazenagem, trabalho com raio-x)","{1: 'Sim', 2: 'Não'}"
+M011051,M011051,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Manuseio de resíduos urbanos (lixo)","{1: 'Sim', 2: 'Não'}"
+M011061,M011061,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Exposição a material biológico (sangue, agulhas, secreções)","{1: 'Sim', 2: 'Não'}"
+M011071,M011071,"No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Exposição à poeira mineral (pó de mármore, de areia, de brita, de vidro (sílica), de amianto (asbesto), de ferro ou aço)","{1: 'Sim', 2: 'Não'}"
+M01401,M01401,Com quantos familiares ou parentes ___ pode contar em momentos bons ou ruins,"{0: 'Nenhum', 1: 'Um', 2: 'Dois', 3: 'Três ou mais'}"
+M01501,M01501,Com quantos amigos próximos ___ pode contar em momentos bons ou ruins (Sem considerar os familiares ou parentes,"{0: 'Nenhum', 1: 'Um', 2: 'Dois', 3: 'Três ou mais'}"
+M01601,M01601,"Nos últimos doze meses, com que frequência o(a) Sr(a) se reuniu com outras pessoas para prática de atividades esportivas, exercícios físicos, recreativos ou artísticos","{1: 'Mais de uma vez por semana', 2: 'Uma vez por semana', 3: 'De 2 a 3 vezes por mês', 4: 'Algumas vezes no ano', 5: 'Uma vez no ano', 6: 'Nenhuma vez'}"
+M01701,M01701,"Nos últimos doze meses, com que frequência o(a) Sr(a) participou de reuniões de grupos como associações de moradores ou funcionários, movimentos sociais/comunitários, centros acadêmicos ou similares","{1: 'Mais de uma vez por semana', 2: 'Uma vez por semana', 3: 'De 2 a 3 vezes por mês', 4: 'Algumas vezes no ano', 5: 'Uma vez no ano', 6: 'Nenhuma vez'}"
+M01801,M01801,"Nos últimos 12 meses, com que frequência o(a) Sr(a) fez trabalho voluntário não remunerado","{1: 'Mais de uma vez por semana', 2: 'Uma vez por semana', 3: 'De 2 a 3 vezes por mês', 4: 'Algumas vezes no ano', 5: 'Uma vez no ano', 6: 'Nenhuma vez'}"
+M01901,M01901,"Nos últimos doze meses, com que frequência o(a) Sr(a) compareceu a atividades coletivas da sua religião ou de outra religião sem contar com situações como casamento, batizado, ou enterro)","{1: 'Mais de uma vez por semana', 2: 'Uma vez por semana', 3: 'De 2 a 3 vezes por mês', 4: 'Algumas vezes no ano', 5: 'Uma vez no ano', 6: 'Nenhuma vez'}"
+N001,N001,"Em geral, como o(a) Sr(a) avalia a sua saúde","{1: 'Muito boa', 2: 'Boa', 3: 'Regular', 4: 'Ruim', 5: 'Muito ruim', 9: 'Ignorado'}"
+N00101,N00101,"Considerando saúde como um estado de bem-estar físico e mental, e não somente a ausência de doenças, como você avalia o seu estado de saúde?","{1: 'Muito boa', 2: 'Boa', 3: 'Regular', 4: 'Ruim', 5: 'Muito ruim', 9: 'Ignorado'}"
+N010,N010,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas no sono, como dificuldade para adormecer, acordar frequentemente à noite ou dormir mais do que de costume?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N011,N011,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas por não se sentir descansado(a) e disposto(a) durante o dia, sentindo-se cansado(a), sem ter energia?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N012,N012,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve pouco interesse ou não senitiu prazer em fazer as coisas?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N013,N013,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas para se concentrar nas suas atividades habituais?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N014,N014,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas na alimentação, como ter falta de apetite ou comer muito mais do que de costume?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N015,N015,"Nas duas últimas semanas, com que frequência o(a) Sr(a) teve lentidão para se movimentar ou falar, ou ao contrário ficou muito agitado(a) ou inquieto(a)?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N016,N016,"Nas duas últimas semanas, com que frequência o(a) Sr(a) se sentiu deprimido(a), “pra baixo” ou sem perspectiva?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N017,N017,"Nas duas últimas semanas, com que frequência o(a) Sr(a) se sentiu mal consigo mesmo, se achando um fracasso ou achando que decepcionou sua família?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+N018,N018,"Nas duas últimas semanas, com que frequência o(a) Sr(a) pensou em se ferir de alguma maneira ou achou que seria melhor estar morto?","{1: 'Nenhum dia', 2: 'Menos da metade dos dias', 3: 'Mais da metade dos dias', 4: 'Quase todos dias', 9: 'Ignorado'}"
+peso,P00104,"Peso - Final (em kg)
+(3 inteiros e 1 casa decimal)",{}
+altura,P00404,"Altura - Final (em cm)
+(3 inteiros)",{999: 'Ignorado'}
+P005,P005,A Sra está grávida no momento?,"{1: 'Sim', 2: 'Não', 3: 'Não sabe'}"
+P00601,P00601,"Ontem o(a) Sr(a) comeu arroz, macarrão, polenta, cuscuz ou milho verde.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00602,P00602,"Batata comum, mandioca/aipim/macaxeira, cará ou inhame.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00603,P00603,"Feijão, ervilha, lentilha ou grão de bico.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00604,P00604,"Carne de boi, porco, frango, peixe","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00605,P00605,"Ovo (frito, cozido ou mexido ).","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00607,P00607,"Alface, couve, brócolis, agrião ou espinfre.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00608,P00608,"Abóbora, cenoura, batata doce ou quiabo/caruru.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00609,P00609,"Tomate, pepino, abobrinha, berinjela, chuchu ou beterraba.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00610,P00610,"Mamão, manga, melão amarelo ou pequi.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00611,P00611,"Laranja, banana, maçã, abacaxi.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00612,P00612,Leite,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00613,P00613,"Amendoim, castanha de caju ou castanha do Brasil/Pará","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00614,P00614,ONTEM o(a) Sr(a) tomou ou comeu:Refrigerante,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00615,P00615,Suco de fruta em caixinha ou lata ou refresco em pó.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00616,P00616,Bebida achocolatada ou iogurte com sabor.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00617,P00617,Salgadinho de pacote ou biscoito/bolacha salgado.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00618,P00618,Biscoito/bolacha doce ou recheado ou bolo de pacote.,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00619,P00619,"Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00620,P00620,"Salsicha, linguiça, mortadela ou presunto.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00621,P00621,"Pão de forma, de cachorro-quente ou de hambúrguer.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00622,P00622,"Margarina, maionese, ketchup ou outros molhos industrializados.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P00623,P00623,"Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato congelado comprado pronto industrilizado.","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P006,P006,Em quantos dias da semana o(a) Sr(a) costuma comer feijão?,"{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P00901,P00901,"Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha?","{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P01001,P01001,"Em geral, o(a) Sr(a) costuma comer esse tipo de verdura ou legume:","{1: 'Uma vez por dia (no almoço ou no jantar).', 2: 'Duas vezes por dia (no almoço e no jantar).', 3: 'Três vezes ou mais por dia.', 9: 'Ignorado'}"
+P01101,P01101,"Em quantos dias da semana o(a) Sr(a) costuma comer carne vermelha (boi, porco, cabrito, bode, ovelha etc.)?","{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P013,P013,Em quantos dias da semana o(a) Sr(a) costuma comer frango/galinha?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P015,P015,Em quantos dias da semana o(a) Sr(a) costuma comer peixe?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P02001,P02001,Em quantos dias da semana o(a) Sr(a) costuma tomar suco de caixinha/lata ou refresco em pó ?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P02101,P02101,Que tipo de suco de caixinha/lata ou refresco em pó o(a) Sr(a) costuma tomar? (Ler as opções de resposta),"{1: 'Diet/Light/Zero', 2: 'Normal', 3: 'Ambos.', 9: 'Ignorado'}"
+P01601,P01601,Em quantos dias da semana o(a) Sr(a) costuma tomar suco de fruta natural (incluída a polpa de fruta congelada)?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P018,P018,Em quantos dias da semana o(a) Sr(a) costuma comer frutas?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P019,P019,"Em geral, quantas vezes por dia o(a) Sr(a) come frutas?","{1: 'Uma vez por dia', 2: 'Duas vezes por dia', 3: 'Três vezes ou mais por dia.', 9: 'Ignorado'}"
+P02002,P02002,Em quantos dias da semana o(a) Sr(a) costuma tomar refrigerante?,"{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P02102,P02102,Que tipo de refrigerante o(a) Sr(a) costuma tomar?,"{1: 'Diet/Light/Zero', 2: 'Normal', 3: 'Ambos', 9: 'Ignorado'}"
+P023,P023,"Em quantos dias da semana o(a) Sr(a) costuma tomar leite? (de origem animal: vaca, cabra, búfala etc.)","{0: 'Nunca ou menos de uma vez por semana.', 9: 'Ignorado'}"
+P02401,P02401,Que tipo de leite o(a) Sr(a) costuma tomar?,"{1: 'Desnatado ou semidesnatado.', 2: 'Integral', 3: 'Os dois tipos', 9: 'Ignorado'}"
+P02501,P02501,"Em quantos dias da semana o(a) Sr(a) costuma comer alimentos doces como biscoito/bolacha recheado, chocolate, gelatina, balas e outros?","{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P02602,P02602,"Em quantos dias da semana o(a) Sr(a) costuma substituir a refeição do almoço por lanches rápidos como sanduíches, salgados, pizza, cachorro quente, etc?","{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P02601,P02601,"Considerando a comida preparada na hora e os alimentos industrializados, o(a) Sr(a) acha que o seu consumo de sal é:","{1: 'Muito alto', 2: 'Alto', 3: 'Adequado', 4: 'Baixo', 5: 'Muito baixo', 9: 'Ignorado'}"
+P027,P027,Com que frequência o(a) Sr(a) costuma consumir alguma bebida alcoólica?,"{1: 'Não bebo nunca', 2: 'Menos de uma vez por mês', 3: 'Uma vez ou mais por mês', 9: 'Ignorado'}"
+P02801,P02801,Quantos dias por semana o(a) Sr(a) costuma consumir alguma bebida alcoólica?,"{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P029,P029,"Em geral, no dia que o(a) Sr(a) bebe, quantas doses de bebida alcoólica o(a) Sr(a) consome?",{99: 'Ignorado'}
+P03201,P03201,"Nos últimos trinta dias, o(a) Sr(a) chegou a consumir cinco ou mais doses de bebida alcoólica em uma única ocasião?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P03202,P03202,"Quando isso ocorreu, qual foi o número máximo de doses consumido em uma única ocasião?",{99: 'Ignorado'}
+P03001,P03001,"Nos últimos doze meses, quando consumiu bebida alcoólica, o(a) Sr(a) dirigiu logo depois de beber?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P03301,P03301,"Nos últimos doze meses, quantas vezes o(a) Sr(a) deixou de trabalhar, realizar afazeres domésticos, ir à escola, curso ou faculdade, fazer compras, etc. porque bebeu demais?","{1: 'Nenhuma vez.', 2: 'Uma vez por mês ou menos', 3: 'Duas a quatro vezes por mês', 4: 'Duas a três vezes por semana', 5: 'Quatro ou mais vezes por semana', 9: 'Ignorado'}"
+P03302,P03302,"Nos últimos doze meses, quantas vezes, depois/após ter bebido, o(a) Sr(a) não conseguiu lembrar o que aconteceu?","{1: 'Nenhuma vez.', 2: 'Uma vez por mês ou menos', 3: 'Duas a quatro vezes por mês', 4: 'Duas a três vezes por semana', 5: 'Quatro ou mais vezes por semana', 9: 'Ignorado'}"
+P03303,P03303,"Nos últimos doze meses, algum parente, amigo ou profissional de saúde disse que você estava bebendo demais ou para você parar de beber?","{1: 'Não', 2: 'Sim, em uma ocasião', 3: 'Sim, em mais de uma ocasião', 9: 'Ignorado'}"
+P034,P034,"Nos últimos três meses, o(a) Sr(a) praticou algum tipo de exercício físico ou esporte?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P035,P035,Quantos dias por semana o(a) Sr(a) costuma  (costumava)praticar exercício físico ou esporte?,"{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P03701,P03701,"Em geral, no dia que o(a) Sr(a) pratica exercício ou esporte, quanto tempo em horas dura essa atividade? Horas",{9: 'Ignorado'}
+P03702,P03702,"Em geral, no dia que o(a) Sr(a) pratica (praticava) exercício ou esporte, quanto tempo em minutos dura essa atividade?Minutos",{99: 'Ignorado'}
+P036,P036,Qual o exercício físico ou esporte que o(a) Sr(a) pratica (praticava) com mais frequência? (Anotar apenas o primeiro citado),"{1: 'Caminhada (não vale para o trabalho)', 2: 'Caminhada em esteira', 3: 'Corrida/cooper', 4: 'Corrida em esteira', 5: 'Musculação', 6: 'Ginástica aeróbica/spinning/step/jump', 7: 'Hidroginástica', 8: 'Ginástica / localizada/pilates/alongamento/ioga', 9: 'Natação', 10: 'Artes marciais e luta', 11: 'Bicicleta/bicicleta ergométrica', 12: 'Futebol', 13: 'Basquetebol', 14: 'Voleibol', 15: 'Tênis', 16: 'Dança (com o objetivo de praticar atividade física)', 17: 'Outro', 99: 'Ignorado'}"
+P038,P038,"No seu trabalho, o(a) Sr(a) anda bastante a pé?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P039,P039,"No seu trabalho, o(a) Sr(a) faz faxina pesada, carrega peso ou faz outra atividade pesada que requer esforço físico intenso?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P03904,P03904,"Em uma semana normal, em quantos dias, o(a) Sr(a) anda bastante a pé ou faz essas atividades pesadas ou que requerem esforço físico no seu trabalho?",{9: 'Ignorado'}
+P03905,P03905,"Em um dia normal, quanto tempo o(a) Sr(a) passa andando bastante a pé ou realizando essas atividades pesadas ou que requerem esforço físico no seu trabalho?Horas",{9: 'Ignorado'}
+P03906,P03906,"Em um dia normal, quanto tempo o(a) Sr(a) passa andando bastante a pé ou realizando atividades essas atividades pesadas ou que requerem esforço físico no seu trabalho? Minutos",{99: 'Ignorado'}
+P040,P040,"Para ir ou voltar do trabalho, o(a) Sr(a) faz algum trajeto a pé ou de bicicleta?","{1: 'Sim, todo o trajeto', 2: 'Sim, parte do trajeto', 3: 'Não', 9: 'Ignorado'}"
+P04001,P04001,Quantos dias por semana o(a) Sr(a) faz algum trajeto a pé ou bicicleta?,"{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P04101,P04101,"Quanto tempo o(a) Sr(a) gasta, por dia, para percorrer este trajeto a pé ou de bicicleta, considerando a ida e a volta do trabalho?Horas",{99: 'Ignorado'}
+P04102,P04102,"Quanto tempo o(a) Sr(a) gasta, por dia, para percorrer este trajeto a pé ou de bicicleta, considerando a ida e a volta do trabalho?Minutos",{99: 'Ignorado'}
+P042,P042,"Nas suas atividades habituais (tais como ir a algum curso, escola ou clube ou levar alguém a algum curso, escola ou clube), quantos dias por semana o(a) Sr(a) faz alguma atividade que envolva deslocamento a pé ou bicicleta? (Exceto o trabalho)","{0: 'Nunca ou menos de uma vez por semana', 9: 'Ignorado'}"
+P04301,P04301,"No dia em que o(a) Sr(a) faz essa(s) atividade(s), quanto tempo o(a) Sr(a) gasta no deslocamento a pé ou de bicicleta, considerando Ida e Volta?Horas",{99: 'Ignorado'}
+P04302,P04302,"No dia em que o(a) Sr(a) faz essa(s) atividade(s), quanto tempo o(a) Sr(a) gasta no deslocamento a pé ou de bicicleta, considerando Ida e Volta?Minutos",{99: 'Ignorado'}
+P044,P044,"Nas suas atividades domésticas, o(a) Sr(a) faz faxina pesada, carrega peso ou faz outra atividade pesada que requer esforço físico intenso? (não considerar atividade doméstica remunerada)","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P04401,P04401,"Em uma semana normal, nas suas atividades domésticas, em quantos dias o(a) Sr(a) faz faxina pesada ou realiza atividades que requerem esforço físico intenso? (não considerar atividade doméstica remunerada)",{9: 'Ignorado'}
+P04405,P04405,"Quanto tempo gasta, por dia, realizando essas atividades domésticas pesadas ou que requerem esforço físico intenso? (não considerar atividade doméstica remunerada) Horas",{99: 'Ignorado'}
+P04406,P04406,"Quanto tempo gasta, por dia, realizando essas atividades domésticas pesadas ou que requerem esforço físico intenso?",{99: 'Ignorado'}
+P04501,P04501,"Em média, quantas horas por dia o(a) Sr(a) costuma ficar assistindo televisão?","{1: 'Menos de uma hora', 2: 'De uma hora a menos de duas horas', 3: 'De duas horas a menos de três horas', 4: 'De três horas a menos de seis horas', 5: 'Seis horas ou mais', 6: 'Não assiste televisão', 9: 'Ignorado'}"
+P04502,P04502,"Em um dia, quantas horas do seu tempo livre (excluindo o trabalho), o(a) Sr(a) costuma usar computador, tablet ou celular para lazer, tais como: utilizar redes sociais, para ver notícias, vídeos, jogar etc?","{1: 'Menos de uma hora', 2: 'De uma hora a menos de duas horas', 3: 'De duas horas a menos de três horas', 4: 'De três horas a menos de seis horas', 5: 'Seis horas ou mais', 6: 'Não costuma usar computador, tablet ou celular no tempo livre', 9: 'Ignorado'}"
+P046,P046,"Perto do seu domicílio, existe algum lugar público (praça, parque, rua fechada, praia) para fazer caminhada, realizar exercício ou praticar esporte?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P04701,P04701,O(A) Sr(a) conhece algum programa público de estímulo à prática de atividade física no seu município?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P04801,P04801,O(A) Sr(a) participa desse programa público de estímulo à prática de atividade física no seu município?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P04902,P04902,Qual o principal motivo de não participar?,"{1: 'Não é perto do meu domicílio', 2: 'O horário de funcionamento do programa é incompatível com minhas atividades de trabalho ou domésticas', 3: 'Não tem interesse nas atividades oferecidas', 4: 'O espaço não é seguro/iluminado', 5: 'Problemas de saúde ou incapacidade física', 6: 'Outro', 9: 'Ignorado'}"
+P050,P050,"Atualmente, o(a) Sr(a) fuma algum produto do tabaco?","{1: 'Sim, diariamente', 2: 'Sim, menos que diariamente', 3: 'Não fumo atualmente', 9: 'Ignorado'}"
+P051,P051,"E no passado, o(a) Sr(a) fumou algum produto do tabaco diariamente?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+P052,P052,"E no passado, o(a) Sr(a) fumou algum produto do tabaco?","{1: 'Sim, diariamente', 2: 'Sim, menos que diariamente', 3: 'Não, nunca fumei', 9: 'Ignorado'}"
+P053,P053,Que idade o(a) Sr(a) tinha quando começou a fumar produto de tabaco diariamente?,{99: 'Ignorado'}
+P05401,P05401,"Em média, quanto fuma por dia ou por semana Cigarros industrializados","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05402,P05402,Quantos por dia,{99: 'Ignorado'}
+P05403,P05403,Quantos por semana,{99: 'Ignorado'}
+P05404,P05404,"Em média, quanto fuma por dia ou por semana Cigarros de palha ou enrolados a mão?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05405,P05405,Quantos por dia,{99: 'Ignorado'}
+P05406,P05406,Quantos por semana,{99: 'Ignorado'}
+P05407,P05407,"Em média, quanto fuma por dia ou por semana Cigarros de cravo ou de Bali?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05408,P05408,Quantos por dia,{99: 'Ignorado'}
+P05409,P05409,Quantos por semana,{99: 'Ignorado'}
+P05410,P05410,"Em média, quanto fuma por dia ou por semana Cachimbos (considere cachimbos cheios)?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05411,P05411,Quantos por dia,{99: 'Ignorado'}
+P05412,P05412,Quantos por semana,{99: 'Ignorado'}
+P05413,P05413,"Em média, quanto fuma por dia ou por semana Charutos ou cigarrilhas?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05414,P05414,Quantos por dia,{99: 'Ignorado'}
+P05415,P05415,Quantos por semana,{99: 'Ignorado'}
+P05416,P05416,"Em média, quanto fuma por dia ou por semana Narguilé (sessões)?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05417,P05417,Quantos por dia,{99: 'Ignorado'}
+P05418,P05418,Quantos por semana,{99: 'Ignorado'}
+P05419,P05419,"Em média, quanto fuma por dia ou por semana Outro","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fuma este produto', 9: 'Ignorado'}"
+P05421,P05421,Quantos por dia,{99: 'Ignorado'}
+P05422,P05422,Quantos por semana,{99: 'Ignorado'}
+P055,P055,Quanto tempo depois de acordar o(a) Sr(a) normalmente fuma pela primeira vez?,"{1: 'Até cinco minutos', 2: 'De seis a 30 minutos', 3: 'De 31 a 60 minutos', 4: 'Mais de 60 minutos', 9: 'Ignorado'}"
+P056,P056,"NA ÚLTIMA VEZ que o(a) Sr(a) comprou cigarros para uso próprio, quantos cigarros comprou? (Registre a quantidade e, quando necessário, registre os detalhes da unidade).","{1: 'Cigarros', 2: 'Maços', 3: 'Pacotes', 4: 'Nunca comprei cigarros para uso próprio', 9: 'Ignorado'}"
+P05601,P05601,Quantidade de cigarros,{99: 'Ignorado'}
+P05602,P05602,Quantidade de maços,{99: 'Ignorado'}
+P05603,P05603,Quantos cigarros havia em cada maço?,{99: 'Ignorado'}
+P05604,P05604,Quantidade de pacotes,{99: 'Ignorado'}
+P05605,P05605,Quantos maços havia em cada pacote?,{99: 'Ignorado'}
+P057,P057,"No total, quanto o(a) Sr(a) pagou por essa compra?",{99999999: 'Ignorado'}
+P058,P058,"Em média, quantos cigarros industrializados o(a) Sr(a) fumava por dia ou por semana?","{1: 'Um ou mais por dia', 2: 'Um ou mais por semana', 3: 'Menos que uma vez por semana', 4: 'Menos do que um por mês', 5: 'Não fumava este produto', 6: 'Não sabe'}"
+P05801,P05801,Quantos por dia,{99: 'Ignorado'}
+P05802,P05802,Quantos por semana,{99: 'Ignorado'}
+P05901,P05901,Número de anos que parou de fumar,{99: 'Ignorado'}
+P05902,P05902,Número de meses que parou de fumar,{9: 'Ignorado'}
+P05903,P05903,Número de semanas que parou de fumar,{9: 'Ignorado'}
+P05904,P05904,Número de dias que parou de fumar,{9: 'Ignorado'}
+Q00101,Q00101,Quando foi a última vez que o (a) Sr(a) teve sua pressão arterial medida?,"{1: 'Menos de 6 meses', 2: 'De 6 meses a menos de 1 ano', 3: 'De 1 ano a menos de  2 anos', 4: 'De 2 anos a menos de 3 anos', 5: '3 anos ou mais', 6: 'Nunca', 9: 'Ignorado'}"
+Q00201,Q00201,Algum médico já lhe deu o diagnóstico de hipertensão arterial (pressão alta)?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q00202,Q00202,Essa hipertensão arterial (pressão alta) ocorreu apenas durante algum período de gravidez?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q003,Q003,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de hipertensão arterial (pressão alta)?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q02901,Q02901,"Quando foi a última vez que o(a) Sr(a) fez exame de sangue para medir a glicemia, isto é, o açúcar no sangue?","{1: 'Menos de 6 meses', 2: 'De 6 meses a menos de 1 ano', 3: 'De 1 ano a menos de  2 anos', 4: 'De 2 anos a menos de 3 anos', 5: '3 anos ou mais', 6: 'Nunca fez', 9: 'Ignorado'}"
+Q03001,Q03001,Algum médico já lhe deu o diagnóstico de diabetes?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q03002,Q03002,Esse diabetes ocorreu apenas durante algum período de gravidez?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q031,Q031,Que idade o(a) Sr(a) tinha no primeiro diagnóstico do diabetes?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q05901,Q05901,Quando foi a última vez que o(a) Sr(a) fez exame de sangue para medir o colesterol e triglicerídeos?,"{1: 'Menos de 6 meses', 2: 'De 6 meses a menos de 1 ano', 3: 'De 1 ano a menos de  2 anos', 4: 'De 2 anos a menos de 3 anos', 5: '3 anos ou mais', 6: 'Nunca fez', 9: 'Ignorado'}"
+Q060,Q060,Algum médico já lhe deu o diagnóstico de colesterol alto?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q061,Q061,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de colesterol alto?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q06306,Q06306,"Algum médico já lhe deu o diagnóstico de uma doença do coração, tal como infarto, angina, insuficiência cardíaca ou outra?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q06307,Q06307,Infarto,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q06308,Q06308,Angina,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q06309,Q06309,Insuficiência cardíaca,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q06310,Q06310,Arritmia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q06311,Q06311,Outra,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q064,Q064,Que idade o(a) Sr(a) tinha no primeiro diagnóstico da doença do coração?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q068,Q068,Algum médico já lhe deu o diagnóstico de AVC (Acidente Vascular Cerebral) ou derrame?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q070,Q070,Que idade o(a) Sr(a) tinha no primeiro diagnóstico do derrame (ou AVC)?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q074,Q074,Algum médico já lhe deu o diagnóstico de asma (ou bronquite asmática)?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q075,Q075,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de asma?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q076,Q076,"Nos últimos doze meses, o(a) Sr(a) teve alguma crise de asma?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q079,Q079,Algum médico já lhe deu o diagnóstico de artrite ou reumatismo?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q080,Q080,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de artrite ou reumatismo?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q092,Q092,Algum médico ou profissional de saúde mental (como psiquiatra ou psicólogo) já lhe deu o diagnóstico de depressão?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q09201,Q09201,Algum médico já lhe receitou algum medicamento para depressão?,"{1: 'Sim', 2: 'Não', 3: 'Não sabe/não respondeu'}"
+Q09202,Q09202,Nas duas últimas semanas o(a) senhor(a) usou algum medicamento para depressão?,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 4: 'Não sabe/não respondeu'}"
+Q09301,Q09301,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de depressão?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q094,Q094,O(A) Sr(a) vai ao médico/serviço de saúde regularmente por causa da depressão ou só quando tem algum problema?,"{1: 'Sim', 2: 'Não, só quando tem algum problema', 3: 'Nunca vai', 9: 'Ignorado'}"
+Q09502,Q09502,Qual o principal motivo do(a) Sr(a) não visitar o médico/serviço de saúde regularmente por causa da depressão?,"{1: 'Não está mais deprimido', 2: 'O serviço de saúde é distante ou tem dificuldade de transporte', 3: 'Não tem ânimo', 4: 'O tempo de espera no serviço de saúde é muito grande', 5: 'Tem dificuldades financeiras', 6: 'O horário de funcionamento do serviço de saúde é incompatível com suas atividades de trabalho ou domésticas', 7: 'Não conseguiu marcar consulta pelo plano de saúde', 8: 'Não sabe quem procurar ou aonde ir', 9: 'Outro', 99: 'Ignorado'}"
+Q09605,Q09605,Por causa da depressão Faz psicoterapia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q09606,Q09606,Por causa da depressão Toma medicamentos,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q09607,Q09607,"Por causa da depressão Faz uso de acupuntura, plantas medicinais e fitoterapia, homeopatia, meditação, yoga, tai chi chuan, liang gong ou alguma outra prática integrativa e complementar","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q098,Q098,Algum dos medicamentos para depressão foi obtido em serviço público de saúde?,"{1: 'Sim, todos', 2: 'Sim, alguns', 3: 'Não, nenhum', 9: 'Ignorado'}"
+Q100,Q100,O(A) Sr(a) pagou algum valor pelos medicamentos?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q10101,Q10101,Quando foi a última vez que o(a) Sr(a) recebeu atendimento médico por causa da depressão?,"{1: 'Menos de 6 meses', 2: 'De 6 meses a menos de 1 ano', 3: 'De 1 ano a menos de  2 anos', 4: 'De 2 anos a menos de 3 anos', 5: '3 anos ou mais', 6: 'Nunca fez', 9: 'Ignorado'}"
+Q10202,Q10202,"Na última vez que recebeu assistência médica para depressão, onde o(a) Sr(a) foi atendido?","{1: 'Farmácia', 2: 'Unidade básica de saúde (posto ou centro de saúde ou unidade de saúde da família)', 3: 'Policlínica pública, PAM (Posto de Assistência Médica) ou Centro de Especialidades público', 4: 'UPA (Unidade de Pronto Atendimento), outro tipo de pronto atendimento público (24 horas), pronto-socorro ou emergência de hospital público', 5: 'Ambulatório de hospital público', 6: 'Consultório particular, clínica privada ou ambulatório de hospital privado', 7: 'Pronto atendimento ou emergência de hospital privado', 8: 'No domicílio', 9: 'Outro serviço', 99: 'Ignorado'}"
+Q104,Q104,O(A) Sr(a) pagou algum valor por esse atendimento?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q105,Q105,Esse atendimento foi feito pelo SUS?,"{1: 'Sim', 2: 'Não', 3: 'Não sabe/Não lembra'}"
+Q106,Q106,"Em algum dos atendimentos para depressão, houve encaminhamento para algum acompanhamento com profissional de saúde mental, como psiquiatra ou psicólogo?","{1: 'Sim', 2: 'Não', 3: 'Não houve encaminhamento, pois todas as consultas para depressão foram com profissional de saúde mental', 9: 'Ignorado'}"
+Q10701,Q10701,O(A) Sr(a) conseguiu ir às consultas com profissional especialista de saúde mental?,"{1: 'Sim, todas', 2: 'Sim, algumas', 3: 'Não, nenhuma', 9: 'Ignorado'}"
+Q109,Q109,"Em geral, em que grau a depressão limita as suas atividades habituais (tais como trabalhar, realizar afazeres domésticos, etc.)?","{1: 'Não limita', 2: 'Um pouco', 3: 'Moderadamente', 4: 'Intensamente', 5: 'Muito intensamente', 9: 'Ignorado'}"
+Q11006,Q11006,"Algum médico ou profissional de saúde (como psiquiatra ou psicólogo) já lhe deu o diagnóstico de outra doença mental, como transtorno de ansiedade, síndrome do pânico, esquizofrenia, transtorno bipolar, psicose ou TOC (Transtorno Obsessivo Compulsivo) etc?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11007,Q11007,Diagnóstico de Esquizofrenia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11008,Q11008,Diagnóstico de Transtorno bipolar,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11009,Q11009,Diagnóstico de TOC (Transtorno obsessivo compulsivo),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11010,Q11010,Outro diagnóstico,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q111,Q111,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de doença mental?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+Q11201,Q11201,O(A) Sr(a) visita o médico/serviço de saúde regularmente por causa dessa doença mental ou só quando tem algum problema?,"{1: 'Sim', 2: 'Não', 3: 'Não, só quando tenho algum problema', 9: 'Ignorado'}"
+Q11405,Q11405,Por causa da doença mental faz psicoterapia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11406,Q11406,Por causa da doença mental usa medicamentos ou injeções,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11407,Q11407,"Por causa da doença mental Faz uso de acupuntura, plantas medicinais e fitoterapia, homeopatia, meditação, yoga, tai chi chuan ou alguma outra prática integrativa e complementar","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11408,Q11408,Por causa da doença mental Faz acompanhamento regular com profissional de saúde,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q115,Q115,"Em geral, em que grau essa doença mental limita as suas atividades habituais (tais como trabalhar, realizar afazeres domésticos etc.)?","{1: 'Não limita', 2: 'Um pouco', 3: 'Moderadamente', 4: 'Intensamente', 5: 'Muito intensamente', 9: 'Ignorado'}"
+Q11604,Q11604,"Algum médico já lhe deu o diagnóstico de alguma outra doença crônica no pulmão, tais como enfisema pulmonar, bronquite crônica ou DPOC (Doença Pulmonar Obstrutiva Crônica)?","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11605,Q11605,Diagnóstico de enfisema pulmonar,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q11606,Q11606,Diagnóstico de bronquite crônica,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q120,Q120,Algum médico já lhe deu diagnóstico de câncer?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12102,Q12102,Foi um diagnóstico de câncer de pele?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12103,Q12103,O câncer de pele diagnosticado foi do tipo melanoma?,"{1: 'Sim', 2: 'Não', 3: 'Não sei', 9: 'Ignorado'}"
+Q12104,Q12104,Diagnóstico de outro câncer? Pulmão,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12105,Q12105,Diagnóstico de outro câncer? Cólon e reto (intestino),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12106,Q12106,Diagnóstico de outro câncer? Estômago,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12107,Q12107,Diagnóstico de outro câncer? Mama (só para mulheres),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12108,Q12108,Diagnóstico de outro câncer? Colo de útero (só para mulheres),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12109,Q12109,Diagnóstico de outro câncer? Próstata (só para homens),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121010,Q121010,"Diagnóstico de outro câncer? Boca, Orofaringe ou Laringe","{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121011,Q121011,Diagnóstico de outro câncer? Bexiga,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121012,Q121012,Diagnóstico de outro câncer? Linfoma ou leucemia,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121013,Q121013,Diagnóstico de outro câncer? Cérebro,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121014,Q121014,Diagnóstico de outro câncer? Ovário (só para mulheres),"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121015,Q121015,Diagnóstico de outro câncer? Tireoide,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q121016,Q121016,Diagnóstico de outro câncer?,"{1: 'Sim', 2: 'Não', 9: 'Ignorado'}"
+Q12201,Q12201,Que idade o(a) Sr(a) tinha no primeiro diagnóstico de doença mental?,"{0: 'Menos de 1 ano', 99: 'Ignorado'}"
+V00201,V00201,"Nos últimos doze meses, alguém: Te ofendeu, humilhou ou ridicularizou na frente de outras pessoas?","{1: 'Sim', 2: 'Não'}"
+V00202,V00202,"Nos últimos doze meses, alguém: Gritou com você ou te xingou?","{1: 'Sim', 2: 'Não'}"
+V00203,V00203,"Nos últimos doze meses, alguém: Usou redes sociais ou celular para ameaçar, ofender, xingar ou expor imagens suas sem o seu consentimento?","{1: 'Sim', 2: 'Não'}"
+V00204,V00204,"Nos últimos doze meses, alguém: Te ameaçou de ferir ou machucar alguém importante para você?","{1: 'Sim', 2: 'Não'}"
+V00205,V00205,"Nos últimos doze meses, alguém: Destruiu alguma coisa sua de propósito?","{1: 'Sim', 2: 'Não'}"
+V003,V003,"Nos últimos doze meses, quantas vezes isso aconteceu com você?","{1: 'Muitas vezes', 2: 'Algumas vezes', 3: 'Uma vez'}"
+V01401,V01401,"Nos últimos doze meses, alguém: Te deu um tapa ou uma bofetada?","{1: 'Sim', 2: 'Não'}"
+V01402,V01402,"Nos últimos doze meses, alguém: Te empurrou, segurou com força ou jogou algo em você com a intenção de machucar?","{1: 'Sim', 2: 'Não'}"
+V01403,V01403,"Nos últimos doze meses, alguém: Te deu um soco, chutou ou arrastou pelo cabelo?","{1: 'Sim', 2: 'Não'}"
+V01404,V01404,"Nos últimos doze meses, alguém: Tentou ou efetivamente estrangulou, asfixiou ou te queimou de propósito?","{1: 'Sim', 2: 'Não'}"
+V01405,V01405,"Nos últimos doze meses, alguém: Te ameaçou ou feriu com uma faca, arma de fogo ou alguma outra arma ou objeto?","{1: 'Sim', 2: 'Não'}"
+V015,V015,"Nos últimos doze meses, quantas vezes isso aconteceu?","{1: 'Muitas vezes', 2: 'Algumas vezes', 3: 'Uma vez'}"
+V02701,V02701,"Nos últimos doze meses, alguém: tocou, manipulou, beijou ou expôs partes do seu corpo contra sua vontade","{1: 'Sim', 2: 'Não'}"
+V02702,V02702,"Nos últimos doze meses, alguém: Te ameaçou ou forçou a ter relações sexuais ou quaisquer outros atos sexuais contra sua vontade?","{1: 'Sim', 2: 'Não'}"
+V02801,V02801,"E alguma vez na vida, alguém: tocou, manipulou, beijou ou expôs partes do seu corpo contra sua vontade","{1: 'Sim', 2: 'Não'}"
+V02802,V02802,"E alguma vez na vida, alguém: Te ameaçou ou forçou a ter relações sexuais ou quaisquer outros atos sexuais contra sua vontade?","{1: 'Sim', 2: 'Não'}"
+V029,V029,"Nos últimos doze meses, quantas vezes isso aconteceu?","{1: 'Muitas vezes', 2: 'Algumas vezes', 3: 'Uma vez'}"
+V034,V034,"Nos últimos doze meses, você deixou de realizar quaisquer de suas atividades habituais (trabalhar, realizar afazeres domésticos, ir à escola etc.) por causa desse ato","{1: 'Sim', 2: 'Não'}"
+V03501,V03501,"Esse(s) ato(s) sexual(is) forçado(s) gerou(aram) alguma consequência para sua saúde, tais como: Hematomas, cortes, fraturas, queimaduras ou outras lesões físicas ou ferimentos?",{}
+V03502,V03502,"Esse(s) ato(s) sexual(is) forçado(s) gerou(aram) alguma consequência para sua saúde, tais como: Medo, tristeza, desânimo, dificuldade para dormir, ansiedade, depressão ou outras consequências psicológicas?","{1: 'Sim', 2: 'Não'}"
+V03503,V03503,"Esse(s) ato(s) sexual(is) forçado(s) gerou(aram) alguma consequência para sua saúde, tais como: Doença sexualmente transmissível ou gravidez indesejada?","{1: 'Sim', 2: 'Não'}"
+Y001,Y001,Que idade tinha quando teve relações sexuais pela primeira vez?,"{1: 'Idade em anos', 2: 'Nunca teve relações sexuais', 3: 'Não sabe/Não lembra', 4: 'Recusou-se a responder'}"
+Y00101,Y00101,Idade do morador quando teve relações sexuais pela primeira vez,{}
+Y002,Y002,Nos últimos doze meses teve relações sexuais?,"{1: 'Sim', 2: 'Não', 3: 'Recusou-se a responder'}"
+Y003,Y003,"Nos últimos doze meses nas relações sexuais que teve, com que frequência usou camisinha:","{1: 'Sempre', 2: 'Às vezes', 3: 'Nenhuma  vez', 4: 'Recusou-se a responder'}"
+phq9_total,N010|N011|N012|N013|N014|N015|N016|N017|N018,Valor de risco para depressão segundo questionario PHQ9,{}
+depression_severity,phq9_total,Classificação risco de depressão,"{1: 'Nenhum ou mínimo', 2: 'Leve', 3: 'Moderada', 4: 'Moderadamente Grave', 5: 'Grave'}"
