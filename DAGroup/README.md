@@ -189,8 +189,6 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 #### Análise Exploratória
 
-A seguir, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
-
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
 ![Sexo e cor/raça da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
