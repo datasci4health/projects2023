@@ -32,12 +32,15 @@ Certifique-se de ter os pré-requisitos instalados.
 ## Instalação
 
 1. Clone este repositório em sua máquina local:
+
    `git clone https://github.com/seu-usuario/datasci4health/projects2023.git`
 
 2. Navegue até o diretório src:
+
     `cd src`
 
 3. Instale as dependências do projeto:
+
     `pip install -r requirements.txt`
 
 
@@ -45,6 +48,7 @@ Certifique-se de ter os pré-requisitos instalados.
 Para executar o projeto, siga as etapas abaixo:
 
 1. Inicialize o jupyter notebook
+
     `jupyter notebook`
 
 2. No navegador, você verá a lista de arquivos e diretórios no seu projeto. Clique em um notebook (.ipynb) para abri-lo.
@@ -58,15 +62,19 @@ Se você deseja contribuir com este projeto, siga as etapas abaixo:
 1. Faça um fork deste repositório.
 
 2. Crie um branch para sua nova feature ou correção de bug:
+
     `git checkout -b minha-nova-feature`
 
 3. Faça as alterações desejadas e adicione-as ao stage:
+
     `git add .`
 
 4. Faça o commit das suas alterações:
+
     `git commit -m "Descrição das alterações"`
 
 5. Envie suas alterações para o branch remoto:
+
     `git push origin minha-nova-feature`
 
 6. Abra um pull request neste repositório.
