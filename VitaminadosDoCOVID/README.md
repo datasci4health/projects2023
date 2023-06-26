@@ -367,7 +367,7 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 > Quantidade de pacientes obesos e não obesos
 > Nível de vitamina D pré-infecção versus desfecho de óbito ou não-óbito
 
-### Gráficos do Cluster 1
+### Gráfico 7 -  Cluster 1
 
 ![Figura 13](./reports/figures/cluster1_faixa_etaria.png)
 
@@ -379,7 +379,7 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 
 Fonte: Autores(2023)
 
-### Gráficos do Cluster 2
+### Gráfico 8 - Cluster 2
 
 ![Figura 17](./reports/figures/cluster2_faixa_etaria.png)
 
@@ -391,7 +391,7 @@ Fonte: Autores(2023)
 
 Fonte: Autores(2023)
 
-### Gráficos do Cluster 3
+### Gráfico 9 - Cluster 3
 
 ![Figura 21](./reports/figures/cluster3_faixa_etaria.png)
 
@@ -403,7 +403,7 @@ Fonte: Autores(2023)
 
 Fonte: Autores(2023)
 
-### Gráficos do Cluster 4
+### Gráfico 10 - Cluster 4
 
 ![Figura 25](./reports/figures/cluster4_faixa_etaria.png)
 
