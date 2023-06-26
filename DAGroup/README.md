@@ -437,6 +437,10 @@ A primeira tabela abaixo os resultados de diferentes combinações de variáveis
 | Apenas variáveis sociodemográficos | 57.05%        | 56.56%       | 15.81%      | 15.70%     | 69.71%      | 70.06%     | 25.77%      | 25.65% ± 0.30% | 62.62%       | 62.50% ± 0.46% |
 | Todas as varáveis                  | 65.80%        | 65.90%       | 19.29%      | 19.28%     | 64.79%      | 64.46%     | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
 
+A métrica de acurácia não é adequada para este problema devido ao desbalanceamento das classes. Se tivéssemos um modelo que classificasse todas as instâncias como não-depressão, teríamos uma acurácia próxima a 90%. Por essa razão, é necessário avaliar outras métricas, como precisão, revocação, F1-score e AUC, para realizar comparações. No caso desse problema, optaremos pelo F1-score como métrica padrão, pois ele oferece um equilíbrio entre precisão e revocação, sendo adequado para situações em que as classes estão desbalanceadas.
+
+Ao analisar a tabela, podemos observar que o modelo "Apenas doenças crônicas" apresenta um F1-score superior em comparação com os modelos "Apenas hábitos" e "Apenas variáveis sociodemográficas". Isso indica que o grupo de variáveis relacionadas a doenças crônicas é mais relevante para o modelo do que os outros grupos.
+
 Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logistica.
 
 | Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Todas as varáveis      |
@@ -460,7 +464,7 @@ Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logi
 | Classificação Idade        |                  |                           |                                     |                                 0.12 |                    -0.24 |
 | Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
 
-> Análise e discusão
+Observa-se que os coeficientes mantiveram-se praticamente inalterados quando todos os atributos foram combinados em um único modelo.
 
 A próxima tabela apresenta os resultados de diferentes abordagens experimentadas no modelo. Cada linha representa uma abordagem específica, como remoção de linhas nulas, substituição de valores faltantes pela média, substituição de valores faltantes pela mediana, uso de SMOTE (técnica de oversampling) e melhores resultados obtidos através de um 'Grid Search', executado pelo codigo abaixo:
 
@@ -496,9 +500,11 @@ Os resultados de testes de estratificação realizados com base em diferentes ca
 
 As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado na regressão por meio da estratificação em diversas variáveis.
 
+Na proxima, temos a comparação dos coeficientes da regressão estratificados por Renda Baixa e Renda Alta:
+
 | Variáveis                  |   Renda Baixa |   Renda Alta |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
-| Intercepto                 |         -0.05 |         0.54 |        0.59 |
+| Intercepto                 |         -0.05 |         0.54 |    **0.59** |
 | Ultraprocessados           |          0.47 |         0.49 |        0.03 |
 | Exercício Físico           |         -0.15 |        -0.34 |       -0.19 |
 | Tabagismo                  |          0.60 |         0.53 |       -0.06 |
@@ -514,9 +520,11 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | Sexo                       |         -1.00 |        -0.91 |        0.09 |
 | Estado Civil               |         -0.41 |        -0.30 |        0.11 |
 | Classificação Escolaridade |          0.27 |         0.02 |       -0.25 |
-| Classificação Idade        |          0.00 |        -0.62 |       -0.62 |
+| Classificação Idade        |          0.00 |        -0.62 |   **-0.62** |
 
+Observa-se que existem duas grandes diferenças, principalmente nos atributos de idade e intercepto. Nota-se que indivíduos com renda alta (superior a um salário mínimo) apresentam uma tendência maior em relação à depressão. Além disso, o fator idade possui um efeito mais significativo no grupo de alta renda, onde quanto maior a idade, menor é o efeito depressivo. No entanto, no estrato de baixa renda, essa variável não demonstra ter um efeito significativo.
 
+A seguir, a comparação dos coeficientes da regressão estratificados por Sexo Mulher e Sexo Homem.
 
 | Váriaveis                  |   Sexo Mulher |   Sexo Homem |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
@@ -533,12 +541,14 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | AVC                        |          0.63 |         0.85 |        0.22 |
 | Artrite                    |          0.83 |         1.19 |        0.36 |
 | Obesidade                  |          0.16 |         0.26 |        0.10 |
-| Estado Civil               |         -0.24 |        -0.69 |       -0.45 |
+| Estado Civil               |         -0.24 |        -0.69 |   **-0.45** |
 | Classificação Escolaridade |         -0.01 |         0.39 |        0.41 |
 | Classificação Idade        |         -0.27 |        -0.05 |        0.22 |
 | Classificação Renda        |         -0.31 |        -0.28 |        0.03 |
 
+Aqui podemos observar uma diferença relevante na variável estado civil. Viver com um cônjuge apresenta um efeito não depressivo, mas parece ter uma maior relevância no sexo masculino.
 
+A seguir, a comparação dos coeficientes da regressão estratificados por Idade < 40 e Idade >= 40.
 
 | Váriaveis                  |   Idade < 40 |   Idade >= 40 |   Diferença |
 |:---------------------------|-------------:|--------------:|------------:|
@@ -550,9 +560,9 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | Câncer                     |         0.43 |          0.53 |        0.11 |
 | Hipertensão                |         0.58 |          0.24 |       -0.34 |
 | Diabetes                   |         0.26 |          0.52 |        0.26 |
-| Cardiovascular             |         1.17 |          0.77 |       -0.40 |
+| Cardiovascular             |         1.17 |          0.77 |   **-0.40** |
 | Hipercolesterolemia        |         0.52 |          0.42 |       -0.10 |
-| AVC                        |         1.12 |          0.62 |       -0.50 |
+| AVC                        |         1.12 |          0.62 |   **-0.50** |
 | Artrite                    |         1.03 |          0.85 |       -0.18 |
 | Obesidade                  |         0.25 |          0.14 |       -0.11 |
 | Sexo                       |        -1.11 |         -0.87 |        0.25 |
@@ -560,7 +570,9 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | Classificação Escolaridade |        -0.05 |          0.27 |        0.31 |
 | Classificação Renda        |        -0.14 |         -0.40 |       -0.26 |
 
+Aqui podemos notar uma diferença significativa nos atributos relacionados a doenças cardiovasculares e AVC.
 
+A seguir, a comparação dos coeficientes da regressão estratificados por grupos de Idade: 20 à 29, 30 à 39, 40 à 49 e 50 à 59
 
 | Váriáveis                  |   Idade [20, 29] |   Idade [30, 39] |   Idade [40, 49] |   Idade [50, 59] |
 |:---------------------------|-----------------:|-----------------:|-----------------:|-----------------:|
@@ -582,6 +594,9 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | Classificação Escolaridade |            -0.33 |             0.18 |             0.32 |             0.16 |
 | Classificação Renda        |             0.02 |            -0.25 |            -0.38 |            -0.35 |
 
+Ao analisar esta tabela, podemos observar a variação da importância de alguns fatores ao longo do tempo. Por exemplo, os exercícios físicos parecem ter um efeito maior em idades mais avançadas.
+
+Na proxima tabela, são comparados os coeficientes da regressão logística para diferentes variáveis, estratificados por Região geográfica: Norte, Nordeste, Sudeste, Sul e Centro-Oeste. A tabela mostra as diferenças nos valores dos coeficientes entre as diferentes regiões, permitindo uma análise das influências regionais nas relações entre as variáveis estudadas.
 
 
 | Variáveis                  |   Região Norte |   Região Nordeste |   Região Sudeste |   Região Sul |   Região Centro Oeste |
@@ -605,13 +620,13 @@ As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado 
 | Classificação Idade        |          -0.11 |             -0.29 |            -0.07 |        -0.30 |                 -0.62 |
 | Classificação Renda        |          -0.42 |             -0.16 |            -0.26 |        -0.49 |                 -0.18 |
 
-
-
-
-O algoritmo de arvore de decisão, assim como a regressão, logistica também tem a vantagem de ser interpretável. A figura abaixo ilustra uma árvore de decisão construída a partir dos dados fornecidos. Essa representação visual demonstra como o algoritmo divide os dados em diferentes ramos, com base em atributos relevantes, até chegar a uma decisão final. Cada nó da árvore representa uma condição que é testada, e as ramificações indicam os possíveis resultados dessa condição.
+O algoritmo de árvore de decisão, assim como a regressão, logística também tem a vantagem de ser interpretável. A figura abaixo ilustra uma árvore de decisão construída a partir dos dados fornecidos. Essa representação visual demonstra como o algoritmo divide os dados em diferentes ramos, com base em atributos relevantes, até chegar a uma decisão final. Cada nó da árvore representa uma condição que é testada, e as ramificações indicam os possíveis resultados dessa condição.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
 
+Ao analisar o gráfico da árvore de decisão, é possível observar que o atributo mais eficaz na separação das classes (depressão ou não) é o sexo. Quando uma pessoa é do sexo masculino e não possui hipertensão, o algoritmo classifica como não-depressiva, uma vez que 70,1% das amostras nessa categoria não apresentam depressão, representando 38,7% de todos os dados. Por outro lado, o algoritmo identifica a depressão em 78,5% dos casos em que a pessoa é do sexo feminino e tem artrite, embora esse cenário seja pouco representativo, abrangendo apenas 4,1% das amostras.
+
+A tabela abaixo compara os coeficientes da regressão logística com os níveis de importância de cada variável de entrada da floresta randômica e a árvore de decisão.
 
 | Variáveis                  | Regressão Logistica | Árvore de Decisão | Floresta Randomica |
 |:---------------------------|--------------------:|------------------:|-------------------:|
@@ -621,43 +636,47 @@ O algoritmo de arvore de decisão, assim como a regressão, logistica também te
 | Tabagismo                  |                0.56 |              0.04 |               0.07 |
 | Consumo Álcool             |               -0.02 |              0.01 |               0.01 |
 | Câncer                     |                0.48 |              0.00 |               0.00 |
-| Hipertensão                |                0.35 |              0.11 |               0.12 |
+| Hipertensão                |                0.35 |              0.11 |           **0.12** |
 | Diabetes                   |                0.49 |              0.02 |               0.00 |
-| Cardiovascular             |                0.85 |              0.03 |               0.00 |
+| Cardiovascular             |            **0.85** |              0.03 |               0.00 |
 | Hipercolesterolemia        |                0.46 |              0.08 |               0.06 |
 | AVC                        |                0.68 |              0.00 |               0.00 |
-| Artrite                    |                0.88 |              0.09 |               0.10 |
+| Artrite                    |            **0.88** |              0.09 |           **0.10** |
 | Obesidade                  |                0.19 |              0.02 |               0.01 |
-| Sexo                       |               -0.95 |              0.46 |               0.51 |
+| Sexo                       |           **-0.95** |              0.46 |           **0.51** |
 | Estado Civil               |               -0.38 |              0.07 |               0.06 |
 | Classificação Escolaridade |                0.11 |              0.00 |               0.00 |
 | Classificação Idade        |               -0.23 |              0.01 |               0.01 |
 | Classificação Renda        |               -0.27 |              0.04 |               0.04 |
 
+Observa-se que tanto a Floresta Randomica quanto as Árvores de Decisão apresentam importâncias relativamente semelhantes, uma vez que são métodos de classificação semelhantes. Ao comparar a Regressão Logística e a Floresta Randomica, ambos elegem o atributo "Sexo" como o mais importante para a classificação. O segundo atributo mais importante na Regressão Logística, "Artrite", é o terceiro mais importante na Floresta Randomica. No entanto, o atributo "Cardiovascular", que é o terceiro mais importante na Regressão Logística, tem importância praticamente zero na Floresta Randomica.
+
 ### Resultados testes
 
-Por fim, a tabala abaixo compara os diferentes tipos de algoritmos experimentados no conjunto de teste final.
+Por fim, a tabala abaixo compara os diferentes tipos de algoritmos experimentados no conjunto de teste final: Regressão Logística, Árvore de Decisão e Floresta Randomica.
 
 |                  | Logistic Regression   | Decision Tree   | Random Forest   |
 |:-----------------|:----------------------|:----------------|:----------------|
 | Acurácia Treino  | 65.74%                | 62.64%          | 59.81%          |
-| Acurácia Teste   | 65.30%                | 62.32%          | 59.17%          |
+| Acurácia Teste   | **65.30%**            | 62.32%          | 59.17%          |
 | Precisão Treino  | 19.25%                | 18.15%          | 17.72%          |
-| Precisão Teste   | 18.49%                | 17.29%          | 16.90%          |
+| Precisão Teste   | **18.49%**            | 17.29%          | 16.90%          |
 | Revocação Treino | 64.72%                | 66.82%          | 71.36%          |
-| Revocação Teste  | 66.39%                | 67.21%          | 72.45%          |
+| Revocação Teste  | 66.39%                | 67.21%          | **72.45%**      |
 | F1 Treino        | 29.67%                | 28.54%          | 28.39%          |
-| F1 Teste         | 28.93%                | 27.51%          | 27.40%          |
+| F1 Teste         | **28.93%**            | 27.51%          | 27.40%          |
 | AUC Treino       | 71.40%                | 69.95%          | 70.95%          |
-| AUC Teste        | 71.57%                | 69.56%          | 70.55%          |
+| AUC Teste        | **71.57%**            | 69.56%          | 70.55%          |
 
-Abaixo podemos ver a Curva ROC entre estes 3 modelos.
-
+Abaixo podemos ver a curva ROC entre estes 3 modelos.
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
 
-Abaixo matriz de confusão para o melhor modelo (regressão logística no conjunto de teste).
+Tanto a curva ROC quanto a tabela concordam em eleger a Regressão Logística como o melhor algoritmo para o problema em questão. Podemos observar na curva ROC que o modelo de Regressão Logística (curva azul) está acima das outras duas curvas em praticamente todos os pontos de tradeoff, o que é consistente com seu maior AUC e maior pontuação F1. No entanto, é importante notar que na métrica de revocação, a Floresta Randomica mostra um desempenho superior aos demais. A Floresta Randomica utiliza uma abordagem de conjunto (ensemble) em que cada Árvore de Decisão é treinada com uma amostra aleatória dos dados de treinamento e, em seguida, suas classificações são agregadas para obter uma previsão final, a vantagem da Floresta Randomica em relação à Regressão Logística é sua capacidade de capturar interações complexas e não lineares entre as variáveis de entrada.
+
+Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão logística no conjunto de teste. Ao analisar a matriz, podemos observar que há um grande número de falsos positivos, o que resulta na precisão baixa previamente relatada. No entanto, em relação aos casos de depressão, o modelo apresenta um número menor de falsos negativos, resultando em uma taxa de revocação de aproximadamente 66%.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
+
 
 
 # Conclusão
