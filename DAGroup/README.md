@@ -88,12 +88,12 @@ _Objetivos específicos:_
 > Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
 > Justificar teoricamente, sempre que possível, a metodologia adotada.
 
-Este trabalho de forma geral procura avaliar e descobrir os fatores de risco para a depressão no Brasil. Para este fim, abordaremos uma metodologia baseada quatro estratégias principais:
+A metodologia do estudo foi baseada em quatro principais estratégias:
 
-- Realização de um estudo bibliográfico, que permitirá entender os padrões esperados para cada pergunta de pesquisa.
+- Realização de um estudo bibliográfico, que permitiu entender os padrões esperados para cada pergunta de pesquisa.
 - Análise exploratória, incluindo seleção e pré-processamento dos dados. 
 - Realização de uma análise estatística, utilizando técnicas de estatística descritiva e visualização, como gráficos de dispersão, caixa, e barras, a fim de extrair conhecimento dos dados.
-- Aplicação de técnicas de aprendizado de máquina (regressão), que nos permita uma análise aprofundada e a quantificação da relevância de cada característica para variável de interesse (depressão). 
+- Aplicação de técnicas de aprendizado de máquina (regressão), que nos permitiu uma análise aprofundada e a quantificação da relevância de cada característica para variável de interesse (depressão).
 
 
 ## Bases de Dados e Evolução
@@ -137,7 +137,7 @@ Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relev
 > * analise correlação e use gráficos de dispersão;
 > * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
 
-Para conduzir as análises deste estudo, categorizamos as variáveis de interesse de acordo com os parâmetros utilizados na literatura, conforme apresentado a seguir:
+Primeiramente realizamos a análise exploratória do banco de dados, buscando uma caracterização da amostra. Em seguida, categorizamos as variáveis de interesse de acordo com os parâmetros utilizados na literatura, conforme apresentado a seguir:
 
 #### Variável dependente:
 
@@ -178,9 +178,6 @@ Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. P
 - **Renda per capita** [5]: recebe menos de 1 salário mínimo (0) ou recebe mais de 1 salário mínimo (1);
 - **Localidade**: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
-#### Análise Exploratória
-
-A seguir, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
@@ -189,6 +186,10 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 ** Arrumar workflow **
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png)
+
+#### Análise Exploratória
+
+A seguir, apresentamos algumas características identificadas na base de dados selecionada, juntamente com os resultados da análise exploratória.
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
@@ -202,7 +203,7 @@ Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e d
 
 ![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
 
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27) num comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
 
 ![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
