@@ -314,12 +314,88 @@ A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais 
 
 Fonte: Autores(2023)
 
+### Análise de Componentes Princicais e Clusterização
+
+Uma forma de segregar os dados bucando por descobrir relacionamentos entre variáveis é a aplicação de técnica de agrupamento ou clusterização. Esta técnica pode contribuir no processo de descoberta observando-se como as amostras se essemalham mas sem o uso da uma variável alvo, um processo chamado de aprendizado não-supervisionado.
+Antes de executar a clusterização, buscando por descobrir mais sobre os dados e o relacionamento entre as variáveis, foi feita análise de componentes principais (PCA) para redução de dimensionalidade. Isso poderia reduzir ruídos de variáveis que agregam pouco na variância dos dados e trazer melhores resultados na clusterização.
+
+O PCA mostrou que  seriam necessárias as nove primeiras componentes para explicar, pelo menos, 80% da variância dos dados. Esse número pode ser retirado do gráfico 5 que mostra a variância acumulada a cada componente principal do PCA.
+
+### Gráfico 5 - Variância acumulado no PCA
+
+![Figura 10](./reports/figures/cumulative_variance_PCA.png)
+
+O PCA com nove componentes resulta numa variância de 81%.
+
+Foi aplicada então uma clusterização pelo método K-Means que encontra agrupamentos atra'ves do cálculo de "centróides" nos dados e da distância de cada amostra a esses centróides.
+O método exige que o número K de agrupamentos seja fornecido a priori. Para uma busca por um número ótimo de agrupamentos, o modelo foi executado com número de clusters de 1 a 20 e depois utilizamos o gráfico do "cotovelo" para selecionarmos o melhor valor de K.
+
+### Gráfico 6 - Resultado das distâncias médias quadradas para cada valor de K de 1 a 20
+
+![Figura 11](./reports/figures/kmeans.png)
+
+Pelo gráfico 6 foi feita a escolha do número quatro como o melhor número de clusters para nosso problema.
+
+Foi feito, então o plot dos quatros clusters identificados pelo K-Means considerando-se os dois primeiros componentes principais do PCA, como uma forma de simplificar a visualização.
+
+### Gráfico 7 - Resultado da clusterização com quatro agrupamentos (K = 4)
+
+![Figura 12](./reports/figures/clusters.png)
+
+Alguns gráficos foram elaborados para cada cluster na busca por encontrar relacionamentos interessantes à resolução do nosso problema. Estes gráficos foram:
+
+> Faixa etária versus quantidade de pacientes homens e mulheres
+> Quantidade da casos versus a gravidade da doença
+> Quantidade de pacientes obesos e não obesos
+> Nível de vitamina D pré-infecção versus desfecho de óbito ou não-óbito
+
+### Gráficos do Cluster 1
+
+![Figura 13](./reports/figures/cluster1_faixa_etaria.png)
+
+![Figura 14](./reports/figures/cluster1_gravidade.png)
+
+![Figura 15](./reports/figures/cluster1_IMC.png)
+
+![Figura 16](./reports/figures/cluster1_nivel_vitD_pre.png)
+
+### Gráficos do Cluster 2
+
+![Figura 13](./reports/figures/cluster2_faixa_etaria.png)
+
+![Figura 14](./reports/figures/cluster2_gravidade.png)
+
+![Figura 15](./reports/figures/cluster2_IMC.png)
+
+![Figura 16](./reports/figures/cluster2_nivel_vitD_pre.png)
+
+### Gráficos do Cluster 3
+
+![Figura 13](./reports/figures/cluster3_faixa_etaria.png)
+
+![Figura 14](./reports/figures/cluster3_gravidade.png)
+
+![Figura 15](./reports/figures/cluster3_IMC.png)
+
+![Figura 16](./reports/figures/cluster3_nivel_vitD_pre.png)
+
+### Gráficos do Cluster 4
+
+![Figura 13](./reports/figures/cluster4_faixa_etaria.png)
+
+![Figura 14](./reports/figures/cluster4_gravidade.png)
+
+![Figura 15](./reports/figures/cluster4_IMC.png)
+
+![Figura 16](./reports/figures/cluster4_nivel_vitD_pre.png)
+
+
 Um modelo de regressão linear múltipla foi aplicado com todas as variáveis, obtendo-se uma baixa explicação do
 modelo; no entanto, a remoção de algumas variantes atingiu uma eficácia de 65%. A Figura 5 apresenta a saída obtida para o melhor resultado. 
 
 ### Figura 5- Regressão Linear Múltipla
 
-![Figura 10](./reports/figures/saida.png)
+![Figura 13](./reports/figures/saida.png)
 
 Fonte: Autores(2023)
 
