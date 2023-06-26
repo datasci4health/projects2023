@@ -14,7 +14,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
 ## Slides da Apresentação Final
-> Link para slides da apresentação final do projeto.
+
+[Link para slides da apresentação final do projeto](https://www.canva.com/design/DAFmwXEC7yY/icnFkTJZTTm-u82yPKs00A/edit?utm_content=DAFmwXEC7yY)
 
 ## Apresentação inicial do projeto
 
