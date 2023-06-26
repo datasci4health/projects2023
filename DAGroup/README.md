@@ -54,7 +54,7 @@ O modelo de regressão logística apresentou o melhor desempenho preditivo, com 
 > Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
 > Objetivos principais e específicos
 
-Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada dos determinantes associados à depressão no Brasil.
+Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada dos determinantes associados à depressão.
 
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
