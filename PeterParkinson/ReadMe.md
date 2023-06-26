@@ -186,3 +186,23 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 | Pré-processamento de dados | 2 semanas |
 | Análise integrativa de dados | 3 semanas |
 |Análise funcional de genes | 2 semanas |
+
+# Organizaçaõ do git
+
+├── README.md                     <- apresentação do projeto
+│
+├── data
+│   ├── external                
+│       ├── bases adotadas       <- base de terceira utilizada para o trabalho
+│       ├── baeses não adotadas  <- base de terceiros estudadas, porém não utilizadas
+│   ├── interim                  <- dados intermediários, e.g., resultado de transformação
+│   ├── processed                <- dados finais usados para a modelagem
+│
+├── notebooks                    <- jupyter notebooks ou equivalentes
+│
+├── models                       <- modelos simples salvos
+│
+├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange)
+│   └── README.md      <- instruções básicas de instalação/execução
+│
+└── assets             <- mídias usadas no projeto
