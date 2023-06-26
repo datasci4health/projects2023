@@ -38,7 +38,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > 
 > Como as percepções obtidas a partir da análise de dados podem ser utilizadas para melhorar o planejamento financeiro dos sistemas de saúde em relação ao tratamento da hanseníase?*
 > 
-> Qual é o desempenho dos modelos de machine learning na previsão do tempo de cura dos pacientes com hanseníase?
+> Qual é o desempenho dos modelos de machine learning na previsão do tipo de saída do tratamento (cura ou abandono) dos pacientes com hanseníase?
 
 # Objetivos
 ## Geral
