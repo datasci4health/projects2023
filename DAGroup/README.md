@@ -253,7 +253,7 @@ O indicador de consumo de bebida alcoólica utilizado pela PNS foi elabora basea
 Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidas da análise.
 
 
-Para realizar nossa análise e responder às questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
+Para realizar as análise e responder às demais questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
 
 Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à sua confiabilidade em conjuntos não balanceados. Realizamos testes removendo as linhas com dados nulos e também empregamos técnicas de imputação para encontrar o melhor modelo.
 
