@@ -602,6 +602,27 @@ O algoritmo de arvore de decisão, assim como a regressão, logistica também te
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
 
 
+| Variáveis                  | Regressão Logistica | Árvore de Decisão | Floresta Randomica |
+|:---------------------------|--------------------:|------------------:|-------------------:|
+| Intercepto                 |                0.30 |                   |                    |
+| Ultraprocessados           |                0.48 |              0.00 |               0.00 |
+| Exercício Físico           |               -0.23 |              0.03 |               0.02 |
+| Tabagismo                  |                0.56 |              0.04 |               0.07 |
+| Consumo Álcool             |               -0.02 |              0.01 |               0.01 |
+| Câncer                     |                0.48 |              0.00 |               0.00 |
+| Hipertensão                |                0.35 |              0.11 |               0.12 |
+| Diabetes                   |                0.49 |              0.02 |               0.00 |
+| Cardiovascular             |                0.85 |              0.03 |               0.00 |
+| Hipercolesterolemia        |                0.46 |              0.08 |               0.06 |
+| AVC                        |                0.68 |              0.00 |               0.00 |
+| Artrite                    |                0.88 |              0.09 |               0.10 |
+| Obesidade                  |                0.19 |              0.02 |               0.01 |
+| Sexo                       |               -0.95 |              0.46 |               0.51 |
+| Estado Civil               |               -0.38 |              0.07 |               0.06 |
+| Classificação Escolaridade |                0.11 |              0.00 |               0.00 |
+| Classificação Idade        |               -0.23 |              0.01 |               0.01 |
+| Classificação Renda        |               -0.27 |              0.04 |               0.04 |
+
 ### Resultados testes
 
 Por fim, a tabala abaixo compara os diferentes tipos de algoritmos experimentados no conjunto de teste final.
