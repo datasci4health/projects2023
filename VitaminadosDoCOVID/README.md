@@ -314,6 +314,8 @@ A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais 
 
 Fonte: Autores(2023)
 
+Analisando as informações obtidas na até aqui é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
+
 ### Análise de Componentes Princicais e Clusterização
 
 Uma forma de segregar os dados bucando por descobrir relacionamentos entre variáveis é a aplicação de técnica de agrupamento ou clusterização. Esta técnica pode contribuir no processo de descoberta observando-se como as amostras se essemalham mas sem o uso da uma variável alvo, um processo chamado de aprendizado não-supervisionado.
@@ -388,6 +390,13 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 ![Figura 15](./reports/figures/cluster4_IMC.png)
 
 ![Figura 16](./reports/figures/cluster4_nivel_vitD_pre.png)
+
+Dos gráficos acima, conseguimos destacar os resultados do Cluster 1 (verde) e do Cluster 4 (lilás). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de vitamina D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
+
+Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de vitamina D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
+
+Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
+
 
 
 Um modelo de regressão linear múltipla foi aplicado com todas as variáveis, obtendo-se uma baixa explicação do
