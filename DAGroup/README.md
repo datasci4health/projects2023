@@ -564,11 +564,20 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 
 ### Resultados testes
 
-| **exp**             | **accuracy_train** | **precision_train** | **recall_train** | **f1_train** | **auc_train** | **accuracy_test** | **precision_test** | **recall_test** | **f1_test** | **auc_test** |
-| ------------------- | ------------------ | ------------------- | ---------------- | ------------ | ------------- | ----------------- | ------------------ | --------------- | ----------- | ------------ |
-| Logistic Regression | 65,76%             | 19,26%              | 64,72%           | 29,68%       | 71,40%        | 65,33%            | 18,49%             | 66,27%          | 28,91%      | 71,57%       |
-| Decision Tree       | 62,67%             | 18,16%              | 66,82%           | 28,56%       | 70,11%        | 61,99%            | 16,91%             | 65,76%          | 26,90%      | 69,33%       |
-| Random Forest       | 60,28%             | 17,92%              | 71,46%           | 28,66%       | 71,21%        | 59,48%            | 16,90%             | 71,75%          | 27,36%      | 70,67%       |
+
+|                  | Logistic Regression   | Decision Tree   | Random Forest   |
+|:-----------------|:----------------------|:----------------|:----------------|
+| Acurácia Treino  | 65.74%                | 62.64%          | 59.81%          |
+| Acurácia Teste   | 65.30%                | 62.32%          | 59.17%          |
+| Precisão Treino  | 19.25%                | 18.15%          | 17.72%          |
+| Precisão Teste   | 18.49%                | 17.29%          | 16.90%          |
+| Revocação Treino | 64.72%                | 66.82%          | 71.36%          |
+| Revocação Teste  | 66.39%                | 67.21%          | 72.45%          |
+| F1 Treino        | 29.67%                | 28.54%          | 28.39%          |
+| F1 Teste         | 28.93%                | 27.51%          | 27.40%          |
+| AUC Treino       | 71.40%                | 69.95%          | 70.95%          |
+| AUC Teste        | 71.57%                | 69.56%          | 70.55%          |
+
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
 
