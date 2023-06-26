@@ -244,7 +244,7 @@ Primeiramente analizando a faixa etária da base, há um número maior de pessoa
 
 ### Gráfico 1- Distribuição dos Pacientes por Faixa Etária e Gênero 
 
-![Figura 4](./reports/figures/distribuicao.png)
+![Figura 3](./reports/figures/distribuicao.png)
 
 Fonte: Autores(2023)
 
@@ -253,7 +253,7 @@ amostras, como demonstrado no Gráfico 2.
 
 ### Gráfico 2- Gravidade Durante Hospitalização
 
-![Figura 5](./reports/figures/gravidade.png)
+![Figura 4](./reports/figures/gravidade.png)
 
 Fonte: Autores(2023)
 
@@ -261,7 +261,7 @@ Com relação aos índices de vitamina D, pode-se observar que, na maioria dos c
 
 ### Gráfico 3- Distribuição dos Níveis de 25(OH)D pré-infecção X Religião
 
-![Figura 6](./reports/figures/religiao.png)
+![Figura 5](./reports/figures/religiao.png)
 
 Fonte: Autores(2023)
 
@@ -270,7 +270,7 @@ número de mortes é considerável em comparação com o restante das categorias
 
 ### Gráfico 4- Relação dos Níveis de 25(OH)D pré-infecção X Morte Durante Hospitalização
 
-![Figura 7](./reports/figures/morte.png)
+![Figura 6](./reports/figures/morte.png)
 
 Fonte: Autores(2023)
 
@@ -291,7 +291,7 @@ A fim de replicar os resultados obtidos por [Dror et.al(2022)](https://doi.org/1
 
 ### Figura 3- Box plot dos Níveis Séricos Pré-infecção de Vitamina D.
 
-![Figura 3](./reports/figures/severidade.jpeg)
+![Figura 7](./reports/figures/severidade.jpeg)
 
 Fonte: Autores(2023)
 
@@ -309,16 +309,16 @@ Em seguida para análises de correlação, foram calculados os p-valores utiliza
  
 Por fim, as correlações entre o nível de 25(OH)D e a gravidade da doença COVID-19 (variável contínua e variável medida na escala ordinal) foram examinadas com o teste de coeficiente de correlação de Spearman. Embora a idade e o status de vitamina D pré-infecção sejam preditores independentes de aumento da gravidade da doença, uma correlação significativa foi encontrada entre a deficiência de vitamina D e a faixa etária(<50, 50–64, ≥65), como pode ser visto na Figura 4.
 
-### Figura 5- Correlação entre o status de deficiência de vitamina D pré-infecção e a gravidade da doença COVID-19 - Divididos por Faixa Etária
+### Figura 4- Correlação entre o status de deficiência de vitamina D pré-infecção e a gravidade da doença COVID-19 - Divididos por Faixa Etária
 
-![Figura 5](./reports/figures/graficos.png)
+![Figura 8](./reports/figures/graficos.png)
 
 Fonte: Autores(2023)
 
 
 A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais escuro mais diretamente correlacionadas. A linha diagonal tem correlação 1 pois se refere à correlação de uma variável com ela mesma, mas é possível notar que a hipertensão HTN e COPD apresentam uma alta correlação. Isso sugere que há uma associação significativa entre essas duas condições crônicas. Fatores como tabagismo, obesidade e problemas de saúde em geral podem contribuir para o desenvolvimento e a progressão de ambas as doenças.
 
-### Figura 4- Correlação entre Variáveis
+### Figura 5- Correlação entre Variáveis
 
 ![Figura 9](./reports/figures/eda.png)
 
@@ -381,43 +381,43 @@ Fonte: Autores(2023)
 
 ### Gráficos do Cluster 2
 
-![Figura 13](./reports/figures/cluster2_faixa_etaria.png)
+![Figura 17](./reports/figures/cluster2_faixa_etaria.png)
 
-![Figura 14](./reports/figures/cluster2_gravidade.png)
+![Figura 18](./reports/figures/cluster2_gravidade.png)
 
-![Figura 15](./reports/figures/cluster2_IMC.png)
+![Figura 19](./reports/figures/cluster2_IMC.png)
 
-![Figura 16](./reports/figures/cluster2_nivel_vitD_pre.png)
+![Figura 20](./reports/figures/cluster2_nivel_vitD_pre.png)
 
 Fonte: Autores(2023)
 
 ### Gráficos do Cluster 3
 
-![Figura 13](./reports/figures/cluster3_faixa_etaria.png)
+![Figura 21](./reports/figures/cluster3_faixa_etaria.png)
 
-![Figura 14](./reports/figures/cluster3_gravidade.png)
+![Figura 122](./reports/figures/cluster3_gravidade.png)
 
-![Figura 15](./reports/figures/cluster3_IMC.png)
+![Figura 23](./reports/figures/cluster3_IMC.png)
 
-![Figura 16](./reports/figures/cluster3_nivel_vitD_pre.png)
+![Figura 24](./reports/figures/cluster3_nivel_vitD_pre.png)
 
 Fonte: Autores(2023)
 
 ### Gráficos do Cluster 4
 
-![Figura 13](./reports/figures/cluster4_faixa_etaria.png)
+![Figura 25](./reports/figures/cluster4_faixa_etaria.png)
 
-![Figura 14](./reports/figures/cluster4_gravidade.png)
+![Figura 26](./reports/figures/cluster4_gravidade.png)
 
-![Figura 15](./reports/figures/cluster4_IMC.png)
+![Figura 27](./reports/figures/cluster4_IMC.png)
 
-![Figura 16](./reports/figures/cluster4_nivel_vitD_pre.png)
+![Figura 28](./reports/figures/cluster4_nivel_vitD_pre.png)
 
 Fonte: Autores(2023)
 
-Dos gráficos acima, conseguimos destacar os resultados do Cluster 1 (verde) e do Cluster 4 (lilás). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de vitamina D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
+Dos gráficos acima, conseguimos destacar os resultados do Cluster 1 e do Cluster 4 (verde e lilás no gráfico 7). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de 25(OH)D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
 
-Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de vitamina D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
+Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de 25(OH)D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
 
 Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
 
@@ -426,9 +426,9 @@ Esses foram justamenta os dois clusters mais bem separados se observarmos o grá
 Um modelo de regressão linear múltipla foi aplicado com todas as variáveis, obtendo-se uma baixa explicação do
 modelo; no entanto, a remoção de algumas variantes atingiu uma eficácia de 65%. A Figura 5 apresenta a saída obtida para o melhor resultado. 
 
-### Figura 5- Regressão Linear Múltipla
+### Figura 6- Regressão Linear Múltipla
 
-![Figura 13](./reports/figures/saida.png)
+![Figura 29](./reports/figures/saida.png)
 
 Fonte: Autores(2023)
 
