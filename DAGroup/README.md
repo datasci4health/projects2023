@@ -378,6 +378,15 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 
 Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre todos os comportamentos de saúde elencados e o desfecho do estudo (p ≤ 0,05). Esses achados estão em consonância com a literatura, a qual mostra associação desses comportamentos de saúde inadequados com o diagnóstico de depressão. 
 
+Ao observarmos o score de consumo de produtos ultraprocessados encontramos que as pessoas com depressão possuem um ligeiro maior consumo de ultraprocessados em relação as pessoas sem o diagnóstico de depressão. Diversos estudos mostram uma associação positiva entre maior consumo de produtos ultraprocessados como refrigerantes e doces com depressão, independente de renda e sexo. 
+
+No que se refere a prática de exercício físico foi observado uma maior proporção de pessoas com depressão que não praticam exercício físico, assim como mostrado na literatura. Diversos estudos, dentre eles algumas metanálises, apresentam evidências de que qualquer nível de atividade física atenua o risco de depressão e independentemente da idade o exercício físico é um fator protetor para o desenvolvimento da depressão.
+
+
+Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população. (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool. (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
+
+
+
 | **Comportamentos de saúde**                         |                | **População 2019** | **Sem depressão** | **Com Depressão** | **X²** *| **p** * |
 |-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
 |                                                     |                | n = 64.664         | n = 57.816        | n = 6.848         |         |        |
@@ -386,8 +395,8 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 |                                                     | 4, 5           | 18,77%             | 18,70%            | 19,32%            | ---     | ---    |
 |                                                     | 6, 7           | 5,35%              | 5,28%             | 5,99%             | ---     | ---    |
 |                                                     | 8, 9, 10       | 1,57%              | 1,53%             | 1,97%             | ---     | ---    |
-| **Prática de exercício físico nos últimos 3 meses** | Praticante     | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
-|                                                     | Não praticante | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
+| **Prática de exercício físico nos últimos 3 meses** | Sim            | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
+|                                                     | Não            | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
 | **Consumo de bebida alcoólica no último mês**       | Sim            | 44,88%             | 45,45%            | 40,07%            | 71,7    | 0,0000 |
 |                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
 | **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
@@ -395,10 +404,6 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 
 \* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
-Ao observarmos o score de consumo de produtos ultraprocessados encontramos que as pessoas com depressão possuem um ligeiro maior consumo de ultraprocessados em relação as pessoas sem o diagnóstico de depressão. Diversos estudos mostram uma associação positiva entre maior consumo de produtos ultraprocessados como refrigerantes e doces com depressão, independente de renda e sexo. 
-
-
-Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população. (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool. (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
 
 
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. 
