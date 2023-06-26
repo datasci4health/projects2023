@@ -245,18 +245,79 @@ Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado br
 
 Iniciamos as análises buscando a associação das variaveis de interesse com o diagnóstico de depressão por meio do teste χ2 de Pearson, devido ao fato das nossas variáveis serem qualitativas.
 
-Nessa etapa houve a preocupação de averiguar os dados faltantes de cada variável de interesse, gerando necessidade de algumas alterações na seleção dessas variáveis, pois primeiramente haviamos desenvolvido indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como em indicadores de consumo de álcool e prática de exercício físico. Por exemplo, o indicador utilizado pela PNS, que foi elabora baseado em definições da OMS considera uma pessoa ativa com base na relação entre o tempo gasto e tipo de atividade física (leve, moderada e vigorosas), porém as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. Devido a esse problema, modificou-se o critério de classificação de exercício físico, baasendo-se em artigos que também avaliam a PNS, considerando ativos aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11] e para essa variável não foi encontrados dados faltantes. 
+Nessa etapa houve a preocupação de averiguar os dados faltantes de cada variável de interesse, gerando necessidade de algumas alterações na seleção dessas variáveis, pois primeiramente haviamos desenvolvido indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como em indicadores de consumo de álcool e prática de exercício físico. Por exemplo, o indicador utilizado pela PNS, que foi elaborado baseado em definições da OMS considera uma pessoa ativa com base na relação entre o tempo gasto e tipo de atividade física (leve, moderada e vigorosa), porém as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. Devido a esse problema, modificou-se o critério de classificação de exercício físico, baasendo-se em artigos que também avaliam a PNS, considerando ativos aqueles que realizaram algum tipo de exercício físico nos últimos três meses [11] e para essa variável não foi encontrados dados faltantes. 
 
 No que diz respeito ao indicador de consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas como o elecando o site da PNS, constatou-se que cerca de 69% dos dados estavam faltando.
 
- Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
+Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal [5], que não apresenta dados faltantes.
 
 Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
 
-No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
+No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar o F1-score como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
 
-***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
-Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
+Para realizar nossa análise e responder às questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
+
+Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à sua confiabilidade. Realizamos testes removendo as linhas com dados nulos e também empregamos técnicas de imputação para encontrar o melhor modelo.
+
+A maioria das variáveis no conjunto de dados possui valores binários. No entanto, as variáveis restantes foram normalizadas para uma escala de 0 a 1, a fim de possibilitar uma comparação justa dos coeficientes de regressão.
+
+Para investigar a importância dos determinantes e sua influência no diagnóstico de depressão, construímos vários modelos modificando as variáveis independentes. No primeiro modelo, selecionamos apenas as variáveis relacionadas a comportamentos de saúde. No segundo modelo, selecionamos apenas as variáveis relacionadas a doenças crônicas não transmissíveis. No terceiro modelo, incluímos tanto as variáveis de comportamentos de saúde quanto as de doenças crônicas não transmissíveis. Por fim, no quarto modelo, utilizamos apenas as variáveis sociodemográficas. Essa abordagem nos permitiu comparar e analisar separadamente a influência de cada grupo de fatores no diagnóstico de depressão.
+
+Por fim, criamos um último modelo que incluiu todas as variáveis e conduzimos análises estratificadas sociodemográficas para, por exemplo, investigar variações dos fatores ao longo da vida, com o objetivo de avaliar os coeficientes mais distintos.
+
+Além da regressão logística, também realizamos testes com árvores de decisão e floresta randômica. Para todos os algoritmos utilizados, aplicamos uma busca em grade para otimizar os hiperparâmetros dos modelos, conforme os snippets abaixo:
+
+~~~python
+param_grid = {
+    'reg__C': [0.1, 1.0, 10.0],
+    'reg__solver': ['liblinear', 'saga'],
+    'reg__max_iter': [100, 500, 1000]
+}
+
+model = Pipeline([
+    ('reg', LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42))
+])
+
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
+grid_search.fit(X, y)
+~~~
+
+~~~python
+param_grid = {
+    'class__criterion': ['gini', 'entropy'],
+    'class__max_depth': [None, 5, 10],
+    'class__min_samples_split': np.arange(0, 0.05, 0.01),
+    'class__min_samples_leaf': np.arange(0.01, 0.05, 0.01)
+}
+
+model = Pipeline([
+    ('trans', RoundTransformer()),
+    ('class', DecisionTreeClassifier(class_weight='balanced', random_state=43, 
+                                     min_samples_split=0.05, min_samples_leaf=0.01))
+])
+
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
+~~~
+
+~~~python
+param_grid = {
+    'class__criterion': ['gini', 'entropy'],
+    'class__max_depth': [None, 5, 10],
+    'class__min_samples_split': np.arange(0, 0.05, 0.01),
+    'class__min_samples_leaf': np.arange(0.01, 0.05, 0.01)
+}
+
+model = Pipeline([
+    ('trans', RoundTransformer()),
+    ('class', RandomForestClassifier(class_weight='balanced', random_state=43, 
+                                     min_samples_split=0.05, min_samples_leaf=0.01))
+])
+
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
+~~~
+
+Essas abordagens metodológicas foram adotadas com o intuito de realizar uma análise abrangente e fornecer respostas às questões de pesquisa propostas.
+
 
 
 # Ferramentas
@@ -393,20 +454,7 @@ Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logi
 
 A próxima tabela apresenta os resultados de diferentes abordagens experimentadas no modelo. Cada linha representa uma abordagem específica, como remoção de linhas nulas, substituição de valores faltantes pela média, substituição de valores faltantes pela mediana, uso de SMOTE (técnica de oversampling) e melhores resultados obtidos através de um 'Grid Search', executado pelo codigo abaixo:
 
-~~~python
-param_grid = {
-    'reg__C': [0.1, 1.0, 10.0],
-    'reg__solver': ['liblinear', 'saga'],
-    'reg__max_iter': [100, 500, 1000]
-}
 
-model = Pipeline([
-    ('reg', LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42))
-])
-
-grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
-grid_search.fit(X, y)
-~~~
 
 | Abordagens experimentadas    | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
 |:-----------------------------|:------------|:---------------|:-------------|:---------------|
