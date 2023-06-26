@@ -347,7 +347,7 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 ### Testes de associação
 
-Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9, obbtivemos que sexo, cor, idade, escolaridade, , renda per capita possui associação (p < 0,05) com alto potencial de depressão.
+Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9. Obtivemos que sexo, idade, escolaridade, renda per capita possui associação (p < 0,05) com alto potencial de depressão.
 
 | **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -356,12 +356,16 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 |                                 	| Médio completo e superior incompleto    	| 15,08%             	| 17,29%            	| 16,75%            	| ---      	| ---     	|
 |                                 	| Fundamental completo e médio incompleto 	| 35,7%              	| 41,09%            	| 38,09%            	| ---      	| ---     	|
 |                                 	| Sem instrução e fundamental incompleto  	| 31,94%             	| 36,06%            	| 40%               	| ---      	| ---     	|
-| **Sexo**                        	| Masculino                               	| 48,29%             	| 49,08%            	| 73,91%            	| 1510,69  	| 0,0000  	|
-|                                 	| Feminino                                	| 51,71%             	| 50,92%            	| 26,10%            	| ---      	| ---     	|
+| **Sexo**                        	| Masculino                               	| 48,29%             	| 50,92%            	| 26,10%            	| 1510,69  	| 0,0000  	|
+|                                 	| Feminino                                	| 51,71%             	| 49,08%            	| 73,91%            	| ---      	| ---     	|
 | **Estado civil**                	| Mora com parceiro                       	| 59,89%             	| 39,01%            	| 49,40%            	| 275,03   	| 0,0000  	|
 |                                 	| Não mora com parceiro                   	| 40,11%             	| 60,99%           	 | 50,60%            	| ---      	| ---     	|
 | **Renda per capita**            	| Recebe mais de 1 salário mínimo         	| 42,28%             	| 43,08%            	| 35,57%            	| 141,31   	| 0,0000  	|
 |                                 	| Recebe menos de 1 salário mínimo        	| 56,92%             	| 56,92%            	| 64,43             	| ---      	| ---     	|
+|**Idade**                         | 18 a 29 anos (1)                         | 23,04%              | 23,29%             | 20,95%             | 76,40     | 0,0000   |
+|                                  | 30 a 39 anos (2)                         | 27,46%              | 27,78%             | 24,71%             |           |          |
+|                                  | 40 a 49 anos (3)                         | 25,25%              | 25,25%             | 27,06%             |           |          |
+|                                  | 50 a 59 anos (4)                         | 24,06%              | 23,68%             | 27,29%             |           |          |
 | **Localidade**                  	| Norte                                   	| 20,42%             	| 20,77%            	| 17,46%            	| 41,14    	| 0,0000  	|
 |                                 	| Nordeste                                	| 34,90%             	| 34,73%            	| 36,40%            	| 7,60     	| 0,0058  	|
 |                                 	| Sudeste                                 	| 20,70%             	| 20,48%            	| 22,49%            	| 14,99    	| 0,0001  	|
