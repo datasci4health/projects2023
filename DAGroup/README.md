@@ -271,18 +271,18 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 | perc_saude          | 7782,9   | 0,00000     |
 
 
-Inicialmente, buscou-se criar indicadores baseados em referências utilizadas pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). Entretanto, ao analisar os dados resultantes, notou-se uma grande quantidade de dados faltantes nas variáveis que compunham esses indicadores, como consumo alcoólico e realização de atividade física. Por exemplo, para a PNS, uma pessoa só pode ser considerada ativa com base na relação de tempo gasto em atividades consideradas vigorosas e leves ou moderadas. No entanto, as variáveis necessárias para a construção desse indicador apresentaram uma ausência de cerca de 58% dos dados. Já em relação ao consumo alcoólico, com base na frequência semanal do consumo de bebidas alcoólicas, encontrou-se cerca de 69% de dados faltantes.
 
-Devido a esse problema, alterou-se o referencial de classificação de exercício físico para indivíduos considerados ativos, agora definidos como aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11]. Para o segmento populacional deste estudo, não houve dados faltantes nessa análise. Quanto ao consumo alcoólico, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
+Inicialmente, criamos indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, ao analisar os dados resultantes, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como consumo de álcool e prática de atividade física. Por exemplo, no caso da PNS, considera-se uma pessoa ativa com base na relação entre o tempo gasto em atividades vigorosas e em atividades leves ou moderadas. No entanto, as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. No que diz respeito ao consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas, constatou-se que cerca de 69% dos dados estavam faltando.
 
-Além disso, em relação às doenças crônicas, notou-se uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optou-se por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
+Devido a esse problema, modificou-se o critério de classificação de exercício físico para os indivíduos considerados ativos, agora definidos como aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11]. Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
 
-Para desenvolvimento do modelo, encontramos outro problema relacionado ao grande desbalanceamento na quantidade de pessoas diagnosticadas com depressão ou não. Do total de 64.664 pessoas, apenas 6.848 (10,6%) foram avaliadas como depressivas, com um valor de PHQ9 maior ou igual a 10. Portanto, inicialmente aplicou-se o algoritmo SMOTE no conjunto de treinamento, gerando dados sintéticos na classe menos presente. No entanto, utilizando a curva ROC-AUC como parâmetro, a regressão logística com penalidade para a classe majoritária mostrou-se uma abordagem melhor.
+Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
+
+No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
+
 
 ***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
-
-
 
 
 # Ferramentas
@@ -335,16 +335,16 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 |-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
 |                                                     |                | n = 64.664         | n = 57.816        | n = 6.848         |         |        |
 | **Score de Consumo de Ultraprocessado**             | 0,1            | 36,53%             | 36,68%            | 35,27%            | 24,9    | 0,0056 |
-|                                                     | 2,3            | 37,78%             | 37,81%            | 37,46%            |         |        |
-|                                                     | 4,5            | 18,77%             | 18,70%            | 19,32%            |         |        |
-|                                                     | 6,7            | 5,35%              | 5,28%             | 5,99%             |         |        |
-|                                                     | 8,9,10         | 1,57%              | 1,53%             | 1,97%             |         |        |
+|                                                     | 2,3            | 37,78%             | 37,81%            | 37,46%            | ---     | ---    |
+|                                                     | 4,5            | 18,77%             | 18,70%            | 19,32%            | ---     | ---    |
+|                                                     | 6,7            | 5,35%              | 5,28%             | 5,99%             | ---     | ---    |
+|                                                     | 8,9,10         | 1,57%              | 1,53%             | 1,97%             | ---     | ---    |
 | **Prática de exercício físico nos últimos 3 meses** | Praticante     | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
-|                                                     | Não praticante | 43,22%             | 55,80%            | 65,00%            |         |        |
+|                                                     | Não praticante | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
 | **Consumo de bebida alcoólica no último mês**       | Sim            | 44,88%             | 45,45%            | 40,07%            | 71,7    | 0,0000 |
-|                                                     | Não            | 55,12%             | 54,55%            | 59,93%            |         |        |
+|                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
 | **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
-|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            |         |        |
+|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
 * Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão. 
