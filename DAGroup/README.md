@@ -30,7 +30,6 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Indicação (bastante resumida) da análise proposta
 > Indicação (bastante resumida) dos resultados alcançados
 
-
 As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
 
 A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
@@ -44,7 +43,6 @@ A utilização de inquéritos de saúde nacionais se torna extremamente pertinen
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/DAG.jpg)
-
 
 Neste trabalho, utilizamos técnicas de análise estatística, como o teste qui-quadrado, para avaliar a prevalência de fatores associados a depressão. Além disso, treinamos modelos de classificação binária para prever se uma pessoa é potencialmente afetada pela depressão (utilizando o questionário PHQ-9) a partir de variáveis de pesquisa, incluindo hábitos, doenças crônicas e características sociodemográficas.
 
@@ -61,13 +59,13 @@ Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundad
  - Quais hábitos de vida estão associados à depressão? 
  - É possível quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas? 
  - A influência desses fatores varia ao longo do curso da vida e de variaveis sociodemográficas?
-- Será que os comportamentos de saúde e/ou doenças crônicas não transmissíveis são determinantes para o diagnóstico de depressão? 
+ - Será que os comportamentos de saúde e/ou doenças crônicas não transmissíveis são determinantes para o diagnóstico de depressão? 
 
 Através dos experimentos exploratórios, análise de correlação e gráficos de distribuição, foram confirmados a associação entre a depressão (utilizando χ2 de Pearson) com os comportamentos de saúde inadequados e as doenças crônicas não transmissíveis elecandas no estudo, variaveis que estão em consonância com a literatura existente. Essas descobertas já contribuem para responder a primeira questão de pesquisa.
 
-Para abordar a segunda questão, utilizamos a análise de regressão logística. Essa abordagem permitium avaliar de forma mais precisa o grau de impacto de cada hábito, considerando tanto as influências positivas quanto as negativas, relacionadas à depressão.
+Para abordar a segunda questão, utilizamos a análise de regressão logística. Essa abordagem permitiu avaliar de forma mais precisa o grau de impacto de cada hábito, considerando tanto as influências positivas quanto as negativas, relacionadas à depressão.
 
-Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. No entanto, os fatores que influenciam essa diferença foram confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
+Em relação à terceira questão, observou-se uma diferença na distribuição do potencial de depressão em relação à idade e renda. Os fatores que influenciam essa diferença foram confrontados e explorados por meio da análise de regressão logística, possibilitando uma compreensão mais aprofundada.
 
 Para a quarta questão, realizamos uma comparação das eficácias dos modelos de regressão logística utilizando cada grupo de variáveis separadamente. Por meio desses experimentos, pudemos observar uma forte associação entre doenças crônicas e depressão, as quais demonstraram uma eficácia maior na classificação, em comparação às variáveis de hábitos, e praticamente igual em relação às variáveis sociodemográficas. 
 
@@ -173,11 +171,11 @@ Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. P
 
 *Variáveis relacionadas ao perfil sociodemográfico:*
 
-- **Escolaridade**: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo;
-- **Sexo**: feminino ou masculino;
-- **Estado Civil**: feminino ou masculino;
-- **Idade** [10]: 18 a 29 anos, 30 a 39 anos, 40 a 49 anos, 50 a 59 anos;
-- **Renda per capita** [5]: Recebe menos de 1 salário mínimo, Recebe mais de 1 salário mínimo
+- **Escolaridade**: Sem instrução e fundamental incompleto (1), fundamental completo e médio incompleto (2), médio completo e superior incompleto (3), superior completo (4);
+- **Sexo**: feminino (0) ou masculino (1);
+- **Estado Civil**: vive sozinho (0) ou com conjugue (1);
+- **Idade** [10]: 18 a 29 anos (1), 30 a 39 anos (2), 40 a 49 anos (3), 50 a 59 anos (4);
+- **Renda per capita** [5]: recebe menos de 1 salário mínimo (0) ou recebe mais de 1 salário mínimo (1);
 - **Localidade**: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
 #### Análise Exploratória
@@ -187,7 +185,6 @@ A seguir, apresentamos algumas características identificadas na base de dados s
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_workflow.png)
-
 
 ** Arrumar workflow **
 
@@ -243,9 +240,7 @@ Avaliando o PHQ9 (indicativo acima de moderado) questionário aplicado durante �
 
 Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos o teste χ2 de Pearson para buscar associação.
 
-***COLOCAR DO X² ENTRE AS VARIAVEL DEEPENDENTE E AS VARIAVEIS INDEPENDENTES - OK
-
-| Variáveis                  |     X²   |   p |
+| Variáveis                  |     X²   |   p       |
 |:---------------------------|---------:|----------:|
 | Exercício Físico           |   210.91 |   0       |
 | Tabagismo                  |   132.59 |   0       |
@@ -272,7 +267,6 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 | Percepção de Saúde         |  7782.86 |   0       |
 
 
-
 Inicialmente, criamos indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, ao analisar os dados resultantes, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como consumo de álcool e prática de atividade física. Por exemplo, no caso da PNS, considera-se uma pessoa ativa com base na relação entre o tempo gasto em atividades vigorosas e em atividades leves ou moderadas. No entanto, as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. No que diz respeito ao consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas, constatou-se que cerca de 69% dos dados estavam faltando.
 
 Devido a esse problema, modificou-se o critério de classificação de exercício físico para os indivíduos considerados ativos, agora definidos como aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11]. Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
@@ -280,7 +274,6 @@ Devido a esse problema, modificou-se o critério de classificação de exercíci
 Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
 
 No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
-
 
 ***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
@@ -301,7 +294,10 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 
 
-# Resultados
+# Resultados e Discussão
+
+> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
+> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
 
 
@@ -380,6 +376,8 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 >
 > Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 
+A primeira tabela abaixo os resultados de diferentes combinações de variáveis no modelo de regressão. Cada linha representa uma combinação específica de variáveis e os valores nas colunas "Acc. Treino" e "Acc. Teste" indicam a acurácia alcançada pelo modelo nos conjuntos de treino e teste, respectivamente. Além disso, a tabela também fornece métricas adicionais como precisão (P), recall (R), pontuação F1 (F1) e área sob a curva (AUC) para cada conjunto de treino e teste.
+
 | Váriaveis selecionadas             | Acc. Treino   | Acc. Teste   | P. Treino   | P. Teste   | R. Treino   | R. Teste   | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
 |:-----------------------------------|:--------------|:-------------|:------------|:-----------|:------------|:-----------|:------------|:---------------|:-------------|:---------------|
 | Apenas hábitos                     | 55.95%        | 55.68%       | 12.95%      | 12.94%     | 54.70%      | 55.10%     | 20.94%      | 20.96% ± 0.65% | 55.40%       | 55.42% ± 0.97% |
@@ -388,43 +386,9 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 | Apenas variáveis sociodemográficos | 57.05%        | 56.56%       | 15.81%      | 15.70%     | 69.71%      | 70.06%     | 25.77%      | 25.65% ± 0.30% | 62.62%       | 62.50% ± 0.46% |
 | Todas as varáveis                  | 65.80%        | 65.90%       | 19.29%      | 19.28%     | 64.79%      | 64.46%     | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
 
+Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logistica.
 
-
-| Abordagens experimentadas    | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
-|:-----------------------------|:------------|:---------------|:-------------|:---------------|
-| Removendo Linhas Nulas       | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
-| Substituindo NA pela média   | 28.67%      | 28.75% ± 0.75% | 65.39%       | 65.45% ± 0.96% |
-| Substituindo NA pela mediana | 28.80%      | 28.84% ± 0.72% | 65.53%       | 65.54% ± 0.93% |
-| SMOTE                        | 29.43%      | 29.18% ± 0.81% | 65.37%       | 65.10% ± 1.06% |
-| Melhor resultado Grid Search | 29.67%      | 29.70% ± 1.05% | 65.29%       | 65.32% ± 1.30% |
-| Floresta Randomica           | 28.54%      | 28.38% ± 0.65% | 64.47%       | 64.15% ± 0.90% |
-| Árvore de Decisão            | 28.39%      | 28.16% ± 0.58% | 64.86%       | 64.44% ± 0.83% |
-
-
-
-| Testes de estratificação	 | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
-|:--------------------------|:------------|:---------------|:-------------|:---------------|
-| Renda Baixa               | 32.55%      | 32.45% ± 0.85% | 65.31%       | 65.15% ± 1.00% |
-| Renda Alta                | 24.36%      | 24.07% ± 0.71% | 63.69%       | 63.26% ± 1.02% |
-| Sexo Mulher               | 33.69%      | 33.25% ± 0.83% | 61.58%       | 61.16% ± 0.76% |
-| Sexo Homem                | 18.55%      | 18.25% ± 0.78% | 64.15%       | 63.67% ± 1.12% |
-| Idade < 40                | 25.45%      | 25.38% ± 0.77% | 63.30%       | 63.20% ± 1.10% |
-| Idade >= 40               | 32.86%      | 32.77% ± 0.37% | 66.40%       | 66.29% ± 0.48% |
-| Idade [20, 29]            | 25.31%      | 24.93% ± 0.73% | 63.07%       | 62.54% ± 1.26% |
-| Idade [30, 39]            | 26.22%      | 26.19% ± 1.70% | 64.24%       | 64.34% ± 2.47% |
-| Idade [40, 49]            | 31.94%      | 31.62% ± 1.25% | 66.13%       | 65.71% ± 1.45% |
-| Idade [50, 59]            | 34.98%      | 34.57% ± 1.23% | 67.87%       | 67.40% ± 1.28% |
-| Região Norte              | 27.10%      | 26.86% ± 1.86% | 65.43%       | 65.07% ± 2.37% |
-| Região Nordeste           | 30.55%      | 30.28% ± 1.05% | 64.51%       | 64.27% ± 1.25% |
-| Região Sudeste            | 31.60%      | 31.02% ± 0.64% | 66.38%       | 65.71% ± 0.82% |
-| Região Sul                | 28.50%      | 27.97% ± 2.24% | 65.61%       | 64.87% ± 2.78% |
-| Região Centro Oeste       | 30.47%      | 29.33% ± 2.57% | 66.34%       | 64.83% ± 3.20% |
-
-
-
-
-
-| Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Removendo Linhas Nulas |
+| Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Todas as varáveis      |
 |:---------------------------|-----------------:|--------------------------:|------------------------------------:|-------------------------------------:|-------------------------:|
 | Intercepto                 |             0.09 |                     -0.36 |                               -0.38 |                                 0.50 |                     0.30 |
 | Ultraprocessados           |             0.03 |                           |                                0.05 |                                      |                     0.49 |
@@ -445,7 +409,56 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 | Classificação Idade        |                  |                           |                                     |                                 0.12 |                    -0.24 |
 | Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
 
+> Análise e discusão
 
+A próxima tabela apresenta os resultados de diferentes abordagens experimentadas no modelo. Cada linha representa uma abordagem específica, como remoção de linhas nulas, substituição de valores faltantes pela média, substituição de valores faltantes pela mediana, uso de SMOTE (técnica de oversampling) e melhores resultados obtidos através de um 'Grid Search', executado pelo codigo abaixo:
+
+~~~python
+param_grid = {
+    'reg__C': [0.1, 1.0, 10.0],
+    'reg__solver': ['liblinear', 'saga'],
+    'reg__max_iter': [100, 500, 1000]
+}
+
+model = Pipeline([
+    ('reg', LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42))
+])
+
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
+grid_search.fit(X, y)
+~~~
+
+| Abordagens experimentadas    | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
+|:-----------------------------|:------------|:---------------|:-------------|:---------------|
+| Removendo Linhas Nulas       | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
+| Substituindo NA pela média   | 28.67%      | 28.75% ± 0.75% | 65.39%       | 65.45% ± 0.96% |
+| Substituindo NA pela mediana | 28.80%      | 28.84% ± 0.72% | 65.53%       | 65.54% ± 0.93% |
+| SMOTE                        | 29.43%      | 29.18% ± 0.81% | 65.37%       | 65.10% ± 1.06% |
+| Melhor resultado Grid Search | 29.67%      | 29.70% ± 1.05% | 65.29%       | 65.32% ± 1.30% |
+| Floresta Randomica           | 28.54%      | 28.38% ± 0.65% | 64.47%       | 64.15% ± 0.90% |
+| Árvore de Decisão            | 28.39%      | 28.16% ± 0.58% | 64.86%       | 64.44% ± 0.83% |
+
+Os resultados de testes de estratificação realizados com base em diferentes características, como renda, sexo, idade e região, são apresentados na tabela abaixo. Cada linha representa um teste específico e as colunas fornecem as pontuações F1 e AUC para cada teste, tanto para o conjunto de treino quanto para o conjunto de teste.
+
+| Testes de estratificação	 | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
+|:--------------------------|:------------|:---------------|:-------------|:---------------|
+| Renda Baixa               | 32.55%      | 32.45% ± 0.85% | 65.31%       | 65.15% ± 1.00% |
+| Renda Alta                | 24.36%      | 24.07% ± 0.71% | 63.69%       | 63.26% ± 1.02% |
+| Sexo Mulher               | 33.69%      | 33.25% ± 0.83% | 61.58%       | 61.16% ± 0.76% |
+| Sexo Homem                | 18.55%      | 18.25% ± 0.78% | 64.15%       | 63.67% ± 1.12% |
+| Idade < 40                | 25.45%      | 25.38% ± 0.77% | 63.30%       | 63.20% ± 1.10% |
+| Idade >= 40               | 32.86%      | 32.77% ± 0.37% | 66.40%       | 66.29% ± 0.48% |
+| Idade [20, 29]            | 25.31%      | 24.93% ± 0.73% | 63.07%       | 62.54% ± 1.26% |
+| Idade [30, 39]            | 26.22%      | 26.19% ± 1.70% | 64.24%       | 64.34% ± 2.47% |
+| Idade [40, 49]            | 31.94%      | 31.62% ± 1.25% | 66.13%       | 65.71% ± 1.45% |
+| Idade [50, 59]            | 34.98%      | 34.57% ± 1.23% | 67.87%       | 67.40% ± 1.28% |
+| Região Norte              | 27.10%      | 26.86% ± 1.86% | 65.43%       | 65.07% ± 2.37% |
+| Região Nordeste           | 30.55%      | 30.28% ± 1.05% | 64.51%       | 64.27% ± 1.25% |
+| Região Sudeste            | 31.60%      | 31.02% ± 0.64% | 66.38%       | 65.71% ± 0.82% |
+| Região Sul                | 28.50%      | 27.97% ± 2.24% | 65.61%       | 64.87% ± 2.78% |
+| Região Centro Oeste       | 30.47%      | 29.33% ± 2.57% | 66.34%       | 64.83% ± 3.20% |
+
+As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado na regressão por meio da estratificação em diversas variáveis.
 
 | Variáveis                  |   Renda Baixa |   Renda Alta |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
@@ -559,13 +572,14 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 
 
 
-
+O algoritmo de arvore de decisão, assim como a regressão, logistica também tem a vantagem de ser interpretável. A figura abaixo ilustra uma árvore de decisão construída a partir dos dados fornecidos. Essa representação visual demonstra como o algoritmo divide os dados em diferentes ramos, com base em atributos relevantes, até chegar a uma decisão final. Cada nó da árvore representa uma condição que é testada, e as ramificações indicam os possíveis resultados dessa condição.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
 
 
 ### Resultados testes
 
+Por fim, a tabala abaixo compara os diferentes tipos de algoritmos experimentados no conjunto de teste final.
 
 |                  | Logistic Regression   | Decision Tree   | Random Forest   |
 |:-----------------|:----------------------|:----------------|:----------------|
@@ -580,17 +594,14 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 | AUC Treino       | 71.40%                | 69.95%          | 70.95%          |
 | AUC Teste        | 71.57%                | 69.56%          | 70.55%          |
 
+Abaixo podemos ver a Curva ROC entre estes 3 modelos.
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
 
+A matriz de confusão para o melhor modelo (Regressão logistica no conjunto de teste).
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
 
-
-# Discussão
-> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
->
-> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
 # Conclusão
 > Destacar as principais conclusões obtidas no desenvolvimento do projeto.
