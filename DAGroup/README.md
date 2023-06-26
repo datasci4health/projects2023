@@ -44,9 +44,9 @@ A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/DAG.jpg)
 
-Neste trabalho, utilizamos técnicas de análise estatística, como o teste qui-quadrado, para avaliar a prevalência de fatores associados a depressão. Além disso, treinamos modelos de classificação binária para prever se uma pessoa é potencialmente afetada pela depressão (utilizando o questionário PHQ-9) a partir de variáveis de pesquisa, incluindo hábitos, doenças crônicas e características sociodemográficas.
+Neste trabalho, utilizamos técnicas de análise estatística, como o teste qui-quadrado, para avaliar a associação de variáveis de comportamentos de saúde, doenças crônicas não transmissíveis e características sociodemograficas com depressão. Além disso, treinamos modelos de classificação binária para prever se uma pessoa é potencialmente diagnósticada com depressão (utilizando o questionário PHQ-9) a partir de variáveis de elecandas acima.
 
-O modelo de regressão logística apresentou o melhor desempenho preditivo, com uma precisão de 18,49%, recall (revocação) de 66,27% e AUC (área sob a curva) de 71,57%. Embora a eficácia tenha sido baixa, esse modelo nos permite analisar a influência desses fatores na depressão.
+O modelo de regressão logística apresentou o melhor desempenho preditivo, com uma precisão de 18,49%, recall (revocação) de 66,27% e AUC (área sob a curva) de 71,57%. Embora a eficácia tenha sido baixa, esse modelo nos permite analisar a influência desses variáveis na depressão.
 
 # Perguntas de Pesquisa e Objetivos
 
