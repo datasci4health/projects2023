@@ -26,6 +26,9 @@ https://youtu.be/Ti_Q1Hb_aM4
 **Objetivo geral**
 Determinar características socioeconômicas e de saúde relacionadas com o desfecho diabetes tipo 2 em capitais brasileiras.
 
+Levando em conta que os usuários direto do nosso modelo serão os gestores e responsaveis técnicos, para a identificação de grupos de riscos para aulixiar na elaboração de política públicas e em tomada de decisões.
+
+
 # Metodologia
 Método aplicado à base escolhida
 A metodologia prevista é o CRISP-DM (_cross-industry standard process for data mining_), em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de _features_ e pré processamento dos dados. Depois de chegar em um modelo _baseline_, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmentaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo à fase de _deploy_ do CRISP-DM.
