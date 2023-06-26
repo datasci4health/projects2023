@@ -8,6 +8,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
     ConfusionMatrixDisplay, roc_curve, roc_auc_score
 import seaborn as sns
 from sklearn.tree._tree import TREE_LEAF
+from sklearn.base import BaseEstimator, TransformerMixin
 
 
 def plot_cm(model, X, y, path=None):
@@ -201,3 +202,12 @@ def prune_duplicate_leaves(mdl):
     # Remove leaves if both
     decisions = mdl.tree_.value.argmax(axis=2).flatten().tolist()  # Decision for each node
     prune_index(mdl.tree_, decisions)
+
+
+class RoundTransformer(BaseEstimator, TransformerMixin):
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X, y=None):
+        X = np.round(X)
+        return X
