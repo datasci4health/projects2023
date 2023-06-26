@@ -27,7 +27,7 @@
 > Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
 
 > # Nota:
-> **Para mais informação consulte:** [video de apresentação do grugo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
+> **Para mais informação consulte:** [video de apresentação do grupo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
 
 # Perguntas de Pesquisa
 >
@@ -235,7 +235,7 @@
 > </center>
 >
 >
->Na Figura 3, observamos a representação dos pacientes agrupados por faixas de idade. Em geral, notamos que as faixas de idade ```20-29``` e ```>60``` permanecem constantes ao longo do monitoramento. No entanto, as faixas de idade ```30-39``` e ```40-49``` apresentam uma diminuição, enquanto a faixa de idade ```50-59``` aumenta. Isso pode ser devido a vários fatores. Por um lado, é possível que o período de monitoramento tenha sido muito longo e o tempo entre um exame e outro seja muito grande para perceber a mudança de idade dos pacientes. Além disso, é perceptível que o maior número de pacientes do estudo está entre 40 e 59 anos, o que pode indicar que a apneia do sono ocorre com mais frequência nessas faixas etárias. No entanto, isso precisa ser comprovado ao longo deste estudo.
+>Na Figura 3, observamos uma mudança da distribuição de pacientes pelos grupos de idade que pode ser entendido como esperado, dado que os três exames ocorrem em um intervalo de alguns meses e os pacientes acabam fazendo aniversário no período e mudando de grupo
 
 
 ## **Integração entre Bases e Análise Exploratória**
@@ -249,7 +249,7 @@
 > ![image](./reports/figures/Situacao_imc.png)
 > </center>
 > 
-> Na Figura 4 encontramos que uma relaçåo bastante desproporcionada de pacientes com qualquer tipo de sobrepeso e as pessoas com peso normal, este indicador tambem pode ser importante para nosso estudo.
+> Na Figura 4, encontramos a presença maior de pacientes acima do peso, incluindo pacientes com obesidade-I e obesidade-II, com uma menor quantidade de pacientes com peso considerado normal. No decorrer no tempo, não há mudanças drásticas nessas distribuições que possam ter impactado os resultados dos nossos estudos.
 
 > ### **Situação da apneia**
 > 
@@ -258,9 +258,11 @@
 > ![image](./reports/figures/status_apneia.png)
 > </center>
 >
-> Na Figura 5, temos os pacientes classificados de acordo com o status da apneia em cada exame. Observamos que, de forma geral, houve um aumento no número de pacientes classificados como ```Sem apneia``` e uma diminuição nos pacientes com qualquer tipo de apneia entre o exame de ```baseline``` e o ```último exame```. No entanto, há uma movimentação que não sabemos a origem, mas que evidencia uma possível relação entre as mudanças de estado nos pacientes relacionado ao uso do dispositivo de avanço mandibular. É necessário estudar mais a fundo esse fenômeno.
+> Na Figura 5, houve a ausência de pacientes com apnéia acentuada no fim do período analisado, assim também como a diminuição de pacientes com apnéias moderada e leve. Uma certa flutuação entre o tipo de apnéia observado pode ser influenciada por hábitos do paciente no dia do exame - por exemplo, consumo de bebidas alcóolicas ou refeições mais pesadas, porém a maioria dos pacientes não informa esses detalhes no questionário do exame.
 
-> ## **Situação apneia por grupo idade**
+<!-- temos os pacientes classificados de acordo com o status da apneia em cada exame. Observamos que, de forma geral, houve um aumento no número de pacientes classificados como ```Sem apneia``` e uma diminuição nos pacientes com qualquer tipo de apneia entre o exame de ```baseline``` e o ```último exame```. No entanto, há uma movimentação que não sabemos a origem, mas que evidencia uma possível relação entre as mudanças de estado nos pacientes relacionado ao uso do dispositivo de avanço mandibular. É necessário estudar mais a fundo esse fenômeno. -->
+
+> ### **Situação apneia por grupo idade**
 > <center>
 > 
 > ![image](./reports/figures/grupo_etario_apneia.png)
@@ -268,6 +270,21 @@
 > 
 > Na Figura 6, descreve-se o comportamento da apneia por grupos de idade em cada um dos exames. Observamos que os pacientes nas faixas etárias de ```40-49``` e ```50-59``` são os que apresentam a maior quantidade de casos de apneia, mas também é mais evidente a melhora da condição nesses pacientes. Notamos que os pacientes ```sem apneia``` na faixa etária de ```40-49``` anos aumentaram para o ```primeiro exame```, mas diminuíram para o ```segundo exame```. Isso pode ser devido ao fato de que alguns pacientes mudaram de idade durante o curso do monitoramento, já que encontramos um aumento bastante significativo nos pacientes ```sem apneia``` para o ```segundo exame``` na faixa etária de ```50-59``` anos. Essa gráfica dá indícios de melhora nos pacientes com apneia, mas precisamos de mais informações e uma análise mais profunda do estudo.
 
+
+> ### **Comportamento da frequençã cardiaca maxima**
+>
+> <center>
+> 
+> ![image](./reports/figures/fcmaxima_grupo-idade.png)
+> </center>
+
+> <center>
+> 
+> ![image](./reports/figures/fcmaxima_grupo-idade_vert.png)
+> </center>
+>
+>
+>
 > ### **Correlação dos diferentes grugor por exame**
 > 
 > Nas Figuras 7, 8 e 9, encontramos as correlações das diferentes variáveis em nosso conjunto de dados. Observamos que as correlações entre ```IDO``` e ```peso``` e entre ```IDO``` e ```altura``` melhoram quando incluímos o valor do ```IMC```. Estaremos analisando mais detalhadamente essas correlações para nossa análise futura.
@@ -287,6 +304,17 @@
 > ![image](./reports/figures/corr_mat_ultimo_exame.png)
 > </center>
 
+> <center>
+> 
+> ![image](./reports/figures/corr_ido_vs_fcmaxima.png)
+> </center>
+
+> <center>
+> 
+> ![image](./reports/figures/Scatter_ido_vs_fcmaxima.png)
+> </center>
+
+> Nas Figuras 
 # Ferramentas
 
 Para o desenvolvimento deste projeto, iremos utilizar um conjunto de ferramentas que nos habilite realizar as análises estatísticas, comparações e estimativas que planejamos na seção Metodologia. Isso inclui, mas não se limita, a:
@@ -308,3 +336,7 @@ No decorrer da análise, pode se fazer necessário adotar novas ferramentas ou t
 |21/Mai/2023|Segunda entrega do projeto|Segunda entrega do projeto|
 |28/Mai/2023|Refinamento das respostas encontradas|Refinamento das respostas encontradas|
 |04/Jun/2023|Preparo da terceira entrega do projeto|Preparo da terceira entrega do projeto|
+
+# Conclusões
+
+
