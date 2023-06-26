@@ -245,15 +245,16 @@ Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado br
 
 Iniciamos as análises buscando a associação das variáveis de interesse com o diagnóstico de depressão por meio do teste χ2 de Pearson, devido ao fato das nossas variáveis serem qualitativas.
 
-#### Desafios para elaboração dos testes de associação
 Nessa etapa houve a preocupação de averiguar os dados faltantes de cada variável de interesse, gerando necessidade de algumas alterações na seleção dessas variáveis, pois primeiramente havíamos desenvolvido indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como em indicadores de prática de exercício físico e consumo de bebida alcoólica.
 
-O indicador de consumo de bebida alcoólica utilizado pela PNS foi elabora baseado em definições da OMS, a qual considera uma pessoa ativa com base na relação entre o tempo gasto e tipo de atividade física (leve, moderada e vigorosas), porém as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. Devido a esse problema, modificou-se o critério de classificação de exercício físico, baseando-se em artigos que também avaliaram dados da PNS, considerando praticante de exercício físico aqueles que realizaram algum tipo de exercício físico nos últimos três meses [11] e para essa variável não encontramos dados faltantes para a população alvo. No que diz respeito ao indicador de consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas como o elencando o site da PNS, constatou-se que cerca de 69% dos dados estavam faltando, com isso houve a necessidade de modificar o indicador averiguando a frequência mensal de consumo de bebida alcoólica, visto que essa variável é utilizada pela literatura e não apresenta dados faltantes [5].
+O indicador de consumo de bebida alcoólica utilizado pela PNS foi elaborado baseado em definições da OMS, a qual considera uma pessoa ativa com base na relação entre o tempo gasto e tipo de atividade física (leve, moderada e vigorosas), porém as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. Devido a esse problema, modificou-se o critério de classificação de exercício físico, baseando-se em artigos que também avaliaram dados da PNS, considerando praticante de exercício físico aqueles que realizaram algum tipo de exercício físico nos últimos três meses [11] e para essa variável não encontramos dados faltantes para a população alvo. No que diz respeito ao indicador de consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas como o elencando o site da PNS, constatou-se que cerca de 69% dos dados estavam faltando, com isso houve a necessidade de modificar o indicador averiguando a frequência mensal de consumo de bebida alcoólica, visto que essa variável é utilizada pela literatura e não apresenta dados faltantes [5].
 
 Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidas da análise.
 
+No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
 
-Para realizar as análise e responder às demais questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
+
+Para realizar nossa análise e responder às questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
 
 Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à sua confiabilidade em conjuntos não balanceados. Realizamos testes removendo as linhas com dados nulos e também empregamos técnicas de imputação para encontrar o melhor modelo.
 
@@ -316,9 +317,6 @@ grid_search = GridSearchCV(model, param_grid, cv=5, scoring='f1', n_jobs=-1)
 
 Essas abordagens metodológicas foram adotadas com o intuito de realizar uma análise abrangente e fornecer respostas às questões de pesquisa propostas.
 
-#### Desafios na elaboração dos modelos
-No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
-
 
 
 # Ferramentas
@@ -349,7 +347,7 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 ### Testes de associação
 
-Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9, encontramos que escolaridade, sexo, estado civil, renda per capita e idade possui associação (p < 0,05) com alto potencial de depressão. Além disso, encontramos associação entre depressão e a maior parte das regições brasileiras, execeto na região Centro-Oeste. 
+Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9. Obtivemos que sexo, idade, escolaridade, renda per capita possui associação (p < 0,05) com alto potencial de depressão.
 
 | **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -364,10 +362,10 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 |                                 	| Não mora com parceiro                   	| 40,11%             	| 60,99%           	 | 50,60%            	| ---      	| ---     	|
 | **Renda per capita**            	| Recebe mais de 1 salário mínimo         	| 42,28%             	| 43,08%            	| 35,57%            	| 141,31   	| 0,0000  	|
 |                                 	| Recebe menos de 1 salário mínimo        	| 56,92%             	| 56,92%            	| 64,43             	| ---      	| ---     	|
-|**Idade**                         | 18 a 29 anos                             | 23,04%              | 23,29%             | 20,95%             | 76,40     | 0,0000   |
-|                                  | 30 a 39 anos                             | 27,46%              | 27,78%             | 24,71%             | ---       | ---      |
-|                                  | 40 a 49 anos                             | 25,25%              | 25,25%             | 27,06%             | ---       | ---      |
-|                                  | 50 a 59 anos                             | 24,06%              | 23,68%             | 27,29%             | ---       | ---      |
+|**Idade**                         | 18 a 29 anos (1)                         | 23,04%              | 23,29%             | 20,95%             | 76,40     | 0,0000   |
+|                                  | 30 a 39 anos (2)                         | 27,46%              | 27,78%             | 24,71%             |           |          |
+|                                  | 40 a 49 anos (3)                         | 25,25%              | 25,25%             | 27,06%             |           |          |
+|                                  | 50 a 59 anos (4)                         | 24,06%              | 23,68%             | 27,29%             |           |          |
 | **Localidade**                  	| Norte                                   	| 20,42%             	| 20,77%            	| 17,46%            	| 41,14    	| 0,0000  	|
 |                                 	| Nordeste                                	| 34,90%             	| 34,73%            	| 36,40%            	| 7,60     	| 0,0058  	|
 |                                 	| Sudeste                                 	| 20,70%             	| 20,48%            	| 22,49%            	| 14,99    	| 0,0001  	|
@@ -377,9 +375,7 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 \* Teste X² de variáveis sociodemográficas confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
 
-Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre todos os comportamentos de saúde elencados e o desfecho do estudo. Esses achados estão em consonancia com a literatura, onde mostra associação desses comportamentos de saúde inadequados com o diagnosticos de depressão. 
-Em relação ao consumo de tabaco, encontramos uma maior prevalencia de tabagismo em pessoas diagnosticadas com depressão. Já em relação ao consumo de bebida alcoolica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o publico alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacioando com fatores sociais e culturais (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Ressalta-se que a depressão é o trasntorno mental mais comum dentre as pessoas com problemas de consumo de álcool (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
-
+Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre fumar tabaco e atividade física nos últimos 3 meses (p < 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p = 0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
 
 | **Comportamentos de saúde**                         |                | **População 2019** | **Sem depressão** | **Com Depressão** | **X²** *| **p** * |
 |-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
@@ -665,7 +661,10 @@ Abaixo matriz de confusão para o melhor modelo (regressão logística no conjun
 > Principais lições aprendidas.
 
 # Trabalhos Futuros
-> O que poderia ser melhorado se houvesse mais tempo?
+
+No âmbito dos trabalhos futuros, sugere-se explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração exploratória dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
+
+Adicionalmente, considera-se relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
 
 # Cronograma
 
