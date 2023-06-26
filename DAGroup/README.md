@@ -171,11 +171,11 @@ Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. P
 
 *Variáveis relacionadas ao perfil sociodemográfico:*
 
-- **Escolaridade**: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo.
-- **Sexo**: feminino ou masculino
-- **Estado Civil**: feminino ou masculino
-- **Idade** [10]: 
-- **Renda** [5]:
+- **Escolaridade**: Sem instrução e fundamental incompleto, fundamental completo e médio incompleto, médio completo e superior incompleto, superior completo;
+- **Sexo**: feminino ou masculino;
+- **Estado Civil**: feminino ou masculino;
+- **Idade** [10]: 18 a 29 anos, 30 a 39 anos, 40 a 49 anos, 50 a 59 anos;
+- **Renda per capita** [5]: Recebe menos de 1 salário mínimo, Recebe mais de 1 salário mínimo
 - **Localidade**: região geográfica dos indivíduos (Norte, Nordeste, Centro, Sul, Sudeste);
 
 #### Análise Exploratória
@@ -272,12 +272,17 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 
 
 
-***RELATAR AS DIFICULDADES SOBRE MUDANÇAS DE ESCOLHA DE VARIAVEIS, LEMBRAR ESTAVAMOS USANDO OS INDICADORES DA PNS, PORÉM MUDAMOS PARA OS INDICADORES USADOS NOS ARTIGOS DEVIDO OS VALORES DE MISSING, DESBALANCEIO E ETC;
+Inicialmente, criamos indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, ao analisar os dados resultantes, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como consumo de álcool e prática de atividade física. Por exemplo, no caso da PNS, considera-se uma pessoa ativa com base na relação entre o tempo gasto em atividades vigorosas e em atividades leves ou moderadas. No entanto, as variáveis necessárias para construir esse indicador apresentaram uma ausência de cerca de 58% dos dados. No que diz respeito ao consumo de álcool, com base na frequência semanal de consumo de bebidas alcoólicas, constatou-se que cerca de 69% dos dados estavam faltando.
+
+Devido a esse problema, modificou-se o critério de classificação de exercício físico para os indivíduos considerados ativos, agora definidos como aqueles que realizaram algum tipo de exercício físico nos últimos três meses[11]. Para o segmento populacional deste estudo, não foram encontrados dados faltantes nessa análise. Quanto ao consumo de álcool, passou-se a utilizar a frequência mensal[5], que não apresenta dados faltantes.
+
+Além disso, em relação às doenças crônicas, foi notado uma baixa quantidade de dados faltantes (10%). Visando não alterar a distribuição dos dados e manter a característica binária das perguntas (se houve ou não diagnóstico da doença por um especialista), optamos por não realizar nenhum procedimento de imputação. Com isso, os indivíduos que não responderam à estas questões foram removidos da análise.
+
+No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao grande desbalanceio na quantidade de pessoas diagnosticadas com depressão ou não. Dos 64.664 indivíduos no total, apenas 6.848 (10,6%) foram classificados como depressivos (PHQ-9 maior ou igual a 10). Portanto, primeiramente aplicou-se o algoritmo SMOTE no conjunto de treinamento para gerar dados sintéticos na classe menos representada. No entanto, ao utilizar a curva ROC-AUC como parâmetro, constatou-se que a regressão logística com penalização para a classe majoritária apresentou uma abordagem mais eficaz.
+
 
 ***DETALHAR AS ANALISES DE REGRESSÃO, SE QUISER PODE APAGAR ESSE TEXTO
 Realizamos uma análise descritiva da amostra do estudo e averiguamos as correlações entre a variável dependente e as variáveis independentes. Em seguida, a fim de verificar a importância dos determinantes e a influência deles no diagnóstico de depressão construímos 3 modelos modificando as variáveis determinantes, sendo que no primeiro modelo selecionamos apenas as variáveis de comportamentos de saúde, no segundo modelo selecionamos apenas as variáveis de doenças crônicas não transmissíveis e no último modelo selecionamos tanto as variáveis de comportamentos de saúde, quanto às doenças crônicas não transmissíveis, todos os modelos foram ajustados pelas variáveis sociodemográficas. 
-
-
 
 
 # Ferramentas
@@ -303,39 +308,66 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 Primeiramente, realizamos associações entre as variáveis sociodemográficas dentre as pessoas colocadas com depressão segundo o PHQ9.   Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
 
-| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
-|:-------------------------------------------------------------------------|----------:|-----------:|
-| Sexo                                                                     |    650.12 |          0 |
-| Categoria idade                                                          |     23.64 |          0 |
-| Escolaridade                                                             |      9.63 |    0.02198 |
-| Localidade
-| Renda per capita                                                         |    263.28 |          0 |
-| Estado Civil                                                             |           |            |
+| **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
+|---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
+|                                 	|                                         	| n = 64.664         	| n = 57.816        	| n = 6.848         	|          	|         	|
+| **Escolaridade**                	| Superior completo                       	| 4,8%               	| 5,56%             	| 5,17%             	| 36,93    	| 0,0000  	|
+|                                 	| Médio completo e superior incompleto    	| 15,08%             	| 17,29%            	| 16,75%            	| ---      	| ---     	|
+|                                 	| Fundamental completo e médio incompleto 	| 35,7%              	| 41,09%            	| 38,09%            	| ---      	| ---     	|
+|                                 	| Sem instrução e fundamental incompleto  	| 31,94%             	| 36,06%            	| 40%               	| ---      	| ---     	|
+| **Sexo**                        	| Masculino                               	| 48,29%             	| 49,08%           	| 73,91%           	| 1510,69  	| 0,0000  	|
+|                                 	| Feminino                                	| 51,71%             	| 50,92%           	| 26,10%           	| ---      	| ---     	|
+| **Estado civil**                	| Mora com parceiro                       	| 59,89%             	| 39,01%           	| 49,40%           	| 275,03   	| 0,0000  	|
+|                                 	| Não mora com parceiro                   	| 40,11%             	| 60,99%           	| 50,60%           	| ---      	| ---     	|
+| **Renda per capita**            	| Recebe mais de 1 salário mínimo         	| 42,28%             	| 43,08%            	| 35,57%            	| 141,31   	| 0,0000  	|
+|                                 	| Recebe menos de 1 salário mínimo        	| 56,92%             	| 56,92%            	| 64,43             	| ---      	| ---     	|
+| **Localidade**                  	| Norte                                   	| 20,42%             	| 20,77%            	| 17,46%            	| 41,14    	| 0,0000  	|
+|                                 	| Nordeste                                	| 34,90%             	| 34,73%            	| 36,40%            	| 7,60     	| 0,0058  	|
+|                                 	| Sudeste                                 	| 20,70%             	| 20,48%            	| 22,49%            	| 14,99    	| 0,0001  	|
+|                                 	| Sul                                     	| 12,12%             	| 12,22%            	| 11,30%            	| 4,85     	| 0,0276  	|
+|                                 	| Centro Oeste                            	| 11,86%             	| 11,80%            	| 12,34%            	| 1,71     	| 0,1913  	|
+* Teste X² de variáveis sociodemográficas confrontadas com pessoas com depressão (PHQ9 score >= 10)
+
 
 Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
 
-| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
-|:-------------------------------------------------------------------------|----------:|-----------:|
-| Frequência bebida alcoólica                                              |      2.61 |   0.27098* |
-| Tabagismo                                                                |    101.61 |          0 |
-| Atividade física nos últimos 3 meses                                     |    105.78 |          0 |
-| Consumo de ultraprocessado                                               |           |            |
+| **Comportamentos de saúde**                         |                | **População 2019** | **Sem depressão** | **Com Depressão** | **X²** *| **p** * |
+|-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
+|                                                     |                | n = 64.664         | n = 57.816        | n = 6.848         |         |        |
+| **Score de Consumo de Ultraprocessado**             | 0,1            | 36,53%             | 36,68%            | 35,27%            | 24,9    | 0,0056 |
+|                                                     | 2,3            | 37,78%             | 37,81%            | 37,46%            | ---     | ---    |
+|                                                     | 4,5            | 18,77%             | 18,70%            | 19,32%            | ---     | ---    |
+|                                                     | 6,7            | 5,35%              | 5,28%             | 5,99%             | ---     | ---    |
+|                                                     | 8,9,10         | 1,57%              | 1,53%             | 1,97%             | ---     | ---    |
+| **Prática de exercício físico nos últimos 3 meses** | Praticante     | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
+|                                                     | Não praticante | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
+| **Consumo de bebida alcoólica no último mês**       | Sim            | 44,88%             | 45,45%            | 40,07%            | 71,7    | 0,0000 |
+|                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
+| **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
+|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
+* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão. 
 
-| Variáveis confrontadas com pessoas com depressão (PHQ9 score > 10)       |        χ2 |    p_value |
-|:-------------------------------------------------------------------------|----------:|-----------:|
-| Teve diagnostico artrite ou reumatismo                                   |    183.69 |          0 |
-| Teve diagnostico AVC                                                     |     50.22 |          0 |
-| Teve diagnostico doenças cardiovasculares                                |    150.73 |          0 |
-| Teve diagnostico hipercolesterolemia                                     |    130.91 |          0 |
-| Teve diagnostico diabetes                                                |     13.57 |    0.00023 |
-| Teve diagnostico pressão alta                                            |     35.73 |          0 |
-| Teve diagnostico câncer                                                  |      5.25 |    0.02193 |
-| Teve diagnostico de obesidade                                            |   4597.09 |          0 |
-| Teve diagnostico depressão                                               |   4597.09 |          0 |
+| **Variáveis de DCNT**       	|                      	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
+|------------------------------	|----------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
+|                              	|                      	| n = 64.664         	| n = 57.816        	| n = 6.848         	|          	|         	|
+| **Artrite**                  	| Teve diagnóstico     	| 4,87%              	| 3,94%             	| 12,72%            	| 1017,191 	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 95,13%             	| 96,06%            	| 87,28%            	| ---      	| ---     	|
+| **AVC**                      	| Teve diagnóstico     	| 1,08%              	| 0,82%             	| 3,23%             	| 332,787  	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 98,92%             	| 99,18%            	| 96,77%            	| ---      	| ---     	|
+| **Doenças cardiovasculares** 	| Teve diagnóstico     	| 3,06%              	| 2,47%             	| 7,96%             	| 621,4531 	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 96,94%             	| 97,53%            	| 92,04%            	| ---      	| ---     	|
+| **Hipertensão**              	| Teve diagnóstico     	| 17,77%             	| 16,44%            	| 28,86%            	| 639,0247 	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 82,23%             	| 83,56%            	| 71,14%            	| ---      	| ---     	|
+| **Hipercolesterolemia**      	| Teve diagnóstico     	| 12,78%             	| 11,65%            	| 21,89%            	| 535,933  	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 87,22%             	| 88,35%            	| 78,11%            	| ---      	| ---     	|
+| **Diabetes**                 	| Teve diagnóstico     	| 5,06%              	| 4,54%             	| 9,33%             	| 276,6615 	| 0,0000  	|
+|                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 0                 	| ---      	| ---     	|
+| **Obesidade**                	| Sim                  	| 20,93%             	| 20,23%            	| 26,82%            	| 158,9776 	| 0,0001  	|
+|                              	| Não                  	| 79,07%             	| 79,77%            	| 73,18%            	| ---      	| ---     	|
+* Teste X² de variáveis de DCNT confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
-**Percepção da saúde segundo: nao sei onde colocar percepção de saúde, mas acho que seria legal colocar!
 
 A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
