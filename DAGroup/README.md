@@ -197,15 +197,15 @@ Abaixo podemos observar curvas de distribuição dos indivíduos da base em rela
 
 ![Idade e peso da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
 
-Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população estudada:
+Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população geral:
 
 ![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
 
-Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao uma exponencial negativa, conforme podemos observar na figura abaixo:
+Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao de uma exponencial negativa, conforme podemos observar na figura abaixo:
 
 ![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
 
-Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse.
+Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse, sendo possível notar que há uma maior prevalência de pessoas do sexo feminino com depressão ao longo de todo o score de PHQ-9, o mesmo ocorre com pessoas com idade superior aos 40 anos. Evidenciando que independente do grau de gravidade da doença, a diferença entre as categorias se mantêm. 
 
 ![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
