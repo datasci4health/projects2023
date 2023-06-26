@@ -337,6 +337,8 @@ O PCA mostrou que  seriam necessárias as nove primeiras componentes para explic
 
 ![Figura 10](./reports/figures/cumulative_variance_PCA.png)
 
+Fonte: Autores(2023)
+
 O PCA com nove componentes resulta numa variância de 81%.
 
 Foi aplicada então uma clusterização pelo método K-Means que encontra agrupamentos atra'ves do cálculo de "centróides" nos dados e da distância de cada amostra a esses centróides.
@@ -346,6 +348,8 @@ O método exige que o número K de agrupamentos seja fornecido a priori. Para um
 
 ![Figura 11](./reports/figures/kmeans.png)
 
+Fonte: Autores(2023)
+
 Pelo gráfico 6 foi feita a escolha do número quatro como o melhor número de clusters para nosso problema.
 
 Foi feito, então o plot dos quatros clusters identificados pelo K-Means considerando-se os dois primeiros componentes principais do PCA, como uma forma de simplificar a visualização.
@@ -353,6 +357,8 @@ Foi feito, então o plot dos quatros clusters identificados pelo K-Means conside
 ### Gráfico 7 - Resultado da clusterização com quatro agrupamentos (K = 4)
 
 ![Figura 12](./reports/figures/clusters.png)
+
+Fonte: Autores(2023)
 
 Alguns gráficos foram elaborados para cada cluster na busca por encontrar relacionamentos interessantes à resolução do nosso problema. Estes gráficos foram:
 
@@ -371,6 +377,8 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 
 ![Figura 16](./reports/figures/cluster1_nivel_vitD_pre.png)
 
+Fonte: Autores(2023)
+
 ### Gráficos do Cluster 2
 
 ![Figura 13](./reports/figures/cluster2_faixa_etaria.png)
@@ -380,6 +388,8 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 ![Figura 15](./reports/figures/cluster2_IMC.png)
 
 ![Figura 16](./reports/figures/cluster2_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
 
 ### Gráficos do Cluster 3
 
@@ -391,6 +401,8 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 
 ![Figura 16](./reports/figures/cluster3_nivel_vitD_pre.png)
 
+Fonte: Autores(2023)
+
 ### Gráficos do Cluster 4
 
 ![Figura 13](./reports/figures/cluster4_faixa_etaria.png)
@@ -400,6 +412,8 @@ Alguns gráficos foram elaborados para cada cluster na busca por encontrar relac
 ![Figura 15](./reports/figures/cluster4_IMC.png)
 
 ![Figura 16](./reports/figures/cluster4_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
 
 Dos gráficos acima, conseguimos destacar os resultados do Cluster 1 (verde) e do Cluster 4 (lilás). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de vitamina D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
 
