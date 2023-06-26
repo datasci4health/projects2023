@@ -228,7 +228,9 @@ A base possui dados clínicos porém o grupo está interessado em fatores não c
 
 # Conclusão
 Podemos concluir que nosso modelo apresentou resultado competitivo em comparação a outros modelos já existentes e que conseguimos alcançar nosso objetivo de identificar grupos de risco para a diabetes tipo 2 a partir de variáveis de fácil acesso que podem ser auto relatadas. Pensando que o público alvo que irá utilizar nosso modelo são os gestores e responsáveis técnicos, é importante manter um certo nível de explicabilidade dos resultados apresentados para que seja possível identificar e estudar a importância de cada variável.
+
 Temos ciência que nossa proposta é complexa e que mais testes poderiam ser feitos para melhorar os valores de acurácia, sensibilidade e especificidade, além de que mais estudos poderiam ser realizados para completar e contrapor tais resultados. Mas consideramos que a importância do nosso estudo está relacionada com a criação de uma nova ferramenta de avaliação de diabetes tipo 2 a partir de dados brasileiros, pensados na heterogeneidade genética e de hábitos de uma população tão diversa como a nossa. 
+
 Isso partindo de que o escore mais utilizado atualmente para diabetes tipo 2 é o FINDRISC, desenvolvido e validado na Islândia, uma população muito mais homogênea e com hábitos muito diferentes que a brasileira. Tal escore já passou por validação e adaptação transcultural, porém o estudo usou uma amostra de conveniência na cidade do estudo e com um número limitado de pessoas, nosso estudo teria a capacidade de predição próxima, porém com uma amostra nacional e com capacidade de ser representativo para toda a população, o que traz mais força e confiabilidade para os resultados.
 
 
