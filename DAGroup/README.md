@@ -243,32 +243,31 @@ Devido ao fato das nossas variáveis de interesse serem qualitativas, utilizamos
 
 ***COLOCAR DO X² ENTRE AS VARIAVEL DEEPENDENTE E AS VARIAVEIS INDEPENDENTES - OK
 
-| **Variaveis**       | **chi2** | **p_value** |
-| ------------------- | -------- | ----------- |
-| exerc_fisico        | 210,9    | 0,00000     |
-| tabagismo           | 132,6    | 0,00000     |
-| cons_alcool         | 71,7     | 0,00000     |
-| cancer              | 137,9    | 0,00000     |
-| hipertensao         | 639,0    | 0,00000     |
-| diabetes            | 276,7    | 0,00000     |
-| cardiovascular      | 621,5    | 0,00000     |
-| hipercolesterolemia | 535,9    | 0,00000     |
-| avc                 | 332,8    | 0,00000     |
-| artrite             | 1017,2   | 0,00000     |
-| obesidade           | 159,0    | 0,00000     |
-| depression          | 64664,0  | 0,00000     |
-| sexo                | 1510,7   | 0,00000     |
-| estado_civil        | 275,0    | 0,00000     |
-| class_renda         | 141,3    | 0,00000     |
-| r_norte             | 41,1     | 0,00000     |
-| r_nordeste          | 7,6      | 0,00584     |
-| r_sudeste           | 15,0     | 0,00011     |
-| r_sul               | 4,9      | 0,02760     |
-| r_centro_oeste      | 1,7      | 0,19130     |
-| escolaridade        | 36,9     | 0,00000     |
-| upf                 | 24,9     | 0,00562     |
-| class_idade         | 76,4     | 0,00000     |
-| perc_saude          | 7782,9   | 0,00000     |
+| Variáveis                  |     X²   |   p |
+|:---------------------------|---------:|----------:|
+| Exercício Físico           |   210.91 |   0       |
+| Tabagismo                  |   132.59 |   0       |
+| Consumo Álcool             |    71.71 |   0       |
+| Câncer                     |   137.94 |   0       |
+| Hipertensão                |   639.02 |   0       |
+| Diabetes                   |   276.66 |   0       |
+| Cardiovascular             |   621.45 |   0       |
+| Hipercolesterolemia        |   535.93 |   0       |
+| AVC                        |   332.79 |   0       |
+| Artrite                    |  1017.19 |   0       |
+| Obesidade                  |   158.98 |   0       |
+| Sexo                       |  1510.69 |   0       |
+| Estado Civil               |   275.03 |   0       |
+| Classificação Renda        |   141.32 |   0       |
+| Região Norte               |    41.14 |   0       |
+| Região Nordeste            |     7.60 |   0.00584 |
+| Região Sudeste             |    14.99 |   0.00011 |
+| Região Sul                 |     4.85 |   0.02760 |
+| Região Centro Oeste        |     1.71 |   0.19130 |
+| Classificação Escolaridade |    36.94 |   0       |
+| Ultraprocessados           |    24.86 |   0.00562 |
+| Classificação Idade        |    76.40 |   0       |
+| Percepção de Saúde         |  7782.86 |   0       |
 
 
 
@@ -379,186 +378,183 @@ A partir dessas análises, pretendemos levar para o modelo final todas as variá
 >
 > Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 
-|                                    | Acc. Treino | Acc. Teste | P. Treino | P. Teste | R. Treino | R. Teste | F1 Treino | F1 Teste       | AUC Treino | AUC Teste      |
-| ---------------------------------- | ----------- | ---------- | --------- | -------- | --------- | -------- | --------- | -------------- | ---------- | -------------- |
-| Apenas hábitos                     | 55,95%      | 55,68%     | 12,95%    | 12,94%   | 54,70%    | 55,10%   | 20,94%    | 20,96% ± 0,65% | 55,40%     | 55,42% ± 0,97% |
-| Apenas doenças crônicas            | 72,84%      | 71,83%     | 18,99%    | 18,62%   | 44,33%    | 45,37%   | 26,59%    | 26,36% ± 0,45% | 60,36%     | 60,26% ± 0,37% |
-| Apenas hábitos e doenças crônicas  | 69,49%      | 69,74%     | 18,43%    | 18,57%   | 51,04%    | 51,00%   | 27,08%    | 27,22% ± 0,33% | 61,42%     | 61,54% ± 0,37% |
-| Apenas variáveis sociodemográficos | 57,05%      | 56,56%     | 15,81%    | 15,70%   | 69,71%    | 70,06%   | 25,77%    | 25,65% ± 0,30% | 62,62%     | 62,50% ± 0,46% |
-| Todas as varáveis 		               | 65,80%      | 65,90%     | 19,29%    | 19,28%   | 64,82%    | 64,46%   | 29,74%    | 29,68% ± 1,09% | 65,37%     | 65,27% ± 1,36% |
+| Váriaveis selecionadas             | Acc. Treino   | Acc. Teste   | P. Treino   | P. Teste   | R. Treino   | R. Teste   | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
+|:-----------------------------------|:--------------|:-------------|:------------|:-----------|:------------|:-----------|:------------|:---------------|:-------------|:---------------|
+| Apenas hábitos                     | 55.95%        | 55.68%       | 12.95%      | 12.94%     | 54.70%      | 55.10%     | 20.94%      | 20.96% ± 0.65% | 55.40%       | 55.42% ± 0.97% |
+| Apenas doenças crônicas            | 72.84%        | 71.83%       | 18.99%      | 18.62%     | 44.33%      | 45.37%     | 26.59%      | 26.36% ± 0.45% | 60.36%       | 60.26% ± 0.37% |
+| Apenas hábitos e doenças crônicas  | 69.49%        | 69.74%       | 18.43%      | 18.57%     | 51.04%      | 51.00%     | 27.08%      | 27.22% ± 0.33% | 61.42%       | 61.54% ± 0.37% |
+| Apenas variáveis sociodemográficos | 57.05%        | 56.56%       | 15.81%      | 15.70%     | 69.71%      | 70.06%     | 25.77%      | 25.65% ± 0.30% | 62.62%       | 62.50% ± 0.46% |
+| Todas as varáveis                  | 65.80%        | 65.90%       | 19.29%      | 19.28%     | 64.79%      | 64.46%     | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
 
 
 
-| Abordagens experimentadas    | F1 Treino  | F1 Teste               | AUC Treino | AUC Teste              |
-| ---------------------------- | ---------- | ---------------------- | ---------- | ---------------------- |
-| Removendo Linhas Nulas       | 29,74%     | 29,68% ± 1,09%         | 65,37%     | 65,27% ± 1,36%         |
-| Substituindo NA pela média   | 28,68%     | 28,75% ± 0,75%         | 65,40%     | 65,45% ± 0,97%         |
-| Substituindo NA pela mediana | 28,80%     | 28,85% ± 0,72%         | 65,53%     | 65,55% ± 0,93%         |
-| SMOTE                        | 28,84%     | 28,64% ± 0,78%         | 64,95%     | 64,74% ± 1,10%         |
-| Melhor resultado Grid Search | **29,68%** | **29,74%** ± **1,05%** | **65,31%** | **65,36%** ± **1,30%** |
-| Árvore de Decisão            | 28,56%     | 28,26% ± 0,77%         | 64,48%     | 63,81% ± 1,06%         |
-| Floresta Randomica           | 28,66%     | 28,39% ± 0,63%         | 65,17%     | 64,75% ± 0,81%         |
+| Abordagens experimentadas    | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
+|:-----------------------------|:------------|:---------------|:-------------|:---------------|
+| Removendo Linhas Nulas       | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
+| Substituindo NA pela média   | 28.67%      | 28.75% ± 0.75% | 65.39%       | 65.45% ± 0.96% |
+| Substituindo NA pela mediana | 28.80%      | 28.84% ± 0.72% | 65.53%       | 65.54% ± 0.93% |
+| SMOTE                        | 29.43%      | 29.18% ± 0.81% | 65.37%       | 65.10% ± 1.06% |
+| Melhor resultado Grid Search | 29.67%      | 29.70% ± 1.05% | 65.29%       | 65.32% ± 1.30% |
+| Floresta Randomica           | 28.54%      | 28.38% ± 0.65% | 64.47%       | 64.15% ± 0.90% |
+| Árvore de Decisão            | 28.39%      | 28.16% ± 0.58% | 64.86%       | 64.44% ± 0.83% |
 
 
 
-
-| Testes de estratificação | F1 Treino | F1 Teste       | AUC Treino | AUC Teste              | 
-| ------------------------ | --------- | -------------- | ---------- | ---------------------- | 
-| Renda Baixa              | 32,55%    | 32,45% ± 0,85% | 65,31%     | 65,15% ± 1,00%         |
-| Renda Alta               | 24,36%    | 24,07% ± 0,71% | 63,69%     | 63,26% ± 1,01%         |
-| Sexo Mulher              | 33,69%    | 33,25% ± 0,83% | 61,58%     | 61,16% ± 0,76%         |
-| Sexo Homen               | 18,55%    | 18,25% ± 0,78% | 64,15%     | 63,67% ± 1,12%         |
-| Idade < 40               | 25,45%    | 25,38% ± 0,77% | 63,30%     | 63,20% ± 1,10%         |
-| Idade > 40               | 32,86%    | 32,77% ± 0,37% | 66,40%     | 66,29% ± 0,48%         |
-| Idade 20-29              | 25,35%    | 24,93% ± 0,73% | 63,11%     | 62,54% ± 1,26%         |
-| Idade 30-39              | 26,22%    | 26,19% ± 1,70% | 64,24%     | 64,34% ± 2,47%         |
-| Idade 40-49              | 31,94%    | 31,62% ± 1,25% | 66,13%     | 65,71% ± 1,45%         |
-| Idade 50-59              | 34,98%    | 34,57% ± 1,23% | 67,87%     | 67,40% ± 1,28%         |
-| Região Norte             | 27,09%    | 26,86% ± 1,86% | 65,43%     | 65,07% ± 2,37%         |
-| Região Nordeste          | 30,58%    | 30,27% ± 1,03% | 64,54%     | 64,26% ± 1,23%         |
-| Região Sudeste           | 31,61%    | 31,02% ± 0,64% | 66,39%     | 65,71% ± 0,82%         |
-| Região Sul               | 28,52%    | 28,00% ± 2,28% | 65,63%     | 64,89% ± 2,81%         |
-| Região Centro Oeste      | 30,47%    | 29,33% ± 2,57% | 66,34%     | 64,83% ± 3,20%         |
-
-
-
-
-
-| name                | log_apenas_habitos | log_apenas_dcnt | log_apenas_habitos_dcnt | log_apenas_sociodemo | Todas Váriaveis |
-| ------------------- | ------------------ | --------------- | ----------------------- | -------------------- | --------------- |
-| intercept           | 0,088              | \-0,360         | \-0,375                 | 0,501                | 0,295           |
-| upf                 | 0,033              |                 | 0,051                   |                      | 0,049           |
-| exerc_fisico        | \-0,311            |                 | \-0,269                 |                      | \-0,227         |
-| tabagismo           | 0,427              |                 | 0,497                   |                      | 0,565           |
-| cons_alcool         | \-0,257            |                 | \-0,169                 |                      | \-0,024         |
-| cancer              |                    | 0,599           | 0,611                   |                      | 0,485           |
-| hipertensao         |                    | 0,333           | 0,320                   |                      | 0,347           |
-| diabetes            |                    | 0,443           | 0,428                   |                      | 0,487           |
-| cardiovascular      |                    | 0,817           | 0,794                   |                      | 0,853           |
-| hipercolesterolemia |                    | 0,416           | 0,448                   |                      | 0,463           |
-| avc                 |                    | 0,827           | 0,748                   |                      | 0,679           |
-| artrite             |                    | 0,971           | 0,967                   |                      | 0,876           |
-| obesidade           |                    | 0,172           | 0,184                   |                      | 0,194           |
-| sexo                |                    |                 |                         | \-1,053              | \-0,954         |
-| estado_civil        |                    |                 |                         | \-0,394              | \-0,375         |
-| escolaridade        |                    |                 |                         | \-0,043              | 0,028           |
-| class_idade         |                    |                 |                         | 0,120                | \-0,058         |
-| class_renda         |                    |                 |                         | \-0,262              | \-0,274         |
-
-
-| Variáveis                  | Renda Baixa | Renda Alta | Diferença (abs) |
-| -------------------------- | ----------- | ---------- | --------------- |
-| **Intercepto**             | **\-0,054** | **0,540**  | **0,594**       |
-| Ultraprocessados           | 0,047       | 0,050      | 0,003           |
-| Exercício Físico           | \-0,150     | \-0,339    | 0,189           |
-| Tabagismo                  | 0,597       | 0,534      | 0,063           |
-| Consumo Álcool             | \-0,063     | 0,042      | 0,106           |
-| Câncer                     | 0,581       | 0,481      | 0,100           |
-| Hipertensão                | 0,321       | 0,385      | 0,065           |
-| Diabetes                   | 0,497       | 0,507      | 0,010           |
-| Cardiovascular             | 0,944       | 0,791      | 0,153           |
-| Hipercolesterolemia        | 0,463       | 0,468      | 0,005           |
-| **AVC**                    | **0,806**   | **0,592**  | **0,214**       |
-| Artrite                    | 0,864       | 0,927      | 0,063           |
-| Obesidade                  | 0,207       | 0,158      | 0,049           |
-| Sexo (1=Masculino)         | \-1,003     | \-0,912    | 0,091           |
-| Estado_Civil (1=Casado)    | \-0,410     | \-0,304    | 0,105           |
-| Classificação Escolaridade | 0,069       | 0,005      | 0,063           |
-| Classificação Idade        | 0,001       | \-0,154    | 0,155           |
-| Classificação Renda        |             |            | 0,000           |
+| Testes de estratificação	 | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
+|:--------------------------|:------------|:---------------|:-------------|:---------------|
+| Renda Baixa               | 32.55%      | 32.45% ± 0.85% | 65.31%       | 65.15% ± 1.00% |
+| Renda Alta                | 24.36%      | 24.07% ± 0.71% | 63.69%       | 63.26% ± 1.02% |
+| Sexo Mulher               | 33.69%      | 33.25% ± 0.83% | 61.58%       | 61.16% ± 0.76% |
+| Sexo Homem                | 18.55%      | 18.25% ± 0.78% | 64.15%       | 63.67% ± 1.12% |
+| Idade < 40                | 25.45%      | 25.38% ± 0.77% | 63.30%       | 63.20% ± 1.10% |
+| Idade >= 40               | 32.86%      | 32.77% ± 0.37% | 66.40%       | 66.29% ± 0.48% |
+| Idade [20, 29]            | 25.31%      | 24.93% ± 0.73% | 63.07%       | 62.54% ± 1.26% |
+| Idade [30, 39]            | 26.22%      | 26.19% ± 1.70% | 64.24%       | 64.34% ± 2.47% |
+| Idade [40, 49]            | 31.94%      | 31.62% ± 1.25% | 66.13%       | 65.71% ± 1.45% |
+| Idade [50, 59]            | 34.98%      | 34.57% ± 1.23% | 67.87%       | 67.40% ± 1.28% |
+| Região Norte              | 27.10%      | 26.86% ± 1.86% | 65.43%       | 65.07% ± 2.37% |
+| Região Nordeste           | 30.55%      | 30.28% ± 1.05% | 64.51%       | 64.27% ± 1.25% |
+| Região Sudeste            | 31.60%      | 31.02% ± 0.64% | 66.38%       | 65.71% ± 0.82% |
+| Região Sul                | 28.50%      | 27.97% ± 2.24% | 65.61%       | 64.87% ± 2.78% |
+| Região Centro Oeste       | 30.47%      | 29.33% ± 2.57% | 66.34%       | 64.83% ± 3.20% |
 
 
 
 
-| Variáveis                   | Sexo Mulher | Sexo Homem  | Diferença (abs) |
-| --------------------------- | ----------- | ----------- | --------------- |
-| Intercepto                  | \-0,035     | \-0,098     | 0,063           |
-| Ultraprocessados            | 0,037       | 0,068       | 0,031           |
-| Exercício Físico            | \-0,223     | \-0,223     | 0,000           |
-| Tabagismo                   | 0,570       | 0,606       | 0,036           |
-| Consumo Álcool              | 0,083       | \-0,185     | 0,268           |
-| Câncer                      | 0,577       | 0,308       | 0,269           |
-| Hipertensão                 | 0,274       | 0,468       | 0,194           |
-| Diabetes                    | 0,457       | 0,598       | 0,141           |
-| Cardiovascular              | 0,806       | 0,964       | 0,157           |
-| Hipercolesterolemia         | 0,428       | 0,534       | 0,105           |
-| AVC                         | 0,630       | 0,854       | 0,224           |
-| **Artrite**                 | **0,828**   | **1,191**   | **0,363**       |
-| Obesidade                   | 0,164       | 0,265       | 0,101           |
-| Sexo (1=Masculino)          |             |             | 0,000           |
-| **Estado_Civil (1=Casado)** | **\-0,238** | **\-0,685** | **0,447**       |
-| Classificação Escolaridade  | \-0,004     | 0,098       | 0,102           |
-| Classificação Idade         | \-0,068     | \-0,012     | 0,056           |
-| Classificação Renda         | \-0,314     | \-0,280     | 0,034           |
+
+| Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Removendo Linhas Nulas |
+|:---------------------------|-----------------:|--------------------------:|------------------------------------:|-------------------------------------:|-------------------------:|
+| Intercepto                 |             0.09 |                     -0.36 |                               -0.38 |                                 0.50 |                     0.30 |
+| Ultraprocessados           |             0.03 |                           |                                0.05 |                                      |                     0.49 |
+| Exercício Físico           |            -0.31 |                           |                               -0.27 |                                      |                    -0.23 |
+| Tabagismo                  |             0.43 |                           |                                0.50 |                                      |                     0.57 |
+| Consumo Álcool             |            -0.26 |                           |                               -0.17 |                                      |                    -0.02 |
+| Câncer                     |                  |                      0.60 |                                0.61 |                                      |                     0.51 |
+| Hipertensão                |                  |                      0.33 |                                0.32 |                                      |                     0.35 |
+| Diabetes                   |                  |                      0.44 |                                0.43 |                                      |                     0.50 |
+| Cardiovascular             |                  |                      0.82 |                                0.79 |                                      |                     0.88 |
+| Hipercolesterolemia        |                  |                      0.42 |                                0.45 |                                      |                     0.46 |
+| AVC                        |                  |                      0.83 |                                0.75 |                                      |                     0.73 |
+| Artrite                    |                  |                      0.97 |                                0.97 |                                      |                     0.89 |
+| Obesidade                  |                  |                      0.17 |                                0.18 |                                      |                     0.19 |
+| Sexo                       |                  |                           |                                     |                                -1.05 |                    -0.96 |
+| Estado Civil               |                  |                           |                                     |                                -0.39 |                    -0.38 |
+| Classificação Escolaridade |                  |                           |                                     |                                -0.04 |                     0.11 |
+| Classificação Idade        |                  |                           |                                     |                                 0.12 |                    -0.24 |
+| Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
 
 
 
-| Variáveis                  | Idade < 40 | Idade => 40 | Diferença (abs) |
-| -------------------------- | ---------- | ----------- | --------------- |
-| Intercepto                 | 0,179      | 0,130       | 0,049           |
-| Ultraprocessados           | 0,058      | 0,048       | 0,010           |
-| Exercício Físico           | \-0,074    | \-0,347     | 0,273           |
-| Tabagismo                  | 0,671      | 0,484       | 0,187           |
-| Consumo Álcool             | 0,114      | \-0,140     | 0,254           |
-| Câncer                     | 0,428      | 0,535       | 0,106           |
-| Hipertensão                | 0,578      | 0,239       | 0,339           |
-| Diabetes                   | 0,261      | 0,523       | 0,263           |
-| **Cardiovascular**         | **1,172**  | **0,774**   | **0,397**       |
-| Hipercolesterolemia        | 0,524      | 0,424       | 0,100           |
-| **AVC**                    | **1,123**  | **0,622**   | **0,502**       |
-| Artrite                    | 1,029      | 0,851       | 0,179           |
-| Obesidade                  | 0,250      | 0,141       | 0,108           |
-| Sexo (1=Masculino)         | \-1,115    | \-0,870     | 0,245           |
-| Estado_Civil (1=Casado)    | \-0,383    | \-0,375     | 0,009           |
-| Classificação Escolaridade | \-0,011    | 0,067       | 0,078           |
-| Classificação Idade        |            |             | 0,000           |
-| Classificação Renda        | \-0,140    | \-0,397     | 0,256           |
+| Variáveis                  |   Renda Baixa |   Renda Alta |   Diferença |
+|:---------------------------|--------------:|-------------:|------------:|
+| Intercepto                 |         -0.05 |         0.54 |        0.59 |
+| Ultraprocessados           |          0.47 |         0.49 |        0.03 |
+| Exercício Físico           |         -0.15 |        -0.34 |       -0.19 |
+| Tabagismo                  |          0.60 |         0.53 |       -0.06 |
+| Consumo Álcool             |         -0.06 |         0.04 |        0.11 |
+| Câncer                     |          0.58 |         0.48 |       -0.10 |
+| Hipertensão                |          0.32 |         0.39 |        0.06 |
+| Diabetes                   |          0.50 |         0.51 |        0.01 |
+| Cardiovascular             |          0.94 |         0.79 |       -0.15 |
+| Hipercolesterolemia        |          0.46 |         0.47 |        0.01 |
+| AVC                        |          0.81 |         0.59 |       -0.21 |
+| Artrite                    |          0.86 |         0.93 |        0.06 |
+| Obesidade                  |          0.21 |         0.16 |       -0.05 |
+| Sexo                       |         -1.00 |        -0.91 |        0.09 |
+| Estado Civil               |         -0.41 |        -0.30 |        0.11 |
+| Classificação Escolaridade |          0.27 |         0.02 |       -0.25 |
+| Classificação Idade        |          0.00 |        -0.62 |       -0.62 |
 
 
 
-| Variáveis                  | Idade 20-29 | Idade 30-39 | Idade 40-49 | Idade 50-59 |
-| -------------------------- | ----------- | ----------- | ----------- | ----------- |
-| Intercepto                 | 0,194       | 0,161       | 0,230       | 0,032       |
-| Ultraprocessados           | 0,058       | 0,055       | 0,056       | 0,024       |
-| Exercício Físico           | 0,038       | \-0,161     | \-0,223     | \-0,523     |
-| Tabagismo                  | 0,663       | 0,674       | 0,480       | 0,517       |
-| Consumo Álcool             | 0,136       | 0,097       | \-0,085     | \-0,238     |
-| Câncer                     | 0,462       | 0,426       | 0,549       | 0,556       |
-| Hipertensão                | 0,725       | 0,536       | 0,322       | 0,224       |
-| Diabetes                   | 0,521       | 0,213       | 0,706       | 0,472       |
-| Cardiovascular             | 1,577       | 0,989       | 0,684       | 0,845       |
-| Hipercolesterolemia        | 0,477       | 0,562       | 0,391       | 0,489       |
-| AVC                        | 1,021       | 1,146       | 0,652       | 0,609       |
-| Artrite                    | 0,818       | 1,115       | 0,906       | 0,884       |
-| Obesidade                  | 0,345       | 0,203       | 0,180       | 0,097       |
-| Sexo (1=Masculino)         | \-1,195     | \-1,051     | \-0,944     | \-0,784     |
-| Estado_Civil (1=Casado)    | \-0,301     | \-0,433     | \-0,555     | \-0,214     |
-| Classificação Escolaridade | \-0,084     | 0,044       | 0,080       | 0,040       |
-| Classificação Idade        |             |             |             |             |
-| Classificação Renda        | 0,023       | \-0,249     | \-0,379     | \-0,354     |
+| Váriaveis                  |   Sexo Mulher |   Sexo Homem |   Diferença |
+|:---------------------------|--------------:|-------------:|------------:|
+| Intercepto                 |         -0.04 |        -0.10 |       -0.06 |
+| Ultraprocessados           |          0.37 |         0.68 |        0.31 |
+| Exercício Físico           |         -0.22 |        -0.22 |        0.00 |
+| Tabagismo                  |          0.57 |         0.61 |        0.04 |
+| Consumo Álcool             |          0.08 |        -0.18 |       -0.27 |
+| Câncer                     |          0.58 |         0.31 |       -0.27 |
+| Hipertensão                |          0.27 |         0.47 |        0.19 |
+| Diabetes                   |          0.46 |         0.60 |        0.14 |
+| Cardiovascular             |          0.81 |         0.96 |        0.16 |
+| Hipercolesterolemia        |          0.43 |         0.53 |        0.11 |
+| AVC                        |          0.63 |         0.85 |        0.22 |
+| Artrite                    |          0.83 |         1.19 |        0.36 |
+| Obesidade                  |          0.16 |         0.26 |        0.10 |
+| Estado Civil               |         -0.24 |        -0.69 |       -0.45 |
+| Classificação Escolaridade |         -0.01 |         0.39 |        0.41 |
+| Classificação Idade        |         -0.27 |        -0.05 |        0.22 |
+| Classificação Renda        |         -0.31 |        -0.28 |        0.03 |
 
 
 
-| Variáveis                  | Região Norte | Região Nordeste | Região Sudeste | Região Sul | Região Centro Oeste |
-| -------------------------- | ------------ | --------------- | -------------- | ---------- | ------------------- |
-| Intercepto                 | \-0,080      | 0,277           | 0,232          | 0,422      | 0,999               |
-| Ultraprocessados           | 0,081        | 0,061           | 0,028          | 0,054      | 0,011               |
-| Exercício Físico           | \-0,030      | \-0,206         | \-0,301        | \-0,247    | \-0,434             |
-| Tabagismo                  | 0,434        | 0,599           | 0,573          | 0,576      | 0,643               |
-| Consumo Álcool             | 0,234        | \-0,137         | 0,006          | \-0,133    | \-0,023             |
-| Câncer                     | 0,620        | 0,524           | 0,501          | 0,809      | \-0,002             |
-| Hipertensão                | 0,368        | 0,399           | 0,213          | 0,442      | 0,324               |
-| Diabetes                   | 0,656        | 0,431           | 0,420          | 0,509      | 0,515               |
-| Cardiovascular             | 0,987        | 0,951           | 1,011          | 0,396      | 0,763               |
-| Hipercolesterolemia        | 0,377        | 0,475           | 0,515          | 0,499      | 0,388               |
-| AVC                        | 0,367        | 0,739           | 0,602          | 0,925      | 1,348               |
-| Artrite                    | 0,925        | 0,979           | 0,996          | 0,561      | 0,894               |
-| Obesidade                  | 0,354        | 0,046           | 0,418          | 0,129      | 0,031               |
-| Sexo (1=Masculino)         | \-1,066      | \-0,878         | \-0,926        | \-0,871    | \-1,234             |
-| Estado_Civil (1=Casado)    | \-0,407      | \-0,358         | \-0,430        | \-0,287    | \-0,363             |
-| Classificação Escolaridade | 0,101        | 0,013           | 0,023          | 0,068      | \-0,055             |
-| Classificação Idade        | \-0,027      | \-0,073         | \-0,018        | \-0,075    | \-0,156             |
-| Classificação Renda        | \-0,418      | \-0,164         | \-0,257        | \-0,495    | \-0,179             |
+| Váriaveis                  |   Idade < 40 |   Idade >= 40 |   Diferença |
+|:---------------------------|-------------:|--------------:|------------:|
+| Intercepto                 |         0.18 |          0.13 |       -0.05 |
+| Ultraprocessados           |         0.58 |          0.48 |       -0.10 |
+| Exercício Físico           |        -0.07 |         -0.35 |       -0.27 |
+| Tabagismo                  |         0.67 |          0.48 |       -0.19 |
+| Consumo Álcool             |         0.11 |         -0.14 |       -0.25 |
+| Câncer                     |         0.43 |          0.53 |        0.11 |
+| Hipertensão                |         0.58 |          0.24 |       -0.34 |
+| Diabetes                   |         0.26 |          0.52 |        0.26 |
+| Cardiovascular             |         1.17 |          0.77 |       -0.40 |
+| Hipercolesterolemia        |         0.52 |          0.42 |       -0.10 |
+| AVC                        |         1.12 |          0.62 |       -0.50 |
+| Artrite                    |         1.03 |          0.85 |       -0.18 |
+| Obesidade                  |         0.25 |          0.14 |       -0.11 |
+| Sexo                       |        -1.11 |         -0.87 |        0.25 |
+| Estado Civil               |        -0.38 |         -0.37 |        0.01 |
+| Classificação Escolaridade |        -0.05 |          0.27 |        0.31 |
+| Classificação Renda        |        -0.14 |         -0.40 |       -0.26 |
+
+
+
+| Váriáveis                  |   Idade [20, 29] |   Idade [30, 39] |   Idade [40, 49] |   Idade [50, 59] |
+|:---------------------------|-----------------:|-----------------:|-----------------:|-----------------:|
+| Intercepto                 |             0.19 |             0.16 |             0.23 |             0.03 |
+| Ultraprocessados           |             0.58 |             0.55 |             0.56 |             0.24 |
+| Exercício Físico           |             0.04 |            -0.16 |            -0.22 |            -0.52 |
+| Tabagismo                  |             0.66 |             0.67 |             0.48 |             0.52 |
+| Consumo Álcool             |             0.14 |             0.10 |            -0.09 |            -0.24 |
+| Câncer                     |             0.46 |             0.43 |             0.55 |             0.56 |
+| Hipertensão                |             0.73 |             0.54 |             0.32 |             0.22 |
+| Diabetes                   |             0.52 |             0.21 |             0.71 |             0.47 |
+| Cardiovascular             |             1.58 |             0.99 |             0.68 |             0.85 |
+| Hipercolesterolemia        |             0.48 |             0.56 |             0.39 |             0.49 |
+| AVC                        |             1.02 |             1.15 |             0.65 |             0.61 |
+| Artrite                    |             0.82 |             1.12 |             0.91 |             0.88 |
+| Obesidade                  |             0.34 |             0.20 |             0.18 |             0.10 |
+| Sexo                       |            -1.19 |            -1.05 |            -0.94 |            -0.78 |
+| Estado Civil               |            -0.30 |            -0.43 |            -0.56 |            -0.21 |
+| Classificação Escolaridade |            -0.33 |             0.18 |             0.32 |             0.16 |
+| Classificação Renda        |             0.02 |            -0.25 |            -0.38 |            -0.35 |
+
+
+
+| Variáveis                  |   Região Norte |   Região Nordeste |   Região Sudeste |   Região Sul |   Região Centro Oeste |
+|:---------------------------|---------------:|------------------:|-----------------:|-------------:|----------------------:|
+| Intercepto                 |          -0.08 |              0.28 |             0.23 |         0.42 |                  1.00 |
+| Ultraprocessados           |           0.81 |              0.61 |             0.28 |         0.54 |                  0.11 |
+| Exercício Físico           |          -0.03 |             -0.21 |            -0.30 |        -0.25 |                 -0.43 |
+| Tabagismo                  |           0.43 |              0.60 |             0.57 |         0.58 |                  0.64 |
+| Consumo Álcool             |           0.23 |             -0.14 |             0.01 |        -0.13 |                 -0.02 |
+| Câncer                     |           0.62 |              0.52 |             0.50 |         0.81 |                 -0.00 |
+| Hipertensão                |           0.37 |              0.40 |             0.21 |         0.44 |                  0.32 |
+| Diabetes                   |           0.66 |              0.43 |             0.42 |         0.51 |                  0.51 |
+| Cardiovascular             |           0.99 |              0.95 |             1.01 |         0.40 |                  0.76 |
+| Hipercolesterolemia        |           0.38 |              0.47 |             0.52 |         0.50 |                  0.39 |
+| AVC                        |           0.37 |              0.74 |             0.60 |         0.92 |                  1.35 |
+| Artrite                    |           0.93 |              0.98 |             1.00 |         0.56 |                  0.89 |
+| Obesidade                  |           0.35 |              0.05 |             0.42 |         0.13 |                  0.03 |
+| Sexo                       |          -1.07 |             -0.88 |            -0.93 |        -0.87 |                 -1.23 |
+| Estado Civil               |          -0.41 |             -0.36 |            -0.43 |        -0.29 |                 -0.36 |
+| Classificação Escolaridade |           0.40 |              0.05 |             0.09 |         0.27 |                 -0.22 |
+| Classificação Idade        |          -0.11 |             -0.29 |            -0.07 |        -0.30 |                 -0.62 |
+| Classificação Renda        |          -0.42 |             -0.16 |            -0.26 |        -0.49 |                 -0.18 |
+
+
 
 
 
