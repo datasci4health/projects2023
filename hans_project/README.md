@@ -91,47 +91,51 @@ Sistema de Informação de Agravos de Notificação (SINAN) | http://portalsinan
  
 > * MODOS DE ENTRADA
 > 
-> - Caso novo: corresponde ao caso de hanseníase que nunca recebeu qualquer tratamento específico.
+> Caso novo: corresponde ao caso de hanseníase que nunca recebeu qualquer tratamento específico.
 > 
-> - Outros reingressos: quando o paciente recebeu algum tipo de saída que não fosse cura, exemplo abandono, e retorna requerendo tratamento específico para hanseníase, a exceção de recidiva.
+> Outros reingressos: quando o paciente recebeu algum tipo de saída que não fosse cura, exemplo abandono, e retorna requerendo tratamento específico para hanseníase, a exceção de recidiva.
 > 
-> - Outras entradas possíveis são transferência do mesmo município(outra unidade), transferência de outro município (mesma unidade da Federação – UF), transferência de outro estado, transferência de outro país.
+> Outras entradas possíveis são transferência do mesmo município(outra unidade), transferência de outro município (mesma unidade da Federação – UF), transferência de outro estado, transferência de outro país.
 > 
-> - Recidiva: pacientes que receberam alta por cura depois de serem tratados adequadamente com o esquema multidrogas e saíram do registro ativo do SINAN e que após o período de cura (geralmente superior a cinco anos)voltaram a apresentar novos sinais e sintomas clínicos da doença. Esses casos são notificados no modo de entrada ao sistema como “recidiva”.
+> Recidiva: pacientes que receberam alta por cura depois de serem tratados adequadamente com o esquema multidrogas e saíram do registro ativo do SINAN e que após o período de cura (geralmente superior a cinco anos)voltaram a apresentar novos sinais e sintomas clínicos da doença. Esses casos são notificados no modo de entrada ao sistema como “recidiva”.
 > 
 > 
 > * DADOS CLÍNICOS / EPIDEMIOLÓGICOS
 > 
-> - Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
+> Reações hansênicas: alterações do sistema imunológico que se manifestam como inflamações agudas ou subagudas e que podem ocorrer antes do diagnóstico, durante ou depois do tratamento (associado aos medicamentos suministrados).
 > 
-> - Classificação operacional baseado no número de lesões cutâneas (WHO):
+> Classificação operacional baseado no número de lesões cutâneas (WHO):
 > 
->>> Paucibacilar (PB)
->>> Multibacilar (MB)
+>>>> Paucibacilar (PB)
+
+>>>> Multibacilar (MB)
 >
-> - Formas clínicas: Classificação segundo Madri 1953.
+> Formas clínicas: Classificação segundo Madri 1953.
 > 
->>> Hanseníase indeterminada (HI) tipo PB
->>> Hanseníase tuberculóide (HT) tipo PB
->>> Hanseníase dimorfa (HD) tipo MB
->>> Hanseníase virchowiana (HV) tipo MB
+>>>> Hanseníase indeterminada (HI) tipo PB
+
+>>>> Hanseníase tuberculóide (HT) tipo PB
+
+>>>> Hanseníase dimorfa (HD) tipo MB
+
+>>>> Hanseníase virchowiana (HV) tipo MB
 >
-> - Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
+> Tratamento - esquemas terapêuticos. Série de medicamentos diários e mensais dependendo da classificação operacional padronizada pela Organização Mundial da Saúde(OMS). O tratamento é com poliquimioterapia (PQT).
 > 
-> - Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
+> Casos novos em faixa etária menor de 15 anos: A ocorrência de casos novos nesta faixa etária indica focos de transmissão ativa, importante sinalizador para o monitoramento da doença.
 > 
-> - Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
+> Grau de Incapacidade Física (GIF): Indica a perda da sensibilidade protetora e/ou deformidade visível em consequência de lesão neural e/ou cegueira. 
 >
-> - Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
+> Casos notificados com GIF=2 (de maior avanço) evidenciam diagnóstico tardio, devido ao maior grau de comprometimento físico ocasionado pela hanseníase.
 >
 >
 > * MODOS DE SAÍDA
 >
-> - Alta por cura: implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), junto com avaliação médica (neurológica, grau de incapacidade e orientação para os cuidados) o que leva a saída do paciente do registro ativo no SINAN.
+> Alta por cura: implica que o tratamento foi concluído (6 ou doze meses de acordo com a classificação operacional), junto com avaliação médica (neurológica, grau de incapacidade e orientação para os cuidados) o que leva a saída do paciente do registro ativo no SINAN.
 > 
-> - Abandono do tratamento: é aquele onde o paciente não consegue completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se são paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas para o retorno e seguimento do tratamento.
+> Abandono do tratamento: é aquele onde o paciente não consegue completar o tratamento dentro do prazo máximo permitido (mais de três ou seis meses consecutivos, se são paucibacilares e multibacilares, respectivamente), apesar de repetidas tentativas para o retorno e seguimento do tratamento.
 > 
-> - Outros encerramentos possíveis são transferência para o mesmo município, para outro município, estado ou país, óbito por hanseníase ou por outra causa como erro diagnóstico.
+> Outros encerramentos possíveis são transferência para o mesmo município, para outro município, estado ou país, óbito por hanseníase ou por outra causa como erro diagnóstico.
 > 
 > 
 > * INDICADORES
@@ -281,7 +285,8 @@ Tabela 1 - Resultados para classificação em cura (classe 1) e abandono (classe
 >| XGBoost              | 0.96     | 0.68     | 0.98     | 0.65     | 0.98     | 0.66     | 0.98     |
 >| LightGBM             | 0.96     | 0.71     | 0.98     | 0.62     | 0.98     | 0.66     | 0.98     |
 >
-> A combinação de hiperparâmetros que resultou nesses valores para o XGBoost estão na Tabela 2:
+A combinação de hiperparâmetros que resultou nesses valores para o XGBoost estão na Tabela 2:
+
 Tabela 2 - Hiperparâmetros do modelo escolhido 
 >| Hiperparâmetro       | Valor               |
 >|----------------------|---------------------|
@@ -300,6 +305,18 @@ Tabela 2 - Hiperparâmetros do modelo escolhido
 >
 > Portanto, com base nos resultados apresentados, o modelo escolhido foi o XGBoost que mostrou uma precisão de 0.68 para a classe 0, o que significa que 68% dos desfechos classificados como abandono foram corretamente identificados. A revocação de 0.65 indica que 65% dos pacientes que realmente abandonaram o tratamento foram corretamente identificados. O f1-score, que combina precisão e revocação, foi de 0.66, e a acurácia geral foi de 0.96. Apesar de terem sido obtidas métricas similares ao LightGBM, o XGBoost manteve uma maior constância entre revocação e precisão. 
 
+# Conclusão
+> Esse trabalho apresentou a aplicabilidade da Inteligência Artificial para auxiliar no planejamento financeiro da saúde pública, sendo capaz de classificar o tipo de desfecho do caso do paciente em cua ou abandono. Sendo capaz de fazer esse tipo de predição, é possível estimar um maior investimento destinado ao paciente que abandona o tratamento, pois eventualmente ele irá retornar em um nível mais avançado da doença.
+>
+> A metodologia apresentou a utilização de várias técnicas para a análise dos dados, buscando relação entre as variáveis e o tipo de desfecho. Utilizou também quatro modelos distintos para comparar desempenho e escolher o que tivesse melhor desempenho, utilizando para todos o método k-fold cross validation e otimização de hiperparâmetros.
+>
+> As análises realizadas mostraram que não é possível afirmar uma relação entre as variáveis clínicas e epidemiológicas  com o tempo de cura dos pacientes com hanseníase, uma vez que a duração do tratamento é padronizada de acordo com o grau da doença. Além disso, também não se pode concluir que há uma relação entre o índice de desenvolvimento humano com a incidência (número de casos novos) e os casos de abandono do tratamento da doença, pois embora tenha se obtido uma correlação negativa (indicando que quanto menor o IDH, maior a incidência da doença), esse valor foi de 0,28.
+>
+> O classificador XGBoost obteve os melhores resultados com acurácia de 96%, revocação da classe 0 (abandono) de 65%, revocação da classe 1 (cura) de 98%, precisão da classe 0 de 68%, precisão da classe 1 de 98%, f1 score da classe 0 de 66%, e f1 score da classe 1 de 98%. Tendo em vista que o ideal para classificar o problema, deve possuir um equilíbrio entre as quatro métricas avaliadas (acurácia, revocação, precisão e f1-score), pode-se considerar que o trabalho apresentou resultados promissores.
+
+# Trabalhos Futuros
+Alguns aspectos que não foram concluídos ou inclusos nesse trabalho podem ser aprimorados no futuro. O primeiro é extender a análise para o corte temporal após a pandemia de covid-19 (a partir de 2020). Segundo, utilizar outras variáveis para análises, como formas clínicas e regiões geográficas. 
+
 # Cronograma
 > |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
 > |--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -312,7 +329,7 @@ Tabela 2 - Hiperparâmetros do modelo escolhido
 > | Elaboração do relatório  |  |  |  |  |  |  |  |  | X |  |
 > | Entrega final e apresentação  |  |  |  |  |  |  |  |  |  | X |
 
-# Referências
+# Referências Bibliográficas
 > 1. de Andrade KVF, Nery SJ, Pescarini MJ, Ramond A, Teles Santos dS CA, Ichihara MY, et al. (2019). Geographic and socioeconomic factors associated with leprosy treatment default: An analysis from the 100 Million Brazilian Cohort. PLOS Neglected Tropical Diseases, 13(9): e0007714. https://doi.org/10.1371/journal. pntd.0007714.
 >
 > 2. Kerr-Pontes LR, Barreto M L, Evangelista CM, Rodrigues LC, Heukelbach, and Feldmeier H. (2006). Socioeconomic, environmental, and behavioural risk factors for leprosy in North-east Brazil: Results of a case–control study. International Journal of Epidemiology, 35(4): 994–1000. https://doi.org/10.1093/ije/dyl072.
