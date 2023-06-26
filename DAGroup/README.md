@@ -257,7 +257,7 @@ No desenvolvimento do modelo, deparamo-nos com outro problema relacionado ao gra
 
 Para realizar nossa análise e responder às questões de pesquisa, procedemos da seguinte maneira: inicialmente, dividimos os dados em conjuntos de treinamento (70%) e teste (30%). Após essa divisão, tivemos 45.264 amostras para treinamento e 19.400 amostras para teste. Vale ressaltar que ambos os conjuntos apresentaram aproximadamente 23% de linhas com pelo menos um dado faltante.
 
-Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à sua confiabilidade. Realizamos testes removendo as linhas com dados nulos e também empregamos técnicas de imputação para encontrar o melhor modelo.
+Para avaliar os modelos, utilizamos o F1-score como métrica principal devido à sua confiabilidade em conjuntos não balanceados. Realizamos testes removendo as linhas com dados nulos e também empregamos técnicas de imputação para encontrar o melhor modelo.
 
 A maioria das variáveis no conjunto de dados possui valores binários. No entanto, as variáveis restantes foram normalizadas para uma escala de 0 a 1, a fim de possibilitar uma comparação justa dos coeficientes de regressão.
 
