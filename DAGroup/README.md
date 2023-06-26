@@ -337,14 +337,18 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 # Resultados e Discussão
 
+
+> Descrição dos resultados mais importantes obtidos.
+>
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 > Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
 > A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
 
 
-#### Testes de associação
+### Testes de associação
 
-Primeiramente, realizamos associações entre as variáveis sociodemográficas dentre as pessoas colocadas com depressão segundo o PHQ9.   Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p< 0,05) com alto potencial de depressão.
+Primeiramente, realizamos associações entre as variáveis sociodemográficas dentre as pessoas colocadas com depressão segundo o PHQ9. Obtivemos que sexo, cor, idade, escolaridade, percepção da própria saúde, percepção da saúde segundo OMS, renda per capita possui associação (p < 0,05) com alto potencial de depressão.
 
 | **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -364,10 +368,11 @@ Primeiramente, realizamos associações entre as variáveis sociodemográficas d
 |                                 	| Sudeste                                 	| 20,70%             	| 20,48%            	| 22,49%            	| 14,99    	| 0,0001  	|
 |                                 	| Sul                                     	| 12,12%             	| 12,22%            	| 11,30%            	| 4,85     	| 0,0276  	|
 |                                 	| Centro Oeste                            	| 11,86%             	| 11,80%            	| 12,34%            	| 1,71     	| 0,1913  	|
-* Teste X² de variáveis sociodemográficas confrontadas com pessoas com depressão (PHQ9 score >= 10)
+
+\* Teste X² de variáveis sociodemográficas confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
 
-Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre fumar tabaco e atividade física nos últimos 3 meses (p< 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p=0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
+Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre fumar tabaco e atividade física nos últimos 3 meses (p < 0,05), porém não encontramos associação entre consumo de bebida alcoólica e depressão (p = 0,27). Neste bloco, pretendemos realizar análises sobre consumo alimentar, porém é necessário criar um índice a partir das informações presentes no inquérito, visto que são perguntas baseadas em um grupo de alimento ou alimento, por esse motivo, iremos buscar a associação de padrão alimentar saudável e não saudável com alto potencial de depressão para a próximo entrega. 
 
 | **Comportamentos de saúde**                         |                | **População 2019** | **Sem depressão** | **Com Depressão** | **X²** *| **p** * |
 |-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
@@ -383,7 +388,8 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 |                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
 | **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
 |                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
-* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
+
+\* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
 Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão e câncer estão associados com alto potencial de depressão. Como na análise de hábitos de vida, pretendemos incluir para próxima etapa a análise de associação de obesidade com alto potencial para depressão. 
 
@@ -404,18 +410,12 @@ Por fim, analisamos as doenças crônicas não transmissíveis com depressão e 
 |                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 0                 	| ---      	| ---     	|
 | **Obesidade**                	| Sim                  	| 20,93%             	| 20,23%            	| 26,82%            	| 158,9776 	| 0,0001  	|
 |                              	| Não                  	| 79,07%             	| 79,77%            	| 73,18%            	| ---      	| ---     	|
-* Teste X² de variáveis de DCNT confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
+\* Teste X² de variáveis de DCNT confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
-A partir dessas análises, pretendemos levar para o modelo final todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
+A partir dessas análises, levamos para o modelo final (regressão) todas as variáveis de hábitos de vida e doenças crônicas não transmissíveis que possuem associação com o alto potencial de depressão.
 
-
-#### Regressão
-
-
-> Descrição dos resultados mais importantes obtidos.
->
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
+### Modelos preditivos para classificação
 
 A primeira tabela abaixo os resultados de diferentes combinações de variáveis no modelo de regressão. Cada linha representa uma combinação específica de variáveis e os valores nas colunas "Acc. Treino" e "Acc. Teste" indicam a acurácia alcançada pelo modelo nos conjuntos de treino e teste, respectivamente. Além disso, a tabela também fornece métricas adicionais como precisão (P), recall (R), pontuação F1 (F1) e área sob a curva (AUC) para cada conjunto de treino e teste.
 
@@ -453,8 +453,6 @@ Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logi
 > Análise e discusão
 
 A próxima tabela apresenta os resultados de diferentes abordagens experimentadas no modelo. Cada linha representa uma abordagem específica, como remoção de linhas nulas, substituição de valores faltantes pela média, substituição de valores faltantes pela mediana, uso de SMOTE (técnica de oversampling) e melhores resultados obtidos através de um 'Grid Search', executado pelo codigo abaixo:
-
-
 
 | Abordagens experimentadas    | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
 |:-----------------------------|:------------|:---------------|:-------------|:---------------|
