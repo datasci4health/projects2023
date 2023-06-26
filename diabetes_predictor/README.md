@@ -24,11 +24,7 @@ https://youtu.be/Ti_Q1Hb_aM4
 
 # Perguntas de Pesquisa
 **Objetivo geral**
-Modelar determinantes sociais de saúde (SDOH) em populações de capitais brasileiras para o desenvolvimento de diabetes.
-
-**Objetivos específicos*
-1. Determinar principais variáveis socioeconômicas e de saúde associadas ao desfecho diabetes.
-2. Analisar possíveis diferenças de hábitos dos anos pré e durante pandemia para seleção de dados.
+Determinar características socioeconômicas e de saúde relacionadas com o desfecho diabetes tipo 2 em capitais brasileiras.
 
 # Metodologia
 Método aplicado à base escolhida
