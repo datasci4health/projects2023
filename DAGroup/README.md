@@ -433,7 +433,7 @@ A primeira tabela abaixo os resultados de diferentes combinações de variáveis
 |:-----------------------------------|:--------------|:-------------|:------------|:-----------|:------------|:-----------|:------------|:---------------|:-------------|:---------------|
 | Apenas hábitos                     | 55.95%        | 55.68%       | 12.95%      | 12.94%     | 54.70%      | 55.10%     | 20.94%      | 20.96% ± 0.65% | 55.40%       | 55.42% ± 0.97% |
 | Apenas doenças crônicas            | 72.84%        | 71.83%       | 18.99%      | 18.62%     | 44.33%      | 45.37%     | 26.59%      | 26.36% ± 0.45% | 60.36%       | 60.26% ± 0.37% |
-| Apenas hábitos e doenças crônicas  | 69.49%        | 69.74%       | 18.43%      | 18.57%     | 51.04%      | 51.00%     | 27.08%      | 27.22% ± 0.33% | 61.42%       | 61.54% ± 0.37% |
+| Apenas hábitos e doenças crônicas  | 69.49%        | 69.74%       | 18.43%      | 18.58%     | 51.04%      | 51.02%     | 27.08%      | 27.23% ± 0.34% | 61.42%       | 61.55% ± 0.38% |
 | Apenas variáveis sociodemográficos | 57.05%        | 56.56%       | 15.81%      | 15.70%     | 69.71%      | 70.06%     | 25.77%      | 25.65% ± 0.30% | 62.62%       | 62.50% ± 0.46% |
 | Todas as varáveis                  | 65.80%        | 65.90%       | 19.29%      | 19.28%     | 64.79%      | 64.46%     | 29.73%      | 29.68% ± 1.09% | 65.36%       | 65.27% ± 1.35% |
 
@@ -445,8 +445,8 @@ Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logi
 
 | Variáveis                  |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Todas as varáveis      |
 |:---------------------------|-----------------:|--------------------------:|------------------------------------:|-------------------------------------:|-------------------------:|
-| Intercepto                 |             0.09 |                     -0.36 |                               -0.38 |                                 0.50 |                     0.30 |
-| Ultraprocessados           |             0.03 |                           |                                0.05 |                                      |                     0.49 |
+| Intercepto                 |             0.09 |                     -0.36 |                               -0.37 |                                 0.50 |                     0.30 |
+| Ultraprocessados           |             0.33 |                           |                                0.51 |                                      |                     0.49 |
 | Exercício Físico           |            -0.31 |                           |                               -0.27 |                                      |                    -0.23 |
 | Tabagismo                  |             0.43 |                           |                                0.50 |                                      |                     0.57 |
 | Consumo Álcool             |            -0.26 |                           |                               -0.17 |                                      |                    -0.02 |
@@ -460,8 +460,8 @@ Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logi
 | Obesidade                  |                  |                      0.17 |                                0.18 |                                      |                     0.19 |
 | Sexo                       |                  |                           |                                     |                                -1.05 |                    -0.96 |
 | Estado Civil               |                  |                           |                                     |                                -0.39 |                    -0.38 |
-| Classificação Escolaridade |                  |                           |                                     |                                -0.04 |                     0.11 |
-| Classificação Idade        |                  |                           |                                     |                                 0.12 |                    -0.24 |
+| Classificação Escolaridade |                  |                           |                                     |                                -0.17 |                     0.11 |
+| Classificação Idade        |                  |                           |                                     |                                 0.48 |                    -0.24 |
 | Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
 
 Observa-se que os coeficientes mantiveram-se praticamente inalterados quando todos os atributos foram combinados em um único modelo.
