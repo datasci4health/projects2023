@@ -423,18 +423,47 @@ Esses foram justamenta os dois clusters mais bem separados se observarmos o grá
 
 
 
-Um modelo de regressão linear múltipla foi aplicado com todas as variáveis, obtendo-se uma baixa explicação do
-modelo; no entanto, a remoção de algumas variantes atingiu uma eficácia de 65%. A Figura 5 apresenta a saída obtida para o melhor resultado. 
+Um modelo de Árvore de Decisão foi escolhido por seu nível de interpretabilidade para poder fazer uma classificação multi-classe, que pode ajudar o especialista como um guia para os vários caminhos que podem levá-lo a um nível de gravidade quando ele é hospitalizado. Isso deve ser usado como uma ferramenta, mas não como um veredito.
 
-### Figura 6- Regressão Linear Múltipla
+### Figura 6 - Modelo de Classificação por Árvore de Decisões
 
-![Figura 29](./reports/figures/saida.png)
+![Figura 29](./reports/figures/decision_tree.png)
 
 Fonte: Autores(2023)
 
-## Ferramentas
+### Figura 7 - Matrix de Confusão da classificação
+
+![Figura 30](./reports/figures/confusion_matrix_decision_tree.png)
+
+Fonte: Autores(2023)
+
+Nesse modelo de Machine Learning, há métricas que podem indicar a eficácia de sua função; nesse caso, ela é de cerca de 85%, o que pode ser visto na matriz de confusão que, nesse contexto, tem bons resultados de acerto; no entanto, como limitação, temos um banco de dados com poucos registros e, por esse motivo, os valores podem estar sofrendo de sobreajuste. 
+
+O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índices de Gini para fazer a seleção dos nós, onde é indicada a pureza ou a relação de informações que cada variável fornece.
+
+
+### Figura 8 - Mortes durante a hospitalização versus níveis de vitamina D
+
+![Figura 31](./reports/figures/morte_durante_hospitalizacao.png)
+
+Fonte: Autores(2023)
+
+A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
+
+### Figura 9 - Mortes durante a hospitalização versus níveis de vitamina D
+
+![Figura 32](./reports/figures/severidade_vitaminad.png)
+
+Fonte: Autores(2023)
+
+Com base no gráfico anterior, onde há dois grupos, aqui a divisão é tem mais categorias, no entanto, pode-se observar que apenas o nível "Leve" é aquele que está dentro dos níveis adequados de vitamina D, o restante está fora e pode-se observar uma tendência de que quanto menor o índice de vitamina D, maior a gravidade da Covid-19. Isso abre caminho para explorar a relação com mais variáveis, como idade e etnia.
+
+
+
+### Ferramentas
  Por conter um vasto conjunto de bibliotecas estatísticas, gráficas e numéricas, optou-se pela utilização da ferramenta Python, que além da implementação mais "simplificada" faz parte do conhecimento de todos os participantes do projeto.
  As bibliotecas utilizadas para implementação e análises estão dispostas na Tabela 9.
+
 
 ### Tabela 9- Bibliotecas Utilizadas
  |Nome | Utilização|
@@ -447,9 +476,28 @@ Fonte: Autores(2023)
  Fonte: Autores(2023)
  
 
+
+## Resultados
+
+
+## Discussão
+
+
+## Conclusão
+
+
+## Trabalhos Futuros
+
+A fim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
+<!--ts-->
+   * Predição do desfecho
+   * Clusterização das Variáveis
+   * Análises das variáveis de confusão
+<!--te-->
+
+
  
- 
-# Cronograma
+## Cronograma
  
 ### Tabela 10- Divisão das Atividades
 <table>
@@ -634,14 +682,7 @@ Fonte: Autores(2023)
 
 Fonte: Autores(2023)
 
-# Análises Futuras
 
-A fim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
-<!--ts-->
-   * Predição do desfecho
-   * Clusterização das Variáveis
-   * Análises das variáveis de confusão
-<!--te-->
 
 # Referências
 
