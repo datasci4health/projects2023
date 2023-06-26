@@ -275,9 +275,9 @@ xgb_pipe = Pipeline(
 
 # Resultados
 ## Modelagem de ML
-A tabela abaixo contém o resultado comparativo entre os modelos de regressão logística, random forest, xgboost e lightgbm para a predição do desfecho da doença: cura ou abandono.
-
-Tabela 1 - Resultados para classificação em cura (classe 1) e abandono (classe 0) utilizando modelos de aprendizado de máquina
+>A tabela abaixo contém o resultado comparativo entre os modelos de regressão logística, random forest, xgboost e lightgbm para a predição do desfecho da doença: cura ou abandono.
+>
+>Tabela 1 - Resultados para classificação em cura (classe 1) e abandono (classe 0) utilizando modelos de aprendizado de máquina
 >| Modelo               | Acurácia | Precisão <br> da classe 0 | Precisão <br> da classe 1 | Revocação <br> da classe 0 | Revocação <br> da classe 1 | F1 score <br> da classe 0 | F1 score <br> da classe 1 |
 >|----------------------|----------|----------|----------|----------|----------|----------|----------|
 >| Logistic Regression  | 0.92     | 0.42     | 0.98     | 0.82     | 0.93     | 0.56     | 0.96     |
@@ -285,9 +285,9 @@ Tabela 1 - Resultados para classificação em cura (classe 1) e abandono (classe
 >| XGBoost              | 0.96     | 0.68     | 0.98     | 0.65     | 0.98     | 0.66     | 0.98     |
 >| LightGBM             | 0.96     | 0.71     | 0.98     | 0.62     | 0.98     | 0.66     | 0.98     |
 >
-A combinação de hiperparâmetros que resultou nesses valores para o XGBoost estão na Tabela 2:
-
-Tabela 2 - Hiperparâmetros do modelo escolhido 
+>A combinação de hiperparâmetros que resultou nesses valores para o XGBoost estão na Tabela 2:
+>
+>Tabela 2 - Hiperparâmetros do modelo escolhido 
 >| Hiperparâmetro       | Valor               |
 >|----------------------|---------------------|
 >| colsample_bytree     | 0.9664002609854957  |
@@ -315,7 +315,7 @@ Tabela 2 - Hiperparâmetros do modelo escolhido
 > O classificador XGBoost obteve os melhores resultados com acurácia de 96%, revocação da classe 0 (abandono) de 65%, revocação da classe 1 (cura) de 98%, precisão da classe 0 de 68%, precisão da classe 1 de 98%, f1 score da classe 0 de 66%, e f1 score da classe 1 de 98%. Tendo em vista que o ideal para classificar o problema, deve possuir um equilíbrio entre as quatro métricas avaliadas (acurácia, revocação, precisão e f1-score), pode-se considerar que o trabalho apresentou resultados promissores.
 
 # Trabalhos Futuros
-Alguns aspectos que não foram concluídos ou inclusos nesse trabalho podem ser aprimorados no futuro. O primeiro é extender a análise para o corte temporal após a pandemia de covid-19 (a partir de 2020). Segundo, utilizar outras variáveis para análises, como formas clínicas e regiões geográficas. 
+>Alguns aspectos que não foram concluídos ou inclusos nesse trabalho podem ser aprimorados no futuro. O primeiro é extender a análise para o corte temporal após a pandemia de covid-19 (a partir de 2020). Segundo, utilizar outras variáveis para análises, como formas clínicas e regiões geográficas. 
 
 # Cronograma
 > |Etapas | Sem 1 | Sem 2| Sem 3| Sem 4| Sem 5| Sem 6| Sem 7| Sem 8| Sem 9| Sem 10|
