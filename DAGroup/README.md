@@ -73,7 +73,7 @@ _Objetivo geral:_
 
  - Compreender os comportamentos de saúde e doenças crônicas
    não transmissíveis mais determinantes para o diagnóstico da depressão
-   em um inquérito de saúde nacional a fim de orientar ações de prevenção para à depressão no Brasil.
+   em um inquérito de saúde nacional a fim de orientar ações de prevenção para à depressão.
 
 _Objetivos específicos:_
 
