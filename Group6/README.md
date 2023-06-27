@@ -48,13 +48,13 @@ Propose improvements on the model’s learning process and future work.
 
 # Methodology
 
-# Dataset Collection and Preparation
+### Dataset Collection and Preparation
 Our dataset was generated using Whole Slide Imaging (WSI) - a cutting-edge technology that digitizes complete histological or cytological tissue slides to provide high-resolution images. This method has revolutionized traditional microscopy by capturing comprehensive and detailed representations of tissue or cell structures.
 
 The specific dataset employed in this project consisted of Breast Histopathology Images, extracted from 279 unique patients. In total, we had 277,524 patches, each of the size 50x50 pixels. Among these patches, 198,738 were Invasive Ductal Carcinoma (IDC) negative, and 78,786 were IDC positive. By leveraging the dataset at the level of individual patches, we were able to reconstruct the histological structures of the tissues.
 
 
-# Model Selection and Preprocessing
+### Model Selection and Preprocessing
 For the classification task, we chose EfficientNetV2S, a renowned image classification model available within the Keras library. This model promises an optimal balance between accuracy and training time and typically performs excellently on mid-sized to large datasets.
 
 Our dataset was partitioned into training (70%), validation (15%), and testing (15%) sets. Importantly, we ensured that the split was performed at the patient level to prevent the mixing of patches from the same patient across different sets. To address the class imbalance, we truncated the data to achieve an equal number of instances from each class in all subsets. Due to computational constraints, the dataset was further reduced by 50%.
