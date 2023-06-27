@@ -322,7 +322,7 @@ Por fim, as correlações entre o nível de 25(OH)D e a gravidade da doença COV
 Fonte: Autores(2023)
 
 
-A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais escuro mais diretamente correlacionadas. A linha diagonal tem correlação 1 pois se refere à correlação de uma variável com ela mesma, mas é possível notar que a hipertensão HTN e COPD apresentam uma alta correlação. Isso sugere que há uma associação significativa entre essas duas condições crônicas. Fatores como tabagismo, obesidade e problemas de saúde em geral podem contribuir para o desenvolvimento e a progressão de ambas as doenças.
+A correlação entre variáveis pode ser vista na Figura 5, em que, quanto mais escuro mais diretamente correlacionadas. A linha diagonal tem correlação 1 pois se refere à correlação de uma variável com ela mesma, mas é possível notar que a hipertensão HTN e COPD apresentam uma alta correlação. Isso sugere que há uma associação significativa entre essas duas condições crônicas. Fatores como tabagismo, obesidade e problemas de saúde em geral podem contribuir para o desenvolvimento e a progressão de ambas as doenças.
 
 ### Figura 5- Correlação entre Variáveis
 
