@@ -1,0 +1,8 @@
+variable;variable_description;category
+Mobility;Mobility ;Your Physical Experiences
+Care;Self-care;Your Physical Experiences
+Active;Usual activties;Your Physical Experiences
+Pain;Pain/discomfort;Your Physical Experiences
+Anxious;Anxiety/depression;Your Physical Experiences
+Health;Today's health on a scale from 0 to 100 [Derived];Your Physical Experiences
+HealthPNA;Prefer not to answer;Your Physical Experiences
