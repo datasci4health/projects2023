@@ -350,6 +350,9 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9, encontramos que escolaridade, sexo, estado civil, renda per capita e idade possui associação (p < 0,05) com alto potencial de depressão. Além disso, encontramos associação entre depressão e a maior parte das regiões brasileiras, exceto na região Centro-Oeste.
 
+Assim como apresentado na literatura, encontramos que quanto menor a escolaridade maior é a proporção de pessoas com depressão, ocorreu o mesmo ao comparamos depressão com renda per capita. Em relação a variável sexo, encontramos uma prevalência de depressão muito super em mulheres comparada aos homens. Isto é atribuído a diversos fatores, por exemplo as mulheres apresentam e relatam mais sobre os sintomas clássicos para o diagnóstico da depressão em relação aos homens que relatam com menor frequência e apresentam como sintomas mais comum o abuso de álcool e drogas (https://linkinghub.elsevier.com/retrieve/pii/S0165032704003738) (https://www.sciencedirect.com/science/article/abs/pii/S0010440X07001666?via%3Dihub). Além dessas variáveis, encontramos que ao avançar da idade há uma maior prevalência de depressão dentre a amostra estudada. 
+
+
 
 | **Variáveis sociodemográficas** 	|                                         	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |---------------------------------	|-----------------------------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -407,8 +410,7 @@ Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagis
 
 
 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. Verificamos uma maior prevalência de várias DCNT entre as pessoas diagnosticadas com depressão. Essas associações indicam que essas condições de saúde têm uma maior prevalência entre os indivíduos com diagnóstico de depressão, conforme descrito na literatura [8],[12].
-
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer, diabetes e obesidade estão associados com o diagnóstico de depressão. Tais associações também são encontradas por outros estudos, os quais mostram uma bidirecionalidade entre histórico de doenças crônicas não transmissiveis sendo fator de risco para depressão e depressão sendo elencada como fator de risco para o desenvolvimento de DCNT. Essa complexidade é atribuída a diversos fatores como genética, biológica e comportamental que são comuns entre elas (https://www.scielo.br/j/rbepid/a/gYrgkcRnGTgWTjVTNSD9MNS/?lang=pt)
 
 
 | **Variáveis de DCNT**        	|                      	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
@@ -447,7 +449,7 @@ A primeira tabela abaixo os resultados de diferentes combinações de variáveis
 
 A métrica de acurácia não é adequada para este problema devido ao desbalanceamento das classes. Se tivéssemos um modelo que classificasse todas as instâncias como não-depressão, teríamos uma acurácia próxima a 90%. Por essa razão, é necessário avaliar outras métricas, como precisão, revocação, F1-score e AUC, para realizar comparações. No caso desse problema, optaremos pelo F1-score como métrica padrão, pois ele oferece um equilíbrio entre precisão e revocação, sendo adequado para situações em que as classes estão desbalanceadas.
 
-Ao analisar a tabela, podemos observar que o modelo "Apenas doenças crônicas" apresenta um F1-score superior em comparação com os modelos "Apenas hábitos" e "Apenas variáveis sociodemográficas". Isso indica que o grupo de variáveis relacionadas a doenças crônicas é mais relevante para o modelo do que os outros grupos.
+Ao analisar a tabela, podemos observar que o modelo "Apenas doenças crônicas" apresenta um F1-score superior em comparação com os modelos "Apenas hábitos" e "Apenas variáveis sociodemográficas". Isso indica que o grupo de variáveis relacionadas a doenças crônicas é mais relevante para o modelo do que os outros grupos. Esse resultado está em consonância com o nosso modelo teórico, o qual elenca os comportamentos de saúde inadequados como fatores comuns para as doenças crônicas não transmissíveis e a depressão. 
 
 Em seguida podemos ver a tabela de coeficientes encontrados pela regressão logistica.
 
