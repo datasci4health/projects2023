@@ -91,7 +91,7 @@ This dataset consists of 10,000 sample images with six different classes of skin
 
 All the datasets can be accessed through two main files. The first is composed of the images in .jpg format and the second is a .csv file that contains the image's names and the classes per image. Some examples of the structure of the data can be seen in the image below.
 
-![Dataset Description](./assets/Dataset_NA.png)
+![Dataset Description](../assets/Dataset_NA.png)
 
 
 During the exploratory data analysis, it was discovered that the classes are imbalanced, this was an interesting observation since the first idea of the project was to explore different data augmentation techniques on the health image dataset. However, the initial proposal was adapted to a scenario where we can have an insightful contribution from the health specialist in the team, and also,  based on the analysis of the problem itself, we concluded that in a daily routine, it wouldn't be a very useful tool for a doctor to work with. Therefore, this dataset was discarded.
@@ -111,11 +111,11 @@ During the exploratory data analysis, it was discovered that the classes are imb
 
 ### Class 1
 
-![Class 1 Patches](./assets/Class-1.png)
+![Class 1 Patches](../assets/Class-1.png)
 
 ### Class 0
 
-![Class 0 Patches](./assets/Class-0.png)
+![Class 0 Patches](../assets/Class-0.png)
 
 
 
@@ -143,7 +143,7 @@ It is also possible to identify, in certain images, the presence of mammary glan
 In addition to the mentioned findings, it is possible to locate lymphocytes, which are immune system cells and have slightly larger nuclei than the cells present in the breast. Mitoses, the events in which a cell multiplies through cell division, are also present. In these cases, cells have a denser nucleus and, in some instances, an elongated shape (Anatpat, 2023). 
 
 
-![Exploratory Analysis of the Patches](./assets/Patches.png)
+![Exploratory Analysis of the Patches](../assets/Patches.png)
 
 
 From the first plot, we can observe a high variation in the number of patches per patient, with a mean of around 1000. This observation makes us think that, if the patches are the same size (50x50) per patient and the total number is still different, maybe the full images per patient have different sizes or some data is missing. However, at the moment, we believe that this is not a problem since the classification models are going to work with the patches as input, but, we do agree that we need to be careful about preserving data from the same patient in the same set (e.g., train, validation and test sets).
@@ -154,7 +154,7 @@ From the third plot, we can get how much data from classes 0 or 1 are present on
 
 Also, the figure below shows some examples from the dataset for 6 different patients. Each image is composed of patches from that patient that are related to class 0 (pink circles) and 1 (blue circles). From that, we can confirm some of the insights we had from the plots above, that are: just a small percentage of the images contains cancer cells, and most of them are healthy cell, which justifies the classes being imbalanced; also, we can clearly see differences on the number of patches per patients since the x-y axis have different total numbers and the circles from the plots may appear in different distances from each other, which highlights that some patients may have images with different sizes or that are some missing patches per patient
 
-![Patient Patches](./assets/patient.png)
+![Patient Patches](../assets/patient.png)
 
 
 
@@ -196,12 +196,12 @@ To evaluate the results achieved by EfficientNetV2S we have first plotted the lo
 Since the training of such a big dataset is very time-consuming, we have decided to stop the training in 20 epochs, however, we do agree the accuracy and loss evolution was still showing progress, which may be indicative of better learning after the 20th epoch, which could produce better generalizability for the model on the test set. This decision is going to be highlighted in the next sections.
 
 
-![Loss and Accuracy Evolution](./assets/result.png)
+![Loss and Accuracy Evolution](../assets/result.png)
 
 Based on that, the trained model was applied to the test set, which contained samples of the dataset that were not previously seen by the classifier. On the test, the model could correctly classify the images with an accuracy of 83.26% and its confusion matrix can be seen below.
 
 
-![Confusion Matrix](./assets/matrix.png)
+![Confusion Matrix](../assets/matrix.png)
 
 
 From the results obtained, it is evident that the model made 2,346 incorrect classifications and 11,670 correct classifications. In the medical context, evaluating the false negatives produced by the classifier is crucial as they represent instances where the model failed to identify breast cancer in the tissue despite its presence. Notably, there were a significant number of false negatives, amounting to 1,136, which is comparable to the number of false positives, totalling 1,210. However, considering the overall sample size of the test set, which was 14,016, it can be concluded that the model demonstrated a certain level of proficiency in learning the primary patterns indicative of breast cancer.
@@ -210,7 +210,7 @@ Below, we can observe some metrics that were evaluated based on the confusion ma
 
 In summary, the precision, recall, specificity, accuracy and f1-score present similar behavior, indicating the model presents consistent performance metrics around 83% for both classes indicating an interesting level of effectiveness in classifying breast cancer tissues on the given dataset.
 
-![Metrics](./assets/metrics.png)
+![Metrics](../assets/metrics.png)
 
 From the results obtained and analyzed in the previous section, we have observed the effectiveness of a supervised learning-based classification model in classifying and identifying patterns on the patches that are, indeed, related to breast cancer. 
 
@@ -220,7 +220,7 @@ We can also highlight some of the misclassifications the model made to observe a
 
 ### THE INCORRECT CLASSIFICATIONS
 
-![THE INCORRECT CLASSIFICATIONS](./assets/incorrect.png)
+![THE INCORRECT CLASSIFICATIONS](../assets/incorrect.png)
 
 When analyzing the patches, it was possible to observe that those displaying half in white and half containing tissue were classified as 0, indicating the absence of neoplasia, even when the tissue in question belonged to class 1. Furthermore, tissues with few differentiated cells, light colouration, and scar tissue were also categorized as class 0 by the model. Similarly, when the tissue exhibited intense colouration and a significant amount of adipocytes (circular structure with white interior), the model also classified it as class 0.
 
@@ -234,7 +234,7 @@ Furthermore, accurate identification and classification of tissues are essential
 
 
 ### THE CORRECT CLASSIFICATIONS
-![THE CORRECT CLASSIFICATIONS](./assets/correct.png)
+![THE CORRECT CLASSIFICATIONS](../assets/correct.png)
 
 In a tissue region where there is a presence of cells with larger nuclei, such as lymphocytes, there may be some local inflammatory process or response from the organism’s immune system, which would justify the accumulation of these cells. Such accumulation could also indicate the presence of carcinoma in the region. When analyzing the model, it classified these patches as positive, demonstrating that the model made accurate classifications. Additionally, patches with an abundance of adipocytes were also classified as negative, and in these cases, the model also made accurate classifications. Additionally, the patch containing artefacts, such as the grey field shown in the image set discussed in the topic ‘’Database Studies and Adopted’’, was correctly classified as negative. This outcome demonstrates the accuracy of the model.
 

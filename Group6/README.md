@@ -18,7 +18,7 @@ This project originated in the context of the activities of the postgraduate dis
 
 # Final Presentation Slide
 HISTOPATHOLOGY BREAST CANCER [Drive Link](https://docs.google.com/presentation/d/169Uxc4ZzKnGlALwkBuwg54oSCp8PxMzT/edit?usp=sharing&ouid=115190221092782416253&rtpof=true&sd=true)
-[Github Link](https://github.com/datasci4health/projects2023/raw/main/Group6/docs/Final_Presentation.pdf)
+[Github Link](https://github.com/Lekzyboi/projects2023/raw/Project_Branch/Group6/docs/Final_Presentation.pdf)
 
 
 # Introduction and Theoretical References
@@ -216,7 +216,7 @@ From the point of view of machine learning, we can also agree the model explored
 
 We can also highlight some of the misclassifications the model made to observe and discuss, to some extent, its behaviour on the test set.
 
-### 
+### THE INCORRECT CLASSIFICATIONS
 
 ![THE INCORRECT CLASSIFICATIONS](./assets/incorrect.png)
 
@@ -229,6 +229,8 @@ On the other hand, there was an interesting observation when the tissue had a de
 Therefore, it is crucial to consider these nuances when interpreting the model’s results. Incorrect classification of tissues with intense colouration as class 1, even in the absence of abnormalities, could lead to misdiagnosis. Hence, it is necessary to carefully evaluate the histological techniques employed and consider the possibility of variations and subjectivity in the interpretation of the images.
 Furthermore, accurate identification and classification of tissues are essential to ensure the accuracy of diagnosis and provide appropriate treatment to patients. Therefore, the involvement of experienced pathologists who can analyze and interpret the results provided by the model, while considering the complete clinical context of the patients, is essential.
 
+
+### THE CORRECT CLASSIFICATIONS
 ![THE CORRECT CLASSIFICATIONS](./assets/correct.png)
 
 In a tissue region where there is a presence of cells with larger nuclei, such as lymphocytes, there may be some local inflammatory process or response from the organism’s immune system, which would justify the accumulation of these cells. Such accumulation could also indicate the presence of carcinoma in the region. When analyzing the model, it classified these patches as positive, demonstrating that the model made accurate classifications. Additionally, patches with an abundance of adipocytes were also classified as negative, and in these cases, the model also made accurate classifications. Additionally, the patch containing artefacts, such as the grey field shown in the image set discussed in the topic ‘’Database Studies and Adopted’’, was correctly classified as negative. This outcome demonstrates the accuracy of the model.
