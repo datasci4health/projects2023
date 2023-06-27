@@ -95,22 +95,13 @@ A análise pode ser vista em data/external/bases adotadas
 
 No Gráfico 1  é representado o nível de ansiedade vs a mobilidade. A mobilidade na base de dados é descrita e classificada como: 
 
-Mobility	0	I have no problems in walking about
-Mobility	1	I have slight problems in walking about
-Mobility	2	I have moderate problems in walking about
-Mobility	3	I have severe problems in walking about
-Mobility	4	I am unable to walk about
-Mobility	5	Prefer not to answer
+![Grafico 1](./assets/exp/mob-semXcom.jpg)
+
 Foi possível observar que quanto menor a mobilidade do paciente maior o nível de ansiedade. 
 
 No Gráfico 2  é representado o nível de ansiedade vs autocuidado. A autocuidado na base de dados é descrita e classificada como:
 
-Care	0	I have no problems washing or dressing myself
-Care	1	I have slight problems washing or dressing myself
-Care	4	I am unable to wash or dress myself
-Care	2	I have moderate problems washing or dressing myself
-Care	3	I have severe problems washing or dressing myself
-Care	5	Prefer not to answer
+![Grafico 2](./assets/exp/care-semXcom.jpg)
 
 Diante disso, é visto que há uma relação similar entre a mobilidade e o autocuidado, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor.
 Pain	1	I have slight pain or discomfort
