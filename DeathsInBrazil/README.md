@@ -94,7 +94,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > Na figura 1 é representado o desenvolvimento do trabalho desde a criação do projeto até a construção do relatório final.
 >
 > Figura 1: Workflow do desenvolvimento do projeto.
-> ![Figura 1](img/figura1.png)
+> ![Figura 1](assets/figura1.png)
 
 # Bases de Dados e Evolução
 ## Bases Estudadas e Não Adotadas
@@ -131,7 +131,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > 
 > Figura 2: Mapa das maiores causas de óbitos por país no ano de 2019.
 > 
-> ![Figura 2](img/figura2.png)
+> ![Figura 2](assets/figura2.png)
 > 
 > Fonte: Construção dos autores a partir de dados do “Our world in data” - database1.
 
@@ -149,7 +149,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > 
 > Figura 3: Mapa das maiores causas de óbitos por país no ano de 2019 – database 1
 > 
-> ![Figura 3](img/figura3.png)
+> ![Figura 3](assets/figura3.png)
 > 
 > Fonte: Construção dos autores a partir de dados do “Our world in data”.
 
@@ -158,7 +158,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Figura 4: Número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021 por mês.
 > 
-> ![Figura 4](img/figura4.png)
+> ![Figura 4](assets/figura4.png)
 > 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 
@@ -167,7 +167,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > 
 > Figura 5: Divisão de dados para modelagem de Série Temporal. Número de óbitos por doenças cardiovasculares no Brasil no período de 1996 a 2021. 
 > 
-> ![Figura 5](img/figura5.png)
+> ![Figura 5](assets/figura5.png)
 > 
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 
@@ -183,7 +183,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Figura 5: Estados do Brasil com o maior número de óbitos por 100 mil habitantes devido a doenças cardiovasculares no período de 1996 a 2021.
 >
-> ![Figura 6](img/figura6.png)
+> ![Figura 6](assets/figura6.png)
 >
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
 
@@ -201,13 +201,13 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 
 > Tabela 4: Descritiva database 3 – Variáveis individuais – Exames 
 >
-> ![Tabela 4](img/tabela4.png)
+> ![Tabela 4](assets/tabela4.png)
 >
 > Fonte: Construção dos autores a partir de dados do FHS-Cohort - database 3.
 
 > Tabela 5: Descritiva database 4 – Variáveis individuais – Exames 
 >
-> ![Tabela 5](img/tabela5.png)
+> ![Tabela 5](assets/tabela5.png)
 >
 > Fonte: Construção dos autores a partir de dados simulado - database 4
 
@@ -226,13 +226,13 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > Com o objetivo de determinar a ordem dos termos foi calculado a Função de Autocorrelação Amostral (FAC) e a Função de Autocorrelação Parcial (FACP). Analisando as Figuras 6 e 7. É possível perceber que em ambas há lag´s (níveis) significativos, o que indica significância estatísticas ao nível de 5% para os termos destas duas funções.
 
 > Figura 7: Função de autocorrelação amostral para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
-> ![Figura 7](img/figura7.png)
+> ![Figura 7](assets/figura7.png)
 >
 > Fonte: Construção dos austores a partir de informações do DataSUS-Tabnet/SIM.
 
 > Figura 8: Função de Autocorrelação Parcial para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
 >
-> ![Figura 8](img/figura8.png)
+> ![Figura 8](assets/figura8.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 
@@ -240,7 +240,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Tabela 6: Testes de Significância Estatística dos Parâmetros do Modelo SARIMA(1;1;1)(3;2;1)12 para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
 >
-> ![Tabela 6](img/tabela6.png)
+> ![Tabela 6](assets/tabela6.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 
@@ -250,7 +250,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Tabela 7: Comparação dos Erros Produzidos pelos Modelos de Séries Temporais Ajustados aos Dados para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
 >
-> ![Tabela 7](img/tabela7.png)
+> ![Tabela 7](assets/tabela7.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 
@@ -258,20 +258,20 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Tabela 8: Testes de Significância Estatística de Box Pierce para Independência dos Resíduos do Modelo de Previsão Identificado para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
 >
-> ![Tabela 8](img/tabela8.png)
+> ![Tabela 8](assets/tabela8.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 
 
 > Figura 9: Testes de Normalidade dos Resíduos do Modelo de Previsão Identificado para o número de óbitos por doenças cardiovasculares no Brasil, no período de janeiro de 1996 a dezembro de 2021.
 >
->![Figura 9](img/figura9.png)
+>![Figura 9](assets/figura9.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM
 
 > Figura 10: Modelo de Série Temporal SARIMA(1;0;0)(2;0;3)12 a partir de dados de óbitos por doenças cardiovasculares no Brasil.
 >
-> ![Figura 10](img/figura10.png)
+> ![Figura 10](assets/figura10.png)
 >
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 > Nota: L.I = Limite Inferior de Predição / L.S = Limite Superior de Predição.
@@ -280,7 +280,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Figura 11: Correlograma do número de óbitos por doenças cardiovasculares no Mundo.
 >
-> ![Figura 11](img/figura11.png)
+> ![Figura 11](assets/figura11.png)
 >
 > Fonte: Construção dos autores a partir de dados do FHS-Cohort - database 3
 
@@ -288,7 +288,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > 
 > Figura 12: Matriz de confusão de regressão logística (a), Random forest (b) e K-Nearest Neighbors (c).
 >
-> ![Figura 12](img/figura12.png)
+> ![Figura 12](assets/figura12.png)
 >
 > Fonte: Construção dos autores a partir de dados do FHS-Cohort - database 3
 Apesar de ser o que teve a menor acurácia, o modelo de regressão logística foi o modelo que apresentou a melhor métrica de Recall. Apresentando um Recall de 65%. Entretanto na predição do conjunto de test (que não temos a resposta), o modelo final (Regressão logística) prevê em 100% dos casos afirmando que a pessoa terá doença cardiovascular no período de 10 anos. Apesar disso, o Random Forest também afirmou que 100% dos casos a pessoa terá uma doença cardiovascular em 10 anos, então é possível que o conjunto de teste tenha em sua maioria pessoas que terão doença cardiovascular. Observando o gráfico de correlação entre as features é possível observar que as características idade, pressão arterial sistólica e se o paciente teve algum histórico de AVC são as que tem uma maior correlação com a presença ou não de doença cardiovascular no período de 10 anos.
@@ -296,7 +296,7 @@ Na segunda etapa de machine learning foi feito novamente a análise de correlaç
 
 > Figura 13: Correlograma do número de óbitos por doenças cardiovasculares no Mundo.
 >
-> ![Figura 13](img/figura13.png)
+> ![Figura 13](assets/figura13.png)
 >
 > Fonte: Construção dos autores a partir de dados simulado - database 4
 
@@ -304,16 +304,19 @@ Na segunda etapa de machine learning foi feito novamente a análise de correlaç
 >
 > Figura 14: Matriz de confusão de regressão logística (a), Random forest (b) e K-Nearest Neighbors (c).
 >
-> ![Figura 14](img/figura14.png)
+> ![Figura 14](assets/figura14.png)
 >
 > Fonte: Construção dos autores a partir de dados simulado - database 4
 
 
 > O melhor modelo apresentado foi o Random Forest. Este modelo mostrou uma acurácia de 71% no treinamento e foi o que apresentou o menor número de falso negativos. Na predição final, utilizando novos dados - total de 14 mil pessoas, o modelo previu corretamente que 5359 pessoas não tinham doenças cardiovasculares e 4451 tinham doenças cardiovasculares, mas previu de forma incorreta 2562 pessoas com falsos negativos e 1628 pessoas com falsos positivos. Observando o gráfico de correlação entre as features é possível observar que as características idade, peso e colesterol são as que tem uma maior correlação com a presença ou não de doença cardiovascular.
-Brant e colaboradores (2022) evidenciaram fatores de riscos determinantes, entre fatores sociais, ambientais, comportamentais e metabólicos. Os quais se interrelacionam, pois fatores de riscos modificáveis como, pressão arterial, glicemia e colesterol estão diretamente associados a hábitos de vida como dieta inadequada e sedentarismo (BRANT et al., 2022).
-Determinados fatores de risco tiveram suas taxa reduzidas ao longo do tempo, como consequência da urbanização e mudança de hábitos comportamentais resultantes de maior conscientização e evolução de políticas públicas voltadas para a prevenção de diversas doenças (BRANT et al., 2022), como por exemplo, a redução de taxa de tabagismo entre homens e mulheres a partir da década de 90 (RIBEIRO et al., 2016). No entanto, outras taxas como idade e estado nutricional tiveram suas participações aumentadas. A maior urbanização e o desenvolvimento da tecnologia levaram ao aumento da expectativa de vida dos indivíduos, mas também ao desenvolvimento de hábitos não-saudáveis em prol da acomodação, como o maior consumo de alimentos ultraprocessados e sedentarismo (RIBEIRO et al., 2016). 
+> 
+> Brant e colaboradores (2022) evidenciaram fatores de riscos determinantes, entre fatores sociais, ambientais, comportamentais e metabólicos. Os quais se interrelacionam, pois fatores de riscos modificáveis como, pressão arterial, glicemia e colesterol estão diretamente associados a hábitos de vida como dieta inadequada e sedentarismo (BRANT et al., 2022).
+> 
+> Determinados fatores de risco tiveram suas taxa reduzidas ao longo do tempo, como consequência da urbanização e mudança de hábitos comportamentais resultantes de maior conscientização e evolução de políticas públicas voltadas para a prevenção de diversas doenças (BRANT et al., 2022), como por exemplo, a redução de taxa de tabagismo entre homens e mulheres a partir da década de 90 (RIBEIRO et al., 2016). No entanto, outras taxas como idade e estado nutricional tiveram suas participações aumentadas. A maior urbanização e o desenvolvimento da tecnologia levaram ao aumento da expectativa de vida dos indivíduos, mas também ao desenvolvimento de hábitos não-saudáveis em prol da acomodação, como o maior consumo de alimentos ultraprocessados e sedentarismo (RIBEIRO et al., 2016). 
 As abordagens de última geração têm sido empregadas para auxiliar os sistemas de saúde médica, utilizando diversas técnicas de machine learning e séries temporais (PRADEEP; NAVEEN, 2018; TARAWHNEH; EMBARAK, 2019; KOUKARAS; BEZAS; GKAIDATZIS; IOANNIDIS; TZOVARAS; TJORTJIS, 2021), utilizando o histórico do paciente como recurso para gerar alertas de saúde necessários. No entanto, até o momento, essas técnicas têm se limitado a prever apenas as condições em tempo real, poucos estudos atuais têm se concentrado na previsão do estado futuro de um paciente (AHMED; LIN; SRIVASTAVA, 2023). Em situações médicas críticas, a condição de saúde de um paciente pode deteriorar-se em questão de segundos (JABEEN; MAQSOOD; GHAZANFAR; AADIL; KHAN; KHAN; MEHMOOD, 2019; LIU; GÖRGES; JENKINS, 2012). Em cenários de emergência, o tempo de resposta usualmente varia entre um e três minutos (JABEEN; MAQSOOD; GHAZANFAR; AADIL; KHAN; KHAN; MEHMOOD, 2019; HELLINGS et al., 2017). Durante esse intervalo, os profissionais de saúde podem enfrentar um cenário perigoso devido à falta de informações precisas sobre o estado de saúde do paciente. A previsão da condição futura de um paciente pode ser fundamental para uma terapia eficaz (AHMED; LIN; SRIVASTAVA, 2023). Além disso, a previsão das condições futuras pode reduzir o risco de perda de vidas valiosas e fornecer aos cuidadores informações relevantes a longo prazo a serem consideradas (AHMED; LIN; SRIVASTAVA, 2023).
-Os resultados de nossos testes estão em consonância com a literatura, visto que apontaram a idade, pressão arterial sistólica e colesterol como fatores de risco com alta correlação para o desenvolvimento de DCV (OLIVEIRA et al., 2022). 
+> 
+> Os resultados de nossos testes estão em consonância com a literatura, visto que apontaram a idade, pressão arterial sistólica e colesterol como fatores de risco com alta correlação para o desenvolvimento de DCV (OLIVEIRA et al., 2022). 
 
 # Conclusão
 > O presente trabalho realizou um estudo temporal sobre a principal causa de morte no Brasil e no mundo, incluindo alguns de seus fatores de risco. Primeiramente, indo de encontro a literatura e identificando que a principal causa de morte são as Doenças Cardiovasculares, dado que foi confirmado pelos nossos resultados. Por segundo, estabelecendo uma série temporal que obedeceu a todos os pressupostos necessários de maneira satisfatória e viabilizou seu uso para predição em relação ao número de óbitos por doenças cardiovasculares no Brasil. E servindo como ferramenta de aprendizado e modelagem por meio de Machine Learning, podendo ser uma poderosa ferramenta na análise e visualização de dados biomédicos.
