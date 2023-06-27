@@ -15,7 +15,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 ## Slides da Apresentação Final
 
-[Link para slides da apresentação final do projeto](https://www.canva.com/design/DAFmwXEC7yY/icnFkTJZTTm-u82yPKs00A/edit?utm_content=DAFmwXEC7yY)
+[Link para slides da apresentação final do projeto](assets/DAGroup.pdf)
 
 ## Apresentação inicial do projeto
 
