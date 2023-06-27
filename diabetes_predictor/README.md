@@ -332,3 +332,6 @@ Ferramente de dados: Python, Stata, Google Colab, bibliotecas de manipulação d
 | 22 de junho | Modelo refinado e finalizado. Últimas etapas da metodologia  |
 | 22 ou 27 de junho  | Apresentação  |
 
+# Notebooks
+Os notebooks podem ser acessados clicando [aqui](https://drive.google.com/drive/folders/1IlmQYHQUJMae1gClfRwy4etRyP_AUZ7i?usp=sharing).
+
