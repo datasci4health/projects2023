@@ -43,10 +43,6 @@ O modelo de regressão logística apresentou o melhor desempenho preditivo, com 
 
 # Perguntas de Pesquisa e Objetivos
 
-> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
-> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
-> Objetivos principais e específicos
-
 Algumas perguntas de pesquisa foram pensadas visando uma compreensão aprofundada dos determinantes associados à depressão.
 
  - Quais hábitos de vida estão associados à depressão? 
