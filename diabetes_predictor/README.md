@@ -205,7 +205,6 @@ Após todas essas análises, definimos que as variáveis que serão usadas no mo
 - IMC
 - pressão alta
 - frequência de consumo de álcool
-- cor
 - atividade física
 
 ### Transformações e tratamentos realizados:
@@ -220,11 +219,18 @@ As análises realizadas já contam com os dados após as transformações e trat
 
 
 ## Integração entre Bases e Análise Exploratória
+substituir pelo pns
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
 
-A base possui dados clínicos porém o grupo está interessado em fatores não clínicos também coletados, como a peso, altura, status de tabagismo, escolaridade, idade em que começou os estudos, cor, presença de diabetes e pressão alta. Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar esta coorte de doenças coronarianas para validação do modelo treinado com a base Vigitel. Esta coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
+# Modelagem
+
+## Passos Realizados
+
+
+
+## Estudo de Caso
 
 # Conclusão
 Podemos concluir que nosso modelo apresentou resultado competitivo em comparação a outros modelos já existentes e que conseguimos alcançar nosso objetivo de identificar grupos de risco para a diabetes tipo 2 a partir de variáveis de fácil acesso que podem ser auto relatadas. Pensando que o público alvo que irá utilizar nosso modelo são os gestores e responsáveis técnicos, é importante manter um certo nível de explicabilidade dos resultados apresentados para que seja possível identificar e estudar a importância de cada variável.
