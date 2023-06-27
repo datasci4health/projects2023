@@ -27,8 +27,9 @@
 > Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
 
 > # Nota:
-> **Para mais informação consulte:** [video de apresentação do grupo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
-
+> **Para mais informação consulte:**
+> - [video de apresentação do grupo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
+> - [Slides da Apresentação Final](https://docs.google.com/presentation/d/1owZvL1l1FhoMUqWMBlwgYRORD4hVznqA-ashmJg2DKk/edit?usp=sharing)
 # Perguntas de Pesquisa
 >
 > As questões de pesquisa a serem abordadas serão:
@@ -357,3 +358,13 @@ Para nossa última pergunta, conforme análise de correlação nas ```Figuras 9,
 Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há alguns fatores contextuais dos pacientes (como comorbidades, hábitos e estado no dia do exame) que acabam não sendo informados pelos pacientes e que podem influenciar tanto o IDO quanto a ```frequência cardíaca maxima```.
 
 
+### Bibliografia
+
+> - [1] Mitra, Amal K., Azad R. Bhuiyan, and Elizabeth A. Jones. 2021. "Association and Risk Factors for Obstructive Sleep Apnea and Cardiovascular Diseases: A Systematic Review" Diseases 9, no. 4: 88. https://doi.org/10.3390/diseases9040088
+> - [2] Yeghiazarians, Y., Jneid, H., Tietjens, J. R., Redline, S., Brown, D. L., El-Sherif, N., ... & Somers, V. K. (2021). Obstructive sleep apnea and cardiovascular disease: a scientific statement from the American Heart Association. Circulation, 144(3), e56-e67.
+> - [3] Bauters, F., Rietzschel, E.R., Hertegonne, K.B.C. et al. 2016. The Link Between Obstructive Sleep Apnea and Cardiovascular Disease. Curr Atheroscler Rep 18, 1. https://doi.org/10.1007/s11883-015-0556-z
+> - [4] Ramar K, Dort LC, Katz SG, Lettieri CJ, Harrod CG, Thomas SM, et al. 2015. Clinical practice guideline for the treatment of obstructive sleep apnea and snoring with oral appliance therapy: an update for 2015. J Clin Sleep Med. 2015 Jul 15;11(7):773-827.
+> - [5] Aarab G, Lobbezoo F, Heymans MW, Hamburger HL, Naeije M. Long-term follow-up of a randomized controlled trial of oral appliance therapy in obstructive sleep apnea. Respiration. 2011 Mar 31;82(2):162-8.
+> - [6] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-68.
+> - [7] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
+> - [8] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
