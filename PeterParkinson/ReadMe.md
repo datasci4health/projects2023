@@ -131,13 +131,6 @@ No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dad
 
 !(./assets/exp/pain-semXcom.jpg)
 
-Pain	1	I have slight pain or discomfort
-Pain	2	I have moderate pai or discomfort
-Pain	3	I have severe pain or discomfort
-Pain	0	I have no pain or discomfort
-Pain	4	I have extreme pain or discomfort
-Pain	5	Prefer not to answer
-
 
 Foi possível observar que quanto menor a ansiedade do paciente menor o nível de dor. 
  Diante disso, é visto que há uma relação entre a mobilidade, autocuidado e realização de atividade, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor. Sendo assim, conclui-se que ansiedade pode ser apresentada em pacientes de parkinson com a maior perda de mobilidade e mudanças severas na rotina. 
