@@ -35,7 +35,7 @@ A utilização de inquéritos de saúde nacionais se torna extremamente pertinen
 
 A partir desse cenário, o objetivo do estudo é buscar comportamentos de saúde inadequados e doenças crônicas não transmissíveis mais determinantes para o diagnóstico da depressão em um inquérito de saúde nacional possibilitando auxiliar na prevenção do desenvolvimento da depressão no Brasil.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/DAG.jpg)
+![](assets/DAG.jpg)
 
 Neste trabalho, utilizamos técnicas de análise estatística, como o teste qui-quadrado, para avaliar a associação de variáveis de comportamentos de saúde, doenças crônicas não transmissíveis e características sociodemograficas com depressão. Além disso, treinamos modelos de classificação binária para prever se uma pessoa é potencialmente diagnósticada com depressão (utilizando o questionário PHQ-9) a partir de variáveis de elecandas acima.
 
@@ -159,58 +159,58 @@ Apenas pessoas com idade entre 18 e 59 anos podem ser avaliadas neste índice. P
 
 Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_workflow.png)
+![](assets/e2_workflow.png)
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/assets/e2_specific_workflow.png" alt="drawing" width="583"/>
+<img src="assets/e2_specific_workflow.png" alt="drawing" width="583"/>
 
 #### Análise Exploratória
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png" alt="drawing" width="583"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png" alt="drawing" width="583"/>
 
 Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_idade_peso.png" alt="drawing" width="700"/>
 
 Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população geral:
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png" alt="drawing" width="700"/>
 
 Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao de uma exponencial negativa, conforme podemos observar na figura abaixo:
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png" alt="drawing" width="700"/>
 
 Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse. Foi possível notar que há uma maior prevalência de pessoas do sexo feminino com depressão ao longo de todo o score de PHQ-9, o mesmo ocorre com pessoas com idade superior aos 40 anos. Evidenciando que independente do grau de gravidade da doença, a diferença entre as categorias se mantêm. 
 
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png" alt="drawing" width="700"/>
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png" alt="drawing" width="700"/>
 
 Abaixo temos gráficos de depressão com tratamento e atendimento no SUS
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png" alt="drawing" width="700"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_depression_stats.png" alt="drawing" width="700"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas que autorelataram que foram diagnosticadas por depressão por estado brasileiro.
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png" alt="drawing" width="450"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png" alt="drawing" width="450"/>
 
 Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png" alt="drawing" width="600"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png" alt="drawing" width="600"/>
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
 
 Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado brasileiro.
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png" alt="drawing" width="450"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png" alt="drawing" width="450"/>
 
 Avaliando pessoas diagnósticas com depressão segundo o PHQ9 >= 10, questionário aplicado na amostra do estudo, observamos que houve uma distribuição na frequencia de pessoas com depressão diferente da apresentada acima, a qual é confeccionada com base na pergunta específica sobre O diagnóstico autodeclarado de depressão .
 A partir disso, a correlação entre o IDH médio de cada estado com a porcentagem de depressão também foi alterada, como apresentado abaixo. 
 
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
+<img src="notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
 
 # Análises Realizadas
 
@@ -595,7 +595,7 @@ Na proxima tabela, são comparados os coeficientes da regressão logística para
 
 O algoritmo de árvore de decisão, assim como a regressão, logística também tem a vantagem de ser interpretável. A figura abaixo ilustra uma árvore de decisão construída a partir dos dados fornecidos. Essa representação visual demonstra como o algoritmo divide os dados em diferentes ramos, com base em atributos relevantes, até chegar a uma decisão final. Cada nó da árvore representa uma condição que é testada, e as ramificações indicam os possíveis resultados dessa condição.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
+![](notebooks/generated_data/pns_data_models/decistion_tree_p.svg)
 
 Ao analisar o gráfico da árvore de decisão, é possível observar que o atributo mais eficaz na separação das classes (depressão ou não) é o sexo. Quando uma pessoa é do sexo masculino e não possui hipertensão, o algoritmo classifica como não-depressiva, uma vez que 70,1% das amostras nessa categoria não apresentam depressão, representando 38,7% de todos os dados. Por outro lado, o algoritmo identifica a depressão em 78,5% dos casos em que a pessoa é do sexo feminino e tem artrite, embora esse cenário seja pouco representativo, abrangendo apenas 4,1% das amostras.
 
@@ -644,13 +644,13 @@ Por fim, a tabala abaixo compara os diferentes tipos de algoritmos experimentado
 | AUC Teste        | **71.57%**            | 69.56%          | 70.55%          |
 
 Abaixo podemos ver a curva ROC entre estes 3 modelos.
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/roc.png)
+![](notebooks/generated_data/pns_data_models/roc.png)
 
 Tanto a curva ROC quanto a tabela concordam em eleger a Regressão Logística como o melhor algoritmo para o problema em questão. Podemos observar na curva ROC que o modelo de Regressão Logística (curva azul) está acima das outras duas curvas em praticamente todos os pontos de tradeoff, o que é consistente com seu maior AUC e maior pontuação F1. No entanto, é importante notar que na métrica de revocação, a Floresta Randomica mostra um desempenho superior aos demais. A Floresta Randomica utiliza uma abordagem de conjunto (ensemble) em que cada Árvore de Decisão é treinada com uma amostra aleatória dos dados de treinamento e, em seguida, suas classificações são agregadas para obter uma previsão final, a vantagem da Floresta Randomica em relação à Regressão Logística é sua capacidade de capturar interações complexas e não lineares entre as variáveis de entrada.
 
 Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão logística no conjunto de teste. Ao analisar a matriz, podemos observar que há um grande número de falsos positivos, o que resulta na precisão baixa previamente relatada. No entanto, em relação aos casos de depressão, o modelo apresenta um número menor de falsos negativos, resultando em uma taxa de revocação de aproximadamente 66%.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
+![](notebooks/generated_data/pns_data_models/cm.png)
 
 # Conclusão
 
