@@ -18,7 +18,7 @@ As doenças crônicas são as principais causas de morte no Brasil e no mundo, s
 
 O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto.
 
-O vídeo de apresentação da proposta do projeto pode ser acessado clicando [aqui](https://youtu.be/Ti_Q1Hb_aM4).
+O vídeo inicial de apresentação da proposta do projeto pode ser acessado clicando [aqui](https://youtu.be/Ti_Q1Hb_aM4).
 
 https://youtu.be/Ti_Q1Hb_aM4
 
@@ -241,7 +241,7 @@ Durante a modelagem, após importar os dados processados, foram realizados algun
 <img src="assets/tests_validation.png" style="width:100%">
 </figure>
 
-Foram realizados diversos experimentos com o conjunto de validação utilizando modelos simples como Árvore de Decisão até modelos complexos como Auto Enconder. Estes experimentos foram combinados com diferentes estratégias de geração de dados sintéticos como o SMOTE, ADASYN, Borderline e Downsampling. Pode se notar que o modelo Random Forest apresentou os melhores resultados considerando explicabilidade, complexida, acurácia balanceada e AUC. Também foram levadas em consideração as métricas f1-score, especificidade e sensibilidade.
+Foram realizados diversos experimentos com o conjunto de validação utilizando modelos simples como Árvore de Decisão até modelos complexos como Auto Enconder. Estes experimentos foram combinados com diferentes estratégias de geração de dados sintéticos como o SMOTE, ADASYN, Borderline e Downsampling. Pode se notar que o modelo Random Forest apresentou os melhores resultados considerando explicabilidade, complexidade, acurácia balanceada e AUC. Também foram levadas em consideração as métricas f1-score, especificidade e sensibilidade.
 
 <figure>
 <figcaption align = "center"><b>Gráfico 16: Modelo Final Selecionado
@@ -257,7 +257,7 @@ O gráfico mostra as métricas para o modelo final encontrado a partir de busca 
 <img src="assets/relatedworks.PNG" style="width:100%">
 </figure>
 
-Em comparação com os trabalhos relacionados, o nosso modelo apresentou um resultado competitivo, com destaque para a ROC-AUC, métrica amplamente utilizada no contexto de saúde. Add referências
+Em comparação com os trabalhos relacionados, o nosso modelo apresentou um resultado competitivo, com destaque para a ROC-AUC, métrica amplamente utilizada no contexto de saúde. Referências: [1]( https://repositorio.unifesp.br/bitstream/handle/11600/67419/Dissertação_Leonardo%20Fernandes%20Silva_PDFA.pdf), [2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7526372/), [3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4724234/) e [4](https://www.scielo.br/j/csc/a/jPkqjGD94bWL4C)
 
 ## Estudo de Caso
 
