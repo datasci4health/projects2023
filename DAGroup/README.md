@@ -196,8 +196,6 @@ Abaixo podemos observar curvas de distribuição dos indivíduos da base em rela
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png" alt="drawing" width="700"/>
 
-![Idade e peso da população]()
-
 Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população geral:
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png" alt="drawing" width="700"/>
