@@ -107,16 +107,14 @@ Vale destacar que na base de dados final ainda é possível encontrar alguns val
 <img src="assets/matriz_corr.png" style="width:100%">
 </figure>
 
-Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
-
-Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. A figura abaixo apresenta essa matriz de correlação.
+Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. O gráfico 2 apresenta essa matriz de correlação.
 
 <figure>
 <figcaption align = "center"><b>Gráfico 3. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
 <img src="assets/correlograma.png"  width="600" height="600">
 </figure>
 
-Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
+Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
 
 <figure>
 <figcaption align = "center"><b>Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 a ser utilizada no modelo de aprendizagem. A tabela mostra a porcentagem de variáveis incluindo dados de 2015 a 2021 da base Vigitel.</b></figcaption>
@@ -211,7 +209,11 @@ Nesta análise descritiva, buscamos explorar a possível relação entre diabete
 
 Portanto, concluímos que, com base na análise descritiva da visualização UMAP, não é possível estabelecer uma relação direta entre pessoas que possuem diabetes, pressão alta e diferentes valores de IMC. Para uma compreensão mais abrangente e conclusões mais robustas, é necessário considerar outras técnicas de análise, como testes estatísticos mais sofisticados ou modelagem preditiva, e também levar em conta outras variáveis relevantes que possam influenciar a relação entre essas características de saúde.
 
+
 ### Seleção de variáveis
+
+Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
+
 Após todas essas análises, definimos que as variáveis que serão usadas no modelo são:
 - faixa etária
 - escolaridade
