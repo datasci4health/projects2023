@@ -292,7 +292,7 @@ xgb_pipe = Pipeline(
 ## Evolução dos casos por estado
 > Foi analisado um gráfico para entender a evolução dos casos de hanseníase ao longo dos anos. Os dados foram normalizados para a quantidade de habitantes em cada estado.
 >
-> ![Figura 7. Quantidade de casos a cada 100 mil habitantes por estado ao longo dos anos](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_por_100k.gif.png)
+> ![Figura 7. Quantidade de casos a cada 100 mil habitantes por estado ao longo dos anos](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_por_100k.gif)
 > 
 > *Figura 7.Quantidade de casos a cada 100 mil habitantes por estado ao longo dos anos.*
 ## Modelagem de ML
