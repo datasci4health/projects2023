@@ -116,13 +116,13 @@ No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dad
 
 Foi possível observar que quanto menor a ansiedade do paciente menor o nível de dor. 
  Diante disso, é visto que há uma relação entre a mobilidade, autocuidado e realização de atividade, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor. Sendo assim, conclui-se que ansiedade pode ser apresentada em pacientes de parkinson com a maior perda de mobilidade e mudanças severas na rotina. 
+
 No gráfico, 5, há a distribuição dos grupos de pessoas em idades por ranges, onde:
-Range 0: pessoas entre 18 e 30 anos
-Range 1: pessoas entre 31 e 57 anos
-Range 2: pessoas entre 58 e 66 anos
-Range 3: pessoas entre 67 e 72 anos
-Range 4: pessoas acima de 72 anos
+
+![Grafico 5](./assets/exp/idade-semXcom.jpg)
+
  A partir da análise do gráfico, é possível concluir que o range 1, com pessoas entre 31 e 57 anos, representa o grupo de idade mais afetado pela doença, com mais de 12.000 pacientes. Os ranges 2, 3 e 4, apresentam praticamente os mesmos números de pessoas, com aproximadamente 10.000 em cada um. Já o range 0, com pessoas entre 18 e 30 anos apresenta o menor índice, com menos de 1.000 pessoas.
+
 Usuários que possuem problema em atividade X depressão
 No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde contagem das pessoas vs problemas de atividades físicas:
 
@@ -140,6 +140,7 @@ Range de atividades 3: Qtda de pessoas 0
 Range de atividades 4: Qtda de pessoas 500
 Range de atividades 5: Qtda de pessoas 1000
 Range de atividades 6: Qtda de pessoas 9000
+
 Podemos observar que o grupo de range 1: com quantidade de 12.000 pessoas tem pequenos problemas em fazer atividades habituais comparado ao grupo 0 na qual não possui nenhuma atividade. E em relação ao grupo de range de atividades 2: onde possui 6.000 pessoas tem moderados problemas ao realizarem atividades habituais. Enquanto os demais grupos de ranges de atividades 3 possuem severos problemas em realizar atividades habituais e o 6 apresentaram 9.000 pessoas que não responderam.
 
 O gráfico 7 representa a contagem de pessoas com problemas de depressão, classificadas em ranges:
@@ -147,12 +148,14 @@ Range 0: não possui depressão
 Range 1: possui depressão 
 Range 3: preferiram não responder
 Range 4: dados não foram disponibilizados
+
  Diante da análise desse gráfico, foi possível concluir que não houve diferença significativa entre os grupos 0 e 1, representando algo em torno de 1.000 pessoas. A quantidade de pessoas no range 3 ou não é significativa a ponto de aparecer no gráfico, ou não existem pessoas nesse grupo. Já o range 4, incluiu mais de 40.000 pessoas que não tiveram essa informação disponibilizada.
 
 
 imagens dos  ultilizadas gráficos na análise estão no arquivo data/external/bases adotadas/analisys.ipynb 
 
  video da analise feita pelo orange: https://youtu.be/5N9QGw55-Qo
+
 Utilizando questionários respondidos por pessoas entre 51 e 86 anos, constatamos que uma grande quantidade de participantes apresentava problemas de mobilidade associados ao Parkinson. Mais da metade relatou dificuldades de locomoção devido à condição. Além disso, uma proporção significativa dessas pessoas manifestava sintomas de ansiedade e depressão. Esses resultados ressaltam a correlação entre os problemas de mobilidade decorrentes do Parkinson e os sintomas de ansiedade e depressão, destacando a importância de abordar não apenas os aspectos motores, mas também os emocionais e psicológicos da doença
 
 # Ferramentas 
