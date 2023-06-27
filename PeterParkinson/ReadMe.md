@@ -129,7 +129,7 @@ Active	3	I have severe problems doing my usual activities
 Active	5	Prefer not to answer
 No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dados é descrita e classificada como:
 
-!(./assets/exp/pain-semXcom.jpg)
+![Grafico 4](./assets/exp/pain-semXcom.jpg)
 
 
 Foi possível observar que quanto menor a ansiedade do paciente menor o nível de dor. 
