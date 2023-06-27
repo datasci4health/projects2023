@@ -95,6 +95,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 >
 > Figura 1: Workflow do desenvolvimento do projeto.
 > ![Figura 1](assets/figura1.png)
+> 
 
 # Bases de Dados e Evolução
 ## Bases Estudadas e Não Adotadas
@@ -174,7 +175,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > Tabela 2: Descritiva sobre doenças cardiovasculares - database 2
 >
 > | Variável | N | Média | EP Média	| DesvPad | Mínimo	| Q1 | Mediana	| Q3 | Máximo |
-> |--|--|--|
+> |--|--|--|--|--|--|--|--|--|--|
 > | Doença Cardiovascular | 312 | 25976	| 226 | 3992 | 17689 | 22893 | 25965 | 29036 | 36263 |
 >
 > Fonte: Construção dos autores a partir de dados do DataSUS-Tabnet/SIM.
