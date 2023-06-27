@@ -258,7 +258,7 @@
 > ![image](./reports/figures/status_apneia.png)
 > </center>
 >
-> Na Figura 5, houve a ausência de pacientes com apnéia acentuada no fim do período analisado, assim também como a diminuição de pacientes com apnéias moderada e leve. Uma certa flutuação entre o tipo de apnéia observado pode ser influenciada por hábitos do paciente no dia do exame - por exemplo, consumo de bebidas alcóolicas ou refeições mais pesadas, porém a maioria dos pacientes não informa esses detalhes no questionário do exame.
+> Na Figura 5, houve a ausência de pacientes com ```apnéia acentuada``` no fim do período analisado, assim também como a diminuição de pacientes com apnéias moderada e leve. Uma certa flutuação entre o tipo de apnéia observado pode ser influenciada por hábitos do paciente no dia do exame - por exemplo, consumo de bebidas alcóolicas ou refeições mais pesadas, porém a maioria dos pacientes não informa esses detalhes no questionário do exame.
 
 <!-- temos os pacientes classificados de acordo com o status da apneia em cada exame. Observamos que, de forma geral, houve um aumento no número de pacientes classificados como ```Sem apneia``` e uma diminuição nos pacientes com qualquer tipo de apneia entre o exame de ```baseline``` e o ```último exame```. No entanto, há uma movimentação que não sabemos a origem, mas que evidencia uma possível relação entre as mudanças de estado nos pacientes relacionado ao uso do dispositivo de avanço mandibular. É necessário estudar mais a fundo esse fenômeno. -->
 
@@ -273,10 +273,10 @@
 
 > ### **Comportamento da frequençã cardiaca maxima**
 >
-> <center>
+<!-- > <center>
 > 
 > ![image](./reports/figures/fcmaxima_grupo-idade.png)
-> </center>
+> </center> -->
 
 > <center>
 > 
@@ -314,7 +314,8 @@
 > ![image](./reports/figures/Scatter_ido_vs_fcmaxima.png)
 > </center>
 
-> Nas Figuras 
+> Nas Figuras 9, 10 e 11, 12 e 13, apesar de observarmos a melhora das duas variáveis (IDO e frequência cardíaca) no período analisado, não encontramos uma correlação significativa entre ambas - Algo que pudéssemos concluir que uma variável está influenciando a outra com certeza.
+
 # Ferramentas
 
 Para o desenvolvimento deste projeto, iremos utilizar um conjunto de ferramentas que nos habilite realizar as análises estatísticas, comparações e estimativas que planejamos na seção Metodologia. Isso inclui, mas não se limita, a:
@@ -338,5 +339,21 @@ No decorrer da análise, pode se fazer necessário adotar novas ferramentas ou t
 |04/Jun/2023|Preparo da terceira entrega do projeto|Preparo da terceira entrega do projeto|
 
 # Conclusões
+
+Após todo o trabalho de análise de dados quantitativos realizados, conseguimos chegar às seguintes respostas para as perguntas que propusemos:
+
+### **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
+
+Para esta primeira pergunta, de acordo com as análises demonstradas nas Figura 5 e 6 acima, conseguimos verificar um impacto positivo na melhora do ```IDO``` nos pacientes analisados antes e depois da utilização do aparelho. Conseguimos verificar que os pacientes com ```apnéia acentuada``` no primeiro exame (baseline) tiveram regressão de seu estado no exame final (```ultimo_exame```), assim também como uma regressão do número de pacientes com ```apnéia moderada``` e ```apnéia leve```. Porém, dado o tamanho do cohorte utilizado (32 pacientes), precisaríamos expandir o estudo para um cohorte maior para chegarmos a conclusões mais efetivas sobre a correlação entre o uso do aparelho de avanço mandibular e a diminuição consistente do ```IDO```.
+
+### **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
+
+Na segunda pergunta, conforme visualizado nas  ```Figuras 7 e 8``` acima, conseguimos verificar uma diminuição considerada da frequência cardíaca máxima (```fcmax```) dos pacientes, o que sugere uma melhora de saúde cardiovascular, porém não houve uma diminuição considerável nos índices de frequência cardíaca média (```fcmedia```) e mínima (```fcmínima```). Sendo assim, observamos uma tendência de diminuição da ```fcmax```, porém dada limitação de tamanho do nosso cohorte analisado, poderemos ser mais conclusivos quanto ao impacto positivo na frequência cardíaca em uma população maior.
+
+### **QP3:** A melhora do índice de dessaturação de oxigênio (```IDO```) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
+
+Para nossa última pergunta, conforme análise de correlação nas ```Figuras 9, 10 e 11, 12 e 13```, apesar de observarmos a melhora das duas variáveis (```IDO``` e ```frequência cardíaca maxima```) no período analisado, não encontramos uma correlação significativa entre ambas - Algo que pudéssemos concluir que uma variável está influenciando a outra com certeza. Expandimos nossa análise para outros estudos (como em Use of mandibular advancement devices for the treatment of primary snoring with or without obstructive sleep apnea (OSA): A systematic review; De Meyer, MMD; Vanderveken, OM; (...); Jacquet, W; Apr 2021; Sleep Medicine Reviews) nesta área e não encontramos outros estudos, com bases de dados diferentes, que concluam, baseados em dados, que ```IDO``` e frequência cardíaca sejam fortemente relacionados.
+
+Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há alguns fatores contextuais dos pacientes (como comorbidades, hábitos e estado no dia do exame) que acabam não sendo informados pelos pacientes e que podem influenciar tanto o IDO quanto a ```frequência cardíaca maxima```.
 
 
