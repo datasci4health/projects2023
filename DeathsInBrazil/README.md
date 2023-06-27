@@ -39,7 +39,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Perguntas de Pesquisa e Objetivos
 ## Perguntas de pesquisa
-* o	Qual a principal causa de mortalidade no Brasil no período de 1996 a 2021? 
+* Qual a principal causa de mortalidade no Brasil no período de 1996 a 2021? 
 * É possível estabelecer um modelo de série temporal adequado e estatisticamente significante para analisar os dados de mortalidade no Brasil, entre os anos de 1996 a 2021? É possível realizar uma predição baseada nesses dados?
 * Quais fatores de risco são mais significantes para o desenvolvimento de Doenças Cardiovasculares?
 * É possível utilizar técnicas de Machine Learning como classificador e preditor dos dados de doenças cardiovasculares? 
@@ -115,10 +115,8 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > |--|--|--|
 > | Our World in Data (Database 1) | https://ourworldindata.org/grapher/annual-number-of-deaths-by-cause  | Dados sobre óbito em nível global de 1990 a 2019. |
 > | Datasus Tabnet (Database 2) | http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sim/cnv/obt10uf.def  | Dados sobre óbito no Brasil de 1996 a 2021. |
-> | Cardiovascular Study Dataset – Kaggle
-(Database 3) | https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea?select=train.csv  | Dataset baseado no “Framingham Heart Study-Cohort (FHS-Cohort)”, sem atualização dos dados mais recentes. Acesso Livre. |
-> | Cardiovascular Disease dataset – Kaggle 
-(Database 4) | https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset | Dataset usado pra treino de Machine Learning. Dados Simulados. |
+> | Cardiovascular Study Dataset – Kaggle (Database 3) | https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea?select=train.csv  | Dataset baseado no “Framingham Heart Study-Cohort (FHS-Cohort)”, sem atualização dos dados mais recentes. Acesso Livre. |
+> | Cardiovascular Disease dataset – Kaggle (Database 4) | https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset | Dataset usado pra treino de Machine Learning. Dados Simulados. |
 
 > A primeira base de dados selecionada foi retirada do projeto “Our World in Data”, uma plataforma open-source colaborativa mantida pela Universidade de Oxford e pela organização sem fins lucrativos Global Change Data Lab (GCDL). Disponível em: https://ourworldindata.org/causes-of-death. Essa base de dados compilou informações oriundas do Institute of Health Metrics and Evaluation (IHME), Global Burden of Disease (GBD) e da Organização Mundial da Saúde (OMS) que são bases open-source alimentadas com relatórios enviados pelos estados membros. 
 > 
@@ -142,7 +140,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > Tabela 1: Descritiva sobre Número de óbitos por doenças cardiovasculares - database 1
 >
 > | Variável | N | Média | EP Média	| DesvPad | Mínimo	| Q1 | Mediana	| Q3 | Máximo |
-> |--|--|--|
+> |--|--|--|--|--|--|--|--|--|--|
 > | Doença Cardiovascular | 31 | 618646	| 299086 | 1665238	| 266804 | 286928 | 31365 | 351474 | 9589019 |
 >
 > Fonte: Construção dos autores a partir de dados do “Our world in data” – database1.
