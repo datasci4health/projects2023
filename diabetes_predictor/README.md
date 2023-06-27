@@ -33,11 +33,17 @@ Vale destacar que na base de dados final ainda é possível encontrar alguns val
 #### 4. Análise de correlação
 Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. A figura abaixo apresenta essa matriz de correlação.
 
--- fig
+<figure>
+<figcaption align = "center"><b>Gráfico 1. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
+<img src="assets/correlograma.png" style="width:85%">
+</figure>
 
 Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
 
--- fig
+<figure>
+<figcaption align = "center"><b>Gráfico 4. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
+<img src="assets/matriz_corr.png" style="width:85%">
+</figure>
 
 #### 5. Seleção de variáveis
 Por fim, as variáveis contidas na base de dados do Vigitel foram selecionadas com base no conhecimento da especialista e também pelas análises contempladas nas etapas anteriores.
