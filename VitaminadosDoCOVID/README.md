@@ -39,6 +39,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
  
  Fonte: Autores(2023)
 
+### Slides da Apresentação Final
+[Link da apresentação](./assets/VitaminadosDCovid.pdf)
+
 
 # Descrição Resumida do Projeto
 
@@ -475,14 +478,14 @@ Fonte: Autores(2023)
 
 
 ## Discussão
-Dos resultados descritos acima, podemos entender que há forte associação dos baixos níveis de vitamina D e os quadros graves de COVID19. Porém, em nossas análises verificamos que há outros fatores determinantes na severidade e no desfecho dos casos de COVID19. O que pudemos concluir é que a associação dos baixos índices de vitamina D e outros fatores como faixa etária e comorbidades, como a obesidade, potencializam os desfechos da doença.
+Dos resultados descritos acima, podemos entender que há forte associação dos baixos níveis de vitamina D e os quadros graves de COVID19. Porém, em nossas análises verificamos que há outros fatores determinantes na severidade e no desfecho dos casos de COVID19.
 
-Nosso objetivo inicial era entender se há associação entre os níveis de vitamina D e a severidade dos casos de COVID19, porém, nossos resultados indicam que somente a vitamina D não é capaz de explicar, sozinha, a progressão da doença para casos graves ou mesmo com desfecho de morte. O fator vitamina D, quando associado a outros fatores como idade e comorbidades, tem uma correlação muito mais forte com a severidade da doença.
+Nosso objetivo inicial era entender se há associação entre os níveis de vitamina D e a severidade dos casos de COVID19, porém, nossos resultados indicaram que somente a vitamina D não é capaz de explicar, sozinha, a progressão da doença para casos graves ou mesmo com desfecho de morte. O fator vitamina D, quando associado a outros fatores como idade e comorbidades, tem uma correlação muito mais forte com a severidade da doença.
 
 
 ## Conclusão
 
-A vitamina D desempenha um papel importante como nutriente capaz de afetar o processo de envelhecimento em nível celular/molecular, com uma ampla gama de ações. De fato, além dos defeitos ósseos, a insuficiência de vitamina D está associada ao aumento do risco de desenvolvimento de uma ampla gama de patologias, desde doenças neurológicas até câncer, distúrbios metabólicos, doenças cardiovasculares, doenças autoimunes e infecções respiratórias. A maioria das ações da vitamina D pode ser atribuída as suas propriedades imunomoduladoras, o que significa que a vitamina D tem a capacidade de modular ou regular a função do sistema imunológico e a resposta inflamatória do corpo. Nossos resultados sugerem que pacientes idosos com baixa 25OHD na pré infecção tem maior suscetibilidade a desenvolver um desfecho grave/crítico da doença COVID-19 podendo levar a óbito.
+A vitamina D desempenha um papel importante como nutriente capaz de afetar o processo de envelhecimento em nível celular/molecular, com diversas ações. De fato, além dos defeitos ósseos, a insuficiência de vitamina D está associada ao aumento do risco de desenvolvimento de patologias, desde doenças neurológicas, câncer, distúrbios metabólicos, doenças cardiovasculares, doenças autoimunes e infecções respiratórias. A maioria das ações da vitamina D pode ser atribuída as suas propriedades imunomoduladoras, o que significa que a vitamina D tem a capacidade de modular ou regular a função do sistema imunológico e a resposta inflamatória do corpo. Nossos resultados sugerem que pacientes idosos com baixa 25OHD na pré infecção tem maior suscetibilidade a desenvolver um desfecho grave/crítico da doença COVID-19 podendo levar a óbito.
 O processo de envelhecimento inclui diferentes remodelações de sistemas biológicos que levam à perda da homeostase ou seja o equilíbrio e, consequentemente, à deterioração de vários órgãos e tecidos. A remodelação dependente da idade do sistema imunológico tanto no braço inato quanto adaptativo é considerada a principal razão para o aumento da suscetibilidade a infecções, particularmente infecções respiratórias.
 
 
