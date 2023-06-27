@@ -352,7 +352,9 @@ ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também c
 
 Ao analisar as associações entre as variáveis sociodemográficas dentre as pessoas diagnósticas com depressão segundo o PHQ9, encontramos que escolaridade, sexo, estado civil, renda per capita e idade possui associação (p < 0,05) com alto potencial de depressão. Além disso, encontramos associação entre depressão e a maior parte das regiões brasileiras, exceto na região Centro-Oeste.
 
-Assim como apresentado na literatura, encontramos que quanto menor a escolaridade maior é a proporção de pessoas com depressão, ocorreu o mesmo ao comparamos depressão com renda per capita. Em relação a variável sexo, encontramos uma prevalência de depressão muito super em mulheres comparada aos homens. Isto é atribuído a diversos fatores, por exemplo as mulheres apresentam e relatam mais sobre os sintomas clássicos para o diagnóstico da depressão em relação aos homens que relatam com menor frequência e apresentam como sintomas mais comum o abuso de álcool e drogas (https://linkinghub.elsevier.com/retrieve/pii/S0165032704003738) (https://www.sciencedirect.com/science/article/abs/pii/S0010440X07001666?via%3Dihub). Além dessas variáveis, encontramos que ao avançar da idade há uma maior prevalência de depressão dentre a amostra estudada. 
+Assim como apresentado na literatura, encontramos que quanto menor a escolaridade maior é a proporção de pessoas com depressão, ocorrendo o mesmo ao comparamos depressão com renda per capita, esse achado é importante quando utilizamos escolaridade como proxy de renda, visto que variáveis númericas de renda podem apresentar vieses de informação.
+
+Em relação a variável sexo, encontramos uma prevalência de depressão muito super em mulheres comparada aos homens. Isto é atribuído a diversos fatores, por exemplo as mulheres apresentam e relatam mais sobre os sintomas clássicos para o diagnóstico da depressão em relação aos homens que relatam com menor frequência e apresentam como sintomas mais comum o abuso de álcool e drogas (https://linkinghub.elsevier.com/retrieve/pii/S0165032704003738) (https://www.sciencedirect.com/science/article/abs/pii/S0010440X07001666?via%3Dihub). Além dessas, foi observado que ao avançar da idade há uma maior prevalência de depressão dentre a amostra estudada. 
 
 
 
@@ -490,7 +492,7 @@ A próxima tabela apresenta os resultados de diferentes abordagens experimentada
 | Floresta Randomica           | 28.54%      | 28.38% ± 0.65% | 64.47%       | 64.15% ± 0.90% |
 | Árvore de Decisão            | 28.39%      | 28.16% ± 0.58% | 64.86%       | 64.44% ± 0.83% |
 
-Os resultados de testes de estratificação realizados com base em diferentes características, como renda, sexo, idade e região, são apresentados na tabela abaixo. Cada linha representa um teste específico e as colunas fornecem as pontuações F1 e AUC para cada teste, tanto para o conjunto de treino quanto para o conjunto de teste.
+Devido à grande influência dos fatores sociodemográficos para análise, além de ajustarmos o modelo para essas variáveis como apresentado acima, utilizamos o método de estratificação. Os resultados de testes de estratificação realizados com base em diferentes características, como renda, sexo, idade e região, são apresentados na tabela abaixo. Cada linha representa um teste específico e as colunas fornecem as pontuações F1 e AUC para cada teste, tanto para o conjunto de treino quanto para o conjunto de teste.
 
 | Testes de estratificação	 | F1 Treino   | F1 Teste       | AUC Treino   | AUC Teste      |
 |:--------------------------|:------------|:---------------|:-------------|:---------------|
@@ -510,7 +512,9 @@ Os resultados de testes de estratificação realizados com base em diferentes ca
 | Região Sul                | 28.50%      | 27.97% ± 2.24% | 65.61%       | 64.87% ± 2.78% |
 | Região Centro Oeste       | 30.47%      | 29.33% ± 2.57% | 66.34%       | 64.83% ± 3.20% |
 
-As próximas tabelas, comparam as diferenças entre cada coeficiente encontrado na regressão por meio da estratificação em diversas variáveis.
+Em consonância com a literatura, modelos estratificados por renda mais baixa, sexo feminino e idade maior ou igual a quarenta anos conseguem prever melhor o diagnóstico de depressão, como ilustrado na tabela acima. 
+
+A seguir apresentaremos as comparações das diferenças entre cada coeficiente encontrado na regressão por meio da estratificação em diversas variáveis.
 
 Na proxima, temos a comparação dos coeficientes da regressão estratificados por Renda Baixa e Renda Alta:
 
@@ -662,6 +666,7 @@ A tabela abaixo compara os coeficientes da regressão logística com os níveis 
 | Classificação Renda        |               -0.27 |              0.04 |               0.04 |
 
 Observa-se que tanto a Floresta Randomica quanto as Árvores de Decisão apresentam importâncias relativamente semelhantes, uma vez que são métodos de classificação semelhantes. Ao comparar a Regressão Logística e a Floresta Randomica, ambos elegem o atributo "Sexo" como o mais importante para a classificação. O segundo atributo mais importante na Regressão Logística, "Artrite", é o terceiro mais importante na Floresta Randomica. No entanto, o atributo "Cardiovascular", que é o terceiro mais importante na Regressão Logística, tem importância praticamente zero na Floresta Randomica.
+
 
 ### Resultados testes
 
