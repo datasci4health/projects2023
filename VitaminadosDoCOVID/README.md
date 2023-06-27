@@ -475,7 +475,9 @@ Fonte: Autores(2023)
 
 
 ## Discussão
+Dos resultados descritos acima, podemos entender que há forte associação dos baixos níveis de vitamina D e os quadros graves de COVID19. Porém, em nossas análises verificamos que há outros fatores determinantes na severidade e no desfecho dos casos de COVID19. O que pudemos concluir é que a associação dos baixos índices de vitamina D e outros fatores como faixa etária e comorbidades, como a obesidade, potencializam os desfechos da doença.
 
+Nosso objetivo inicial era entender se há associação entre os níveis de vitamina D e a severidade dos casos de COVID19, porém, nossos resultados indicam que somente a vitamina D não é capaz de explicar, sozinha, a progressão da doença para casos graves ou mesmo com desfecho de morte. O fator vitamina D, quando associado a outros fatores como idade e comorbidades, tem uma correlação muito mais forte com a severidade da doença.
 
 
 ## Conclusão
