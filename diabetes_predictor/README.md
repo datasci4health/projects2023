@@ -44,8 +44,7 @@ Detalhamento por fases:
 
 3. _Data Preparation_: Criação do dataset a ser usado pelo modelo, escolha do ano(s) utilizados no treino,seleção de variáveis, limpeza de dados faltantes, outliers, inconsistências. Feito a partir de funções de pré-processamento e discussões em grupo.
 
-### As próximas etapas serão apresentadas na entrega final
-4. _Modeling_: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, _random forest_ ou redes neurais artificiais, dependendo da dificuldade do problema. Será feito um modelo _baseline_ que será melhorado até apresentar um resultado satisfatório.
+4. _Modeling_: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, _random forest_ ou redes neurais artificiais, dependendo da dificuldade do problema. Foi feito um modelo _baseline_ que será melhorado até apresentar um resultado satisfatório.
 5. _Evaluation_: Para o modelo avaliado será questionado qual será a métrica aceitável para esse problema baseado em trabalhos relacionados.
 6. _Deployment_: Quando o modelo apresentar o resultado desejado, será finalizado e aplicado para o conjunto de teste da base de dados. Se possível, também será avaliado em outras bases, mostrando sua capacidade de generalização.
 
@@ -226,9 +225,40 @@ Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/c
 
 # Modelagem
 
+
 ## Passos Realizados
 
+<figure>
+<figcaption align = "center"><b>Gráfico 14: Passos Realizados na Modelagem
+</b></figcaption>
+<img src="assets/modeling_steps.PNG" style="width:100%">
+</figure>
 
+Durante a modelagem, após importar os dados processados, foram realizados alguns processamentos adicionais para a entrada do modelo como o one hot encoding e normalização. Após, foram feitos experimentos para encontrar o melhor modelo com o conjunto de validação e, encontrando ele, foi realizado o teste no conjunto de teste. Foi realizado também o deploy no formato pickle para consumo por outra base.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 15: Comparação de Métricas por Modelo
+</b></figcaption>
+<img src="assets/tests_validation.png" style="width:100%">
+</figure>
+
+Foram realizados diversos experimentos com o conjunto de validação utilizando modelos simples como Árvore de Decisão até modelos complexos como Auto Enconder. Estes experimentos foram combinados com diferentes estratégias de geração de dados sintéticos como o SMOTE, ADASYN, Borderline e Downsampling. Pode se notar que o modelo Random Forest apresentou os melhores resultados considerando explicabilidade, complexida, acurácia balanceada e AUC. Também foram levadas em consideração as métricas f1-score, especificidade e sensibilidade.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 16: Modelo Final Selecionado
+</b></figcaption>
+<img src="assets/final_model_vigitel.png" style="width:100%">
+</figure>
+
+O gráfico mostra as métricas para o modelo final encontrado a partir de busca de hiperparâmetros e as métricas específicas para ele. Foi utilizado o SMOTE para a criação de dados sintéticos no conjunto de treino.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 17: Comparação com Trabalhos Relacionados
+</b></figcaption>
+<img src="assets/relatedworks.PNG" style="width:100%">
+</figure>
+
+Em comparação com os trabalhos relacionados, o nosso modelo apresentou um resultado competitivo, com destaque para a ROC-AUC, métrica amplamente utilizada no contexto de saúde. Add referências
 
 ## Estudo de Caso
 
