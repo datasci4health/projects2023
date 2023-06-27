@@ -433,7 +433,7 @@ Fonte: Autores(2023)
 
 ### Figura 7 - Matrix de Confusão da classificação
 
-![Figura 30](./reports/figures/confusion_matrix_decision_tree.png)
+![Figura 30](./reports/figures/confusion_matrix_decision_tree.jpeg)
 
 Fonte: Autores(2023)
 
