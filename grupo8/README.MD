@@ -215,8 +215,6 @@ Por fim, considerando apenas pacientes sem obesidade:
 
 Através da análise da mediana geral, podemos observar que ela está abaixo do limiar de 30 kg/m², o que indica que há uma maior quantidade de pacientes com valores abaixo deste limite do que acima dele. Essa constatação também é corroborada pela média. Esses resultados estão alinhados com as informações obtidas a partir dos gráficos. Além disso, o alto desvio padrão tanto para os pacientes em geral quanto para aqueles com obesidade indica uma grande variação nos valores, especialmente quando comparados aos pacientes sem obesidade.
 
-# Análises Realizadas
-
 ## Ferramentas
 
 As ferramentas Python, Jupyter, Google Colab, pandas, scipy, numpy, sklearn e matplotlib desempenham papéis importantes no processamento de dados e análise exploratória no contexto mencionado anteriormente.
@@ -239,12 +237,136 @@ Para realizar o cálculo de estatísticas descritivas e aplicar métodos estatí
 
 Em resumo, o uso do Pandas, numpy, Jupyter, Google Colab, scipy, sklearn e matplotlib foi essencial para o processamento e análise dos dados do MIMIC. Essas ferramentas forneceram recursos poderosos, permitindo a manipulação eficiente das tabelas, cálculo de estatísticas, desenvolvimento de código interativo e aplicação de métodos estatísticos.
 
+# Análises Realizadas e Resultados
 
-# Resultados
+## Investigação da relação de CK vs IMC
+
+A análise dos níveis de CK dos pacientes foi realizada, levando em consideração os valores médios de cada indivíduo devido às múltiplas medições ao longo do tempo. Com base nas tabelas obtidas anteriormente, os pacientes e seus valores de CK foram separados em dois grupos: obesos e não obesos. Alguns pacientes da tabela de IMC foram excluídos, pois não possuíam valores de CK definidos, devido à remoção de valores muito elevados. Para obter mais detalhes, consulte o notebook [gráficos_obesidade_e_ck.ipynb](notebooks/gr%C3%A1ficos_obesidade_e_ck.ipynb). Utilizando as informações dos pacientes presentes na tabela `patients_with_ck.csv`, foi gerado o gráfico de CK vs IMC a seguir:
+
+![bmivsck](assets/graf_bmi_ck.png)
+
+Analisando os gráficos, é possível perceber que os valores de CK mais altos foram encontrados entre IMC de 20 e 60 kg/m². Além disso, valores de CK fora dessa faixa de IMC foram muito mais baixos do que aqueles dentro. Assim, pode-se perceber que em torno de limitante de obesidade (30 kg/m²) há altos valores de CK, principalmente para pacientes com IMC maior que o limitante. Por fim, há muito mais pacientes com CK abaixo de 4000 IU/L do que acima.
+
+Novamente, foram obtidas estatísticas descritivas, como detalhado no notebook [estatisticas_descritivas.ipynb](notebooks/estatisticas_descritivas.ipynb).
+
+Os valores gerais obtidos foram:
+- Média = 574.45 IU/L
+- Desvio Padrão = 1154.00 IU/L
+- Mediana = 155.00 IU/L
+- Moda = 38.00 IU/L
+
+Considerando apenas pacientes com obesidade, os valores obtidos foram:
+- Média = 661.31 IU/L
+- Desvio Padrão = 1292.40 IU/L
+- Mediana = 171.50 IU/L
+- Moda = 30.00 IU/L
+
+Por fim, considerando somente pacientes sem obesidade:
+- Média = 466.49 IU/L
+- Desvio Padrão = 982.92 IU/L 
+- Mediana = 131.00 IU/L 
+- Moda = 41.00 IU/L 
+
+Novamente, as estatísticas numéricas revelam os comportamentos percebidos nos gráficos. As médias e medianas em todos os três grupos corroboram a grande quantidade de valores de CK abaixo de 4000 IU/L. Adicionalmente, os altíssimos desvios padrões em relação às médias indicam a discrepância de valores de CK, que variam de 0 a 10000 IU/L.
+
+Como não foi possível determinar nenhuma relação analisando o gráfico de CK vs IMC, foi tentada uma nova abordagem, usando os dados da tabela `paired_glucose_insulin_ck_death.csv`. Dessa vez, ao invés de dividir os pacientes com base em obesidade, a divisão foi baseada na via de administração de insulina. Mais detalhes estão no notebook [graficos_ck_glicose.ipynb](notebooks/graficos_ck_glicose.ipynb). Após a estratificação desses dados, foi gerado o gráfico a seguir:
+
+![graf_admin_insu](assets/administracao_insun_ck.png)
+
+Assim como o gráfico anterior de CK vs IMC, não é possível identificar nenhuma correlação entre os valores de CK e IMC. Porém, a quantidade de valores de CK altos parece ter diminuído ao incluir somente pacientes que também fizeram exames de glicose e receberam insulina. Considerando-se as vias de aplicação, foi possível perceber que valores de CK mais alto apresentam maior quantidade de infusões dos tipos “Insulin (Non-IV)” e “Drips”. Logo, o método não intravenoso parece não perder utilidade apesar de valores altos de CK, enquanto que dois dos três métodos intravenosos perdem.
+
+## Investigação da relação de Glicose vs IMC
+
+Usando os dados da tabela `paired_glucose_insulin_ck_death.csv`, foi possível novamente obter as médias de IMC, assim como glicose, para cada paciente. Com isso, os pacientes foram estratificados em obesos e não obesos. Como documentado no notebook [graficos_ck_glicose.ipynb](notebooks/graficos_ck_glicose.ipynb), foi gerado um gráfico de glicose vs IMC.
+
+![bmiglucose](assets/bmi_glucose.png)
+
+Analisando o gráfico é possível perceber que há grande concentração de valores baixos de glicose para IMC entre 20 e 40 kg/m2. Porém, os maiores valores registrados também são encontrados nessa região, mesmo que em menor quantidade. Assim, apenas com essa análise não é possível identificar uma relação entre valores de glicose e IMC.
+
+Uma possível explicação para a falta de correlação entre valores de glicose e IMC é que, ao pegar a média dos exames, desconsideramos sua alta variação. Porém, tendo esses valores uma futura análise de resistência a ação da insulina com base em IMC pode revelar resultados interessantes.
+
+## Estudo da forma de administração da insulina em relação ao nível de glicose
+
+A administração da insulina de forma intravenosa é recomendada em casos de urgência, em que necessita-se de rápida metabolização. Portanto, em um cenário ideal, quanto mais crítico o nível de glicose do paciente, mais frequente deve ser a aplicação de insulina de forma intravenosa.
+
+Ao analisar os dados da tabela `paired_glucose_insuline_ck_death.csv`, vê-se que essa relação segue uma forma mais complexa. A taxa de administração de insulina de forma intravenosa não é monotônica em relação à medição de glicose, como inicialmente antecipada, tendo, na verdade, um formato de U.
+
+![intraglucose](assets/intraglucose.png)
+
+O formato em U do gráfico indica que há uma maior aplicação de insulina intravenosa tanto para os pacientes que se encontram no limiar logo acima do nível aceitável de glicose quanto para aqueles com níveis glicêmicos elevados. No entanto, é observado que a administração de insulina intravenosa é menor para os pacientes cujos valores de glicose estão no meio do gráfico, na faixa de 200 a 300.
+
+## Investigação da relação entre os valores de CK e insulina
+
+Primeiramente, foi feita uma análise utilizando a correlação de Pearson e seu p-valor. Da mesma forma que no item anterior, quanto mais crítico é o nível de CK do paciente, mais recomendado é que a insulina seja aplicada de forma intravenosa, dado que há evidências de que danos corporais estão ocorrendo. Ou seja, espera-se que haja uma relação entre a taxa de aplicação de insulina via intravenosa e o nível de CK no sangue. No entanto, as análises mostram um cenário mais complexo, resumido na tabela abaixo:
+
+|            | Correlação (taxa de aplicação intravenosa x CK) | P-valor  |
+|------------|-------------------------------------------------|----------|
+| Não obesos |                      0,0735                     | < 0,0001 |
+| Obesos     |                      0,0107                     |   0,568  |
+
+A tabela mostra que essa correlação existe em pacientes não obesos, mas não existe em pacientes obesos. Ou seja, o fato de o paciente obeso ter alto CK não aumenta suas chances de receber insulina de forma intravenosa, o que diverge do que esperávamos.
+
+Adicionalmente, foram utilizados modelos de aprendizado de máquina para avaliar a existência ou não de correlação. Essa análise está disponível no notebook [insulin_ck.ipynb](notebooks/isulin_cpk.ipynb). Seu objetivo é tentar predizer os valores CK com base nos valores de insulina administrados. Assim, caso seja possível encontrar um bom modelo, haveria uma forte indicação que existe uma relação direta entre a administração de insulina e valores de CK.
+
+Observando a tabela relativa à aplicação de insulina no MIMIC IV (`insulin_inputs_in_ck_pacients.csv`) mais de um tipo de insulina é encontrada. Com os respectivos `item_ids`: 223258, 223262, 223259, 223260, 229299, 223261, 223257, 229619, esses ids correspondem respectivamente aos seguintes tipos de insulina: regular,  Humalog, NPH, glargina, Novolog, Humalog 75/25, 70/30, U500. Assim o modelo deve considerar também o tipo de insulina que foi administrada. 
+
+Os dados foram divididos em dois: dados de pacientes gerais e dados de pacientes com obesidade. Para os pacientes gerais, foram coletados os dados relativos ao tipo de insulina administrada, a quantidade de insulina administrada, o IMC do paciente e o valor de CK medido do paciente. O IMC foi utilizado para tentar encontrar alguma possível relação entre o IMC e os valores de CK em pacientes gerais. Para pacientes obesos, os mesmos dados foram coletados menos os valores de IMC, uma vez que todos os pacientes nesse grupo apresentaram IMC maior igual a 30. Os dados foram normalizados para mantem a mesma escala utilizando a fórmula:
+
+- Z<sub>i</sub> = X<sub>i</sub> - min(x) / max(x) - min(x)
+
+Inicialmente foi treinado um modelo de regressão linear para pacientes em geral. 80% das amostras foram utilizadas para treino e 20% para teste. A entrada do modelo é composta pelo tipo de insulina administrada (utilizando o formato _one hot encoding_), a quantidade de insulina administrada e o valor de IMC do paciente. A saída do modelo é o valor de CK do paciente.
+
+O modelo linear apresentou no conjunto de teste um valor de 0.984 para a média das somas das distâncias quadradas (L2). Esse valor pode ser considerado alto (quanto menor o valor melhor), assim nosso modelo não teve um resultado satisfatório. Observando os coeficientes do modelo é possível notar que foi atribuído o mesmos valores para quase todos os tipos de insulina, apenas a insulina tipo U500 teve um peso de coeficiente diferente. O que talvez indique uma relação mais forte entre esse tipo de insulina, mas como o modelo não obteve uma boa métrica não é possível fazer afirmações.
+
+Para tentar contornar os resultados ruins do modelo de regressão linear, o problema foi rearranjado para um problema de classificação. Para isso, foi calculado o valor médio de CK na base, os pacientes foram então divididos em dois grupos: pacientes com CK alto (ck > média) e CK baixo (ck <= média). Então um modelo de regressão logística foi treinado para tentar classificar os pacientes entre esses dois grupos com base no tipo de insulina, quantidade de insulina administrada e IMC. 
+
+O modelo de regressão logística apresentou uma acurácia de 78.1% no conjunto de testes. Assim esse modelo pode ser considerado razoável. Analisando os pesos desse modelo é interessante observar que o modelo atribui pesos negativos para os tipos de insulina Humalog 75/25 e 70/30, o que pode indicar uma relação entre esse tipo de insulina e baixos valores de CK, enquanto os outros tipos tem maior relação com valores altos de CK, exceto o tipo U500 que teve coeficiente 0. O coeficiente relacionado à quantidade de insulina aplicada obteve um valor menor que o coeficiente do IMC, o que pode indicar que o IMC tem uma relação maior com os valores de CK.
+
+Assim como foi feito para pacientes em geral, foi treinado um modelo de regressão linear e logística para pacientes com obesidade. Neste caso o IMC não é considerado como uma entrada do modelo. Assim como ocorreu com pacientes em geral, o modelo de regressão linear para pacientes obesos obteve um alto valor de para a média das somas das distâncias quadradas (L2): 0.998. Já a regressão logística teve uma acurácia de 74.2%, 3.9% menor que a acurácia obtida para pacientes em geral. Os piores resultados das métricas para modelos obesos provavelmente está relacionada com a exclusão dos valores de IMC como entrada para esses modelos. Esse fato pode indicar que o IMC em si tem alguma relação com os valores de CK.
 
 # Discussão
 
+## Relação entre CK e IMC
+
+Valores elevados de CK geralmente indicam uma resposta do organismo a algum tipo de dano ou estresse muscular. É importante ressaltar que, embora valores altos de CK sejam um indicativo de lesão muscular, eles não fornecem informações específicas sobre a causa da lesão. Outros exames e avaliações clínicas são necessários para determinar a causa subjacente e fornecer um diagnóstico preciso.
+
+Portanto, ao analisar os valores de CK, é importante considerar o contexto clínico do paciente, sintomas associados, histórico médico e outros resultados de exames complementares para uma avaliação abrangente e correta interpretação dos resultados. Pela análise dos gráficos, não é possível determinar uma relação direta e proporcional entre os valores de IMC e CK. Ademais, estudos mais aprofundados nessa área, para identificar outros fatores que possam ser associados a valores de CK elevados em pacientes com IMC entre 20 e 40 kg/m², são necessários.
+
+## Relação de Glicose vs IMC
+
+Pesquisas e estudos vêm tentando demonstrar que existe uma associação entre o IMC e a regulação da glicose no organismo. Geralmente, o aumento do IMC está associado a um maior risco de desenvolver resistência à insulina e diabetes tipo 2. A resistência à insulina ocorre quando as células do corpo não respondem adequadamente à ação da insulina, resultando em níveis elevados de glicose no sangue.
+
+Quando o IMC está acima do intervalo considerado saudável, o risco de desenvolver resistência à insulina e diabetes tipo 2 aumenta. Isso ocorre porque o excesso de gordura corporal, especialmente no abdômen, está relacionado a alterações metabólicas que podem prejudicar a regulação da glicose.
+
+No entanto, é importante destacar que são pesquisas de fronteira que podem ou não serem corroboradas por pares. Além disso, o IMC é apenas um indicador geral e não leva em consideração outros fatores individuais, como composição corporal e distribuição de gordura. Portanto, a correlação entre o IMC e o nível de glicose pode variar entre indivíduos. Levando esses fatores em consideração, a falta de correlação apresentada entre glicose e IMC nas nossas análises podem ser justificadas.
+
+## Relação da via de administração da insulina em relação ao nível de glicose
+
+Para entendermos essa relação seriam necessárias análises mais complexas. A tendência em formato de U do gráfico pode levantar algumas hipóteses: a administração de insulina de outras formas que não intravenosa, por exemplo subcutânea por meio de caneta ou seringa, poderia ser mais comumente observada em pacientes que já possuem um equilíbrio ou controle glicêmico, possivelmente devido à convivência prolongada com a doença, e apresentaria valores intermediários de glicose no sangue (entre 200 e 300).
+
+Outra hipótese seria a escolha da aplicação subcutânea por conta de suas vantagens, uma vez que permite uma absorção mais lenta da insulina. Isso contribui para evitar picos abruptos de ação, ajudando a manter um controle mais preciso dos níveis de glicose ao longo do tempo. Dessa forma, é possível alcançar uma glicemia mais estável e evitar variações excessivas. Enquanto para casos com alto índice de glicose necessitaria de uma resposta imediata com a aplicação via intravenosa.
+
+É importante ressaltar que a escolha da via de administração da insulina deve ser individualizada e considerar diversos fatores, como o perfil do paciente, suas necessidades específicas e a orientação médica. Portanto, é fundamental que a decisão seja tomada em conjunto com a equipe médica responsável, levando em consideração as características de cada paciente e suas particularidades.
+
+## Relação entre CK e insulina
+
+Como constatado anteriormente, diferentemente de pacientes não obesos, não foi identificada correlação entre CK alto e taxa de aplicação do método intravenoso em pacientes obesos. Uma hipótese para justificar esse fenômeno é a maior dificuldade de acesso à veia nesses pacientes, tornando impraticável a aplicação de insulina por essa via. Caso essa hipótese seja comprovada, torna-se uma evidência de que tecnologias que facilitam o acesso à veia possuem potencial de melhorar a qualidade do atendimento no hospital analisado, prevenindo mortes.
+
+Ao analisar os resultados dos modelos treinados para correlacionar a aplicação de insulina com os valores de CK não foi possível correlacionar fortemente essas variáveis. Isso pode indicar que o tipo de modelo não foi adequado ou não existe uma relação forte entre as variáveis. Em especial o trabalho também considerou a estratificação de pacientes obesos, entretanto houve uma leve piora das métricas para modelos que consideraram apenas esse tipo de paciente, devido a que a maioria dos pacientes, que estavam com o valor de CPK díspar em relação aos valores de referência, estavam em situação crítica e de emergência, aumentando desta maneira parâmetros multifatoriais, que não foram mensurados ou correlacionados não somente com a possibilidade de uma hiperglicemia mas juntamente com possível nefropatia diabética e outras patologias pró-inflamatórias (Sia CH, et al 2021).
+
+Um ponto a se destacar é a melhora nas métricas dos modelos quando o IMC do paciente é fornecido ao modelo como entrada. Esse fato pode indicar que existe alguma correlação entre os valores de IMC e valores de CK. Outro ponto interessante que pode ser observado nos modelos é o coeficiente relativo ao tipo de insulina que foi aplicada, em especial a insulina tipo U500 geralmente teve valores de coeficientes diferentes das demais. Assim, os dados indicam que esse tipo de insulina parece ter uma influência diferente das outras nos valores de CK porém o panorama de insulinoterapia demonstra que pode haver a necessidade de usar insulinas com o manejo e meia vida igual a (Actrapid) o que melhoraria a resposta insulínica do paciente (Lim BL, et al 2023) .
+
+Os dados não demonstram a especificidade da doença e o manejo da mesma, lembrando que para cada causa patológica multifatorial pode-se usar um tipo específico de insulina, sendo desta maneira caso o acesso do paciente não ser possível é usado outra via fisiológica como a via nasal e inalatória, já que patologias como a cetoacidose diabética em casos de emergência, na falta de acesso venoso é possível a administração inalada (Bell DSH, et al 2020).
+
 # Conclusão
+
+O presente trabalho utilizou o dataset MIMIC IV para buscar compreender a relação entre os parâmetros renais e a administração de insulina. Apesar de não ter encontrado uma relação direta entre essas variáveis, o trabalho foi capaz de realizar uma análise geral dos dados e apontou possíveis caminhos para futura investigação. 
+
+O primeiro desafio enfrentado foi relacionado ao próprio processamento da base de dados. Por se tratar de uma base de dados extensa com muitos dados disponíveis, foi necessário realizar filtragens e gerar tabelas intermediárias para diminuir o volume de dados tratado. Por se tratar de uma base de dados desconhecida também foi necessário alguma exploração inicial para se entender a relação entre as tabelas.
+
+A contribuição deste trabalho não está somente relacionada às análises realizadas, mas também aos dados intermediários gerados. Foram realizadas filtragens e limpeza de dados que poderiam ser utilizadas em trabalhos futuros, com a disponibilização desses dados é possível evitar trabalhar com a quantidade massiva de dados fornecidos pelo MIMIC IV e focar apenas nos dados relevantes para o problema.
+
+O trabalho também apresenta, a importância da filtragem dos dados da saúde  para possíveis correlações clínicas que podem se tornar _guidelines_ em indecisões da via de administração de fármacos usados em UTI como é o caso da insulina intravenosa e desta maneira se observar e se obter o melhor desfecho farmacoterapêutico do paciente, apesar do presente trabalho não achar nenhuma correlação entre os parâmetros de CK/CPK e  a administração do fármaco. 
 
 # Trabalhos Futuros
 
@@ -254,6 +376,7 @@ Nesta seção são propostas alguns pontos para investigação futura relacionad
 - Integração maior dos parâmetros relevantes da análise, condensados em pouca ou até uma tabela;
 - Investigação da influência dos tipos de insulina nos parâmetros renais, em especial a insulina tipo U500;
 - Uso de modelos e tratamento de dados mais sofisticados para analisar a correlação entre a aplicação de insulina e valores de parâmetros renais.
+- Investigação da relação entre resistência à ação de insulina e IMC
 
 # Referências Bibliográficas
 
