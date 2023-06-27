@@ -443,5 +443,28 @@ UPDATE_DICT = {
         'origin': 'phq9_total',
         'desc': "Classificação risco de depressão",
         'pv': {1: 'Nenhum ou mínimo', 2: 'Leve', 3: 'Moderada', 4: 'Moderadamente Grave', 5: 'Grave'}
+    },
+    'imc': {
+        'origin': 'peso|altura',
+        'desc': "Valor do IMC",
+    },
+    'class_ imc': {
+        'origin': 'imc',
+        'desc': "Classificação do IMC",
+        'pv': {1: 'Baixo peso', 2: 'Eutrofia', 3: 'Sobrepeso', 4: 'Obesidade'}
+    },
+    'tabagist': {
+        'origin': 'P050',
+        'desc': "Classificação de Tabagismo",
+        'pv': {0: 'Não tabagista', 1: 'Tabagista'}
+    },
+    'per_upf': {
+        'origin': 'P00614|P00615|P00616|P00617|P00618|P00619|P00620|P00621|P00622|P00623',
+        'desc': "Porcentagem de ultraprocessados nas ultimas 24hrs"
+    },
+    'upf_severity': {
+        'origin': 'per_upf',
+        'desc': "Classificação de consumo de ultraprocessados",
+        'pv': {1: 'Baixo consumo', 2: 'Baixo-médio consumo', 3: 'Médio consumo', 4: 'Médio-alto consumo', 5: 'Alto consumo'}
     }
 }
