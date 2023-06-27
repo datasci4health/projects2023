@@ -12,29 +12,31 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Caique Santos Lima  | 217040  | Eng. Elétrica e Computação |
 | Gustavo Pessoa Caixeta Pinto de Luz  | 271582  | Computação |
 
+## Slides da apresentação final
+Os slides de apresentação do projeto pode ser acessado clicando [aqui](https://drive.google.com/file/d/1ZnR7gqAJUIT_Bcy5CAwPciNv1xZEOh1D/view?usp=sharing).
+
 
 # Descrição Resumida do Projeto
-As doenças crônicas são as principais causas de morte no Brasil e no mundo, sendo a diabetes uma doença crônica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabetes tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são os determinantes sociais de saúde (do inglês, _social determinants of health_ – SDOH), como hábitos alimentares, atividade física, renda e outras questões de saúde, o que torna importante o debate dessa doença em âmbito populacional. Dessa forma, nosso projeto se propõe a desenvolver um modelo de aprendizagem de máquina que auxilie gestores públicos e resposáveis técnicos a identificarem os fatores de risco na população para o desenvolvimento de diabetes e assim facilitar o desenvolvimento de estratégias para mitigar os problemas associados a esta questão em sua região. 
+As doenças crônicas são as principais causas de morte no Brasil e no mundo, sendo a diabetes uma doença crônica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabetes tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são caracteristicas socioeconômicas e de saúde, como hábitos alimentares, atividade física, renda e outras questões de saúde, o que torna importante o debate dessa doença em âmbito populacional. Dessa forma, nosso projeto se propõe a desenvolver um modelo de aprendizagem de máquina que auxilie gestores públicos e resposáveis técnicos a identificarem os fatores de risco na população para o desenvolvimento de diabetes e assim facilitar o desenvolvimento de estratégias para mitigar os problemas associados a esta questão em sua região. 
 
 O contexto gerador foi o interesse em trabalhar com o problema de diabetes que foi um elo entre os membros da equipe que vieram de diferentes cursos com a motivação em comum de estudar este assunto.
 
-O vídeo de apresentação da proposta do projeto pode ser acessado clicando [aqui](https://youtu.be/Ti_Q1Hb_aM4).
+O vídeo inicial de apresentação da proposta do projeto pode ser acessado clicando [aqui](https://youtu.be/Ti_Q1Hb_aM4).
 
 https://youtu.be/Ti_Q1Hb_aM4
 
 # Perguntas de Pesquisa
 **Objetivo geral**
-Modelar determinantes sociais de saúde (SDOH) em populações de capitais brasileiras para o desenvolvimento de diabetes.
+Determinar características socioeconômicas e de saúde relacionadas com o desfecho diabetes tipo 2 em capitais brasileiras.
 
-**Objetivos específicos*
-1. Determinar principais variáveis socioeconômicas e de saúde associadas ao desfecho diabetes.
-2. Analisar possíveis diferenças de hábitos dos anos pré e durante pandemia para seleção de dados.
+Levando em conta que os usuários direto do nosso modelo serão os gestores e responsaveis técnicos, para a identificação de grupos de riscos para aulixiar na elaboração de política públicas e em tomada de decisões.
+
 
 # Metodologia
 Método aplicado à base escolhida
 A metodologia prevista é o CRISP-DM (_cross-industry standard process for data mining_), em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de _features_ e pré processamento dos dados. Depois de chegar em um modelo _baseline_, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmentaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo à fase de _deploy_ do CRISP-DM.
 
-![Fases da metodologia](assets/Fluxo_dados.drawio.png)
+![Fases da metodologia](assets/Fluxo_dados.drawio_e3.png)
 
 Adaptado de [data geeks](https://www.datageeks.com.br/pre-processamento-de-dados/) a partir de:
 
@@ -45,11 +47,9 @@ Detalhamento por fases:
 
 3. _Data Preparation_: Criação do dataset a ser usado pelo modelo, escolha do ano(s) utilizados no treino,seleção de variáveis, limpeza de dados faltantes, outliers, inconsistências. Feito a partir de funções de pré-processamento e discussões em grupo.
 
-### As próximas etapas serão apresentadas na entrega final
-4. _Modeling_: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, _random forest_ ou redes neurais artificiais, dependendo da dificuldade do problema. Será feito um modelo _baseline_ que será melhorado até apresentar um resultado satisfatório.
+4. _Modeling_: Criação de modelo capaz de classificar uma ou várias entradas como diabéticas ou não diabéticas. Feito a partir de modelos como regressão logística, _random forest_ ou redes neurais artificiais, dependendo da dificuldade do problema. Foi feito um modelo _baseline_ que será melhorado até apresentar um resultado satisfatório.
 5. _Evaluation_: Para o modelo avaliado será questionado qual será a métrica aceitável para esse problema baseado em trabalhos relacionados.
 6. _Deployment_: Quando o modelo apresentar o resultado desejado, será finalizado e aplicado para o conjunto de teste da base de dados. Se possível, também será avaliado em outras bases, mostrando sua capacidade de generalização.
-
 
 
 # Bases de Dados
@@ -96,16 +96,25 @@ Antes de fazer os gráficos e tabelas descritivas, foi observada a quantidade de
 
 A visualização foi gerada com o pacote msno que permite observar padrões de dados ausentes e guiar as análises. O minigráfico à direita resume a forma geral da integridade dos dados.
 
+A partir da base de dados bruta, extraída do repositório de dados do Vigitel, foi feita uma investigação preliminar para determinar: (i) quais variáveis estavam disponíveis para uso em cada ano, (ii) se os dados mantinham a mesma consistência em todos os anos, e (iii) quais as variáveis que eram comuns entre os anos, isto é, aquelas que apareciam em vários subconjuntos.
+Esta análise foi importante para explorar quais eram os anos viáveis para se trabalhar, considerando que os anos selecionados seriam aqueles em que as variáveis de interesse estivessem presentes em todos os anos. Deste modo, as mesmas variáveis apareceriam nas subsequentes divisões dos conjuntos em treinamento, validação e teste.
+
+Nesta importante etapa de processamento de dados foram avaliados não apenas os valores faltantes (NaNs) mas também os casos em que o participante da pesquisa não quis informar uma resposta (888) ou não sabia (777). Por uma questão de qualidade da informação, esses casos citados foram removidos sem prejuízos nas etapas seguintes de processamento dos dados. 
+Vale destacar que na base de dados final ainda é possível encontrar alguns valores NaNs, no entanto, os mesmos se referem às questões onde não haveria resposta por parte do entrevistado, por exemplo, para um indivíduo que responde que não bebe, não haverá resposta para a pergunta “qual a frequência de álcool?”, logo, nesta célula aparecerá o valor NaN.
+
 <figure>
 <figcaption align = "center"><b>Gráfico 2. Correlação de Pearson entre as variáveis pré-selecionadas.</b></figcaption>
-<img src="assets/correlacao_var_selecionadas.png" style="width:100%">
+<img src="assets/matriz_corr.png" style="width:100%">
 </figure>
 
+Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. O gráfico 2 apresenta essa matriz de correlação.
 
 <figure>
 <figcaption align = "center"><b>Gráfico 3. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
-<img src="assets/correlacao_0.3.png"  width="600" height="600">
+<img src="assets/correlograma.png"  width="600" height="600">
 </figure>
+
+Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
 
 <figure>
 <figcaption align = "center"><b>Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 a ser utilizada no modelo de aprendizagem. A tabela mostra a porcentagem de variáveis incluindo dados de 2015 a 2021 da base Vigitel.</b></figcaption>
@@ -200,33 +209,116 @@ Nesta análise descritiva, buscamos explorar a possível relação entre diabete
 
 Portanto, concluímos que, com base na análise descritiva da visualização UMAP, não é possível estabelecer uma relação direta entre pessoas que possuem diabetes, pressão alta e diferentes valores de IMC. Para uma compreensão mais abrangente e conclusões mais robustas, é necessário considerar outras técnicas de análise, como testes estatísticos mais sofisticados ou modelagem preditiva, e também levar em conta outras variáveis relevantes que possam influenciar a relação entre essas características de saúde.
 
+
 ### Seleção de variáveis
+
+Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
+
 Após todas essas análises, definimos que as variáveis que serão usadas no modelo são:
 - faixa etária
 - escolaridade
 - IMC
 - pressão alta
 - frequência de consumo de álcool
-- cor
 - atividade física
 
 ### Transformações e tratamentos realizados:
 O objetivo do modelo é identificar diabetes tipo 2, portanto, retiramos da amostra todas as pessoas que tinham idade de diagnóstico de diabetes antes dos 18 anos, pois assim excluiremos a maior parte das pessoas com possível diagnóstico de diabetes tipo 1. [Fonte](https://bvsms.saude.gov.br/bvs/publicacoes/miolo2002.pdf)
 
-Dentre as variávei escolhidas excluímos todas aquelas que a pessoa não quis responder e que não sabia responder (segundo códigos do dicionário).
+Dentre as variáveis escolhidas excluímos todas aquelas que a pessoa não quis responder e que não sabia responder (segundo códigos do dicionário).
 
 Para as variáveis peso, altura e IMC, definimos a faixa de percentil de p1 a p99, excluindo os _outliers_ que ultrapassaram esse valor. Definimos este valor de percentil porque como nossa variável desfecho de interesse está muito relacionada com o IMC elevado, decidimos trabalhar com uma margem maior, o que nos proporcionou aproximadamente 11 mil amostras a mais. 
 
 As análises realizadas já contam com os dados após as transformações e tratamentos, se tratando de etapas sequenciais e que se complementam.
 
+#### Tratamento das variáveis
+Além dos pré-processamentos de dados descritos nas etapas anteriores, foram acrescentadas informações ao conjunto de dados: (i) as categorias particulares da base do Vigitel, que obedecem uma escala pouco interpretável, foram substituídas pela descrição resumida proveniente do dicionário de dados do Vigitel; (ii) foram removidos os indivíduos que declararam idade de início da diabetes antes dos 18 anos, deste modo, permaneceram, no geral, apenas os casos caracterizados como diabetes tipo 2; (iii) para descartar valores espúrios, isto é, aqueles que poderiam ter sido inseridos na base de dados de forma equivocada, foram removidos os atributos numéricos acima do percentil 0.99 e abaixo do percentil 0.01; e (iv) novas variáveis foram acrescentadas à base de dados, como: IMC e região.
+
+####  Divisão estratificada do treinamento, validação e teste
+Após a preparação dos dados, realizou-se a divisão dos dados obtidos em três subconjuntos: treinamento (70%), validação (25%) e teste (5%). A estratégia adotada nesta separação dos dados procurou respeitar uma distribuição balanceada das classes (diabéticos ou não-diabéticos) entre os três subconjuntos, ou seja, cada subconjunto ficou com a mesma proporção de diabéticos (10%) e não-diabético (90%).
+Outro cuidado que se teve foi garantir que não houvesse vazamento de dados, isto é, que dados de indivíduos que estivessem presentes em um determinado subconjunto não se repetissem em outro. Este controle foi estabelecido através da “chave”, um identificador do Vigitel que denota cada entrevistado. Portanto, as chaves que se repetem, ou seja, indivíduos que responderam mais de uma vez a pesquisa, foram colocadas no mesmo subconjunto.
 
 
 ## Integração entre Bases e Análise Exploratória
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
+Base da PNS | [link sobre o PNS](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html) | A Pesquisa Nacional de Saúde (PNS) é um inquérito domiciliar realizado pelo Ministério da Saúde e IBGE em 2013 e 2019. É a maior e mais completa pesquisa de saúde do Brasil, fornecendo dados representativos sobre a saúde da população e subsidiando políticas públicas na área.
 
-A base possui dados clínicos porém o grupo está interessado em fatores não clínicos também coletados, como a peso, altura, status de tabagismo, escolaridade, idade em que começou os estudos, cor, presença de diabetes e pressão alta. Na quarta-feira (17/04), em uma reunião de trabalho com a Maria Clara Pimenta (aluna de medicina na FCM/Unicamp), foi discutida a possibilidade de se usar esta coorte de doenças coronarianas para validação do modelo treinado com a base Vigitel. Esta coorte faz parte de um estudo realizado pelos pesquisadores da FCM/Unicamp. Até o momento, a Maria está em contato com seu orientador para solicitar a disponibilização da referida base para o projeto DataBetes.
+# Modelagem
+
+
+## Passos Realizados
+
+<figure>
+<figcaption align = "center"><b>Gráfico 14: Passos Realizados na Modelagem
+</b></figcaption>
+<img src="assets/modeling_steps.PNG" style="width:100%">
+</figure>
+
+Durante a modelagem, após importar os dados processados, foram realizados alguns processamentos adicionais para a entrada do modelo como o one hot encoding e normalização. Após, foram feitos experimentos para encontrar o melhor modelo com o conjunto de validação e, encontrando ele, foi realizado o teste no conjunto de teste. Foi realizado também o deploy no formato pickle para consumo por outra base.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 15: Comparação de Métricas por Modelo
+</b></figcaption>
+<img src="assets/tests_validation.png" style="width:100%">
+</figure>
+
+Foram realizados diversos experimentos com o conjunto de validação utilizando modelos simples como Árvore de Decisão até modelos complexos como Auto Enconder. Estes experimentos foram combinados com diferentes estratégias de geração de dados sintéticos como o SMOTE, ADASYN, Borderline e Downsampling. Pode se notar que o modelo Random Forest apresentou os melhores resultados considerando explicabilidade, complexidade, acurácia balanceada e AUC. Também foram levadas em consideração as métricas f1-score, especificidade e sensibilidade.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 16: Modelo Final Selecionado
+</b></figcaption>
+<img src="assets/final_model_vigitel.PNG" style="width:100%">
+</figure>
+
+O gráfico mostra as métricas para o modelo final encontrado a partir de busca de hiperparâmetros e as métricas específicas para ele. Foi utilizado o SMOTE para a criação de dados sintéticos no conjunto de treino.
+
+<figure>
+<figcaption align = "center"><b>Gráfico 17: Comparação com Trabalhos Relacionados
+</b></figcaption>
+<img src="assets/relatedworks.PNG" style="width:100%">
+</figure>
+
+Em comparação com os trabalhos relacionados, o nosso modelo apresentou um resultado competitivo, com destaque para a ROC-AUC, métrica amplamente utilizada no contexto de saúde. Referências: [1]( https://repositorio.unifesp.br/bitstream/handle/11600/67419/Dissertação_Leonardo%20Fernandes%20Silva_PDFA.pdf), [2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7526372/), [3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4724234/) e [4](https://www.scielo.br/j/csc/a/jPkqjGD94bWL4C)
+
+## Estudo de Caso
+
+No estudo de caso, foi feito uma modificação na base do PNS/IBGE para que pudessemos testar a base e comparar com o nosso resultado gerado a partir da base do Vigitel. A cada região prevalece uma métrica diferente, assim como na imagem abaixo.
+<figure>
+<figcaption align = "center"><b>Gráfico 18: AUC por região do país
+</b></figcaption>
+<img src="assets/regiao_pns.png" style="width:100%">
+</figure>
+
+Assim como na figura acima, é possível identificar as métricas por estado:
+<figure>
+<figcaption align = "center"><b>Gráfico 19: AUC por estado do país
+</b></figcaption>
+<img src="assets/regiao_pns_estado.png" style="width:100%">
+</figure>
+
+Através da ferramenta Local Interpretable Model-Agnostic Explanations (LIME), garantimos alguns resultados importantes sobre indivíduos independentes, ao testar a base do PNS. Um exemplo de explicabilidade errônea encontra-se abaixo, mencionando o fato das características ao lado da figura.
+<figure>
+<figcaption align = "center"><b>Gráfico 20: Interpretabilidade errônea
+</b></figcaption>
+<img src="assets/lime_confusao.png" style="width:100%">
+</figure>
+
+A figura abaixo menciona o fato do modelo ter acertado, de fato, a interpretabilidade final.
+<figure>
+<figcaption align = "center"><b>Gráfico 20: Interpretabilidade correta
+</b></figcaption>
+<img src="assets/lime_acerto.png" style="width:100%">
+</figure>
+
+
+# Conclusão
+Podemos concluir que nosso modelo apresentou resultado competitivo em comparação a outros modelos já existentes e que conseguimos alcançar nosso objetivo de identificar grupos de risco para a diabetes tipo 2 a partir de variáveis de fácil acesso que podem ser auto relatadas. Pensando que o público alvo que irá utilizar nosso modelo são os gestores e responsáveis técnicos, é importante manter um certo nível de explicabilidade dos resultados apresentados para que seja possível identificar e estudar a importância de cada variável.
+
+Temos ciência que nossa proposta é complexa e que mais testes poderiam ser feitos para melhorar os valores de acurácia, sensibilidade e especificidade, além de que mais estudos poderiam ser realizados para completar e contrapor tais resultados. Mas consideramos que a importância do nosso estudo está relacionada com a criação de uma nova ferramenta de avaliação de diabetes tipo 2 a partir de dados brasileiros, pensados na heterogeneidade genética e de hábitos de uma população tão diversa como a nossa. 
+
+Isso partindo de que o escore mais utilizado atualmente para diabetes tipo 2 é o FINDRISC, desenvolvido e validado na Islândia, uma população muito mais homogênea e com hábitos muito diferentes que a brasileira. Tal escore já passou por validação e adaptação transcultural, porém o estudo usou uma amostra de conveniência na cidade do estudo e com um número limitado de pessoas, nosso estudo teria a capacidade de predição próxima, porém com uma amostra nacional e com capacidade de ser representativo para toda a população, o que traz mais força e confiabilidade para os resultados.
+
 
 # Ferramentas
 Ferramenta teórica: Pubmed, Google Scholar e documentos/protocolos governamentais.
@@ -239,4 +331,7 @@ Ferramente de dados: Python, Stata, Google Colab, bibliotecas de manipulação d
 | 14 de maio | Resultado parcial: análise descritiva estratificada por grupos, seleção de dados. 3 primeiras etapas do CRISP-DM   |
 | 22 de junho | Modelo refinado e finalizado. Últimas etapas da metodologia  |
 | 22 ou 27 de junho  | Apresentação  |
+
+# Notebooks
+Os notebooks podem ser acessados clicando [aqui](https://drive.google.com/drive/folders/1IlmQYHQUJMae1gClfRwy4etRyP_AUZ7i?usp=sharing).
 
