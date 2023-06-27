@@ -182,7 +182,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 
 > A figura 6 mostra os maiores número de óbitos por 100 mil habitantes entre os estados brasileiros. O estado de São Paulo lidera o ranking com 2055 óbitos, seguido pelo Rio de Janeiro com 937 óbitos a cada 100 mil habitantes.
 >
-> Figura 5: Estados do Brasil com o maior número de óbitos por 100 mil habitantes devido a doenças cardiovasculares no período de 1996 a 2021.
+> Figura 6: Estados do Brasil com o maior número de óbitos por 100 mil habitantes devido a doenças cardiovasculares no período de 1996 a 2021.
 >
 > ![Figura 6](assets/figura6.png)
 >
@@ -220,7 +220,7 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 
 
 # Resultados e Discussão
-> Observa-se que na série temporal (Figura 3) há um comportamento repetitivo em partes na série, ou seja, existe sazonalidade. Além de também apresentar uma tendência de crescimento ao longo dos anos. Essas flutuações sazonais podem estar relacionadas a fatores como mudanças no estilo de vida ou comportamentos relacionados à saúde que ocorrem repetidamente em um determinado período de tempo, como estações do ano ou períodos festivos.
+> Observa-se que na série temporal (Figura 4) há um comportamento repetitivo em partes na série, ou seja, existe sazonalidade. Além de também apresentar uma tendência de crescimento ao longo dos anos. Essas flutuações sazonais podem estar relacionadas a fatores como mudanças no estilo de vida ou comportamentos relacionados à saúde que ocorrem repetidamente em um determinado período de tempo, como estações do ano ou períodos festivos.
 >
 > No processo de modelagem dos óbitos por doenças cardiovasculares, optou-se por usar a classe dos modelos de Box-Jenkins, que consiste em consiste em ajustar modelos (p, d, q), a um conjunto de dados (MORETTIN; TOLOI, 2004). Para um ajuste de modelos ARIMA (Autorregressivo Integrado de Médias Móveis) é preciso que a série seja livre de tendência, ou seja, estacionária. Utilizando o teste de Dickey-Fuller foi possível ver que o p-valor é maior que o nível de significância, ou seja, 0,97 > 0,05 não se pode rejeitar H_0. Portanto, há uma raiz unitária, logo, a série não é estacionária, ao nível de 5% de significância. Portanto, se faz necessário aplicar a diferença para ajustar o modelo de previsão.
 >
