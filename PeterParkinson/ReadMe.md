@@ -133,7 +133,6 @@ No gráfico, 5, há a distribuição dos grupos de pessoas em idades por ranges
 
 Usuários que possuem problema em atividade X depressão
 
-![Grafico 6](./assets/exp/idade-semXcom.jpg)
 
 No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde contagem das pessoas vs problemas de atividades físicas:
 
@@ -196,18 +195,20 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 # Resultados
 
 
-![Grafico 10](./assets/exp/idade-semXcom.jpg)
+
 Pacientes com Parkinson, com e sem depressão, de acordo com a faixa etária. Grupos de pacientes com até 60 anos, com e sem depressão não apresentam diferença significativa entre os grupos. A partir dos 60 anos, o número de pacientes com Parkinson aumenta, e dentre eles, a maioria não possui depressão. Por volta dos 70 anos, a quantidade de pacientes com a doença começa a diminuir e até os 80 anos é a fase que mais apresenta pacientes sem depressão quando comparado com o grupo com a doença. Dos 80 aos 90 anos, há o declínio no total de pacientes, justificado pelo aumento da mortalidade dos pacientes com a doença nessa faixa etária, no entanto, o grupo ausente de depressão ainda se sobrepõe ao grupo com depressão..
 
-![Grafico 11](./assets/exp/hist_Anxious.jpg)
+![Grafico 11](./assets/hist_Anxious.jpg)
 Segundo o histograma, mais de 12000 pessoas com Parkinson não apresentam ansiedade ou depressão, aproximadamente 9.000 pessoas apresentam baixos níveis. Quase 4.000 pessoas têm quadros moderados. Menos de 1.000 pessoas apresentam quadros mais severos e/ou extremos de ansiedade ou depressão.
 
 Inicialmente realizamos uma analise exploratoria no banco de dados, Michael J. Fox Foundation, como obejetivo de obter dados basicos sobre a população representada no banco. Diante disso, percebemos que existem entre 8000 e 10000 pacientes portadores de Parkison e depressão, classificado entre pouco, moderado, severo e extremo. 
 
 Para responder as perguntas de pesquisa analisamos a relação entre exercício físico, parkinson e  depresão, o estudo foi dividido em três partes:
 
-Duração das atividades fisicas realizadas;
+ Duração das atividades fisicas realizadas;
+ 
 Riscos das atividades ;
+
 intensidade. 
 
 
@@ -217,11 +218,20 @@ intensidade.
 
 Comparando os resultados dos graficos de distribuição de pacientes que realizam atividades fisica com/sem depressão, é observado que os pacientes sem depressão tem mais constância nos exercicios fisicos. Além disso, a mesma tentencia é confirmada na intensidade dos exercícios leve,modera e severo. 
 
-![Grafico 14](./assets/intensidade /leve-semXcom.jpg)
+![Grafico 14](./assets/intensidade/leve-semXcom.jpg)
 
-![Grafico 15](./assets/intensidade /pes-semXcom.jpg)
-![Grafico 16](./assets/intensidade /mod-semXcom.jpg)
-Gráfico: Sintomas de Parkinson em pacientes com depressão: De acordo com o gráfico, foram classificados sintomas como tremor, sono e outros em pacientes com depressão. Os sintomas foram classificados na escala de 0 a 8, e os números foram atribuídos a ruins e bons, representados no eixo x e o número de pacientes está representado no eixo y. A classificação mais alta, abaixo de 2, é considerada ruim relacionada ao sono em pacientes com depressão. Na classificação de tremor, o nível 3 apresenta o maior número de pacientes. Já na classificação outros, a faixa com maior número de pacientes está entre 5 e 6.
+![Grafico 15](./assets/intensidade/pes-semXcom.jpg)
+
+![Grafico 16](./assets/intensidade/mod-semXcom.jpg)
+
+Sintomas de Parkinson em pacientes com depressão: De acordo com o gráfico, foram classificados sintomas como tremor, sono e outros em pacientes com depressão. Os sintomas foram classificados na escala de 0 a 8, e os números foram atribuídos a ruins e bons, representados no eixo x e o número de pacientes está representado no eixo y. A classificação mais alta, abaixo de 2, é considerada ruim relacionada ao sono em pacientes com depressão. Na classificação de tremor, o nível 3 apresenta o maior número de pacientes. Já na classificação outros, a faixa com maior número de pacientes está entre 5 e 6.
+
+![Grafico17](./assets/duração/Pa1amod-semXcom.jpg)
+Gráfico: Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 2.000 e acima de 10.000. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 4 horas.  De 100 pacientes que constam de depressão apresentaram tempo de atividade entre < 1hora comparado ao grupo de 150 pacientes sem depressão com aumento significativo. Já no decorrer do tempo de de 1-2h a 4h em que o número de pacientes entre abaixo de 1000 e 9.000 do grupo com depressão apresentaram baixa atividade física em relação ao grupo sem depressão, o número de pacientes entre abaixo de 2000 e 10.000 apresentaram maior interação nas atividades.
+
+![Grafico18](./assets/duração/Pa7amod-semXcom.jpg)
+Gráfico: Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 10 e acima de 40. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 10 horas.  De 40 pacientes que constam de depressão e 50 pacientes sem depressão apresentaram tempo de atividade maior significativo entre < 1hora comparado ao grupo de 30 pacientes com depressão e 35 pacientes sem depressão com tempo de atividade entre < 1-4 horas. Já no decorrer do tempo de de 5-10hs em que o número de pacientes com depressão está bem abaixo de 5 comparado ao grupo sem depressão no total de 20 pacientes. Logo, nota-se que pacientes com Parkinson sem depressão possuem uma desenvoltura maior para as atividades físicas. 
+
 
 
 
