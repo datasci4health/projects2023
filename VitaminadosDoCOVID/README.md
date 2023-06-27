@@ -324,7 +324,7 @@ A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais 
 
 Fonte: Autores(2023)
 
-Analisando as informações obtidas na até aqui é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
+
 
 ### Análise de Componentes Princicais e Clusterização
 
@@ -422,12 +422,13 @@ Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacient
 Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
 
 
+### Modelo de Classificação
 
 Um modelo de Árvore de Decisão foi escolhido por seu nível de interpretabilidade para poder fazer uma classificação multi-classe, que pode ajudar o especialista como um guia para os vários caminhos que podem levá-lo a um nível de gravidade quando ele é hospitalizado. Isso deve ser usado como uma ferramenta, mas não como um veredito.
 
 ### Figura 6 - Modelo de Classificação por Árvore de Decisões
 
-![Figura 29](./reports/figures/decision_tree.png)
+![Figura 29](./reports/figures/decision_tree.jpeg)
 
 Fonte: Autores(2023)
 
@@ -444,19 +445,11 @@ O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índice
 
 ### Figura 8 - Mortes durante a hospitalização versus níveis de vitamina D
 
-![Figura 31](./reports/figures/morte_durante_hospitalizacao.png)
+![Figura 31](./reports/figures/morte_durante_hospitalizacao.jpeg)
 
 Fonte: Autores(2023)
 
 A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
-
-### Figura 9 - Mortes durante a hospitalização versus níveis de vitamina D
-
-![Figura 32](./reports/figures/severidade_vitaminad.png)
-
-Fonte: Autores(2023)
-
-Com base no gráfico anterior, onde há dois grupos, aqui a divisão é tem mais categorias, no entanto, pode-se observar que apenas o nível "Leve" é aquele que está dentro dos níveis adequados de vitamina D, o restante está fora e pode-se observar uma tendência de que quanto menor o índice de vitamina D, maior a gravidade da Covid-19. Isso abre caminho para explorar a relação com mais variáveis, como idade e etnia.
 
 
 
@@ -478,6 +471,10 @@ Com base no gráfico anterior, onde há dois grupos, aqui a divisão é tem mais
 
 
 ## Resultados
+
+Analisando as informações obtidas na até aqui é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
+
+
 
 
 ## Discussão
