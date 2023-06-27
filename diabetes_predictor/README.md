@@ -12,6 +12,42 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Caique Santos Lima  | 217040  | Eng. Elétrica e Computação |
 | Gustavo Pessoa Caixeta Pinto de Luz  | 271582  | Computação |
 
+## Slides da apresentação final
+Os slides de apresentação do projeto pode ser acessado clicando [aqui](https://drive.google.com/file/d/1ZnR7gqAJUIT_Bcy5CAwPciNv1xZEOh1D/view?usp=sharing).
+
+## Análise Exploratória de Dados
+
+### Processamento de dados
+
+#### 1. Análise de variáveis comuns nos anos
+A partir da base de dados bruta, extraída do repositório de dados do Vigitel, foi feita uma investigação preliminar para determinar: (i) quais variáveis estavam disponíveis para uso em cada ano, (ii) se os dados mantinham a mesma consistência em todos os anos, e (iii) quais as variáveis que eram comuns entre os anos, isto é, aquelas que apareciam em vários subconjuntos.
+Esta análise foi importante para explorar quais eram os anos viáveis para se trabalhar, considerando que os anos selecionados seriam aqueles em que as variáveis de interesse estivessem presentes em todos os anos. Deste modo, as mesmas variáveis apareceriam nas subsequentes divisões dos conjuntos em treinamento, validação e teste.
+
+#### 2. Pré-seleção de variáveis pela especialista
+Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
+
+ #### 3. Análise de valores faltantes
+Nesta importante etapa de processamento de dados foram avaliados não apenas os valores faltantes (NaNs) mas também os casos em que o participante da pesquisa não quis informar uma resposta (888) ou não sabia (777). Por uma questão de qualidade da informação, esses casos citados foram removidos sem prejuízos nas etapas seguintes de processamento dos dados. 
+Vale destacar que na base de dados final ainda é possível encontrar alguns valores NaNs, no entanto, os mesmos se referem às questões onde não haveria resposta por parte do entrevistado, por exemplo, para um indivíduo que responde que não bebe, não haverá resposta para a pergunta “qual a frequência de álcool?”, logo, nesta célula aparecerá o valor NaN.
+
+#### 4. Análise de correlação
+Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. A figura abaixo apresenta essa matriz de correlação.
+
+-- fig
+
+Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
+
+-- fig
+
+#### 5. Seleção de variáveis
+Por fim, as variáveis contidas na base de dados do Vigitel foram selecionadas com base no conhecimento da especialista e também pelas análises contempladas nas etapas anteriores.
+
+#### 6. Tratamento das variáveis
+Além dos pré-processamentos de dados descritos nas etapas anteriores, foram acrescentadas informações ao conjunto de dados: (i) as categorias particulares da base do Vigitel, que obedecem uma escala pouco interpretável, foram substituídas pela descrição resumida proveniente do dicionário de dados do Vigitel; (ii) foram removidos os indivíduos que declararam idade de início da diabetes antes dos 18 anos, deste modo, permaneceram, no geral, apenas os casos caracterizados como diabetes tipo 2; (iii) para descartar valores espúrios, isto é, aqueles que poderiam ter sido inseridos na base de dados de forma equivocada, foram removidos os atributos numéricos acima do percentil 0.99 e abaixo do percentil 0.01; e (iv) novas variáveis foram acrescentadas à base de dados, como: IMC e região.
+
+#### 7. Divisão estratificada do treinamento, validação e teste
+Após a preparação dos dados, realizou-se a divisão dos dados obtidos em três subconjuntos: treinamento (70%), validação (25%) e teste (5%). A estratégia adotada nesta separação dos dados procurou respeitar uma distribuição balanceada das classes (diabéticos ou não-diabéticos) entre os três subconjuntos, ou seja, cada subconjunto ficou com a mesma proporção de diabéticos (10%) e não-diabético (90%).
+Outro cuidado que se teve foi garantir que não houvesse vazamento de dados, isto é, que dados de indivíduos que estivessem presentes em um determinado subconjunto não se repetissem em outro. Este controle foi estabelecido através da “chave”, um identificador do Vigitel que denota cada entrevistado. Portanto, as chaves que se repetem, ou seja, indivíduos que responderam mais de uma vez a pesquisa, foram colocadas no mesmo subconjunto.
 
 # Descrição Resumida do Projeto
 As doenças crônicas são as principais causas de morte no Brasil e no mundo, sendo a diabetes uma doença crônica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabetes tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são caracteristicas socioeconômicas e de saúde, como hábitos alimentares, atividade física, renda e outras questões de saúde, o que torna importante o debate dessa doença em âmbito populacional. Dessa forma, nosso projeto se propõe a desenvolver um modelo de aprendizagem de máquina que auxilie gestores públicos e resposáveis técnicos a identificarem os fatores de risco na população para o desenvolvimento de diabetes e assim facilitar o desenvolvimento de estratégias para mitigar os problemas associados a esta questão em sua região. 
