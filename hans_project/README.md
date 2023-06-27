@@ -79,6 +79,7 @@ Considerando as características da doença e a variação das variáveis fornec
 > 
 
 > ![Figura 1. Mapa da metodologia executada](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/reports/metodologia.png)
+> 
 > *Mapa da metodologia executada*
 
 ## Bases de Dados e Evolução
