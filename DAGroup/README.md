@@ -74,9 +74,6 @@ _Objetivos específicos:_
 
 # Metodologia
 
-> Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
-> Justificar teoricamente, sempre que possível, a metodologia adotada.
-
 A metodologia do estudo foi baseada em quatro principais estratégias:
 
 - Realização de um estudo bibliográfico, que permitiu entender os padrões esperados para cada pergunta de pesquisa.
