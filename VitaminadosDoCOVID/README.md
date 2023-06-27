@@ -326,7 +326,7 @@ Fonte: Autores(2023)
 
 
 
-### Análise de Componentes Princicais e Clusterização
+### Análise de Componentes Principais e Clusterização
 
 Uma forma de segregar os dados bucando por descobrir relacionamentos entre variáveis é a aplicação de técnica de agrupamento ou clusterização. Esta técnica pode contribuir no processo de descoberta observando-se como as amostras se essemalham mas sem o uso da uma variável alvo, um processo chamado de aprendizado não-supervisionado.
 Antes de executar a clusterização, buscando por descobrir mais sobre os dados e o relacionamento entre as variáveis, foi feita análise de componentes principais (PCA) para redução de dimensionalidade. Isso poderia reduzir ruídos de variáveis que agregam pouco na variância dos dados e trazer melhores resultados na clusterização.
@@ -457,7 +457,7 @@ O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índice
 
 ## Resultados
 
-Analisando as informações obtidas na até aqui é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
+Analisando as informações obtidas na seção anterior é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
 
 Da clusterização, conseguimos destacar os resultados do Cluster 1 e do Cluster 4 (verde e lilás no gráfico 7). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de 25(OH)D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
 Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de 25(OH)D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
@@ -476,6 +476,9 @@ Fonte: Autores(2023)
 
 
 ## Conclusão
+
+A vitamina D desempenha um papel importante como nutriente capaz de afetar o processo de envelhecimento em nível celular/molecular, com uma ampla gama de ações. De fato, além dos defeitos ósseos, a insuficiência de vitamina D está associada ao aumento do risco de desenvolvimento de uma ampla gama de patologias, desde doenças neurológicas até câncer, distúrbios metabólicos, doenças cardiovasculares, doenças autoimunes e infecções respiratórias. A maioria das ações da vitamina D pode ser atribuída as suas propriedades imunomoduladoras, o que significa que a vitamina D tem a capacidade de modular ou regular a função do sistema imunológico e a resposta inflamatória do corpo. Nossos resultados sugerem que pacientes idosos com baixa 25OHD na pré infecção tem maior suscetibilidade a desenvolver um desfecho grave/crítico da doença COVID-19 podendo levar a óbito.
+O processo de envelhecimento inclui diferentes remodelações de sistemas biológicos que levam à perda da homeostase ou seja o equilíbrio e, consequentemente, à deterioração de vários órgãos e tecidos. A remodelação dependente da idade do sistema imunológico tanto no braço inato quanto adaptativo é considerada a principal razão para o aumento da suscetibilidade a infecções, particularmente infecções respiratórias.
 
 
 ## Trabalhos Futuros
