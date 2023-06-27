@@ -226,10 +226,10 @@ Comparando os resultados dos graficos de distribuição de pacientes que realiza
 
 Sintomas de Parkinson em pacientes com depressão: De acordo com o gráfico, foram classificados sintomas como tremor, sono e outros em pacientes com depressão. Os sintomas foram classificados na escala de 0 a 8, e os números foram atribuídos a ruins e bons, representados no eixo x e o número de pacientes está representado no eixo y. A classificação mais alta, abaixo de 2, é considerada ruim relacionada ao sono em pacientes com depressão. Na classificação de tremor, o nível 3 apresenta o maior número de pacientes. Já na classificação outros, a faixa com maior número de pacientes está entre 5 e 6.
 
-![Grafico17](./assets/duração/Pa1a-mod-semXcom.jpg)
+![Grafico17](./assets/duração/pa1a-mod-semXcom.jpg)
  Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 2.000 e acima de 10.000. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 4 horas.  De 100 pacientes que constam de depressão apresentaram tempo de atividade entre < 1hora comparado ao grupo de 150 pacientes sem depressão com aumento significativo. Já no decorrer do tempo de de 1-2h a 4h em que o número de pacientes entre abaixo de 1000 e 9.000 do grupo com depressão apresentaram baixa atividade física em relação ao grupo sem depressão, o número de pacientes entre abaixo de 2000 e 10.000 apresentaram maior interação nas atividades.
 
-![Grafico18](./assets/duração/Pa7a-mod-semXcom.jpg)
+![Grafico18](./assets/duração/pa7a-mod-semXcom.jpg)
 Gráfico: Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 10 e acima de 40. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 10 horas.  De 40 pacientes que constam de depressão e 50 pacientes sem depressão apresentaram tempo de atividade maior significativo entre < 1hora comparado ao grupo de 30 pacientes com depressão e 35 pacientes sem depressão com tempo de atividade entre < 1-4 horas. Já no decorrer do tempo de de 5-10hs em que o número de pacientes com depressão está bem abaixo de 5 comparado ao grupo sem depressão no total de 20 pacientes. Logo, nota-se que pacientes com Parkinson sem depressão possuem uma desenvoltura maior para as atividades físicas. 
 
 
