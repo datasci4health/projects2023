@@ -78,7 +78,8 @@ Considerando as características da doença e a variação das variáveis fornec
 > Para identificar padrões espaciais de ocorrência e abandono, determinou-se a proporção de casos de hanseníase em abandono de tratamento entre os casos novos diagnosticados nos anos das cortes como um indicador para avaliar a qualidade da atenção e do acompanhamento dos casos novos diagnosticados até a conclusão do tratamento. Para o cálculo desse indicador, utilizaram-se os casos novos de hanseníase diagnosticados nos anos das coortes que abandonaram o tratamento até 31/12 do ano de avaliação, dividido pelo total de casos novos diagnosticados nos anos das coortes, multiplicado por 100. O qualidade de atenção pode ser classificada como Boa quando o indicador é inferior a 10%, Regular quando está entre 10% e 24,9% e Precária quando é igual ou superior a 25%. Para esse indicador foi utilizado o município e a unidade federativa de residência atual dos casos notificados, excluindo aqueles com a classificação de "erro de diagnóstico” no banco de dados. Com base nos parâmetros obtidos, foram criados mapas temáticos para cada ano.
 > 
 
-> ![Figura 1. Mapa da metodologia executada](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/reports/metodologia.png)*Mapa da metodologia executada*
+> ![Figura 1. Mapa da metodologia executada](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/reports/metodologia.png)
+> *Mapa da metodologia executada*
 
 ## Bases de Dados e Evolução
 > Bases de dados estudadas e/ou utilizadas no projeto.
