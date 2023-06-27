@@ -415,11 +415,6 @@ Fonte: Autores(2023)
 
 Fonte: Autores(2023)
 
-Dos gráficos acima, conseguimos destacar os resultados do Cluster 1 e do Cluster 4 (verde e lilás no gráfico 7). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de 25(OH)D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
-
-Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de 25(OH)D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
-
-Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
 
 
 ### Modelo de Classificação
@@ -443,16 +438,6 @@ Nesse modelo de Machine Learning, há métricas que podem indicar a eficácia de
 O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índices de Gini para fazer a seleção dos nós, onde é indicada a pureza ou a relação de informações que cada variável fornece.
 
 
-### Figura 8 - Mortes durante a hospitalização versus níveis de vitamina D
-
-![Figura 31](./reports/figures/morte_durante_hospitalizacao.jpeg)
-
-Fonte: Autores(2023)
-
-A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
-
-
-
 ### Ferramentas
  Por conter um vasto conjunto de bibliotecas estatísticas, gráficas e numéricas, optou-se pela utilização da ferramenta Python, que além da implementação mais "simplificada" faz parte do conhecimento de todos os participantes do projeto.
  As bibliotecas utilizadas para implementação e análises estão dispostas na Tabela 9.
@@ -474,7 +459,17 @@ A relação entre os níveis de vitamina D e o quadro final de um paciente (mort
 
 Analisando as informações obtidas na até aqui é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
 
+Da clusterização, conseguimos destacar os resultados do Cluster 1 e do Cluster 4 (verde e lilás no gráfico 7). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de 25(OH)D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
+Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de 25(OH)D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
+Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
 
+A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
+
+### Figura 8 - Mortes durante a hospitalização versus níveis de vitamina D
+
+![Figura 31](./reports/figures/morte_durante_hospitalizacao.jpeg)
+
+Fonte: Autores(2023)
 
 
 ## Discussão
@@ -485,12 +480,11 @@ Analisando as informações obtidas na até aqui é possível verificar que, de 
 
 ## Trabalhos Futuros
 
-A fim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
-<!--ts-->
-   * Predição do desfecho
-   * Clusterização das Variáveis
-   * Análises das variáveis de confusão
-<!--te-->
+Verificar na literatura conjuntos de dados brasileiros, a fim de realizar análises mais representativas para a sociedade. 
+
+Criar um modelo de aprendizado de máquina que seja capaz de identificar ou predizer desfechos de covid 19 mesmo sem os níveis pré-infecção. 
+
+Um terceiro seria realizar estudos mais aprofundados sobre a ação da vitamina D em outras doenças, como depressão, ansiedade, câncer.
 
 
  
