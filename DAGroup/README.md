@@ -354,7 +354,7 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 
 Assim como apresentado na literatura, encontramos que quanto menor a escolaridade maior é a proporção de pessoas com depressão, ocorrendo o mesmo ao comparamos depressão com renda per capita, esse achado é importante quando utilizamos escolaridade como proxy de renda, visto que variáveis númericas de renda podem apresentar vieses de informação.
 
-Em relação a variável sexo, encontramos uma prevalência de depressão muito super em mulheres comparada aos homens. Isto é atribuído a diversos fatores, por exemplo as mulheres apresentam e relatam mais sobre os sintomas clássicos para o diagnóstico da depressão em relação aos homens que relatam com menor frequência e apresentam como sintomas mais comum o abuso de álcool e drogas (https://linkinghub.elsevier.com/retrieve/pii/S0165032704003738) (https://www.sciencedirect.com/science/article/abs/pii/S0010440X07001666?via%3Dihub). Além dessas, foi observado que ao avançar da idade há uma maior prevalência de depressão dentre a amostra estudada. 
+Em relação a variável sexo, encontramos uma prevalência de depressão muito super em mulheres comparada aos homens. Isto é atribuído a diversos fatores, por exemplo as mulheres apresentam e relatam mais sobre os sintomas clássicos para o diagnóstico da depressão em relação aos homens que relatam com menor frequência e apresentam como sintomas mais comum o abuso de álcool e drogas[6]. Além dessas, foi observado que ao avançar da idade há uma maior prevalência de depressão dentre a amostra estudada. 
 
 
 
@@ -388,10 +388,10 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 
 Ao observarmos o score de consumo de produtos ultraprocessados encontramos que as pessoas com depressão possuem um ligeiro maior consumo de ultraprocessados em relação as pessoas sem o diagnóstico de depressão. Diversos estudos mostram uma associação positiva entre maior consumo de produtos ultraprocessados como refrigerantes e doces com depressão, independente de renda e sexo. 
 
-No que se refere a prática de exercício físico foi observado uma maior proporção de pessoas com depressão que não praticam exercício físico, assim como mostrado na literatura [5]. Diversos estudos, dentre eles algumas metanálises, apresentam evidências de que qualquer nível de atividade física atenua o risco de depressão e independentemente da idade o exercício físico é um fator protetor para o desenvolvimento da depressão (https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2018.17111194) (https://bjsm.bmj.com/content/55/16/926).
+No que se refere a prática de exercício físico foi observado uma maior proporção de pessoas com depressão que não praticam exercício físico, assim como mostrado na literatura [5]. Diversos estudos, dentre eles algumas metanálises, apresentam evidências de que qualquer nível de atividade física atenua o risco de depressão e independentemente da idade o exercício físico é um fator protetor para o desenvolvimento da depressão [12].
 
 
-Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população. (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool. (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
+Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população [13, 14]. Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool [15,16].
 
 
 
@@ -414,7 +414,7 @@ Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagis
 
 
 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer, diabetes e obesidade estão associados com o diagnóstico de depressão. Tais associações também são encontradas por outros estudos, os quais mostram uma bidirecionalidade entre histórico de doenças crônicas não transmissiveis sendo fator de risco para depressão e depressão sendo elencada como fator de risco para o desenvolvimento de DCNT. Essa complexidade é atribuída a diversos fatores como genética, biológica e comportamental que são comuns entre elas (https://www.scielo.br/j/rbepid/a/gYrgkcRnGTgWTjVTNSD9MNS/?lang=pt)
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer, diabetes e obesidade estão associados com o diagnóstico de depressão. Tais associações também são encontradas por outros estudos, os quais mostram uma bidirecionalidade entre histórico de doenças crônicas não transmissiveis sendo fator de risco para depressão e depressão sendo elencada como fator de risco para o desenvolvimento de DCNT. Essa complexidade é atribuída a diversos fatores como genética, biológica e comportamental que são comuns entre elas[8]
 
 
 | **Variáveis de DCNT**        	|                      	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
@@ -667,6 +667,7 @@ A tabela abaixo compara os coeficientes da regressão logística com os níveis 
 
 Observa-se que tanto a Floresta Randomica quanto as Árvores de Decisão apresentam importâncias relativamente semelhantes, uma vez que são métodos de classificação semelhantes. Ao comparar a Regressão Logística e a Floresta Randomica, ambos elegem o atributo "Sexo" como o mais importante para a classificação. O segundo atributo mais importante na Regressão Logística, "Artrite", é o terceiro mais importante na Floresta Randomica. No entanto, o atributo "Cardiovascular", que é o terceiro mais importante na Regressão Logística, tem importância praticamente zero na Floresta Randomica.
 
+A partir dos resultados, o desenvolvimento de políticas públicas de prevenção a depressão dentre o grupo do sexo feminino é essencial, porém ações não devem ser voltadas apenas para esse grupo devido possibilidade de problemas como a estereotipagem da doença nas mulheres e subdiagnostico de depressão dentre os homens. Com isso, recomendamos também o desenvolvimento de ações de saúde mental visando a prevenção de depressão, principalmente dentre pacientes diagnósticados com artrite e doenças cardiovasculares. 
 
 ### Resultados testes
 
@@ -714,6 +715,8 @@ Durante a análise dos coeficientes da regressão, notamos que a influência des
 
 Descobrimos que os comportamentos de saúde e/ou doenças crônicas não transmissíveis também desempenham um papel determinante no diagnóstico da depressão. Grande parte do peso dos coeficientes recai sobre as doenças crônicas, perdendo apenas para a variável sociodemográfica do sexo.
 
+Portanto, ações preventivas de depressão direcionadas para populações com diagnóstico das doenças crônicas elencadas no estudo são recomendadas, levando em consideração questões de gênero e de posição socioeconômica.
+
 Durante o desenvolvimento do projeto, enfrentamos desafios significativos. Um deles foi lidar com a quantidade de dados faltantes e variáveis ausentes nos indicadores iniciais baseados na PNS. Especificamente, a falta de informações sobre o consumo de álcool e a prática de atividade física representou um obstáculo importante. 
 
 Além disso, deparamos com o desafio do desbalanceamento dos dados na classificação dos casos de depressão. A proporção entre indivíduos classificados como depressivos e não depressivos era desigual, sendo que apenas 10,6% dos participantes foram identificados como depressivos. Inicialmente, utilizamos o algoritmo SMOTE para gerar dados sintéticos na classe minoritária, porém posteriormente optamos por ponderar a classe majoritária durante o treinamento dos modelos de classificação, o que resultou em melhores resultados.
@@ -724,7 +727,7 @@ Esses desafios evidenciaram a importância de abordar estrategicamente os dados 
 
 No âmbito dos trabalhos futuros, sugerimos explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
 
-Adicionalmente, consideramos relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
+Adicionalmente, consideramos relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
 
 # Cronograma
 
@@ -765,6 +768,16 @@ Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      
 10. dos Santos Costa C, Steele EM, de Faria FR, Monteiro CA. Score of ultra-processed food consumption and its association with sociodemographic factors in the Brazilian National Health Survey, 2019. Cad Saude Publica [Internet]. 2022 May 6 [cited 2023 Jun 21];38:e00119421. Available from: https://www.scielo.br/j/csp/a/QP4GrYT7cS6YCLrrTKtPvjp/?lang=en
  	
 11. de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
+
+12. 	Marcus SM, Kerber KB, Rush AJ, Wisniewski SR, Nierenberg A, Balasubramani GK, et al. Sex differences in depression symptoms in treatment-seeking adults: confirmatory analyses from the Sequenced Treatment Alternatives to Relieve Depression study. Compr Psychiatry. 2008 May 1;49(3):238–46.
+  
+13. 	Schuch FB, Vancampfort D, Firth J, Rosenbaum S, Ward PB, Silva ES, et al. Physical activity and incident depression: A meta-analysis of prospective cohort studies. Am J Psychiatry [Internet]. 2018 Jul 1 [cited 2023 Jun 26];175(7):631–48. Available from: https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2018.17111194
+
+14. 	Gutiérrez-Rojas L, Porras-Segovia A, Dunne H, Andrade-González N, Cervilla JA. Prevalence and correlates of major depressive disorder: a systematic review. Brazilian J Psychiatry [Internet]. 2020 Aug 3 [cited 2023 Jun 26];42(6):657–72. Available from: https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en
+
+15. 	Schlax J, Jünger C, Beutel ME, Münzel T, Pfeiffer N, Wild P, et al. Income and education predict elevated depressive symptoms in the general population: Results from the Gutenberg health study. BMC Public Health [Internet]. 2019 Apr 24 [cited 2023 Jun 26];19(1):1–10. Available from: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4
+   	 	
+16. 	Hasin D, Liu X, Nunes E, McCloud S, Samet S, Endicott J. Effects of Major Depression on Remission and Relapse of Substance Dependence. Arch Gen Psychiatry [Internet]. 2002 Apr 1 [cited 2023 Jun 26];59(4):375–80. Available from: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176
 
  
 ### Estudo Bibliográfico
