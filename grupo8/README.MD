@@ -241,9 +241,13 @@ Em resumo, o uso do Pandas, numpy, Jupyter, Google Colab, scipy, sklearn e matpl
 
 ## Investigação da relação de CK vs IMC
 
-A análise dos níveis de CK dos pacientes foi realizada, levando em consideração os valores médios de cada indivíduo devido às múltiplas medições ao longo do tempo. Com base nas tabelas obtidas anteriormente, os pacientes e seus valores de CK foram separados em dois grupos: obesos e não obesos. Alguns pacientes da tabela de IMC foram excluídos, pois não possuíam valores de CK definidos, devido à remoção de valores muito elevados. Para obter mais detalhes, consulte o notebook [gráficos_obesidade_e_ck.ipynb](notebooks/gr%C3%A1ficos_obesidade_e_ck.ipynb). Utilizando as informações dos pacientes presentes na tabela `patients_with_ck.csv`, foi gerado o gráfico de CK vs IMC a seguir:
+A análise dos níveis de CK dos pacientes foi realizada, levando em consideração os valores médios de cada indivíduo devido às múltiplas medições ao longo do tempo. Com base nas tabelas obtidas anteriormente, os pacientes e seus valores de CK foram separados em dois grupos: obesos e não obesos. Alguns pacientes da tabela de IMC foram excluídos, pois não possuíam valores de CK definidos, devido à remoção de valores muito elevados. Para obter mais detalhes, consulte o notebook [gráficos_obesidade_e_ck.ipynb](notebooks/gr%C3%A1ficos_obesidade_e_ck.ipynb). Utilizando as informações dos pacientes presentes na tabela `patients_with_ck.csv`, foram gerados os gráficos de CK vs IMC a seguir:
 
 ![bmivsck](assets/graf_bmi_ck.png)
+
+![bmivsck2](assets/graf_bmi_ck_ob.png)
+
+![bmivsck3](assets/graf_bmi_ck_other.png)
 
 Analisando os gráficos, é possível perceber que os valores de CK mais altos foram encontrados entre IMC de 20 e 60 kg/m². Além disso, valores de CK fora dessa faixa de IMC foram muito mais baixos do que aqueles dentro. Assim, pode-se perceber que em torno de limitante de obesidade (30 kg/m²) há altos valores de CK, principalmente para pacientes com IMC maior que o limitante. Por fim, há muito mais pacientes com CK abaixo de 4000 IU/L do que acima.
 
