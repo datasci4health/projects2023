@@ -10,6 +10,7 @@
 | Suelen Aparecida Ribeiro de Souza   | 252483   |Mestranda em clinica medica  |
 ## Slides da Apresentação Final
 https://www.canva.com/design/DAFm92CK0Ug/7_XVzfX5cOSVP-bCDcpa4Q/edit
+
 # Introdução e Referenciais Teóricos
 O Parkinson é uma doença degenerativa complexa que afeta uma região importante do cérebro, resultando na degeneração dos neurônios. Os pacientes com DP sofrem com a perda gradativa na coordenação motora apresentando sintomas como: mudança no comportamento, lentidão nos movimentos, desequilíbrio e rigidez muscular devido a uma deficiência na neurotransmissão dopaminérgica localizada no putâmen posterior e no circuito motor cerebral (Rodriguez et al., 2009). Muitos pacientes percebem que os sintomas motores pioram durante períodos de estresse e podem apresentar sintomas de depressão e ansiedade (Crizzle et al., 2006). 
 
