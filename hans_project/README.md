@@ -289,12 +289,20 @@ xgb_pipe = Pipeline(
 
 
 # Resultados
-## Evolução dos casos por estado
+## Evolução da quantidade de casos por estado
 > Foi analisado um gráfico para entender a evolução dos casos de hanseníase ao longo dos anos. Os dados foram normalizados para a quantidade de habitantes em cada estado.
 >
 > ![Figura 7. Quantidade de casos a cada 100 mil habitantes por estado ao longo dos anos](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_por_100k.gif)
 > 
 > *Figura 7.Quantidade de casos a cada 100 mil habitantes por estado ao longo dos anos.*
+>
+## Análise de casos de abandono por estado
+> Foi analisada a proporção de casos que abandonaram o tratamento de hanseníase em relação ao número de casos novos estratificados por município e ano no período de 2009 a 2019 no Brasil.
+>
+> ![Figura 8. Porcentagem de casos de abandono em relação ao número de diagnósticos por estado ao longo dos anos](https://github.com/alexbjr/hans_project/blob/main/hans_project/assets/graficos/graficos_ab_uf.gif)
+> 
+> *Figura 8. Porcentagem de casos de abandono em relação ao número de diagnósticos por estado ao longo dos anos.*
+> 
 ## Modelagem de ML
 >A tabela abaixo contém o resultado comparativo entre os modelos de regressão logística, random forest, xgboost e lightgbm para a predição do desfecho da doença: cura ou abandono.
 >
