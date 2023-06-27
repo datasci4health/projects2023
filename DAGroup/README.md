@@ -14,7 +14,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Guilherme Magalhães Soares  | 217241  | Elétrica - [Conta GitHub](https://github.com/gsoso01)|
 
 ## Slides da Apresentação Final
-> Link para slides da apresentação final do projeto.
+
+[Link para slides da apresentação final do projeto](https://www.canva.com/design/DAFmwXEC7yY/icnFkTJZTTm-u82yPKs00A/edit?utm_content=DAFmwXEC7yY)
 
 ## Apresentação inicial do projeto
 
@@ -189,48 +190,50 @@ Abaixo temos um resumo do workflow dos experimentos realizados com esta base:
 
 Os gráficos abaixo descrevem a proporção em relação a sexo, cor ou raça das amostras da população. Onde podemos observar um balanceamento em gênero e a predominância parda na categoria cor ou raça.
 
-![Sexo e cor/raça da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_sexo_cor.png" alt="drawing" width="583"/>
 
 Abaixo podemos observar curvas de distribuição dos indivíduos da base em relação à idade e peso, podemos notar que estas curvas estão num intervalo de valores a primeira vista aceitável indicando que, aparentemente, grande parte dos dados em relação a este atributo estão confiáveis. Mais abaixo temos a distribuição destas mesmas características, porém limitados à amostragem aplicável ao PHQ9 (pessoas de 18 a 59 anos).
 
-![Idade e peso da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_idade_peso.png" alt="drawing" width="700"/>
+
+![Idade e peso da população]()
 
 Por fim nos gráficos de barras abaixo temos a proporção do nível escolar e da renda per capita da população geral:
 
-![Nível escolar e renda per capita da população](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_escolaridade_renda.png" alt="drawing" width="700"/>
 
 Em relação à distribuição do valor PHQ9 (inteiro de 0 à 27), esta apresenta um comportamento similar ao de uma exponencial negativa, conforme podemos observar na figura abaixo:
 
-![PHQ9_dist](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_total_dist.png" alt="drawing" width="700"/>
 
 Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontadas com algumas variáveis de interesse. Foi possível notar que há uma maior prevalência de pessoas do sexo feminino com depressão ao longo de todo o score de PHQ-9, o mesmo ocorre com pessoas com idade superior aos 40 anos. Evidenciando que independente do grau de gravidade da doença, a diferença entre as categorias se mantêm. 
 
-![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png)
 
-![Correlacoes de interesse com depressao](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos1.png" alt="drawing" width="700"/>
+
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png" alt="drawing" width="700"/>
 
 Abaixo temos gráficos de depressão com tratamento e atendimento no SUS.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png" alt="drawing" width="700"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png" alt="drawing" width="450"/>
 
 Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado com a porcentagem de depressão.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_idh_correlation.png" alt="drawing" width="600"/>
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
 Avaliando o PHQ9 >= 10 questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png)
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado brasileiro.
 
-![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png)
-
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png" alt="drawing" width="450"/>
 
 # Análises Realizadas
 
@@ -378,6 +381,15 @@ Ao analisar as associações entre as variáveis sociodemográficas dentre as pe
 
 Em seguida, buscamos associação de comportamentos de saúde com diagnostico de depressão, onde encontramos que há associação entre todos os comportamentos de saúde elencados e o desfecho do estudo (p ≤ 0,05). Esses achados estão em consonância com a literatura, a qual mostra associação desses comportamentos de saúde inadequados com o diagnóstico de depressão. 
 
+Ao observarmos o score de consumo de produtos ultraprocessados encontramos que as pessoas com depressão possuem um ligeiro maior consumo de ultraprocessados em relação as pessoas sem o diagnóstico de depressão. Diversos estudos mostram uma associação positiva entre maior consumo de produtos ultraprocessados como refrigerantes e doces com depressão, independente de renda e sexo. 
+
+No que se refere a prática de exercício físico foi observado uma maior proporção de pessoas com depressão que não praticam exercício físico, assim como mostrado na literatura [5]. Diversos estudos, dentre eles algumas metanálises, apresentam evidências de que qualquer nível de atividade física atenua o risco de depressão e independentemente da idade o exercício físico é um fator protetor para o desenvolvimento da depressão (https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2018.17111194) (https://bjsm.bmj.com/content/55/16/926).
+
+
+Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população. (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool. (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
+
+
+
 | **Comportamentos de saúde**                         |                | **População 2019** | **Sem depressão** | **Com Depressão** | **X²** *| **p** * |
 |-----------------------------------------------------|----------------|--------------------|-------------------|-------------------|---------|--------|
 |                                                     |                | n = 64.664         | n = 57.816        | n = 6.848         |         |        |
@@ -386,22 +398,20 @@ Em seguida, buscamos associação de comportamentos de saúde com diagnostico de
 |                                                     | 4, 5           | 18,77%             | 18,70%            | 19,32%            | ---     | ---    |
 |                                                     | 6, 7           | 5,35%              | 5,28%             | 5,99%             | ---     | ---    |
 |                                                     | 8, 9, 10       | 1,57%              | 1,53%             | 1,97%             | ---     | ---    |
-| **Prática de exercício físico nos últimos 3 meses** | Praticante     | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
-|                                                     | Não praticante | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
+| **Prática de exercício físico nos últimos 3 meses** | Sim            | 56,78%             | 44,20%            | 35,00%            | 210,9   | 0,0000 |
+|                                                     | Não            | 43,22%             | 55,80%            | 65,00%            | ---     | ---    |
 | **Consumo de bebida alcoólica no último mês**       | Sim            | 44,88%             | 45,45%            | 40,07%            | 71,7    | 0,0000 |
 |                                                     | Não            | 55,12%             | 54,55%            | 59,93%            | ---     | ---    |
 | **Consumo de tabaco**                               | Sim            | 13,14%             | 12,61%            | 17,58%            | 132,6   | 0,0000 |
-|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
+|                                                     | Não            | 86,86%             | 87,39%            | 82,42%            | ---     | ---    |
 
 \* Teste X² de variáveis de comportamento de saúde confrontadas com pessoas com depressão (PHQ9 score >= 10)
 
-Ao observarmos o score de consumo de produtos ultraprocessados encontramos que as pessoas com depressão possuem um ligeiro maior consumo de ultraprocessados em relação as pessoas sem o diagnóstico de depressão. Diversos estudos mostram uma associação positiva entre maior consumo de produtos ultraprocessados como refrigerantes e doces com depressão, independente de renda e sexo. 
 
 
-Em relação ao consumo de tabaco, encontramos uma maior prevalência de tabagismo em pessoas diagnosticadas com depressão. Já a respeito ao consumo de bebida alcoólica há uma menor prevalência de pessoas que consomem bebidas alcóolicas dentre o público alvo do trabalho, estudos vêm mostrando que o alto consumo de bebida alcoólica pode ser colocado como um fator de risco para depressão, porém o consumo leve a moderado é considerado um fator protetor, visto que o consumo moderado está correlacionado com fatores sociais e culturais, fatores importantes para a saúde mental da população. (https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en) (https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4). Contudo, deve-se lembrar que a depressão é o transtorno mental mais comum dentre as pessoas com problemas de consumo de álcool. (https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176).
+Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. Verificamos uma maior prevalência de várias DCNT entre as pessoas diagnosticadas com depressão. Essas associações indicam que essas condições de saúde têm uma maior prevalência entre os indivíduos com diagnóstico de depressão, conforme descrito na literatura [8],[12].
 
 
-Por fim, analisamos as doenças crônicas não transmissíveis com depressão e verificamos que diagnóstico de artrite ou reumatismo, AVC, doenças cardiovasculares, hipercolesterolemia, diabetes, hipertensão, câncer e diabetes estão associados com o diagnóstico de depressão. 
 
 | **Variáveis de DCNT**        	|                      	| **População 2019** 	| **Sem depressão** 	| **Com depressão** 	| **X²** * 	| **p** * 	|
 |------------------------------	|----------------------	|--------------------	|-------------------	|-------------------	|----------	|---------	|
@@ -417,7 +427,7 @@ Por fim, analisamos as doenças crônicas não transmissíveis com depressão e 
 | **Hipercolesterolemia**      	| Teve diagnóstico     	| 12,78%             	| 11,65%            	| 21,89%            	| 535,933  	| 0,0000  	|
 |                              	| Não teve diagnóstico 	| 87,22%             	| 88,35%            	| 78,11%            	| ---      	| ---     	|
 | **Diabetes**                 	| Teve diagnóstico     	| 5,06%              	| 4,54%             	| 9,33%             	| 276,6615 	| 0,0000  	|
-|                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 0                 	| ---      	| ---     	|
+|                              	| Não teve diagnóstico 	| 94,94%             	| 95,46%            	| 90,67%             	| ---      	| ---     	|
 | **Obesidade**                	| Sim                  	| 20,93%             	| 20,23%            	| 26,82%            	| 158,9776 	| 0,0001  	|
 |                              	| Não                  	| 79,07%             	| 79,77%            	| 73,18%            	| ---      	| ---     	|
 
@@ -685,12 +695,29 @@ Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão 
 > Destacar os principais desafios enfrentados.
 >
 > Principais lições aprendidas.
+>
+
+Neste trabalho, o objetivo foi identificar os fatores relacionados à depressão com base na literatura existente. As questões de pesquisa abordaram diversos aspectos.
+
+Investigamos quais hábitos de vida estão associados à depressão por meio da análise dos coeficientes da regressão logística. Constatamos que o tabagismo e o alto consumo de alimentos ultraprocessados possuem uma associação positiva com a depressão, enquanto o exercício físico apresenta uma associação inversa, ou seja, negativa. Isto indica prevalência de depressão em pessoas que não praticam exercício físico regularmente, conforme descrito pela literatura.
+
+Além disso, procuramos quantificar o grau de impacto de cada hábito, considerando tanto as influências positivas quanto negativas. Utilizando a regressão logística, pudemos identificar a influência de certos hábitos. Por exemplo, observamos que o tabagismo parece ter um impacto maior do que o consumo de alimentos ultraprocessados.
+
+Durante a análise dos coeficientes da regressão, notamos que a influência desses fatores varia ao longo do curso da vida e de variáveis sociodemográficas. Um exemplo é a influência crescente da prática de exercícios físicos à medida que a idade avança. Esta questão pode estar relacionada à deterioração da condição física do indivíduo ao passar dos anos, aumentando a dependência de terceiros e impactando a saúde mental.
+
+Descobrimos que os comportamentos de saúde e/ou doenças crônicas não transmissíveis também desempenham um papel determinante no diagnóstico da depressão. Grande parte do peso dos coeficientes recai sobre as doenças crônicas, perdendo apenas para a variável sociodemográfica do sexo.
+
+Durante o desenvolvimento do projeto, enfrentamos desafios significativos. Um deles foi lidar com a quantidade de dados faltantes e variáveis ausentes nos indicadores iniciais baseados na PNS. Especificamente, a falta de informações sobre o consumo de álcool e a prática de atividade física representou um obstáculo importante. 
+
+Além disso, deparamos com o desafio do desbalanceamento dos dados na classificação dos casos de depressão. A proporção entre indivíduos classificados como depressivos e não depressivos era desigual, sendo que apenas 10,6% dos participantes foram identificados como depressivos. Inicialmente, utilizamos o algoritmo SMOTE para gerar dados sintéticos na classe minoritária, porém posteriormente optamos por ponderar a classe majoritária durante o treinamento dos modelos de classificação, o que resultou em melhores resultados.
+
+Esses desafios evidenciaram a importância de abordar estrategicamente os dados faltantes e encontrar soluções adequadas para lidar com os desequilíbrios nas classes. Foi essencial buscar abordagens alternativas, como a modificação dos critérios de classificação e o ajuste das estratégias de modelagem, a fim de obter resultados mais precisos e confiáveis.
 
 # Trabalhos Futuros
 
-No âmbito dos trabalhos futuros, sugere-se explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração exploratória dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
+No âmbito dos trabalhos futuros, sugerimos explorar a utilização de técnicas de aprendizado não supervisionado para a seleção de features no problema em questão. Essa abordagem oferece a oportunidade de descobrir relações ainda não descritas na literatura, por meio da exploração dos dados, identificando padrões ocultos e estruturas subjacentes relevantes para a compreensão do problema. A aplicação dessas técnicas pode fornecer insights adicionais e aprofundar a compreensão dos fatores associados à doença em estudo.
 
-Adicionalmente, considera-se relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
+Adicionalmente, consideramos relevante explorar a disponibilidade de outras bases de dados brasileiras, como Vigitel e PeNSE, para realizar testes e validações do modelo desenvolvido em diferentes segmentos da população. Essas bases de dados representam amostras representativas de diversas regiões e grupos demográficos, permitindo a generalização e a avaliação da robustez do modelo. Essa abordagem ampliada pode proporcionar uma visão mais abrangente sobre a relação entre os fatores estudados e a doença, contribuindo para embasar a tomada de decisões e a formulação de políticas públicas mais efetivas e direcionadas.
 
 # Cronograma
 
