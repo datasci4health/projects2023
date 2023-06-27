@@ -21,8 +21,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
       * Base Selecionada
       * Análise Exploratória
       * Ferramentas
+   * Resultados
+   * Discussão
+   * Conclusão
+   * Trabalhos Futuros
    * Cronograma
-   * Análises Futuras
    * Referências
 <!--te-->
 
@@ -38,6 +41,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
  | Miguel Angel Gaybor Murillo  | 252040  | Elétrica|
  
  Fonte: Autores(2023)
+
+### Slides da Apresentação Final
+[Link da apresentação](./assets/VitaminadosDCovid.pdf)
 
 
 # Descrição Resumida do Projeto
@@ -244,7 +250,7 @@ Primeiramente analizando a faixa etária da base, há um número maior de pessoa
 
 ### Gráfico 1- Distribuição dos Pacientes por Faixa Etária e Gênero 
 
-![Figura 4](./reports/figures/distribuicao.png)
+![Figura 3](./reports/figures/distribuicao.png)
 
 Fonte: Autores(2023)
 
@@ -253,7 +259,7 @@ amostras, como demonstrado no Gráfico 2.
 
 ### Gráfico 2- Gravidade Durante Hospitalização
 
-![Figura 5](./reports/figures/gravidade.png)
+![Figura 4](./reports/figures/gravidade.png)
 
 Fonte: Autores(2023)
 
@@ -261,7 +267,7 @@ Com relação aos índices de vitamina D, pode-se observar que, na maioria dos c
 
 ### Gráfico 3- Distribuição dos Níveis de 25(OH)D pré-infecção X Religião
 
-![Figura 6](./reports/figures/religiao.png)
+![Figura 5](./reports/figures/religiao.png)
 
 Fonte: Autores(2023)
 
@@ -270,7 +276,7 @@ número de mortes é considerável em comparação com o restante das categorias
 
 ### Gráfico 4- Relação dos Níveis de 25(OH)D pré-infecção X Morte Durante Hospitalização
 
-![Figura 7](./reports/figures/morte.png)
+![Figura 6](./reports/figures/morte.png)
 
 Fonte: Autores(2023)
 
@@ -286,8 +292,17 @@ Métricas como média, desvio padrão, mediana e moda foram calculados dos indic
  | Grau de Gravidade -Crítico | 10.8923| 4.266|10.0 |10.0 |
   
  Fonte: Autores(2023)
- 
-Em seguida para análises de correlação, foram calculados os p-valores utilizando do teste de Wilcoxon (duas amostras independentes) a fim de comparar os valores de 25(OH)D pré-infecção entre as categorias de gravidade da doença COVID-19. A Tabela 8 demonstra os valores obtidos na comparação entre as amostras de Leve e moderado, moderado e grave, e grave e crítico. Uma diferença significativa no nível de 25(OH)D foi encontrada entre as categorias de doença leve em comparação com moderada (p < 0.001) e moderada em comparação com grave (p < 0.002). Não foi observada diferença entre indivíduos graves e críticos em relação à 25(OH)D (p = 0.04). 
+
+A fim de replicar os resultados obtidos por [Dror et.al(2022)](https://doi.org/10.1371/journal.pone.0263069.s001), diversas análises foram feitas. Inicialmente, a comparação dos valores de 25(OH)D pré-infecção e das categorias de gravidade da doença COVID-19 foi realizada, a Figura 3 demonstra uma diminuição progressiva nos níveis de 25(OH)D à medida que a gravidade da doença aumenta. 
+
+### Figura 3- Box plot dos Níveis Séricos Pré-infecção de Vitamina D.
+
+![Figura 7](./reports/figures/severidade.jpeg)
+
+Fonte: Autores(2023)
+
+Em seguida para análises de correlação, foram calculados os p-valores utilizando do teste de Wilcoxon (duas amostras independentes) afim de comparar os valores de 25(OH)D pré-infecção entre as categorias de gravidade da doença COVID-19. A Tabela 8 demonstra os valores obtidos na comparação entre as amostras de Leve e moderado, moderado e grave, e grave e crítico. Uma diferença significativa no nível de 25(OH)D foi encontrada entre as categorias de doença leve em comparação com moderada (p < 0.001) e moderada em comparação com grave (p < 0.002). 
+
 
 ### Tabela 8- P-valor Wilcoxon rank-sum test
 |Amostra | p-valor|
@@ -298,34 +313,134 @@ Em seguida para análises de correlação, foram calculados os p-valores utiliza
  
  Fonte: Autores(2023)
  
-A fim de verificar a posição dos dados, simetria e dispersão um Box Plot foi plotado e pode ser visto na Figura 3. Por meio dele, é possível visualizar a distribuição de dados com base em mínimo, primeiro quartil (Q1), mediana, terceiro quartil(Q3) e o máximo, com as métricas apresentadas é possível notar uma diminuição progressiva nos níveis de 25(OH)D à medida que a gravidade da doença aumenta. 
+Por fim, as correlações entre o nível de 25(OH)D e a gravidade da doença COVID-19 (variável contínua e variável medida na escala ordinal) foram examinadas com o teste de coeficiente de correlação de Spearman. Embora a idade e o status de vitamina D pré-infecção sejam preditores independentes de aumento da gravidade da doença, uma correlação significativa foi encontrada entre a deficiência de vitamina D e a faixa etária(<50, 50–64, ≥65), como pode ser visto na Figura 4.
 
-### Figura 3- Box Plot 25(OH)D pré-infecção X Gravidade da doença COVID-19
+### Figura 4- Correlação entre o status de deficiência de vitamina D pré-infecção e a gravidade da doença COVID-19 - Divididos por Faixa Etária
 
-![Figura 3](./reports/figures/box.png)
+![Figura 8](./reports/figures/graficos.png)
 
 Fonte: Autores(2023)
 
-A correlação entre variáveis pode ser vista na Figura 4, em que, quanto mais escuro mais diretamente correlacionadas. A linha diagonal tem correlação 1 pois se refere à correlação de uma variável com ela mesma, mas é possível notar que a hipertensão HTN e COPD apresentam uma alta correlação. Isso sugere que há uma associação significativa entre essas duas condições crônicas. Fatores como tabagismo, obesidade e problemas de saúde em geral podem contribuir para o desenvolvimento e a progressão de ambas as doenças.
 
-### Figura 4- Correlação entre Variáveis
+A correlação entre variáveis pode ser vista na Figura 5, em que, quanto mais escuro mais diretamente correlacionadas. A linha diagonal tem correlação 1 pois se refere à correlação de uma variável com ela mesma, mas é possível notar que a hipertensão HTN e COPD apresentam uma alta correlação. Isso sugere que há uma associação significativa entre essas duas condições crônicas. Fatores como tabagismo, obesidade e problemas de saúde em geral podem contribuir para o desenvolvimento e a progressão de ambas as doenças.
+
+### Figura 5- Correlação entre Variáveis
 
 ![Figura 9](./reports/figures/eda.png)
 
 Fonte: Autores(2023)
 
-Um modelo de regressão linear múltipla foi aplicado com todas as variáveis, obtendo-se uma baixa explicação do
-modelo; no entanto, a remoção de algumas variantes atingiu uma eficácia de 65%. A Figura 5 apresenta a saída obtida para o melhor resultado. 
 
-### Figura 5- Regressão Linear Múltipla
 
-![Figura 10](./reports/figures/saida.png)
+### Análise de Componentes Principais e Clusterização
+
+Uma forma de segregar os dados bucando por descobrir relacionamentos entre variáveis é a aplicação de técnica de agrupamento ou clusterização. Esta técnica pode contribuir no processo de descoberta observando-se como as amostras se essemalham mas sem o uso da uma variável alvo, um processo chamado de aprendizado não-supervisionado.
+Antes de executar a clusterização, buscando por descobrir mais sobre os dados e o relacionamento entre as variáveis, foi feita análise de componentes principais (PCA) para redução de dimensionalidade. Isso poderia reduzir ruídos de variáveis que agregam pouco na variância dos dados e trazer melhores resultados na clusterização.
+
+O PCA mostrou que  seriam necessárias as nove primeiras componentes para explicar, pelo menos, 80% da variância dos dados. Esse número pode ser retirado do gráfico 5 que mostra a variância acumulada a cada componente principal do PCA.
+
+### Gráfico 5 - Variância acumulado no PCA
+
+![Figura 10](./reports/figures/cumulative_variance_PCA.png)
 
 Fonte: Autores(2023)
 
-## Ferramentas
+O PCA com nove componentes resulta numa variância de 81%.
+
+Foi aplicada então uma clusterização pelo método K-Means que encontra agrupamentos atra'ves do cálculo de "centróides" nos dados e da distância de cada amostra a esses centróides.
+O método exige que o número K de agrupamentos seja fornecido a priori. Para uma busca por um número ótimo de agrupamentos, o modelo foi executado com número de clusters de 1 a 20 e depois utilizamos o gráfico do "cotovelo" para selecionarmos o melhor valor de K.
+
+### Gráfico 6 - Resultado das distâncias médias quadradas para cada valor de K de 1 a 20
+
+![Figura 11](./reports/figures/kmeans.png)
+
+Fonte: Autores(2023)
+
+Pelo gráfico 6 foi feita a escolha do número quatro como o melhor número de clusters para nosso problema.
+
+Foi feito, então o plot dos quatros clusters identificados pelo K-Means considerando-se os dois primeiros componentes principais do PCA, como uma forma de simplificar a visualização.
+
+### Gráfico 7 - Resultado da clusterização com quatro agrupamentos (K = 4)
+
+![Figura 12](./reports/figures/clusters.png)
+
+Fonte: Autores(2023)
+
+Alguns gráficos foram elaborados para cada cluster na busca por encontrar relacionamentos interessantes à resolução do nosso problema. Estes gráficos foram:
+
+> Faixa etária versus quantidade de pacientes homens e mulheres
+> Quantidade da casos versus a gravidade da doença
+> Quantidade de pacientes obesos e não obesos
+> Nível de vitamina D pré-infecção versus desfecho de óbito ou não-óbito
+
+### Gráfico 7 -  Cluster 1
+
+![Figura 13](./reports/figures/cluster1_faixa_etaria.png)
+
+![Figura 14](./reports/figures/cluster1_gravidade.png)
+
+![Figura 15](./reports/figures/cluster1_IMC.png)
+
+![Figura 16](./reports/figures/cluster1_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
+
+### Gráfico 8 - Cluster 2
+
+![Figura 17](./reports/figures/cluster2_faixa_etaria.png)
+
+![Figura 18](./reports/figures/cluster2_gravidade.png)
+
+![Figura 19](./reports/figures/cluster2_IMC.png)
+
+![Figura 20](./reports/figures/cluster2_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
+
+### Gráfico 9 - Cluster 3
+
+![Figura 21](./reports/figures/cluster3_faixa_etaria.png)
+
+![Figura 122](./reports/figures/cluster3_gravidade.png)
+
+![Figura 23](./reports/figures/cluster3_IMC.png)
+
+![Figura 24](./reports/figures/cluster3_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
+
+### Gráfico 10 - Cluster 4
+
+![Figura 25](./reports/figures/cluster4_faixa_etaria.png)
+
+![Figura 26](./reports/figures/cluster4_gravidade.png)
+
+![Figura 27](./reports/figures/cluster4_IMC.png)
+
+![Figura 28](./reports/figures/cluster4_nivel_vitD_pre.png)
+
+Fonte: Autores(2023)
+
+
+
+### Modelo de Classificação
+
+Um modelo de Árvore de Decisão foi escolhido por seu nível de interpretabilidade para poder fazer uma classificação multi-classe, que pode ajudar o especialista como um guia para os vários caminhos que podem levá-lo a um nível de gravidade quando ele é hospitalizado. Isso deve ser usado como uma ferramenta, mas não como um veredito.
+
+### Figura 6 - Modelo de Classificação por Árvore de Decisões
+
+![Figura 29](./reports/figures/decision_tree.jpeg)
+
+Fonte: Autores(2023)
+
+
+O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índices de Gini para fazer a seleção dos nós, onde é indicada a pureza ou a relação de informações que cada variável fornece.
+
+
+### Ferramentas
  Por conter um vasto conjunto de bibliotecas estatísticas, gráficas e numéricas, optou-se pela utilização da ferramenta Python, que além da implementação mais "simplificada" faz parte do conhecimento de todos os participantes do projeto.
  As bibliotecas utilizadas para implementação e análises estão dispostas na Tabela 9.
+
 
 ### Tabela 9- Bibliotecas Utilizadas
  |Nome | Utilização|
@@ -338,9 +453,56 @@ Fonte: Autores(2023)
  Fonte: Autores(2023)
  
 
+
+## Resultados
+
+Analisando as informações obtidas na seção anterior é possível verificar que, de acordo com a Figura 4 a correlação mais forte entre os níveis mais baixos de 25(OH)D e a gravidade da doença de COVID-19 foi observada em pacientes com idade acima dos 50 anos (r = – 0,73; p <0,001 para idades de 50 a 64 anos; r = – 0,72; p < 0,001 para idades ≥65). Em pacientes com menos de 50 anos de idade, a gravidade da COVID-19 ainda estava correlacionada com a deficiência de vitamina D, mas em menor grau (r = – 0,66; p < 0,001). 
+
+Da clusterização, conseguimos destacar os resultados do Cluster 1 e do Cluster 4 (verde e lilás no gráfico 7). No primeiro, há um grande número de pacientes idosos, porém o índice de obesidade é menor e os níveis de 25(OH)D pré-infecção são altos. Para esse grupo não houve ocorrência de óbitos.
+Um segundo resultado interessante foi o do Cluster 4, que é um grupo de pacientes mais jovens, não obesos, mas com baixos índices de 25(OH)D. Porém, mesmo com estes baixos índices, o número de óbitos foi de apenas um caso.
+Esses foram justamenta os dois clusters mais bem separados se observarmos o gráfico 7 da clusterização.
+
+A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
+
+### Figura 7 - Mortes durante a hospitalização versus níveis de vitamina D
+
+![Figura 30](./reports/figures/morte_durante_hospitalizacao.jpeg)
+
+Fonte: Autores(2023)
+
+O modelo de árvore de decisão, possui métricas que podem indicar a eficácia de sua função; nesse caso, ela é de cerca de 85%, o que pode ser visto na matriz de confusão que, nesse contexto, tem bons resultados de acerto; no entanto, como limitação, temos um banco de dados com poucos registros e, por esse motivo, os valores podem estar sofrendo de sobreajuste. 
+
+
+### Figura 8 - Matrix de Confusão da classificação
+
+![Figura 31](./reports/figures/confusion_matrix_decision_tree.jpeg)
+
+Fonte: Autores(2023)
+
+
+## Discussão
+Nosso objetivo inicial era identificar associação entre os níveis de vitamina D e a severidade dos casos de COVID19, dos resultados descritos acima, podemos extrair diversas informações. Em nossas análises verificamos que há forte associação dos baixos níveis de VD e os quadros graves de COVID19, entretanto, outros fatores como faixa etária e comorbidade influenciam e potencializam os desfechos da doença, sendo assim, não necessariamente o tratamento com vitamina D afetará os resultados do COVID-19. Portanto, deve-se manter cautela ao superestimar o benefício potencial da suplementação de vitamina D na melhora dos resultados da infecção por SARS-CoV-2.
+
+Deve-se enfatizar que a 25(OH)D representa apenas uma peça do complexo quebra-cabeça que é a doença causada pelo COVID-19, condições médicas preexistentes, acesso à saúde e fatores socioeconômicos podem contribuir para o impacto desproporcional do COVID-19 em populações minoritárias em todo o mundo.
+
+
+## Conclusão
+
+A vitamina D desempenha um papel importante como nutriente capaz de afetar o processo de envelhecimento em nível celular/molecular, com diversas ações. De fato, além dos defeitos ósseos, a insuficiência de vitamina D está associada ao aumento do risco de desenvolvimento de patologias, desde doenças neurológicas, câncer, distúrbios metabólicos, doenças cardiovasculares, doenças autoimunes e infecções respiratórias. A maioria das ações da vitamina D pode ser atribuída as suas propriedades imunomoduladoras, o que significa que a vitamina D tem a capacidade de modular ou regular a função do sistema imunológico e a resposta inflamatória do corpo. Nossos resultados sugerem que pacientes idosos com baixa 25OHD na pré infecção tem maior suscetibilidade a desenvolver um desfecho grave/crítico da doença COVID-19 podendo levar a óbito.
+O processo de envelhecimento inclui diferentes remodelações de sistemas biológicos que levam à perda da homeostase ou seja o equilíbrio e, consequentemente, à deterioração de vários órgãos e tecidos. A remodelação dependente da idade do sistema imunológico tanto no braço inato quanto adaptativo é considerada a principal razão para o aumento da suscetibilidade a infecções, particularmente infecções respiratórias.
+
+
+## Trabalhos Futuros
+
+Sabe-se que o estudo realizado não é representativo, já que, trata-se de uma única instituição e de um número baixo de pacientes, sendo assim, faz-se necessário, verificar na literatura conjuntos de dados brasileiros, a fim de realizar análises mais representativas para a nossa sociedade.
+
+Utilizando das técnicas de machine learnig, pretende-se criar um modelo capaz de identificar ou predizer desfechos de covid 19 mesmo sem os níveis pré-infecção, não necessitando de informações tão específicas para a análise. 
+
+Por fim, a influência dos níveis de vitamina D podem fornecer respostas não apenas para o Covid19, sendo assim, pretende-se realizar estudos mais aprofundados, verificando sua ação em outras doenças, como depressão, ansiedade e câncer.
+
+
  
- 
-# Cronograma
+## Cronograma
  
 ### Tabela 10- Divisão das Atividades
 <table>
@@ -525,14 +687,7 @@ Fonte: Autores(2023)
 
 Fonte: Autores(2023)
 
-# Análises Futuras
 
-A fim de verificar outras informações e realizar análises pertinentes a base estudada, alguns tópicos foram estipulados para entrega futura, dentre eles estão:
-<!--ts-->
-   * Predição do desfecho
-   * Clusterização das Variáveis
-   * Análises das variáveis de confusão
-<!--te-->
 
 # Referências
 
