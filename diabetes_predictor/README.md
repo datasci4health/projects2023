@@ -15,45 +15,6 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 ## Slides da apresentação final
 Os slides de apresentação do projeto pode ser acessado clicando [aqui](https://drive.google.com/file/d/1ZnR7gqAJUIT_Bcy5CAwPciNv1xZEOh1D/view?usp=sharing).
 
-## Análise Exploratória de Dados
-
-### Processamento de dados
-
-#### 1. Análise de variáveis comuns nos anos
-A partir da base de dados bruta, extraída do repositório de dados do Vigitel, foi feita uma investigação preliminar para determinar: (i) quais variáveis estavam disponíveis para uso em cada ano, (ii) se os dados mantinham a mesma consistência em todos os anos, e (iii) quais as variáveis que eram comuns entre os anos, isto é, aquelas que apareciam em vários subconjuntos.
-Esta análise foi importante para explorar quais eram os anos viáveis para se trabalhar, considerando que os anos selecionados seriam aqueles em que as variáveis de interesse estivessem presentes em todos os anos. Deste modo, as mesmas variáveis apareceriam nas subsequentes divisões dos conjuntos em treinamento, validação e teste.
-
-#### 2. Pré-seleção de variáveis pela especialista
-Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
-
- #### 3. Análise de valores faltantes
-Nesta importante etapa de processamento de dados foram avaliados não apenas os valores faltantes (NaNs) mas também os casos em que o participante da pesquisa não quis informar uma resposta (888) ou não sabia (777). Por uma questão de qualidade da informação, esses casos citados foram removidos sem prejuízos nas etapas seguintes de processamento dos dados. 
-Vale destacar que na base de dados final ainda é possível encontrar alguns valores NaNs, no entanto, os mesmos se referem às questões onde não haveria resposta por parte do entrevistado, por exemplo, para um indivíduo que responde que não bebe, não haverá resposta para a pergunta “qual a frequência de álcool?”, logo, nesta célula aparecerá o valor NaN.
-
-#### 4. Análise de correlação
-Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. A figura abaixo apresenta essa matriz de correlação.
-
-<figure>
-<figcaption align = "center"><b>Gráfico 1. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
-<img src="assets/matriz_corr.png" style="width:85%">
-</figure>
-
-Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
-
-<figure>
-<figcaption align = "center"><b>Gráfico 4. Histograma da distribuição do IMC para os anos de 2015 a 2021.</b></figcaption>
-<img src="assets/correlograma.png" style="width:85%">
-</figure>
-
-#### 5. Seleção de variáveis
-Por fim, as variáveis contidas na base de dados do Vigitel foram selecionadas com base no conhecimento da especialista e também pelas análises contempladas nas etapas anteriores.
-
-#### 6. Tratamento das variáveis
-Além dos pré-processamentos de dados descritos nas etapas anteriores, foram acrescentadas informações ao conjunto de dados: (i) as categorias particulares da base do Vigitel, que obedecem uma escala pouco interpretável, foram substituídas pela descrição resumida proveniente do dicionário de dados do Vigitel; (ii) foram removidos os indivíduos que declararam idade de início da diabetes antes dos 18 anos, deste modo, permaneceram, no geral, apenas os casos caracterizados como diabetes tipo 2; (iii) para descartar valores espúrios, isto é, aqueles que poderiam ter sido inseridos na base de dados de forma equivocada, foram removidos os atributos numéricos acima do percentil 0.99 e abaixo do percentil 0.01; e (iv) novas variáveis foram acrescentadas à base de dados, como: IMC e região.
-
-#### 7. Divisão estratificada do treinamento, validação e teste
-Após a preparação dos dados, realizou-se a divisão dos dados obtidos em três subconjuntos: treinamento (70%), validação (25%) e teste (5%). A estratégia adotada nesta separação dos dados procurou respeitar uma distribuição balanceada das classes (diabéticos ou não-diabéticos) entre os três subconjuntos, ou seja, cada subconjunto ficou com a mesma proporção de diabéticos (10%) e não-diabético (90%).
-Outro cuidado que se teve foi garantir que não houvesse vazamento de dados, isto é, que dados de indivíduos que estivessem presentes em um determinado subconjunto não se repetissem em outro. Este controle foi estabelecido através da “chave”, um identificador do Vigitel que denota cada entrevistado. Portanto, as chaves que se repetem, ou seja, indivíduos que responderam mais de uma vez a pesquisa, foram colocadas no mesmo subconjunto.
 
 # Descrição Resumida do Projeto
 As doenças crônicas são as principais causas de morte no Brasil e no mundo, sendo a diabetes uma doença crônica que atinge 6,9% da população nacional, o que equivale a 13 milhões de pessoas. A diabetes tipo 2 é a mais prevalente entre os casos (90%), caracterizada pelo mal aproveitamento da insulina produzida pelo corpo, e sua principal causa são caracteristicas socioeconômicas e de saúde, como hábitos alimentares, atividade física, renda e outras questões de saúde, o que torna importante o debate dessa doença em âmbito populacional. Dessa forma, nosso projeto se propõe a desenvolver um modelo de aprendizagem de máquina que auxilie gestores públicos e resposáveis técnicos a identificarem os fatores de risco na população para o desenvolvimento de diabetes e assim facilitar o desenvolvimento de estratégias para mitigar os problemas associados a esta questão em sua região. 
@@ -75,7 +36,7 @@ Levando em conta que os usuários direto do nosso modelo serão os gestores e re
 Método aplicado à base escolhida
 A metodologia prevista é o CRISP-DM (_cross-industry standard process for data mining_), em que será desenvolvido um modelo de classificação de aprendizado supervisionado que retorna a classe de uma pessoa ser diabética ou não. Antes do desenvolvimento do modelo, será realizado um entendimento do negócio, análise exploratória de dados, estratificação para ver a diferença por grupos, escolha de _features_ e pré processamento dos dados. Depois de chegar em um modelo _baseline_, ele será refinado até que esteja de acordo com o desempenho considerado aceitável. Iniciaremos criando um modelo para todas as capitais e, caso necessário, segmentaremos por região se os grupos forem muito diversos. Quando o modelo estiver concluído, será apresentado para a turma, correspondendo à fase de _deploy_ do CRISP-DM.
 
-![Fases da metodologia](assets/Fluxo_dados.drawio.png)
+![Fases da metodologia](assets/Fluxo_dados.drawio_e3.png)
 
 Adaptado de [data geeks](https://www.datageeks.com.br/pre-processamento-de-dados/) a partir de:
 
@@ -135,16 +96,27 @@ Antes de fazer os gráficos e tabelas descritivas, foi observada a quantidade de
 
 A visualização foi gerada com o pacote msno que permite observar padrões de dados ausentes e guiar as análises. O minigráfico à direita resume a forma geral da integridade dos dados.
 
+A partir da base de dados bruta, extraída do repositório de dados do Vigitel, foi feita uma investigação preliminar para determinar: (i) quais variáveis estavam disponíveis para uso em cada ano, (ii) se os dados mantinham a mesma consistência em todos os anos, e (iii) quais as variáveis que eram comuns entre os anos, isto é, aquelas que apareciam em vários subconjuntos.
+Esta análise foi importante para explorar quais eram os anos viáveis para se trabalhar, considerando que os anos selecionados seriam aqueles em que as variáveis de interesse estivessem presentes em todos os anos. Deste modo, as mesmas variáveis apareceriam nas subsequentes divisões dos conjuntos em treinamento, validação e teste.
+
+Nesta importante etapa de processamento de dados foram avaliados não apenas os valores faltantes (NaNs) mas também os casos em que o participante da pesquisa não quis informar uma resposta (888) ou não sabia (777). Por uma questão de qualidade da informação, esses casos citados foram removidos sem prejuízos nas etapas seguintes de processamento dos dados. 
+Vale destacar que na base de dados final ainda é possível encontrar alguns valores NaNs, no entanto, os mesmos se referem às questões onde não haveria resposta por parte do entrevistado, por exemplo, para um indivíduo que responde que não bebe, não haverá resposta para a pergunta “qual a frequência de álcool?”, logo, nesta célula aparecerá o valor NaN.
+
 <figure>
 <figcaption align = "center"><b>Gráfico 2. Correlação de Pearson entre as variáveis pré-selecionadas.</b></figcaption>
-<img src="assets/correlacao_var_selecionadas.png" style="width:100%">
+<img src="assets/matriz_corr.png" style="width:100%">
 </figure>
 
+Na figura acima é possível observar a correlação de Pearson entre todas as variáveis pré-selecionadas na etapa 2. Entretanto, por haver uma grande quantidade de variáveis, essa forma de visualização em matriz acaba ficando prejudicada. Portanto, foi construído o grafo de correlação a seguir que apresenta a correlação de Pearson entre os pares de variáveis dado um valor de limiar, que neste caso foi 0.1 (correlação positiva baixa). Ou seja, as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0.1, enquanto as linhas vermelhas indicam uma correlação menor ou igual a -0.1. A espessura destas linhas denotam a intensidade da correlação, isto é, quanto maior a sua espessura, maior a correlação entre o par. As variáveis em negrito são aquelas que foram selecionadas da etapa 5.
+
+Para que fosse analisado como estavam correlacionadas as variáveis pré-selecionadas pela especialista, foi construída uma matriz de correlação utilizando a biblioteca Dython que permite a visualização de correlações entre variáveis numéricas ou até mesmo categóricas. A figura abaixo apresenta essa matriz de correlação.
 
 <figure>
 <figcaption align = "center"><b>Gráfico 3. Grafo de correlação das variáveis selecionadas, em que as linhas azuis indicam uma correlação de Pearson entre os pares maior ou igual a 0,3 (positiva moderada).</b></figcaption>
-<img src="assets/correlacao_0.3.png"  width="600" height="600">
+<img src="assets/correlograma.png"  width="600" height="600">
 </figure>
+
+Com auxílio da profissional de saúde integrante da equipe foram selecionados os anos mais apropriados para se trabalhar. Foram pré-selecionadas as variáveis que teriam maior relação com o desfecho da diabetes. Essa seleção, levando-se em conta o conhecimento da especialista, foi útil para descartar algumas variáveis irrelevantes para o estudo em questão e também para determinar quais seriam as variáveis mais promissoras para serem investigadas nas etapas posteriores.
 
 <figure>
 <figcaption align = "center"><b>Tabela 1. Características da amostra final para todas as capitais do Brasil no período de 2015 a 2021 a ser utilizada no modelo de aprendizagem. A tabela mostra a porcentagem de variáveis incluindo dados de 2015 a 2021 da base Vigitel.</b></figcaption>
@@ -251,12 +223,18 @@ Após todas essas análises, definimos que as variáveis que serão usadas no mo
 ### Transformações e tratamentos realizados:
 O objetivo do modelo é identificar diabetes tipo 2, portanto, retiramos da amostra todas as pessoas que tinham idade de diagnóstico de diabetes antes dos 18 anos, pois assim excluiremos a maior parte das pessoas com possível diagnóstico de diabetes tipo 1. [Fonte](https://bvsms.saude.gov.br/bvs/publicacoes/miolo2002.pdf)
 
-Dentre as variávei escolhidas excluímos todas aquelas que a pessoa não quis responder e que não sabia responder (segundo códigos do dicionário).
+Dentre as variáveis escolhidas excluímos todas aquelas que a pessoa não quis responder e que não sabia responder (segundo códigos do dicionário).
 
 Para as variáveis peso, altura e IMC, definimos a faixa de percentil de p1 a p99, excluindo os _outliers_ que ultrapassaram esse valor. Definimos este valor de percentil porque como nossa variável desfecho de interesse está muito relacionada com o IMC elevado, decidimos trabalhar com uma margem maior, o que nos proporcionou aproximadamente 11 mil amostras a mais. 
 
 As análises realizadas já contam com os dados após as transformações e tratamentos, se tratando de etapas sequenciais e que se complementam.
 
+#### Tratamento das variáveis
+Além dos pré-processamentos de dados descritos nas etapas anteriores, foram acrescentadas informações ao conjunto de dados: (i) as categorias particulares da base do Vigitel, que obedecem uma escala pouco interpretável, foram substituídas pela descrição resumida proveniente do dicionário de dados do Vigitel; (ii) foram removidos os indivíduos que declararam idade de início da diabetes antes dos 18 anos, deste modo, permaneceram, no geral, apenas os casos caracterizados como diabetes tipo 2; (iii) para descartar valores espúrios, isto é, aqueles que poderiam ter sido inseridos na base de dados de forma equivocada, foram removidos os atributos numéricos acima do percentil 0.99 e abaixo do percentil 0.01; e (iv) novas variáveis foram acrescentadas à base de dados, como: IMC e região.
+
+####  Divisão estratificada do treinamento, validação e teste
+Após a preparação dos dados, realizou-se a divisão dos dados obtidos em três subconjuntos: treinamento (70%), validação (25%) e teste (5%). A estratégia adotada nesta separação dos dados procurou respeitar uma distribuição balanceada das classes (diabéticos ou não-diabéticos) entre os três subconjuntos, ou seja, cada subconjunto ficou com a mesma proporção de diabéticos (10%) e não-diabético (90%).
+Outro cuidado que se teve foi garantir que não houvesse vazamento de dados, isto é, que dados de indivíduos que estivessem presentes em um determinado subconjunto não se repetissem em outro. Este controle foi estabelecido através da “chave”, um identificador do Vigitel que denota cada entrevistado. Portanto, as chaves que se repetem, ou seja, indivíduos que responderam mais de uma vez a pesquisa, foram colocadas no mesmo subconjunto.
 
 
 ## Integração entre Bases e Análise Exploratória
