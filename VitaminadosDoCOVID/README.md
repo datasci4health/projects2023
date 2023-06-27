@@ -427,13 +427,6 @@ Um modelo de Árvore de Decisão foi escolhido por seu nível de interpretabilid
 
 Fonte: Autores(2023)
 
-### Figura 7 - Matrix de Confusão da classificação
-
-![Figura 30](./reports/figures/confusion_matrix_decision_tree.jpeg)
-
-Fonte: Autores(2023)
-
-Nesse modelo de Machine Learning, há métricas que podem indicar a eficácia de sua função; nesse caso, ela é de cerca de 85%, o que pode ser visto na matriz de confusão que, nesse contexto, tem bons resultados de acerto; no entanto, como limitação, temos um banco de dados com poucos registros e, por esse motivo, os valores podem estar sofrendo de sobreajuste. 
 
 O modelo nos mostra os diferentes ramos, onde podemos apreciar o uso dos índices de Gini para fazer a seleção dos nós, onde é indicada a pureza ou a relação de informações que cada variável fornece.
 
@@ -465,14 +458,24 @@ Esses foram justamenta os dois clusters mais bem separados se observarmos o grá
 
 A relação entre os níveis de vitamina D e o quadro final de um paciente (morte) indica que aqueles que morreram têm um nível de vitamina D inferior aos níveis ideais. No entanto, a proporção de pessoas que morreram não é maior. Deve-se observar que as pessoas que não morreram não apresentam bons níveis de vitamina D. Elas deveriam estar sob observação porque seus níveis medianos, ou seja, 50% delas, estão abaixo do primeiro nível ideal de 30 e isto pode levar a quadros graves apesar da não morte.
 
-### Figura 8 - Mortes durante a hospitalização versus níveis de vitamina D
+### Figura 7 - Mortes durante a hospitalização versus níveis de vitamina D
 
-![Figura 31](./reports/figures/morte_durante_hospitalizacao.jpeg)
+![Figura 30](./reports/figures/morte_durante_hospitalizacao.jpeg)
+
+Fonte: Autores(2023)
+
+O modelo de árvore de decisão, possui métricas que podem indicar a eficácia de sua função; nesse caso, ela é de cerca de 85%, o que pode ser visto na matriz de confusão que, nesse contexto, tem bons resultados de acerto; no entanto, como limitação, temos um banco de dados com poucos registros e, por esse motivo, os valores podem estar sofrendo de sobreajuste. 
+
+
+### Figura 8 - Matrix de Confusão da classificação
+
+![Figura 31](./reports/figures/confusion_matrix_decision_tree.jpeg)
 
 Fonte: Autores(2023)
 
 
 ## Discussão
+
 
 
 ## Conclusão
