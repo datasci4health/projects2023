@@ -211,11 +211,11 @@ Nas figuras abaixo podemos comparar as distribuições do score PHQ-9 confrontad
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_analysis/01_pns_compare_dist_phq9_startos3.png" alt="drawing" width="700"/>
 
-Abaixo temos gráficos de depressão com tratamento e atendimento no SUS.
+Abaixo temos gráficos de depressão com tratamento e atendimento no SUS
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_depression_stats.png" alt="drawing" width="700"/>
 
-Abaixo temos o gráfico da porcentagem de pessoas que já disseram diagnosticadas por depressão por estado brasileiro.
+Abaixo temos o gráfico da porcentagem de pessoas que autorelataram que foram diagnosticadas por depressão por estado brasileiro.
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_depression.png" alt="drawing" width="450"/>
 
@@ -225,13 +225,15 @@ Curiosamente, notou-se uma alta correlação entre o IDH médio de cada estado c
 
 O grupo suspeita que essa observação está relacionada ao fato de que o diagnóstico de depressão ou sua ausência está fortemente ligado à disponibilidade e facilidade de acesso aos serviços de saúde, o que tende a ser mais comum em regiões com um Índice de Desenvolvimento Humano (IDH) mais elevado. 
 
-Avaliando o PHQ9 >= 10 questionário aplicado durante à entrevista obtivemos o gráfico de correlação abaixo, reforçando a suspeita observada acima.
-
-<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
 
 Abaixo temos o gráfico da porcentagem de pessoas com o PHQ9 >= 10 por estado brasileiro.
 
 <img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_brazil_phq9.png" alt="drawing" width="450"/>
+
+Avaliando pessoas diagnósticas com depressão segundo o PHQ9 >= 10, questionário aplicado na amostra do estudo, observamos que houve uma distribuição na frequencia de pessoas com depressão diferente da apresentada acima, a qual é confeccionada com base na pergunta específica sobre O diagnóstico autodeclarado de depressão .
+A partir disso, a correlação entre o IDH médio de cada estado com a porcentagem de depressão também foi alterada, como apresentado abaixo. 
+
+<img src="https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_description/00_pns_phq9_idh_correlation.png" alt="drawing" width="450"/>
 
 # Análises Realizadas
 
