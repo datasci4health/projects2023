@@ -21,8 +21,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
       * Base Selecionada
       * Análise Exploratória
       * Ferramentas
+   * Resultados
+   * Discussão
+   * Conclusão
+   * Trabalhos Futuros
    * Cronograma
-   * Análises Futuras
    * Referências
 <!--te-->
 
@@ -478,9 +481,9 @@ Fonte: Autores(2023)
 
 
 ## Discussão
-Dos resultados descritos acima, podemos entender que há forte associação dos baixos níveis de vitamina D e os quadros graves de COVID19. Porém, em nossas análises verificamos que há outros fatores determinantes na severidade e no desfecho dos casos de COVID19.
+Nosso objetivo inicial era identificar associação entre os níveis de vitamina D e a severidade dos casos de COVID19, dos resultados descritos acima, podemos extrair diversas informações. Em nossas análises verificamos que há forte associação dos baixos níveis de VD e os quadros graves de COVID19, entretanto, outros fatores como faixa etária e comorbidade influenciam e potencializam os desfechos da doença, sendo assim, não necessariamente o tratamento com vitamina D afetará os resultados do COVID-19. Portanto, deve-se manter cautela ao superestimar o benefício potencial da suplementação de vitamina D na melhora dos resultados da infecção por SARS-CoV-2.
 
-Nosso objetivo inicial era entender se há associação entre os níveis de vitamina D e a severidade dos casos de COVID19, porém, nossos resultados indicaram que somente a vitamina D não é capaz de explicar, sozinha, a progressão da doença para casos graves ou mesmo com desfecho de morte. O fator vitamina D, quando associado a outros fatores como idade e comorbidades, tem uma correlação muito mais forte com a severidade da doença.
+Deve-se enfatizar que a 25(OH)D representa apenas uma peça do complexo quebra-cabeça que é a doença causada pelo COVID-19, condições médicas preexistentes, acesso à saúde e fatores socioeconômicos podem contribuir para o impacto desproporcional do COVID-19 em populações minoritárias em todo o mundo.
 
 
 ## Conclusão
@@ -491,11 +494,11 @@ O processo de envelhecimento inclui diferentes remodelações de sistemas bioló
 
 ## Trabalhos Futuros
 
-Verificar na literatura conjuntos de dados brasileiros, a fim de realizar análises mais representativas para a sociedade. 
+Sabe-se que o estudo realizado não é representativo, já que, trata-se de uma única instituição e de um número baixo de pacientes, sendo assim, faz-se necessário, verificar na literatura conjuntos de dados brasileiros, a fim de realizar análises mais representativas para a nossa sociedade.
 
-Criar um modelo de aprendizado de máquina que seja capaz de identificar ou predizer desfechos de covid 19 mesmo sem os níveis pré-infecção. 
+Utilizando das técnicas de machine learnig, pretende-se criar um modelo capaz de identificar ou predizer desfechos de covid 19 mesmo sem os níveis pré-infecção, não necessitando de informações tão específicas para a análise. 
 
-Um terceiro seria realizar estudos mais aprofundados sobre a ação da vitamina D em outras doenças, como depressão, ansiedade, câncer.
+Por fim, a influência dos níveis de vitamina D podem fornecer respostas não apenas para o Covid19, sendo assim, pretende-se realizar estudos mais aprofundados, verificando sua ação em outras doenças, como depressão, ansiedade e câncer.
 
 
  
