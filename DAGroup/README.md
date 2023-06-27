@@ -769,15 +769,15 @@ Semana 10 (18/06 - 24/06) | Apresentação e Entrega Final                      
  	
 11. de Sousa KT, Marques ES, Levy RB, Azeredo CM. Food consumption and depression among Brazilian adults: results from the Brazilian National Health Survey, 2013. Cad Saude Publica [Internet]. 2019 Dec 20 [cited 2023 Jun 21];36(1):e00245818. Available from: https://www.scielo.br/j/csp/a/75WMGWKGMvLZXR9CbJWd7sP/?lang=en
 
-12. 	Marcus SM, Kerber KB, Rush AJ, Wisniewski SR, Nierenberg A, Balasubramani GK, et al. Sex differences in depression symptoms in treatment-seeking adults: confirmatory analyses from the Sequenced Treatment Alternatives to Relieve Depression study. Compr Psychiatry. 2008 May 1;49(3):238–46.
+12. Marcus SM, Kerber KB, Rush AJ, Wisniewski SR, Nierenberg A, Balasubramani GK, et al. Sex differences in depression symptoms in treatment-seeking adults: confirmatory analyses from the Sequenced Treatment Alternatives to Relieve Depression study. Compr Psychiatry. 2008 May 1;49(3):238–46.
   
-13. 	Schuch FB, Vancampfort D, Firth J, Rosenbaum S, Ward PB, Silva ES, et al. Physical activity and incident depression: A meta-analysis of prospective cohort studies. Am J Psychiatry [Internet]. 2018 Jul 1 [cited 2023 Jun 26];175(7):631–48. Available from: https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2018.17111194
+13. Schuch FB, Vancampfort D, Firth J, Rosenbaum S, Ward PB, Silva ES, et al. Physical activity and incident depression: A meta-analysis of prospective cohort studies. Am J Psychiatry [Internet]. 2018 Jul 1 [cited 2023 Jun 26];175(7):631–48. Available from: https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2018.17111194
 
-14. 	Gutiérrez-Rojas L, Porras-Segovia A, Dunne H, Andrade-González N, Cervilla JA. Prevalence and correlates of major depressive disorder: a systematic review. Brazilian J Psychiatry [Internet]. 2020 Aug 3 [cited 2023 Jun 26];42(6):657–72. Available from: https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en
+14. Gutiérrez-Rojas L, Porras-Segovia A, Dunne H, Andrade-González N, Cervilla JA. Prevalence and correlates of major depressive disorder: a systematic review. Brazilian J Psychiatry [Internet]. 2020 Aug 3 [cited 2023 Jun 26];42(6):657–72. Available from: https://www.scielo.br/j/rbp/a/gC5yf6KyWB7F4wBc7ChbcKv/?lang=en
 
-15. 	Schlax J, Jünger C, Beutel ME, Münzel T, Pfeiffer N, Wild P, et al. Income and education predict elevated depressive symptoms in the general population: Results from the Gutenberg health study. BMC Public Health [Internet]. 2019 Apr 24 [cited 2023 Jun 26];19(1):1–10. Available from: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4
+15. Schlax J, Jünger C, Beutel ME, Münzel T, Pfeiffer N, Wild P, et al. Income and education predict elevated depressive symptoms in the general population: Results from the Gutenberg health study. BMC Public Health [Internet]. 2019 Apr 24 [cited 2023 Jun 26];19(1):1–10. Available from: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6730-4
    	 	
-16. 	Hasin D, Liu X, Nunes E, McCloud S, Samet S, Endicott J. Effects of Major Depression on Remission and Relapse of Substance Dependence. Arch Gen Psychiatry [Internet]. 2002 Apr 1 [cited 2023 Jun 26];59(4):375–80. Available from: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176
+16. Hasin D, Liu X, Nunes E, McCloud S, Samet S, Endicott J. Effects of Major Depression on Remission and Relapse of Substance Dependence. Arch Gen Psychiatry [Internet]. 2002 Apr 1 [cited 2023 Jun 26];59(4):375–80. Available from: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206176
 
  
 ### Estudo Bibliográfico
