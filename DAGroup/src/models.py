@@ -28,7 +28,7 @@ def plot_cm(model, X, y, path=None):
         y,
         y_pred,
         display_labels=['S/Depre', 'Depre'],
-        normalize='true',
+        normalize='all',
         cmap=plt.cm.Blues,
         ax=axes[1]
     )

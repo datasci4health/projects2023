@@ -1,23 +1,23 @@
 | name                       |   Apenas hábitos |   Apenas doenças crônicas |   Apenas hábitos e doenças crônicas |   Apenas variáveis sociodemográficos |   Removendo Linhas Nulas |
 |:---------------------------|-----------------:|--------------------------:|------------------------------------:|-------------------------------------:|-------------------------:|
 | Intercepto                 |             0.09 |                     -0.36 |                               -0.37 |                                 0.50 |                     0.30 |
-| Ultraprocessados           |             0.33 |                           |                                0.51 |                                      |                     0.49 |
-| Exercício Físico           |            -0.31 |                           |                               -0.27 |                                      |                    -0.23 |
-| Tabagismo                  |             0.43 |                           |                                0.50 |                                      |                     0.57 |
-| Consumo Álcool             |            -0.26 |                           |                               -0.17 |                                      |                    -0.02 |
-| Câncer                     |                  |                      0.60 |                                0.61 |                                      |                     0.51 |
-| Hipertensão                |                  |                      0.33 |                                0.32 |                                      |                     0.35 |
-| Diabetes                   |                  |                      0.44 |                                0.43 |                                      |                     0.50 |
-| Cardiovascular             |                  |                      0.82 |                                0.79 |                                      |                     0.88 |
-| Hipercolesterolemia        |                  |                      0.42 |                                0.45 |                                      |                     0.46 |
-| AVC                        |                  |                      0.83 |                                0.75 |                                      |                     0.73 |
-| Artrite                    |                  |                      0.97 |                                0.97 |                                      |                     0.89 |
-| Obesidade                  |                  |                      0.17 |                                0.18 |                                      |                     0.19 |
-| Sexo                       |                  |                           |                                     |                                -1.05 |                    -0.96 |
-| Estado Civil               |                  |                           |                                     |                                -0.39 |                    -0.38 |
-| Classificação Escolaridade |                  |                           |                                     |                                -0.17 |                     0.11 |
-| Classificação Idade        |                  |                           |                                     |                                 0.48 |                    -0.24 |
-| Classificação Renda        |                  |                           |                                     |                                -0.26 |                    -0.27 |
+| Ultraprocessados           |             0.33 |                    nan    |                                0.51 |                               nan    |                     0.49 |
+| Exercício Físico           |            -0.31 |                    nan    |                               -0.27 |                               nan    |                    -0.23 |
+| Tabagismo                  |             0.43 |                    nan    |                                0.50 |                               nan    |                     0.57 |
+| Consumo Álcool             |            -0.26 |                    nan    |                               -0.17 |                               nan    |                    -0.02 |
+| Câncer                     |           nan    |                      0.60 |                                0.61 |                               nan    |                     0.51 |
+| Hipertensão                |           nan    |                      0.33 |                                0.32 |                               nan    |                     0.35 |
+| Diabetes                   |           nan    |                      0.44 |                                0.43 |                               nan    |                     0.50 |
+| Cardiovascular             |           nan    |                      0.82 |                                0.79 |                               nan    |                     0.88 |
+| Hipercolesterolemia        |           nan    |                      0.42 |                                0.45 |                               nan    |                     0.46 |
+| AVC                        |           nan    |                      0.83 |                                0.75 |                               nan    |                     0.73 |
+| Artrite                    |           nan    |                      0.97 |                                0.97 |                               nan    |                     0.89 |
+| Obesidade                  |           nan    |                      0.17 |                                0.18 |                               nan    |                     0.19 |
+| Sexo                       |           nan    |                    nan    |                              nan    |                                -1.05 |                    -0.96 |
+| Estado Civil               |           nan    |                    nan    |                              nan    |                                -0.39 |                    -0.38 |
+| Classificação Escolaridade |           nan    |                    nan    |                              nan    |                                -0.17 |                     0.11 |
+| Classificação Idade        |           nan    |                    nan    |                              nan    |                                 0.48 |                    -0.24 |
+| Classificação Renda        |           nan    |                    nan    |                              nan    |                                -0.26 |                    -0.27 |
 
 | name                       |   Renda Baixa |   Renda Alta |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
@@ -38,7 +38,7 @@
 | Estado Civil               |         -0.41 |        -0.30 |        0.11 |
 | Classificação Escolaridade |          0.27 |         0.02 |       -0.25 |
 | Classificação Idade        |          0.00 |        -0.62 |       -0.62 |
-| Classificação Renda        |               |              |             |
+| Classificação Renda        |        nan    |       nan    |      nan    |
 
 | name                       |   Sexo Mulher |   Sexo Homem |   Diferença |
 |:---------------------------|--------------:|-------------:|------------:|
@@ -55,7 +55,7 @@
 | AVC                        |          0.63 |         0.85 |        0.22 |
 | Artrite                    |          0.83 |         1.19 |        0.36 |
 | Obesidade                  |          0.16 |         0.26 |        0.10 |
-| Sexo                       |               |              |             |
+| Sexo                       |        nan    |       nan    |      nan    |
 | Estado Civil               |         -0.24 |        -0.69 |       -0.45 |
 | Classificação Escolaridade |         -0.01 |         0.39 |        0.41 |
 | Classificação Idade        |         -0.27 |        -0.05 |        0.22 |
@@ -79,7 +79,7 @@
 | Sexo                       |        -1.11 |         -0.87 |        0.25 |
 | Estado Civil               |        -0.38 |         -0.37 |        0.01 |
 | Classificação Escolaridade |        -0.05 |          0.27 |        0.31 |
-| Classificação Idade        |              |               |             |
+| Classificação Idade        |       nan    |        nan    |      nan    |
 | Classificação Renda        |        -0.14 |         -0.40 |       -0.26 |
 
 | name                       |   Idade [20, 29] |   Idade [30, 39] |   Idade [40, 49] |   Idade [50, 59] |
@@ -100,7 +100,7 @@
 | Sexo                       |            -1.19 |            -1.05 |            -0.94 |            -0.78 |
 | Estado Civil               |            -0.30 |            -0.43 |            -0.56 |            -0.21 |
 | Classificação Escolaridade |            -0.33 |             0.18 |             0.32 |             0.16 |
-| Classificação Idade        |                  |                  |                  |                  |
+| Classificação Idade        |           nan    |           nan    |           nan    |           nan    |
 | Classificação Renda        |             0.02 |            -0.25 |            -0.38 |            -0.35 |
 
 | name                       |   Região Norte |   Região Nordeste |   Região Sudeste |   Região Sul |   Região Centro Oeste |
