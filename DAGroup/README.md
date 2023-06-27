@@ -690,7 +690,12 @@ Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão 
 
 
 # Conclusão
-
+> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
+>
+> Destacar os principais desafios enfrentados.
+>
+> Principais lições aprendidas.
+>
 
 Neste trabalho, o objetivo foi identificar os fatores relacionados à depressão com base na literatura existente. As questões de pesquisa abordaram diversos aspectos.
 
