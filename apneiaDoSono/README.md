@@ -15,8 +15,11 @@
 > | Luciano de Melo Martins  | 223825  |  Bacharel em Ciências da Computação e Engenheiro de Software|
 > | Denise Fernandes Barbosa  | 161452  | Ciências da Cirurgia e Odontologia na Medicina Sono|
 
+# Slides da Apresentação Final
+> - [Slides da Apresentação Final](https://docs.google.com/presentation/d/1owZvL1l1FhoMUqWMBlwgYRORD4hVznqA-ashmJg2DKk/edit?usp=sharing)
+> - [video de apresentação do grupo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
 
-# Descrição Resumida do Projeto
+<!-- # Descrição Resumida do Projeto
 > 
 > Neste estudo retrospectivo, investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono.
 > 
@@ -24,49 +27,95 @@
 > 
 > Incluiremos dados retrospectivos de exames de polissonografia tipo IV de pacientes antes e depois de receberem o tratamento com dispositivo de avanço mandibular. 
 > 
-> Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe.
+> Será feita a anonimização da base de dados e geração de um dicionário de dados das informações presentes no dataset fornecido pela tecnólogo em processamentos de dados e a validação será feita pela cirurgiã-dentista integrante da equipe. -->
 
-> # Nota:
-> **Para mais informação consulte:**
-> - [video de apresentação do grupo](https://www.youtube.com/watch?v=4oD-iYRKIvA)
-> - [Slides da Apresentação Final](https://docs.google.com/presentation/d/1owZvL1l1FhoMUqWMBlwgYRORD4hVznqA-ashmJg2DKk/edit?usp=sharing)
-# Perguntas de Pesquisa
+# Introdução e Referenciais Teóricos
+<!-- Contextualização do projeto -->
+
+<!-- Caracterização do problema -->
+
+<!-- Motivação -->
+
+<!-- Relevância -->
+
+<!-- Trabalhos relacionados -->
+
+<!-- Indicação (bastante resumida) da análise proposta -->
+
+<!-- Indicação (bastante resumida) dos resultados alcançados -->
+
+>O tratamento da apneia obstrutiva do sono (AOS) é um desafio clínico que envolve a escolha de diferentes abordagens terapêuticas. Nesse contexto, os dispositivos de avanço mandibular (MADs, na sigla em inglês) e a pressão positiva contínua nas vias aéreas (CPAP, na sigla em inglês) têm sido amplamente utilizados. No entanto, há uma necessidade de compreender melhor a eficácia e as diferenças entre esses tratamentos para a AOS.
 >
+>Um conjunto de pesquisas tem sido conduzido com o objetivo de explorar os desenhos e os resultados dos diferentes dispositivos de avanço mandibular disponíveis, a fim de auxiliar a tomada de decisão clínica. Esses estudos abordam tanto os desfechos objetivos quanto subjetivos relacionados aos dispositivos de avanço mandibular, fornecendo uma visão geral abrangente sobre sua eficácia.
+>
+>Uma revisão sistemática, descrita em ```[1]```, examinou estudos clínicos randomizados e coortes que compararam diferentes desenhos de dispositivos de avanço mandibular no tratamento da AOS. Os resultados indicaram que os dispositivos monobloco tiveram um desempenho mais favorável em comparação com os de impulso bilateral, enquanto os dispositivos de tração na linha média foram mais eficazes em relação a outros desenhos. Além disso, observou-se que os dispositivos personalizados foram superiores aos termoplásticos. No entanto, não foram encontradas diferenças clinicamente relevantes entre os desenhos dos dispositivos em relação a outros desfechos, como redução do índice de sonolência de Epworth (ESS), adesão ao tratamento, preferência do paciente, efeitos colaterais e custo-efetividade.
+>
+>Outra revisão sistemática, descrita em ```[2]```, comparou a eficácia do CPAP com os dispositivos de avanço mandibular no tratamento da AOS. Os resultados sugeriram que o CPAP foi mais eficaz na redução do índice de apneia-hipopneia (AHI) e na porcentagem do estágio 1 e 2 do sono após a terapia. No entanto, o CPAP também foi associado a uma diminuição significativa na pontuação de função social do SF-36 em comparação com os dispositivos de avanço mandibular. Não houve diferença significativa na pontuação de sonolência do Epworth entre os dois grupos.
+>
+>Além disso, uma revisão sistemática mais recente, descrita em ```[3]```, buscou identificar preditores da eficácia da terapia com dispositivos de avanço mandibular para a AOS em pacientes adultos. Os resultados indicaram que pacientes mais jovens, com circunferência de pescoço menor, índice de massa corporal mais baixo e medidas faciais específicas, tiveram uma resposta mais favorável ao tratamento com dispositivos de avanço mandibular. Além disso, os respondedores apresentaram uma menor pressão positiva contínua nas vias aéreas ótima do que os não respondedores. O tipo de dispositivo não afetou os resultados da meta-análise.
+>
+>Uma meta-análise comparativa, descrita em ```[4]```, teve como objetivo avaliar a eficácia do CPAP em comparação com os dispositivos de avanço mandibular no tratamento da AOS de leve a grave. Os resultados mostraram que o CPAP foi associado a uma redução significativa no AHI em comparação com os dispositivos de avanço mandibular. Além disso, a saturação de oxigênio mais baixa também foi menor no grupo de CPAP. No entanto, não houve diferença estatisticamente significativa na pontuação de sonolência do Epworth entre os dois grupos. Concluiu-se que o CPAP ainda é considerado o tratamento padrão-ouro para a AOS, mas os dispositivos de avanço mandibular podem ser uma opção eficaz para pacientes que não têm acesso fácil ao CPAP ou que não preferem essa terapia.
+>
+>Por fim, uma revisão sistemática enfocada na precisão do índice de dessaturação de oxigênio (ODI) em comparação com o índice de apneia-hipopneia (AHI) no diagnóstico da AOS em adultos foi descrita em ```[5]```. Os resultados sugeriram que um ODI de 4% igual ou maior que 15 eventos por hora poderia ser considerado como um valor de corte para o diagnóstico da AOS. Além disso, um ODI de 4% igual ou maior que 10 eventos por hora pode indicar a necessidade de uma avaliação adicional para o diagnóstico da AOS. No entanto, foram identificadas heterogeneidades significativas nos estudos analisados, destacando a necessidade de pesquisas adicionais nesse campo.
+>
+>Esses estudos demonstram a importância de compreender os diferentes tratamentos e abordagens terapêuticas disponíveis para a apneia obstrutiva do sono. Através de revisões sistemáticas e meta-análises, foi possível explorar os resultados de estudos clínicos e comparar a eficácia de diferentes dispositivos de avanço mandibular com o CPAP. Embora o CPAP ainda seja considerado o tratamento padrão-ouro, os dispositivos de avanço mandibular podem ser uma alternativa eficaz, especialmente para pacientes que têm dificuldade de aderir ao CPAP.
+>
+>Essas descobertas são de grande relevância para a prática clínica, auxiliando os profissionais de saúde na tomada de decisões e na escolha do tratamento mais adequado para pacientes com apneia obstrutiva do sono. A compreensão das características dos pacientes que respondem melhor aos dispositivos de avanço mandibular também contribui para a personalização do tratamento e a melhoria dos resultados clínicos.
+>
+>No presente trabalho, propomos o estudo retrospectivo, a travez da axploração de dados investigaremos os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono, considerando as ventagens e limitações na literatura. Com base nesses resultados, pretendemos fornecer insights valiosos para a prática clínica, destacando a importância de uma abordagem individualizada no tratamento da apneia obstrutiva do sono. A análise proposta busca contribuir para a melhoria dos desfechos clínicos e aprimoramento das opções terapêuticas disponíveis para os pacientes com apneia obstrutiva do sono.
+>
+>Nossa análise incluirá uma revisão minuciosa dos estudos mencionados anteriormente, levando em consideração os desenhos de estudo, os tamanhos das amostras, as medidas de resultado e as conclusões alcançadas por cada um deles. Também examinaremos as limitações e as lacunas de conhecimento identificadas nessas pesquisas, a fim de identificar áreas que necessitam de pesquisas futuras.
+>
+>Esperamos que essa análise proporcione uma visão mais abrangente sobre a eficácia dos dispositivos de avanço mandibular em comparação com o CPAP no tratamento da apneia obstrutiva do sono. Além disso, poderemos explorar os fatores preditivos de resposta ao tratamento com dispositivos de avanço mandibular e o uso do ODI como um indicador alternativo para o diagnóstico da doença.
+>
+>Os resultados alcançados por meio dessa análise contribuirão para a tomada de decisão clínica, fornecendo informações valiosas sobre as opções terapêuticas disponíveis para pacientes com apneia obstrutiva do sono. Além disso, poderemos identificar possíveis lacunas no conhecimento e direcionar pesquisas futuras para aprimorar ainda mais o tratamento dessa condição.
+>
+>Em resumo, a análise proposta tem como objetivo fornecer uma avaliação crítica sobre o uso de dispositivos de avanço mandibular. Esperamos que nossos resultados ajudem a melhorar a compreensão dessa condição e aprimorar a qualidade de vida dos pacientes afetados.
+
+
+# **Perguntas de Pesquisa e Objetivos**
+>
+> ## **Perguntas de Pesquisa:**
 > As questões de pesquisa a serem abordadas serão:
 > 
 > - **QP1:** O aparelho intraoral de avanço mandibular melhora o índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono?
 > - **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
 > - **QP3:** A melhora do índice de dessaturação de oxigênio (IDO) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
 > 
+> ## **Objetivo:**
+> - Estudar os efeitos do aparelho intraoral de avanço mandibular no tratamento de pacientes com apneia do sono.
+
 # **Metodologia**
 
-> Como etapas iniciais, buscando garantir a privacidade dos pacientes envolvidos e uma qualidade inicial dos dados, faremos a anonimização dos dados, removendo informações individuais dos pacientes.
+> Neste estudo, adotamos uma metodologia baseada em etapas para garantir a privacidade dos pacientes envolvidos e a qualidade dos dados coletados. Inicialmente, realizamos a anonimização dos dados, removendo informações individuais dos pacientes, a fim de preservar a confidencialidade.
 > 
-> Uma visão geral das etapas da metodologia podem ser vistas no fluxo de processos abaixo:
+> A seguir, apresentamos uma visão geral das etapas da metodologia, conforme ilustrado no fluxo de processos abaixo:
 > 
 > ![image](./docs/fluxo_projeto.png)
 > 
-> Utilizando técnicas de estatística descritiva, realizaremos:
+> 1. Limpeza e organização dos dados: Realizamos a limpeza dos dados coletados, removendo possíveis erros ou inconsistências. Organizamos os dados em um formato adequado para análise posterior.
 > 
-> - realizar a limpeza e organização dos dados
-> - tratar dados nulos ou faltantes
-> - identificar possíveis anomalias de coleta e decidir como tratá-las (correção, remoção, etc)
-> - realizar atividades de engenharia de *features* para incluir dados importantes como:
->     - índice de massa corpórea (IMC), a partir do cálculo imc = peso / (altura)²
->     - situação do paciente de acordo com o valor de IMC (abaixo do peso ideal, no peso ideal, sobrepeso, obesidade, etc)
->     - status de apnéia do paciente (se possui apnéia do sono e qual nível)
+> 2. Tratamento de dados nulos ou faltantes: Identificamos e lidamos com dados que apresentam valores nulos ou faltantes. Utilizamos técnicas apropriadas, como preenchimento ou exclusão desses valores, para evitar distorções nos resultados.
 > 
-> Realizaremos análises para identificar o impacto (caso haja) na qualidade de vida dos pacientes a partir da utilização do aparelho intraoral de avanço mandibular, utilizando como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes antes e depois do uso do aparelho.
+> 3. Identificação de anomalias de coleta: Verificamos a presença de possíveis anomalias nos dados coletados. Caso identifiquemos valores discrepantes ou inconsistentes, tomamos decisões apropriadas sobre como tratá-los, seja por meio de correção, remoção ou aplicação de métodos adequados para lidar com tais anomalias.
 > 
+> 4. Engenharia de features: Realizamos atividades de engenharia de features para incluir informações importantes nos dados. Calculamos o índice de massa corporal (IMC) para cada paciente, utilizando a fórmula IMC = peso / (altura)². Com base nos valores de IMC, classificamos a situação do paciente em categorias, como abaixo do peso ideal, peso ideal, sobrepeso, obesidade, entre outras. Também registramos o status de apneia do paciente, indicando se ele possui apneia do sono e em qual nível.
+> 
+> 5. Análise do impacto na qualidade de vida: Realizamos análises estatísticas descritivas para avaliar o impacto, caso exista, do uso do aparelho intraoral de avanço mandibular na qualidade de vida dos pacientes. Utilizamos como métricas de avaliação a frequência cardíaca e o índice de dessaturação (IDO) dos pacientes, registrados antes e depois do uso do aparelho. Essas métricas nos permitem analisar possíveis alterações na saúde cardiorrespiratória dos pacientes e avaliar a eficácia do tratamento.
+> 
+> Ao seguir essa metodologia rigorosa, obtivemos resultados confiáveis e relevantes para compreender o impacto do aparelho intraoral de avanço mandibular na qualidade de vida dos pacientes com apneia obstrutiva do sono.
+
 # Bases de Dados
 
 ## **Descrição da base de dados**
 > 
-> O conjunto de dados usados nste projeto corresponde a pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes foram monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação de oxigenio.
+> O conjunto de dados usados neste projeto corresponde a pacientes tratados para ronco e apneia do sono com dispositivo de avanço mandibular. Os pacientes foram monitorados com um equipamento de polissonografia do tipo IV, que coletará dados de frequência cardíaca e índice de dessaturação de oxigenio.
 > 
 > Os dados tem informação de pacientes para treis examen por cada um deles, dados que são capturados em tres momentos distintos durante o tratamento.
 > 
-## **Anonimização**
+
+## **Integração entre Bases e Análise Exploratória**
+### **Anonimização**
 
 > Inicialmente o conjunto de dados originais não estava anonimizada e ainda precisava passar por uma adequação dos pacientes que tinham fornecido o TCLE.
 > 
@@ -87,7 +136,7 @@
 > Além de isso, haviam pacientes que não tinham dado consentimento para utilizar os dados, por o que depois da retirada desses pacientes, foi gerado uma tabela so com os pacientes que precissavamos, gerando assim o ID de identificação do paciente para futuras nececidades de rastreamento do dado original do paciente.
 > 
 
-## Dicionário de Dados
+### **Dicionário de Dados**
 > 
 > Depois do processo de anonimização de dados, apresentados o dicionario com as caracteristicas dos dados que vamos a utilizar, na Tabela 2:
 >  
@@ -115,7 +164,7 @@
 > </center>
 > 
 
-## Limpieza dos dados
+### **Limpieza dos dados**
 
 > Inicialmente comprovamos o formato dos dados. Entre os tipos de dados que encontramos estavam os tipo ```int64```, ```float64``` e ```object```, como se mostra a continuação:
 > 
@@ -186,7 +235,7 @@
 > bpm15                   float64
 > ```
 > 
-## **Inclusão de features importantes (Clusters de idades, IMC, grau de obesidade e grau de apneia)**
+### **Inclusão de features importantes (Clusters de idades, IMC, grau de obesidade e grau de apneia)**
 
 > Já com os dados limpos, consideramos o fato de calcular features que serão importantes para o nosso trabalho. Em primeiro lugar, agrupamos as idades em faixas de dez anos. Em seguida, calculamos o IMC utilizando a fórmula:
 > 
@@ -207,27 +256,26 @@
 > 
 > </center>
 > 
+
+# Análises Realizadas
 ## **Separação de datasets (baseline, primeiro exame e ultimo exame)**
 
-
->Para essa exploração inicial, dividimos os dados em três grupos: um para cada exame, ```baseline```, ```primeiro_exame``` e ```ultimo_exame```. Cada um desses grupos contém os mesmos pacientes e as mesmas variáveis. A partir desses novos dados, iniciamos a análise.
+> Nossos dados consistem nos resultados do acompanhamento do uso do aparelho intraoral de avanço mandibular em pacientes de diferentes faixas etárias. Esse acompanhamento foi realizado em três momentos distintos, nos quais foram feitas medições das mesmas variáveis. Para organizar os dados de acordo com esses momentos, dividimos os dados em três grupos: ```baseline```, ```primeiro_exame``` e ```ultimo_exame```. Cada um desses grupos inclui os mesmos pacientes e as mesmas variáveis. Com base nesses novos dados, iniciamos a análise.
 
 ## **Visualização de dados**
 
-
-
 <!-- ![image](./reports/figures/histograma.png) -->
-> ### **Numero de paciente por ```sexo```**
+> ### **Distribução dos pacientes por ```sexo```**
 > <center>
 > 
 > ![image](./reports/figures/pacientes_sexo.png)
+> ![image](./reports/figures/torta_pacientes_sexo.png)
 > </center>
 > 
 > 
-> Na Figura 2 encontramos nos dados que o número de pacientes do sexo masculino foi maior do que o grupo de mulheres. No entanto, a proporção é aceitável para continuar com nosso estudo, já que nesse aspecto os dados não apresentam um desequilíbrio significativo.
+> Na Figura 2 encontramos nos dados que o número de pacientes do sexo masculino foi maior do que o grupo de mulheres. No entanto, a proporção, como se mostra na Figura 3, é aceitável para continuar com nosso estudo como mostara, já que nesse aspecto os dados não apresentam um desequilíbrio significativo.
 > 
 > 
-
 
 > ### **Numero de pacientes por ```grupo de idade```**
 > <center>
@@ -368,3 +416,21 @@ Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há al
 > - [6] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-68.
 > - [7] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
 > - [8] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
+
+
+# **Referências bibliográficas**
+> - [1] Uniken Venema JAM, Rosenmöller BRAM, de Vries N, et al. Mandibular advancement device design: A systematic review on outcomes in obstructive sleep apnea treatment. Sleep Med Rev. 2021;60:101557. doi:10.1016/j.smrv.2021.101557
+> - [2] Li P, Ning XH, Lin H, Zhang N, Gao YF, Ping F. Continuous positive airway pressure versus mandibular advancement device in the treatment of obstructive sleep apnea: a systematic review and meta-analysis. Sleep Med. 2020;72:5-11. doi:10.1016/j.sleep.2020.03.015
+> - [3] Camañes-Gonzalvo S, Bellot-Arcís C, Marco-Pitarch R, et al. Comparison of the phenotypic characteristics between responders and non-responders to obstructive sleep apnea treatment using mandibular advancement devices in adult patients: Systematic review and meta-analysis. Sleep Med Rev. 2022;64:101644. doi:10.1016/j.smrv.2022.101644
+> - [4] Pattipati M, Gudavalli G, Zin M, et al. Continuous Positive Airway Pressure vs Mandibular Advancement Devices in the Treatment of Obstructive Sleep Apnea: An Updated Systematic Review and Meta-Analysis. Cureus. 2022;14(1):e21759. Published 2022 Jan 31. doi:10.7759/cureus.21759
+> - [5] Rashid NH, Zaghi S, Scapuccin M, Camacho M, Certal V, Capasso R. The Value of Oxygen Desaturation Index for Diagnosing Obstructive Sleep Apnea: A Systematic Review. Laryngoscope. 2021;131(2):440-447. doi:10.1002/lary.28663
+
+> - [6] Yeghiazarians Y, Jneid H, Tietjens JR, et al. Obstructive Sleep Apnea and Cardiovascular Disease: A Scientific Statement From the American Heart Association [published correction appears in Circulation. 2022 Mar 22;145(12):e775]. Circulation. 2021;144(3):e56-e67. doi:10.1161/CIR.0000000000000988
+> - [7] Mitra AK, Bhuiyan AR, Jones EA. Association and Risk Factors for Obstructive Sleep Apnea and Cardiovascular Diseases: A Systematic Review. Diseases. 2021;9(4):88. Published 2021 Dec 2. doi:10.3390/diseases9040088
+> - [8] Ali SS, Oni ET, Warraich HJ, et al. Systematic review on noninvasive assessment of subclinical cardiovascular disease in obstructive sleep apnea: new kid on the block!. Sleep Med Rev. 2014;18(5):379-391. doi:10.1016/j.smrv.2014.01.004
+> - [9] Bauters, F., Rietzschel, E.R., Hertegonne, K.B.C. et al. 2016. The Link Between Obstructive Sleep Apnea and Cardiovascular Disease. Curr Atheroscler Rep 18, 1. 
+> - [10] Ramar K, Dort LC, Katz SG, Lettieri CJ, Harrod CG, Thomas SM, et al. 2015. Clinical practice guideline for the treatment of obstructive sleep apnea and snoring with oral appliance therapy: an update for 2015. J Clin Sleep Med. 2015 Jul 15;11(7):773-827.
+> - [11] Aarab G, Lobbezoo F, Heymans MW, Hamburger HL, Naeije M. Long-term follow-up of a randomized controlled trial of oral appliance therapy in obstructive sleep apnea. Respiration. 2011 Mar 31;82(2):162-8.
+> - [12] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-6.
+> - [13] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
+> - [14] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
