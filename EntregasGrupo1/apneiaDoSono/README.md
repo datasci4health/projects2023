@@ -358,7 +358,7 @@ Para nossa última pergunta, conforme análise de correlação nas ```Figuras 9,
 Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há alguns fatores contextuais dos pacientes (como comorbidades, hábitos e estado no dia do exame) que acabam não sendo informados pelos pacientes e que podem influenciar tanto o IDO quanto a ```frequência cardíaca maxima```.
 
 
-### Bibliografia
+# **Bibliografia**
 
 > - [1] Mitra, Amal K., Azad R. Bhuiyan, and Elizabeth A. Jones. 2021. "Association and Risk Factors for Obstructive Sleep Apnea and Cardiovascular Diseases: A Systematic Review" Diseases 9, no. 4: 88. https://doi.org/10.3390/diseases9040088
 > - [2] Yeghiazarians, Y., Jneid, H., Tietjens, J. R., Redline, S., Brown, D. L., El-Sherif, N., ... & Somers, V. K. (2021). Obstructive sleep apnea and cardiovascular disease: a scientific statement from the American Heart Association. Circulation, 144(3), e56-e67.
