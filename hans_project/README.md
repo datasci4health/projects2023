@@ -18,11 +18,13 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > [Link para slides da apresentação final do projeto.]()
 
 # Introdução e Referenciais Teóricos
-> A hanseníase é uma doença infecciosa crônica e transmissível que afeta principalmente a pele e o sistema nervoso periférico. Os agentes causadores da enfermidade são as bactérias Mycobacterium leprae e Mycobacterium lepromatosis. A doença pode afetar pessoas de qualquer sexo ou faixa etária, sua evolução é lenta e progressiva, e se não for tratada na fase inicial, pode levar a incapacidades físicas. A infecção está inserida no grupo de doenças tropicais negligenciadas e continua sendo um problema de saúde pública em muitos países, incluindo o Brasil. Embora a tendência de novos casos tenha diminuído ao longo do tempo devido ao tratamento com terapia multidrogas, o Brasil ocupa atualmente o segundo lugar em termos de prevalência no mundo.
+> A hanseníase é uma doença infecciosa crônica e transmissível que afeta principalmente a pele e o sistema nervoso periférico. Os agentes causadores da enfermidade são as bactérias Mycobacterium leprae e Mycobacterium lepromatosis (Ploemacher et al. 2019). A doença pode afetar pessoas de qualquer sexo ou faixa etária, sua evolução é lenta e progressiva, e se não for tratada na fase inicial, pode levar a incapacidades físicas. A infecção está inserida no grupo de doenças tropicais negligenciadas e continua sendo um problema de saúde pública em muitos países, incluindo o Brasil. Embora a tendência de novos casos tenha diminuído ao longo do tempo devido ao tratamento com terapia multidrogas, o Brasil ocupa atualmente o segundo lugar em termos de prevalência no mundo (WHO, 2023).
 > 
-> O esquema de tratamento (número de doses e tempo) é padronizado e depende da classificação operacional da doença baseada no número de lesões cutâneas. Os casos são classificados como paucibacilares (PB, até cinco lesões) ou multibacilares (MB, seis ou mais lesões de pele), com uma duração de tratamento de 6 a 12 meses, respectivamente. Se o tratamento é realizado de forma completa e correta, a transmissão da doença é interrompida, impedindo que outras pessoas sejam infectadas, e o paciente é curado. Apesar dos avanços no tratamento para a cura da doença, o abandono da terapia multidrogas ainda representa um dos obstáculos para o controle efetivo e a eliminação da hanseníase. Por exemplo, os casos de abandono podem resultar em curas incompletas, levando a uma maior progressão da doença, o que pode prolongar o tempo de tratamento e aumentar os custos para o sistema de saúde, além de manter fontes persistentes de infecção na área geográfica.
+> O esquema de tratamento (número de doses e tempo) é padronizado e depende da classificação operacional da doença baseada no número de lesões cutâneas. Os casos são classificados como paucibacilares (PB, até cinco lesões) ou multibacilares (MB, seis ou mais lesões de pele), com uma duração de tratamento de 6 a 12 meses, respectivamente. Se o tratamento é realizado de forma completa e correta, a transmissão da doença é interrompida, impedindo que outras pessoas sejam infectadas, e o paciente é curado (Minestério da saúde 2022, 2017). Apesar dos avanços no tratamento para a cura da doença, o abandono da terapia multidrogas ainda representa um dos obstáculos para o controle efetivo e a eliminação da hanseníase. Por exemplo, os casos de abandono podem resultar em curas incompletas, levando a uma maior progressão da doença, o que pode prolongar o tempo de tratamento e aumentar os custos para o sistema de saúde, além de manter fontes persistentes de infecção na área geográfica (Girão et al. 2013).
 > 
-> Evidências sugerem que existem fatores associados ao risco de abandono do tratamento da hanseníase. A interrupção do tratamento pode ser influenciada por características pessoais, socioeconômicas e fatores clínicos ou médicos. Nesse contexto, este projeto tem como objetivo analisar os casos novos de hanseníase no período de 2009 a 2019, a fim de determinar padrões ou relações entre as características dos pacientes e da doença com os casos de cura e abandono do tratamento. Além disso, pretende-se identificar diferentes padrões espaciais de ocorrência e abandono, levando em consideração o índice de desenvolvimento humano. Para isso, serão utilizadas técnicas de machine learning para identificar as variáveis mais relevantes e sua relação com os casos de cura e abandono do tratamento.
+> Evidências sugerem que existem fatores associados ao risco de abandono do tratamento da hanseníase (de Andrade et al. 2019; Nery et al. 2019). A interrupção do tratamento pode ser influenciada por características pessoais, socioeconômicas e fatores clínicos ou médicos (Girão et al. 2013). 
+>
+> Nesse contexto, este projeto tem como objetivo analisar os casos novos de hanseníase no período de 2009 a 2019, a fim de determinar padrões ou relações entre as características dos pacientes e da doença com os casos de cura e abandono do tratamento. Além disso, pretende-se identificar diferentes padrões espaciais de ocorrência e abandono, levando em consideração o índice de desenvolvimento humano. Para isso, serão utilizadas técnicas de machine learning para identificar as variáveis mais relevantes e sua relação com os casos de cura e abandono do tratamento.
 > 
 > Espera-se que os resultados deste projeto possam ajudar na identificação de fatores que representam barreiras no tratamento e visualizar as regiões vulneráveis para uma alocação adequada dos serviços. Além disso, a análise desses dados pode fornecer insights importantes sobre a doença, contribuindo para a prevenção e o controle efetivo da hanseníase em nível nacional.
 > 
@@ -42,7 +44,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Objetivos
 ## Geral
-> Determinar padrões ou relações entre as características dos pacientes e da hanseníase com os casos de cura e abandono do tratamento.
+> Predizer o tipo de desfecho dos casos de hanseníase (cura ou abandono do tratamento) para auxiliar no planejamento financeiro da saúde pública.
 
 ## Específicos
 > Coletar e organizar os dados relacionados aos casos de hanseníase no período de 2009 a 2019.
@@ -331,15 +333,21 @@ xgb_pipe = Pipeline(
 
 # Referências Bibliográficas
 > 1. de Andrade KVF, Nery SJ, Pescarini MJ, Ramond A, Teles Santos dS CA, Ichihara MY, et al. (2019). Geographic and socioeconomic factors associated with leprosy treatment default: An analysis from the 100 Million Brazilian Cohort. PLOS Neglected Tropical Diseases, 13(9): e0007714. https://doi.org/10.1371/journal. pntd.0007714.
+>    
+> 2. Girão, R. J. S., N. L. R. Soares, J. V. Pinheiro, G. da P. Oliveira, S. M. F. de Carvalho, L. C. de Abreu, V. E. Valenti, and F. L. A. Fonseca. 2013. Leprosy treatment dropout: a systematic review. International Archives of Medicine 6: 34.
 >
-> 2. Kerr-Pontes LR, Barreto M L, Evangelista CM, Rodrigues LC, Heukelbach, and Feldmeier H. (2006). Socioeconomic, environmental, and behavioural risk factors for leprosy in North-east Brazil: Results of a case–control study. International Journal of Epidemiology, 35(4): 994–1000. https://doi.org/10.1093/ije/dyl072.
+> 3. Kerr-Pontes LR, Barreto M L, Evangelista CM, Rodrigues LC, Heukelbach, and Feldmeier H. (2006). Socioeconomic, environmental, and behavioural risk factors for leprosy in North-east Brazil: Results of a case–control study. International Journal of Epidemiology, 35(4): 994–1000. https://doi.org/10.1093/ije/dyl072.
 >
-> 3. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Articulação Estratégica de Vigilância em Saúde. 2022. Guia de Vigilância em Saúde. Brasília, DF. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev_atual.pdf Acesso em Maio 2023.
->
-> 4. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. 2017. Guia prático sobre a hanseníase. Brasília, DF. Disponível em: https://www.gov.br/aids/pt-br/centrais-de-conteudo/publicacoes/2021/guia-pratico-sobre-a-hanseniase/view Acesso em: Maio 2023.
->
-> 5. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. 2016. Diretrizes para vigilância, atenção e eliminação da Hanseníase como problema de saúde pública: manual técnico operacional.  Brasília, DF. Disponível em: http://portal.saude.pe.gov.br/sites/portal.saude.pe.gov.br/files/diretrizes_para_._eliminacao_hanseniase_-_manual_-_3fev16_isbn_nucom_final_2.pdf Acesso em: Maio 2023. 
+> 4. Lima, L. V. de, G. Pavinati, I. G. P. Silva, D. R. de O. Moura, N. L. de M. Gil, and G. T. Magnabosco. 2022. Tendência temporal, distribuição e autocorrelação espacial da hanseníase no Brasil: estudo ecológico, 2011 a 2021. Revista Brasileira de Epidemiologia 25: e220040.
 > 
-> 6. Ploemacher T, Faber WR, Menke H, Rutten V, and Pieters T. (2020). Reservoirs and transmission routes of leprosy; A systematic review. PLOS Neglected Tropical Diseases, 14(4): e0008276. https://doi.org/10.1371/journal.pntd.0008276.
+> 5. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Articulação Estratégica de Vigilância em Saúde. 2022. Guia de Vigilância em Saúde. Brasília, DF. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev_atual.pdf Acesso em Maio 2023.
 >
-> 7. World Health Organization. Leprosy. https://www.who.int/news-room/fact-sheets/detail/leprosy. Update January 27, 2023. Acesso em: Maio 2023.
+> 6. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. 2017. Guia prático sobre a hanseníase. Brasília, DF. Disponível em: https://www.gov.br/aids/pt-br/centrais-de-conteudo/publicacoes/2021/guia-pratico-sobre-a-hanseniase/view Acesso em: Maio 2023.
+>
+> 7. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. 2016. Diretrizes para vigilância, atenção e eliminação da Hanseníase como problema de saúde pública: manual técnico operacional.  Brasília, DF. Disponível em: http://portal.saude.pe.gov.br/sites/portal.saude.pe.gov.br/files/diretrizes_para_._eliminacao_hanseniase_-_manual_-_3fev16_isbn_nucom_final_2.pdf Acesso em: Maio 2023. 
+>
+> 8. Nery, J. S., A. Ramond, J. M. Pescarini, A. Alves, A. Strina, M. Y. Ichihara, M. L. Fernandes Penna, et al. 2019. Socioeconomic determinants of leprosy new case detection in the 100 Million Brazilian Cohort: a population-based linkage study. The Lancet. Global Health 7: e1226–e1236.
+> 
+> 9. Ploemacher T, Faber WR, Menke H, Rutten V, and Pieters T. (2020). Reservoirs and transmission routes of leprosy; A systematic review. PLOS Neglected Tropical Diseases, 14(4): e0008276. https://doi.org/10.1371/journal.pntd.0008276.
+>
+> 10. World Health Organization. Leprosy. https://www.who.int/news-room/fact-sheets/detail/leprosy. Update January 27, 2023. Acesso em: Maio 2023.
