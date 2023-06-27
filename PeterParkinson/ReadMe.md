@@ -128,6 +128,9 @@ Active	4	I am unable to do my usual activities
 Active	3	I have severe problems doing my usual activities
 Active	5	Prefer not to answer
 No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dados é descrita e classificada como:
+
+!(./assets/exp/pain-semXcom.jpg)
+
 Pain	1	I have slight pain or discomfort
 Pain	2	I have moderate pai or discomfort
 Pain	3	I have severe pain or discomfort
