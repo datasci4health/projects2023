@@ -1,0 +1,39 @@
+. 'AnxietyDia' e 'AnxietyAge' 'AnxietyStat'  - 92%
+. 'DepressDia' e 'DepressAge' - 92%
+. 'DepressDia' e 'DepressionStat' - 97%
+. 'DepressAge' e 'DepressStat' - 91%
+. 'LeisureHours' e 'LeisureDay' - 93%
+. 'pa1a' , 'pa1b' , 'pa2a' , 'pa2c' , 'pa3a' , 'pa3b'
+. 'pa3c' , 'pa4b' , 'pa5a' , 'pa5c'
+. 'pa6b' , 'pa6a' , 'pa6c'
+. 'pa7a' , 'pa7b' , 'pa7c'
+
+
+
+. 'MindAnxietyPDSympWalk', 'MindAnxietyPDSympSlow', 'MindAnxietyPDSympExcess'
+. 'pa1a' , 'pa1c' , 'pa2b', 'pa4a', 'pa3c', 'pa4c', 'pa5b', 'rslt'      
+. 'Mind'
+.  'MindAnxietyPDSympSlow', 'MindAnxietyPDSympDepress',  'MindAnxietyPDSympSleep', 'MindAnxietyPDSympWalk'
+. 'Anxiety' , 'Depress'
+	variable
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    'Care', 'Active', 'ModSportDay', 'StrenSportDay', 'StrengthDay', 'LightSportDay', 'HouseHeavy', 'HouseRepair', 'HouseLawn', 'HouseGarden', 'HouseCare',
+    
+    
+    
+'age', 'Mobility',  'Pain', 'Anxious', 'CGIPD',
+       'AnxietyDia', 'Depress', 'DepressionHx', 'DepressionHxTrt',
+       'DepressionHxLim', 'AnxietyHx', 'AnxietyHxTrt', 'AnxietyHxLim',
+       'LeisureHours', 'WalkDay', 'WalkHours',
+       'LightSportHours',  'ModSportHours', 
+       'StrenSportHours',  'StrengthHours', 'HouseLight',
+       'Work', 'WorkActive', 'MindStress', 'MindAnxietyPDSympTremor',
+       'MindAnxietyPDSympSleep', 'MindAnxietyPDSympOther', 'pa1a', 'pa7a'
