@@ -23,14 +23,6 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Introdução e Referenciais Teóricos
 
-> Contextualização do projeto
-> Caracterização do problema
-> Motivação
-> Relevância
-> Trabalhos relacionados
-> Indicação (bastante resumida) da análise proposta
-> Indicação (bastante resumida) dos resultados alcançados
-
 As doenças crônicas não transmissíveis (DCNT) são um problema de saúde pública global [1]. DCNT estão associadas a diversos fatores de risco ou comportamentos de saúde inadequados, dentre eles o uso de tabaco, inatividade física, consumo excessivo de álcool e dietas não saudáveis [1]. Entre as doenças crônicas temos a desordem depressiva ou depressão que é uma doença mental comum, caracterizada como uma persistência da tristeza e baixo interesse ou prazer em atividades anteriormente colocadas como comuns ou agradáveis [2, 3].
 
 A depressão afeta cerca de 5% da população adulta mundial [2]. O tratamento da depressão é complexo e infelizmente ineficaz, reduz somente cerca de um terço da carga da desordem depressiva [4]. Com isso, a prevenção é a melhor forma de combater a depressão, similarmente a situação de outras doenças crônicas não transmissíveis como a obesidade.
@@ -129,14 +121,6 @@ Ao final desse processamento obtivemos 90846 linhas e 380 colunas de dados relev
 
 
 ### Integração entre Bases e Análise Exploratória
-
-> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
->
-> Resultados de Análise Exploratória
-> * use estatística descritiva e gráficos;
-> * inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
-> * analise correlação e use gráficos de dispersão;
-> * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
 
 Primeiramente realizamos a análise exploratória do banco de dados, buscando uma caracterização da amostra. Em seguida, categorizamos as variáveis de interesse de acordo com os parâmetros utilizados na literatura, conforme apresentado a seguir:
 
@@ -237,15 +221,6 @@ A partir disso, a correlação entre o IDH médio de cada estado com a porcentag
 
 # Análises Realizadas
 
-> Descrição detalhada das análises realizadas.
->
->Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
->
-> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
->
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
-> 
-
 Iniciamos as análises buscando a associação das variáveis de interesse com o diagnóstico de depressão por meio do teste χ2 de Pearson, devido ao fato das nossas variáveis serem qualitativas.
 
 Nessa etapa houve a preocupação de averiguar os dados faltantes de cada variável de interesse, gerando necessidade de algumas alterações na seleção dessas variáveis, pois primeiramente havíamos desenvolvido indicadores com base nos apresentados pela [PNS](https://www.pns.icict.fiocruz.br/painel-de-indicadores-mobile-desktop/). No entanto, percebeu-se uma grande quantidade de informações faltantes nas variáveis que compunham esses indicadores, como em indicadores de prática de exercício físico e consumo de bebida alcoólica.
@@ -335,18 +310,7 @@ Matplotlib/Plotly/Seaborn | Bibliotecas para visualização dos dados.
 Scikit-learn | Biblioteca com grande variedade de algoritmos de aprendizagem de máquina.
 ChatGPT | Ferramenta imprescindível, quase outro integrante do grupo, também conhecido como o evangelista da programação.
 
-
-
 # Resultados e Discussão
-
-
-> Descrição dos resultados mais importantes obtidos.
->
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
-> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
-> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
-
-
 
 ### Testes de associação
 
@@ -695,15 +659,7 @@ Abaixo está a matriz de confusão para o melhor modelo, que utiliza regressão 
 
 ![](https://raw.githubusercontent.com/Arthur-Salles/DAGroup/e3/DAGroup/notebooks/generated_data/pns_data_models/cm.png)
 
-
-
 # Conclusão
-> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
->
-> Destacar os principais desafios enfrentados.
->
-> Principais lições aprendidas.
->
 
 Neste trabalho, o objetivo foi identificar os fatores relacionados à depressão com base na literatura existente. As questões de pesquisa abordaram diversos aspectos.
 
