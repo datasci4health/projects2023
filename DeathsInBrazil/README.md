@@ -276,30 +276,92 @@ De acordo com Kutner et al. (2004), a análise de regressão é um conjunto de m
 > Fonte: Construção dos autores a partir de informações do DataSUS-Tabnet/SIM.
 > Nota: L.I = Limite Inferior de Predição / L.S = Limite Superior de Predição.
 
+> Para o uso da técnica de machine learning foi feito a análise de correlação para seleção de features, remoção de multicolinearidade e entendimento entre a reação das variáveis (Figura 11).
+>
+> Figura 11: Correlograma do número de óbitos por doenças cardiovasculares no Mundo.
+>
+> ![Figura 11](img/figura11.png)
+>
+> Fonte: Construção dos autores a partir de dados do FHS-Cohort - database 3
+
+> A partir disso, foram feitos os modelos para as técnicas de regressão logística, Random forest e K-Nearest Neighbors, onde obtivemos as matrizes de confusão (Figura 12), acurácia 0,59, 0,78 e 078 e recall 0,65, 018 e 0,20 respectivamente.
+> 
+> Figura 12: Matriz de confusão de regressão logística (a), Random forest (b) e K-Nearest Neighbors (c).
+>
+> ![Figura 12](img/figura12.png)
+>
+> Fonte: Construção dos autores a partir de dados do FHS-Cohort - database 3
+Apesar de ser o que teve a menor acurácia, o modelo de regressão logística foi o modelo que apresentou a melhor métrica de Recall. Apresentando um Recall de 65%. Entretanto na predição do conjunto de test (que não temos a resposta), o modelo final (Regressão logística) prevê em 100% dos casos afirmando que a pessoa terá doença cardiovascular no período de 10 anos. Apesar disso, o Random Forest também afirmou que 100% dos casos a pessoa terá uma doença cardiovascular em 10 anos, então é possível que o conjunto de teste tenha em sua maioria pessoas que terão doença cardiovascular. Observando o gráfico de correlação entre as features é possível observar que as características idade, pressão arterial sistólica e se o paciente teve algum histórico de AVC são as que tem uma maior correlação com a presença ou não de doença cardiovascular no período de 10 anos.
+Na segunda etapa de machine learning foi feito novamente a análise de correlação para os mesmos fins (Figura 13).
+
+> Figura 13: Correlograma do número de óbitos por doenças cardiovasculares no Mundo.
+>
+> ![Figura 13](img/figura13.png)
+>
+> Fonte: Construção dos autores a partir de dados simulado - database 4
+
+> Nos modelos de regressão logística, Random forest e K-Nearest Neighbors, obtivemos as matrizes de confusão (Figura 14), acurácia 0,72, 0,71 e 0,65 e recall 0,68, 0,70 e 0,63 respectivamente. 
+>
+> Figura 14: Matriz de confusão de regressão logística (a), Random forest (b) e K-Nearest Neighbors (c).
+>
+> ![Figura 14](img/figura14.png)
+>
+> Fonte: Construção dos autores a partir de dados simulado - database 4
 
 
+> O melhor modelo apresentado foi o Random Forest. Este modelo mostrou uma acurácia de 71% no treinamento e foi o que apresentou o menor número de falso negativos. Na predição final, utilizando novos dados - total de 14 mil pessoas, o modelo previu corretamente que 5359 pessoas não tinham doenças cardiovasculares e 4451 tinham doenças cardiovasculares, mas previu de forma incorreta 2562 pessoas com falsos negativos e 1628 pessoas com falsos positivos. Observando o gráfico de correlação entre as features é possível observar que as características idade, peso e colesterol são as que tem uma maior correlação com a presença ou não de doença cardiovascular.
+Brant e colaboradores (2022) evidenciaram fatores de riscos determinantes, entre fatores sociais, ambientais, comportamentais e metabólicos. Os quais se interrelacionam, pois fatores de riscos modificáveis como, pressão arterial, glicemia e colesterol estão diretamente associados a hábitos de vida como dieta inadequada e sedentarismo (BRANT et al., 2022).
+Determinados fatores de risco tiveram suas taxa reduzidas ao longo do tempo, como consequência da urbanização e mudança de hábitos comportamentais resultantes de maior conscientização e evolução de políticas públicas voltadas para a prevenção de diversas doenças (BRANT et al., 2022), como por exemplo, a redução de taxa de tabagismo entre homens e mulheres a partir da década de 90 (RIBEIRO et al., 2016). No entanto, outras taxas como idade e estado nutricional tiveram suas participações aumentadas. A maior urbanização e o desenvolvimento da tecnologia levaram ao aumento da expectativa de vida dos indivíduos, mas também ao desenvolvimento de hábitos não-saudáveis em prol da acomodação, como o maior consumo de alimentos ultraprocessados e sedentarismo (RIBEIRO et al., 2016). 
+As abordagens de última geração têm sido empregadas para auxiliar os sistemas de saúde médica, utilizando diversas técnicas de machine learning e séries temporais (PRADEEP; NAVEEN, 2018; TARAWHNEH; EMBARAK, 2019; KOUKARAS; BEZAS; GKAIDATZIS; IOANNIDIS; TZOVARAS; TJORTJIS, 2021), utilizando o histórico do paciente como recurso para gerar alertas de saúde necessários. No entanto, até o momento, essas técnicas têm se limitado a prever apenas as condições em tempo real, poucos estudos atuais têm se concentrado na previsão do estado futuro de um paciente (AHMED; LIN; SRIVASTAVA, 2023). Em situações médicas críticas, a condição de saúde de um paciente pode deteriorar-se em questão de segundos (JABEEN; MAQSOOD; GHAZANFAR; AADIL; KHAN; KHAN; MEHMOOD, 2019; LIU; GÖRGES; JENKINS, 2012). Em cenários de emergência, o tempo de resposta usualmente varia entre um e três minutos (JABEEN; MAQSOOD; GHAZANFAR; AADIL; KHAN; KHAN; MEHMOOD, 2019; HELLINGS et al., 2017). Durante esse intervalo, os profissionais de saúde podem enfrentar um cenário perigoso devido à falta de informações precisas sobre o estado de saúde do paciente. A previsão da condição futura de um paciente pode ser fundamental para uma terapia eficaz (AHMED; LIN; SRIVASTAVA, 2023). Além disso, a previsão das condições futuras pode reduzir o risco de perda de vidas valiosas e fornecer aos cuidadores informações relevantes a longo prazo a serem consideradas (AHMED; LIN; SRIVASTAVA, 2023).
+Os resultados de nossos testes estão em consonância com a literatura, visto que apontaram a idade, pressão arterial sistólica e colesterol como fatores de risco com alta correlação para o desenvolvimento de DCV (OLIVEIRA et al., 2022). 
 
+# Conclusão
+> O presente trabalho realizou um estudo temporal sobre a principal causa de morte no Brasil e no mundo, incluindo alguns de seus fatores de risco. Primeiramente, indo de encontro a literatura e identificando que a principal causa de morte são as Doenças Cardiovasculares, dado que foi confirmado pelos nossos resultados. Por segundo, estabelecendo uma série temporal que obedeceu a todos os pressupostos necessários de maneira satisfatória e viabilizou seu uso para predição em relação ao número de óbitos por doenças cardiovasculares no Brasil. E servindo como ferramenta de aprendizado e modelagem por meio de Machine Learning, podendo ser uma poderosa ferramenta na análise e visualização de dados biomédicos.
+Tais dados podem servir como base inicial para tomadores de decisões e monitoramento de eficácia de políticas públicas para o enfrentamento e prevenção das doenças e suas consequências.
 
-
-
-# Cronograma
-> |Atividades | Data|
-> |--|--|
-> | Segunda Entrega (Checkpoint dos resultados Parciais)  | 21/05/2023  |
-> | Desenvolvimento e ajuste dos modelos  | 21/05/23 - 30/05/23  |
-> | Análise dos resultados parciais e escrita do relatório final  | 31/05/23 - 24/06/23  |
-> | Entrega do relatório final  | 25/06/23  |
-> | Compartilhamento de experiências  | 22/06/23 e 27/06/23  |
-
-> [*Link para vídeo de apresentação da proposta do projeto.*](https://drive.google.com/file/d/1TuVvB7_tuUpy89DZRqpBYQg3cny7RNCt/view?usp=share_link)
+# Trabalhos Futuros
+> Estudos mais detalhados e a aplicação de novas ferramentas e tecnologias podem fornecer insights sobre quais os fatores que continuam se modificando e alterando sua influência ou particularidades de grupos que podem ser subnotificadas. Incluindo novos hábitos adotados pela sociedade e características regionais de grupos de indivíduos. É imprescindível que a relação ambiente x individuo seja levada em consideração nas mais diversas análises.
 
 # Referencias
+> Ahmed U, Lin JCW, Srivastava G. Multivariate time-series sensor vital sign forecasting of cardiovascular and chronic respiratory disease. Sustainable Computing: Informatics and Systems. Volume 38. 2023.
+> BRANT, L. C. C.; NASCIMENTO, B. R.; VELOSO, G. A.; GOMES, C. S.; POLANCZYK, C.; DE OLIVEIRA, G. M. M.; FLOR, L. S.; GAKIDOU, E.; RIBEIRO, A. L. P.; MALTA, D. C. Burden of Cardiovascular diseases attributable to risk factors in Brazil: data from the “Global Burden of Disease 2019” study. Revista da Sociedade Brasileira de Medicina Tropical, [s. l.], v. 55, n. Suppl I, p. 1–11, 2022. 
+> BREIMAN L. Random forests. Mach. Learn., 45 (1) (2001), pp. 5-32.
 > CARVALHO Jr., J. G.; COSTA Jr., C. T. Identification method for fuzzy forecasting models of time series, Applied Soft Computing. v. 50, p. 166-182, 2017.
-> 
-> EHLERS, R. S. Análise de Séries Temporais. Departamento de Estatística, UFPR, 2005.
-> 
+> D’AGOSTINO RB SR, PENCINA MJ, MASSARO JM, COADY S. Cardiovascular Disease Risk Assessment: Insights from Framingham. Glob Heart. 2013.
+> DARCY AM, LOUIE AK, ROBERTS LW. Machine Learning and the Profession of Medicine. JAMA. 2016.
+> DEO RC. Machine Learning in Medicine. Circulation. 2015;132(20):1920-30. doi: 10.1161/CIRCULATIONAHA.115.001593.
+> DUDANI, S.A. The distance-weighted k-nearest-neighbor rule. EEE Transactions on Systems, Man, and Cybernetics (4) (1976), pp. 325-327
+> EHLERS, R. S. Análise de Séries Temporais. Departamento de Estatística, UFPR, 2005. 
+> FAN Y, SHEN D, DAVATZIKOS C. Detecting Cognitive States from fMRI Images by Machine Learning and Multivariate Classification. CVPRW’06 2006: Conference on Computer Vision and Pattern Recognition Workshop; 2006 Jun 17-22; Ney York, USA: IEEE; 2006. p. 89.
+> FRENTZEL-BEYME, R.; KEIL, U.; PFLANZ, M.; STRUBA, R.; WAGNER, G. [Mortality data and statistics, importance for health services and  epidemiological research (author’s transl)]. MMW, Munchener medizinische Wochenschrift, Germanyv. 122, n. 24, p. 901–906, 1980. 
+Hellings P.W. et al. European summit on the prevention and self-management of chronic respiratory diseases: Report of the European union parliament summit (29 March 2017). Clin. Transl. Allergy (1) (2017).
+> HO T.K. Random decision forests. Proceedings of 3rd International Conference on Document Analysis and Recognition, vol. 1 (1995), pp. 278-282 vol.1.
+> HOSMER JR, D. W.; LEMESHOW, S.; STURDIVANT, R. X. (2013). Applied logistic regression. John Wiley & Sons.
+Jabeen F., Maqsood M., Ghazanfar M.A., Aadil F., Khan S., Khan M.F., Mehmood I. An IoT based efficient hybrid recommender system for cardiovascular disease. Peer Peer Netw. Appl. (5) (2019).
 > KOEHLER, A. B.  HYNDMAN R. J. Another look at measures of forecast accuracy, Int. 2006.
+Koukaras P., Bezas N., Gkaidatzis P., Ioannidis D., Tzovaras D., Tjortjis C. Introducing a novel approach in one-step ahead energy load forecasting. Sustain. Comput. Inform. Syst. (2021).
+> 
+> KUTNER, et al. (2004) Applied Linear Statistical Models. 5th Edition, Boston.
+Liu D., Görges M., Jenkins S.A. University of queensland vital signs dataset: development of an accessible repository of anesthesia patient monitoring data for research. Anesthesia & Analgesia (3) (2012).
+> 
+> MINCHOLÉ A, CAMPS J, LYON A, RODRÍGUEZ B. Machine Learning in the Electrocardiogram. J Electrocardiol. 2019.
 > 
 > MORETTIN, P. A.; TOLOI, C. M. C. Análise de Séries Temporais. Edgard Blücher, São Paulo, 2004.
 > 
+> OBERMEYER Z, EMANUEL EJ. Predicting the Future - Big Data, Machine Learning, and Clinical Medicine. N Engl J Med. 2016;375(13):1216-9.
+> 
+> OLIVEIRA, G. M. M. de; BRANT, L. C. C.; POLANCZYK, C. A.; MALTA, D. C.; BIOLO, A.; NASCIMENTO, B. R.; SOUZA, M. de F. M. de; LORENZO, A. R. De; FAGUNDES, A. A. de P.; SCHAAN, B. D.; CASTILHO, F. M. de; CESENA, F. H. Y.; SOARES, G. P.; XAVIER, G. F.; BARRETO, J. A. S.; PASSAGLIA, L. G.; PINTO, M. M.; MACHLINE-CARRION, M. J.; BITTENCOURT, M. S.; PONTES, O. M.; VILLELA, P. B.; TEIXEIRA, R. A.; SAMPAIO, R. O.; GAZIANO, T. A.; PEREL, P.; ROTH, G. A.; RIBEIRO, A. L. P. Estatística Cardiovascular – Brasil 2021. Arquivos Brasileiros de Cardiologia, [s. l.], v. 118, n. 1, p. 115–373, 2022. 
+Pradeep K.R., Naveen N.C. Lung cancer survivability prediction based on performance using classification techniques of support vector machines, C4.5 and naive Bayes algorithms for healthcare analytics. Procedia Comput. Sci. (2018).
+> 
+> RIBEIRO, A. L. P.; DUNCAN, B. B.; BRANT, L. C. C.; LOTUFO, P. A.; MILL, J. G.; BARRETO, S. M. Cardiovascular Health in Brazil Trends and Perspectives. Circulation, [s. l.], v. 133, n. 4, p. 422–433, 2016.
+> 
 > SARTORIS, A. Estatística e Introdução à Econometria. Saraiva. 2003
+> SLOMKA PJ, DEY D, SITEK A, MOTWANI M, BERMAN DS, GERMANO G. Cardiac Imaging: Working Towards Fully-Automated Machine Analysis & Interpretation. Expert Rev Med Devices. 2017.
+Tarawneh M., Embarak O. Hybrid approach for heart disease prediction using data mining techniques. International Conference on Emerging Internetworking, Data & Web Technologies, Springer (2019).
+> 
+> VADUGANATHAN, M.; MENSAH, G. A.; TURCO, J. V.; FUSTER, V.; ROTH, G. A. The Global Burden of Cardiovascular Diseases and Risk: A Compass for Future Health. Journal of the American College of Cardiology, [s. l.], v. 80, n. 25, p. 2361–2371, 2022.
+> 
+> WALJEE AK, HIGGINS PD. Machine Learning in Medicine: A Primer for Physicians. Am J Gastroenterol. 2010;105(6):1224-6. doi: 10.1038/ajg.2010.173.
+> 
+> WORLD HEALTH ORGANIZATION. Cardiovascular diseases (CVDs). [S. l.: s. n.], 2021. Disponível em: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds).
+
