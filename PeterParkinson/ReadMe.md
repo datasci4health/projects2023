@@ -104,20 +104,11 @@ No Gráfico 2  é representado o nível de ansiedade vs autocuidado. A autocuida
 ![Grafico 2](./assets/exp/care-semXcom.jpg)
 
 Diante disso, é visto que há uma relação similar entre a mobilidade e o autocuidado, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor.
-Pain	1	I have slight pain or discomfort
-Pain	2	I have moderate pai or discomfort
-Pain	3	I have severe pain or discomfort
-Pain	0	I have no pain or discomfort
-Pain	4	I have extreme pain or discomfort
-Pain	5	Prefer not to answer
+
 No Gráfico 3  é representado o nível de ansiedade vs atividade. A atividade na base de dados é descrita e classificada como:
 
-Active	0	I have no problems doing my usual activities
-Active	1	I have slight problems doing my usual activities
-Active	2	I have moderate problems doing my usual activities
-Active	4	I am unable to do my usual activities
-Active	3	I have severe problems doing my usual activities
-Active	5	Prefer not to answer
+![Grafico 3](./assets/exp/act-semXcom.png)
+
 No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dados é descrita e classificada como:
 
 ![Grafico 4](./assets/exp/pain-semXcom.jpg)
