@@ -284,7 +284,7 @@
 > </center>
 >
 >
->Na Figura 3, observamos uma mudança da distribuição de pacientes pelos grupos de idade que pode ser entendido como esperado, dado que os três exames ocorrem em um intervalo de alguns meses e os pacientes acabam fazendo aniversário no período e mudando de grupo
+>Na Figura 4, observamos uma mudança da distribuição de pacientes pelos grupos de idade que pode ser entendido como esperado, dado que os três exames ocorrem em um intervalo de alguns meses e os pacientes acabam fazendo aniversário no período e mudando de grupo
 
 
 ## **Integração entre Bases e Análise Exploratória**
@@ -298,7 +298,7 @@
 > ![image](./reports/figures/Situacao_imc.png)
 > </center>
 > 
-> Na Figura 4, encontramos a presença maior de pacientes acima do peso, incluindo pacientes com obesidade-I e obesidade-II, com uma menor quantidade de pacientes com peso considerado normal. No decorrer no tempo, não há mudanças drásticas nessas distribuições que possam ter impactado os resultados dos nossos estudos.
+> Na Figura 5, encontramos a presença maior de pacientes acima do peso, incluindo pacientes com obesidade-I e obesidade-II, com uma menor quantidade de pacientes com peso considerado normal. No decorrer no tempo, não há mudanças drásticas nessas distribuições que possam ter impactado os resultados dos nossos estudos.
 
 > ### **Situação da apneia**
 > 
@@ -307,7 +307,7 @@
 > ![image](./reports/figures/status_apneia.png)
 > </center>
 >
-> Na Figura 5, houve a ausência de pacientes com ```apnéia acentuada``` no fim do período analisado, assim também como a diminuição de pacientes com apnéias moderada e leve. Uma certa flutuação entre o tipo de apnéia observado pode ser influenciada por hábitos do paciente no dia do exame - por exemplo, consumo de bebidas alcóolicas ou refeições mais pesadas, porém a maioria dos pacientes não informa esses detalhes no questionário do exame.
+> Na Figura 6, houve a ausência de pacientes com ```apnéia acentuada``` no fim do período analisado, assim também como a diminuição de pacientes com apnéias moderada e leve. Uma certa flutuação entre o tipo de apnéia observado pode ser influenciada por hábitos do paciente no dia do exame - por exemplo, consumo de bebidas alcóolicas ou refeições mais pesadas, porém a maioria dos pacientes não informa esses detalhes no questionário do exame.
 
 <!-- temos os pacientes classificados de acordo com o status da apneia em cada exame. Observamos que, de forma geral, houve um aumento no número de pacientes classificados como ```Sem apneia``` e uma diminuição nos pacientes com qualquer tipo de apneia entre o exame de ```baseline``` e o ```último exame```. No entanto, há uma movimentação que não sabemos a origem, mas que evidencia uma possível relação entre as mudanças de estado nos pacientes relacionado ao uso do dispositivo de avanço mandibular. É necessário estudar mais a fundo esse fenômeno. -->
 
@@ -317,7 +317,7 @@
 > ![image](./reports/figures/grupo_etario_apneia.png)
 > </center>
 > 
-> Na Figura 6, descreve-se o comportamento da apneia por grupos de idade em cada um dos exames. Observamos que os pacientes nas faixas etárias de ```40-49``` e ```50-59``` são os que apresentam a maior quantidade de casos de apneia, mas também é mais evidente a melhora da condição nesses pacientes. Notamos que os pacientes ```sem apneia``` na faixa etária de ```40-49``` anos aumentaram para o ```primeiro exame```, mas diminuíram para o ```segundo exame```. Isso pode ser devido ao fato de que alguns pacientes mudaram de idade durante o curso do monitoramento, já que encontramos um aumento bastante significativo nos pacientes ```sem apneia``` para o ```segundo exame``` na faixa etária de ```50-59``` anos. Essa gráfica dá indícios de melhora nos pacientes com apneia, mas precisamos de mais informações e uma análise mais profunda do estudo.
+> Na Figura 7, descreve-se o comportamento da apneia por grupos de idade em cada um dos exames. Observamos que os pacientes nas faixas etárias de ```40-49``` e ```50-59``` são os que apresentam a maior quantidade de casos de apneia, mas também é mais evidente a melhora da condição nesses pacientes. Notamos que os pacientes ```sem apneia``` na faixa etária de ```40-49``` anos aumentaram para o ```primeiro exame```, mas diminuíram para o ```segundo exame```. Isso pode ser devido ao fato de que alguns pacientes mudaram de idade durante o curso do monitoramento, já que encontramos um aumento bastante significativo nos pacientes ```sem apneia``` para o ```segundo exame``` na faixa etária de ```50-59``` anos. Essa gráfica dá indícios de melhora nos pacientes com apneia, mas precisamos de mais informações e uma análise mais profunda do estudo.
 
 
 > ### **Comportamento da frequençã cardiaca maxima**
@@ -336,7 +336,7 @@
 >
 > ### **Correlação dos diferentes grugor por exame**
 > 
-> Nas Figuras 7, 8 e 9, encontramos as correlações das diferentes variáveis em nosso conjunto de dados. Observamos que as correlações entre ```IDO``` e ```peso``` e entre ```IDO``` e ```altura``` melhoram quando incluímos o valor do ```IMC```. Estaremos analisando mais detalhadamente essas correlações para nossa análise futura.
+> Nas Figuras 8, 9 e 10, encontramos as correlações das diferentes variáveis em nosso conjunto de dados. Observamos que as correlações entre ```IDO``` e ```peso``` e entre ```IDO``` e ```altura``` melhoram quando incluímos o valor do ```IMC```. Estaremos analisando mais detalhadamente essas correlações para nossa análise futura.
 > 
 > <center>
 > 
@@ -397,25 +397,13 @@ Para esta primeira pergunta, de acordo com as análises demonstradas nas Figura 
 
 ### **QP2:** O aparelho intraoral de avanço mandibular melhora a frequência cardíaca dos pacientes?
 
-Na segunda pergunta, conforme visualizado nas  ```Figuras 7 e 8``` acima, conseguimos verificar uma diminuição considerada da frequência cardíaca máxima (```fcmax```) dos pacientes, o que sugere uma melhora de saúde cardiovascular, porém não houve uma diminuição considerável nos índices de frequência cardíaca média (```fcmedia```) e mínima (```fcmínima```). Sendo assim, observamos uma tendência de diminuição da ```fcmax```, porém dada limitação de tamanho do nosso cohorte analisado, poderemos ser mais conclusivos quanto ao impacto positivo na frequência cardíaca em uma população maior.
+Na segunda pergunta, conforme visualizado nas  ```Figuras 8``` acima, conseguimos verificar uma diminuição considerada da frequência cardíaca máxima (```fcmax```) dos pacientes, o que sugere uma melhora de saúde cardiovascular, porém não houve uma diminuição considerável nos índices de frequência cardíaca média (```fcmedia```) e mínima (```fcmínima```). Sendo assim, observamos uma tendência de diminuição da ```fcmax```, porém dada limitação de tamanho do nosso cohorte analisado, poderemos ser mais conclusivos quanto ao impacto positivo na frequência cardíaca em uma população maior.
 
 ### **QP3:** A melhora do índice de dessaturação de oxigênio (```IDO```) em pacientes com apneia do sono, consequentemente, melhora a frequência cardíaca dos pacientes tratados com aparelho intraoral de avanço mandibular?
 
 Para nossa última pergunta, conforme análise de correlação nas ```Figuras 9, 10 e 11, 12 e 13```, apesar de observarmos a melhora das duas variáveis (```IDO``` e ```frequência cardíaca maxima```) no período analisado, não encontramos uma correlação significativa entre ambas - Algo que pudéssemos concluir que uma variável está influenciando a outra com certeza. Expandimos nossa análise para outros estudos (como em Use of mandibular advancement devices for the treatment of primary snoring with or without obstructive sleep apnea (OSA): A systematic review; De Meyer, MMD; Vanderveken, OM; (...); Jacquet, W; Apr 2021; Sleep Medicine Reviews) nesta área e não encontramos outros estudos, com bases de dados diferentes, que concluam, baseados em dados, que ```IDO``` e frequência cardíaca sejam fortemente relacionados.
 
-Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há alguns fatores contextuais dos pacientes (como comorbidades, hábitos e estado no dia do exame) que acabam não sendo informados pelos pacientes e que podem influenciar tanto o IDO quanto a ```frequência cardíaca maxima```.
-
-
-# **Bibliografia**
-
-> - [1] Mitra, Amal K., Azad R. Bhuiyan, and Elizabeth A. Jones. 2021. "Association and Risk Factors for Obstructive Sleep Apnea and Cardiovascular Diseases: A Systematic Review" Diseases 9, no. 4: 88. https://doi.org/10.3390/diseases9040088
-> - [2] Yeghiazarians, Y., Jneid, H., Tietjens, J. R., Redline, S., Brown, D. L., El-Sherif, N., ... & Somers, V. K. (2021). Obstructive sleep apnea and cardiovascular disease: a scientific statement from the American Heart Association. Circulation, 144(3), e56-e67.
-> - [3] Bauters, F., Rietzschel, E.R., Hertegonne, K.B.C. et al. 2016. The Link Between Obstructive Sleep Apnea and Cardiovascular Disease. Curr Atheroscler Rep 18, 1. https://doi.org/10.1007/s11883-015-0556-z
-> - [4] Ramar K, Dort LC, Katz SG, Lettieri CJ, Harrod CG, Thomas SM, et al. 2015. Clinical practice guideline for the treatment of obstructive sleep apnea and snoring with oral appliance therapy: an update for 2015. J Clin Sleep Med. 2015 Jul 15;11(7):773-827.
-> - [5] Aarab G, Lobbezoo F, Heymans MW, Hamburger HL, Naeije M. Long-term follow-up of a randomized controlled trial of oral appliance therapy in obstructive sleep apnea. Respiration. 2011 Mar 31;82(2):162-8.
-> - [6] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-68.
-> - [7] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
-> - [8] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
+Precisamos considerar, ainda, como explicamos junto a ```Figura 6```, que há alguns fatores contextuais dos pacientes (como comorbidades, hábitos e estado no dia do exame) que acabam não sendo informados pelos pacientes e que podem influenciar tanto o IDO quanto a ```frequência cardíaca maxima```.
 
 
 # **Referências bibliográficas**
@@ -424,13 +412,8 @@ Precisamos considerar, ainda, como explicamos junto a ```Figura 5```, que há al
 > - [3] Camañes-Gonzalvo S, Bellot-Arcís C, Marco-Pitarch R, et al. Comparison of the phenotypic characteristics between responders and non-responders to obstructive sleep apnea treatment using mandibular advancement devices in adult patients: Systematic review and meta-analysis. Sleep Med Rev. 2022;64:101644. doi:10.1016/j.smrv.2022.101644
 > - [4] Pattipati M, Gudavalli G, Zin M, et al. Continuous Positive Airway Pressure vs Mandibular Advancement Devices in the Treatment of Obstructive Sleep Apnea: An Updated Systematic Review and Meta-Analysis. Cureus. 2022;14(1):e21759. Published 2022 Jan 31. doi:10.7759/cureus.21759
 > - [5] Rashid NH, Zaghi S, Scapuccin M, Camacho M, Certal V, Capasso R. The Value of Oxygen Desaturation Index for Diagnosing Obstructive Sleep Apnea: A Systematic Review. Laryngoscope. 2021;131(2):440-447. doi:10.1002/lary.28663
-
-> - [6] Yeghiazarians Y, Jneid H, Tietjens JR, et al. Obstructive Sleep Apnea and Cardiovascular Disease: A Scientific Statement From the American Heart Association [published correction appears in Circulation. 2022 Mar 22;145(12):e775]. Circulation. 2021;144(3):e56-e67. doi:10.1161/CIR.0000000000000988
-> - [7] Mitra AK, Bhuiyan AR, Jones EA. Association and Risk Factors for Obstructive Sleep Apnea and Cardiovascular Diseases: A Systematic Review. Diseases. 2021;9(4):88. Published 2021 Dec 2. doi:10.3390/diseases9040088
-> - [8] Ali SS, Oni ET, Warraich HJ, et al. Systematic review on noninvasive assessment of subclinical cardiovascular disease in obstructive sleep apnea: new kid on the block!. Sleep Med Rev. 2014;18(5):379-391. doi:10.1016/j.smrv.2014.01.004
-> - [9] Bauters, F., Rietzschel, E.R., Hertegonne, K.B.C. et al. 2016. The Link Between Obstructive Sleep Apnea and Cardiovascular Disease. Curr Atheroscler Rep 18, 1. 
-> - [10] Ramar K, Dort LC, Katz SG, Lettieri CJ, Harrod CG, Thomas SM, et al. 2015. Clinical practice guideline for the treatment of obstructive sleep apnea and snoring with oral appliance therapy: an update for 2015. J Clin Sleep Med. 2015 Jul 15;11(7):773-827.
-> - [11] Aarab G, Lobbezoo F, Heymans MW, Hamburger HL, Naeije M. Long-term follow-up of a randomized controlled trial of oral appliance therapy in obstructive sleep apnea. Respiration. 2011 Mar 31;82(2):162-8.
-> - [12] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-6.
-> - [13] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
-> - [14] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
+> - [6] Ramar K, Dort LC, Katz SG, Lettieri CJ, Harrod CG, Thomas SM, et al. 2015. Clinical practice guideline for the treatment of obstructive sleep apnea and snoring with oral appliance therapy: an update for 2015. J Clin Sleep Med. 2015 Jul 15;11(7):773-827.
+> - [7] Aarab G, Lobbezoo F, Heymans MW, Hamburger HL, Naeije M. Long-term follow-up of a randomized controlled trial of oral appliance therapy in obstructive sleep apnea. Respiration. 2011 Mar 31;82(2):162-8.
+> - [8] Schwartz M, Acosta L, Hung YL, Padilla M, Enciso R. 2018. Effects of CPAP and mandibular advancement device treatment in obstructive sleep apnea patients: a systematic review and meta-analysis. Sleep Breath. 2018 Sep;22(3):555-6.
+> - [9] Barbosa, D. F., Giannasi, L. C., Ferreira, L. M. D. B., Alves, M. C., & Berzin, F. (2020). A singular oral appliance to treat obstructive sleep apnea in CPAP non-adherent patients. Dental Press Journal of Orthodontics, 25, 44-50.
+> - [10] Barbosa, D. F., Meira e Cruz, M., Alves, M. C., Zancanella, E., Berzin, F., & Júnior, A. J. M. (2022). Effectiveness of a uniquely designed oral appliance on obstructive sleep apnea control: a pilot study. European Journal of Dentistry, 16(03), 564-572.
