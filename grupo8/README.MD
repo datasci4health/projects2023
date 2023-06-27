@@ -277,3 +277,17 @@ predicting 1-year mortality in diabetic and non-diabetic acute myocardial infarc
 patients. Cardiovasc Diabetol (2021) 20(1):211. doi: 10.1186/s12933-021-01395-3.
 
 Bell DSH, Goncalves E. Case Report: Efficient Avoidance of Hospitalization for Diabetic Ketosis Utilizing Technosphere Inhaled Insulin. Diabetes Ther. 2020 May;11(5):1175-1177. doi: 10.1007/s13300-020-00809-x. Epub 2020 Apr 9. PMID: 32270387; PMCID: PMC7192987.
+
+Lim BL, Lee WF, Lee B, Chung YEL, Loo KV. Subcutaneous fast-acting insulin analogues, alone or in combination with long-acting insulin, versus intravenous regular insulin infusion in patients with diabetic ketoacidosis: protocol for an updated systematic review and meta-analysis of randomised trials. BMJ Open. 2023 Feb 10;13(2):e070131. doi: 10.1136/bmjopen-2022-070131. PMID: 36764729; PMCID: PMC9923333.
+
+Barcelos, L.F., Aquino, J.L. (Eds.). (2018). Tratado de Análises Clínicas (1ª ed.). Rio de Janeiro: Atheneu.
+
+Gaw, A., Murphy, M. J., Srivastava, R., Cowan, R. A., O'Reilly, D. S. J. (2015). Clinical Biochemistry. 5th edition. Rio de Janeiro: Elsevier.
+
+Caquet, R. (2017). 250 exames de laboratório: prescrição e interpretação. 12ª edição. Rio de Janeiro, RJ: Thieme Revinter Publicações.
+
+Marshall, W. J. (2013). Química clínica. Rio de Janeiro: Elsevier.
+
+McPherson, R. A., & Pincus, M. R. (Eds.). (2017). Henry's clinical diagnosis and management by laboratory methods (23rd ed.). St. Louis, Missouri: Elsevier.
+
+Burtis, C. A., Bruns, D. E. (Eds.). (2016). Tietz fundamentos de química clínica e diagnóstico molecular (1st ed.). Rio de Janeiro: Elsevier.
