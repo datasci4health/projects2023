@@ -137,7 +137,7 @@ Usuários que possuem problema em atividade X depressão
 
 No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde contagem das pessoas vs problemas de atividades físicas:
 
-'''
+```
 
 0	I have no problems doing my usual activities  
 
@@ -153,9 +153,9 @@ No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde cont
 
 6	N/A
 
-'''
+```
 
-![Grafico 6](./assets/g6.jpg)
+![Grafico 6](./assets/g6.png)
 
 Podemos observar que o grupo de range 1: com quantidade de 12.000 pessoas tem pequenos problemas em fazer atividades habituais comparado ao grupo 0 na qual não possui nenhuma atividade. E em relação ao grupo de range de atividades 2: onde possui 6.000 pessoas tem moderados problemas ao realizarem atividades habituais. Enquanto os demais grupos de ranges de atividades 3 possuem severos problemas em realizar atividades habituais e o 6 apresentaram 9.000 pessoas que não responderam.
 
@@ -167,11 +167,11 @@ Range 0: não possui depressão
 
  Diante da análise desse gráfico, foi possível concluir que não houve diferença significativa entre os grupos 0 e 1, com 15440 pessoas sem depressão e 13832 pacientes com depressão
 
-'''
+```
 
  video da analise feita pelo orange: https://youtu.be/5N9QGw55-Qo
 
-'''
+```
 
 Utilizando questionários respondidos por pessoas entre 51 e 86 anos, constatamos que uma grande quantidade de participantes apresentava problemas de mobilidade associados ao Parkinson. Mais da metade relatou dificuldades de locomoção devido à condição. Além disso, uma proporção significativa dessas pessoas manifestava sintomas de ansiedade e depressão. Esses resultados ressaltam a correlação entre os problemas de mobilidade decorrentes do Parkinson e os sintomas de ansiedade e depressão, destacando a importância de abordar não apenas os aspectos motores, mas também os emocionais e psicológicos da doença
 
@@ -201,7 +201,7 @@ Inicialmente realizamos uma analise exploratoria no banco de dados, Michael J. F
 
 Para responder as perguntas de pesquisa analisamos a relação entre exercício físico, parkinson e  depresão, o estudo foi dividido em três partes:
 
-'''
+```
 
 1 - Duração das atividades fisicas realizadas;
  
@@ -209,7 +209,7 @@ Para responder as perguntas de pesquisa analisamos a relação entre exercício 
 
 3 - Intensidade dos exercícios.
 
-'''
+```
 
 
 ![Grafico 12](./assets/intensidade/ativ-com.jpg)
@@ -243,9 +243,63 @@ O gráfico mostra os sintomas de Parkinson em pacientes com depressão. Os pacie
 O gráfico apresenta os sintomas de Parkinson em pacientes sem depressão. Os pacientes foram avaliados quanto aos sintomas de tremor, sono sintomático e outros sintomas, utilizando uma escala de <2 (ruim) a > 7 (bom). Participaram da pesquisa 20 pacientes. No primeiro grupo, 15 pacientes relataram ter sintomas de tremor, 7 pacientes apresentaram sono sintomático e 3 pacientes relataram outros sintomas. No segundo grupo, 10 pacientes apresentaram sintomas de tremor, 7 pacientes relataram sono sintomático e 4 pacientes relataram outros sintomas. No terceiro grupo, 15 pacientes apresentaram sintomas de tremor, 18 pacientes relataram sono sintomático e 6 pacientes relataram outros sintomas. No quarto grupo, 16 pacientes apresentaram sintomas de tremor, 17 pacientes relataram sono sintomático e 4 pacientes relataram outros sintomas. No quinto grupo, 17 pacientes apresentaram sintomas de tremor, 24 pacientes relataram sono sintomático e 22 pacientes relataram outros sintomas. No sexto grupo, 3 pacientes apresentaram sintomas de tremor e 3 pacientes apresentaram sintoma de sono sintomático. No sétimo grupo, 3 pacientes relataram sintomas de tremor e 4 pacientes relataram sintoma de sono sintomático. No oitavo grupo, 3 pacientes apresentaram os três sintomas juntos: tremor, sono sintomático e outros sintomas.
 
 
-Depois da análise exploratória foi modelado 4 modelos clássicos com as nossas bases de dados, uma SVM, Regressão Logística, Random Forest e um K — Nearest Neighbors
+Depois da análise exploratória foi modelado 4 modelos clássicos com as nossas bases de dados, uma SVM, Regressão Logística, Random Forest e um K — Nearest Neighbors. Primeiramente, foi realizado em cada estilo de feature separada, foi plotada uma matriz de confusão e visto o resultado final de cada modelo.
+
+Para as features diárias, que inclui mobilidade, auto-cuidado, atividade cotidiana, dores diárias, trabalho e atividade no trabalho, os resultados de acurácia e precisão foram:
+
+| Modelo   | Acurácia | Precisão |
+| ------------- | ------------- | ------------- |
+| SVM  | 58%  | 59% |
+| Regressão Logística | 60% | 60% |
+| KNN | 56% | 56% |
+| Random Forest | 55% | 54% |
+
+Para as features de intensidade, que inclui esportes leves, moderados e intensos, os resultados de acurácia e precisão foram:
+
+| Modelo   | Acurácia | Precisão |
+| ------------- | ------------- | ------------- |
+| SVM  | 58%  | 58% |
+| Regressão Logística | 54% | 54% |
+| KNN | 45% | 50% |
+| Random Forest | 58% | 58% |
 
 
+Os resultados ruins desse modelo pode vir a ser devido às poucas features colocadas no modelo, sendo o total de 3, e ao número de pessoas que não responderam totalmente o questionário, 5053 pacientes entre mais de 20000, como para esse caso foi passado o valor '-1' para verificar como o modelo iria reagir à dados não respondidos. Pode vir também com o fator de que não somente a intensidade vir a justificar a ansiedade, podendo ser somente uma recomendação médica de uma possível tendência dos dados.
+
+Para as features de duração, que inclui tempo feito em esportes leves, moderados e intensos, tempo sentado no dia a dia e tempo feito em atividades vigorosas durante a semana, os resultados de acurácia e precisão foram:
+
+| Modelo   | Acurácia | Precisão |
+| ------------- | ------------- | ------------- |
+| SVM  | 57%  | 58% |
+| Regressão Logística | 57% | 58% |
+| KNN | 51% | 52% |
+| Random Forest | 56% | 56% |
+
+Da mesma forma que os modelos das features anteriores, é possível também ser apenas uma recomendação médica com a tendência dos dados, porém não somente a duração sozinha das atividades pode vir a levar algo mais impactante, e sim com a intensidade e mais algo.
+
+
+Para as features de risco, que inclui nível de estresse, tremor, dificuldade de dormir e outros sintomas, os resultados de acurácia e precisão foram:
+
+| Modelo   | Acurácia | Precisão |
+| ------------- | ------------- | ------------- |
+| SVM  | 53%  | 46% |
+| Regressão Logística | 53% | 55% |
+| KNN | 53% | 48% |
+| Random Forest | 53% | 50% |
+
+Mais um caso em que os riscos sozinhos podem não impactar diretamente na depressão, porém nesse modelo em específico houve um número muito grande de pessoas que não responderam as questões de dificuldades, como por exemplo, em dificulade de dormir 29202 pessoas não responderam a pergunta, virando a grande maioria, impactando também o resultado final desses modelos.
+
+
+Finalmente, foi criado um modelo em que se junta todas as features em um só, cujos resultados foram:
+
+| Modelo   | Acurácia | Precisão |
+| ------------- | ------------- | ------------- |
+| SVM  | 61%  | 61% |
+| Regressão Logística | 61% | 61% |
+| KNN | 57% | 56% |
+| Random Forest | 59% | 59% |
+
+Foi possível ver um pequeno aumento nas métricas, porém ainda não muito satisfatório, podendo ser justificado talvez pela simplicidade do modelo ou de como perguntas não respondidas foram tratadas, para um trabalho futuro é possível tentar um modelo mais complexo para verificar como ele poderia reagir as features ou tratar de outra forma perguntas não respondidas, podendo ser retiradas, colocando uma média de acordo com a idade, ou fazendo um tratamento um pouco mais complexo no momento de substituição.
 
 # Discussão
 com base no  artigo que motivou esse estudo, cujo objetivo foi investigar os efeitos a longo prazo da atividade física regular e dos hábitos de exercício na progressão da doença de Parkinson (DP). Este estudo utilizou dados da Parkinson's Disease Progression Marker Initiative (PPMI), que inclui avaliação longitudinal de parâmetros clínicos em pacientes com doença de Parkinson. Os pesquisadores levaram em consideração fatores de confusão como idade, sexo, dose equivalente de levodopa(remédio) e duração da doença para determinar os efeitos da interação entre atividade física regular e moderada a vigorosa no curso dos parâmetros clínicos.
