@@ -100,28 +100,29 @@ Inicialmente foi feita uma limpeza de valores incorretos sobre a idade dos parti
 A análise pode ser vista em data/external/bases adotadas 
 ### Integração entre Bases e Análise Exploratória
 
-No Gráfico 1  é representado o nível de ansiedade vs a mobilidade. A mobilidade na base de dados é descrita e classificada como: 
+No Gráfico 1  é representado o nível de ansiedade vs a mobilidade. A mobilidade na base de dados é descrita e classificada como nenhuma dificuldade para se locomover até extrema dificuldade, na sua maioria das vezes nem conseguindo ter sua locomoção sozinho.
 
 ![Grafico 1](./assets/exp/mob-semXcom.jpg)
 
-Foi possível observar que quanto menor a mobilidade do paciente maior o nível de ansiedade. 
+Foi possível observar que quanto menor a mobilidade do paciente maior o nível de ansiedade, em casos que não há dificuldade para locomoção possui 4965 pacientes sem depressão para 2776 com depressão, já no nível moderado a extremo somados há 2872 pacientes sem depressão e 4.111 com depressão. 
 
-No Gráfico 2  é representado o nível de ansiedade vs autocuidado. A autocuidado na base de dados é descrita e classificada como:
+No Gráfico 2  é representado o nível de ansiedade vs autocuidado. A autocuidado na base de dados é descrita e classificada da mesma forma que a mobilidade, em que não há problemas para se cuidar para possui extrema dificuldade.
 
 ![Grafico 2](./assets/exp/care-semXcom.jpg)
 
 Diante disso, é visto que há uma relação similar entre a mobilidade e o autocuidado, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor.
 
-No Gráfico 3  é representado o nível de ansiedade vs atividade. A atividade na base de dados é descrita e classificada como:
+No Gráfico 3  é representado o nível de ansiedade vs dificuldade para realizar atividades cotidianas. 
 
 ![Grafico 3](./assets/exp/act-semXcom.png)
 
-No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dados é descrita e classificada como:
+No Gráfico 4 é representado o nível de ansiedade vs dor. A dor na base de dados é descrita e classificada como o paciente não sentir nenhuma dor no seu dia a dia até sentir extrema dor.
 
 ![Grafico 4](./assets/exp/pain-semXcom.jpg)
 
 
-Foi possível observar que quanto menor a ansiedade do paciente menor o nível de dor. 
+Foi possível observar que quanto menor a ansiedade do paciente menor o nível de dor, com número de pacientes com nenhuma/pouca dor sem depressão sendo 10037 e com depressão 6464, já entre as dores de moderada a extrema são 3297 sem depressão para 4880 com depressão.
+
  Diante disso, é visto que há uma relação entre a mobilidade, autocuidado e realização de atividade, pois se o paciente consegue realizar atividades de forma independente o nível de ansiedade demonstrado pelo gráfico é menor. Sendo assim, conclui-se que ansiedade pode ser apresentada em pacientes de parkinson com a maior perda de mobilidade e mudanças severas na rotina. 
 
 ![Grafico 5](./assets/exp/idade-semXcom.jpg)
@@ -129,12 +130,14 @@ Foi possível observar que quanto menor a ansiedade do paciente menor o nível d
 No gráfico, 5, há a distribuição dos grupos de pessoas em idades por ranges
 
 
- A partir da análise do gráfico, é possível concluir que o range 1, com pessoas entre 31 e 57 anos, representa o grupo de idade mais afetado pela doença, com mais de 12.000 pacientes. Os ranges 2, 3 e 4, apresentam praticamente os mesmos números de pessoas, com aproximadamente 10.000 em cada um. Já o range 0, com pessoas entre 18 e 30 anos apresenta o menor índice, com menos de 1.000 pessoas.
+ A partir da análise do gráfico, é possível concluir que pessoas entre 31 e 57 anos, representa o grupo de idade mais afetado pela doença, com mais de 12.000 pacientes. Já pacientes com mais de 60 anos, apresentam praticamente os mesmos números de pessoas, com aproximadamente 10.000 em cada um. Já o range 0, com pessoas entre 18 e 30 anos apresenta o menor índice, com menos de 1.000 pessoas.
 
 Usuários que possuem problema em atividade X depressão
 
 
 No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde contagem das pessoas vs problemas de atividades físicas:
+
+'''
 
 0	I have no problems doing my usual activities  
 
@@ -149,37 +152,26 @@ No gráfico, 6, há a distribuição dos grupos de pessoas por ranges, onde cont
 5	Prefer not to answer
 
 6	N/A
-Range de atividades 0: Qtda de pessoas 16.000
 
-Range de atividades 1: Qtda de pessoas 12.000
+'''
 
-Range de atividades 2: Qtda de pessoas 6.000
-
-Range de atividades 3: Qtda de pessoas 0
-
-Range de atividades 4: Qtda de pessoas 500
-
-Range de atividades 5: Qtda de pessoas 1000
-
-Range de atividades 6: Qtda de pessoas 9000
+![Grafico 6](./assets/g6.jpg)
 
 Podemos observar que o grupo de range 1: com quantidade de 12.000 pessoas tem pequenos problemas em fazer atividades habituais comparado ao grupo 0 na qual não possui nenhuma atividade. E em relação ao grupo de range de atividades 2: onde possui 6.000 pessoas tem moderados problemas ao realizarem atividades habituais. Enquanto os demais grupos de ranges de atividades 3 possuem severos problemas em realizar atividades habituais e o 6 apresentaram 9.000 pessoas que não responderam.
 
 O gráfico 7 representa a contagem de pessoas com problemas de depressão, classificadas em ranges:
 Range 0: não possui depressão
 
-Range 1: possui depressão 
 
-Range 3: preferiram não responder
+![Grafico 7](./assets/exp/temdep.jpg)
 
-Range 4: dados não foram disponibilizados
+ Diante da análise desse gráfico, foi possível concluir que não houve diferença significativa entre os grupos 0 e 1, com 15440 pessoas sem depressão e 13832 pacientes com depressão
 
- Diante da análise desse gráfico, foi possível concluir que não houve diferença significativa entre os grupos 0 e 1, representando algo em torno de 1.000 pessoas. A quantidade de pessoas no range 3 ou não é significativa a ponto de aparecer no gráfico, ou não existem pessoas nesse grupo. Já o range 4, incluiu mais de 40.000 pessoas que não tiveram essa informação disponibilizada.
-
-
-imagens dos  ultilizadas gráficos na análise estão no arquivo data/external/bases adotadas/analisys.ipynb 
+'''
 
  video da analise feita pelo orange: https://youtu.be/5N9QGw55-Qo
+
+'''
 
 Utilizando questionários respondidos por pessoas entre 51 e 86 anos, constatamos que uma grande quantidade de participantes apresentava problemas de mobilidade associados ao Parkinson. Mais da metade relatou dificuldades de locomoção devido à condição. Além disso, uma proporção significativa dessas pessoas manifestava sintomas de ansiedade e depressão. Esses resultados ressaltam a correlação entre os problemas de mobilidade decorrentes do Parkinson e os sintomas de ansiedade e depressão, destacando a importância de abordar não apenas os aspectos motores, mas também os emocionais e psicológicos da doença
 
@@ -190,6 +182,9 @@ O Fluxograma representa as epatas realizadas realizar a ánalise:
 
 ![Figura 1](./assets/fluxograma-analise.png)
 
+Como a base de dados é bem grande, tivemos que analisar as features, comparando suas correlações, a sua importância para as perguntas de pesquisa e a sua similaridade de resposta (perguntas que possuem o mesmo significado de forma diferente). Depois dessa seleção e verificação de features, as bases foram divididas de acordo com as perguntas, tendo features em relação a intensidade de exercício, duração, riscos associados e dados em relação ao dia a dia de cada paciente.
+
+A partir de cada dataframe foi feita uma análise individual, com uma exploração de dados, ao final foram testados os 4 modelos clássicos de machine learning em cada um dos dataframes individuais e na junção de todas essas features juntas.
 # Ferramentas 
 Ferramenta de dados de linguagem  Python e Orange para design dos gráficos 
 # Resultados
@@ -199,24 +194,29 @@ Ferramenta de dados de linguagem  Python e Orange para design dos gráficos
 Pacientes com Parkinson, com e sem depressão, de acordo com a faixa etária. Grupos de pacientes com até 60 anos, com e sem depressão não apresentam diferença significativa entre os grupos. A partir dos 60 anos, o número de pacientes com Parkinson aumenta, e dentre eles, a maioria não possui depressão. Por volta dos 70 anos, a quantidade de pacientes com a doença começa a diminuir e até os 80 anos é a fase que mais apresenta pacientes sem depressão quando comparado com o grupo com a doença. Dos 80 aos 90 anos, há o declínio no total de pacientes, justificado pelo aumento da mortalidade dos pacientes com a doença nessa faixa etária, no entanto, o grupo ausente de depressão ainda se sobrepõe ao grupo com depressão..
 
 ![Grafico 11](./assets/hist_Anxious.jpg)
+
 Segundo o histograma, mais de 12000 pessoas com Parkinson não apresentam ansiedade ou depressão, aproximadamente 9.000 pessoas apresentam baixos níveis. Quase 4.000 pessoas têm quadros moderados. Menos de 1.000 pessoas apresentam quadros mais severos e/ou extremos de ansiedade ou depressão.
 
 Inicialmente realizamos uma analise exploratoria no banco de dados, Michael J. Fox Foundation, como obejetivo de obter dados basicos sobre a população representada no banco. Diante disso, percebemos que existem entre 8000 e 10000 pacientes portadores de Parkison e depressão, classificado entre pouco, moderado, severo e extremo. 
 
 Para responder as perguntas de pesquisa analisamos a relação entre exercício físico, parkinson e  depresão, o estudo foi dividido em três partes:
 
- Duração das atividades fisicas realizadas;
- 
-Riscos das atividades ;
+'''
 
-intensidade. 
+1 - Duração das atividades fisicas realizadas;
+ 
+2 - Riscos das atividades ;
+
+3 - Intensidade dos exercícios.
+
+'''
 
 
 ![Grafico 12](./assets/intensidade/ativ-com.jpg)
 
 ![Grafico 13](./assets/intensidade/ativ-sem.jpg)
 
-Comparando os resultados dos graficos de distribuição de pacientes que realizam atividades fisica com/sem depressão, é observado que os pacientes sem depressão tem mais constância nos exercicios fisicos. Além disso, a mesma tentencia é confirmada na intensidade dos exercícios leve,modera e severo. 
+Comparando os resultados dos graficos de distribuição de pacientes que realizam atividades fisica com/sem depressão, é observado que os pacientes sem depressão tem mais constância nos exercicios fisicos. Além disso, a mesma tentencia é confirmada na intensidade dos exercícios leve, moderada e intensa. 
 
 ![Grafico 14](./assets/intensidade/leve-semXcom.jpg)
 
@@ -227,11 +227,23 @@ Comparando os resultados dos graficos de distribuição de pacientes que realiza
 Sintomas de Parkinson em pacientes com depressão: De acordo com o gráfico, foram classificados sintomas como tremor, sono e outros em pacientes com depressão. Os sintomas foram classificados na escala de 0 a 8, e os números foram atribuídos a ruins e bons, representados no eixo x e o número de pacientes está representado no eixo y. A classificação mais alta, abaixo de 2, é considerada ruim relacionada ao sono em pacientes com depressão. Na classificação de tremor, o nível 3 apresenta o maior número de pacientes. Já na classificação outros, a faixa com maior número de pacientes está entre 5 e 6.
 
 ![Grafico17](./assets/duracao/pa1a-semXcom.jpg)
- Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 2.000 e acima de 10.000. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 4 horas.  De 100 pacientes que constam de depressão apresentaram tempo de atividade entre < 1hora comparado ao grupo de 150 pacientes sem depressão com aumento significativo. Já no decorrer do tempo de de 1-2h a 4h em que o número de pacientes entre abaixo de 1000 e 9.000 do grupo com depressão apresentaram baixa atividade física em relação ao grupo sem depressão, o número de pacientes entre abaixo de 2000 e 10.000 apresentaram maior interação nas atividades.
+
+O gráfico mostra a duração das atividades físicas de pacientes que estão sentados devido à perda de mobilidade. Podemos observar que há uma relação entre a quantidade de pacientes, com valores abaixo de 2.000 e acima de 10.000, e o tempo de duração das atividades, com valores abaixo de 1 hora e acima de 4 horas. Dos 100 pacientes com depressão, a maioria teve atividades com duração inferior a 1 hora, em comparação com o grupo de 150 pacientes sem depressão. No intervalo de 1-2 horas até 4 horas, o número de pacientes com depressão teve baixa atividade física em comparação com o grupo sem depressão, e houve maior interação nas atividades com o aumento do número de pacientes.
 
 ![Grafico18](./assets/duracao/pa7a-semXcom.jpg)
-Gráfico: Tempo de duração de atividades físicas dos pacientes que se encontram sentados devido a perda de mobilidade. Podemos observar a relação de quantidade de pacientes  abaixo de 10 e acima de 40. Correlacionados ao tempo de duração entre abaixo de 1 hora e acima de 10 horas.  De 40 pacientes que constam de depressão e 50 pacientes sem depressão apresentaram tempo de atividade maior significativo entre < 1hora comparado ao grupo de 30 pacientes com depressão e 35 pacientes sem depressão com tempo de atividade entre < 1-4 horas. Já no decorrer do tempo de de 5-10hs em que o número de pacientes com depressão está bem abaixo de 5 comparado ao grupo sem depressão no total de 20 pacientes. Logo, nota-se que pacientes com Parkinson sem depressão possuem uma desenvoltura maior para as atividades físicas. 
 
+O gráfico apresenta a duração das atividades físicas de pacientes que estão sentados devido à perda de mobilidade. Podemos observar que há uma relação entre a quantidade de pacientes, com valores abaixo de 10 e acima de 40, e o tempo de duração das atividades, com valores abaixo de 1 hora e acima de 10 horas. Dos 40 pacientes com depressão e dos 50 pacientes sem depressão, a maioria teve atividades com duração inferior a 1 hora, em comparação com o grupo de 30 pacientes com depressão e 35 pacientes sem depressão, que tiveram atividades com duração entre 1 e 4 horas. No intervalo de 5-10 horas, o número de pacientes com depressão foi significativamente menor em comparação ao grupo sem depressão, com um total de 20 pacientes. Portanto, nota-se que pacientes com Parkinson sem depressão apresentam uma maior desenvoltura nas atividades físicas.
+
+![Grafico19](./assets/riscos/sintomas-com.jpg)
+
+O gráfico mostra os sintomas de Parkinson em pacientes com depressão. Os pacientes foram questionados sobre sintomas como tremor, sono sintomático e outros sintomas, em uma escala de <2 (ruim) a > 7 (bom). Participaram da pesquisa 20 pacientes. Podemos observar que 20 pacientes relataram ter sintomas de tremor, 19 pacientes apresentaram sono sintomático e 7 pacientes relataram outros sintomas. No segundo grupo, 14 pacientes apresentaram sintomas de tremor, 11 pacientes relataram sono sintomático e 5 pacientes relataram outros sintomas. No terceiro grupo, 30 pacientes apresentaram sintomas de tremor, 12 pacientes relataram sono sintomático e 6 pacientes relataram outros sintomas. No quarto grupo, 6 pacientes apresentaram sintomas de tremor, 16 pacientes relataram sono sintomático e 3 pacientes relataram outros sintomas. No quinto grupo, 5 pacientes apresentaram sintomas de tremor, 18 pacientes relataram sono sintomático e 11 pacientes relataram outros sintomas. No sexto grupo, 4 pacientes apresentaram sintomas de tremor e 4 pacientes apresentaram sintoma de sono sintomático. No sétimo grupo, apenas 2 pacientes relataram outros sintomas.
+
+![Grafico20](./assets/riscos/sintomas-sem.jpg)
+
+O gráfico apresenta os sintomas de Parkinson em pacientes sem depressão. Os pacientes foram avaliados quanto aos sintomas de tremor, sono sintomático e outros sintomas, utilizando uma escala de <2 (ruim) a > 7 (bom). Participaram da pesquisa 20 pacientes. No primeiro grupo, 15 pacientes relataram ter sintomas de tremor, 7 pacientes apresentaram sono sintomático e 3 pacientes relataram outros sintomas. No segundo grupo, 10 pacientes apresentaram sintomas de tremor, 7 pacientes relataram sono sintomático e 4 pacientes relataram outros sintomas. No terceiro grupo, 15 pacientes apresentaram sintomas de tremor, 18 pacientes relataram sono sintomático e 6 pacientes relataram outros sintomas. No quarto grupo, 16 pacientes apresentaram sintomas de tremor, 17 pacientes relataram sono sintomático e 4 pacientes relataram outros sintomas. No quinto grupo, 17 pacientes apresentaram sintomas de tremor, 24 pacientes relataram sono sintomático e 22 pacientes relataram outros sintomas. No sexto grupo, 3 pacientes apresentaram sintomas de tremor e 3 pacientes apresentaram sintoma de sono sintomático. No sétimo grupo, 3 pacientes relataram sintomas de tremor e 4 pacientes relataram sintoma de sono sintomático. No oitavo grupo, 3 pacientes apresentaram os três sintomas juntos: tremor, sono sintomático e outros sintomas.
+
+
+Depois da análise exploratória foi modelado 4 modelos clássicos com as nossas bases de dados, uma SVM, Regressão Logística, Random Forest e um K — Nearest Neighbors
 
 
 
