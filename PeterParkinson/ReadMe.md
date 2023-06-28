@@ -203,11 +203,11 @@ Para responder as perguntas de pesquisa analisamos a relação entre exercício 
 
 ```
 
-1 - Duração das atividades fisicas realizadas;
+1 - Intensidade dos exercícios;
  
-2 - Riscos das atividades ;
+2 - Duração das atividades fisicas realizadas;
 
-3 - Intensidade dos exercícios.
+3 - Riscos das atividades.
 
 ```
 
@@ -220,9 +220,9 @@ Comparando os resultados dos graficos de distribuição de pacientes que realiza
 
 ![Grafico 14](./assets/intensidade/leve-semXcom.jpg)
 
-![Grafico 15](./assets/intensidade/pes-semXcom.jpg)
+![Grafico 15](./assets/intensidade/mod-semXcom.jpg)
 
-![Grafico 16](./assets/intensidade/mod-semXcom.jpg)
+![Grafico 16](./assets/intensidade/pes-semXcom.jpg)
 
 Sintomas de Parkinson em pacientes com depressão: De acordo com o gráfico, foram classificados sintomas como tremor, sono e outros em pacientes com depressão. Os sintomas foram classificados na escala de 0 a 8, e os números foram atribuídos a ruins e bons, representados no eixo x e o número de pacientes está representado no eixo y. A classificação mais alta, abaixo de 2, é considerada ruim relacionada ao sono em pacientes com depressão. Na classificação de tremor, o nível 3 apresenta o maior número de pacientes. Já na classificação outros, a faixa com maior número de pacientes está entre 5 e 6.
 
