@@ -218,10 +218,9 @@ As análises realizadas já contam com os dados após as transformações e trat
 
 
 ## Integração entre Bases e Análise Exploratória
-substituir pelo pns
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Base do Aterolab | [link sobre o laboratório](https://intranet.fcm.unicamp.br/cadlab/laboratorios/laboratorio.php?idLab=5002) | Base de dados coletada em laboratório da Faculdade de Ciências Médicas da Unicamp, com coorte de 5 a 6 anos, de acompanhamento anual com mais de 1000 pacientes. O objetivo é acompanhar pacientes já diabéticos observando quais fatores de risco levam a desfechos cardiovasculares e em quanto tempo.
+Base da PNS | [link sobre o PNS](https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html) | A Pesquisa Nacional de Saúde (PNS) é um inquérito domiciliar realizado pelo Ministério da Saúde e IBGE em 2013 e 2019. É a maior e mais completa pesquisa de saúde do Brasil, fornecendo dados representativos sobre a saúde da população e subsidiando políticas públicas na área.
 
 # Modelagem
 
@@ -261,6 +260,35 @@ O gráfico mostra as métricas para o modelo final encontrado a partir de busca 
 Em comparação com os trabalhos relacionados, o nosso modelo apresentou um resultado competitivo, com destaque para a ROC-AUC, métrica amplamente utilizada no contexto de saúde. Add referências
 
 ## Estudo de Caso
+
+No estudo de caso, foi feito uma modificação na base do PNS/IBGE para que pudessemos testar a base e comparar com o nosso resultado gerado a partir da base do Vigitel. A cada região prevalece uma métrica diferente, assim como na imagem abaixo.
+<figure>
+<figcaption align = "center"><b>Gráfico 18: AUC por região do país
+</b></figcaption>
+<img src="assets/regiao_pns.png" style="width:100%">
+</figure>
+
+Assim como na figura acima, é possível identificar as métricas por estado:
+<figure>
+<figcaption align = "center"><b>Gráfico 19: AUC por estado do país
+</b></figcaption>
+<img src="assets/regiao_pns_estado.png" style="width:100%">
+</figure>
+
+Através da ferramenta Local Interpretable Model-Agnostic Explanations (LIME), garantimos alguns resultados importantes sobre indivíduos independentes, ao testar a base do PNS. Um exemplo de explicabilidade errônea encontra-se abaixo, mencionando o fato das características ao lado da figura.
+<figure>
+<figcaption align = "center"><b>Gráfico 20: Interpretabilidade errônea
+</b></figcaption>
+<img src="assets/lime_confusao.png" style="width:100%">
+</figure>
+
+A figura abaixo menciona o fato do modelo ter acertado, de fato, a interpretabilidade final.
+<figure>
+<figcaption align = "center"><b>Gráfico 20: Interpretabilidade correta
+</b></figcaption>
+<img src="assets/lime_acerto.png" style="width:100%">
+</figure>
+
 
 # Conclusão
 Podemos concluir que nosso modelo apresentou resultado competitivo em comparação a outros modelos já existentes e que conseguimos alcançar nosso objetivo de identificar grupos de risco para a diabetes tipo 2 a partir de variáveis de fácil acesso que podem ser auto relatadas. Pensando que o público alvo que irá utilizar nosso modelo são os gestores e responsáveis técnicos, é importante manter um certo nível de explicabilidade dos resultados apresentados para que seja possível identificar e estudar a importância de cada variável.
