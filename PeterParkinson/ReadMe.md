@@ -175,6 +175,7 @@ Range 0: não possui depressão
 
 Utilizando questionários respondidos por pessoas entre 51 e 86 anos, constatamos que uma grande quantidade de participantes apresentava problemas de mobilidade associados ao Parkinson. Mais da metade relatou dificuldades de locomoção devido à condição. Além disso, uma proporção significativa dessas pessoas manifestava sintomas de ansiedade e depressão. Esses resultados ressaltam a correlação entre os problemas de mobilidade decorrentes do Parkinson e os sintomas de ansiedade e depressão, destacando a importância de abordar não apenas os aspectos motores, mas também os emocionais e psicológicos da doença
 
+
 # Análises Realizadas
 À princípio, o nosso grupo pesquisaria sobre o Alzheimer e aspectos neurológicos e genéticos, mas por conta da complexidade do assunto e do curto espaço de tempo para a realização do trabalho, tivemos que mudar a nossa pergunta de pesquisa. 
 Ao longo das nossas discussões, resolvemos pesquisar sobre a importância do exercício físico em pacientes com Parkinson. Durante as nossas pesquisas, encontramos o banco de dados do Michael J. Fox que aparentemente, é o dataset aberto mais completo em informações sobre os pacientes com Parkinson.
