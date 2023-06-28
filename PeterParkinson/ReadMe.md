@@ -310,6 +310,17 @@ No final  conclui classificando as evidências de que o estudo descobriu que aum
 Os resultados do estudo mostraram que a atividade física regular e moderada a vigorosa no início do estudo não teve impacto significativo na progressão clínica subsequente da doença de Parkinson. No entanto, os níveis médios de atividade física regular a longo prazo foram associados à estabilidade postural e da marcha, atividades da vida diária e diminuição mais lenta da velocidade de processamento em pacientes com doença de Parkinson. Os níveis de exercício moderado a intenso foram especificamente associados a declínios mais lentos na estabilidade postural e na marcha, enquanto os níveis de atividade relacionados ao trabalho foram associados principalmente a declínios mais lentos na velocidade de processamento.
 # Trabalhos Futuros
 
+Para trabalhos futuros, como mencionado anteriormente, seriam melhorar/mudar os seguintes pontos:
+
+```
+1 - Verificar modelos mais complexos para features combinadas para conferir se o resultado melhora ou nãp ;
+
+2 - Modificar a forma de tratamento de dados não respondidos, a fim de conferir o seu impacto final nos modelos ;
+
+3 - Uma análise exploratória mais profunda
+
+
+```
 # Referências Bibliográficas
 
 # Cronograma
