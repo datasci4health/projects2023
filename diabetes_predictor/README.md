@@ -247,7 +247,7 @@ Foram realizados diversos experimentos com o conjunto de validação utilizando 
 <figure>
 <figcaption align = "center"><b>Gráfico 16: Modelo Final Selecionado
 </b></figcaption>
-<img src="assets/final_model_vigitel.png" style="width:100%">
+<img src="assets/final_model_vigitel.PNG" style="width:100%">
 </figure>
 
 O gráfico mostra as métricas para o modelo final encontrado a partir de busca de hiperparâmetros e as métricas específicas para ele. Foi utilizado o SMOTE para a criação de dados sintéticos no conjunto de treino.
