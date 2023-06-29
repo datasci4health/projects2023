@@ -140,6 +140,10 @@ It is also possible to identify, in certain images, the presence of mammary glan
 
 In addition to the mentioned findings, it is possible to locate lymphocytes, which are immune system cells and have slightly larger nuclei than the cells present in the breast. Mitoses, the events in which a cell multiplies through cell division, are also present. In these cases, cells have a denser nucleus and, in some instances, an elongated shape (Anatpat, 2023). 
 
+Based on this information and multiple analyses regarding the statistics of this database on Kaggle (Merii, 2020; Mooney, 2018; Fink, 2021; Omar, 2021 and Sammari, 2021) , we could plot and get some insights about the data. 
+
+First, we have a plot presenting the number of patches per patient, second, we have a plot that highlights the percentage of an image that is composed of cancer cells, then, we can see how many patches there are on the dataset per class, where 0 represents “no cancer” and 1 the class “cancer”.
+
 
 ![Exploratory Analysis of the Patches](./assets/Patches.png)
 
@@ -299,6 +303,53 @@ Ministry of Health. Concept and Magnitude. Brazil: INCA; 2022. Available at: htt
 National Cancer Institute. United States Government: NIH; 2022. Available at: https://www.cancer.gov/types/breast/research. Accessed May 6, 2023. 
  
 UNICAMP. Department of Pathology Anatomy (Anatpat). Accessed on May 16, 2023. Available at: anatpat.unicamp.br.
+
+
+
+References
+
+Abrahamsohn, Paulo; Freitas, Vanessa. Histology: 1-23 Basic Concepts. Cellular and Development - Institute of Biomedical Sciences, University of São Paulo, 2004. Available at: https://mol.icb.usp.br/index.php/1-23-conceitos-basicos/.
+
+Aksac A, Demetrick DJ, Ozyer T, et al. BreCaHAD: A dataset for breast cancer histopathological annotation and diagnosis. BMC Res Notes.2019;12:82.
+
+Aquino, R. G. F. D., Vasques, P. H. D., Cavalcante, D. I. M., Oliveira, A. L. D. S., Oliveira, B. M. K. D., & Pinheiro, L. G. P. (2017). Invasive ductal carcinoma: the relationship between pathological characteristics and the presence of axillary metastasis in 220 cases. Rev. Col. Bras. Cir., 44(2), 163–170. doi:10.1590/0100-69912017002010.
+
+Bolhasani H, Amjadi E, Tabatabaeian M, Jassbi SJ. A histopathological image dataset for grading breast invasive ductal carcinomas. Informatics in Medicine Unlocked. 2020;19:100341. 
+
+Brancati N, Anniciello AM, Pati P, Riccio D, Scognamiglio G, Jaume G, De Pietro G, Di Bonito M, Foncubierta A, Botti G, Gabrani M, Feroce F, Frucci M. BRACS: A Dataset for BReAst Carcinoma Subtyping in H&E Histology Images. Database (Oxford). 2022 Oct 17;2022:baac093. doi: 10.1093/database/baac093. PMID: 36251776; PMCID: PMC9575967.
+
+Couture HD, Williams LA, Geradts J, et al. Image analysis with deep learning to predict breast cancer grade, ER status, histologic subtype and intrinsic subtype. NPJ Breast Cancer.2018;4:30.
+
+Cruz-Roa, A., Basavanhally, A., González, F., Gilmore, H., Feldman, M., Ganesan, S., … Madabhushi, A. (2014). Automatic detection of invasive ductal carcinoma in whole slide images with convolutional neural networks. Medical Imaging 2014: Digital Pathology. doi:10.1117/12.2043872
+
+Fink, L. Breast Cancer. Available at: https://www.kaggle.com/code/allunia/breast-cancer/notebook. Accessed on: June 27, 2023.
+
+Jaroensri R, Wulczyn E, Hegde N, et al. Deep learning models for histologic grading of breast cancer and association with disease prognosis. NPJ Breast Cancer. 2022;8:113. 
+
+
+Kaggle. Breast Histopathology Images. 2018. Available at: https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images. Accessed April 28, 2023.
+
+Mercan C, Balkenhol M, Salgado R, et al. Deep learning for fully-automated nuclear pleomorphism scoring in breast cancer. NPJ Breast Cancer. 2022;8:120. 
+
+
+Ministry of Health. Concept and Magnitude. Brazil: INCA; 2022. Available at: https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/conceito-e-magnitude. Accessed May 6, 2023. 
+
+
+Merii, A. Breast Cancer Classification Guide: PCA & SVMs. Available at: https://www.kaggle.com/code/amerii/breast-cancer-classification-guide-pca-svms. Accessed on: June 27, 2023.
+
+Mooney, P. Predict IDC in Breast Cancer Histology Images. Available at: https://www.kaggle.com/code/paultimothymooney/predict-idc-in-breast-cancer-histology-images. Accessed on: June 27, 2023.
+
+National Cancer Institute. United States Government: NIH; 2022. Available at: https://www.cancer.gov/types/breast/research. Accessed May 6, 2023. 
+ 
+Omar, Z. Breast Cancer Detection with CNN. [Online]. Available at: https://www.kaggle.com/code/zeadomar/breast-cancer-detection-with-cnn. Accessed on: June 27, 2023.
+
+
+Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional networks for biomedical image segmentation. International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
+
+Sammari, S. Breast Cancer Images Classification. [Online]. Available at: https://www.kaggle.com/code/midouazerty/breast-cancer-images-classification. Accessed on: June 27, 2023.
+
+UNICAMP. Department of Pathology Anatomy (Anatpat). Accessed on May 16, 2023. Available at: anatpat.unicamp.br.
+
 
 
 
